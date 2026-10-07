@@ -31,6 +31,11 @@ CONFIG = {
         "en_require": ["plastic", "PET", "rPET", "PP", "PE", "HDPE", "LDPE", "PVC", "PS", "EPS", "polymer", "resin", "pyrolysis",
                        "polyethylene", "polypropylene", "polystyrene", "film", "flexibles", "bale",
                        "ppwr", "bottle", "food-grade", "packaging waste", "recycled content"],
+        # 전문지별 추가 검색 (구글 뉴스 site: 검색, 앞 괄호는 검색어)
+        "en_sites": ["plasticsnews.com", "plasticstoday.com", "packaginginsights.com", "resource-recycling.com",
+                     "recyclingtoday.com", "recyclinginternational.com", "sustainableplastics.com", "euwid-recycling.com",
+                     "packagingeurope.com", "packaging-gateway.com", "letsrecycle.com", "icis.com"],
+        "en_site_query": "(recycling OR recycled OR rPET OR resin OR prices OR PPWR)",
         "en_whitelist_only": True,
         "rss": [("Recycling Today", "https://www.recyclingtoday.com/rss/",
                  r"plastic|\bpet\b|rpet|hdpe|polypropylene|polyethylene|resin|pyrolysis|bottle|film|flexible|packaging")],
@@ -44,7 +49,7 @@ CONFIG = {
                        '"guarantees of origin" biomethane', "biomethane grid injection", "RNG landfill gas"],
         "en_core": ["biomethane", "biogas", "rng", "renewable natural gas", "anaerobic", "digest", "guarantee", "price",
                     "gas", "grid", "certificate", "landfill", "manure", "food waste"],
-        "en_sources": ["Bioenergy Insight", "gasworld", "ENDS", "Argus", "Quantum Commodity", "Montel", "Biomass Magazine",
+        "en_sources": ["Bioenergy Insight", "Bioenergy News", "gasworld", "ENDS", "Argus", "Quantum Commodity", "Montel", "Biomass Magazine",
                        "European Biogas", "Biogas World", "Reuters", "Bloomberg", "S&P Global", "Waste Dive", "Biofuels Digest",
                        "Renewable Energy World", "Energy Voice", "Recharge", "Gas Processing", "World Bio Market Insights",
                        "Waste Management World", "Financial Times", "Euractiv", "Clean Energy Wire", "letsrecycle",
@@ -52,6 +57,9 @@ CONFIG = {
         "ko_require": ["바이오가스", "바이오메탄", "생산목표제", "혐기성", "에너지화", "유기성폐자원", "소화가스", "바이오가스화"],
         "en_require": ["biomethane", "biogas", "rng", "renewable natural gas", "anaerobic", "digester", "green gas",
                        "landfill gas", "renewable gas", "bio-cng", "biocng"],
+        "en_sites": ["bioenergy-news.com", "gasworld.com", "endswasteandbioenergy.com", "argusmedia.com", "qcintel.com",
+                     "biomassmagazine.com", "europeanbiogas.eu", "biogasworld.com", "montelnews.com", "wastedive.com"],
+        "en_site_query": "(biomethane OR biogas OR RNG OR \"renewable gas\" OR \"anaerobic digestion\")",
         "en_whitelist_only": False,
         "rss": [],
     },
@@ -211,6 +219,16 @@ def collect_en(cfg, now, hours, when):
             continue
         allit += rows
         print(f"   [해외] '{q}' {len(rows)}건")
+        time.sleep(1)
+    for dom in cfg.get("en_sites", []):
+        q = f'{cfg["en_site_query"]} site:{dom}'
+        try:
+            rows = parse_rss(gnews(q, when, "en"))
+        except Exception as e:
+            print(f"   [해외 전문지] {dom} 실패: {type(e).__name__}")
+            continue
+        allit += rows
+        print(f"   [해외 전문지] {dom} {len(rows)}건")
         time.sleep(1)
     for name, url, pat in cfg["rss"]:
         try:
