@@ -80,6 +80,7 @@ POLICY = ["정책", "제도", "개편", "기본계획", "정부", "국회", "법
           "환경부", "산업부", "가격", "단가", "요금"]
 
 TOP_KO, TOP_EN = 12, 10
+PER_SOURCE = 3
 SIM, JAC = 0.50, 0.25
 HOLIDAYS = {"2026-10-05", "2026-10-09", "2026-12-25", "2027-01-01", "2027-02-08", "2027-02-09", "2027-03-01", "2027-05-05",
             "2027-05-13", "2027-06-07", "2027-08-16", "2027-09-14", "2027-09-15", "2027-09-16", "2027-10-04", "2027-10-11",
@@ -258,7 +259,15 @@ def collect_en(cfg, now, hours, when):
 
     groups = [g for g in groups if score(g)[1] >= 1]
     groups.sort(key=lambda g: (score(g)[0], g["item"]["pub"].timestamp()), reverse=True)
-    top = groups[:TOP_EN]
+    top, per = [], {}
+    for g in groups:                       # 한 매체가 목록을 독차지하지 않도록 매체당 최대 PER_SOURCE건
+        src = g["item"]["source"] or ""
+        if per.get(src, 0) >= PER_SOURCE:
+            continue
+        per[src] = per.get(src, 0) + 1
+        top.append(g)
+        if len(top) >= TOP_EN:
+            break
     top.sort(key=lambda g: -g["item"]["pub"].timestamp())
     return pack(top), len(allit)
 
