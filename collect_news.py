@@ -28,7 +28,8 @@ CONFIG = {
                        "European Plastics News", "Plastics & Rubber Weekly", "Waste Management World", "Recycling Magazine",
                        "Plastics Recycling Update", "Innovation News Network", "Interplas"],
         "ko_require": ["플라스틱", "페트", "PET", "재생원료", "열분해", "비닐", "일회용", "1회용", "재활용", "포장재", "용기", "순환경제"],
-        "en_require": ["plastic", "PET", "rPET", "polymer", "resin", "pyrolysis", "polyethylene", "polypropylene", "hdpe", "pvc",
+        "en_require": ["plastic", "PET", "rPET", "PP", "PE", "HDPE", "LDPE", "PVC", "PS", "EPS", "polymer", "resin", "pyrolysis",
+                       "polyethylene", "polypropylene", "polystyrene", "film", "flexibles", "bale",
                        "ppwr", "bottle", "food-grade", "packaging waste", "recycled content"],
         "en_whitelist_only": True,
         "rss": [("Recycling Today", "https://www.recyclingtoday.com/rss/",
@@ -62,10 +63,10 @@ EN_BLOCK = ["AD HOC NEWS", "kalkine", "KLSE Screener", "IndexBox", "TradingView"
             "Business Research", "Fortune Business Insights", "Precedence Research", "Allied Market", "MarketBeat",
             "Zacks", "Simply Wall St", "Investing News Network", "LatestLY", "Yahoo Finance"]
 EN_NOISE = ["stock", "shares", "market size", "cagr", "forecast 20", "market report", "obituary", "recipe", "cookie",
-            "sign up", "webinar", "register now", "podcast", "award nominations"]
+            "sign up", "webinar", "register now", "podcast", "award nominations", "appointed", "appoints", "names new"]
 KO_SRC_BLOCK = ["Vietnam.vn", "Daum"]   # 기계번역·포털 재게시
 KO_NOISE = ["연봉", "채용", "인사", "부고", "결혼", "장학", "봉사", "기부", "특징주", "목표주가", "주가", "수상", "표창", "시상",
-            "동정", "농구", "배구", "야구", "축구", "시즌", "후원", "나눔", "캠페인", "공모전"]
+            "동정", "화재", "합작법인", "산업전", "농구", "배구", "야구", "축구", "시즌", "후원", "나눔", "캠페인", "공모전"]
 KO_SOFT = ["설명회", "포럼", "세미나", "워크숍", "개최", "성료", "간담회", "발대식", "업무협약", "MOU", "협약식", "맞손"]
 POLICY = ["정책", "제도", "개편", "기본계획", "정부", "국회", "법안", "개정", "시행령", "고시", "규제", "의무", "목표제", "기후부",
           "환경부", "산업부", "가격", "단가", "요금"]
@@ -247,7 +248,7 @@ def collect_en(cfg, now, hours, when):
 def main(pages):
     now = now_kst()
     hours = lookback_hours(now)
-    hours_en = max(hours, 48)       # 해외는 시차가 있어 최소 48시간
+    hours_en = max(hours, 72)       # 해외는 시차·발행 빈도를 고려해 최소 72시간
     when = "when:%dd" % (hours // 24 + 2)
     when_en = "when:%dd" % (hours_en // 24 + 1)
     for page in pages:
