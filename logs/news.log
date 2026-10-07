@@ -11,6 +11,7 @@
    [국내] '플라스틱 협약' 9건
    [국내] '순환경제 플라스틱' 11건
    [국내] '재활용 선별장' 0건
+   [국내] 반복 소재어: []
    [해외] 'rPET' 6건
    [해외] '"recycled PET"' 6건
    [해외] '"chemical recycling"' 8건
@@ -25,17 +26,17 @@
    [해외 전문지] plasticstoday.com 27건
    [해외 전문지] packaginginsights.com 7건
    [해외 전문지] resource-recycling.com 16건
-   [해외 전문지] recyclingtoday.com 12건
+   [해외 전문지] recyclingtoday.com 13건
    [해외 전문지] recyclinginternational.com 6건
    [해외 전문지] sustainableplastics.com 0건
    [해외 전문지] euwid-recycling.com 8건
-   [해외 전문지] packagingeurope.com 84건
+   [해외 전문지] packagingeurope.com 88건
    [해외 전문지] packaging-gateway.com 12건
    [해외 전문지] letsrecycle.com 9건
    [해외 전문지] icis.com 23건
    [해외 RSS] Recycling Today 5건
    [해외] 전문지 외 제외: Business Standard, Graphene-Info, Knoxville News Sentinel, Labmate Online, Lexology, Mexico Business News, Premium Beauty News, Spectrum News, Tech Xplore
->> [plastic] 국내 51건 → 12건, 해외 306건 → 8건
+>> [plastic] 국내 51건 → 12건, 해외 311건 → 8건
    - [한국미디어뉴스통신] [칼럼] 65%라는 숫자 뒤에 숨은 착시… ‘진짜 재활용’을 가리는 통계의 맹점
    - [경인매일] LG유니참, 친환경 생산·플라스틱 감축 확대...ESG 경영 강화
    - [뉴스21 통신] 양평공사, 생활 속 자원순환 실천… 폐건전지·플라스틱 병뚜껑 121.5kg 수거
@@ -48,13 +49,13 @@
    - [에너지데일리] 1회용컵 규제 신호 약해지자 다시 10억개 돌파…‘자발적 협약’ 한계 드러나
    - [핀포인트뉴스] SK케미칼, 폐현수막 순환경제 사업단 구축…화학적 재활용 확대
    - [연합뉴스] 서산 대산읍 폐기물 재활용 공장서 불…대응 1단계 발령
-   - [Packaging Europe] Veolia’s closed-loop recycling plant for food-grade PET receives £70 million
    - [Packaging Europe] Refillable cream jar and 50% recycled plastic caps and pumps among Beiersdorf’s newest CO2 reduction efforts
    - [Recycling International] PolyCert scheme supports use of recycled content in food packaging
    - [Plastics News] A healthcare push against ‘unnecessary’ single-use plastic
    - [Packaging Europe] No shortcuts to compliance: Building structured packaging master Data for PPWR
    - [Plastics News] PP prices keep falling despite rebound hopes
    - [EUWID Recycling and Waste Management] Chemical recycling: PPWR is key to capacity expansion
+   - [Packaging Europe] Antalis launches blown hand stretch film containing 30% recycled content
    - [EUWID Recycling and Waste Management] Blue Alp targets 2028 construction start for Rotterdam pyrolysis plant
 >> data/news_plastic.json, history/news_plastic_20261007.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
@@ -68,6 +69,7 @@
    [국내] '하수슬러지 바이오가스' 1건
    [국내] '바이오가스화시설' 13건
    [국내] '음식물쓰레기 처리' 1건
+   [국내] 반복 소재어: ['경기', '광역', '대응', '시군']
    [해외] 'biomethane' 51건
    [해외] 'biogas' 53건
    [해외] '"renewable natural gas"' 12건
