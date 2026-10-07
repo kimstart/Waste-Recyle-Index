@@ -112,6 +112,7 @@ table.rp td.q a { color:var(--navy2); font-weight:700; }
   .note-m { display:block; font-size:11px; font-weight:500; color:#64748b; margin-top:4px; line-height:1.45; }
   .news2 { grid-template-columns:1fr; gap:18px; }
   table.rp col.c-q, table.rp th.q, table.rp td.q { display:none; }
+  table.rp { table-layout:auto; } table.rp col { width:auto !important; }
   table.rp th, table.rp td { padding:6px 4px; font-size:11px; }
   table.cmp.ref, table.cmp.ref tbody, table.cmp.ref tr, table.cmp.ref td { display:block; width:auto; }
   table.cmp.ref thead, table.cmp.ref colgroup { display:none; }
