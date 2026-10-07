@@ -1,0 +1,85 @@
+>> [plastic] 수집 범위 국내 36시간 / 해외 48시간
+   [국내] '폐플라스틱' 9건
+   [국내] '재생원료 플라스틱' 1건
+   [국내] '재생플라스틱' 3건
+   [국내] '플라스틱 재활용' 9건
+   [국내] '페트 재활용' 3건
+   [국내] '열분해유' 0건
+   [국내] '화학적 재활용' 8건
+   [국내] '폐비닐' 0건
+   [국내] '재생원료 사용 의무' 1건
+   [국내] '플라스틱 협약' 13건
+   [국내] '순환경제 플라스틱' 12건
+   [국내] '재활용 선별장' 0건
+   [해외] 'rPET' 6건
+   [해외] '"recycled PET"' 5건
+   [해외] '"chemical recycling"' 8건
+   [해외] '"plastic pyrolysis"' 0건
+   [해외] '"recycled content" plastic' 14건
+   [해외] '"plastics treaty"' 6건
+   [해외] '"recycled polypropylene"' 5건
+   [해외] '"plastic recycling"' 11건
+   [해외] 'PPWR recycled' 9건
+   [해외] '"recycled plastic" prices' 6건
+   [해외 RSS] Recycling Today 5건
+   [해외] 전문지 외 제외: Bizcommunity, Business Day, Business Standard, Diari ARA, Graphene-Info, Greenpeace, Knoxville News Sentinel, L'Unione Sarda.it, Labmate Online, Lancaster Farming, Lexology, Mexico Business News, Morocco World News, Premium Beauty News, Tech Xplore, The Des Moines Register, WhatTheyThink
+>> [plastic] 국내 59건 → 12건, 해외 75건 → 3건
+   - [한국미디어뉴스통신] [칼럼] 65%라는 숫자 뒤에 숨은 착시… ‘진짜 재활용’을 가리는 통계의 맹점
+   - [직썰] LS일렉트릭, 대만 난야플라스틱과 합작법인 설립…전력 수주사업 확대 박차
+   - [비즈월드] 투명페트병 무인회수기 ‘모이지(Mo-EZ)’, AI 자동선별 기술로 2026 서울 AI 로봇쇼 참가
+   - [LG헬로비전] 포천 동교동 플라스틱 재활용 공장 화재
+   - [위클리서울] [Better Earth⑪] 재생원료 10% 의무화에 달아오른 유통·식음료 패키징 생태계
+   - [에너지경제신문] [2026 국감] “일회용품 규제 풀자 컵 사용 1억3200만개 늘어”
+   - [뉴스;트리] '국제 플라스틱 협약' 내년 3월 타결?...생산규제 접점 찾나
+   - [중앙뉴스타임스] 서왕진의원, “1회용컵 규제 신호 사라지자 사용량 급증… ‘자발적 협약’ 실효성 도마 위”
+   - [에너지데일리] 1회용컵 규제 신호 약해지자 다시 10억개 돌파…‘자발적 협약’ 한계 드러나
+   - [핀포인트뉴스] SK케미칼, 폐현수막 순환경제 사업단 구축…화학적 재활용 확대
+   - [연합뉴스] LG화학, 유럽 플라스틱 산업전 참가…고성능·고부가 소재 전시
+   - [연합뉴스] 서산 대산읍 폐기물 재활용 공장서 불…대응 1단계 발령
+   - [Recycling Today] ALPLA to build plastic bottle plant in US
+   - [Recycling International] PolyCert scheme supports use of recycled content in food packaging
+   - [EUWID Recycling and Waste Management] Chemical recycling: PPWR is key to capacity expansion
+>> data/news_plastic.json, history/news_plastic_20261007.json 저장
+>> [biogas] 수집 범위 국내 36시간 / 해외 48시간
+   [국내] '바이오가스' 21건
+   [국내] '바이오메탄' 5건
+   [국내] '바이오가스 생산목표제' 15건
+   [국내] '유기성폐자원' 8건
+   [국내] '음식물류폐기물 바이오가스' 3건
+   [국내] '가축분뇨 바이오가스' 1건
+   [국내] '혐기성소화' 1건
+   [국내] '하수슬러지 바이오가스' 1건
+   [국내] '바이오가스화시설' 13건
+   [국내] '음식물쓰레기 처리' 1건
+   [해외] 'biomethane' 48건
+   [해외] 'biogas' 48건
+   [해외] '"renewable natural gas"' 10건
+   [해외] '"anaerobic digestion"' 9건
+   [해외] 'biomethane price' 7건
+   [해외] '"guarantees of origin" biomethane' 0건
+   [해외] 'biomethane grid injection' 7건
+   [해외] 'RNG landfill gas' 1건
+>> [biogas] 국내 69건 → 12건, 해외 130건 → 10건
+   - [시대일보] “바이오가스 생산목표제 시군별 여건 다른데 대응은 같을 수 없다”경기연구원, 소규모 지자체는 ‘지역거점형 통합바이오가스화’ 필요:시대일보
+   - [인천일보] 경기연구원 “공공 바이오가스 생산, 지역거점 방식 검토를”
+   - [OBC 뉴스] 의왕 하루 20~25톤…바이오가스 단독시설 한계
+   - [커넥트이천] 경기연구원, 중소 지자체 '바이오가스' 해법 제시… 일 100톤 광역처리 필수
+   - [산업종합저널] 바이오가스 생산목표제 시행…소규모 시군 ‘광역 통합처리’가 변수
+   - [더팩트] 경기연구원 "바이오가스, '개별 설치'보다 '광역처리'" 제안 - 보도자료 | 기사
+   - [전자신문] 경기도, 31개 시·군 바이오가스 대응 차별화…의왕은 광역 공동처리 검토
+   - [연합뉴스] 포항시, 2029년까지 하수슬러지 에너지화시설 건립
+   - [가스신문] 에어레인, 바이오가스 고질화 기술로 유럽 진출
+   - [글로벌이코노믹] 바이오가스 의무생산 시대…경기도 시군마다 '해법 달라야'
+   - [프레시안] 경기도, 바이오가스 생산목표제 대응…"시군 여건따라 차등 적용해야"
+   - [디스커버리뉴스(DISCOVERYNEWS)] 경기연구원, 바이오가스 시설 시군별 차등 전략 필요
+   - [Seoul Economic Daily] Airrane Unveils Biogas Upgrading Product at Spain Trade Fair
+   - [ENDS Waste & Bioenergy] ADBA: UK energy plan misses ‘cheapest fix’ by overlooking biomethane
+   - [KELOLAND.com] PUC levies a penalty on a Chevron biogas operation
+   - [Irish Independent] ‘It’s been a tug of war’ — Galway community rallies against long-running plans for biogas plant
+   - [Bioenergy Insight Magazine] Toyota Tsusho and KBI launch Indonesian biomethane venture
+   - [Montel News] Bodecker invests in biogas power plants in Sweden
+   - [AberdareOnline] Energy and farming leaders call for action to unlock Wales’ green gas potential
+   - [energynews.pro] Waga Energy to Produce 80 GWh of Biomethane a Year Near Granada in Spain
+   - [gasworld] Uniper eyes Türkiye biomethane production and exports
+   - [SMEStreet] Varun Karad appointed Co-Chair of CII Committee on Compressed Biogas
+>> data/news_biogas.json, history/news_biogas_20261007.json 저장
