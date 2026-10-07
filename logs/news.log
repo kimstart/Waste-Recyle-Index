@@ -25,17 +25,17 @@
    [해외 전문지] plasticstoday.com 27건
    [해외 전문지] packaginginsights.com 7건
    [해외 전문지] resource-recycling.com 16건
-   [해외 전문지] recyclingtoday.com 13건
+   [해외 전문지] recyclingtoday.com 12건
    [해외 전문지] recyclinginternational.com 6건
    [해외 전문지] sustainableplastics.com 0건
    [해외 전문지] euwid-recycling.com 8건
-   [해외 전문지] packagingeurope.com 88건
-   [해외 전문지] packaging-gateway.com 11건
+   [해외 전문지] packagingeurope.com 84건
+   [해외 전문지] packaging-gateway.com 12건
    [해외 전문지] letsrecycle.com 9건
    [해외 전문지] icis.com 23건
    [해외 RSS] Recycling Today 5건
-   [해외] 전문지 외 제외: Bizcommunity, Business Standard, Diari ARA, Graphene-Info, Greenpeace, Knoxville News Sentinel, Labmate Online, Lancaster Farming, Lexology, Mexico Business News, Morocco World News, Premium Beauty News, Spectrum News, Tech Xplore, WhatTheyThink, www.ctiweb.co.jp
->> [plastic] 국내 51건 → 12건, 해외 310건 → 10건
+   [해외] 전문지 외 제외: Business Standard, Graphene-Info, Knoxville News Sentinel, Labmate Online, Lexology, Mexico Business News, Premium Beauty News, Spectrum News, Tech Xplore
+>> [plastic] 국내 51건 → 12건, 해외 306건 → 8건
    - [한국미디어뉴스통신] [칼럼] 65%라는 숫자 뒤에 숨은 착시… ‘진짜 재활용’을 가리는 통계의 맹점
    - [경인매일] LG유니참, 친환경 생산·플라스틱 감축 확대...ESG 경영 강화
    - [뉴스21 통신] 양평공사, 생활 속 자원순환 실천… 폐건전지·플라스틱 병뚜껑 121.5kg 수거
@@ -48,15 +48,13 @@
    - [에너지데일리] 1회용컵 규제 신호 약해지자 다시 10억개 돌파…‘자발적 협약’ 한계 드러나
    - [핀포인트뉴스] SK케미칼, 폐현수막 순환경제 사업단 구축…화학적 재활용 확대
    - [연합뉴스] 서산 대산읍 폐기물 재활용 공장서 불…대응 1단계 발령
-   - [Plastics News] Extruder America Plastics pays $2.25M to settle COVID loan probe
-   - [PlasticsToday] Delta Tecnic Launches Antimony Trioxide Masterbatch for Safer Plastics
+   - [Packaging Europe] Veolia’s closed-loop recycling plant for food-grade PET receives £70 million
    - [Packaging Europe] Refillable cream jar and 50% recycled plastic caps and pumps among Beiersdorf’s newest CO2 reduction efforts
    - [Recycling International] PolyCert scheme supports use of recycled content in food packaging
    - [Plastics News] A healthcare push against ‘unnecessary’ single-use plastic
    - [Packaging Europe] No shortcuts to compliance: Building structured packaging master Data for PPWR
-   - [Packaging Insights] ALPLA expands US plastic bottle production with Las Vegas plant
+   - [Plastics News] PP prices keep falling despite rebound hopes
    - [EUWID Recycling and Waste Management] Chemical recycling: PPWR is key to capacity expansion
-   - [Packaging Europe] Antalis launches blown hand stretch film containing 30% recycled content
    - [EUWID Recycling and Waste Management] Blue Alp targets 2028 construction start for Rotterdam pyrolysis plant
 >> data/news_plastic.json, history/news_plastic_20261007.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
@@ -95,8 +93,8 @@
    - [커넥트이천] 경기연구원, 중소 지자체 '바이오가스' 해법 제시… 일 100톤 광역처리 필수
    - [산업종합저널] 바이오가스 생산목표제 시행…소규모 시군 ‘광역 통합처리’가 변수
    - [더팩트] 경기연구원 "바이오가스, '개별 설치'보다 '광역처리'" 제안 - 보도자료 | 기사
-   - [전자신문] 경기도, 31개 시·군 바이오가스 대응 차별화…의왕은 광역 공동처리 검토
    - [연합뉴스] 포항시, 2029년까지 하수슬러지 에너지화시설 건립
+   - [뉴스핌] 에어레인, 스페인 재생가스 박람회서 바이오가스 신제품 공개
    - [가스신문] 에어레인, 바이오가스 고질화 기술로 유럽 진출
    - [글로벌이코노믹] 바이오가스 의무생산 시대…경기도 시군마다 '해법 달라야'
    - [프레시안] 경기도, 바이오가스 생산목표제 대응…"시군 여건따라 차등 적용해야"
