@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 10:19",
+ "updated": "2026-10-07 10:51",
  "items": {
   "fx_usd": {
    "name": "원/달러",
@@ -194,33 +194,6 @@
    ],
    "krw_kg": 998.2,
    "fx_used": 199.68
-  },
-  "dubai": {
-   "name": "두바이유",
-   "unit": "$/bbl",
-   "date": "2026-10-06",
-   "value": 105.69,
-   "prev_date": "2026-10-05",
-   "prev_value": 109.71,
-   "src": "오피넷"
-  },
-  "brent": {
-   "name": "브렌트유",
-   "unit": "$/bbl",
-   "date": "2026-10-06",
-   "value": 100.58,
-   "prev_date": "2026-10-05",
-   "prev_value": 100.32,
-   "src": "오피넷"
-  },
-  "wti": {
-   "name": "WTI",
-   "unit": "$/bbl",
-   "date": "2026-10-06",
-   "value": 89.44,
-   "prev_date": "2026-10-05",
-   "prev_value": 89.43,
-   "src": "오피넷"
   },
   "r_comp_pet": {
    "name": "압축 PET",
