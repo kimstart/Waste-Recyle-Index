@@ -10,7 +10,7 @@ import os, re, io, json, time, zipfile, http.cookiejar, urllib.request, urllib.p
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from common import UA, get, get_json, retry, run_all, now_kst, carry_prev
-from sources import yahoo_series, last_two
+from sources import yahoo_series, last_two, fetch_eur
 
 DATA_KEY = urllib.parse.unquote(os.environ.get("DATA_GO_KR_KEY", ""))
 
@@ -185,9 +185,51 @@ def fetch_gas_tariff(items, extra):
     prev_dates = [d for d in sorted(hist) if d < date]
     pd = prev_dates[-1] if prev_dates else None
     print(f">> [도매요금] {date} 평균 {total} (원료비 {fuel} + 공급비 {supply})")
-    return {"gas_whole": {"name": "천연가스 도매요금", "item": "도시가스용 평균", "unit": "원/MJ", "date": date[:7], "value": total,
-                          "prev_date": pd[:7] if pd else None, "prev_value": hist[pd]["total"] if pd else None,
-                          "fuel": fuel, "supply": supply, "src": "한국가스공사"}}
+    heat = None
+    try:
+        heat = fetch_heat(int(date[:4]), int(date[5:7]))
+        hist[date]["heat"] = heat
+    except Exception as e:
+        print(f">> [열량] 조회 실패: {type(e).__name__}: {str(e)[:100]}")
+        heat = next((hist[d].get("heat") for d in reversed(sorted(hist)) if hist[d].get("heat")), None)
+    item = {"name": "천연가스 도매요금", "item": "도시가스용 평균", "unit": "원/MJ", "date": date[:7], "value": total,
+            "prev_date": pd[:7] if pd else None, "prev_value": hist[pd]["total"] if pd else None,
+            "fuel": fuel, "supply": supply, "src": "한국가스공사"}
+    if heat:
+        item["heat_mj"] = heat
+        item["krw_m3"] = round(total * heat, 1)
+        if pd and hist[pd].get("heat"):
+            item["prev_krw_m3"] = round(hist[pd]["total"] * hist[pd]["heat"], 1)
+    return {"gas_whole": item}
+
+
+def fetch_heat(year, month):
+    """가스공사 도시가스 공급 예상열량(육지권역, MJ/N㎥). 매월 공시."""
+    txt = retry(lambda: get("https://www.kogas.or.kr/getUserExpSplCal.do",
+                            data={"spl_year": str(year), "spl_month": f"{month:02d}"},
+                            headers={"Referer": "https://www.kogas.or.kr/site/koGas/userExpSplCal.do?Key=1040502000000",
+                                     "X-Requested-With": "XMLHttpRequest"}), tries=2)
+    vo = json.loads(txt).get("expSplCalUserVo") or {}
+    m = re.search(r"(\d+(?:\.\d+)?)\s*MJ", str(vo.get("spl_exp_cal") or ""))
+    if not m:
+        raise ValueError(f"열량 값 없음: {txt[:120]!r}")
+    print(f">> [열량] {year}-{month:02d} 육지권역 예상열량 {m.group(1)} MJ/N㎥")
+    return float(m.group(1))
+
+
+def add_krw_m3(items, extra):
+    """€/MWh → 원/㎥ = €/MWh × 원/유로 × (열량 MJ/㎥ ÷ 3,600 MJ/MWh). 열량은 가스공사 공시 육지권역 예상열량."""
+    eur = (items.get("fx_eur") or {}).get("value")
+    heat = (items.get("gas_whole") or {}).get("heat_mj")
+    if not eur or not heat:
+        print(f">> [환산] 원/유로({eur}) 또는 열량({heat}) 없음 → 원/㎥ 환산 생략")
+        return
+    for k in ("ttf", "go_fr"):
+        it = items.get(k)
+        if it:
+            it["krw_m3"] = round(it["value"] * eur * heat / 3600, 1)
+            it["fx_used"], it["heat_used"] = eur, heat
+            print(f">> [환산] {k}: {it['value']} €/MWh → {it['krw_m3']} 원/㎥")
 
 
 # ---------------------------------------------------------------- 프랑스 바이오가스 GO 경매 (EEX)
@@ -280,5 +322,5 @@ def fetch_go_auction(items, extra):
 
 
 if __name__ == "__main__":
-    run_all("biogas", [("REC", fetch_rec), ("TTF", fetch_ttf), ("KCU", fetch_kcu),
-                       ("천연가스 도매요금", fetch_gas_tariff), ("프랑스 GO 경매", fetch_go_auction)])
+    run_all("biogas", [("REC", fetch_rec), ("TTF", fetch_ttf), ("KCU", fetch_kcu), ("원/유로", fetch_eur),
+                       ("천연가스 도매요금", fetch_gas_tariff), ("프랑스 GO 경매", fetch_go_auction)], post=add_krw_m3)

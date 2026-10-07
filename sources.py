@@ -211,3 +211,40 @@ def fetch_oil(items, extra):
     if not got:
         raise ValueError("국제유가 자료 없음")
     return got
+
+
+# ---------------------------------------------------------------- 원/유로 (바이오가스 페이지 환산용)
+def fetch_eur(items, extra):
+    """원/유로: 수출입은행(키 있을 때) → ECB → Yahoo"""
+    rows, src = None, None
+    if EXIM_KEY:
+        try:
+            d = now_kst().date()
+            found = []
+            for _ in range(14):
+                url = ("https://oapi.koreaexim.go.kr/site/program/financial/exchangeJSON?"
+                       + urllib.parse.urlencode({"authkey": EXIM_KEY, "searchdate": d.strftime("%Y%m%d"), "data": "AP01"}))
+                for x in (retry(lambda: get_json(url), tries=2) or []):
+                    if str(x.get("cur_unit")) == "EUR":
+                        found.append((d.isoformat(), float(str(x["deal_bas_r"]).replace(",", ""))))
+                if len(found) >= 2:
+                    break
+                d -= timedelta(days=1)
+            if found:
+                rows, src = found, "수출입은행 매매기준율"
+        except Exception as e:
+            print(f">> [원/유로] 수출입은행 실패: {type(e).__name__}")
+    if not rows:
+        try:
+            today = now_kst().date()
+            j = retry(lambda: get_json(f"https://api.frankfurter.dev/v1/{(today - timedelta(days=14)).isoformat()}..{today.isoformat()}?base=EUR&symbols=KRW"), tries=2)
+            r = j.get("rates", {})
+            rows, src = [(d, r[d]["KRW"]) for d in sorted(r, reverse=True) if "KRW" in r[d]][:2], "ECB 기준환율"
+        except Exception as e:
+            print(f">> [원/유로] ECB 실패: {type(e).__name__}")
+    if not rows:
+        s_ = yahoo_series("EURKRW=X")
+        rows, src = [(d, v) for d, v in reversed(s_)][:2], "Yahoo Finance"
+    cur, prev = rows[0], (rows[1] if len(rows) > 1 else (None, None))
+    return {"fx_eur": {"name": "원/유로", "unit": "원", "date": cur[0], "value": round(cur[1], 2), "prev_date": prev[0],
+                       "prev_value": round(prev[1], 2) if prev[1] else None, "src": src}}

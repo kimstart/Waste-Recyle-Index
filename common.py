@@ -80,8 +80,9 @@ def carry_prev(old, date, value):
     return old.get("prev_date"), old.get("prev_value")
 
 
-def run_all(name, steps, keep_items=None):
-    """steps: [(이름, 함수(old_items) -> {key: item})]. 실패한 항목은 이전 값을 그대로 둔다."""
+def run_all(name, steps, post=None):
+    """steps: [(이름, 함수(items, extra) -> {key: item})]. 실패한 항목은 이전 값을 그대로 둔다.
+    post(items, extra): 저장 직전에 환산값 등을 계산"""
     store = load(f"data/{name}.json", {})
     items = dict(store.get("items", {}))
     extra = dict(store.get("extra", {}))
@@ -97,5 +98,10 @@ def run_all(name, steps, keep_items=None):
             print(f">> [수집 실패] {label}: {type(e).__name__}: {str(e)[:200]} → 이전 값 유지")
     if ok == 0 and not items:
         raise SystemExit(1)
+    if post:
+        try:
+            post(items, extra)
+        except Exception as e:
+            print(f">> [후처리 실패] {type(e).__name__}: {str(e)[:200]}")
     save_with_history(name, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "items": items, "extra": extra})
     return ok

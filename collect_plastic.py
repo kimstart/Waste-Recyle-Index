@@ -3,11 +3,11 @@
 - 월간: 국내 재생원료 단가 (한국환경공단 '재활용가능자원 가격조사', 원/kg, VAT 포함)
   출처 순서: 순환자원정보센터 화면(전국평균) → 공공데이터포털 API(키 필요) → 공공데이터포털 CSV(권역 단순평균)
 - 일간: 중국 신재 플라스틱 선물 (정저우·다롄 상품거래소 연속물 종가, Sina Finance, 위안/톤) + 원/kg 환산
-- 일간: 국제유가 (오피넷), 환율 (수출입은행 → ECB → Yahoo)
+- 환율 (수출입은행 → ECB → Yahoo): 원/위안은 중국 선물 원화 환산에 사용
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
 import os, re, io, csv, json, urllib.parse
 from common import UA, get, retry, run_all, now_kst
-from sources import fetch_fx, fx_items, fetch_oil
+from sources import fetch_fx, fx_items
 
 RECYCLE_URL = "https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301"
 RECYCLE_API = "https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist"
@@ -268,4 +268,5 @@ if __name__ == "__main__":
 
     # 환율을 먼저 받아야 선물 원화 환산에 최신 환율이 쓰인다
     run_all("plastic", [("환율", fetch_fx_step), ("국내 재생원료", fetch_recycle),
-                        ("중국 선물", futures_with_krw), ("국제유가", fetch_oil)])
+                        ("중국 선물", futures_with_krw)],
+            post=lambda items, extra: [items.pop(k, None) for k in ("dubai", "brent", "wti")])  # 화면에서 뺀 유가 정리

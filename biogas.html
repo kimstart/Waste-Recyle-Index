@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>바이오가스 정보보드</title>
+<title>바이오가스 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/board.css">
 </head>
@@ -11,7 +11,7 @@
 <header class="site-header">
   <div class="in">
     <div>
-      <h1>바이오가스 정보보드</h1>
+      <h1>바이오가스 데일리 리포트</h1>
       <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 뉴스</p>
     </div>
     <nav class="menu">
@@ -34,7 +34,7 @@
   <h2>주요 지표</h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
-    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고 (왜 중요한가)</th></tr></thead>
+    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
     <tbody id="indBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
   </table>
   <div class="note">
@@ -43,10 +43,11 @@
     KCU: 한국거래소 배출권시장 정보플랫폼의 KCU(국내 상쇄배출권) 최근 거래일 종가로, 거래가 드물어 기준일이 몇 주~몇 달 전일 수 있습니다.
     천연가스 도매요금: 한국가스공사 도시가스용 도매요금 평균(원료비+공급비, 부가세 별도, 매월 1일 기준).
     프랑스 GO 경매: EEX가 분기마다(2·5·8·11월) 공개하는 프랑스 바이오가스 원산지보증서 경매의 전체 가중평균 낙찰가(기준가격).
+    원/㎥ 환산: €/MWh × 원/유로 × 열량(MJ/N㎥) ÷ 3,600, 도매요금은 원/MJ × 열량. 열량은 한국가스공사가 매월 공시하는 육지권역 공급 예상열량을 씁니다(<span id="convNote">-</span>).
     자료 갱신: <span id="indUpdated">-</span>
   </div>
 
-  <h2>유럽 바이오메탄 가격 구조 <small>참고용 추정</small></h2>
+  <h2>유럽 바이오메탄 vs 국내 도시가스 <small>원/㎥ 환산 비교 · 참고용 추정</small></h2>
   <div id="extra"></div>
 
   <h2>바이오가스 뉴스<small id="newsUpd"></small></h2>
@@ -72,13 +73,26 @@ window.BOARD = {
     { cyc: '분기', key: 'go_fr', label: '프랑스 바이오가스 GO 경매', dec: 2, why: "프랑스 정부가 보조금 바이오메탄의 원산지보증서를 분기마다 경매한 평균 낙찰가. 유럽 바이오메탄 '인증 프리미엄'의 무료 공개 기준값" }
   ],
   extra(items, fmt) {
-    const t = items.ttf, g = items.go_fr, w = items.gas_whole;
-    if (!t || !g) return '<div class="note">TTF 또는 GO 경매 자료가 없어 계산하지 않았습니다.</div>';
-    const sum = t.value + g.value;
-    const gas = w ? `<br>참고로 국내 도시가스용 도매요금 평균은 <b>${fmt(w.value, 3)}원/MJ</b>(원료비 ${fmt(w.fuel, 4)} + 공급비 ${fmt(w.supply, 4)})이며, 1MWh = 3,600MJ 기준으로 약 <b>${fmt(w.value * 3.6, 0)}천원/MWh</b>입니다.` : '';
-    return `<div class="calc">TTF 천연가스 <b>€${fmt(t.value, 2)}</b> + 프랑스 GO 경매 기준가격 <b>€${fmt(g.value, 2)}</b> ≈ 유럽 바이오메탄 가치 <b>약 €${fmt(sum, 2)}/MWh</b>
-      <br><span style="font-size:12px;color:#475569">TTF는 ${t.date}, GO는 ${g.date} 경매 기준. GO 프리미엄 비중 ${(g.value / sum * 100).toFixed(0)}%.</span>${gas}</div>
-      <div class="note">유럽 바이오메탄은 보통 '천연가스 가격(TTF) + 원산지보증서(GO) 등 인증 프리미엄'으로 거래됩니다. 실제 거래가는 원료(폐기물·작물), 국가, 보조금 여부, 인증 종류에 따라 달라지며, 위 값은 공개 자료만으로 계산한 참고용 추정입니다.</div>`;
+    const t = items.ttf, g = items.go_fr, w = items.gas_whole, e = items.fx_eur;
+    const cn = document.getElementById('convNote');
+    if (cn) cn.textContent = [w && w.heat_mj ? `${w.date ? +w.date.slice(5, 7) + '월 ' : ''}${fmt(w.heat_mj, 3)} MJ/N㎥` : '', e ? `원/유로 ${fmt(e.value, 2)}(${e.src || ''} ${e.date || ''})` : ''].filter(Boolean).join(', ') || '-';
+    if (!t || !g || t.krw_m3 == null || g.krw_m3 == null) return '<div class="note">TTF·GO 경매 가격 또는 환산 기준(원/유로, 열량)이 없어 비교하지 않았습니다.</div>';
+    const bio = t.krw_m3 + g.krw_m3, dom = w && w.krw_m3;
+    const mx = Math.max(bio, dom || 0);
+    const bar = (v, c) => `<div class="bar"><i style="width:${(v / mx * 100).toFixed(0)}%;background:${c}"></i></div>`;
+    const md = d => d ? `${+d.slice(5, 7)}.${+d.slice(8, 10)}` : '-';
+    const rows = [
+      ['유럽 천연가스 (TTF)', `${md(t.date)} · €${fmt(t.value, 2)}/MWh`, t.krw_m3, '#94a3b8'],
+      ['+ 인증 프리미엄 (프랑스 GO 경매)', `${g.date ? g.date.slice(0, 7).replace('-', '.') : '-'} 경매 · €${fmt(g.value, 2)}/MWh`, g.krw_m3, '#9fc9b4'],
+      ['= 유럽 바이오메탄 추정가', 'TTF + GO 프리미엄', bio, '#2f7d5b'],
+      ['국내 도시가스 도매요금 평균', w ? `${w.date ? +w.date.slice(5, 7) + '월' : ''} · ${fmt(w.value, 3)}원/MJ` : '-', dom, '#0f2a3d']
+    ];
+    const body = rows.map(([a, b, v, c], i) => `<tr${i === 2 ? ' style="background:#f3faf6"' : ''}><td class="l">${a}</td><td>${b}</td>
+      <td><b>${v == null ? '-' : fmt(v, 0)}</b>${v == null ? '' : bar(v, c)}</td></tr>`).join('');
+    const cmp = dom ? `유럽 바이오메탄 추정가는 국내 도시가스 도매요금의 <b>${(bio / dom * 100).toFixed(0)}%</b> 수준(차이 ${bio >= dom ? '+' : '−'}${fmt(Math.abs(bio - dom), 0)}원/㎥)이며, 이 중 인증 프리미엄 비중은 ${(g.krw_m3 / bio * 100).toFixed(0)}%입니다.` : '';
+    return `<table class="cmp"><thead><tr><th>구분</th><th>기준</th><th>원/㎥</th></tr></thead><tbody>${body}</tbody></table>
+      <div class="calc">${cmp}</div>
+      <div class="note">유럽 바이오메탄은 보통 '천연가스 가격(TTF) + 원산지보증서(GO) 등 인증 프리미엄'으로 거래됩니다. 실제 거래가는 원료·국가·보조금·인증 종류에 따라 달라지며, 위 값은 공개 자료만으로 계산한 참고용 추정입니다. 유럽 가격은 국내 공급열량으로 환산했고 운송·액화·세금은 반영하지 않았습니다. 국내 도매요금은 부가세 별도이며 원료비와 공급비를 합한 값입니다.</div>`;
   }
 };
 </script>

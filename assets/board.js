@@ -54,7 +54,8 @@
       } else if (r.cyc === '월간') {
         chg = '<span class="fl">-</span><small>다음 달부터 표시</small>';
       }
-      const krw = it.krw_kg != null ? `<span class="krw">≈ ${fmt(it.krw_kg, 0)} 원/kg</span>` : '';
+      const krw = it.krw_kg != null ? `<span class="krw">≈ ${fmt(it.krw_kg, 0)} 원/kg</span>`
+        : it.krw_m3 != null ? `<span class="krw">≈ ${fmt(it.krw_m3, 0)} 원/㎥</span>` : '';
       return `<tr${cls}>${cyc}${nm}<td class="v">${fmt(it.value, r.dec)}${krw}${spark(it.spark)}</td><td class="d">${fmtDate(it.date)}</td><td class="chg">${chg}</td>${why}</tr>`;
     }).join('');
     if (B.extra) $('extra').innerHTML = B.extra(items, fmt) || '';
