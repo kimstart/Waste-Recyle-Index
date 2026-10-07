@@ -4,11 +4,12 @@
   출처 순서: 순환자원정보센터 화면(전국평균) → 공공데이터포털 API(키 필요) → 공공데이터포털 CSV(권역 단순평균)
 - 일간: 중국 신재 플라스틱 선물 (정저우·다롄 상품거래소 연속물 종가, Sina Finance, 위안/톤) + 원/kg 환산
 - 월간: 영국 플라스틱 PRN(재활용 증명서) 가격 (letsrecycle.com, £/톤, 매월 첫 주에 전월 가격 공개) + 원/kg 환산
+- 수시: rPET 가격 (기사 기준) — collect_rpet.py 가 모은 data/rpet.json 에서 계열별 최신 기사 가격
 - 참고: 독일 bvse 플라스틱 시황 보고서 최신 PDF 링크 (plasticker.de)
 - 환율 (수출입은행 → ECB → Yahoo): 원/파운드는 PRN 원화 환산에 사용
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
 import os, re, io, csv, json, urllib.parse
-from common import UA, get, retry, run_all, now_kst
+from common import UA, get, retry, run_all, now_kst, load as load_json
 from sources import fetch_fx, fx_items, fetch_gbp
 
 RECYCLE_URL = "https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301"
@@ -332,6 +333,53 @@ def fetch_bvse(items, extra):
     raise ValueError("최근 7개월 bvse 보고서 없음")
 
 
+# ---------------------------------------------------------------- rPET 가격 (기사 기준)
+RPET_ROWS = [  # (키, 지역, 등급, 표시명, 값 종류)
+    ("rpet_eu_fgp", "유럽", "식품용 펠렛", "유럽 식품용 rPET 펠렛", "price"),
+    ("rpet_eu_prem", "유럽", "식품용 펠렛", "유럽 식품용 rPET 프리미엄", "premium"),
+    ("rpet_asia_fgp", "아시아", "식품용 펠렛", "아시아 rPET 펠렛", "price"),
+    ("rpet_kr", "국내", None, "국내 rPET", "price"),
+]
+SYM = {"EUR": "€", "USD": "$", "GBP": "£", "KRW": "원", "CNY": "위안"}
+PER_KO = {"t": "톤", "kg": "kg", "lb": "lb"}
+
+
+def fetch_rpet_items(items, extra):
+    pts = (load_json("data/rpet.json") or {}).get("points", [])
+    if not pts:
+        raise ValueError("data/rpet.json 없음")
+    out = {}
+    for key, region, grade, label, kind in RPET_ROWS:
+        ser = [p for p in pts if p["region"] == region and (grade is None or p["grade"] == grade)]
+        if kind == "premium":
+            ser = [p for p in ser if p.get("premium") is not None and p["cur"] == "EUR" and p["per"] == "t"]
+            val = lambda p: p["premium"]
+        else:
+            ser = [p for p in ser if p.get("low") is not None]
+            if ser:  # 가장 최근 기사와 같은 통화·단위 계열만 이어 본다
+                cu = (ser[-1]["cur"], ser[-1]["per"])
+                ser = [p for p in ser if (p["cur"], p["per"]) == cu]
+            val = lambda p: round((p["low"] + p["high"]) / 2, 2)
+        # 같은 날 여러 기사는 마지막 것만
+        byday = {}
+        for p in ser:
+            byday[p["date"]] = p
+        ser = [byday[d] for d in sorted(byday)]
+        if not ser:
+            print(f">> [rPET] {label} 기사 가격 없음")
+            continue
+        cur, prev = ser[-1], (ser[-2] if len(ser) > 1 else None)
+        rng = "" if kind == "premium" or cur["low"] == cur["high"] else f", 범위 {cur['low']:,.0f}~{cur['high']:,.0f}"
+        it = {"name": label, "item": f"{cur['source']} 보도{rng}", "unit": f"{SYM.get(cur['cur'], cur['cur'])}/{PER_KO.get(cur['per'], cur['per'])}",
+              "date": cur["date"], "value": val(cur), "prev_date": prev["date"] if prev else None, "prev_value": val(prev) if prev else None,
+              "spark": [val(p) for p in ser[-12:]], "src": cur["source"], "url": cur["url"], "auto": cur.get("auto", False)}
+        k = "premium_krw_kg" if kind == "premium" else "krw_kg"
+        if cur.get(k) is not None and cur["cur"] != "KRW":
+            it["krw_kg"] = cur[k]
+        out[key] = it
+    return out
+
+
 def plastic_post(items, extra):
     # 화면에서 뺀 중국 선물·환율·유가 항목은 저장 파일에서도 정리
     for k in ("cn_pet", "cn_pe", "cn_pp", "cn_pvc", "fx_usd", "fx_cny", "dubai", "brent", "wti"):
@@ -345,4 +393,4 @@ def plastic_post(items, extra):
 
 if __name__ == "__main__":
     run_all("plastic", [("국내 재생원료", fetch_recycle), ("영국 PRN", fetch_prn), ("원/파운드", fetch_gbp),
-                        ("bvse 시황", fetch_bvse)], post=plastic_post)
+                        ("bvse 시황", fetch_bvse), ("rPET 기사 가격", fetch_rpet_items)], post=plastic_post)

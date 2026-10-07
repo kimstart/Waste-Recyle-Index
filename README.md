@@ -12,6 +12,7 @@
 |---|---|---|---|
 | 폐플라스틱 | 월간 | 국내 재생원료 단가 (압축·플레이크·펠렛, 원/kg) | 한국환경공단 (순환자원정보센터 → 공공데이터포털) |
 | 폐플라스틱 | 월간 | 영국 플라스틱 PRN(재활용 증명서) 가격 (£/톤, 범위 중간값, 원/kg 환산) | letsrecycle.com |
+| 폐플라스틱 | 수시 | rPET 가격 (기사 기준): 유럽 식품용 펠렛·신재 대비 프리미엄, 아시아 펠렛, 국내 식품용 rPET | 기사 (Argus·OPIS·S&P Global 등), 기사일 ECB 환율로 원/kg 환산 |
 | 폐플라스틱 | 참고 | 영국 플라스틱 포장세 세율, 독일 bvse 플라스틱 시황(최신 PDF 링크) | HMRC, bvse·plasticker.de |
 | 바이오가스 | 일간 | REC 현물 평균가 | 한국전력거래소 |
 | 바이오가스 | 일간 | TTF 천연가스 | ICE Endex (Yahoo Finance) |
@@ -28,6 +29,7 @@ TTF·GO는 €/MWh × 원/유로 × 열량 ÷ 3,600, 도매요금은 원/MJ × �
 plastic.html, biogas.html   화면 (공통: assets/board.js, assets/board.css)
 collect_plastic.py          폐플라스틱 지표 수집 → data/plastic.json
 collect_biogas.py           바이오가스 지표 수집 → data/biogas.json
+collect_rpet.py             rPET 기사 가격 수집 → data/rpet.json (확인된 값은 data/rpet_seed.json)
 collect_news.py             뉴스 수집 → data/news_plastic.json, data/news_biogas.json
 common.py, sources.py       공통 함수, 환율·유가·Yahoo 시세
 history/                    날짜별 보관본 (화면에서 조회일자를 바꾸면 이 파일을 읽음)
@@ -41,5 +43,6 @@ history/                    날짜별 보관본 (화면에서 조회일자를 �
   - `KOREAEXIM_KEY`: 한국수출입은행 환율 API (없으면 ECB 기준환율 사용)
   - `DATA_GO_KR_KEY`: 공공데이터포털 (REC 홈페이지 수집 실패 시 대체용)
 - 뉴스 키워드·매체 목록은 `collect_news.py` 맨 위 `CONFIG` 에서 고칠 수 있습니다.
+- rPET 기사 가격: `data/rpet_seed.json` 은 기사 원문을 확인해 넣은 값입니다. 자동 추출 값(auto=true)이 틀렸으면 이 파일에 맞는 값을 넣거나 알려 주세요.
 - 영국 플라스틱 포장세 세율은 매년 4월 바뀌므로 `plastic.html` 의 `PPT` 값을 고쳐 주세요.
 - 지표 설명(비고)은 각 html 파일 아래쪽 `rows` 목록의 `why` 글자를 고치면 됩니다.

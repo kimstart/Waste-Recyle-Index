@@ -43,11 +43,13 @@
       const it = items[r.key], g = r.grp || r.cyc;
       const first = !seen[g]; seen[g] = true;
       const cyc = first ? `<td class="cyc" rowspan="${span[g]}">${r.cyc}<span>${B.cycNote[g] || ''}</span></td>` : '';
-      const sub = [it && it.item, it ? it.unit : r.unit].filter(Boolean).join(' · ');
-      const nm = `<td class="nm">${esc(it ? it.name : r.label)}<small>${esc(sub)}</small><span class="note-m">${esc(r.why)}</span></td>`;
+      let sub = esc([it && it.item, it ? it.unit : r.unit].filter(Boolean).join(' · '));
+      if (it && it.url) sub = `<a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">${sub}</a>`;
+      if (it && it.auto) sub += ' · 자동 추출';
+      const nm = `<td class="nm">${esc(it ? it.name : r.label)}<small>${sub}</small><span class="note-m">${esc(r.why)}</span></td>`;
       const why = `<td class="why">${esc(r.why)}${it && it.basis ? ` <b>(${esc(it.basis)})</b>` : ''}</td>`;
       const cls = first && Object.keys(seen).length > 1 ? ' class="sep"' : '';
-      if (!it) return `<tr${cls}>${cyc}${nm}<td colspan="3" class="fl">자료 없음</td>${why}</tr>`;
+      if (!it) return `<tr${cls}>${cyc}${nm}<td colspan="3" class="fl">${esc(r.empty || '자료 없음')}</td>${why}</tr>`;
       let chg = '<span class="fl">-</span>';
       if (it.prev_value != null && it.prev_value !== 0) {
         const d = it.value - it.prev_value, p = d / it.prev_value * 100, c = d > 0 ? 'up' : d < 0 ? 'dn' : 'fl', ar = d > 0 ? '▲' : d < 0 ? '▼' : '-';

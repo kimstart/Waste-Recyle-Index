@@ -20,6 +20,9 @@ jobs:
           python-version: '3.11'
       - name: 뉴스 수집 (폐플라스틱·바이오가스, 국내·해외)
         run: mkdir -p logs && python -u collect_news.py 2>&1 | tee logs/news.log
+      - name: rPET 기사 가격 수집
+        continue-on-error: true
+        run: python -u collect_rpet.py 2>&1 | tee logs/rpet.log
       - name: 변경 저장
         run: |
           git config user.name "github-actions[bot]"

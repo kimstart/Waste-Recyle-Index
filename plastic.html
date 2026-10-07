@@ -12,7 +12,7 @@
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 재활용 플라스틱 가격 · 영국 PRN · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 재활용 플라스틱 가격 · 영국 PRN · rPET 기사 가격 · 뉴스</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -40,7 +40,29 @@
   <div class="note">
     재활용 플라스틱: 한국환경공단 '재활용가능자원 가격조사'(VAT 포함, 원/kg, 매월 10일 기준 조사). 전국평균을 우선 쓰며, 전국평균을 받지 못한 달은 공공데이터포털 파일의 권역별 값을 단순평균해 표시하고 비고에 기준을 적습니다. 전월 대비는 이 사이트가 매달 쌓은 직전 달 값과 비교합니다.<br>
     영국 PRN: letsrecycle.com이 매월 첫 주에 공개하는 전월 플라스틱 PRN(포장재 재활용 증명서) 거래가격 범위(£/톤). 표의 값은 범위의 중간값이고, 원/kg은 원/파운드 환율로 환산했습니다(<span id="gbpNote">-</span>).<br>
+    rPET(기사 기준): 기사에 보도된 가격을 기사 게재일 기준으로 표시합니다. 가격 기준(평가기관·인도조건)이 기사마다 달라 같은 시기라도 차이가 날 수 있습니다. 아래 'rPET 가격 추이'에서 근거 문장과 원문을 확인할 수 있습니다.<br>
     자료 갱신: <span id="indUpdated">-</span>
+  </div>
+
+  <h2>rPET 가격 추이 <small id="rpUpd"></small></h2>
+  <div class="rp-bar">
+    <div class="rp-seg" id="rpSeg">
+      <button type="button" data-g="식품용 펠렛" class="on">식품용 펠렛</button><button type="button" data-g="플레이크">플레이크</button><button type="button" data-g="베일">베일</button>
+    </div>
+    <div class="rp-legend" id="rpLegend"></div>
+  </div>
+  <div class="rp-chart" id="rpChart"></div>
+  <div class="rp-sub">유럽 식품용 rPET 펠렛의 신재 PET 대비 프리미엄 <small class="fl">€/톤</small></div>
+  <div class="rp-chart" id="rpPrem"></div>
+  <table class="cmp rp">
+    <colgroup><col style="width:88px"><col style="width:56px"><col style="width:20%"><col style="width:76px"><col style="width:80px"><col class="c-q"></colgroup>
+    <thead><tr><th>기사일</th><th>지역</th><th>보도 가격</th><th>원/kg</th><th>신재 대비</th><th class="q">출처 · 근거 문장</th></tr></thead>
+    <tbody id="rpBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">
+    점 하나가 기사 하나에 나온 가격입니다(세로선은 기사에 나온 가격 범위). 원/kg은 기사일의 ECB 기준환율로 환산했습니다.
+    채운 점은 기사 원문을 확인해 넣은 값이고, 속이 빈 점은 매일 기사 본문에서 자동으로 뽑은 값이라 문맥을 잘못 읽었을 수 있으니 근거 문장을 확인하세요.
+    점을 누르면 원문 기사로 이동합니다. 국내 식품용 rPET 가격은 공개 기사에 나오는 대로 자동 추가됩니다.
   </div>
 
   <h2>참고 자료 <small>영국 플라스틱 포장세 · 독일 재생원료 시황</small></h2>
@@ -53,14 +75,14 @@
   </div>
   <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
 
-  <div class="foot">출처: 한국환경공단(순환자원정보센터·공공데이터포털), letsrecycle.com, 영국 국세청(HMRC), bvse(독일 재활용협회)·plasticker.de, 구글 뉴스, Recycling Today</div>
+  <div class="foot">출처: 한국환경공단(순환자원정보센터·공공데이터포털), letsrecycle.com, rPET 가격은 Argus·OPIS·S&P Global·EUWID·ChemOrbis·Resource Recycling 등 각 기사(표에 출처 표기), 영국 국세청(HMRC), bvse(독일 재활용협회)·plasticker.de, 구글 뉴스, Recycling Today</div>
 </div>
 
 <script>
 window.BOARD = {
   name: 'plastic',
   minKey: '20261007',
-  cycNote: { '월간': '(재활용 플라스틱)', '월간-영국': '(영국 재활용 의무)' },
+  cycNote: { '월간': '(재활용 플라스틱)', '월간-영국': '(영국 재활용 의무)', '수시': '(기사 기준)' },
   rows: [
     { cyc: '월간', key: 'r_comp_pet', label: '압축 PET', dec: 1, why: '선별장에서 재활용업체로 넘어가는 PET 원료 단가. 재활용 원가와 수거 경제성의 출발점' },
     { cyc: '월간', key: 'r_comp_pe', label: '압축 PE', dec: 1, why: '선별된 PE(비닐·용기류) 원료 단가. 폐비닐·용기 재활용 원가 지표' },
@@ -72,7 +94,11 @@ window.BOARD = {
     { cyc: '월간', key: 'r_flk_pvc', label: '플레이크 PVC', dec: 1, why: '세척·분쇄한 PVC 중간 원료. 펠렛 가공 전 단계 가격' },
     { cyc: '월간', key: 'r_pel_pe', label: '펠렛 PE', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체 매출 단가이자 신재 PE와의 경쟁력 비교 기준' },
     { cyc: '월간', key: 'r_pel_pp', label: '펠렛 PP', dec: 1, why: '최종 재생원료 판매가. 신재 PP와의 경쟁력 비교 기준' },
-    { cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 인증받은 재활용업체가 재생원료 판매가와 별도로 받는 수입이라, 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' }
+    { cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 인증받은 재활용업체가 재생원료 판매가와 별도로 받는 수입이라, 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' },
+    { cyc: '수시', key: 'rpet_eu_fgp', label: '유럽 식품용 rPET 펠렛', dec: 0, why: 'EU 음료병 재생원료 25% 의무로 형성된 식품용 rPET 시장의 대표 가격(북서유럽 도착 기준). 국내 재생원료 사용 의무화 시장이 따라갈 가격 구조의 선행 사례' },
+    { cyc: '수시', key: 'rpet_eu_prem', label: '유럽 식품용 rPET 프리미엄', dec: 0, why: '식품용 rPET 펠렛이 신재 PET보다 톤당 얼마나 비싼지. 의무화가 만든 웃돈의 크기로, 줄어들면 재생원료 공급이 수요를 따라잡았다는 신호' },
+    { cyc: '수시', key: 'rpet_asia_fgp', label: '아시아 rPET 펠렛', dec: 0, why: '중국·동남아 rPET 펠렛 수출가격(FOB). 국내 식품용 rPET과 경쟁하는 수입품 가격 기준' },
+    { cyc: '수시', key: 'rpet_kr', label: '국내 식품용 rPET', dec: 0, empty: '가격을 보도한 국내 기사 대기 중', why: '국내 기사에 나온 식품용 재생 페트 칩·플레이크 가격(원/kg). 공개 통계가 없어 기사에 가격이 나올 때 자동으로 표시' }
   ],
   extra(items, fmt) {
     const g = items.fx_gbp, b = items.ref_bvse;
@@ -96,5 +122,6 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js"></script>
+<script src="assets/rpet.js"></script>
 </body>
 </html>
