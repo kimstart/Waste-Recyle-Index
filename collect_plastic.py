@@ -1,28 +1,33 @@
 # -*- coding: utf-8 -*-
 """폐플라스틱 페이지 지표 수집 → data/plastic.json
-- 월간: 국내 재생원료 단가 (한국환경공단 순환자원정보센터 '재활용가능자원 가격조사', 전국평균, 원/kg, VAT 포함)
+- 월간: 국내 재생원료 단가 (한국환경공단 '재활용가능자원 가격조사', 원/kg, VAT 포함)
+  출처 순서: 순환자원정보센터 화면(전국평균) → 공공데이터포털 API(키 필요) → 공공데이터포털 CSV(권역 단순평균)
 - 일간: 중국 신재 플라스틱 선물 (정저우·다롄 상품거래소 연속물 종가, Sina Finance, 위안/톤) + 원/kg 환산
 - 일간: 국제유가 (오피넷), 환율 (수출입은행 → ECB → Yahoo)
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
-import re, json, http.cookiejar, urllib.request
+import os, re, io, csv, json, urllib.parse
 from common import UA, get, retry, run_all, now_kst
 from sources import fetch_fx, fx_items, fetch_oil
 
 RECYCLE_URL = "https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301"
-# (키, 사이트 품목명, 화면 표시명)
+RECYCLE_API = "https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist"
+RECYCLE_FILE_PAGE = "https://www.data.go.kr/data/3076421/fileData.do"
+DATA_KEY = urllib.parse.unquote(os.environ.get("DATA_GO_KR_KEY", ""))
+# (키, 정규화한 품목명, 화면 표시명) — 정규화: 공백·괄호·하이픈·'(잡색)' 제거. 예) '압축 (PET)', '압축-PET(잡색)' → '압축PET'
 RECYCLE_ITEMS = [
-    ("r_comp_pet", "압축 (PET)", "압축 PET"),
-    ("r_comp_pe", "압축 (PE)", "압축 PE"),
-    ("r_comp_pp", "압축 (PP)", "압축 PP"),
-    ("r_flk_pet_clear", "플레이크 (PET무색)", "플레이크 PET(무색)"),
-    ("r_flk_pet_color", "플레이크 (PET유색)", "플레이크 PET(유색)"),
-    ("r_flk_pe", "플레이크 (PE)", "플레이크 PE"),
-    ("r_flk_pp", "플레이크 (PP)", "플레이크 PP"),
-    ("r_flk_pvc", "플레이크 (PVC)", "플레이크 PVC"),
-    ("r_pel_pe", "펠렛 (PE)", "펠렛 PE"),
-    ("r_pel_pp", "펠렛 (PP)", "펠렛 PP"),
+    ("r_comp_pet", "압축PET", "압축 PET"),
+    ("r_comp_pe", "압축PE", "압축 PE"),
+    ("r_comp_pp", "압축PP", "압축 PP"),
+    ("r_flk_pet_clear", "플레이크PET무색", "플레이크 PET(무색)"),
+    ("r_flk_pet_color", "플레이크PET유색", "플레이크 PET(유색)"),
+    ("r_flk_pe", "플레이크PE", "플레이크 PE"),
+    ("r_flk_pp", "플레이크PP", "플레이크 PP"),
+    ("r_flk_pvc", "플레이크PVC", "플레이크 PVC"),
+    ("r_pel_pe", "펠렛PE", "펠렛 PE"),
+    ("r_pel_pp", "펠렛PP", "펠렛 PP"),
 ]
-REGIONS = ["수도권", "강원", "충북", "충남", "전북", "전남", "경북", "경남", "전국평균"]
+REGIONS = ["수도권", "강원", "충북", "충남", "전북", "전남", "경북", "경남"]
+BASIS_NAT, BASIS_MEAN = "전국평균", "권역 단순평균"
 
 # Sina 연속물 코드, 화면 표시명, 거래소
 FUTURES = [
@@ -32,22 +37,27 @@ FUTURES = [
     ("cn_pvc", "V0", "PVC", "다롄"),
 ]
 
-
 def _num(s):
-    s = s.replace(",", "").strip()
+    s = str(s if s is not None else "").replace(",", "").strip()
     try:
         return float(s)
     except ValueError:
         return None
 
 
+def _norm(name):
+    name = name.replace("(잡색)", "").replace("청·녹색", "청녹색")
+    return re.sub(r"[^0-9A-Za-z가-힣]", "", name)
+
+
 def _prev_month(ym):
     y, m = int(ym[:4]), int(ym[5:7])
     y, m = (y - 1, 12) if m == 1 else (y, m - 1)
-    return f"{y:04d}.{m:02d}"
+    return f"{y:04d}-{m:02d}"
 
 
-def _recycle_rows(html):
+# 각 출처는 {YYYY-MM: {정규화 품목명: {"nat": 전국평균|None, "regions": {권역: 값}}}} 를 돌려준다
+def _site_rows(html):
     rows = []
     for tr in re.findall(r'<tr class="rrm">(.*?)</tr>', html, re.S):
         cells = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", td)).strip() for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
@@ -56,54 +66,150 @@ def _recycle_rows(html):
     return rows
 
 
-def _recycle_session():
-    """첫 화면에서 쿠키를 받은 뒤 가격조사 화면을 요청"""
-    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-    H = dict(UA)
-    op.open(urllib.request.Request("https://www.recycling-info.or.kr/rrs/main.do", headers=H), timeout=40).read()
-    H["Referer"] = "https://www.recycling-info.or.kr/rrs/main.do"
-    b = op.open(urllib.request.Request(RECYCLE_URL, headers=H), timeout=40).read()
-    return b.decode("utf-8", "ignore")
+def recycle_site():
+    """① 순환자원정보센터 화면 표 (전국평균 포함). 해외 IP는 차단되는 경우가 많다."""
+    html = retry(lambda: get(RECYCLE_URL), tries=2)
+    rows = _site_rows(html)
+    if not rows:
+        title = re.search(r"<title>(.*?)</title>", html, re.S)
+        raise ValueError(f"표 없음 (응답 제목 {title.group(1).strip()[:40] if title else '-'!r})")
+    out = {}
+    for r in rows:
+        ym = r[0].replace(".", "-")
+        vals = [_num(v) for v in r[2:]]
+        out.setdefault(ym, {})[_norm(r[1])] = {"nat": vals[8] if len(vals) > 8 else None,
+                                              "regions": {REGIONS[i]: v for i, v in enumerate(vals[:8]) if v is not None}}
+    return out
+
+
+def recycle_api():
+    """② 공공데이터포털 '한국환경공단_재활용가능자원 가격조사 정보 조회 서비스' (Secret DATA_GO_KR_KEY 필요, 활용신청 후)"""
+    if not DATA_KEY:
+        raise ValueError("DATA_GO_KR_KEY 없음")
+    rows, page = [], 1
+    while page <= 30:
+        q = {"serviceKey": DATA_KEY, "pageNo": page, "numOfRows": 1000, "returnType": "json", "type": "json", "dataType": "json"}
+        txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q)), tries=2)
+        try:
+            j = json.loads(txt)
+        except ValueError:
+            raise ValueError("API 응답이 JSON이 아님: " + " ".join(txt[:200].split()))
+        root = j.get("response", j)
+        head, body = root.get("header", {}), root.get("body", {})
+        its = body.get("items", []) if isinstance(body, dict) else []
+        if isinstance(its, dict):
+            its = its.get("item", [])
+        flat = []
+        for x in its if isinstance(its, list) else [its]:
+            flat.append(x.get("item", x) if isinstance(x, dict) else x)
+        if page == 1:
+            print(f">> [재생원료 API] code={head.get('resultCode')} msg={head.get('resultMsg')} 전체={body.get('totalCount') if isinstance(body, dict) else None}")
+            print(f">> [재생원료 API] 예시: {flat[:3]}")
+        rows += flat
+        total = int(_num(body.get("totalCount")) or 0) if isinstance(body, dict) else 0
+        if not flat or len(rows) >= total:
+            break
+        page += 1
+    out = {}
+    for x in rows:
+        d = re.sub(r"\D", "", str(x.get("exmnYmd", "")))
+        price = _num(x.get("mrktPrc"))
+        if len(d) < 6 or price is None:
+            continue
+        ym = f"{d[:4]}-{d[4:6]}"
+        rec = out.setdefault(ym, {}).setdefault(_norm(str(x.get("itemNm", ""))), {"nat": None, "regions": {}})
+        region = str(x.get("stdgNm", "")).strip()
+        if "전국" in region:
+            rec["nat"] = price
+        else:
+            rec["regions"][region] = price
+    if not out:
+        raise ValueError("API 자료 없음")
+    print(f">> [재생원료 API] 월: {sorted(out)[-3:]}, 품목 예: {list(out[max(out)])[:8]}")
+    return out
+
+
+def recycle_csv():
+    """③ 공공데이터포털 파일데이터 '한국환경공단_재활용가능자원 가격조사' (키 불필요, 매월 갱신, 최신 1개월, 전국평균 열 없음)"""
+    html = retry(lambda: get(RECYCLE_FILE_PAGE), tries=2)
+    m = re.search(r"fileDownload\.do\?atchFileId=(FILE_\d+)&(?:amp;)?fileDetailSn=(\d+)", html)
+    if not m:
+        raise ValueError("파일 다운로드 경로 없음")
+    url = f"https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId={m.group(1)}&fileDetailSn={m.group(2)}&insertDataPrcus=N"
+    b = retry(lambda: get(url, raw=True, headers={"Referer": RECYCLE_FILE_PAGE}), tries=2)
+    txt = None
+    for enc in ("utf-8-sig", "cp949"):
+        try:
+            txt = b.decode(enc)
+            break
+        except UnicodeDecodeError:
+            pass
+    rows = list(csv.reader(io.StringIO(txt or "")))
+    print(f">> [재생원료 CSV] {m.group(1)} {len(rows)}행, 머리글 {rows[0] if rows else None}")
+    if len(rows) < 2:
+        raise ValueError("CSV 자료 없음")
+    head = [h.strip() for h in rows[0]]
+    out = {}
+    for r in rows[1:]:
+        if len(r) < 3 or not re.match(r"\d{4}-\d{2}", r[0].strip()):
+            continue
+        ym = r[0].strip()[:7]
+        regions = {}
+        nat = None
+        for i, h in enumerate(head[2:], start=2):
+            if i >= len(r):
+                break
+            v = _num(r[i])
+            if h in REGIONS and v is not None:
+                regions[h] = v
+            elif "전국" in h and v is not None:
+                nat = v
+        out.setdefault(ym, {})[_norm(r[1])] = {"nat": nat, "regions": regions}
+    if not out:
+        raise ValueError("CSV 해석 실패")
+    return out
 
 
 def fetch_recycle(items, extra):
-    """페이지 첫 화면에 최신 실적월 표가 그대로 들어 있다(로그인·자바스크립트 불필요).
-    기간 지정 조회는 막혀 있어, 매달 받은 값을 extra.recycle_months 에 쌓아 전월 대비를 계산한다."""
-    rows = []
-    for how, fn in (("바로 요청", lambda: get(RECYCLE_URL)), ("쿠키 세션", _recycle_session), ("http 주소", lambda: get(RECYCLE_URL.replace("https://", "http://")))):
+    """세 출처를 순서대로 시도. 전국평균이 없으면 8개 권역 단순평균을 쓰고 기준을 표시한다.
+    월별 값은 extra.recycle_months 에 쌓아 전월 대비를 계산한다(같은 달은 전국평균 값이 있으면 그것을 우선 보존)."""
+    data, src = None, None
+    for name, fn in (("순환자원정보센터", recycle_site), ("공공데이터포털 API", recycle_api), ("공공데이터포털 파일", recycle_csv)):
         try:
-            html = retry(fn, tries=2)
-        except Exception as e:
-            print(f">> [재생원료] {how} 실패: {type(e).__name__}: {str(e)[:120]}")
-            continue
-        rows = _recycle_rows(html)
-        title = re.search(r"<title>(.*?)</title>", html, re.S)
-        print(f">> [재생원료] {how}: 응답 {len(html):,}자, 제목 {title.group(1).strip()[:60] if title else '-'!r}, 표 {len(rows)}행")
-        if rows:
+            data, src = fn(), name
+            print(f">> [재생원료] {name}에서 수집: 월 {sorted(data)}")
             break
-        head = re.sub(r"\s+", " ", html[:300])
-        print(f">> [재생원료] 응답 앞부분: {head!r}")
-    print(f">> [재생원료] 실적월 {sorted({r[0] for r in rows})}")
-    if not rows:
-        raise ValueError("재생원료 표 없음")
+        except Exception as e:
+            print(f">> [재생원료] {name} 실패: {type(e).__name__}: {str(e)[:160]}")
+    if not data:
+        raise ValueError("재생원료 자료 없음 (세 출처 모두 실패)")
     months = extra.setdefault("recycle_months", {})
-    for r in rows:
-        ym, name, vals = r[0], r[1], r[2:]
-        rec = {REGIONS[i]: _num(v) for i, v in enumerate(vals[:len(REGIONS)])}
-        months.setdefault(ym, {})[name] = rec
-    latest = max(r[0] for r in rows)
+    for ym, its in data.items():
+        for nm, rec in its.items():
+            regs = rec.get("regions") or {}
+            if rec.get("nat") is not None:
+                val, basis = rec["nat"], BASIS_NAT
+            elif regs:
+                val, basis = round(sum(regs.values()) / len(regs), 1), BASIS_MEAN
+            else:
+                continue
+            old = months.setdefault(ym, {}).get(nm)
+            if old and old.get("basis") == BASIS_NAT and basis != BASIS_NAT:
+                continue
+            months[ym][nm] = {"value": val, "basis": basis, "capital": regs.get("수도권"), "n": len(regs), "src": src}
+    latest = max(data)
     prev_ym = _prev_month(latest)
     out = {}
-    for key, site_name, label in RECYCLE_ITEMS:
-        cur = months.get(latest, {}).get(site_name)
-        if not cur or cur.get("전국평균") is None:
-            print(f">> [재생원료] {site_name} 값 없음")
+    for key, nm, label in RECYCLE_ITEMS:
+        cur = months.get(latest, {}).get(nm)
+        if not cur:
+            print(f">> [재생원료] {nm} 값 없음")
             continue
-        prev = (months.get(prev_ym) or {}).get(site_name) or {}
-        out[key] = {"name": label, "unit": "원/kg", "date": latest.replace(".", "-"), "value": cur["전국평균"],
-                    "prev_date": prev_ym.replace(".", "-") if prev.get("전국평균") is not None else None,
-                    "prev_value": prev.get("전국평균"), "capital": cur.get("수도권"), "src": "순환자원정보센터"}
-    # 너무 오래된 달은 정리(최근 36개월만 보관)
+        prev = (months.get(prev_ym) or {}).get(nm) or {}
+        out[key] = {"name": label, "unit": "원/kg", "date": latest, "value": cur["value"],
+                    "prev_date": prev_ym if prev.get("value") is not None else None, "prev_value": prev.get("value"),
+                    "capital": cur.get("capital"), "src": cur.get("src"),
+                    "basis": None if cur["basis"] == BASIS_NAT else f"{cur['basis']}, {cur['n']}개 권역 값"}
     for k in sorted(months)[:-36]:
         months.pop(k, None)
     return out
