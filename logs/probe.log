@@ -1,0 +1,22 @@
+== 200 247593B https://www.re.or.kr/bid/listBidResultPage.do
+                                   <!-- yhk -->  <!-- 로그인여부 -->   	                   <script type="text/javascript" charset="utf-8"> //테르텐 화면정보 유출 방지 솔루션 설정 var WebCubeAgentVersion_ = '1.1.9.3'; /
+      6 낙찰
+     31 매각
+== 200 240797B https://www.re.or.kr/bid/viewBidResultPage.do?bidAdNum=20260928003&bidTimeNum=0
+E                                   <!-- yhk -->  <!-- 로그인여부 -->   	                   <script type="text/javascript" charset="utf-8"> //테르텐 화면정보 유출 방지 솔루션 설정 var WebCubeAgentVersion_ = '1.1.9.3'; 
+      1 245 (원/kg)
+      2 낙찰
+      2 매각
+== 200 48082B https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301
+<title>ERROR
+<!DOCTYPE html> <html> <head> <title>ERROR</title> <style>  .container {   font-family: arial;   margin: 1px;   width: 100%;   height: 700px;   outline: 0px #ffffff;   display: flex;   justify-content: center;   align-items: center; }  img {   //width: 100%;   height: 90%; }  <
+== 401 186B https://apis.data.go.kr/1230000/ad/BidPublicInfoService/getBidPblancListInfoServc?numOfRows=1&pageNo=1&type=json
+{   "OpenAPI_ServiceResponse": {     "cmmMsgHeader": {       "errMsg": "SERVICE_KEY_IS_NULL",       "returnAuthMsg": "서비스 접근거부",       "returnReasonCode": "20"     }   } } 
+== 200 248B https://www.law.go.kr/DRF/lawSearch.do?target=law&query=%EC%9E%90%EC%9B%90%EC%9E%AC%ED%99%9C%EC%9A%A9
+<?xml version="1.0" encoding="UTF-8"?>     <Response>         <result>필수입력요소 검증에 실패하였습니다.</result>         <msg>필수 입력값이 존재하지 않습니다. 요청 URL을 확인해 주세요.</msg>     </Response> 
+== 200 1510B https://www.mcee.go.kr/
+<title>기후에너지환경부 홈페이지
+<!DOCTYPE html> <html> 	<head> 		<meta charset="utf-8"> 		<title>기후에너지환경부 홈페이지</title> 	</head> 	<script> 		function isSmartPhone() { 			return /Mobi|Android|iPhone|iPad|iPod|Winddows Phone|webOS/i.test(navigator.userAgent); 		} 		 		const {hostname} = window.locat
+== 301 262B https://www.me.go.kr/home/web/board/list.do?menuId=10525
+<title>301 Moved Permanently
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> <html><head> <title>301 Moved Permanently</title> </head><body> <h1>Moved Permanently</h1> <p>The document has moved <a href="https://mcee.go.kr/home/web/board/list.do?menuId=10525">here</a>.</p> </body></html> 
