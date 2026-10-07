@@ -211,12 +211,27 @@ def collect_ko(cfg, now, hours, when):
         t = re.sub(r"\[[^\]]*\]|[\"“”'‘’]", " ", g["item"]["title"])
         m = re.search(r"[A-Za-z가-힣]{2,}", t)
         return m.group(0)[:2] if m else ""
-    top, cnt, pool = [], {}, list(groups)
+    # 여러 기사에 반복되는 소재어(두 글자 앞머리, 검색 키워드 제외) — 같은 보도자료를 받아쓴 기사 묶음을 찾는 데 쓴다
+    core2 = {w[:2] for w in cfg["ko_keywords"] + cfg["ko_core"] + cfg["ko_require"] if len(w) >= 2}
+    def words(g):
+        return {w[:2] for w in re.findall(r"[가-힣A-Za-z]{2,}", g["item"]["title"]) if w[:2] not in core2}
+    freq = {}
+    for g in groups:
+        for w in words(g):
+            freq[w] = freq.get(w, 0) + 1
+    hot = {w for w, n in freq.items() if n >= 4}
+    print(f"   [국내] 반복 소재어: {sorted(hot)}")
+    top, cnt, wcnt, pool = [], {}, {}, list(groups)
+    def adj(g):
+        hw = [wcnt.get(w, 0) for w in words(g) & hot]
+        return score(g)[0] - 5 * cnt.get(lead(g), 0) - 6 * max([0] + [n - 1 for n in hw if n >= 2])
     while pool and len(top) < TOP_KO:
-        best = max(pool, key=lambda g: (score(g)[0] - 5 * cnt.get(lead(g), 0), g["item"]["pub"].timestamp()))
+        best = max(pool, key=lambda g: (adj(g), g["item"]["pub"].timestamp()))
         pool.remove(best)
         top.append(best)
         cnt[lead(best)] = cnt.get(lead(best), 0) + 1
+        for w in words(best) & hot:
+            wcnt[w] = wcnt.get(w, 0) + 1
     top.sort(key=lambda g: -g["item"]["pub"].timestamp())
     return pack(top), len(allit)
 
