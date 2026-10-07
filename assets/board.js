@@ -36,12 +36,13 @@
   function renderTable(st) {
     const items = (st && st.items) || {};
     $('indUpdated').textContent = st && st.updated ? st.updated + ' (KST)' : '-';
-    const span = {}; B.rows.forEach(r => span[r.cyc] = (span[r.cyc] || 0) + 1);
+    // grp: 같은 주기라도 묶음을 나눌 때 쓰는 이름(없으면 cyc)
+    const span = {}; B.rows.forEach(r => { const g = r.grp || r.cyc; span[g] = (span[g] || 0) + 1; });
     const seen = {};
     $('indBody').innerHTML = B.rows.map(r => {
-      const it = items[r.key];
-      const first = !seen[r.cyc]; seen[r.cyc] = true;
-      const cyc = first ? `<td class="cyc" rowspan="${span[r.cyc]}">${r.cyc}<span>${B.cycNote[r.cyc] || ''}</span></td>` : '';
+      const it = items[r.key], g = r.grp || r.cyc;
+      const first = !seen[g]; seen[g] = true;
+      const cyc = first ? `<td class="cyc" rowspan="${span[g]}">${r.cyc}<span>${B.cycNote[g] || ''}</span></td>` : '';
       const sub = [it && it.item, it ? it.unit : r.unit].filter(Boolean).join(' · ');
       const nm = `<td class="nm">${esc(it ? it.name : r.label)}<small>${esc(sub)}</small><span class="note-m">${esc(r.why)}</span></td>`;
       const why = `<td class="why">${esc(r.why)}${it && it.basis ? ` <b>(${esc(it.basis)})</b>` : ''}</td>`;

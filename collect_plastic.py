@@ -3,11 +3,13 @@
 - 월간: 국내 재생원료 단가 (한국환경공단 '재활용가능자원 가격조사', 원/kg, VAT 포함)
   출처 순서: 순환자원정보센터 화면(전국평균) → 공공데이터포털 API(키 필요) → 공공데이터포털 CSV(권역 단순평균)
 - 일간: 중국 신재 플라스틱 선물 (정저우·다롄 상품거래소 연속물 종가, Sina Finance, 위안/톤) + 원/kg 환산
-- 환율 (수출입은행 → ECB → Yahoo): 원/위안은 중국 선물 원화 환산에 사용
+- 월간: 영국 플라스틱 PRN(재활용 증명서) 가격 (letsrecycle.com, £/톤, 매월 첫 주에 전월 가격 공개) + 원/kg 환산
+- 참고: 독일 bvse 플라스틱 시황 보고서 최신 PDF 링크 (plasticker.de)
+- 환율 (수출입은행 → ECB → Yahoo): 원/파운드는 PRN 원화 환산에 사용
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
 import os, re, io, csv, json, urllib.parse
 from common import UA, get, retry, run_all, now_kst
-from sources import fetch_fx, fx_items
+from sources import fetch_fx, fx_items, fetch_gbp
 
 RECYCLE_URL = "https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301"
 RECYCLE_API = "https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist"
@@ -258,8 +260,89 @@ def add_krw(items):
             it["fx_used"] = fx["value"]
 
 
-if __name__ == "__main__":
+# ---------------------------------------------------------------- 영국 플라스틱 PRN
+PRN_URL = "https://www.letsrecycle.com/prices/prns/prn-prices-{y}/"
+MONTHS_EN = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+
+
+def _cells(row):
+    return [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", c)).strip() for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row, re.S)]
+
+
+def prn_year(y):
+    """letsrecycle 연도별 PRN 표에서 Plastics 행을 [(YYYY-MM, 하단, 상단)] 로"""
+    html = retry(lambda: get(PRN_URL.format(y=y)), tries=2)
+    t = re.search(r'<table[^>]*price-graph-table[^>]*>(.*?)</table>', html, re.S)
+    if not t:
+        raise ValueError(f"{y} PRN 표 없음")
+    rows = [_cells(r) for r in re.findall(r"<tr[^>]*>(.*?)</tr>", t.group(1), re.S)]
+    head = [c.lower() for c in rows[0]]
+    plast = next((r for r in rows[1:] if r and re.fullmatch(r"plastics?", r[0].strip(), re.I)), None)
+    if not plast:
+        raise ValueError(f"{y} Plastics 행 없음")
+    out = []
+    for i, c in enumerate(plast[1:], start=1):
+        mon = head[i] if i < len(head) else ""
+        if mon not in MONTHS_EN:
+            continue
+        nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", c.replace(",", ""))]
+        if not nums:
+            continue
+        out.append((f"{y:04d}-{MONTHS_EN.index(mon) + 1:02d}", min(nums), max(nums)))
+    return out
+
+
+def fetch_prn(items, extra):
+    y = now_kst().year
+    series = []
+    for yy in (y - 1, y):
+        try:
+            series += prn_year(yy)
+        except Exception as e:
+            print(f">> [PRN] {yy}년 표 실패: {type(e).__name__}: {str(e)[:120]}")
+    if not series:
+        raise ValueError("PRN 자료 없음")
+    series.sort()
+    mid = lambda r: round((r[1] + r[2]) / 2, 1)
+    cur = series[-1]
+    prev = series[-2] if len(series) > 1 else None
+    rng = lambda r: f"{r[1]:g}~{r[2]:g}"
+    return {"uk_prn_plastic": {"name": "영국 플라스틱 PRN", "item": f"범위 {rng(cur)}, 중간값", "unit": "£/톤", "date": cur[0],
+                               "value": mid(cur), "low": cur[1], "high": cur[2],
+                               "prev_date": prev[0] if prev else None, "prev_value": mid(prev) if prev else None,
+                               "spark": [mid(r) for r in series[-12:]], "src": "letsrecycle.com"}}
+
+
+# ---------------------------------------------------------------- 독일 bvse 시황 (참고 자료 링크)
+BVSE_PDF = "https://plasticker.de/docs/preise/bvse_market_report_plastics_{ym}.pdf"
+
+
+def fetch_bvse(items, extra):
+    d = now_kst()
+    y, m = d.year, d.month
+    for _ in range(7):
+        url = BVSE_PDF.format(ym=f"{y:04d}_{m:02d}")
+        try:
+            b = get(url, raw=True, timeout=30)
+            if b[:4] == b"%PDF":
+                return {"ref_bvse": {"name": "bvse 플라스틱 시황", "date": f"{y:04d}-{m:02d}", "value": None, "url": url, "src": "bvse·plasticker.de"}}
+        except Exception:
+            pass
+        y, m = (y - 1, 12) if m == 1 else (y, m - 1)
+    raise ValueError("최근 7개월 bvse 보고서 없음")
+
+
+def plastic_post(items, extra):
     # 화면에서 뺀 중국 선물·환율·유가 항목은 저장 파일에서도 정리
-    DROP = ("cn_pet", "cn_pe", "cn_pp", "cn_pvc", "fx_usd", "fx_cny", "dubai", "brent", "wti")
-    run_all("plastic", [("국내 재생원료", fetch_recycle)],
-            post=lambda items, extra: [items.pop(k, None) for k in DROP])
+    for k in ("cn_pet", "cn_pe", "cn_pp", "cn_pvc", "fx_usd", "fx_cny", "dubai", "brent", "wti"):
+        items.pop(k, None)
+    # PRN £/톤 → 원/kg (원/파운드 × £/톤 ÷ 1000)
+    p, g = items.get("uk_prn_plastic"), items.get("fx_gbp")
+    if p and g:
+        p["krw_kg"] = round(p["value"] * g["value"] / 1000, 1)
+        p["fx_used"] = g["value"]
+
+
+if __name__ == "__main__":
+    run_all("plastic", [("국내 재생원료", fetch_recycle), ("영국 PRN", fetch_prn), ("원/파운드", fetch_gbp),
+                        ("bvse 시황", fetch_bvse)], post=plastic_post)
