@@ -81,7 +81,8 @@ def fetch_recycle(items, extra):
         print(f">> [재생원료] {how}: 응답 {len(html):,}자, 제목 {title.group(1).strip()[:60] if title else '-'!r}, 표 {len(rows)}행")
         if rows:
             break
-        print(f">> [재생원료] 응답 앞부분: {re.sub(r'\s+', ' ', html[:300])!r}")
+        head = re.sub(r"\s+", " ", html[:300])
+        print(f">> [재생원료] 응답 앞부분: {head!r}")
     print(f">> [재생원료] 실적월 {sorted({r[0] for r in rows})}")
     if not rows:
         raise ValueError("재생원료 표 없음")
