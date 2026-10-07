@@ -76,7 +76,7 @@ EN_NOISE = ["stock", "shares", "market size", "cagr", "forecast 20", "market rep
             "sign up", "webinar", "register now", "podcast", "award nominations", "appointed", "appoints", "names new"]
 KO_SRC_BLOCK = ["Vietnam.vn", "Daum"]   # 기계번역·포털 재게시
 KO_NOISE = ["연봉", "채용", "인사", "부고", "결혼", "장학", "봉사", "기부", "특징주", "목표주가", "주가", "수상", "표창", "시상",
-            "동정", "화재", "합작법인", "산업전", "농구", "배구", "야구", "축구", "시즌", "후원", "나눔", "캠페인", "공모전"]
+            "동정", "화재", "공장서 불", "불…", "합작법인", "산업전", "농구", "배구", "야구", "축구", "시즌", "후원", "나눔", "캠페인", "공모전"]
 KO_SOFT = ["설명회", "포럼", "세미나", "워크숍", "개최", "성료", "간담회", "발대식", "업무협약", "MOU", "협약식", "맞손"]
 POLICY = ["정책", "제도", "개편", "기본계획", "정부", "국회", "법안", "개정", "시행령", "고시", "규제", "의무", "목표제", "기후부",
           "환경부", "산업부", "가격", "단가", "요금"]
@@ -228,6 +228,8 @@ def collect_ko(cfg, now, hours, when):
     while pool and len(top) < TOP_KO:
         best = max(pool, key=lambda g: (adj(g), g["item"]["pub"].timestamp()))
         pool.remove(best)
+        if any(wcnt.get(w, 0) >= 3 for w in words(best) & hot):   # 같은 소재 기사는 최대 3건
+            continue
         top.append(best)
         cnt[lead(best)] = cnt.get(lead(best), 0) + 1
         for w in words(best) & hot:
