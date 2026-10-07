@@ -25,17 +25,17 @@ jobs:
         continue-on-error: true
         env:
           KOREAEXIM_KEY: ${{ secrets.KOREAEXIM_KEY }}
-        run: python collect_plastic.py
+        run: mkdir -p logs && python -u collect_plastic.py 2>&1 | tee logs/plastic.log
       - name: 바이오가스 지표 수집
         continue-on-error: true
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: python collect_biogas.py
+        run: mkdir -p logs && python -u collect_biogas.py 2>&1 | tee logs/biogas.log
       - name: 변경 저장
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data history
+          git add data history logs
           git diff --staged --quiet && { echo "변경 없음"; exit 0; }
           git commit -m "Auto: indicators [$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')]"
           for i in 1 2 3 4 5; do
