@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 11:29",
+ "updated": "2026-10-07 11:43",
  "items": {
   "r_comp_pet": {
    "name": "압축 PET",
@@ -110,6 +110,50 @@
    "capital": 813.7,
    "src": "공공데이터포털 파일",
    "basis": "권역 단순평균, 5개 권역 값"
+  },
+  "uk_prn_plastic": {
+   "name": "영국 플라스틱 PRN",
+   "item": "범위 475~625, 중간값",
+   "unit": "£/톤",
+   "date": "2026-08",
+   "value": 550.0,
+   "low": 475.0,
+   "high": 625.0,
+   "prev_date": "2026-07",
+   "prev_value": 457.5,
+   "spark": [
+    305.0,
+    360.0,
+    311.5,
+    280.0,
+    307.5,
+    295.0,
+    340.0,
+    335.0,
+    355.0,
+    385.0,
+    457.5,
+    550.0
+   ],
+   "src": "letsrecycle.com",
+   "krw_kg": 977.6,
+   "fx_used": 1777.42
+  },
+  "fx_gbp": {
+   "name": "원/파운드",
+   "unit": "원",
+   "date": "2026-10-06",
+   "value": 1777.42,
+   "prev_date": "2026-10-05",
+   "prev_value": 1777.38,
+   "src": "ECB 기준환율"
+  },
+  "ref_bvse": {
+   "name": "bvse 플라스틱 시황",
+   "date": "2026-08",
+   "value": null,
+   "url": "https://plasticker.de/docs/preise/bvse_market_report_plastics_2026_08.pdf",
+   "src": "bvse·plasticker.de"
   }
  },
  "extra": {
