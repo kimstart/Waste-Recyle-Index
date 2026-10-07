@@ -4,6 +4,8 @@
   const COLORS = { '유럽': '#2a78d6', '아시아': '#eb6834', '북미': '#1baf7a', '국내': '#eda100' };
   const REGIONS = ['유럽', '아시아', '북미', '국내'];
   const GRADES = ['식품용 펠렛', '플레이크', '베일'];
+  const GLABEL = { '베일': '선별품' };   // 화면 표시명 (자료에는 '베일'로 저장)
+  const gl = g => GLABEL[g] || g;
   const SYM = { EUR: '€', USD: '$', GBP: '£', KRW: '', CNY: '' };
   const PER = { t: '톤', kg: 'kg', lb: 'lb' };
   const $ = id => document.getElementById(id);
@@ -115,8 +117,8 @@
     $('rpLegend').innerHTML = series.map(s => `<span><i style="background:${s.color}"></i>${s.name}</span>`).join('') +
       `<span><b style="background:#475569"></b>기사 확인</span><span><b style="border:2px solid #475569;background:#fff"></b>자동 추출</span>`;
     drawChart($('rpChart'), series, {
-      height: 260, label: `${GRADE} rPET 가격 추이 (원/kg)`, empty: '이 등급의 기사 가격이 아직 없습니다.',
-      value: d => `${n0(d.y)} 원/kg`, line1: (s, d) => `${s.name} · ${GRADE} · ${priceText(d.p)}`,
+      height: 260, label: `${gl(GRADE)} rPET 가격 추이 (원/kg)`, empty: '이 등급의 기사 가격이 아직 없습니다.',
+      value: d => `${n0(d.y)} 원/kg`, line1: (s, d) => `${s.name} · ${gl(GRADE)} · ${priceText(d.p)}`,
       endLabel: (s, d) => s.name
     });
     const rows = pts.slice().sort((a, b) => b.date.localeCompare(a.date)).slice(0, 15);

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261007b">
+<link rel="stylesheet" href="assets/board.css?v=20261007c">
 </head>
 <body>
 <header class="site-header">
@@ -47,7 +47,7 @@
   <h2>rPET 가격 추이 <small id="rpUpd"></small></h2>
   <div class="rp-bar">
     <div class="rp-seg" id="rpSeg">
-      <button type="button" data-g="식품용 펠렛" class="on">식품용 펠렛</button><button type="button" data-g="플레이크">플레이크</button><button type="button" data-g="베일">베일</button>
+      <button type="button" data-g="식품용 펠렛" class="on">식품용 펠렛</button><button type="button" data-g="플레이크">플레이크</button><button type="button" data-g="베일">선별품</button>
     </div>
     <div class="rp-legend" id="rpLegend"></div>
   </div>
@@ -60,7 +60,7 @@
     <tbody id="rpBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
   </table>
   <div class="note">
-    점 하나가 기사 하나에 나온 가격입니다(세로선은 기사에 나온 가격 범위). 원/kg은 기사일의 ECB 기준환율로 환산했습니다.
+    선별품은 선별장에서 페트병을 골라 압축한 묶음(베일), 플레이크는 이를 분쇄·세척한 조각, 식품용 펠렛은 플레이크를 녹여 식품용으로 다시 만든 알갱이입니다. 점 하나가 기사 하나에 나온 가격입니다(세로선은 기사에 나온 가격 범위). 원/kg은 기사일의 ECB 기준환율로 환산했습니다.
     채운 점은 기사 원문을 확인해 넣은 값이고, 속이 빈 점은 매일 기사 본문에서 자동으로 뽑은 값이라 문맥을 잘못 읽었을 수 있으니 근거 문장을 확인하세요.
     점을 누르면 원문 기사로 이동합니다. 국내 식품용 rPET 가격은 공개 기사에 나오는 대로 자동 추가됩니다.
   </div>
@@ -121,7 +121,7 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261007b"></script>
-<script src="assets/rpet.js?v=20261007b"></script>
+<script src="assets/board.js?v=20261007c"></script>
+<script src="assets/rpet.js?v=20261007c"></script>
 </body>
 </html>
