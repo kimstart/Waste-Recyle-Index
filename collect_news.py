@@ -36,6 +36,8 @@ CONFIG = {
                      "recyclingtoday.com", "recyclinginternational.com", "sustainableplastics.com", "euwid-recycling.com",
                      "packagingeurope.com", "packaging-gateway.com", "letsrecycle.com", "icis.com"],
         "en_site_query": "(recycling OR recycled OR rPET OR resin OR prices OR PPWR)",
+        "en_topic": ["recycl", "rpet", "pyrolysis", "ppwr", "circular", "waste", "virgin", "price", "treaty", "epr", "reuse",
+                     "refill", "single-use", "deposit", "collection", "sorting", "bale", "post-consumer", "pcr", "recover"],
         "en_whitelist_only": True,
         "rss": [("Recycling Today", "https://www.recyclingtoday.com/rss/",
                  r"plastic|\bpet\b|rpet|hdpe|polypropylene|polyethylene|resin|pyrolysis|bottle|film|flexible|packaging")],
@@ -204,8 +206,17 @@ def collect_ko(cfg, now, hours, when):
         return min(core, 4) * 3 + pol + min(g["more"], 3) - 3 * sum(1 for w in KO_SOFT if w in t), core
 
     groups = [g for g in groups if score(g)[1] >= 1]
-    groups.sort(key=lambda g: (score(g)[0], g["item"]["pub"].timestamp()), reverse=True)
-    top = groups[:TOP_KO]
+    # 같은 주어·소재(제목 앞 낱말, 따옴표 속 핵심어)로 시작하는 기사가 한쪽으로 몰리지 않도록, 뽑힌 수만큼 점수를 깎으며 한 건씩 선택
+    def lead(g):
+        t = re.sub(r"\[[^\]]*\]|[\"“”'‘’]", " ", g["item"]["title"])
+        m = re.search(r"[A-Za-z가-힣]{2,}", t)
+        return m.group(0)[:2] if m else ""
+    top, cnt, pool = [], {}, list(groups)
+    while pool and len(top) < TOP_KO:
+        best = max(pool, key=lambda g: (score(g)[0] - 5 * cnt.get(lead(g), 0), g["item"]["pub"].timestamp()))
+        pool.remove(best)
+        top.append(best)
+        cnt[lead(best)] = cnt.get(lead(best), 0) + 1
     top.sort(key=lambda g: -g["item"]["pub"].timestamp())
     return pack(top), len(allit)
 
@@ -244,7 +255,8 @@ def collect_en(cfg, now, hours, when):
     rows = [r for r in allit if now - r["pub"] <= timedelta(hours=hours)
             and not in_list(r["source"], EN_BLOCK) and not any(w in r["title"].lower() for w in EN_NOISE)
             and hangul_ratio(r["title"]) < 0.2
-            and title_has(r["title"], cfg["en_require"])]
+            and title_has(r["title"], cfg["en_require"])
+            and (not cfg.get("en_topic") or any(w in r["title"].lower() for w in cfg["en_topic"]))]
     if cfg["en_whitelist_only"]:
         dropped = sorted({r["source"] for r in rows if not in_list(r["source"], cfg["en_sources"])})
         rows = [r for r in rows if in_list(r["source"], cfg["en_sources"])]
