@@ -58,7 +58,7 @@
         : it.krw_m3 != null ? `<span class="krw">≈ ${fmt(it.krw_m3, 0)} 원/㎥</span>` : '';
       return `<tr${cls}>${cyc}${nm}<td class="v">${fmt(it.value, r.dec)}${krw}${spark(it.spark)}</td><td class="d">${fmtDate(it.date)}</td><td class="chg">${chg}</td>${why}</tr>`;
     }).join('');
-    if (B.extra) $('extra').innerHTML = B.extra(items, fmt) || '';
+    if (B.extra && $('extra')) $('extra').innerHTML = B.extra(items, fmt) || '';
   }
 
   function renderNews(nj) {
@@ -87,7 +87,7 @@
       getJson(isToday ? `data/news_${B.name}.json` : `history/news_${B.name}_${key}.json`).catch(() => null)
     ]);
     if (my !== SEQ) return;
-    if (!st) { $('indBody').innerHTML = `<tr><td colspan="6" class="fl">${isToday ? '아직 수집된 자료가 없습니다.' : '해당 일자에 저장된 자료가 없습니다.'}</td></tr>`; $('extra').innerHTML = ''; }
+    if (!st) { $('indBody').innerHTML = `<tr><td colspan="6" class="fl">${isToday ? '아직 수집된 자료가 없습니다.' : '해당 일자에 저장된 자료가 없습니다.'}</td></tr>`; if ($('extra')) $('extra').innerHTML = ''; }
     else renderTable(st);
     renderNews(nj);
   }

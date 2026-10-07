@@ -259,14 +259,7 @@ def add_krw(items):
 
 
 if __name__ == "__main__":
-    def futures_with_krw(items, extra):
-        got = fetch_futures(items, extra)
-        tmp = dict(items)
-        tmp.update(got)
-        add_krw(tmp)
-        return {k: tmp[k] for k in got}
-
-    # 환율을 먼저 받아야 선물 원화 환산에 최신 환율이 쓰인다
-    run_all("plastic", [("환율", fetch_fx_step), ("국내 재생원료", fetch_recycle),
-                        ("중국 선물", futures_with_krw)],
-            post=lambda items, extra: [items.pop(k, None) for k in ("dubai", "brent", "wti")])  # 화면에서 뺀 유가 정리
+    # 화면에서 뺀 중국 선물·환율·유가 항목은 저장 파일에서도 정리
+    DROP = ("cn_pet", "cn_pe", "cn_pp", "cn_pvc", "fx_usd", "fx_cny", "dubai", "brent", "wti")
+    run_all("plastic", [("국내 재생원료", fetch_recycle)],
+            post=lambda items, extra: [items.pop(k, None) for k in DROP])
