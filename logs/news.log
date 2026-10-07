@@ -1,17 +1,17 @@
 >> [plastic] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '폐플라스틱' 9건
+   [국내] '폐플라스틱' 8건
    [국내] '재생원료 플라스틱' 1건
-   [국내] '재생플라스틱' 0건
-   [국내] '플라스틱 재활용' 7건
+   [국내] '재생플라스틱' 3건
+   [국내] '플라스틱 재활용' 8건
    [국내] '페트 재활용' 3건
    [국내] '열분해유' 0건
-   [국내] '화학적 재활용' 8건
+   [국내] '화학적 재활용' 7건
    [국내] '폐비닐' 0건
    [국내] '재생원료 사용 의무' 1건
    [국내] '플라스틱 협약' 9건
-   [국내] '순환경제 플라스틱' 12건
+   [국내] '순환경제 플라스틱' 11건
    [국내] '재활용 선별장' 0건
-   [해외] 'rPET' 7건
+   [해외] 'rPET' 6건
    [해외] '"recycled PET"' 6건
    [해외] '"chemical recycling"' 8건
    [해외] '"plastic pyrolysis"' 0건
@@ -29,26 +29,27 @@
    [해외 전문지] recyclinginternational.com 6건
    [해외 전문지] sustainableplastics.com 0건
    [해외 전문지] euwid-recycling.com 8건
-   [해외 전문지] packagingeurope.com 84건
+   [해외 전문지] packagingeurope.com 88건
    [해외 전문지] packaging-gateway.com 11건
    [해외 전문지] letsrecycle.com 9건
    [해외 전문지] icis.com 23건
    [해외 RSS] Recycling Today 5건
    [해외] 전문지 외 제외: Bizcommunity, Business Standard, Diari ARA, Graphene-Info, Greenpeace, Knoxville News Sentinel, Labmate Online, Lancaster Farming, Lexology, Mexico Business News, Morocco World News, Premium Beauty News, Spectrum News, Tech Xplore, WhatTheyThink, www.ctiweb.co.jp
->> [plastic] 국내 50건 → 12건, 해외 307건 → 10건
+>> [plastic] 국내 51건 → 12건, 해외 310건 → 10건
    - [한국미디어뉴스통신] [칼럼] 65%라는 숫자 뒤에 숨은 착시… ‘진짜 재활용’을 가리는 통계의 맹점
    - [경인매일] LG유니참, 친환경 생산·플라스틱 감축 확대...ESG 경영 강화
    - [뉴스21 통신] 양평공사, 생활 속 자원순환 실천… 폐건전지·플라스틱 병뚜껑 121.5kg 수거
    - [비즈월드] 투명페트병 무인회수기 ‘모이지(Mo-EZ)’, AI 자동선별 기술로 2026 서울 AI 로봇쇼 참가
+   - [Webike Japan] 혼다, 'Japan Mobility Show Bizweek 2026' 전시 개요 발표! 폐기된 4륜차 범퍼를 오토바이 부품으로 재활용하는 기술 선보여
    - [위클리서울] [Better Earth⑪] 재생원료 10% 의무화에 달아오른 유통·식음료 패키징 생태계
    - [에너지경제신문] [2026 국감] “일회용품 규제 풀자 컵 사용 1억3200만개 늘어”
    - [뉴스;트리] '국제 플라스틱 협약' 내년 3월 타결?...생산규제 접점 찾나
-   - [브레이크뉴스] 서왕진 조국혁신당 의원 “1회용컵 규제 철회, 10억8,900만개 사용급증 '규제 필요'”
    - [중앙뉴스타임스] 서왕진의원, “1회용컵 규제 신호 사라지자 사용량 급증… ‘자발적 협약’ 실효성 도마 위”
    - [에너지데일리] 1회용컵 규제 신호 약해지자 다시 10억개 돌파…‘자발적 협약’ 한계 드러나
    - [핀포인트뉴스] SK케미칼, 폐현수막 순환경제 사업단 구축…화학적 재활용 확대
    - [연합뉴스] 서산 대산읍 폐기물 재활용 공장서 불…대응 1단계 발령
-   - [Packaging Europe] €23 million in growth financing set to help Paptic phase out rise in plastic packaging
+   - [Plastics News] Extruder America Plastics pays $2.25M to settle COVID loan probe
+   - [PlasticsToday] Delta Tecnic Launches Antimony Trioxide Masterbatch for Safer Plastics
    - [Packaging Europe] Refillable cream jar and 50% recycled plastic caps and pumps among Beiersdorf’s newest CO2 reduction efforts
    - [Recycling International] PolyCert scheme supports use of recycled content in food packaging
    - [Plastics News] A healthcare push against ‘unnecessary’ single-use plastic
@@ -57,7 +58,6 @@
    - [EUWID Recycling and Waste Management] Chemical recycling: PPWR is key to capacity expansion
    - [Packaging Europe] Antalis launches blown hand stretch film containing 30% recycled content
    - [EUWID Recycling and Waste Management] Blue Alp targets 2028 construction start for Rotterdam pyrolysis plant
-   - [Packaging Europe] Kraft Heinz to set virgin plastic reduction goal following shareholder pressure
 >> data/news_plastic.json, history/news_plastic_20261007.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
    [국내] '바이오가스' 21건
@@ -70,25 +70,25 @@
    [국내] '하수슬러지 바이오가스' 1건
    [국내] '바이오가스화시설' 13건
    [국내] '음식물쓰레기 처리' 1건
-   [해외] 'biomethane' 50건
-   [해외] 'biogas' 54건
+   [해외] 'biomethane' 51건
+   [해외] 'biogas' 53건
    [해외] '"renewable natural gas"' 12건
-   [해외] '"anaerobic digestion"' 10건
-   [해외] 'biomethane price' 10건
+   [해외] '"anaerobic digestion"' 9건
+   [해외] 'biomethane price' 11건
    [해외] '"guarantees of origin" biomethane' 0건
    [해외] 'biomethane grid injection' 7건
    [해외] 'RNG landfill gas' 1건
    [해외 전문지] bioenergy-news.com 6건
    [해외 전문지] gasworld.com 23건
    [해외 전문지] endswasteandbioenergy.com 2건
-   [해외 전문지] argusmedia.com 12건
+   [해외 전문지] argusmedia.com 13건
    [해외 전문지] qcintel.com 4건
    [해외 전문지] biomassmagazine.com 11건
    [해외 전문지] europeanbiogas.eu 0건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 1건
    [해외 전문지] wastedive.com 5건
->> [biogas] 국내 69건 → 12건, 해외 208건 → 10건
+>> [biogas] 국내 69건 → 12건, 해외 209건 → 10건
    - [시대일보] “바이오가스 생산목표제 시군별 여건 다른데 대응은 같을 수 없다”경기연구원, 소규모 지자체는 ‘지역거점형 통합바이오가스화’ 필요:시대일보
    - [인천일보] 경기연구원 “공공 바이오가스 생산, 지역거점 방식 검토를”
    - [OBC 뉴스] 의왕 하루 20~25톤…바이오가스 단독시설 한계
@@ -105,8 +105,8 @@
    - [The News Pakistan] Punjab plans to expand biogas production across province
    - [ENDS Waste & Bioenergy] Dutch biogas project working towards FID
    - [ENDS Waste & Bioenergy] ADBA: UK energy plan misses ‘cheapest fix’ by overlooking biomethane
+   - [KELOLAND.com] PUC levies a penalty on a Chevron biogas operation
    - [Bioenergy Insight Magazine] Toyota Tsusho and KBI launch Indonesian biomethane venture
-   - [World Bio Market Insights] Infinium expands into biogas-based SAF
    - [Montel News] Bodecker invests in biogas power plants in Sweden
    - [Water Magazine] New Landia digester mixing system for farm-based biogas plant in Japan
    - [Bioenergy Insight Magazine] Ireland opens first-of-its-kind €32m biomethane grid injection hub in Cork
