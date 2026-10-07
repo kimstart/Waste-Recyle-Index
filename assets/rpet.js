@@ -100,7 +100,7 @@
         const l2 = document.createElement('div'); l2.textContent = `${dot(p.date)} · ${p.source}${p.auto ? ' · 자동 추출' : ''}`; tip.appendChild(l2);
         if (p.quote) { const q = document.createElement('q'); q.textContent = p.quote.length > 160 ? p.quote.slice(0, 160) + '…' : p.quote; tip.appendChild(q); }
       }
-      const br = box.getBoundingClientRect();
+      const br = box.getBoundingClientRect(), k = W / svg.getBoundingClientRect().width;
       const left = Math.min(ev.clientX - br.left + 12, br.width - 296);
       tip.style.left = Math.max(0, left) + 'px'; tip.style.top = (h.y / k + 12) + 'px'; tip.style.display = 'block';
     });
