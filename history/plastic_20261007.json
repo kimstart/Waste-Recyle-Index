@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07 10:14",
+ "updated": "2026-10-07 10:19",
  "items": {
   "fx_usd": {
    "name": "원/달러",
@@ -221,7 +221,276 @@
    "prev_date": "2026-10-05",
    "prev_value": 89.43,
    "src": "오피넷"
+  },
+  "r_comp_pet": {
+   "name": "압축 PET",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 601.2,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 613.6,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 6개 권역 값"
+  },
+  "r_comp_pe": {
+   "name": "압축 PE",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 469.7,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 478.5,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 6개 권역 값"
+  },
+  "r_comp_pp": {
+   "name": "압축 PP",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 378.7,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 378.0,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 6개 권역 값"
+  },
+  "r_flk_pet_clear": {
+   "name": "플레이크 PET(무색)",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 1160.9,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 1207.0,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 2개 권역 값"
+  },
+  "r_flk_pet_color": {
+   "name": "플레이크 PET(유색)",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 487.3,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 490.6,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 2개 권역 값"
+  },
+  "r_flk_pe": {
+   "name": "플레이크 PE",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 650.0,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 693.9,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 8개 권역 값"
+  },
+  "r_flk_pp": {
+   "name": "플레이크 PP",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 538.4,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 550.7,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 8개 권역 값"
+  },
+  "r_flk_pvc": {
+   "name": "플레이크 PVC",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 547.1,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 557.9,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 3개 권역 값"
+  },
+  "r_pel_pe": {
+   "name": "펠렛 PE",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 991.1,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 929.1,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 4개 권역 값"
+  },
+  "r_pel_pp": {
+   "name": "펠렛 PP",
+   "unit": "원/kg",
+   "date": "2026-09",
+   "value": 801.0,
+   "prev_date": null,
+   "prev_value": null,
+   "capital": 813.7,
+   "src": "공공데이터포털 파일",
+   "basis": "권역 단순평균, 5개 권역 값"
   }
  },
- "extra": {}
+ "extra": {
+  "recycle_months": {
+   "2026-09": {
+    "신문지": {
+     "value": 125.0,
+     "basis": "권역 단순평균",
+     "capital": 147.5,
+     "n": 7,
+     "src": "공공데이터포털 파일"
+    },
+    "골판지": {
+     "value": 92.9,
+     "basis": "권역 단순평균",
+     "capital": 102.2,
+     "n": 8,
+     "src": "공공데이터포털 파일"
+    },
+    "압축PE": {
+     "value": 469.7,
+     "basis": "권역 단순평균",
+     "capital": 478.5,
+     "n": 6,
+     "src": "공공데이터포털 파일"
+    },
+    "압축PP": {
+     "value": 378.7,
+     "basis": "권역 단순평균",
+     "capital": 378.0,
+     "n": 6,
+     "src": "공공데이터포털 파일"
+    },
+    "압축PET": {
+     "value": 601.2,
+     "basis": "권역 단순평균",
+     "capital": 613.6,
+     "n": 6,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PE": {
+     "value": 650.0,
+     "basis": "권역 단순평균",
+     "capital": 693.9,
+     "n": 8,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PP": {
+     "value": 538.4,
+     "basis": "권역 단순평균",
+     "capital": 550.7,
+     "n": 8,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PVC": {
+     "value": 547.1,
+     "basis": "권역 단순평균",
+     "capital": 557.9,
+     "n": 3,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PET무색": {
+     "value": 1160.9,
+     "basis": "권역 단순평균",
+     "capital": 1207.0,
+     "n": 2,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PET유색": {
+     "value": 487.3,
+     "basis": "권역 단순평균",
+     "capital": 490.6,
+     "n": 2,
+     "src": "공공데이터포털 파일"
+    },
+    "플레이크PET복합": {
+     "value": 435.4,
+     "basis": "권역 단순평균",
+     "capital": 392.3,
+     "n": 2,
+     "src": "공공데이터포털 파일"
+    },
+    "펠렛PE": {
+     "value": 991.1,
+     "basis": "권역 단순평균",
+     "capital": 929.1,
+     "n": 4,
+     "src": "공공데이터포털 파일"
+    },
+    "펠렛PP": {
+     "value": 801.0,
+     "basis": "권역 단순평균",
+     "capital": 813.7,
+     "n": 5,
+     "src": "공공데이터포털 파일"
+    },
+    "잉고트EPS": {
+     "value": 556.8,
+     "basis": "권역 단순평균",
+     "capital": 500.9,
+     "n": 7,
+     "src": "공공데이터포털 파일"
+    },
+    "펠렛EPS": {
+     "value": 808.3,
+     "basis": "권역 단순평균",
+     "capital": 808.3,
+     "n": 1,
+     "src": "공공데이터포털 파일"
+    },
+    "컬렛백색": {
+     "value": 111.7,
+     "basis": "권역 단순평균",
+     "capital": 111.7,
+     "n": 1,
+     "src": "공공데이터포털 파일"
+    },
+    "컬렛갈색": {
+     "value": 73.0,
+     "basis": "권역 단순평균",
+     "capital": 73.0,
+     "n": 1,
+     "src": "공공데이터포털 파일"
+    },
+    "컬렛청녹색": {
+     "value": 40.7,
+     "basis": "권역 단순평균",
+     "capital": 40.7,
+     "n": 1,
+     "src": "공공데이터포털 파일"
+    },
+    "철스크랩": {
+     "value": 355.5,
+     "basis": "권역 단순평균",
+     "capital": 348.3,
+     "n": 6,
+     "src": "공공데이터포털 파일"
+    },
+    "철캔": {
+     "value": 371.8,
+     "basis": "권역 단순평균",
+     "capital": 342.8,
+     "n": 6,
+     "src": "공공데이터포털 파일"
+    },
+    "알루미늄캔": {
+     "value": 2885.3,
+     "basis": "권역 단순평균",
+     "capital": 2924.3,
+     "n": 8,
+     "src": "공공데이터포털 파일"
+    },
+    "고무분말": {
+     "value": 293.5,
+     "basis": "권역 단순평균",
+     "capital": null,
+     "n": 2,
+     "src": "공공데이터포털 파일"
+    }
+   }
+  }
+ }
 }
