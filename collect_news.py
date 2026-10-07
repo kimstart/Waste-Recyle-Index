@@ -15,7 +15,7 @@ CONFIG = {
         "ko_keywords": ["폐플라스틱", "재생원료 플라스틱", "재생플라스틱", "플라스틱 재활용", "페트 재활용", "열분해유",
                         "화학적 재활용", "폐비닐", "재생원료 사용 의무", "플라스틱 협약", "순환경제 플라스틱", "재활용 선별장"],
         "ko_core": ["플라스틱", "재생원료", "재활용", "페트", "PET", "열분해", "폐비닐", "순환경제", "선별", "EPR", "협약",
-                    "재생", "rPET", "PE", "PP", "가격", "단가", "의무", "규제", "수출", "수입"],
+                    "rPET", "PE", "PP", "가격", "단가", "의무", "규제", "수출", "수입"],
         "en_queries": ["rPET", '"recycled PET"', '"chemical recycling"', '"plastic pyrolysis"', '"recycled content" plastic',
                        '"plastics treaty"', '"recycled polypropylene"', '"plastic recycling"', "PPWR recycled",
                        '"recycled plastic" prices'],
@@ -27,6 +27,9 @@ CONFIG = {
                        "S&P Global", "ICIS", "OPIS", "Argus", "Chemical Week", "C&EN", "Financial Times", "Plastics Engineering",
                        "European Plastics News", "Plastics & Rubber Weekly", "Waste Management World", "Recycling Magazine",
                        "Plastics Recycling Update", "Innovation News Network", "Interplas"],
+        "ko_require": ["플라스틱", "페트", "PET", "재생원료", "열분해", "비닐", "일회용", "1회용", "재활용", "포장재", "용기", "순환경제"],
+        "en_require": ["plastic", "PET", "rPET", "polymer", "resin", "pyrolysis", "polyethylene", "polypropylene", "hdpe", "pvc",
+                       "ppwr", "bottle", "food-grade", "packaging waste", "recycled content"],
         "en_whitelist_only": True,
         "rss": [("Recycling Today", "https://www.recyclingtoday.com/rss/",
                  r"plastic|\bpet\b|rpet|hdpe|polypropylene|polyethylene|resin|pyrolysis|bottle|film|flexible|packaging")],
@@ -45,6 +48,9 @@ CONFIG = {
                        "Renewable Energy World", "Energy Voice", "Recharge", "Gas Processing", "World Bio Market Insights",
                        "Waste Management World", "Financial Times", "Euractiv", "Clean Energy Wire", "letsrecycle",
                        "Bioenergy International", "RNG Coalition", "energynews.pro", "ICIS"],
+        "ko_require": ["바이오가스", "바이오메탄", "생산목표제", "혐기성", "에너지화", "유기성폐자원", "소화가스", "바이오가스화"],
+        "en_require": ["biomethane", "biogas", "rng", "renewable natural gas", "anaerobic", "digester", "green gas",
+                       "landfill gas", "renewable gas", "bio-cng", "biocng"],
         "en_whitelist_only": False,
         "rss": [],
     },
@@ -55,7 +61,9 @@ EN_BLOCK = ["AD HOC NEWS", "kalkine", "KLSE Screener", "IndexBox", "TradingView"
             "Kings Research", "Mordor", "openPR", "MarketsandMarkets", "Market.us", "GlobeNewswire", "EIN Presswire",
             "Business Research", "Fortune Business Insights", "Precedence Research", "Allied Market", "MarketBeat",
             "Zacks", "Simply Wall St", "Investing News Network", "LatestLY", "Yahoo Finance"]
-EN_NOISE = ["stock", "shares", "market size", "cagr", "forecast 20", "market report", "obituary", "recipe", "cookie"]
+EN_NOISE = ["stock", "shares", "market size", "cagr", "forecast 20", "market report", "obituary", "recipe", "cookie",
+            "sign up", "webinar", "register now", "podcast", "award nominations"]
+KO_SRC_BLOCK = ["Vietnam.vn", "Daum"]   # 기계번역·포털 재게시
 KO_NOISE = ["연봉", "채용", "인사", "부고", "결혼", "장학", "봉사", "기부", "특징주", "목표주가", "주가", "수상", "표창", "시상",
             "동정", "농구", "배구", "야구", "축구", "시즌", "후원", "나눔", "캠페인", "공모전"]
 KO_SOFT = ["설명회", "포럼", "세미나", "워크숍", "개최", "성료", "간담회", "발대식", "업무협약", "MOU", "협약식", "맞손"]
@@ -142,6 +150,17 @@ def dedup(items):
     return groups
 
 
+def title_has(title, words):
+    """대소문자가 섞인 단어(PET, rPET)는 그대로, 소문자 단어는 대소문자 무시하고 단어 앞머리 일치"""
+    for w in words:
+        if w != w.lower():
+            if re.search(r"\b" + re.escape(w) + r"\b", title):
+                return True
+        elif re.search(r"\b" + re.escape(w), title.lower()):
+            return True
+    return False
+
+
 def in_list(src, names):
     s = (src or "").lower()
     return any(n.lower() in s for n in names)
@@ -161,7 +180,8 @@ def collect_ko(cfg, now, hours, when):
             print(f"   [국내] '{q}' 실패: {type(e).__name__}")
             continue
         rows = [r for r in rows if now - r["pub"] <= timedelta(hours=hours) and hangul_ratio(r["title"]) >= 0.5
-                and not any(w in r["title"] for w in KO_NOISE)][:25]
+                and not any(w in r["title"] for w in KO_NOISE) and not in_list(r["source"], KO_SRC_BLOCK)
+                and any(w.lower() in r["title"].lower() for w in cfg["ko_require"])][:25]
         print(f"   [국내] '{q}' {len(rows)}건")
         allit += rows
         time.sleep(1)
@@ -203,7 +223,8 @@ def collect_en(cfg, now, hours, when):
             print(f"   [해외 RSS] {name} 실패: {type(e).__name__}")
     rows = [r for r in allit if now - r["pub"] <= timedelta(hours=hours)
             and not in_list(r["source"], EN_BLOCK) and not any(w in r["title"].lower() for w in EN_NOISE)
-            and hangul_ratio(r["title"]) < 0.2]
+            and hangul_ratio(r["title"]) < 0.2
+            and title_has(r["title"], cfg["en_require"])]
     if cfg["en_whitelist_only"]:
         dropped = sorted({r["source"] for r in rows if not in_list(r["source"], cfg["en_sources"])})
         rows = [r for r in rows if in_list(r["source"], cfg["en_sources"])]

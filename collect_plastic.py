@@ -4,8 +4,8 @@
 - 일간: 중국 신재 플라스틱 선물 (정저우·다롄 상품거래소 연속물 종가, Sina Finance, 위안/톤) + 원/kg 환산
 - 일간: 국제유가 (오피넷), 환율 (수출입은행 → ECB → Yahoo)
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
-import re, json
-from common import get, retry, run_all, now_kst
+import re, json, http.cookiejar, urllib.request
+from common import UA, get, retry, run_all, now_kst
 from sources import fetch_fx, fx_items, fetch_oil
 
 RECYCLE_URL = "https://www.recycling-info.or.kr/sds/marketIndex.do?menuNo=M130301"
@@ -47,16 +47,42 @@ def _prev_month(ym):
     return f"{y:04d}.{m:02d}"
 
 
-def fetch_recycle(items, extra):
-    """페이지 첫 화면에 최신 실적월 표가 그대로 들어 있다(로그인·자바스크립트 불필요).
-    기간 지정 조회는 막혀 있어, 매달 받은 값을 extra.recycle_months 에 쌓아 전월 대비를 계산한다."""
-    html = retry(lambda: get(RECYCLE_URL), tries=3)
+def _recycle_rows(html):
     rows = []
     for tr in re.findall(r'<tr class="rrm">(.*?)</tr>', html, re.S):
         cells = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", td)).strip() for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
         if len(cells) >= 3 and re.fullmatch(r"\d{4}\.\d{2}", cells[0]):
             rows.append(cells)
-    print(f">> [재생원료] 표 {len(rows)}행, 실적월 {sorted({r[0] for r in rows})}")
+    return rows
+
+
+def _recycle_session():
+    """첫 화면에서 쿠키를 받은 뒤 가격조사 화면을 요청"""
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    H = dict(UA)
+    op.open(urllib.request.Request("https://www.recycling-info.or.kr/rrs/main.do", headers=H), timeout=40).read()
+    H["Referer"] = "https://www.recycling-info.or.kr/rrs/main.do"
+    b = op.open(urllib.request.Request(RECYCLE_URL, headers=H), timeout=40).read()
+    return b.decode("utf-8", "ignore")
+
+
+def fetch_recycle(items, extra):
+    """페이지 첫 화면에 최신 실적월 표가 그대로 들어 있다(로그인·자바스크립트 불필요).
+    기간 지정 조회는 막혀 있어, 매달 받은 값을 extra.recycle_months 에 쌓아 전월 대비를 계산한다."""
+    rows = []
+    for how, fn in (("바로 요청", lambda: get(RECYCLE_URL)), ("쿠키 세션", _recycle_session), ("http 주소", lambda: get(RECYCLE_URL.replace("https://", "http://")))):
+        try:
+            html = retry(fn, tries=2)
+        except Exception as e:
+            print(f">> [재생원료] {how} 실패: {type(e).__name__}: {str(e)[:120]}")
+            continue
+        rows = _recycle_rows(html)
+        title = re.search(r"<title>(.*?)</title>", html, re.S)
+        print(f">> [재생원료] {how}: 응답 {len(html):,}자, 제목 {title.group(1).strip()[:60] if title else '-'!r}, 표 {len(rows)}행")
+        if rows:
+            break
+        print(f">> [재생원료] 응답 앞부분: {re.sub(r'\s+', ' ', html[:300])!r}")
+    print(f">> [재생원료] 실적월 {sorted({r[0] for r in rows})}")
     if not rows:
         raise ValueError("재생원료 표 없음")
     months = extra.setdefault("recycle_months", {})
