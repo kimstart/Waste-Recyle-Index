@@ -1,0 +1,34 @@
+name: News Collect
+on:
+  schedule:
+    - cron: '25 22 * * *'   # 매일 07:25 KST
+    - cron: '25 6 * * *'    # 매일 15:25 KST
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: collect
+  cancel-in-progress: false
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 뉴스 수집 (폐플라스틱·바이오가스, 국내·해외)
+        run: python collect_news.py
+      - name: 변경 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data history
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "Auto: news [$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push 재시도 $i/5"; sleep 5
+          done
+          exit 1

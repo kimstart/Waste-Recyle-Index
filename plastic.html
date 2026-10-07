@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>폐플라스틱 정보보드</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/board.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="in">
+    <div>
+      <h1>폐플라스틱 정보보드</h1>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 국내 재생원료 · 중국 신재 선물 · 유가 · 환율 · 뉴스</p>
+    </div>
+    <nav class="menu">
+      <a href="plastic.html" class="on">폐플라스틱</a>
+      <a href="biogas.html">바이오가스 ›</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="pick-row">
+    <div class="pick">
+      <label for="viewDate">조회일자</label>
+      <input type="date" id="viewDate">
+      <button id="btnToday" type="button">오늘로 →</button>
+    </div>
+  </div>
+  <div id="pastNote" class="pastnote"></div>
+
+  <h2>주요 지표</h2>
+  <table class="ind">
+    <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
+    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고 (왜 중요한가)</th></tr></thead>
+    <tbody id="indBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">
+    국내 재생원료: 한국환경공단 순환자원정보센터 '재활용가능자원 가격조사' 전국평균(VAT 포함, 원/kg). 매월 갱신되며 전월 대비는 이 사이트가 직접 쌓은 직전 달 값과 비교합니다.<br>
+    중국 선물: 정저우·다롄 상품거래소 연속물 종가(위안/톤, Sina Finance). 중국 휴장일(국경절·춘절 등)에는 직전 거래일 값이 표시됩니다. 원/kg 환산값 = 위안/톤 × 원/위안 ÷ 1,000 (단순 환산, 수입 도착가 아님).<br>
+    국제유가: 한국석유공사 오피넷. 환율: 한국수출입은행 매매기준율(조회 불가 시 ECB 기준환율). 자료 갱신: <span id="indUpdated">-</span>
+  </div>
+
+  <h2>재생원료 vs 중국 신재 가격 <small>원/kg 기준 비교</small></h2>
+  <div id="extra"></div>
+
+  <h2>폐플라스틱 뉴스<small id="newsUpd"></small></h2>
+  <div class="news2">
+    <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
+    <div><h3>해외<span>재활용·플라스틱 전문지</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
+  </div>
+  <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
+
+  <div class="foot">출처: 한국환경공단 순환자원정보센터, 정저우·다롄 상품거래소(Sina Finance), 한국석유공사 오피넷, 한국수출입은행, 구글 뉴스, Recycling Today</div>
+</div>
+
+<script>
+window.BOARD = {
+  name: 'plastic',
+  minKey: '20261007',
+  cycNote: { '월간': '전월 대비', '일간': '전일 대비' },
+  rows: [
+    { cyc: '월간', key: 'r_comp_pet', label: '압축 PET', dec: 1, why: '선별장에서 재활용업체로 넘어가는 PET 원료 단가. 재활용 원가와 수거 경제성의 출발점' },
+    { cyc: '월간', key: 'r_comp_pe', label: '압축 PE', dec: 1, why: '선별된 PE(비닐·용기류) 원료 단가. 폐비닐·용기 재활용 원가 지표' },
+    { cyc: '월간', key: 'r_comp_pp', label: '압축 PP', dec: 1, why: '선별된 PP 원료 단가. PP 재활용 원가 지표' },
+    { cyc: '월간', key: 'r_flk_pet_clear', label: '플레이크 PET(무색)', dec: 1, why: '세척·분쇄된 투명 PET. 식품용·섬유용 rPET 원료 수급을 보여주는 핵심 지표' },
+    { cyc: '월간', key: 'r_flk_pet_color', label: '플레이크 PET(유색)', dec: 1, why: '유색 PET 플레이크. 섬유·시트 등 저부가 용도 원료 가격' },
+    { cyc: '월간', key: 'r_flk_pe', label: '플레이크 PE', dec: 1, why: '세척·분쇄한 PE 중간 원료. 펠렛 가공 전 단계 가격' },
+    { cyc: '월간', key: 'r_flk_pp', label: '플레이크 PP', dec: 1, why: '세척·분쇄한 PP 중간 원료. 펠렛 가공 전 단계 가격' },
+    { cyc: '월간', key: 'r_flk_pvc', label: '플레이크 PVC', dec: 1, why: '세척·분쇄한 PVC 중간 원료. 중국 PVC 신재 가격과 비교 기준' },
+    { cyc: '월간', key: 'r_pel_pe', label: '펠렛 PE', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체 매출 단가이자 신재 PE와의 경쟁력 비교 기준' },
+    { cyc: '월간', key: 'r_pel_pp', label: '펠렛 PP', dec: 1, why: '최종 재생원료 판매가. 신재 PP와의 경쟁력 비교 기준' },
+    { cyc: '일간', key: 'cn_pet', label: 'PET 병 칩', dec: 0, why: '신재 PET 가격. 신재가 재생 PET보다 싸지면 재생원료 수요가 줄어드는 경쟁 기준' },
+    { cyc: '일간', key: 'cn_pe', label: 'PE (LLDPE)', dec: 0, why: '재생 PE 펠렛이 경쟁하는 신재 가격. 세계 최대 소비국 시세가 아시아 가격을 이끎' },
+    { cyc: '일간', key: 'cn_pp', label: 'PP', dec: 0, why: '재생 PP 펠렛이 경쟁하는 신재 가격' },
+    { cyc: '일간', key: 'cn_pvc', label: 'PVC', dec: 0, why: '재생 PVC 플레이크의 비교 기준이 되는 신재 가격' },
+    { cyc: '일간', key: 'dubai', label: '두바이유', dec: 2, why: '아시아 원유 기준가. 나프타를 거쳐 신재 플라스틱 원가를 정해 재생원료 가격 방향을 미리 보여줌' },
+    { cyc: '일간', key: 'brent', label: '브렌트유', dec: 2, why: '유럽 원유 기준가. 두바이유와 함께 국제 유가 흐름 확인' },
+    { cyc: '일간', key: 'wti', label: 'WTI', dec: 2, why: '미국 원유 기준가. 북미 신재 수지 가격의 원가 흐름 확인' },
+    { cyc: '일간', key: 'fx_usd', label: '원/달러', dec: 2, why: '수입 원료·수출 재생원료 가격의 환산 기준' },
+    { cyc: '일간', key: 'fx_cny', label: '원/위안', dec: 2, why: '중국 선물 가격의 원화 환산 기준 (위안/톤 × 원/위안 ÷ 1,000 = 원/kg)' }
+  ],
+  // 재생원료(국내, 월간) ÷ 중국 신재(원화 환산, 일간)
+  extra(items, fmt) {
+    const pairs = [
+      ['PET', 'r_flk_pet_clear', '플레이크 PET(무색)', 'cn_pet', 'PET 병 칩'],
+      ['PE', 'r_pel_pe', '펠렛 PE', 'cn_pe', 'PE(LLDPE)'],
+      ['PP', 'r_pel_pp', '펠렛 PP', 'cn_pp', 'PP'],
+      ['PVC', 'r_flk_pvc', '플레이크 PVC', 'cn_pvc', 'PVC']
+    ];
+    const rows = pairs.map(([g, rk, rn, ck, cn]) => {
+      const r = items[rk], c = items[ck];
+      if (!r || !c || c.krw_kg == null) return `<tr><td class="l">${g}</td><td colspan="4" class="fl">자료 없음</td></tr>`;
+      const ratio = r.value / c.krw_kg * 100;
+      return `<tr><td class="l">${g}</td><td>${rn}<br><b>${fmt(r.value, 1)}</b></td><td>${cn}<br><b>${fmt(c.krw_kg, 0)}</b></td>
+        <td><b>${ratio.toFixed(0)}%</b><div class="bar"><i style="width:${Math.min(ratio, 100).toFixed(0)}%"></i></div></td>
+        <td>${fmt(c.krw_kg - r.value, 0)}</td></tr>`;
+    }).join('');
+    const ym = items.r_flk_pet_clear && items.r_flk_pet_clear.date, cd = items.cn_pet && items.cn_pet.date, fx = items.fx_cny && items.fx_cny.value;
+    return `<table class="cmp"><thead><tr><th>수지</th><th>국내 재생원료 (${ym ? +ym.slice(5, 7) + '월' : '-'})</th><th>중국 신재 원화 환산 (${cd ? +cd.slice(5, 7) + '.' + +cd.slice(8, 10) : '-'})</th><th>재생/신재 비율</th><th>가격 차이 (신재−재생)</th></tr></thead><tbody>${rows}</tbody></table>
+      <div class="note">비율이 낮을수록 재생원료가 신재보다 싸다는 뜻입니다. 국내 단가는 월간(VAT 포함), 중국 선물은 일간(중국 부가세 포함 거래소 가격)이며 물류비·관세는 반영하지 않은 단순 비교입니다. 적용 환율 원/위안 ${fx ? fmt(fx, 2) : '-'}.</div>`;
+  }
+};
+</script>
+<script src="assets/board.js"></script>
+</body>
+</html>

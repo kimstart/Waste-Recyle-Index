@@ -1,0 +1,45 @@
+name: Indicators Collect
+on:
+  schedule:
+    - cron: '35 21 * * *'   # 매일 06:35 KST
+    - cron: '35 0 * * *'    # 매일 09:35 KST (국제유가·TTF 전일값)
+    - cron: '35 2 * * *'    # 매일 11:35 KST (환율 당일값)
+    - cron: '35 5 * * *'    # 매일 14:35 KST (배출권·REC 반영)
+    - cron: '35 8 * * *'    # 매일 17:35 KST (중국 선물 마감 후)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: collect
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 폐플라스틱 지표 수집
+        continue-on-error: true
+        env:
+          KOREAEXIM_KEY: ${{ secrets.KOREAEXIM_KEY }}
+        run: python collect_plastic.py
+      - name: 바이오가스 지표 수집
+        continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: python collect_biogas.py
+      - name: 변경 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data history
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "Auto: indicators [$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push 재시도 $i/5"; sleep 5
+          done
+          exit 1

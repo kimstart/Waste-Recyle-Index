@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>바이오가스 정보보드</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/board.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="in">
+    <div>
+      <h1>바이오가스 정보보드</h1>
+      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 뉴스</p>
+    </div>
+    <nav class="menu">
+      <a href="plastic.html">‹ 폐플라스틱</a>
+      <a href="biogas.html" class="on">바이오가스</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="pick-row">
+    <div class="pick">
+      <label for="viewDate">조회일자</label>
+      <input type="date" id="viewDate">
+      <button id="btnToday" type="button">오늘로 →</button>
+    </div>
+  </div>
+  <div id="pastNote" class="pastnote"></div>
+
+  <h2>주요 지표</h2>
+  <table class="ind">
+    <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
+    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고 (왜 중요한가)</th></tr></thead>
+    <tbody id="indBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">
+    REC: 전력거래소 현물시장 육지 평균가로 거래일(화·목)에만 값이 있어 기준일이 며칠 전일 수 있습니다.
+    TTF: ICE Endex 네덜란드 TTF 근월물 종가(Yahoo Finance).
+    KCU: 한국거래소 배출권시장 정보플랫폼의 KCU(국내 상쇄배출권) 최근 거래일 종가로, 거래가 드물어 기준일이 몇 주~몇 달 전일 수 있습니다.
+    천연가스 도매요금: 한국가스공사 도시가스용 도매요금 평균(원료비+공급비, 부가세 별도, 매월 1일 기준).
+    프랑스 GO 경매: EEX가 분기마다(2·5·8·11월) 공개하는 프랑스 바이오가스 원산지보증서 경매의 전체 가중평균 낙찰가(기준가격).
+    자료 갱신: <span id="indUpdated">-</span>
+  </div>
+
+  <h2>유럽 바이오메탄 가격 구조 <small>참고용 추정</small></h2>
+  <div id="extra"></div>
+
+  <h2>바이오가스 뉴스<small id="newsUpd"></small></h2>
+  <div class="news2">
+    <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
+    <div><h3>해외<span>바이오에너지·가스 전문지 우선</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
+  </div>
+  <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Bioenergy Insight, gasworld, ENDS, Argus 등 전문지를 우선하고 주가·시장보고서 광고성 기사는 제외합니다. 제목을 누르면 원문으로 이동합니다.</div>
+
+  <div class="foot">출처: 한국전력거래소, ICE Endex(Yahoo Finance), 한국거래소 배출권시장 정보플랫폼, 한국가스공사, EEX(European Energy Exchange), 구글 뉴스</div>
+</div>
+
+<script>
+window.BOARD = {
+  name: 'biogas',
+  minKey: '20261007',
+  cycNote: { '월간': '전월 대비', '일간': '전일 대비', '분기': '직전 회차' },
+  rows: [
+    { cyc: '일간', key: 'rec', label: 'REC 현물', dec: 0, why: '바이오가스 발전 수익의 핵심. 발전 매출 = 전력판매(SMP) + REC. 현물시장은 화·목 거래' },
+    { cyc: '일간', key: 'ttf', label: 'TTF 천연가스', dec: 2, why: "유럽 천연가스 기준가격. 유럽 바이오메탄은 'TTF + 인증(GO) 프리미엄'으로 거래돼 유럽 바이오메탄 시세의 기준" },
+    { cyc: '일간', key: 'kcu', label: 'KCU 상쇄배출권', dec: 0, why: '바이오가스 등 외부사업 감축실적(KOC)을 배출권 할당업체가 쓸 수 있게 전환한 상쇄배출권. 바이오가스 감축실적을 팔 때의 기준 가격' },
+    { cyc: '월간', key: 'gas_whole', label: '천연가스 도매요금', dec: 3, why: '바이오메탄이 도시가스를 대체할 때 경쟁하는 국내 가스 가격. 바이오가스 생산목표제 이행비용 판단 기준' },
+    { cyc: '분기', key: 'go_fr', label: '프랑스 바이오가스 GO 경매', dec: 2, why: "프랑스 정부가 보조금 바이오메탄의 원산지보증서를 분기마다 경매한 평균 낙찰가. 유럽 바이오메탄 '인증 프리미엄'의 무료 공개 기준값" }
+  ],
+  extra(items, fmt) {
+    const t = items.ttf, g = items.go_fr, w = items.gas_whole;
+    if (!t || !g) return '<div class="note">TTF 또는 GO 경매 자료가 없어 계산하지 않았습니다.</div>';
+    const sum = t.value + g.value;
+    const gas = w ? `<br>참고로 국내 도시가스용 도매요금 평균은 <b>${fmt(w.value, 3)}원/MJ</b>(원료비 ${fmt(w.fuel, 4)} + 공급비 ${fmt(w.supply, 4)})이며, 1MWh = 3,600MJ 기준으로 약 <b>${fmt(w.value * 3.6, 0)}천원/MWh</b>입니다.` : '';
+    return `<div class="calc">TTF 천연가스 <b>€${fmt(t.value, 2)}</b> + 프랑스 GO 경매 기준가격 <b>€${fmt(g.value, 2)}</b> ≈ 유럽 바이오메탄 가치 <b>약 €${fmt(sum, 2)}/MWh</b>
+      <br><span style="font-size:12px;color:#475569">TTF는 ${t.date}, GO는 ${g.date} 경매 기준. GO 프리미엄 비중 ${(g.value / sum * 100).toFixed(0)}%.</span>${gas}</div>
+      <div class="note">유럽 바이오메탄은 보통 '천연가스 가격(TTF) + 원산지보증서(GO) 등 인증 프리미엄'으로 거래됩니다. 실제 거래가는 원료(폐기물·작물), 국가, 보조금 여부, 인증 종류에 따라 달라지며, 위 값은 공개 자료만으로 계산한 참고용 추정입니다.</div>`;
+  }
+};
+</script>
+<script src="assets/board.js"></script>
+</body>
+</html>
