@@ -1,6 +1,20 @@
 >> [순환자원] 목록에서 매각 공고 1526건
+>> [순환자원] 상세 실패 20251202022: ValueError
+>> [순환자원] 상세 실패 20251118011: ValueError
+>> [순환자원] 상세 실패 20250527005: ValueError
+>> [순환자원] 상세 실패 20250512009: ValueError
+>> [순환자원] 상세 실패 20240508008: ValueError
+>> [순환자원] 상세 실패 20240422009: ValueError
+>> [순환자원] 상세 실패 20241212001: ValueError
+   [재시도 1/2] HTTPError: HTTP Error 503: Service Temporarily Unavailable
+>> [순환자원] 상세 실패 20260128009: ValueError
+>> [순환자원] 상세 실패 20260122008: ValueError
+>> [순환자원] 상세 실패 20241128006: ValueError
+>> [순환자원] 상세 실패 20241121004: ValueError
+>> [순환자원] 상세 실패 20251127017: ValueError
+>> [순환자원] 상세 실패 20250116004: ValueError
+   [재시도 1/2] HTTPError: HTTP Error 503: Service Temporarily Unavailable
 >> [순환자원정보센터] 시간 한도 도달 → 여기까지 저장하고 다음 실행에서 이어서 수집
->> [순환자원] 플라스틱 매각 219건 (상세 새로 읽음 219건)
-   [재시도 1/2] URLError: <urlopen error _ssl.c:999: The handshake operation timed out>
+>> [순환자원] 플라스틱 매각 417건 (상세 새로 읽음 404건)
 >> [나라장터] 플라스틱 매각 공고 0건 (낙찰 0건)
->> 저장: 전체 219건 (중점 11 · 수도권 208)
+>> 저장: 전체 417건 (중점 11 · 수도권 405)
