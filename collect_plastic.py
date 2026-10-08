@@ -317,6 +317,7 @@ CUSTOMS = [  # (키, HS, 표시명, 방향 imp/exp, 설명)
     ("imp_pvc", "390410", "PVC 수입단가", "imp"),
     ("exp_scrap_pe", "391510", "폐PE 수출", "exp"),
     ("exp_scrap_etc", "391590", "폐플라스틱(PET·PP 등) 수출", "exp"),
+    ("imp_scrap", "3915", "폐플라스틱 수입 (전체)", "impv"),
 ]
 
 
@@ -352,17 +353,17 @@ def fetch_customs(items, extra):
         except Exception as e:
             print(f">> [관세청] {label}({hs}) 실패: {type(e).__name__}: {str(e)[:150]}")
             continue
-        dl, wg = (("impDlr", "impWgt") if d == "imp" else ("expDlr", "expWgt"))
+        dl, wg = (("impDlr", "impWgt") if d in ("imp", "impv") else ("expDlr", "expWgt"))
         pts = [(ym, round(a[dl] / a[wg], 3), a[wg] / 1000, a[dl]) for ym, a in ser if a[wg] > 0]
         if not pts:
             print(f">> [관세청] {label}({hs}) 자료 없음")
             continue
         cur, prev = pts[-1], (pts[-2] if len(pts) > 1 else None)
         if d == "imp":
-            it = {"name": label, "item": f"HS {hs[:4]}.{hs[4:]} · 수입 {cur[2]:,.0f}톤", "unit": "달러/kg", "date": cur[0], "value": cur[1],
+            it = {"name": label, "item": f"HS {hs[:4]}{'.' + hs[4:] if len(hs) > 4 else ''} · 수입 {cur[2]:,.0f}톤", "unit": "달러/kg", "date": cur[0], "value": cur[1],
                   "prev_date": prev[0] if prev else None, "prev_value": prev[1] if prev else None, "spark": [p[1] for p in pts]}
-        else:   # 수출은 물량(톤)을 값으로, 단가를 부가 정보로
-            it = {"name": label, "item": f"HS {hs[:4]}.{hs[4:]} · 단가 {cur[1]:.3f}달러/kg", "unit": "톤", "date": cur[0], "value": round(cur[2]),
+        else:   # 폐플라스틱 수출입은 물량(톤)을 값으로, 단가를 부가 정보로
+            it = {"name": label, "item": f"HS {hs[:4]}{'.' + hs[4:] if len(hs) > 4 else ''} · 단가 {cur[1]:.3f}달러/kg", "unit": "톤", "date": cur[0], "value": round(cur[2]),
                   "prev_date": prev[0] if prev else None, "prev_value": round(prev[2]) if prev else None, "spark": [round(p[2]) for p in pts]}
         it["src"] = "관세청 품목별 수출입실적"
         out[key] = it

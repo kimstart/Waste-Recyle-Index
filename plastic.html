@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261008b">
+<link rel="stylesheet" href="assets/board.css?v=20261008c">
 </head>
 <body>
 <header class="site-header">
@@ -130,7 +130,7 @@
 window.BOARD = {
   name: 'plastic',
   minKey: '20261007',
-  cycNote: { '월간': '(재활용 플라스틱·수도권)', '월간-신재': '(신재 수입단가)', '일간': '(중국 신재 선물)', '월간-수출': '(폐플라스틱 수출)', '월간-영국': '(영국 재활용 의무)', '수시': '(기사 기준)' },
+  cycNote: { '월간': '(재활용 플라스틱·수도권)', '월간-신재': '(신재 수입단가)', '일간': '(중국 신재 선물)', '월간-수출': '(폐플라스틱 수출입)', '월간-영국': '(영국 재활용 의무)', '수시': '(기사 기준)' },
   rows: [
     { cyc: '월간', key: 'r_comp_pet', label: '압축 PET', dec: 1, why: '선별장에서 재활용업체로 넘어가는 PET 원료(선별품) 단가. 선별장 매출과 수거 경제성의 출발점' },
     { cyc: '월간', key: 'r_comp_pe', label: '압축 PE', dec: 1, why: '선별된 PE(비닐·용기류) 원료 단가. 폐비닐·용기 재활용 원가 지표' },
@@ -154,6 +154,7 @@ window.BOARD = {
     { cyc: '일간', key: 'cn_pvc', label: 'PVC', dec: 0, why: '다롄상품거래소 PVC 선물 연속물 종가. 아시아 신재 PVC 시황' },
     { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_pe', label: '폐PE 수출', dec: 0, why: '해외로 수출된 폐PE 물량. 국내 원물이 해외로 빠져나가는 규모로 선별장 원물 수급에 영향' },
     { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_etc', label: '폐플라스틱(PET·PP 등) 수출', dec: 0, why: '해외로 수출된 기타 폐플라스틱 물량(PET·PP 등 포함)' },
+    { cyc: '월간', grp: '월간-수출', key: 'imp_scrap', label: '폐플라스틱 수입 (전체)', dec: 0, why: '해외에서 들여온 폐플라스틱 물량. 수입 원료가 늘면 국내 선별품과 재생원료 원료 시장에서 경쟁 요인' },
     { sec: 'ref', cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' },
     { sec: 'ref', cyc: '수시', key: 'rpet_eu_fgp', label: '유럽 식품용 rPET 펠렛', dec: 0, why: 'EU 음료병 재생원료 25% 의무로 형성된 식품용 rPET 시장의 대표 가격(북서유럽 도착 기준). 국내 재생원료 사용 의무화 시장의 선행 사례' },
     { sec: 'ref', cyc: '수시', key: 'rpet_eu_prem', label: '유럽 식품용 rPET 프리미엄', dec: 0, why: '식품용 rPET 펠렛이 신재 PET보다 톤당 얼마나 비싼지. 의무화가 만든 웃돈의 크기' },
@@ -181,8 +182,8 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261008b"></script>
-<script src="assets/rpet.js?v=20261008b"></script>
-<script src="assets/plastic_extra.js?v=20261008b"></script>
+<script src="assets/board.js?v=20261008c"></script>
+<script src="assets/rpet.js?v=20261008c"></script>
+<script src="assets/plastic_extra.js?v=20261008c"></script>
 </body>
 </html>
