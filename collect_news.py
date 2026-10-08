@@ -312,8 +312,11 @@ def add_summaries(items):
     ok = 0
     for x in items:
         key = norm(x["title"])[:80]
-        if cache.get(key):
-            x["summary"] = cache[key]
+        c = cache.get(key)
+        if isinstance(c, dict) and c.get("s"):
+            x["summary"] = c["s"]
+            if c.get("u"):
+                x["link"] = c["u"]
             ok += 1
             continue
         try:
@@ -323,7 +326,8 @@ def add_summaries(items):
             x["link"] = url
             s = summarize_ko(get(url, timeout=20), x["title"])
             if s:
-                x["summary"] = cache[key] = s
+                x["summary"] = s
+                cache[key] = {"s": s, "u": url}
                 ok += 1
         except Exception as e:
             print(f"   [요약] 실패 {type(e).__name__}: {x['title'][:40]}")

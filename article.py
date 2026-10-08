@@ -47,7 +47,7 @@ BODY_PATS = [r'id="article-view-content-div"', r'itemprop="articleBody"', r'id="
              r'news_cnt_detail_wrap|story-news|article-text|cont_view|news_text|view_cont|txt_article|article_content|articleView)\b[^"]*"',
              r"<article\b"]
 DROP = re.compile(r"기자\s*$|기자\s*=|@[\w.-]+\.\w+|ⓒ|©|무단\s*전재|재배포|저작권|Copyright|구독|▶|☞|관련기사|사진\s*=|제공\s*=|"
-                  r"뉴스레터|카카오톡|네이버|광고문의|기사제보|많이 본|인기기사|앱 다운|입력\s*\d{4}|수정\s*\d{4}|\[사진\]|\(사진\)|그래픽=")
+                  r"뉴스레터|카카오톡|네이버|광고문의|거래되고 있다|주가|장중|목표주가|시가총액|종가 기준|기사제보|많이 본|인기기사|앱 다운|입력\s*\d{4}|수정\s*\d{4}|\[사진\]|\(사진\)|그래픽=")
 LEAD = re.compile(r"^\s*(?:\[[^\]]{1,40}\]|\([^)]{1,40}=[^)]{0,30}\)|【[^】]{1,40}】)\s*|^\s*[가-힣]{2,4}\s*(?:기자|특파원)\s*=\s*")
 BIZ = re.compile(r"\d|재생원료|단가|가격|톤|억|만원|의무|선별|입찰|투자|설비|공장|수요|계약|목표|규제|시행|확대|감축|EPR|분담금|생산")
 

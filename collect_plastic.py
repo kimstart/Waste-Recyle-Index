@@ -96,12 +96,18 @@ def recycle_api():
     yms = []
     y, m = d.year, d.month
     for _ in range(3):
+        y, m = (y - 1, 12) if m == 1 else (y, m - 1)   # 이번 달 조사는 10일 이후 공개 → 지난달부터
         yms.append(f"{y:04d}{m:02d}")
-        y, m = (y - 1, 12) if m == 1 else (y, m - 1)
+    if d.day >= 15:
+        yms.insert(0, f"{d.year:04d}{d.month:02d}")
     for ym in yms:
         for region in ("수도권", "전국"):
             q = {"serviceKey": DATA_KEY, "pageNo": 1, "numOfRows": 100, "returnType": "JSON", "exmnYmd": ym, "stdgNm": region}
-            txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q), timeout=90), tries=2)
+            try:
+                txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q), timeout=90), tries=2)
+            except Exception as e:
+                print(f">> [재생원료 API] {ym} {region} 실패: {type(e).__name__}")
+                continue
             try:
                 j = json.loads(txt)
             except ValueError:
