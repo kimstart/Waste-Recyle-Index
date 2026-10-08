@@ -15,6 +15,7 @@ jobs:
           LAW_API_KEY: ${{ secrets.LAW_API_KEY }}
         run: |
           set +e
-          mkdir -p logs; python -u tools/probe_apis.py > logs/probe_apis.log 2>&1; cat logs/probe_apis.log
+          mkdir -p logs; { for u in https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist https://www.law.go.kr/DRF/lawSearch.do https://www.re.or.kr/; do echo "curl $(curl -s -m 30 -o /dev/null -w '%{http_code} %{time_total}s' $u) $u"; done; } > logs/probe_apis.log 2>&1
+          python -u tools/probe_apis.py >> logs/probe_apis.log 2>&1; cat logs/probe_apis.log
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add logs/probe_apis.log; git commit -m "probe api log"; git pull --rebase origin main; git push

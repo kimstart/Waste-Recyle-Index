@@ -16,7 +16,7 @@ def call(label, url, params, key_name="serviceKey", key=DK):
     full = url + "?" + urllib.parse.urlencode(q)
     try:
         req = urllib.request.Request(full, headers={"User-Agent": "Mozilla/5.0"})
-        r = urllib.request.urlopen(req, timeout=30)
+        r = urllib.request.urlopen(req, timeout=60)
         body = r.read().decode("utf-8", "ignore"); code = r.status
     except urllib.error.HTTPError as ex:
         body, code = ex.read().decode("utf-8", "ignore"), ex.code
