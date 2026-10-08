@@ -80,6 +80,20 @@ def main():
     if ids:
         state["bid_ids"] = ids
 
+    # 선별·처리 대행 용역 (수도권)
+    svc = (load("data/services.json", {}) or {}).get("items", [])
+    sids = {b["id"]: b.get("status") for b in svc}
+    old_s = state.get("svc_ids", {})
+    if not first and old_s:
+        new = [b for b in svc if b["id"] not in old_s]
+        won = [b for b in svc if b.get("status") == "낙찰" and old_s.get(b["id"]) not in (None, "낙찰")]
+        if new:
+            ev("plastic", f"선별·처리 대행 용역 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""))
+        if won:
+            ev("plastic", f"선별·처리 대행 용역 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}")
+    if sids:
+        state["svc_ids"] = sids
+
     # 제도 변경
     pol = (load("data/policy.json", {}) or {}).get("events", [])
     seen = set(state.get("policy_seen", []))

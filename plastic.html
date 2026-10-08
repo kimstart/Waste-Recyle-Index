@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261008e">
+<link rel="stylesheet" href="assets/board.css?v=20261008f">
 </head>
 <body>
 <header class="site-header">
@@ -67,6 +67,19 @@
   </table>
   <div class="note">순환자원정보센터 전자입찰과 나라장터에 올라온 지자체·공공기관·업체의 플라스틱 관련 매각(최고가) 공고입니다. 공고명·공고기관·입찰가능지역으로 지역을 나눴습니다.
     낙찰 단가는 단가 입찰이면 낙찰 금액, 총액 입찰이면 낙찰 총액÷수량으로 계산했습니다. 예정가격을 공개하지 않는 공고가 많아 낙찰/예정가격 비율은 공개된 건만 계산합니다. 연간 단가계약이 많아 공고는 12~1월에 몰립니다.</div>
+
+  <h2>수도권 선별·처리 대행 용역 <small id="svcUpd"></small></h2>
+  <div class="ctl">
+    <div class="rp-seg" id="svcScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
+    <div class="rp-seg" id="svcPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
+  </div>
+  <div class="kpis" id="svcKpi"></div>
+  <table class="cmp bids">
+    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">발주기관</th><th>공고명</th><th class="h-m">유형</th><th>추정가격</th><th>결과</th><th class="h-m">출처</th></tr></thead>
+    <tbody id="svcBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">지자체·공공기관이 재활용품을 팔지 않고 민간에 선별·처리·시설 운영을 맡기는 용역 공고입니다(예: 오산시 '재활용품 선별 대행 처리용역').
+    선별장 입장에서는 수주 기회이며, 추정가격·낙찰금액은 부가세 포함 계약 총액이라 물량·기간에 따라 달라집니다. 건설·하수·음식물 등 다른 폐기물 용역은 제외했습니다. 출처: 조달청 나라장터(입찰공고·낙찰정보), 순환자원정보센터 전자입찰.</div>
 
   <h2>제도·규제 <small>EPR · 재생원료 사용 의무 · <span id="polUpd"></span></small></h2>
   <div id="polAlert"></div>
@@ -193,8 +206,8 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261008e"></script>
-<script src="assets/rpet.js?v=20261008e"></script>
-<script src="assets/plastic_extra.js?v=20261008e"></script>
+<script src="assets/board.js?v=20261008f"></script>
+<script src="assets/rpet.js?v=20261008f"></script>
+<script src="assets/plastic_extra.js?v=20261008f"></script>
 </body>
 </html>
