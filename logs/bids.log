@@ -1,5 +1,16 @@
-   [재시도 1/3] HTTPError: HTTP Error 503: Service Temporarily Unavailable
->> [순환자원] 목록에서 매각 공고 1526건
->> [순환자원] 플라스틱 매각 1193건 (상세 새로 읽음 187건)
+>> [순환자원] 목록에서 매각 공고 501건
+>> [순환자원] 플라스틱 매각 346건 (상세 새로 읽음 0건)
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] Servc 매각 2026-09-18 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] Servc 판매 2026-09-18 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] Thng 매각 2026-09-18 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] Thng 판매 2026-09-18 실패: URLError: <urlopen error timed out>
 >> [나라장터] 플라스틱 매각 공고 0건 (낙찰 0건)
 >> 저장: 전체 1193건 (중점 11 · 수도권 453)
