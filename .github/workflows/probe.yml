@@ -1,4 +1,4 @@
-name: Probe APIs (temporary)
+name: API 점검 (수동 실행)
 on: workflow_dispatch
 permissions:
   contents: write
