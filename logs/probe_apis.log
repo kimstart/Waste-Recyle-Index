@@ -1,18 +1,11 @@
-curl 401 0.884809s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 1.263690s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.283934s https://www.re.or.kr/
-== 환경공단 재활용가능자원 가격: 접속 실패 TimeoutError The read operation timed out
-== 나라장터 입찰공고(Thng) '매각' 검색: HTTP 200 | 전체 0 | 정상
-   {"response": { "header": { "resultCode": "00", "resultMsg": "정상" }, "body": { "items": [ ], "numOfRows": 3, "pageNo": 1, "totalCount": 0 } }}
-== 나라장터 입찰공고(Servc) '매각' 검색: HTTP 200 | 전체 6 | 정상
-   {"response": { "header": { "resultCode": "00", "resultMsg": "정상" }, "body": { "items": [ { "bidNtceNo": "R26BK01729448", "bidNtceOrd": "000", "reNtceYn": "N", "rgstTyNm": "조달청 또는 나라장터 자체 공고건", "ntceKindNm": "등록공고", "intrbidYn": "N", "bidNtceDt": "2026-09-15 09:44:45", "refNo": "2026300108", "bidNtceNm": "2026년 불용물품 매각 및 폐기 위탁 처리 업체 선정", "ntceInsttCd": "7008143", "ntceInsttNm": "가천대학교", "dminsttCd": "7008143", "dminsttNm": "가천대학교", "bidMethdNm": "직찰", "cntrctCnclsMthdNm": "일반경쟁", "ntceInsttOfclNm": "박원경", "ntceInsttOfclTelNo": "031-750
-== 나라장터 낙찰(/1230000/as/ScsbidInfoService): HTTP 200 | 전체 4175 | 정상
-   {"response": { "header": { "resultCode": "00", "resultMsg": "정상" }, "body": { "items": [ { "bidNtceNo": "R26BK01727101", "bidNtceOrd": "000", "bidClsfcNo": "1", "rbidNo": "000", "ntceDivCd": "통050001", "bidNtceNm": "2026년 부산청 ITS구축공사(2권역) 관급(상부구조물 등) 구매", "prtcptCnum": "82", "bidwinnrNm": "탑아이티 주식회사", "bidwinnrBizno": "4038183209", "bidwinnrCeoNm": "임만영", "bidwinnrAdrs": "충청남도 보령시 청소면 충서로 3647-29", "bidwinnrTelNo": "041-935-6101", "sucsfbidAmt": "124780660", "sucsfbidRate": "90.002", "rlOpengDt": "2026-09-22 11:04:14", "dminsttCd": "1613281",
-== 나라장터 낙찰(/1230000/ScsbidInfoService): HTTP 400 | 전체 - | NO_OPENAPI_SERVICE_ERROR
-   { "OpenAPI_ServiceResponse": { "cmmMsgHeader": { "errMsg": "NO_OPENAPI_SERVICE_ERROR", "returnAuthMsg": "해당 오픈API 서비스가 없거나 폐기됨", "returnReasonCode": "12" } } }
-== 관세청 품목별 수출입실적 PP(3902.10): HTTP 200 | 전체 - | 정상서비스.
-   <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>00</resultCode><resultMsg>정상서비스.</resultMsg></header><body><items><item><balPayments>141031319</balPayments><expDlr>144954382</expDlr><expWgt>128027858</expWgt><hsCode>3902100000</hsCode><impDlr>3923063</impDlr><impWgt>2763469</impWgt><statKor>폴리프로필렌</statKor><year>2026.03</year></item><item><balPayments>157307612</balPayments><expDlr>166883016</expDlr><expWgt>109511705</expWgt><hsCode>3902100000</hsCode><impDlr>9575404</impDlr><impWgt>6119125</impWgt><statKor>폴리프로필렌</statKor><year>2026.04</year></item><item><balPayments>137359986</balPayments><expDlr>149372646</expDlr><expWgt>87396591</expWgt><hsCode>390210
-== 법령정보(law) 자원재활용: HTTP 200 | 전체 - | success
-   <?xml version="1.0" encoding="UTF-8"?><LawSearch><target>law</target><키워드>자원의 절약과 재활용촉진</키워드><section>lawNm</section><totalCnt>3</totalCnt><page>1</page><numOfRows>3</numOfRows><resultCode>00</resultCode><resultMsg>success</resultMsg><law id="1"><법령일련번호>283445</법령일련번호><현행연혁코드>현행</현행연혁코드><법령명한글><![CDATA[자원의 절약과 재활용촉진에 관한 법률]]></법령명한글><법령약칭명><![CDATA[자원재활용법]]></법령약칭명><법령ID>000155</법령ID><공포일자>20260219</공포일자><공포번호>21370</공포번호><제개정구분명>일부개정</제개정구분명><소관부처코드>1482000</소관부처코드><소관부처명>기후에너지환경부</소관부처명><법령구분명>법률</법령구분명><공동부령정보></공동부령정보><시행일자>20260820</시행일자><자법타법여부></자법타법여부><법령상세링크>/DRF/lawService.do?OC=<KEY>&amp;target=law&amp;MST=283445&amp;type=HTML&amp;mobileYn=&amp;efYd=20260820</법령상세링크></law><law id=
-== 법령정보(admrul) 자원재활용: HTTP 200 | 전체 - | success
-   <?xml version="1.0" encoding="UTF-8"?><AdmRulSearch><target>admrul</target><키워드>자원의 절약과 재활용촉진</키워드><section>admRulNm</section><totalCnt>0</totalCnt><page>1</page><numOfRows>0</numOfRows><resultCode>00</resultCode><resultMsg>success</resultMsg></AdmRulSearch>
+curl 000 30.001087s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 000 30.000763s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.934124s https://www.re.or.kr/
+== 환경공단 재활용가능자원 가격: 접속 실패 URLError <urlopen error timed out>
+== 나라장터 입찰공고(Thng) '매각' 검색: 접속 실패 URLError <urlopen error timed out>
+== 나라장터 입찰공고(Servc) '매각' 검색: 접속 실패 URLError <urlopen error timed out>
+== 나라장터 낙찰(/1230000/as/ScsbidInfoService): 접속 실패 URLError <urlopen error timed out>
+== 나라장터 낙찰(/1230000/ScsbidInfoService): 접속 실패 URLError <urlopen error timed out>
+== 관세청 품목별 수출입실적 PP(3902.10): 접속 실패 URLError <urlopen error timed out>
+== 법령정보(law) 자원재활용: 접속 실패 URLError <urlopen error timed out>
+== 법령정보(admrul) 자원재활용: 접속 실패 URLError <urlopen error timed out>
