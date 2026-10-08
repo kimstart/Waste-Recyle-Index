@@ -1,3 +1,6 @@
+curl 000 30.001402s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 000 30.001215s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.462230s https://www.re.or.kr/
 == 환경공단 재활용가능자원 가격: 접속 실패 URLError <urlopen error timed out>
 == 나라장터 입찰공고(Thng) '매각' 검색: 접속 실패 URLError <urlopen error timed out>
 == 나라장터 입찰공고(Servc) '매각' 검색: 접속 실패 URLError <urlopen error timed out>
