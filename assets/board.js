@@ -39,6 +39,7 @@
     $('indUpdated').textContent = st && st.updated ? st.updated + ' (KST)' : '-';
     renderRows(B.rows.filter(r => !r.sec), 'indBody', items);
     if ($('refBody')) renderRows(B.rows.filter(r => r.sec === 'ref'), 'refBody', items);
+    if ($('mktBody')) renderRows(B.rows.filter(r => r.sec === 'mkt'), 'mktBody', items);
     if (B.extra && $('extra')) $('extra').innerHTML = B.extra(items, fmt) || '';
     document.dispatchEvent(new CustomEvent('board:items', { detail: items }));
   }

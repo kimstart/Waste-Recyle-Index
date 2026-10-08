@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261008d">
+<link rel="stylesheet" href="assets/board.css?v=20261008e">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 제도 · 뉴스 · 해외 참고</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 제도 · 신재 시장 · 뉴스 · 해외 참고</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -32,7 +32,7 @@
   </div>
   <div id="pastNote" class="pastnote"></div>
 
-  <h2>주요 지표</h2>
+  <h2>주요 지표 <small>수도권 재활용 플라스틱 단가</small></h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
     <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
@@ -40,7 +40,6 @@
   </table>
   <div class="note">
     재활용 플라스틱: 한국환경공단 '재활용가능자원 가격조사'의 <b>수도권</b> 값(VAT 포함, 원/kg, 매월 10일 기준 조사). 전월·전년 동월 대비는 2023년 1월부터 쌓은 월별 자료와 비교합니다.<br>
-    신재 가격: 관세청 품목별 수출입실적의 월별 수입 금액÷중량(달러/kg)과 중국 상품거래소 선물 종가(위안/톤)를 원래 단위 그대로 보여줍니다. 신재 원료 시장 흐름을 보는 참고 지표이며, 재활용 단가와 맞대어 비교하는 지표가 아닙니다.<br>
     자료 갱신: <span id="indUpdated">-</span>
   </div>
 
@@ -80,6 +79,18 @@
     <div><h3>관련 부처 게시글<span>기후에너지환경부</span></h3><ul class="plain" id="polPosts"></ul></div>
   </div>
   <div class="note">하루 세 번 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 이 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록해 저장소 구독자에게 메일이 갑니다.</div>
+
+  <h2>신재 시장·폐플라스틱 수출입 <small>참고 지표 · 재활용 단가와 비교하지 않음</small></h2>
+  <table class="ind">
+    <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
+    <thead><tr><th>구분</th><th>지표</th><th>가격·물량</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
+    <tbody id="mktBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">
+    신재 가격: 관세청 품목별 수출입실적의 월별 수입 금액÷중량(달러/kg)과 중국 상품거래소 선물 종가(위안/톤)를 원래 단위 그대로 보여줍니다. 신재 원료 시장의 흐름을 보는 참고 지표입니다.
+    재생원료 사용 의무 대상 품목처럼 재활용품이 신재 이상의 값을 받는 시장도 있어, 재활용 단가와 맞대어 비교하지 않습니다.<br>
+    폐플라스틱 수출입: 관세청 HS 3915(플라스틱 웨이스트·스크랩)의 월별 물량(톤), 단가는 금액÷중량입니다. 관세청 자료는 한두 달 늦게 공개됩니다.
+  </div>
 
   <h2>폐플라스틱 뉴스<small id="newsUpd"></small></h2>
   <div class="news2">
@@ -143,18 +154,18 @@ window.BOARD = {
     { cyc: '월간', key: 'r_pel_pe', label: '펠렛 PE', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체의 매출 단가' },
     { cyc: '월간', key: 'r_pel_pp', label: '펠렛 PP', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체의 매출 단가' },
     { cyc: '월간', key: 'r_eps_ingot', label: 'EPS 잉고트', dec: 1, why: '스티로폼을 녹여 굳힌 덩어리. 지자체 스티로폼 매각 단가의 기준' },
-    { cyc: '월간', grp: '월간-신재', key: 'imp_ldpe', label: 'PE(LDPE·LLDPE) 수입단가', dec: 3, why: '국내로 수입된 신재 저밀도 PE의 평균 통관 단가. 신재 PE 시장 흐름' },
-    { cyc: '월간', grp: '월간-신재', key: 'imp_hdpe', label: 'HDPE 수입단가', dec: 3, why: '국내로 수입된 신재 HDPE의 평균 통관 단가' },
-    { cyc: '월간', grp: '월간-신재', key: 'imp_pp', label: 'PP 수입단가', dec: 3, why: '국내로 수입된 신재 PP의 평균 통관 단가' },
-    { cyc: '월간', grp: '월간-신재', key: 'imp_pet', label: 'PET(병 등급) 수입단가', dec: 3, why: '국내로 수입된 병 등급 PET 칩의 평균 통관 단가' },
-    { cyc: '월간', grp: '월간-신재', key: 'imp_pvc', label: 'PVC 수입단가', dec: 3, why: '국내로 수입된 PVC의 평균 통관 단가' },
-    { cyc: '일간', key: 'cn_pet', label: 'PET 병 칩', dec: 0, why: '정저우상품거래소 PET 병칩 선물 연속물 종가. 아시아 신재 PET 시황' },
-    { cyc: '일간', key: 'cn_pe', label: 'PE (LLDPE)', dec: 0, why: '다롄상품거래소 LLDPE 선물 연속물 종가. 아시아 신재 PE 시황' },
-    { cyc: '일간', key: 'cn_pp', label: 'PP', dec: 0, why: '다롄상품거래소 PP 선물 연속물 종가. 아시아 신재 PP 시황' },
-    { cyc: '일간', key: 'cn_pvc', label: 'PVC', dec: 0, why: '다롄상품거래소 PVC 선물 연속물 종가. 아시아 신재 PVC 시황' },
-    { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_pe', label: '폐PE 수출', dec: 0, why: '해외로 수출된 폐PE 물량. 국내 원물이 해외로 빠져나가는 규모로 선별장 원물 수급에 영향' },
-    { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_etc', label: '폐플라스틱(PET·PP 등) 수출', dec: 0, why: '해외로 수출된 기타 폐플라스틱 물량(PET·PP 등 포함)' },
-    { cyc: '월간', grp: '월간-수출', key: 'imp_scrap', label: '폐플라스틱 수입 (전체)', dec: 0, why: '해외에서 들여온 폐플라스틱 물량. 수입 원료가 늘면 국내 선별품과 재생원료 원료 시장에서 경쟁 요인' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-신재', key: 'imp_ldpe', label: 'PE(LDPE·LLDPE) 수입단가', dec: 3, why: '국내로 수입된 신재 저밀도 PE의 평균 통관 단가. 신재 PE 시장 흐름' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-신재', key: 'imp_hdpe', label: 'HDPE 수입단가', dec: 3, why: '국내로 수입된 신재 HDPE의 평균 통관 단가' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-신재', key: 'imp_pp', label: 'PP 수입단가', dec: 3, why: '국내로 수입된 신재 PP의 평균 통관 단가' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-신재', key: 'imp_pet', label: 'PET(병 등급) 수입단가', dec: 3, why: '국내로 수입된 병 등급 PET 칩의 평균 통관 단가' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-신재', key: 'imp_pvc', label: 'PVC 수입단가', dec: 3, why: '국내로 수입된 PVC의 평균 통관 단가' },
+    { sec: 'mkt', cyc: '일간', key: 'cn_pet', label: 'PET 병 칩', dec: 0, why: '정저우상품거래소 PET 병칩 선물 연속물 종가. 아시아 신재 PET 시황' },
+    { sec: 'mkt', cyc: '일간', key: 'cn_pe', label: 'PE (LLDPE)', dec: 0, why: '다롄상품거래소 LLDPE 선물 연속물 종가. 아시아 신재 PE 시황' },
+    { sec: 'mkt', cyc: '일간', key: 'cn_pp', label: 'PP', dec: 0, why: '다롄상품거래소 PP 선물 연속물 종가. 아시아 신재 PP 시황' },
+    { sec: 'mkt', cyc: '일간', key: 'cn_pvc', label: 'PVC', dec: 0, why: '다롄상품거래소 PVC 선물 연속물 종가. 아시아 신재 PVC 시황' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-수출', key: 'exp_scrap_pe', label: '폐PE 수출', dec: 0, why: '해외로 수출된 폐PE 물량. 국내 원물이 해외로 빠져나가는 규모로 선별장 원물 수급에 영향' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-수출', key: 'exp_scrap_etc', label: '폐플라스틱(PET·PP 등) 수출', dec: 0, why: '해외로 수출된 기타 폐플라스틱 물량(PET·PP 등 포함)' },
+    { sec: 'mkt', cyc: '월간', grp: '월간-수출', key: 'imp_scrap', label: '폐플라스틱 수입 (전체)', dec: 0, why: '해외에서 들여온 폐플라스틱 물량. 수입 원료가 늘면 국내 선별품과 재생원료 원료 시장에서 경쟁 요인' },
     { sec: 'ref', cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' },
     { sec: 'ref', cyc: '수시', key: 'rpet_eu_fgp', label: '유럽 식품용 rPET 펠렛', dec: 0, why: 'EU 음료병 재생원료 25% 의무로 형성된 식품용 rPET 시장의 대표 가격(북서유럽 도착 기준). 국내 재생원료 사용 의무화 시장의 선행 사례' },
     { sec: 'ref', cyc: '수시', key: 'rpet_eu_prem', label: '유럽 식품용 rPET 프리미엄', dec: 0, why: '식품용 rPET 펠렛이 신재 PET보다 톤당 얼마나 비싼지. 의무화가 만든 웃돈의 크기' },
@@ -182,8 +193,8 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261008d"></script>
-<script src="assets/rpet.js?v=20261008d"></script>
-<script src="assets/plastic_extra.js?v=20261008d"></script>
+<script src="assets/board.js?v=20261008e"></script>
+<script src="assets/rpet.js?v=20261008e"></script>
+<script src="assets/plastic_extra.js?v=20261008e"></script>
 </body>
 </html>
