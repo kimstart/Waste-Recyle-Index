@@ -73,6 +73,7 @@ def k_sentences(text):
             continue
         for s in re.split(r"(?<=다\.)\s+|(?<=[.?!])\s+(?=[가-힣A-Z\"'“‘(])", block):
             s = LEAD.sub("", s.strip())
+            s = re.split(r"\s*[◇◆■□▣●○◎※]\s*", s)[0].strip()   # 문장 뒤에 붙은 소제목(◇ …) 제거
             if 25 <= len(s) <= 260 and not DROP.search(s) and re.search(r"[가-힣]{4}", s):
                 out.append(s)
     return out

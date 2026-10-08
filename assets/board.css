@@ -20,6 +20,9 @@ body { margin:0; font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo
 .upd b { display:block; font-size:12px; font-weight:800; color:var(--accent); margin-bottom:2px; }
 .upd ul { margin:0; padding:0; list-style:none; }
 .upd li span { display:inline-block; min-width:34px; color:var(--mute); font-weight:700; }
+.upd li i { display:inline-block; font-style:normal; font-size:10px; font-weight:700; padding:0 4px; margin-right:5px; border-radius:3px; vertical-align:1px; }
+.upd li i.k-d { background:#dbeafe; color:#1e40af; }
+.upd li i.k-f { background:#e5e7eb; color:#475569; }
 .upd details summary { cursor:pointer; color:var(--mute); font-size:11px; margin-top:2px; }
 .pick { margin-left:auto; }
 .pick { display:flex; align-items:center; gap:8px; background:var(--bg2); border:1px solid #e2e8f0; border-radius:8px; padding:6px 10px; }

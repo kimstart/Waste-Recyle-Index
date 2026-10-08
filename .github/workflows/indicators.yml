@@ -32,6 +32,9 @@ jobs:
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: mkdir -p logs && python -u collect_biogas.py 2>&1 | tee logs/biogas.log
+      - name: 최근 업데이트 소식 정리
+        continue-on-error: true
+        run: python -u build_updates.py 2>&1 | tee logs/updates.log
       - name: 변경 저장
         run: |
           git config user.name "github-actions[bot]"

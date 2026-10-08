@@ -13,6 +13,18 @@ RE_BASE = "https://www.re.or.kr"
 BACKFILL_FROM = "2024-01-01"
 DATA_KEY = urllib.parse.unquote(os.environ.get("DATA_GO_KR_KEY", ""))
 G2B = "https://apis.data.go.kr/1230000"
+T0 = time.monotonic()
+BUDGET = {"순환자원정보센터": 22 * 60, "나라장터": 12 * 60}   # 수집기별 최대 실행 시간(초). 넘으면 모은 것까지만 저장
+CUT = {"hit": False}
+
+
+def over(name, since):
+    if time.monotonic() - since > BUDGET[name]:
+        if not CUT["hit"]:
+            print(f">> [{name}] 시간 한도 도달 → 여기까지 저장하고 다음 실행에서 이어서 수집")
+        CUT["hit"] = True
+        return True
+    return False
 
 FOCUS = ["화성", "수원", "평택", "오산"]
 GG = ["수원", "성남", "고양", "용인", "부천", "안산", "안양", "남양주", "화성", "평택", "의정부", "시흥", "파주", "김포", "광명",
@@ -139,9 +151,11 @@ def re_detail(b):
 
 
 def collect_re(old, first_run):
-    found, pages_max = {}, (40 if first_run else 2)
+    found, pages_max, t = {}, (40 if first_run else 2), time.monotonic()
     for path, label in (("/bid/listBidResultPage.do", "결과"), ("/bid/listBidPartPage.do", "공고")):
         for q in RE_QUERIES:
+            if over("순환자원정보센터", t):
+                break
             for page in range(1, pages_max + 1):
                 try:
                     rows = re_list(path, q, page)
@@ -167,6 +181,10 @@ def collect_re(old, first_run):
         if prev and prev.get("status") == r["status"] and prev.get("detail_ok"):
             out[key] = prev
             continue
+        if over("순환자원정보센터", t):
+            if prev:
+                out[key] = prev
+            continue
         b = {"id": key, "src": "순환자원정보센터", **r, "cat": category(title), "region": reg, "city": city}
         try:
             re_detail(b)
@@ -189,7 +207,7 @@ def collect_re(old, first_run):
 # ---------------------------------------------------------------- 나라장터
 def g2b(path, params):
     q = {"serviceKey": DATA_KEY, "pageNo": 1, "numOfRows": 100, "type": "json", **params}
-    txt = retry(lambda: get(f"{G2B}{path}?" + urllib.parse.urlencode(q), timeout=60), tries=3)
+    txt = retry(lambda: get(f"{G2B}{path}?" + urllib.parse.urlencode(q), timeout=30), tries=2, wait=2)
     j = json.loads(txt)
     body = j.get("response", {}).get("body", {})
     its = body.get("items") or []
@@ -201,11 +219,16 @@ def collect_g2b(old, first_run):
         print(">> [나라장터] DATA_GO_KR_KEY 없음 → 건너뜀")
         return {}
     now = now_kst()
-    days = 365 * 2 if first_run else 21
-    out, wins = {}, {}
+    days = 400 if first_run else 21
+    out, wins, t, fails = {}, {}, time.monotonic(), 0
     for kind in ("Servc", "Thng"):
         # 한 번에 조회할 수 있는 기간이 짧아 30일씩 나눠 조회
         for k in range(0, days, 30):
+            if over("나라장터", t) or fails >= 6:
+                if fails >= 6:
+                    print(">> [나라장터] 연속 실패로 이번 실행은 중단")
+                    CUT["hit"] = True
+                break
             e, s = now - timedelta(days=k), now - timedelta(days=min(k + 30, days))
             rng = {"inqryDiv": 1, "inqryBgnDt": s.strftime("%Y%m%d0000"), "inqryEndDt": e.strftime("%Y%m%d2359")}
             for kw in ("매각", "판매"):
@@ -224,7 +247,9 @@ def collect_g2b(old, first_run):
                                     "url": x.get("bidNtceDtlUrl") or "", "kind": kind}
                     for x in g2b(f"/as/ScsbidInfoService/getScsbidListSttus{kind}PPSSrch", {**rng, "bidNtceNm": kw}):
                         wins[f"g2b:{x.get('bidNtceNo')}:{x.get('bidNtceOrd')}"] = x
+                    fails = 0
                 except Exception as ex:
+                    fails += 1
                     print(f">> [나라장터] {kind} {kw} {s:%Y-%m-%d} 실패: {type(ex).__name__}: {str(ex)[:120]}")
                 time.sleep(0.2)
     for key, x in wins.items():
@@ -255,7 +280,8 @@ def main():
         except Exception as e:
             print(f">> [{name}] 실패: {type(e).__name__}: {str(e)[:200]} → 이전 값 유지")
     lst = sorted(bids.values(), key=lambda b: (b.get("start") or "", b["id"]), reverse=True)
-    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or ok,
+    done = st.get("backfilled") or (ok and not CUT["hit"])
+    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": done,
                                "focus": FOCUS, "bids": lst})
     print(f">> 저장: 전체 {len(lst)}건 (중점 {sum(b['region'] == '중점' for b in lst)} · 수도권 {sum(b['region'] == '수도권' for b in lst)})")
 

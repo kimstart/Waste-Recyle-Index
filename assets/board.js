@@ -107,18 +107,21 @@
     renderNews(nj);
   }
 
-  function renderUpdates(list) {
+  // 최근 업데이트: 자료 변동 소식(data/data_updates.json) + 기능 변경 이력(data/changelog.json)
+  function renderUpdates(data, feats) {
     const box = $('updBox');
     if (!box) return;
-    const mine = (list || []).filter(x => !x.page || x.page === 'all' || x.page === B.name)
-      .sort((a, b) => b.date.localeCompare(a.date));
-    if (!mine.length) { box.style.display = 'none'; return; }
+    const mine = arr => (arr || []).filter(x => !x.page || x.page === 'all' || x.page === B.name);
+    const all = [...mine(data).map(x => ({ ...x, kind: '자료' })), ...mine(feats).map(x => ({ ...x, kind: '기능' }))]
+      .sort((a, b) => b.date.localeCompare(a.date) || (a.kind === '자료' ? -1 : 1));
+    if (!all.length) { box.style.display = 'none'; return; }
     const md = d => `${+d.slice(5, 7)}.${+d.slice(8, 10)}`;
-    const li = arr => arr.map(x => `<li><span>${md(x.date)}</span>${esc(x.text)}</li>`).join('');
-    box.innerHTML = `<b>최근 업데이트</b><ul>${li(mine.slice(0, 3))}</ul>` +
-      (mine.length > 3 ? `<details><summary>이전 내용 ${mine.length - 3}건</summary><ul>${li(mine.slice(3, 15))}</ul></details>` : '');
+    const li = arr => arr.map(x => `<li><span>${md(x.date)}</span><i class="k-${x.kind === '자료' ? 'd' : 'f'}">${x.kind}</i>${esc(x.text)}</li>`).join('');
+    box.innerHTML = `<b>최근 업데이트</b><ul>${li(all.slice(0, 3))}</ul>` +
+      (all.length > 3 ? `<details><summary>이전 내용 ${all.length - 3}건</summary><ul>${li(all.slice(3, 20))}</ul></details>` : '');
   }
-  getJson('data/changelog.json').then(renderUpdates).catch(() => renderUpdates([]));
+  Promise.all([getJson('data/data_updates.json').then(j => j.events || []).catch(() => []),
+               getJson('data/changelog.json').catch(() => [])]).then(([d, f]) => renderUpdates(d, f));
 
   const inp = $('viewDate');
   inp.min = dash(B.minKey); inp.max = dash(TODAY);
