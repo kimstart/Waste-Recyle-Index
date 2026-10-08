@@ -37,7 +37,8 @@ RE_QUERIES = ["화성", "수원", "평택", "오산", "서울", "인천", "경�
               "김포", "파주", "의정부", "광명", "군포", "하남", "이천", "안성", "구리", "포천", "양주", "의왕", "여주", "과천", "동작구",
               "PET", "페트", "플라스틱", "합성수지", "선별품", "폐비닐", "스티로폼", "잉고트"]
 PLASTIC = re.compile(r"PET|페트|플라스틱|합성수지|선별품|폐비닐|비닐|스티로폼|발포|잉고트|\bPP\b|\bPE\b|EPS|재활용품|재활용가능자원|재활용자원|재활용 ?선별", re.I)
-NON_PLASTIC_ONLY = re.compile(r"\((?:[^()]*(?:고철|캔|유리|병|폐지|종이|배터리|소화기|번호판|의류|식용유|형광등|전지|가전|고무|타이어|목재)[^()]*)\)")
+NON_PLASTIC_ONLY = re.compile(r"\((?:[^()]*(?:고철|캔|유리|병|폐지|파지|종이|우유팩|종이팩|배터리|소화기|번호판|의류|식용유|형광등|전지|가전|고무|타이어|목재)[^()]*)\)")
+NON_PLASTIC_WORD = re.compile(r"폐지류|잡파지|파지|우유팩|종이팩|폐의류|고철|폐유리|유리병|폐건전지|폐형광등|폐배터리|소화기|번호판|폐식용유")
 CATS = [("PET", r"PET|페트"), ("폐비닐", r"비닐|필름"), ("스티로폼", r"스티로폼|발포|잉고트|EPS"),
         ("PP·PE", r"\bPP\b|\bPE\b|폴리프로필렌|폴리에틸렌"), ("혼합플라스틱", r"플라스틱|합성수지"), ("재활용품 일괄", r"재활용")]
 
@@ -79,7 +80,8 @@ def is_plastic(title):
     if not PLASTIC.search(title):
         return False
     # '재활용품(고철)', '재활용품(혼합병)'처럼 괄호 안이 비플라스틱뿐이면 제외
-    if NON_PLASTIC_ONLY.search(title) and not re.search(r"PET|페트|플라스틱|합성수지|비닐|스티로폼|잉고트|PP|PE", title, re.I):
+    has_pl = re.search(r"PET|페트|플라스틱|합성수지|비닐|스티로폼|잉고트|\bPP\b|\bPE\b|선별품", title, re.I)
+    if (NON_PLASTIC_ONLY.search(title) or NON_PLASTIC_WORD.search(title)) and not has_pl:
         return False
     return True
 
@@ -111,7 +113,7 @@ def _fields(h):
 
 def re_detail(b):
     """개찰 완료 건은 결과 화면, 진행 중인 건은 공고 화면에서 수량·예정가격·낙찰금액을 읽는다"""
-    done = b["status"] in ("낙찰", "부분낙찰", "유찰", "유찰(공고취소)")
+    done = b["status"] in ("낙찰", "부분낙찰", "유찰", "유찰(공고취소)", "개찰완료")
     path = "/bid/viewBidResultPage.do" if done else "/bid/viewBidAdPage.do"
     h = retry(lambda: get(f"{RE_BASE}{path}?bidAdNum={b['no']}&bidTimeNum={b['ord']}", timeout=40), tries=2)
     f = _fields(h)
@@ -132,6 +134,8 @@ def re_detail(b):
                 win = tds
                 break
         b["bidders"] = len(re.findall(r"<tr>\s*<td>\s*\d+\s*</td>", h.split("입찰참가", 1)[-1]))
+        if b["status"] == "개찰완료":
+            b["status"] = "낙찰" if win else "유찰"
         if win:
             b["win_raw"] = win[2]
             amt = num(win[2])
@@ -164,7 +168,9 @@ def collect_re(old, first_run):
                     break
                 for r in rows:
                     if "매각" in r["kind"] or "매각" in r["title"] or "판매" in r["title"]:
-                        found[f"re:{r['no']}:{r['ord']}"] = r
+                        k = f"re:{r['no']}:{r['ord']}"
+                        if k not in found or label == "결과":
+                            found[k] = r
                 if not rows or rows[-1]["start"] < BACKFILL_FROM:
                     break
                 time.sleep(0.3)
@@ -178,7 +184,7 @@ def collect_re(old, first_run):
             continue
         reg, city = region_of(f"{title} {r['org']}")
         prev = old.get(key)
-        if prev and prev.get("status") == r["status"] and prev.get("detail_ok"):
+        if prev and prev.get("status") in (r["status"], "낙찰", "유찰") and prev.get("detail_ok") == 2:
             out[key] = prev
             continue
         if over("순환자원정보센터", t):
@@ -188,7 +194,7 @@ def collect_re(old, first_run):
         b = {"id": key, "src": "순환자원정보센터", **r, "cat": category(title), "region": reg, "city": city}
         try:
             re_detail(b)
-            b["detail_ok"] = True
+            b["detail_ok"] = 2
             if reg == "기타":
                 reg2, city2 = region_of(b.get("area", ""))
                 if reg2 != "기타" and b.get("area") and len(b["area"]) < 12:   # 입찰가능지역이 수도권 한 곳으로 제한된 경우
@@ -268,7 +274,7 @@ def collect_g2b(old, first_run):
 
 def main():
     st = load(OUT, {}) or {}
-    old = {b["id"]: b for b in st.get("bids", [])}
+    old = {b["id"]: b for b in st.get("bids", []) if is_plastic(b.get("title", ""))}   # 필터가 바뀌면 예전 비플라스틱 건 정리
     first = not st.get("backfilled")
     bids = dict(old)
     ok = False
