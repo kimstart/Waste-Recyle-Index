@@ -1,8 +1,8 @@
->> [재생원료] 과거 자료 병합: 2023-01~2026-09
 >> [재생원료] 순환자원정보센터 실패: ValueError: 표 없음 (응답 제목 'ERROR')
->> [재생원료 API] code=91 msg=잘못된 파라미터 요청입니다. 전체=None
->> [재생원료 API] 예시: []
->> [재생원료] 공공데이터포털 API 실패: ValueError: API 자료 없음
+>> [재생원료 API] 202610 수도권: code=200 NORMAL SERVICE. 0건
+   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
+   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
+>> [재생원료] 공공데이터포털 API 실패: HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 CSV] FILE_000000007701636 27행, 머리글 ['시점', '구분', '수도권', '강원', '충북', '충남', '전북', '전남', '경북', '경남', '데이터 기준일']
 >> [재생원료] 공공데이터포털 파일에서 수집: 월 ['2026-09'] (총 1개월)
 >> [수집 성공] r_comp_pet: 2026-09 613.6 (이전 2026-08 598.7)
@@ -20,14 +20,20 @@
 >> [수집 성공] cn_pe: 2026-09-30 8197.0 (이전 2026-09-29 8283.0)
 >> [수집 성공] cn_pp: 2026-09-30 8631.0 (이전 2026-09-29 8676.0)
 >> [수집 성공] cn_pvc: 2026-09-30 4999.0 (이전 2026-09-29 4844.0)
->> [관세청] PE(LDPE·LLDPE) 수입단가(390110) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] HDPE 수입단가(390120) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] PP 수입단가(390210) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] PET(병 등급) 수입단가(390761) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] PVC 수입단가(390410) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] 폐PE 수출(391510) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [관세청] 폐플라스틱(PET·PP 등) 수출(391590) 실패: ValueError: 관세청 응답 오류: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><response><header><resultCode>99</resultCode><resultMsg>시작과 종료의 조회기간은 1년이내 기간만 가능합니다
->> [수집 실패] 관세청 수출입: ValueError: 관세청 자료 없음 → 이전 값 유지
+>> [관세청] PE(LDPE·LLDPE) 수입단가: 2026-08 2.764달러/kg, 3,776톤 (10개월)
+>> [관세청] HDPE 수입단가: 2026-08 1.746달러/kg, 4,325톤 (10개월)
+>> [관세청] PP 수입단가: 2026-08 1.926달러/kg, 2,325톤 (10개월)
+>> [관세청] PET(병 등급) 수입단가: 2026-08 1.046달러/kg, 22,903톤 (10개월)
+>> [관세청] PVC 수입단가: 2026-08 0.926달러/kg, 10,110톤 (10개월)
+>> [관세청] 폐PE 수출: 2026-08 0.297달러/kg, 5,070톤 (10개월)
+>> [관세청] 폐플라스틱(PET·PP 등) 수출: 2026-08 0.122달러/kg, 458톤 (10개월)
+>> [수집 성공] imp_ldpe: 2026-08 2.764 (이전 2026-07 2.562)
+>> [수집 성공] imp_hdpe: 2026-08 1.746 (이전 2026-07 1.82)
+>> [수집 성공] imp_pp: 2026-08 1.926 (이전 2026-07 1.668)
+>> [수집 성공] imp_pet: 2026-08 1.046 (이전 2026-07 1.112)
+>> [수집 성공] imp_pvc: 2026-08 0.926 (이전 2026-07 0.917)
+>> [수집 성공] exp_scrap_pe: 2026-08 5070 (이전 2026-07 4974)
+>> [수집 성공] exp_scrap_etc: 2026-08 458 (이전 2026-07 1084)
 >> [수집 성공] uk_prn_plastic: 2026-09 650.0 (이전 2026-08 550.0)
 >> [수집 성공] fx_gbp: 2026-10-07 1767.68 (이전 2026-10-06 1777.42)
 >> [수집 성공] ref_bvse: 2026-08 None (이전 None None)
