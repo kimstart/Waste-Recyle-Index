@@ -48,7 +48,8 @@ def norm(s):
 
 
 def num(s):
-    m = re.search(r"-?[\d,]+(?:\.\d+)?", s or "")
+    s = re.sub(r"(\d)\s*\.\s*(\d)", r"\1.\2", s or "")      # '82 . 2' → '82.2'
+    m = re.search(r"-?\d[\d,]*(?:\.\d+)?", s)
     return float(m.group(0).replace(",", "")) if m else None
 
 
@@ -272,6 +273,25 @@ def collect_g2b(old, first_run):
     return out
 
 
+def derive(b):
+    """원문 문자열(예정가격·낙찰금액)에서 원/kg 단가와 낙찰/예정 비율을 다시 계산"""
+    q = b.get("qty_kg")
+    pre = b.get("pre_raw") or ""
+    if pre and "비공개" not in pre and b.get("src") != "나라장터":
+        amt = num(pre)
+        # '30 원'처럼 단위가 원이어도 금액이 작으면 kg당 단가로 본다
+        unit = "kg" in pre or (amt is not None and amt < 5000)
+        b["pre_unit_price"] = amt if unit else (round(amt / q, 1) if amt and q else None)
+    win = b.get("win_raw") or ""
+    if win:
+        amt = num(win)
+        unit = "kg" in win or (amt is not None and amt < 5000)
+        b["win_unit_price"] = amt if unit else (round(amt / q, 1) if amt and q else None)
+    if b.get("pre_unit_price") and b.get("win_unit_price"):
+        b["win_ratio"] = round(b["win_unit_price"] / b["pre_unit_price"] * 100, 1)
+    return b
+
+
 def main():
     st = load(OUT, {}) or {}
     old = {b["id"]: b for b in st.get("bids", []) if is_plastic(b.get("title", ""))}   # 필터가 바뀌면 예전 비플라스틱 건 정리
@@ -285,7 +305,7 @@ def main():
             ok = ok or bool(got)
         except Exception as e:
             print(f">> [{name}] 실패: {type(e).__name__}: {str(e)[:200]} → 이전 값 유지")
-    lst = sorted(bids.values(), key=lambda b: (b.get("start") or "", b["id"]), reverse=True)
+    lst = sorted((derive(b) for b in bids.values()), key=lambda b: (b.get("start") or "", b["id"]), reverse=True)
     done = st.get("backfilled") or (ok and not CUT["hit"])
     save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": done,
                                "focus": FOCUS, "bids": lst})

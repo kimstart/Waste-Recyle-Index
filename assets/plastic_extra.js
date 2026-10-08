@@ -106,14 +106,16 @@
     const rows = BIDS.filter(b => inScope(b) && b.start && dayMs(b.start) >= cut);
     const done = rows.filter(b => /낙찰|유찰/.test(b.status || ''));
     const won = rows.filter(b => b.win_unit_price);
-    const tons = rows.reduce((s, b) => s + (b.qty_kg || 0), 0) / 1000;
+    // 유찰·취소 후 재공고된 같은 물량이 겹치지 않도록 낙찰됐거나 진행 중인 공고만 합산
+    const live = rows.filter(b => !/유찰|취소/.test(b.status || ''));
+    const tons = live.reduce((s, b) => s + (b.qty_kg || 0), 0) / 1000;
     const pre = rows.map(b => b.pre_unit_price).filter(v => v);
     const ratio = rows.map(b => b.win_ratio).filter(v => v && v < 1000);
     const catAvg = c => { const v = won.filter(b => b.cat === c).map(b => b.win_unit_price); return v.length ? `${n0(mean(v))}원/kg` : '-'; };
     const catN = c => won.filter(b => b.cat === c).length;
     $('bidKpi').innerHTML = [
       ['신규 공고', `${rows.length}건`, `개찰 완료 ${done.length}건 · 유찰 ${done.filter(b => /유찰/.test(b.status)).length}건`],
-      ['공고 물량', tons ? `${n0(tons)}톤` : '-', '수량을 밝힌 공고 합계'],
+      ['공고 물량', tons ? `${n0(tons)}톤` : '-', '낙찰·진행 중 공고 합계 (재공고 중복 제외)'],
       ['평균 예정단가', pre.length ? `${n0(mean(pre))}원/kg` : '-', `예정가격 공개 ${pre.length}건`],
       ['낙찰/예정가격', ratio.length ? `${n1(mean(ratio))}%` : '-', `비율 계산 가능 ${ratio.length}건`],
       ['PET 낙찰단가', catAvg('PET'), `${catN('PET')}건 평균`],
