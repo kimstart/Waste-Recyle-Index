@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261007c">
+<link rel="stylesheet" href="assets/board.css?v=20261008">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 재활용 플라스틱 가격 · 영국 PRN · rPET 기사 가격 · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 제도 · 뉴스 · 해외 참고</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -23,6 +23,7 @@
 
 <div class="wrap">
   <div class="pick-row">
+    <div class="upd" id="updBox"></div>
     <div class="pick">
       <label for="viewDate">조회일자</label>
       <input type="date" id="viewDate">
@@ -38,10 +39,64 @@
     <tbody id="indBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
   </table>
   <div class="note">
-    재활용 플라스틱: 한국환경공단 '재활용가능자원 가격조사'(VAT 포함, 원/kg, 매월 10일 기준 조사). 전국평균을 우선 쓰며, 전국평균을 받지 못한 달은 공공데이터포털 파일의 권역별 값을 단순평균해 표시하고 비고에 기준을 적습니다. 전월 대비는 이 사이트가 매달 쌓은 직전 달 값과 비교합니다.<br>
-    영국 PRN: letsrecycle.com이 매월 첫 주에 공개하는 전월 플라스틱 PRN(포장재 재활용 증명서) 거래가격 범위(£/톤). 표의 값은 범위의 중간값이고, 원/kg은 원/파운드 환율로 환산했습니다(<span id="gbpNote">-</span>).<br>
-    rPET(기사 기준): 기사에 보도된 가격을 기사 게재일 기준으로 표시합니다. 가격 기준(평가기관·인도조건)이 기사마다 달라 같은 시기라도 차이가 날 수 있습니다. 아래 'rPET 가격 추이'에서 근거 문장과 원문을 확인할 수 있습니다.<br>
+    재활용 플라스틱: 한국환경공단 '재활용가능자원 가격조사'의 <b>수도권</b> 값(VAT 포함, 원/kg, 매월 10일 기준 조사). 전월·전년 동월 대비는 2023년 1월부터 쌓은 월별 자료와 비교합니다.<br>
+    신재 가격: 관세청 품목별 수출입실적의 월별 수입 금액÷중량(달러/kg)과 중국 상품거래소 선물 종가(위안/톤)를 원래 단위 그대로 보여줍니다. 신재 원료 시장 흐름을 보는 참고 지표이며, 재활용 단가와 맞대어 비교하는 지표가 아닙니다.<br>
     자료 갱신: <span id="indUpdated">-</span>
+  </div>
+
+  <h2>수도권 재활용 가격 분석 <small>전월·전년 동월·12개월 범위·3개년 동월</small></h2>
+  <table class="cmp ana">
+    <thead id="anaHead"></thead>
+    <tbody id="anaBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note" id="anaNote"></div>
+  <div class="ctl"><label for="seasonItem">계절성 보기</label><select id="seasonItem"></select><div class="rp-legend" id="seasonLegend"></div></div>
+  <div class="rp-chart" id="seasonChart"></div>
+  <div class="note">같은 품목의 연도별 월간 가격을 겹쳐 그려 계절적으로 오르내리는 시기를 비교합니다. 진한 선이 올해입니다. 마우스를 올리면 그 달의 연도별 값을 볼 수 있습니다.</div>
+
+  <h2>수도권 매각입찰 <small id="bidUpd"></small></h2>
+  <div class="ctl">
+    <div class="rp-seg" id="bidScope"><button type="button" data-v="focus" class="on">화성·수원·평택·오산</button><button type="button" data-v="cap">수도권 전체</button><button type="button" data-v="all">전국</button></div>
+    <div class="rp-seg" id="bidPeriod"><button type="button" data-v="90">최근 3개월</button><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
+  </div>
+  <div class="kpis" id="bidKpi"></div>
+  <div class="ctl"><b style="font-size:13px">낙찰 단가 추이</b><div class="rp-legend" id="bidLegend"></div></div>
+  <div class="rp-chart" id="bidChart"></div>
+  <table class="cmp bids">
+    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">공고기관</th><th>공고명</th><th class="h-m">품목</th><th>물량</th><th class="h-m">예정단가</th><th>결과</th><th class="h-m">출처</th></tr></thead>
+    <tbody id="bidBody"><tr><td colspan="9" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">순환자원정보센터 전자입찰과 나라장터에 올라온 지자체·공공기관·업체의 플라스틱 관련 매각(최고가) 공고입니다. 공고명·공고기관·입찰가능지역으로 지역을 나눴습니다.
+    낙찰 단가는 단가 입찰이면 낙찰 금액, 총액 입찰이면 낙찰 총액÷수량으로 계산했습니다. 예정가격을 공개하지 않는 공고가 많아 낙찰/예정가격 비율은 공개된 건만 계산합니다. 연간 단가계약이 많아 공고는 12~1월에 몰립니다.</div>
+
+  <h2>제도·규제 <small>EPR · 재생원료 사용 의무 · <span id="polUpd"></span></small></h2>
+  <div id="polAlert"></div>
+  <table class="cmp pol">
+    <thead><tr><th class="h-m">구분</th><th>항목</th><th>내용</th><th>상태</th><th>시행</th><th class="h-m">출처</th></tr></thead>
+    <tbody id="polBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="news2" style="margin-top:12px">
+    <div><h3>감시 중인 법령·고시<span>국가법령정보 공동활용</span></h3><ul class="plain" id="polLaws"></ul></div>
+    <div><h3>관련 부처 게시글<span>기후에너지환경부</span></h3><ul class="plain" id="polPosts"></ul></div>
+  </div>
+  <div class="note">하루 세 번 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 이 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록해 저장소 구독자에게 메일이 갑니다.</div>
+
+  <h2>폐플라스틱 뉴스<small id="newsUpd"></small></h2>
+  <div class="news2">
+    <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
+    <div><h3>해외<span>재활용·플라스틱 전문지</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
+  </div>
+  <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
+
+  <h2>해외 참고 지표 <small>의무화 시장 참고 · 영국 PRN · 유럽/아시아 rPET</small></h2>
+  <table class="ind">
+    <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
+    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
+    <tbody id="refBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">
+    영국 PRN: letsrecycle.com이 매월 첫 주에 공개하는 전월 플라스틱 PRN(포장재 재활용 증명서) 거래가격 범위(£/톤). 표의 값은 범위의 중간값이고, 원/kg은 원/파운드 환율로 환산했습니다(<span id="gbpNote">-</span>).<br>
+    rPET(기사 기준): 기사에 보도된 가격을 기사 게재일 기준으로 표시합니다. 가격 기준(평가기관·인도조건)이 기사마다 달라 같은 시기라도 차이가 날 수 있습니다.
   </div>
 
   <h2>rPET 가격 추이 <small id="rpUpd"></small></h2>
@@ -68,37 +123,42 @@
   <h2>참고 자료 <small>영국 플라스틱 포장세 · 독일 재생원료 시황</small></h2>
   <div id="extra"></div>
 
-  <h2>폐플라스틱 뉴스<small id="newsUpd"></small></h2>
-  <div class="news2">
-    <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
-    <div><h3>해외<span>재활용·플라스틱 전문지</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
-  </div>
-  <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
-
-  <div class="foot">출처: 한국환경공단(순환자원정보센터·공공데이터포털), letsrecycle.com, rPET 가격은 Argus·OPIS·S&P Global·EUWID·ChemOrbis·Resource Recycling 등 각 기사(표에 출처 표기), 영국 국세청(HMRC), bvse(독일 재활용협회)·plasticker.de, 구글 뉴스, Recycling Today</div>
+  <div class="foot">출처: 한국환경공단(재활용가능자원 가격조사·순환자원정보센터 전자입찰), 조달청 나라장터, 관세청, Sina Finance(중국 상품거래소), 국가법령정보센터, 기후에너지환경부, letsrecycle.com, rPET 가격은 Argus·OPIS·S&P Global·EUWID·ChemOrbis·Resource Recycling 등 각 기사(표에 출처 표기), 영국 국세청(HMRC), bvse(독일 재활용협회)·plasticker.de, 구글 뉴스, Recycling Today</div>
 </div>
 
 <script>
 window.BOARD = {
   name: 'plastic',
   minKey: '20261007',
-  cycNote: { '월간': '(재활용 플라스틱)', '월간-영국': '(영국 재활용 의무)', '수시': '(기사 기준)' },
+  cycNote: { '월간': '(재활용 플라스틱·수도권)', '월간-신재': '(신재 수입단가)', '일간': '(중국 신재 선물)', '월간-수출': '(폐플라스틱 수출)', '월간-영국': '(영국 재활용 의무)', '수시': '(기사 기준)' },
   rows: [
-    { cyc: '월간', key: 'r_comp_pet', label: '압축 PET', dec: 1, why: '선별장에서 재활용업체로 넘어가는 PET 원료 단가. 재활용 원가와 수거 경제성의 출발점' },
+    { cyc: '월간', key: 'r_comp_pet', label: '압축 PET', dec: 1, why: '선별장에서 재활용업체로 넘어가는 PET 원료(선별품) 단가. 선별장 매출과 수거 경제성의 출발점' },
     { cyc: '월간', key: 'r_comp_pe', label: '압축 PE', dec: 1, why: '선별된 PE(비닐·용기류) 원료 단가. 폐비닐·용기 재활용 원가 지표' },
     { cyc: '월간', key: 'r_comp_pp', label: '압축 PP', dec: 1, why: '선별된 PP 원료 단가. PP 재활용 원가 지표' },
-    { cyc: '월간', key: 'r_flk_pet_clear', label: '플레이크 PET(무색)', dec: 1, why: '세척·분쇄된 투명 PET. 식품용·섬유용 rPET 원료 수급을 보여주는 핵심 지표' },
-    { cyc: '월간', key: 'r_flk_pet_color', label: '플레이크 PET(유색)', dec: 1, why: '유색 PET 플레이크. 섬유·시트 등 저부가 용도 원료 가격' },
+    { cyc: '월간', key: 'r_flk_pet_clear', label: '플레이크 PET(무색)', dec: 1, why: '세척·분쇄된 투명 PET. 식품용 rPET(재생원료 사용 의무 대상) 원료 수급을 보여주는 핵심 지표' },
+    { cyc: '월간', key: 'r_flk_pet_color', label: '플레이크 PET(유색)', dec: 1, why: '유색 PET 플레이크. 섬유·시트 등 용도 원료 가격' },
     { cyc: '월간', key: 'r_flk_pe', label: '플레이크 PE', dec: 1, why: '세척·분쇄한 PE 중간 원료. 펠렛 가공 전 단계 가격' },
     { cyc: '월간', key: 'r_flk_pp', label: '플레이크 PP', dec: 1, why: '세척·분쇄한 PP 중간 원료. 펠렛 가공 전 단계 가격' },
     { cyc: '월간', key: 'r_flk_pvc', label: '플레이크 PVC', dec: 1, why: '세척·분쇄한 PVC 중간 원료. 펠렛 가공 전 단계 가격' },
-    { cyc: '월간', key: 'r_pel_pe', label: '펠렛 PE', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체 매출 단가이자 신재 PE와의 경쟁력 비교 기준' },
-    { cyc: '월간', key: 'r_pel_pp', label: '펠렛 PP', dec: 1, why: '최종 재생원료 판매가. 신재 PP와의 경쟁력 비교 기준' },
-    { cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 인증받은 재활용업체가 재생원료 판매가와 별도로 받는 수입이라, 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' },
-    { cyc: '수시', key: 'rpet_eu_fgp', label: '유럽 식품용 rPET 펠렛', dec: 0, why: 'EU 음료병 재생원료 25% 의무로 형성된 식품용 rPET 시장의 대표 가격(북서유럽 도착 기준). 국내 재생원료 사용 의무화 시장이 따라갈 가격 구조의 선행 사례' },
-    { cyc: '수시', key: 'rpet_eu_prem', label: '유럽 식품용 rPET 프리미엄', dec: 0, why: '식품용 rPET 펠렛이 신재 PET보다 톤당 얼마나 비싼지. 의무화가 만든 웃돈의 크기로, 줄어들면 재생원료 공급이 수요를 따라잡았다는 신호' },
-    { cyc: '수시', key: 'rpet_asia_fgp', label: '아시아 rPET 펠렛', dec: 0, why: '중국·동남아 rPET 펠렛 수출가격(FOB). 국내 식품용 rPET과 경쟁하는 수입품 가격 기준' },
-    { cyc: '수시', key: 'rpet_kr', label: '국내 식품용 rPET', dec: 0, empty: '가격을 보도한 국내 기사 대기 중', why: '국내 기사에 나온 식품용 재생 페트 칩·플레이크 가격(원/kg). 공개 통계가 없어 기사에 가격이 나올 때 자동으로 표시' }
+    { cyc: '월간', key: 'r_pel_pe', label: '펠렛 PE', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체의 매출 단가' },
+    { cyc: '월간', key: 'r_pel_pp', label: '펠렛 PP', dec: 1, why: '최종 재생원료 판매가. 재생원료 업체의 매출 단가' },
+    { cyc: '월간', key: 'r_eps_ingot', label: 'EPS 잉고트', dec: 1, why: '스티로폼을 녹여 굳힌 덩어리. 지자체 스티로폼 매각 단가의 기준' },
+    { cyc: '월간', grp: '월간-신재', key: 'imp_ldpe', label: 'PE(LDPE·LLDPE) 수입단가', dec: 3, why: '국내로 수입된 신재 저밀도 PE의 평균 통관 단가. 신재 PE 시장 흐름' },
+    { cyc: '월간', grp: '월간-신재', key: 'imp_hdpe', label: 'HDPE 수입단가', dec: 3, why: '국내로 수입된 신재 HDPE의 평균 통관 단가' },
+    { cyc: '월간', grp: '월간-신재', key: 'imp_pp', label: 'PP 수입단가', dec: 3, why: '국내로 수입된 신재 PP의 평균 통관 단가' },
+    { cyc: '월간', grp: '월간-신재', key: 'imp_pet', label: 'PET(병 등급) 수입단가', dec: 3, why: '국내로 수입된 병 등급 PET 칩의 평균 통관 단가' },
+    { cyc: '월간', grp: '월간-신재', key: 'imp_pvc', label: 'PVC 수입단가', dec: 3, why: '국내로 수입된 PVC의 평균 통관 단가' },
+    { cyc: '일간', key: 'cn_pet', label: 'PET 병 칩', dec: 0, why: '정저우상품거래소 PET 병칩 선물 연속물 종가. 아시아 신재 PET 시황' },
+    { cyc: '일간', key: 'cn_pe', label: 'PE (LLDPE)', dec: 0, why: '다롄상품거래소 LLDPE 선물 연속물 종가. 아시아 신재 PE 시황' },
+    { cyc: '일간', key: 'cn_pp', label: 'PP', dec: 0, why: '다롄상품거래소 PP 선물 연속물 종가. 아시아 신재 PP 시황' },
+    { cyc: '일간', key: 'cn_pvc', label: 'PVC', dec: 0, why: '다롄상품거래소 PVC 선물 연속물 종가. 아시아 신재 PVC 시황' },
+    { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_pe', label: '폐PE 수출', dec: 0, why: '해외로 수출된 폐PE 물량. 국내 원물이 해외로 빠져나가는 규모로 선별장 원물 수급에 영향' },
+    { cyc: '월간', grp: '월간-수출', key: 'exp_scrap_etc', label: '폐플라스틱(PET·PP 등) 수출', dec: 0, why: '해외로 수출된 기타 폐플라스틱 물량(PET·PP 등 포함)' },
+    { sec: 'ref', cyc: '월간', grp: '월간-영국', key: 'uk_prn_plastic', label: '영국 플라스틱 PRN', dec: 1, why: '영국 포장재 생산자가 재활용 의무량만큼 사야 하는 재활용 증명서 가격. 의무화 제도가 재활용에 얹어주는 추가 가치(의무화 프리미엄)를 보여줌' },
+    { sec: 'ref', cyc: '수시', key: 'rpet_eu_fgp', label: '유럽 식품용 rPET 펠렛', dec: 0, why: 'EU 음료병 재생원료 25% 의무로 형성된 식품용 rPET 시장의 대표 가격(북서유럽 도착 기준). 국내 재생원료 사용 의무화 시장의 선행 사례' },
+    { sec: 'ref', cyc: '수시', key: 'rpet_eu_prem', label: '유럽 식품용 rPET 프리미엄', dec: 0, why: '식품용 rPET 펠렛이 신재 PET보다 톤당 얼마나 비싼지. 의무화가 만든 웃돈의 크기' },
+    { sec: 'ref', cyc: '수시', key: 'rpet_asia_fgp', label: '아시아 rPET 펠렛', dec: 0, why: '중국·동남아 rPET 펠렛 수출가격(FOB). 국내 식품용 rPET과 경쟁하는 수입품 가격 기준' },
+    { sec: 'ref', cyc: '수시', key: 'rpet_kr', label: '국내 식품용 rPET', dec: 0, empty: '가격을 보도한 국내 기사 대기 중', why: '국내 기사에 나온 식품용 재생 페트 칩·플레이크 가격(원/kg). 기사에 가격이 나올 때 자동으로 표시' }
   ],
   extra(items, fmt) {
     const g = items.fx_gbp, b = items.ref_bvse;
@@ -121,7 +181,8 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261007c"></script>
-<script src="assets/rpet.js?v=20261007c"></script>
+<script src="assets/board.js?v=20261008"></script>
+<script src="assets/rpet.js?v=20261008"></script>
+<script src="assets/plastic_extra.js?v=20261008"></script>
 </body>
 </html>

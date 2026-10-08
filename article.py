@@ -22,8 +22,15 @@ def resolve_gnews(link):
     body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", inner, None, "generic"]]]))
     txt = get("https://news.google.com/_/DotsSplashUi/data/batchexecute",
               headers={"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"}, data=body.encode(), timeout=20)
-    u = re.search(r'garturlres\\",\\"(https?://[^\\"]+)', txt)
-    return u.group(1).encode().decode("unicode_escape") if u else None
+    u = re.search(r'garturlres\\",\\"(https?://.+?)\\"', txt)
+    if not u:
+        return None
+    url = u.group(1)
+    for _ in range(3):                      # JSON 안의 JSON이라 \\u003d 같은 이스케이프가 겹쳐 있음
+        if "\\" not in url:
+            break
+        url = url.encode("latin-1", "backslashreplace").decode("unicode_escape")
+    return url
 
 
 def page_text(raw):

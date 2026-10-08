@@ -15,7 +15,13 @@ body { margin:0; font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo
 .menu a:hover { background:#f1f5f9; }
 .menu a.on { background:var(--accent); color:#fff; pointer-events:none; }
 
-.pick-row { display:flex; justify-content:flex-end; }
+.pick-row { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap; }
+.upd { flex:0 1 460px; border:1px solid #d6e9df; background:#f3faf6; border-radius:6px; padding:7px 11px; font-size:12px; color:#1f3d30; line-height:1.55; }
+.upd b { display:block; font-size:12px; font-weight:800; color:var(--accent); margin-bottom:2px; }
+.upd ul { margin:0; padding:0; list-style:none; }
+.upd li span { display:inline-block; min-width:34px; color:var(--mute); font-weight:700; }
+.upd details summary { cursor:pointer; color:var(--mute); font-size:11px; margin-top:2px; }
+.pick { margin-left:auto; }
 .pick { display:flex; align-items:center; gap:8px; background:var(--bg2); border:1px solid #e2e8f0; border-radius:8px; padding:6px 10px; }
 .pick label { font-size:14px; font-weight:700; color:#334155; }
 .pick input { font:inherit; font-size:14px; font-weight:700; color:#1e293b; border:1px solid #cbd5e1; border-radius:4px; padding:4px 6px; background:#fff; }
@@ -69,6 +75,9 @@ ol.news li { padding:10px 2px; border-bottom:1px solid var(--line); font-size:15
 ol.news a { color:#0f172a; font-weight:600; text-decoration:none; }
 ol.news a:hover { text-decoration:underline; color:var(--navy2); }
 ol.news .meta { display:block; margin-top:3px; font-size:12px; color:var(--mute); }
+ol.news .sum { display:block; margin-top:4px; font-size:13px; font-weight:400; color:#475569; line-height:1.55;
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+table.ind td.chg small.yoy { margin-top:2px; }
 
 /* rPET 기사 가격 차트 */
 .rp-bar { display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; margin:2px 0 8px; }
@@ -94,6 +103,35 @@ table.rp td { font-size:13px; }
 table.rp td.q { text-align:left; color:#475569; font-size:12px; line-height:1.5; }
 table.rp td.q a { color:var(--navy2); font-weight:700; }
 .tag-auto { display:inline-block; margin-left:4px; padding:0 5px; border:1px solid #cbd5e1; border-radius:3px; font-size:10px; color:#64748b; font-weight:600; }
+/* 분석·입찰·제도 */
+table.ana th, table.ana td { font-size:13px; }
+table.ana td.nm { text-align:left; font-weight:700; }
+.rng { position:relative; height:6px; background:#e2e8f0; border-radius:3px; margin:4px 2px 2px; }
+.rng i { position:absolute; top:-3px; width:4px; height:12px; margin-left:-2px; border-radius:2px; background:var(--navy); }
+.rng-l { display:flex; justify-content:space-between; font-size:11px; color:var(--mute); }
+.ctl { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; margin:12px 0 6px; font-size:13px; color:#334155; }
+.ctl select { font:inherit; font-size:13px; padding:4px 6px; border:1px solid #cbd5e1; border-radius:4px; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:8px; margin:8px 0 4px; }
+.kpi { border:1px solid var(--line); border-radius:6px; padding:9px 11px; background:#fff; }
+.kpi span { display:block; font-size:12px; color:var(--mute); }
+.kpi b { display:block; font-size:20px; font-weight:800; color:#0f172a; margin-top:2px; }
+.kpi small { display:block; font-size:11px; color:var(--mute); margin-top:1px; }
+table.bids td { font-size:12px; padding:6px 6px; }
+table.bids td.t { text-align:left; }
+table.bids td.t a { color:#0f172a; font-weight:600; text-decoration:none; }
+table.bids td.t a:hover { text-decoration:underline; }
+.reg { display:inline-block; padding:0 5px; border-radius:3px; font-size:11px; font-weight:700; background:#e2e8f0; color:#334155; }
+.reg.f { background:var(--navy); color:#fff; }
+.badge { display:inline-block; padding:1px 6px; border-radius:3px; font-size:11px; font-weight:700; white-space:nowrap; }
+.badge.on { background:#e6f4ec; color:#1f6b47; } .badge.soon { background:#e7f0fb; color:#1d4f91; } .badge.plan { background:#f1f5f9; color:#475569; }
+.alert { border:1px solid #f5c2c0; background:#fdf2f2; color:#8a1f1d; border-radius:6px; padding:9px 12px; font-size:13px; margin:6px 0 10px; }
+.alert b { display:block; margin-bottom:3px; }
+.alert a { color:#8a1f1d; }
+table.pol td { font-size:13px; vertical-align:top; }
+table.pol td.l { text-align:left; } table.pol td.d { text-align:left; color:#334155; line-height:1.55; }
+table.pol td a { color:var(--navy2); }
+ul.plain { margin:4px 0 0; padding-left:18px; font-size:13px; line-height:1.7; color:#334155; }
+ul.plain a { color:#0f172a; } ul.plain small { color:var(--mute); }
 .note { margin-top:8px; font-size:12px; color:#64748b; line-height:1.7; }
 .foot { margin-top:36px; font-size:12px; color:var(--gray); line-height:1.7; }
 
@@ -111,6 +149,10 @@ table.rp td.q a { color:var(--navy2); font-weight:700; }
   table.ind td.v { font-size:14px; white-space:normal; }
   .note-m { display:block; font-size:11px; font-weight:500; color:#64748b; margin-top:4px; line-height:1.45; }
   .news2 { grid-template-columns:1fr; gap:18px; }
+  .upd { flex-basis:100%; } .pick { margin-left:0; }
+  table.ana col.c-s3, table.ana th.s3, table.ana td.s3 { display:none; }
+  table.bids th.h-m, table.bids td.h-m { display:none; }
+  table.pol th.h-m, table.pol td.h-m { display:none; }
   table.rp col.c-q, table.rp th.q, table.rp td.q { display:none; }
   table.rp { table-layout:auto; } table.rp col { width:auto !important; }
   table.rp th, table.rp td { padding:6px 4px; font-size:11px; }

@@ -35,11 +35,19 @@
 
   function renderTable(st) {
     const items = (st && st.items) || {};
+    B.items = items;
     $('indUpdated').textContent = st && st.updated ? st.updated + ' (KST)' : '-';
+    renderRows(B.rows.filter(r => !r.sec), 'indBody', items);
+    if ($('refBody')) renderRows(B.rows.filter(r => r.sec === 'ref'), 'refBody', items);
+    if (B.extra && $('extra')) $('extra').innerHTML = B.extra(items, fmt) || '';
+    document.dispatchEvent(new CustomEvent('board:items', { detail: items }));
+  }
+
+  function renderRows(rows, bodyId, items) {
     // grp: 같은 주기라도 묶음을 나눌 때 쓰는 이름(없으면 cyc)
-    const span = {}; B.rows.forEach(r => { const g = r.grp || r.cyc; span[g] = (span[g] || 0) + 1; });
+    const span = {}; rows.forEach(r => { const g = r.grp || r.cyc; span[g] = (span[g] || 0) + 1; });
     const seen = {};
-    $('indBody').innerHTML = B.rows.map(r => {
+    $(bodyId).innerHTML = rows.map(r => {
       const it = items[r.key], g = r.grp || r.cyc;
       const first = !seen[g]; seen[g] = true;
       const cyc = first ? `<td class="cyc" rowspan="${span[g]}">${r.cyc}<span>${B.cycNote[g] || ''}</span></td>` : '';
@@ -57,18 +65,22 @@
       } else if (r.cyc === '월간') {
         chg = '<span class="fl">-</span><small>다음 달부터 표시</small>';
       }
+      if (it.yoy_value != null && it.yoy_value !== 0) {
+        const p = (it.value - it.yoy_value) / it.yoy_value * 100, c = p > 0 ? 'up' : p < 0 ? 'dn' : 'fl';
+        chg += `<small class="yoy">전년 동월 <span class="${c}">${p >= 0 ? '+' : ''}${p.toFixed(1)}%</span></small>`;
+      }
       const krw = it.krw_kg != null ? `<span class="krw">≈ ${fmt(it.krw_kg, 0)} 원/kg</span>`
         : it.krw_m3 != null ? `<span class="krw">≈ ${fmt(it.krw_m3, 0)} 원/㎥</span>` : '';
       return `<tr${cls}>${cyc}${nm}<td class="v">${fmt(it.value, r.dec)}${krw}${spark(it.spark)}</td><td class="d">${fmtDate(it.date)}</td><td class="chg">${chg}</td>${why}</tr>`;
     }).join('');
-    if (B.extra && $('extra')) $('extra').innerHTML = B.extra(items, fmt) || '';
   }
 
   function renderNews(nj) {
     const list = (arr, empty) => !arr || !arr.length ? `<li class="fl">${empty}</li>` : arr.map(x => {
       const t = x.pub ? `${+x.pub.slice(5, 7)}.${+x.pub.slice(8, 10)} ${x.pub.slice(11, 16)}` : '';
       const more = x.more > 0 ? ` · 유사 기사 ${x.more}건` : '';
-      return `<li><a href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a><span class="meta">${esc(x.source)}${t ? ' · ' + t : ''}${more}</span></li>`;
+      const sum = x.summary ? `<span class="sum">${esc(x.summary)}</span>` : '';
+      return `<li><a href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a>${sum}<span class="meta">${esc(x.source)}${t ? ' · ' + t : ''}${more}</span></li>`;
     }).join('');
     $('newsUpd').textContent = nj && nj.updated ? '갱신 ' + nj.updated : '';
     $('newsKo').innerHTML = list(nj && nj.domestic, '해당 일자의 국내 뉴스 자료가 없습니다.');
@@ -94,6 +106,19 @@
     else renderTable(st);
     renderNews(nj);
   }
+
+  function renderUpdates(list) {
+    const box = $('updBox');
+    if (!box) return;
+    const mine = (list || []).filter(x => !x.page || x.page === 'all' || x.page === B.name)
+      .sort((a, b) => b.date.localeCompare(a.date));
+    if (!mine.length) { box.style.display = 'none'; return; }
+    const md = d => `${+d.slice(5, 7)}.${+d.slice(8, 10)}`;
+    const li = arr => arr.map(x => `<li><span>${md(x.date)}</span>${esc(x.text)}</li>`).join('');
+    box.innerHTML = `<b>최근 업데이트</b><ul>${li(mine.slice(0, 3))}</ul>` +
+      (mine.length > 3 ? `<details><summary>이전 내용 ${mine.length - 3}건</summary><ul>${li(mine.slice(3, 15))}</ul></details>` : '');
+  }
+  getJson('data/changelog.json').then(renderUpdates).catch(() => renderUpdates([]));
 
   const inp = $('viewDate');
   inp.min = dash(B.minKey); inp.max = dash(TODAY);

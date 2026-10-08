@@ -87,33 +87,33 @@ def recycle_site():
 
 
 def recycle_api():
-    """② 공공데이터포털 '한국환경공단_재활용가능자원 가격조사 정보 조회 서비스' (Secret DATA_GO_KR_KEY 필요, 활용신청 후)"""
+    """② 공공데이터포털 '한국환경공단_재활용가능자원 가격조사 정보 조회 서비스' (Secret DATA_GO_KR_KEY 필요)
+    요청변수: pageNo, numOfRows(최대 100), returnType=JSON, exmnYmd=YYYYMM, stdgNm(권역명: 수도권·전국 등)"""
     if not DATA_KEY:
         raise ValueError("DATA_GO_KR_KEY 없음")
-    rows, page = [], 1
-    while page <= 30:
-        q = {"serviceKey": DATA_KEY, "pageNo": page, "numOfRows": 1000, "returnType": "json", "type": "json", "dataType": "json"}
-        txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q), timeout=90), tries=2)
-        try:
-            j = json.loads(txt)
-        except ValueError:
-            raise ValueError("API 응답이 JSON이 아님: " + " ".join(txt[:200].split()))
-        root = j.get("response", j)
-        head, body = root.get("header", {}), root.get("body", {})
-        its = body.get("items", []) if isinstance(body, dict) else []
-        if isinstance(its, dict):
-            its = its.get("item", [])
-        flat = []
-        for x in its if isinstance(its, list) else [its]:
-            flat.append(x.get("item", x) if isinstance(x, dict) else x)
-        if page == 1:
-            print(f">> [재생원료 API] code={head.get('resultCode')} msg={head.get('resultMsg')} 전체={body.get('totalCount') if isinstance(body, dict) else None}")
-            print(f">> [재생원료 API] 예시: {flat[:3]}")
-        rows += flat
-        total = int(_num(body.get("totalCount")) or 0) if isinstance(body, dict) else 0
-        if not flat or len(rows) >= total:
-            break
-        page += 1
+    rows = []
+    d = now_kst()
+    yms = []
+    y, m = d.year, d.month
+    for _ in range(3):
+        yms.append(f"{y:04d}{m:02d}")
+        y, m = (y - 1, 12) if m == 1 else (y, m - 1)
+    for ym in yms:
+        for region in ("수도권", "전국"):
+            q = {"serviceKey": DATA_KEY, "pageNo": 1, "numOfRows": 100, "returnType": "JSON", "exmnYmd": ym, "stdgNm": region}
+            txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q), timeout=90), tries=2)
+            try:
+                j = json.loads(txt)
+            except ValueError:
+                raise ValueError("API 응답이 JSON이 아님: " + " ".join(txt[:200].split()))
+            root = j.get("response", j)
+            head, body = root.get("header", {}), root.get("body", {})
+            its = body.get("items", []) if isinstance(body, dict) else []
+            if isinstance(its, dict):
+                its = its.get("item", [])
+            flat = [x.get("item", x) if isinstance(x, dict) else x for x in (its if isinstance(its, list) else [its])]
+            print(f">> [재생원료 API] {ym} {region}: code={head.get('resultCode')} {head.get('resultMsg')} {len(flat)}건")
+            rows += flat
     out = {}
     for x in rows:
         d = re.sub(r"\D", "", str(x.get("exmnYmd", "")))
@@ -316,7 +316,10 @@ CUSTOMS = [  # (키, HS, 표시명, 방향 imp/exp, 설명)
 
 def customs_series(hs, months=13):
     end = now_kst().replace(day=1)
-    start = f"{end.year - 1:04d}{end.month:02d}" if months > 12 else end.strftime("%Y%m")
+    y, m = end.year, end.month - 11            # 조회기간은 1년 이내만 가능 → 최근 12개월
+    if m <= 0:
+        y, m = y - 1, m + 12
+    start = f"{y:04d}{m:02d}"
     q = {"serviceKey": DATA_KEY, "strtYymm": start, "endYymm": end.strftime("%Y%m"), "hsSgn": hs}
     xml = retry(lambda: get(CUSTOMS_API + "?" + urllib.parse.urlencode(q), timeout=60), tries=3)
     if "<resultCode>00</resultCode>" not in xml:
