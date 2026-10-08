@@ -34,7 +34,7 @@
     if (!latest) return;
     const val = (k, ym) => (h.months[ym] || {})[k];
     const y3 = [ymAdd(latest, -36), ymAdd(latest, -24), ymAdd(latest, -12)];
-    $('anaHead').innerHTML = `<tr><th>품목</th><th>${ymK(latest)}월 (원/kg)</th><th>전월 대비</th><th>전년 동월 대비</th><th>최근 12개월 범위에서 위치</th>
+    $('anaHead').innerHTML = `<tr><th>품목</th><th>${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월<br><small>원/kg</small></th><th>전월 대비</th><th>전년 동월 대비</th><th>최근 12개월 범위에서 위치</th>
       ${y3.map(ym => `<th class="s3">${ym.slice(0, 4)}.${+ym.slice(5, 7)}</th>`).join('')}</tr>`;
     $('anaBody').innerHTML = h.items.map(it => {
       const cur = val(it.key, latest);
@@ -46,7 +46,7 @@
         <td><div class="rng" title="최저 ${n1(lo)} · 최고 ${n1(hi)}"><i style="left:${pos.toFixed(0)}%"></i></div><div class="rng-l"><span>${n0(lo)}</span><span>${n0(hi)}</span></div></td>
         ${y3.map(ym => `<td class="s3">${n1(val(it.key, ym))}</td>`).join('')}</tr>`;
     }).join('');
-    $('anaNote').textContent = `${ymK(latest).replace('.', '년 ')}월 기준, 수도권 값. 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
+    $('anaNote').textContent = `${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월 기준, 수도권 값. 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
     const sel = $('seasonItem');
     if (!sel.options.length) {
       sel.innerHTML = h.items.map(it => `<option value="${it.key}">${esc(it.name)}</option>`).join('');
