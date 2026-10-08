@@ -8,6 +8,7 @@ import re, json, html, hashlib, urllib.parse
 from datetime import timedelta
 from common import get, get_json, load, now_kst, save_with_history
 from collect_news import parse_rss, EN_BLOCK
+from article import resolve_gnews, page_text
 
 SEED, OUT = "data/rpet_seed.json", "data/rpet.json"
 EN_Q = ['"rPET" prices', '"rPET" price tonne', '"recycled PET" prices', '"food-grade" rPET pellets', "rPET flakes prices",
@@ -50,36 +51,7 @@ def _pid(p):
     return hashlib.md5(f"{p['url']}|{p['grade']}|{p['region']}|{p['low']}".encode()).hexdigest()[:10]
 
 
-# ---------------------------------------------------------------- 구글 뉴스 링크 → 원문 주소
-def resolve_gnews(link):
-    if "news.google.com" not in link:
-        return link
-    m = re.search(r"/articles/([^?/]+)", link)
-    if not m:
-        return None
-    aid = m.group(1)
-    page = get(f"https://news.google.com/rss/articles/{aid}", timeout=20)
-    sg = re.search(r'data-n-a-sg="([^"]+)"', page)
-    ts = re.search(r'data-n-a-ts="([^"]+)"', page)
-    if not (sg and ts):
-        return None
-    inner = ('["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],'
-             f'"X","X",1,[1,1,1],1,1,null,0,0,null,0],"{aid}",{ts.group(1)},"{sg.group(1)}"]')
-    body = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", inner, None, "generic"]]]))
-    txt = get("https://news.google.com/_/DotsSplashUi/data/batchexecute",
-              headers={"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"}, data=body.encode(), timeout=20)
-    u = re.search(r'garturlres\\",\\"(https?://[^\\"]+)', txt)
-    return u.group(1).encode().decode("unicode_escape") if u else None
-
-
-# ---------------------------------------------------------------- 본문 → 가격 문장
-def page_text(raw):
-    raw = re.sub(r"(?is)<(script|style|noscript|svg|nav|footer|header|form)[^>]*>.*?</\1>", " ", raw)
-    raw = re.sub(r"(?i)<br\s*/?>|</p>|</li>|</h\d>|</div>|</td>|</tr>", "\n", raw)
-    t = html.unescape(re.sub(r"<[^>]+>", " ", raw))
-    return re.sub(r"[ \t\xa0]+", " ", t)
-
-
+# 구글 뉴스 링크 → 원문 주소, 본문 텍스트: article.py
 def sentences(text):
     for block in text.split("\n"):
         block = block.strip()

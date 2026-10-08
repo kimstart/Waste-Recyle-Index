@@ -301,6 +301,39 @@ def collect_en(cfg, now, hours, when):
     return pack(top), len(allit)
 
 
+SUM_CACHE = "data/news_summary_cache.json"
+
+
+def add_summaries(items):
+    """국내 기사: 원문 본문에서 2~3줄 발췌해 x['summary'] 에 넣는다 (같은 제목은 캐시 재사용)"""
+    from article import resolve_gnews, summarize_ko
+    from common import load, save
+    cache = load(SUM_CACHE, {}) or {}
+    ok = 0
+    for x in items:
+        key = norm(x["title"])[:80]
+        if cache.get(key):
+            x["summary"] = cache[key]
+            ok += 1
+            continue
+        try:
+            url = resolve_gnews(x["link"])
+            if not url:
+                continue
+            x["link"] = url
+            s = summarize_ko(get(url, timeout=20), x["title"])
+            if s:
+                x["summary"] = cache[key] = s
+                ok += 1
+        except Exception as e:
+            print(f"   [요약] 실패 {type(e).__name__}: {x['title'][:40]}")
+        time.sleep(0.3)
+    if len(cache) > 600:
+        cache = dict(list(cache.items())[-600:])
+    save(SUM_CACHE, cache)
+    print(f"   [요약] {ok}/{len(items)}건")
+
+
 def main(pages):
     now = now_kst()
     hours = lookback_hours(now)
@@ -318,6 +351,7 @@ def main(pages):
         if not ko and not en:
             print(f">> [{page}] 기사가 없어 기존 파일 유지")
             continue
+        add_summaries(ko)
         save_with_history(f"news_{page}", {"updated": now.strftime("%Y-%m-%d %H:%M"), "domestic": ko, "overseas": en})
 
 

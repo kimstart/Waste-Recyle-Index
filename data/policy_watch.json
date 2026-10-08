@@ -1,0 +1,98 @@
+[
+ {
+  "name": "자원의 절약과 재활용촉진에 관한 법률",
+  "target": "law",
+  "why": "재생원료 사용의무·EPR(제16~18조)·폐기물부담금(제12조)·포장재 재질구조 평가(제9조의4) 근거",
+  "name_verified": true
+ },
+ {
+  "name": "자원의 절약과 재활용촉진에 관한 법률 시행령",
+  "target": "law",
+  "why": "재생원료 사용의무 대상(연 5,000톤→1,000톤 확대 시 개정), 일회용컵 EPR 편입, 폐기물부담금 요율 개편",
+  "name_verified": true
+ },
+ {
+  "name": "자원의 절약과 재활용촉진에 관한 법률 시행규칙",
+  "target": "law",
+  "why": "재활용의무 이행·신고 절차",
+  "name_verified": true
+ },
+ {
+  "name": "순환경제사회 전환 촉진법",
+  "target": "law",
+  "why": "순환자원 지정·고시, 규제특례",
+  "name_verified": true
+ },
+ {
+  "name": "순환경제사회 전환 촉진법 시행령",
+  "target": "law",
+  "why": "순환자원 지정·규제특례 세부",
+  "name_verified": false
+ },
+ {
+  "name": "폐기물관리법 시행규칙",
+  "target": "law",
+  "why": "수도권 생활폐기물 직매립 금지, 분리배출 기준",
+  "name_verified": true
+ },
+ {
+  "name": "제품의 포장재질ㆍ포장방법에 관한 기준 등에 관한 규칙",
+  "target": "law",
+  "why": "과대포장·포장 공간비율(택배 포장 규제 강화)",
+  "name_verified": true
+ },
+ {
+  "name": "플라스틱 재생원료 사용의무에 관한 고시",
+  "target": "admrul",
+  "why": "페트병 사용의무율 2026 10% → 2027 15% 개정안(2026.9.7 행정예고) 확정 여부",
+  "name_verified": true
+ },
+ {
+  "name": "2026년 제품ㆍ포장재별 재활용의무율 고시",
+  "target": "admrul",
+  "why": "연도별 재활용의무율(매년 신규 고시: 다음 해 'YYYY년 제품ㆍ포장재별 재활용의무율 고시'로 검색어 '제품ㆍ포장재별 재활용의무율' 권장)",
+  "name_verified": true
+ },
+ {
+  "name": "포장재 재활용 용이성 등급평가 기준",
+  "target": "admrul",
+  "why": "재활용 어려움 등급 → 분담금 할증(20%→30% 확대 계획) 연계",
+  "name_verified": true
+ },
+ {
+  "name": "포장재 재질ㆍ구조 등급표시 기준",
+  "target": "admrul",
+  "why": "등급 표시 의무",
+  "name_verified": true
+ },
+ {
+  "name": "분리배출 표시에 관한 지침",
+  "target": "admrul",
+  "why": "투명페트 등 분리배출 표시",
+  "name_verified": true
+ },
+ {
+  "name": "재활용지정사업자의 재활용 지침",
+  "target": "admrul",
+  "why": "PET 원료생산자 재생원료 이용목표율(3%→10%) 관련 고시",
+  "name_verified": false
+ },
+ {
+  "name": "특정관리제품 재활용의무량 산출에 필요한 조정계수",
+  "target": "admrul",
+  "why": "연도별 의무량 산출 조정계수(검색 결과상 '2026년도 특정관리제품 재활용의무량 산출에 필요한 조정계수' 존재)",
+  "name_verified": true
+ },
+ {
+  "name": "제품ㆍ포장재별 장기 재활용목표율",
+  "target": "admrul",
+  "why": "중장기 재활용목표율 — 정확한 고시 제목 미확인",
+  "name_verified": false
+ },
+ {
+  "name": "재활용 기준비용",
+  "target": "admrul",
+  "why": "분담금 산정 기준비용 재산정(2003년 이후 첫 재산정 추진) — 고시 여부·정확 제목 미확인, 분담금·지원금 단가 자체는 공제조합/KORA 공지로 발표",
+  "name_verified": false
+ }
+]

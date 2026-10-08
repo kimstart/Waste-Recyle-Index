@@ -28,6 +28,7 @@ RECYCLE_ITEMS = [
     ("r_flk_pvc", "플레이크PVC", "플레이크 PVC"),
     ("r_pel_pe", "펠렛PE", "펠렛 PE"),
     ("r_pel_pp", "펠렛PP", "펠렛 PP"),
+    ("r_eps_ingot", "EPS잉고트", "EPS 잉고트"),
 ]
 REGIONS = ["수도권", "강원", "충북", "충남", "전북", "전남", "경북", "경남"]
 BASIS_NAT, BASIS_MEAN = "전국평균", "권역 단순평균"
@@ -92,7 +93,7 @@ def recycle_api():
     rows, page = [], 1
     while page <= 30:
         q = {"serviceKey": DATA_KEY, "pageNo": page, "numOfRows": 1000, "returnType": "json", "type": "json", "dataType": "json"}
-        txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q)), tries=2)
+        txt = retry(lambda: get(RECYCLE_API + "?" + urllib.parse.urlencode(q), timeout=90), tries=2)
         try:
             j = json.loads(txt)
         except ValueError:
@@ -173,47 +174,86 @@ def recycle_csv():
     return out
 
 
+BACKFILL = "data/recycle_backfill.json"   # 2023-01~ 순환자원정보센터 화면 기간조회 결과(1회 수집, 권역별·전국평균)
+CAP = "수도권"
+
+
+def _merge(months, data, src):
+    """{ym: {품목: {nat, regions}}} → months[ym][품목] = {cap, nat, src}. 이미 있는 값은 새 값이 있을 때만 덮어씀"""
+    for ym, its in data.items():
+        for nm, rec in its.items():
+            regs = rec.get("regions") or {}
+            cap, nat = regs.get(CAP), rec.get("nat")
+            if cap is None and nat is None:
+                continue
+            old = months.setdefault(ym, {}).get(_norm(nm), {})
+            months[ym][_norm(nm)] = {"cap": cap if cap is not None else old.get("cap"),
+                                     "nat": nat if nat is not None else old.get("nat"), "src": src}
+
+
+def _ym_add(ym, k):
+    y, m = int(ym[:4]), int(ym[5:7]) + k
+    while m <= 0:
+        y, m = y - 1, m + 12
+    while m > 12:
+        y, m = y + 1, m - 12
+    return f"{y:04d}-{m:02d}"
+
+
 def fetch_recycle(items, extra):
-    """세 출처를 순서대로 시도. 전국평균이 없으면 8개 권역 단순평균을 쓰고 기준을 표시한다.
-    월별 값은 extra.recycle_months 에 쌓아 전월 대비를 계산한다(같은 달은 전국평균 값이 있으면 그것을 우선 보존)."""
+    """세 출처를 순서대로 시도해 월별 값을 쌓고, 표시는 수도권 값 기준.
+    전월·전년 동월·최근 12개월 최고/최저·최근 3개년 동월을 함께 계산한다."""
+    months = extra.setdefault("recycle_months", {})
+    # 이전 형식({value,basis,capital..}) 정리 + 과거 자료 1회 병합
+    for ym in list(months):
+        for nm, v in list(months[ym].items()):
+            if "cap" not in v:
+                months[ym][nm] = {"cap": v.get("capital"), "nat": v.get("value") if v.get("basis") == "전국평균" else None, "src": v.get("src")}
+    if not extra.get("backfill_done"):
+        bf = load_json(BACKFILL) or {}
+        if bf:
+            _merge(months, bf, "순환자원정보센터(과거 일괄)")
+            extra["backfill_done"] = True
+            print(f">> [재생원료] 과거 자료 병합: {min(bf)}~{max(bf)}")
     data, src = None, None
     for name, fn in (("순환자원정보센터", recycle_site), ("공공데이터포털 API", recycle_api), ("공공데이터포털 파일", recycle_csv)):
         try:
             data, src = fn(), name
-            print(f">> [재생원료] {name}에서 수집: 월 {sorted(data)}")
+            print(f">> [재생원료] {name}에서 수집: 월 {sorted(data)[-3:]} (총 {len(data)}개월)")
             break
         except Exception as e:
             print(f">> [재생원료] {name} 실패: {type(e).__name__}: {str(e)[:160]}")
-    if not data:
-        raise ValueError("재생원료 자료 없음 (세 출처 모두 실패)")
-    months = extra.setdefault("recycle_months", {})
-    for ym, its in data.items():
-        for nm, rec in its.items():
-            regs = rec.get("regions") or {}
-            if rec.get("nat") is not None:
-                val, basis = rec["nat"], BASIS_NAT
-            elif regs:
-                val, basis = round(sum(regs.values()) / len(regs), 1), BASIS_MEAN
-            else:
-                continue
-            old = months.setdefault(ym, {}).get(nm)
-            if old and old.get("basis") == BASIS_NAT and basis != BASIS_NAT:
-                continue
-            months[ym][nm] = {"value": val, "basis": basis, "capital": regs.get("수도권"), "n": len(regs), "src": src}
-    latest = max(data)
-    prev_ym = _prev_month(latest)
+    if data:
+        _merge(months, data, src)
+    if not months:
+        raise ValueError("재생원료 자료 없음")
+    latest = max(ym for ym in months if any(v.get("cap") is not None for v in months[ym].values()))
     out = {}
     for key, nm, label in RECYCLE_ITEMS:
-        cur = months.get(latest, {}).get(nm)
-        if not cur:
-            print(f">> [재생원료] {nm} 값 없음")
+        cap = lambda ym: (months.get(ym, {}).get(nm) or {}).get("cap")
+        cur = cap(latest)
+        if cur is None:
+            print(f">> [재생원료] {nm} {latest} 수도권 값 없음")
             continue
-        prev = (months.get(prev_ym) or {}).get(nm) or {}
-        out[key] = {"name": label, "unit": "원/kg", "date": latest, "value": cur["value"],
-                    "prev_date": prev_ym if prev.get("value") is not None else None, "prev_value": prev.get("value"),
-                    "capital": cur.get("capital"), "src": cur.get("src"),
-                    "basis": None if cur["basis"] == BASIS_NAT else f"{cur['basis']}, {cur['n']}개 권역 값"}
-    for k in sorted(months)[:-36]:
+        prev_ym, yoy_ym = _ym_add(latest, -1), _ym_add(latest, -12)
+        last12 = [(ym, cap(ym)) for ym in (_ym_add(latest, -i) for i in range(11, -1, -1)) if cap(ym) is not None]
+        vals = [v for _, v in last12]
+        hi, lo = max(vals), min(vals)
+        out[key] = {"name": label, "unit": "원/kg", "date": latest, "value": cur,
+                    "prev_date": prev_ym if cap(prev_ym) is not None else None, "prev_value": cap(prev_ym),
+                    "yoy_date": yoy_ym if cap(yoy_ym) is not None else None, "yoy_value": cap(yoy_ym),
+                    "hi12": hi, "lo12": lo, "hi12_date": next(ym for ym, v in last12 if v == hi), "lo12_date": next(ym for ym, v in last12 if v == lo),
+                    "pos12": round((cur - lo) / (hi - lo) * 100) if hi > lo else None,
+                    "same3": [{"ym": ym, "v": cap(ym)} for ym in (_ym_add(latest, -36), _ym_add(latest, -24), yoy_ym)],
+                    "nat": (months.get(latest, {}).get(nm) or {}).get("nat"),
+                    "spark": vals, "src": (months.get(latest, {}).get(nm) or {}).get("src"), "basis": None}
+    # 화면용 월별 이력 (계절성 차트)
+    hist = {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "region": CAP,
+            "items": [{"key": k, "name": lb} for k, nm, lb in RECYCLE_ITEMS],
+            "months": {ym: {k: (months[ym].get(nm) or {}).get("cap") for k, nm, lb in RECYCLE_ITEMS} for ym in sorted(months)}}
+    with open("data/recycle_history.json", "w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
+    for k in sorted(months)[:-72]:
         months.pop(k, None)
     return out
 
@@ -259,6 +299,68 @@ def add_krw(items):
         if it:
             it["krw_kg"] = round(it["value"] * fx["value"] / 1000, 1)
             it["fx_used"] = fx["value"]
+
+
+# ---------------------------------------------------------------- 관세청 품목별 수출입실적 (월간)
+CUSTOMS_API = "https://apis.data.go.kr/1220000/Itemtrade/getItemtradeList"
+CUSTOMS = [  # (키, HS, 표시명, 방향 imp/exp, 설명)
+    ("imp_ldpe", "390110", "PE(LDPE·LLDPE) 수입단가", "imp"),
+    ("imp_hdpe", "390120", "HDPE 수입단가", "imp"),
+    ("imp_pp", "390210", "PP 수입단가", "imp"),
+    ("imp_pet", "390761", "PET(병 등급) 수입단가", "imp"),
+    ("imp_pvc", "390410", "PVC 수입단가", "imp"),
+    ("exp_scrap_pe", "391510", "폐PE 수출", "exp"),
+    ("exp_scrap_etc", "391590", "폐플라스틱(PET·PP 등) 수출", "exp"),
+]
+
+
+def customs_series(hs, months=13):
+    end = now_kst().replace(day=1)
+    start = f"{end.year - 1:04d}{end.month:02d}" if months > 12 else end.strftime("%Y%m")
+    q = {"serviceKey": DATA_KEY, "strtYymm": start, "endYymm": end.strftime("%Y%m"), "hsSgn": hs}
+    xml = retry(lambda: get(CUSTOMS_API + "?" + urllib.parse.urlencode(q), timeout=60), tries=3)
+    if "<resultCode>00</resultCode>" not in xml:
+        raise ValueError("관세청 응답 오류: " + " ".join(xml[:200].split()))
+    agg = {}
+    for it in re.findall(r"<item>(.*?)</item>", xml, re.S):
+        f = dict(re.findall(r"<(\w+)>([^<]*)</\1>", it))
+        ym = f.get("year", "").replace(".", "-")
+        if not re.fullmatch(r"\d{4}-\d{2}", ym):
+            continue   # '총계' 행 제외
+        a = agg.setdefault(ym, {"impDlr": 0, "impWgt": 0, "expDlr": 0, "expWgt": 0})
+        for k in a:
+            a[k] += _num(f.get(k)) or 0
+    return [(ym, agg[ym]) for ym in sorted(agg)]
+
+
+def fetch_customs(items, extra):
+    if not DATA_KEY:
+        raise ValueError("DATA_GO_KR_KEY 없음")
+    out = {}
+    for key, hs, label, d in CUSTOMS:
+        try:
+            ser = customs_series(hs)
+        except Exception as e:
+            print(f">> [관세청] {label}({hs}) 실패: {type(e).__name__}: {str(e)[:150]}")
+            continue
+        dl, wg = (("impDlr", "impWgt") if d == "imp" else ("expDlr", "expWgt"))
+        pts = [(ym, round(a[dl] / a[wg], 3), a[wg] / 1000, a[dl]) for ym, a in ser if a[wg] > 0]
+        if not pts:
+            print(f">> [관세청] {label}({hs}) 자료 없음")
+            continue
+        cur, prev = pts[-1], (pts[-2] if len(pts) > 1 else None)
+        if d == "imp":
+            it = {"name": label, "item": f"HS {hs[:4]}.{hs[4:]} · 수입 {cur[2]:,.0f}톤", "unit": "달러/kg", "date": cur[0], "value": cur[1],
+                  "prev_date": prev[0] if prev else None, "prev_value": prev[1] if prev else None, "spark": [p[1] for p in pts]}
+        else:   # 수출은 물량(톤)을 값으로, 단가를 부가 정보로
+            it = {"name": label, "item": f"HS {hs[:4]}.{hs[4:]} · 단가 {cur[1]:.3f}달러/kg", "unit": "톤", "date": cur[0], "value": round(cur[2]),
+                  "prev_date": prev[0] if prev else None, "prev_value": round(prev[2]) if prev else None, "spark": [round(p[2]) for p in pts]}
+        it["src"] = "관세청 품목별 수출입실적"
+        out[key] = it
+        print(f">> [관세청] {label}: {cur[0]} {cur[1]}달러/kg, {cur[2]:,.0f}톤 ({len(pts)}개월)")
+    if not out:
+        raise ValueError("관세청 자료 없음")
+    return out
 
 
 # ---------------------------------------------------------------- 영국 플라스틱 PRN
@@ -381,9 +483,13 @@ def fetch_rpet_items(items, extra):
 
 
 def plastic_post(items, extra):
-    # 화면에서 뺀 중국 선물·환율·유가 항목은 저장 파일에서도 정리
-    for k in ("cn_pet", "cn_pe", "cn_pp", "cn_pvc", "fx_usd", "fx_cny", "dubai", "brent", "wti"):
+    # 쓰지 않는 예전 항목 정리 (유가·달러·위안 환율)
+    for k in ("fx_usd", "fx_cny", "dubai", "brent", "wti"):
         items.pop(k, None)
+    for k in ("cn_pet", "cn_pe", "cn_pp", "cn_pvc"):   # 신재 가격은 원화 환산·재생원료 비교 없이 원 단위 그대로
+        if k in items:
+            items[k].pop("krw_kg", None)
+            items[k].pop("fx_used", None)
     # PRN £/톤 → 원/kg (원/파운드 × £/톤 ÷ 1000)
     p, g = items.get("uk_prn_plastic"), items.get("fx_gbp")
     if p and g:
@@ -392,5 +498,6 @@ def plastic_post(items, extra):
 
 
 if __name__ == "__main__":
-    run_all("plastic", [("국내 재생원료", fetch_recycle), ("영국 PRN", fetch_prn), ("원/파운드", fetch_gbp),
-                        ("bvse 시황", fetch_bvse), ("rPET 기사 가격", fetch_rpet_items)], post=plastic_post)
+    run_all("plastic", [("국내 재생원료", fetch_recycle), ("중국 신재 선물", fetch_futures), ("관세청 수출입", fetch_customs),
+                        ("영국 PRN", fetch_prn), ("원/파운드", fetch_gbp), ("bvse 시황", fetch_bvse), ("rPET 기사 가격", fetch_rpet_items)],
+            post=plastic_post)
