@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-09 00:56",
+ "updated": "2026-10-09 10:31",
  "items": {
   "rec": {
    "name": "REC 현물",
    "item": "육지 평균가",
    "unit": "원/REC",
-   "date": "2026-10-06",
-   "value": 71216.0,
-   "prev_date": null,
-   "prev_value": null,
+   "date": "2026-10-08",
+   "value": 71034.0,
+   "prev_date": "2026-10-06",
+   "prev_value": 71216.0,
    "src": "전력거래소"
   },
   "ttf": {
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-10-08",
-   "value": 79.25,
+   "value": 77.21,
    "prev_date": "2026-10-07",
    "prev_value": 78.08,
    "src": "Yahoo Finance (ICE Endex)",
@@ -43,9 +43,9 @@
     73.5,
     75.7,
     78.1,
-    79.2
+    77.2
    ],
-   "krw_m3": 1411.1,
+   "krw_m3": 1374.7,
    "fx_used": 1502.79,
    "heat_used": 42.653
   },
