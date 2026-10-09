@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09 11:18",
+ "updated": "2026-10-09 22:30",
  "domestic": [
   {
    "title": "안성 청년 축산리더·주민, 화성 바이오가스시설 찾아··가축분뇨 처리·자원화 과정 살펴",
@@ -14,7 +14,7 @@
    "source": "시사일보",
    "link": "http://www.koreasisailbo.com/2417441",
    "pub": "2026-10-08 12:00",
-   "more": 5
+   "more": 4
   },
   {
    "title": "경기硏 \"바이오가스 시설, 인접 지역간 공동운영을\"",
@@ -23,85 +23,78 @@
    "pub": "2026-10-08 11:09",
    "more": 0,
    "summary": "음식물쓰레기와 분뇨 등으로 연료용 가스를 만드는 바이오가스 생산 의무를 이행하려면 시군마다 시설을 새로 짓기보다 민간 위탁과 인접 지역 공동 처리를 활용해야 한다는 분석이 나왔다. 경기연구원은 6일 발표한 ‘바이오가스 생산목표제 시행에 따른 시군 처리유형별 대응방안’ 보고서에서 경기도 31개 시군 가운데 15곳이 유기성 폐자원을 바이오가스 생산 이외의 방식으로 처리하고 있다며 이같이 제안했다."
-  },
-  {
-   "title": "2035년 혐기성 소화조 시장 전망: 재생천연가스 수요와 메탄 감축 정책이 성장 견인",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/anaerobic-digesters-market-forecast-to-2035-growth-driven-by-renewable-natural-gas-demand-and-methane-reduction-policies/",
-   "pub": "2026-10-08 07:01",
-   "more": 0
   }
  ],
  "overseas": [
+  {
+   "title": "Danish biogas plant builder Lundsby files for bankruptcy",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcFh6QmwyM3YxN29tZ1dmUVBtSkhLVnhjVDkxOTYzdXJTeUV3STB6RkRrZWlOSDROZVNtRTd4TF9pYUU0djRuTG1HclNGQVIweTc1YkNZVGN5cWVzOXhsc3Vjdnp2RHk4aUFrWUVySE5wZENIR215TkhFc1BqWGt1a1RkR3NEZG5wNWQ4WjdJbGJ2S09oNlJDcg?oc=5",
+   "pub": "2026-10-09 15:29",
+   "more": 0
+  },
+  {
+   "title": "Biomass Co-Digestion: Making Dairy Biogas Profitable",
+   "source": "Scientific Frontline",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55YWxKSDdmeDFQcVV2MllubGNmTVBSdGxJQmJRR3YtYmpHb2JjUkdlZUVGRzhnaDVpU2xyR2NfN0VpOFg2TVRQT0JTb0ltMTA0WGJJZGs0UTBhLXM?oc=5",
+   "pub": "2026-10-09 05:57",
+   "more": 0
+  },
+  {
+   "title": "Metacon's Greek subsidy receives further EU funding for biomethane-to-hydrogen pilot",
+   "source": "Quantum Commodity Intelligence",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOc1hOT3JBaVVudEV6RVlMNXgyeWlRNUp5ZDBvMmI4Q2VVamZTRW9SU0dDM0RYNjNZS3MxMkl1MlNaN3NtMGkwUXRDQlVReVBLR2dyUXBUTUlBdVhVYmpmM2xUTmw5dl80cWFXMzB1RW1MSjVoZXRVVmU5ZWQzMXBFcng1ajVhYldHN3JsRFF5MFNoUDRhc3I0S3pPY2hxVHlCTTZjSHR0ekprSVRnRUR3a19nNVJaMVdtV1hSMEhSQm1JcTYyckdOVjhMWng2a0ZUWHc?oc=5",
+   "pub": "2026-10-08 22:37",
+   "more": 2
+  },
+  {
+   "title": "Plant Material, Manure Mix May Boost Biogas Profits",
+   "source": "Mirage News",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWU5YmtzdHo2UEVWZ2xEeUgzZTJGMzM4RWtVU0ZWRVQ1RzQwRzB4b0NVdXVaSVZqSmRtVi1uajd3MmZ2anY2N3NrU0FDMFRZdTh1cXJkMWhDMlpBRlNzcG9RbmdLN2VFRmVQZmRteG4xanZvaEVBMUxxQ1lrMnhMRF9HT1Y?oc=5",
+   "pub": "2026-10-08 21:32",
+   "more": 0
+  },
   {
    "title": "BerQ RNG acquires Rialto Bioenergy Facility",
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQV1YtbWdNSkg2WUc2RzVHVWo3X0wybFRYSHU3QzBCbmE4RThYNVZQSzFDS0FpY0k3amZxejF1ZHUtTWhzSlBhSjFYZ3dMRUZ6RTNmVHljSHEteEtJcmdUYldySlEzMmR3djVDN3ItbVFYMVc4U18wcWQycVliYm52aHFNQUhhTjg?oc=5",
    "pub": "2026-10-08 02:43",
-   "more": 0
-  },
-  {
-   "title": "Regulatory barriers to biogas development in Europe",
-   "source": "European Biogas Association",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOeU05VmJyTENXUkxYWFlpeFc0QmVCVjZocWp1MEtybk5UQ1k1VUJHclhKckpOMUpXb2dINlZVUWhDVXdib2JwTWVKZ0syUkxxbnA0ekwxbzUzdnFQc1hCZDBuM253cVVneFV4dkowcE1NM1Nnb2VnVWg0Mk5lVjZmcXoyREZ3T0NnSnlVRmlUZVY?oc=5",
-   "pub": "2026-10-07 23:15",
-   "more": 0
+   "more": 1
   },
   {
    "title": "Guwahati’s Rs 1.5-cr Borsola biogas project lies defunct; civic spending under scrutiny",
    "source": "The Assam Tribune",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdU1yLXdXTXVVWllqdFc2aGlPU1NwblpqbDk1UkV6R1RqUzcwV2N0YjhaSDlHSFpscnd4OUlmSTNYN191blhlbzVpLWZISFJDMmdYYi0tYkFXczJPdW1tLXVKdGJBbm54blhuc3NCZk1YMWNiTGo2c3o1S0M4c19uSVFkSk80eVVxcm0zazdLSUxoXzlmTmR5TGllYmt6Vm04M0l1MzJDWC0xN2pXZGc3anJfckIwWEZiQWtMQ3o1dGNmcV9s0gHKAUFVX3lxTE5MaUdReTZJRDd5YlJZRDlrQ3JiM0tCMzd2eXpSMXVjVkE4V1dJb3o1TWQwT01zNHZ0NkpIcWJQUHFxODNqaEJJRGJvVHlIUFZyTzUwOW1oX3BOSDEyYkQ0VERtOEdBZkJISmhZc3dGalRXNHNRclZDc1Vrc2o5SU55WVR5V0RDZ0kwOUlnRURDbDVVVGVNSXVienJmWVkzUldDRjV3Y2hKcEVra3k1ZWVxeGx4UXlCUF9nS1U0UGhId3RYU29XQWF4ZEE?oc=5",
    "pub": "2026-10-07 20:38",
-   "more": 1
+   "more": 2
   },
   {
-   "title": "Airrane Unveils Biogas Upgrading Product at Spain Trade Fair",
-   "source": "Seoul Economic Daily",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVG1DRlFhM09Yd2NpdEduRHI2aGluTkpLdUxnX284aXZSZ3dJQ0hVdmh4VWR6aWthRk1EdVk1d3hIb0EydEtaeUlRZVg1ZnpoTXdITm5TZ01ROW9Ka2VNT0xwbC1GcTJ2S3hja1FHVW0xaXNZNmtxdGpxZlVIQmhYWC1EX3FXUTU3d0xwRm5sOVJiT1BIUzdBU3BWNHozT0t4aXFOWQ?oc=5",
-   "pub": "2026-10-07 06:30",
-   "more": 1
+   "title": "Copenhagen Infrastructure Partners backs Via Verde to enter Italian biomethane market",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRi1UbGFLNmxMNFdmRk1DWHlzaWJVWTRMdzZDNUxWcEt0SWJGXzRHS05IUDZXa3lGR0ZSLWhlanpHeExvc0tMbGlITlU1ODBIY0VzaHowQUtneXZiMzJWbThoWEZBNXo4SnowZ2tlbGJjdHNNWUIxQVZ1LUdZSzIzVENpdlJ2YUFIUllGY2Nrd3R5VlVFQk5fcWJfT3dON0ZLU0RpNjZWQTJJeEtvNjFDLTZLaUd6SE1tZnQ4QjNzVQ?oc=5",
+   "pub": "2026-10-07 15:15",
+   "more": 8
   },
   {
    "title": "Punjab plans to expand biogas production across province",
    "source": "The News Pakistan",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb2Q0WEhzZWR2dkNrbmtiWkFGY094TC1EdXh1dlQ0eUhfcVhWRkxSa0xTZjJjZ2JuYTZzcHhWWWZvWG95QlhQelBidUt2Znd0YTNYSF9lN0lRUjhncloyMTM5U0F4QldtVF9ZQktNNEpnZUh6czBodUZiR1F0VFdib2h5Ri1ITlRmRlBtdmV3QzhXRElPNWd6SQ?oc=5",
    "pub": "2026-10-07 04:00",
-   "more": 3
+   "more": 5
   },
   {
-   "title": "Dutch biogas project working towards FID",
+   "title": "ADBA: UK energy plan misses ‘cheapest fix’ by overlooking biomethane",
    "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORVZWLTRZSXJjVEljdmEyWG93Y0pMY2pSYl9VZEJ5ZzIxX3lmb25RTGc1ZjBkNk5meHg2eDAyUWQ3aWx4OXdESzV4WVJrcXdSQnpvTm9XandiSDFtX3BVb3dhUWdzME5HczdQMTQydDBJb0k4WE9McDI4LTBjWFZqYV81TXk2Q18zck5NZGtTdjY3dzZHcDFEMTdn?oc=5",
-   "pub": "2026-10-07 03:37",
-   "more": 0
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnBzcUpvcjFSdjhFY1lpTTc3X0s5ajFJZmNQTlhnekVvb1JkZUlpdGRibkVCSjNVTEtnUnFWRWhCcGVXeTJrSWQxRkg2dnVEb2xYRzVnVVRTVXdGMEZ5LU1fNkJHbngxaWEwa2gtdGloaDBLOTFodTM0Z3ZWQ04wREdNWURLQzE5MGhuX291UjRLR01GN2UzNmRtTDN1eDZUTWtXXzNsT0pSVS0zNUhZUVlKckNCZE0?oc=5",
+   "pub": "2026-10-07 02:22",
+   "more": 2
   },
   {
-   "title": "Infinium expands into biogas-based SAF",
-   "source": "World Bio Market Insights",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoV0dkdjRqTFBHbWQ5ODc3Z0pBU3NaTjNNa1lhZXVVOFo0Wng4c3FKTERNajc1OV9oWFpVdFM1WWtSQ2dERVh6V25KX2psZTRYMVl3eVIzOUk3YWstRS1JZ3VGMWtDeU0yclRlWG4xN2wteHF6a2FOUzA4WTVsSG8?oc=5",
-   "pub": "2026-10-06 17:00",
-   "more": 0
-  },
-  {
-   "title": "Bodecker invests in biogas power plants in Sweden",
-   "source": "Montel News",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaVJTQV9zcDVmdVZVa3V5NXVSSkJNTUk5bnRYbHhRWDRjdkFmMG5PN0hzMDF5V05reDJPTjRSb1BuSmk2cDhWY0hMZ2p1UEx6ak9VYkZXV0hUazZhYlZyWWFub0hSTDFPaXJtYTJvamdVVzFTTkxmbkVFbDJrbHFrNGQ2M2J6cDZsWEw4dExuUDRUdEhqNTJZNGJoYk1ldGEtZVp1NlJ2MzVCRlduQjlZc2FaV0xZOHBBbWdWY0RB?oc=5",
-   "pub": "2026-10-06 16:50",
-   "more": 3
-  },
-  {
-   "title": "KIS, Toyota Tsusho to produce biomethane in Indonesia",
-   "source": "Argus Media",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdF9wTmtVUmVISUZ3VE9Ca0JadmpWQ29CYmJURVdJcTRpd0hhZlU1RDZ1Y2xqZTBJdE5PbzZnc2dMbGtla01FblZyQ29iY0R3RDNYWTM4MWZya3F1eTZvV2xQRnRGWG5xMTJLVHh0N21QT2JsN29QZEJtYzBDTnVzczZYQjAwSzkxZG85SlVHUFRVb1hIT0RYQ3R3S25NV2ZmOGJJTU9wSXpKcnNKZjVGMmJkbHlWSFZpZU5Ua3lCYUFwQjZpRkE?oc=5",
-   "pub": "2026-10-06 16:17",
-   "more": 12
-  },
-  {
-   "title": "New Landia digester mixing system for farm-based biogas plant in Japan",
-   "source": "Water Magazine",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeWk3bk1xRmZ4bVpJMWc0cnlYRVJFYWtuM2NQamZDV2lIb3pBUEZELWI1TFhMbUtKdHJWME00VUNpS0U3TDZIQTEwS2puUER2VUJBSG5lcnVxT1dqUGx5dkRTNUhuSHQ2cnF6U09HN19ZOGpqaDR3c2pmdnV4eXlqVUJlMW5ENUNFSlFjNHZQTTdpSFVXRXhLS3BnZmNScnM5YmllcU5VUDc5bkhJWmN3QzhxaEQ?oc=5",
-   "pub": "2026-10-06 12:00",
-   "more": 3
+   "title": "Nearly Double the Biomethane From the Same Biogas: Catator and LTH Students Test the Concept",
+   "source": "Cision News",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORVNQUWVueUk3c3EtLUFSMnFpMG9QZTJQZ0ZrQWRyN25oU3JGeGE0cVg2YXM0aHpLVjF4NW1Ia3BzamlOQWdUaWE4UDhZc0J5SzRSTEJyRGpJSnNJRGZDVjVBNHFqNWdVdTN4ZXdLbHJmV0Nmamt3dU9fT3dKc0dnei05LXVEMzQ1SHoxUkJ1eDVxTkstdk1waDFDVjlBSEZra0lpaEVJZXQ0Qmc2QmYwQW1adkJtV2k5REhxTlkzeTMzMjJTZmxPUUgzV0Y3T3FDZmJGeQ?oc=5",
+   "pub": "2026-10-06 23:22",
+   "more": 10
   }
  ]
 }
