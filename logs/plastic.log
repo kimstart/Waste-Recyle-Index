@@ -7,8 +7,7 @@
    [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202608 수도권 실패: HTTPError
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
-   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
->> [재생원료 API] 202608 전국 실패: HTTPError
+>> [재생원료 API] 202608 전국: code=200 NORMAL SERVICE. 0건
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202607 수도권: code=200 NORMAL SERVICE. 21건
 >> [재생원료 API] 202607 전국: code=200 NORMAL SERVICE. 0건
