@@ -1,16 +1,21 @@
 >> [재생원료] 순환자원정보센터 실패: ValueError: 표 없음 (응답 제목 'ERROR')
+   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202609 수도권: code=200 NORMAL SERVICE. 21건
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
    [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202609 전국 실패: HTTPError
-   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202608 수도권: code=200 NORMAL SERVICE. 21건
->> [재생원료 API] 202608 전국: code=200 NORMAL SERVICE. 0건
->> [재생원료 API] 202607 수도권: code=200 NORMAL SERVICE. 21건
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
->> [재생원료 API] 202607 전국: code=200 NORMAL SERVICE. 0건
->> [재생원료 API] 월: ['2026-07', '2026-08', '2026-09'], 품목 예: ['폐지신문지', '폐지골판지', '압축PE', '압축PP', '압축PET', '플레이크PE', '플레이크PP', '플레이크PVC']
->> [재생원료] 공공데이터포털 API에서 수집: 월 ['2026-07', '2026-08', '2026-09'] (총 3개월)
+   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
+>> [재생원료 API] 202608 전국 실패: HTTPError
+   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
+   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
+>> [재생원료 API] 202607 수도권 실패: HTTPError
+   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
+   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
+>> [재생원료 API] 202607 전국 실패: HTTPError
+>> [재생원료 API] 월: ['2026-08', '2026-09'], 품목 예: ['폐지신문지', '폐지골판지', '압축PE', '압축PP', '압축PET', '플레이크PE', '플레이크PP', '플레이크PVC']
+>> [재생원료] 공공데이터포털 API에서 수집: 월 ['2026-08', '2026-09'] (총 2개월)
 >> [수집 성공] r_comp_pet: 2026-09 614.0 (이전 2026-08 599.0)
 >> [수집 성공] r_comp_pe: 2026-09 479.0 (이전 2026-08 478.0)
 >> [수집 성공] r_comp_pp: 2026-09 378.0 (이전 2026-08 372.0)
@@ -43,10 +48,10 @@
 >> [수집 성공] exp_scrap_etc: 2026-08 458 (이전 2026-07 1084)
 >> [수집 성공] imp_scrap: 2026-08 1883 (이전 2026-07 2189)
 >> [수집 성공] uk_prn_plastic: 2026-09 650.0 (이전 2026-08 550.0)
->> [수집 성공] fx_gbp: 2026-10-08 1774.29 (이전 2026-10-07 1767.68)
+>> [수집 성공] fx_gbp: 2026-10-09 1773.5 (이전 2026-10-08 1774.29)
 >> [수집 성공] ref_bvse: 2026-08 None (이전 None None)
 >> [rPET] 국내 rPET 기사 가격 없음
 >> [수집 성공] rpet_eu_fgp: 2026-07-06 1723.0 (이전 2026-06-01 1748.0)
 >> [수집 성공] rpet_eu_prem: 2026-03-10 340 (이전 2026-02-06 500.0)
 >> [수집 성공] rpet_asia_fgp: 2026-09-21 1196.0 (이전 2026-07-17 1158.0)
->> data/plastic.json, history/plastic_20261009.json 저장
+>> data/plastic.json, history/plastic_20261010.json 저장
