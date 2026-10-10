@@ -1,12 +1,20 @@
 {
- "updated": "2026-10-10 10:49",
+ "updated": "2026-10-10 21:44",
  "domestic": [
+  {
+   "title": "서인도양 10개국, 해양보호·플라스틱 대응 15개 결정 채택",
+   "source": "데일리환경",
+   "link": "https://www.dailyt.co.kr/newsView/dlt202610100007",
+   "pub": "2026-10-10 15:10",
+   "more": 0
+  },
   {
    "title": "[생활 리뷰] ‘재활용 최우수’ 왕뚜껑 컵라면, 먹고 나면 폐기물로 버려야",
    "source": "리뷰타임스",
    "link": "https://www.reviewtimes.co.kr/news/articleView.html?idxno=12977",
    "pub": "2026-10-10 06:50",
-   "more": 0
+   "more": 0,
+   "summary": "왕뚜껑·우리 쌀국수는 ‘최우수’…음식물 오염과 세척 가능성은 평가에서 빠져 재질은 재활용 가능하지만 실제 수거·선별 과정에서는 폐기되는 컵라면 용기 친환경 등급과 현실 사이의 괴리…소비자 혼란 막을 평가제도 개선 시급"
   },
   {
    "title": "“투명한데 같이 버리면 안 돼?” 페트병 분리배출 기준",
@@ -31,14 +39,6 @@
    "pub": "2026-10-09 08:00",
    "more": 0,
    "summary": "플라스틱을 선별해 모은 원료의 순도가 비슷하면 재활용 품질도 같다고 볼 수 있을까. 올해 6월 3일 국제학술지 네이처에 발표된 네덜란드 선별시설 연구는 이 질문에 답하려면 측정 지표부터 구분해야 한다는 점을 보여준다. 경질 폴리프로필렌(PP) 선별 원료의 이 지표는 분리수거 경로에서 12.1%, 후선별 경로에서 17.6%였다."
-  },
-  {
-   "title": "“머리끈 어디 뒀지?”…사이다 페트병으로 욕실 정리",
-   "source": "제주교통복지신문",
-   "link": "https://www.jejutwn.com/news/article.html?no=462921",
-   "pub": "2026-10-09 05:07",
-   "more": 0,
-   "summary": "머리끈이 욕실 서랍 여기저기 흩어져 있다면 빈 사이다 페트병을 작은 보관대로 활용할 수 있다. 유튜브 채널 Splendid DIY가 공개한 DIY 방식은 페트병 몸통에 머리끈을 걸어 한곳에 모으는 아이디어다. “매트리스 언제 바꾸지?”…교체 신호와 관리법 10가지"
   },
   {
    "title": "왜 재활용이 조달 리스크가 되는가",
@@ -74,6 +74,27 @@
  ],
  "overseas": [
   {
+   "title": "UK Environment Agency sets 83% threshold for 2026 plastic packaging recycling obligations",
+   "source": "ICIS",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVHhyNmtUR2JqdHozQi0yanNQOFFNd1JETndaVDM5ZlpVNUFhM1BIYnppX0gzTEJRSElHTkxORC1WSEd5aTh3aG52NFRnZjB0RVZmYWRaR1lhYzJWTlptSW5BYnIzcHNJMjJxRzBUbnBsVkxNWnMxekZvR3U5UE5TcFRnVnhMV2p3UEtJQVdMT210NFZRRml4YlZTZzJMTjBUcVIyRnl3UzViREhTcjFpVzIyWFJCakZVSHhta2g5V040ZUliQms1MEZGaDhWeUZmYmI2MHE3Y3Vyb2JtcmkwdHkzU0tkQ0U?oc=5",
+   "pub": "2026-10-10 10:51",
+   "more": 0
+  },
+  {
+   "title": "German waste plastics market sees only modest recovery after summer holidays",
+   "source": "EUWID Recycling and Waste Management",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNeGNPQ1k5SVpTVWlwcDJYU0pWZlA0MFI5SU5adlBhQ2ZKdWlLSUxjVWpmREJheUR2MV9VdzdMNnJwT0JvbThOalo0ZjQyTkY1cUR6SzNoODBXVldDMUkwT1h2aVZFYlVJR3RPOXdGQUtQTkdJY0xCa1RZY3lUOE5scHZSMWtHdVppTkl4NFlHc0hPNkkzcEFJV1h3ek9hTUQxYXc2dmNqZ3RLemNsaE5TMTRoMnNOakZpXzMyTEdndlpaUkZESVlmMA?oc=5",
+   "pub": "2026-10-09 17:04",
+   "more": 0
+  },
+  {
+   "title": "Recycled plastic pallet to slot into automated fresh produce supply chains",
+   "source": "Packaging Europe",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZU5OX1RkYXNHVklXUktoN1NsVmVQRDNJVnk5ZElDSVl3Wi16bnNIdTFWRmkxNzJKY2Y5SkhBNFJKQ21xYXZPS2cyMVUzcDNHTUZtM0EtT2EzT3Y2VjhQTXdDLUlmUHc0RmpBVkFSdnhJMVhSdWNWSGxUc3lfNmJaLTV5c1ptbGhZRVl1ZVhBQjd2WXZkMWJwQm9qSV9rT09paXYwN1pWSV9CMkk?oc=5",
+   "pub": "2026-10-08 20:40",
+   "more": 0
+  },
+  {
    "title": "Helix Projects plans industrial-scale pyrolysis and upgrading capacity in the Netherlands",
    "source": "EUWID Recycling and Waste Management",
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRHZQXzVhUGRhaU04TW4waHllcGxZaUhKVTNqWHdpQk1VRTV3QTNaUVhsc1pUalQ2d2dHQWlQZ05vcy01N0tNSnJPOFgzZEVGLXRScWg1OTJnVk54RWVEUU10UFc4bmx4eTFrbURueTcyYjJCV01ydGdDRjlzV0luY0o3WHlhc2J2alNBVmNub1hSV0xrZk9HdnpSY09halo0WDMwcFpEWXlFWFZ2czVDWG04ZmhZU00wZk9GbkhaUGlrNUtFWncwV3d6ZVl1RUZzTV9RTkpYMlZhOVE?oc=5",
@@ -85,6 +106,13 @@
    "source": "EUWID Recycling and Waste Management",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORWdNRGtzU0tweHNIQi1WNGVveXgyU29UX2Vtbk5FSEM5OTFMSU1xbEpZUXMzX2tlTzBxcGxzVkh4R2hCcWlNUmt2dTV1UW1TbWUtZFZhY2J2X0pBWUdObjYyaTFQblctU3FmQnExY0Q4dHRkN0w4R2ZrcDlGZk56SU8xMC10NUpMWUhjWmpVNA?oc=5",
    "pub": "2026-10-08 18:14",
+   "more": 0
+  },
+  {
+   "title": "ACG tackles pharma recyclability gap with PP blister",
+   "source": "Packaging Insights",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNV0hhWGxvM29oREhrMjg5WklOcG82ZW01ZHRCeEZtRTEtYWFjR2xVWlVyRTBXZllKbDJUR29PeTVQU1dkRHUtT0txOW1yYUtjVEdidE1iNDNxUHEwelBFbDlMbXJqVGlacy1WTTh0cDlHSzVZU3RYcUlGU29GZlBJcEVldFBwalVwOTNPS0oyYw?oc=5",
+   "pub": "2026-10-08 18:02",
    "more": 0
   },
   {
@@ -102,11 +130,11 @@
    "more": 2
   },
   {
-   "title": "German waste plastics exports remain well below last year's level in first half",
-   "source": "EUWID Recycling and Waste Management",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQjN6a2NOWEdaNHhuWXhJOXZxY3RpNnE1bWRjR2FndE9WWmxkWlVqaTdROW5xV2xuZHR6U2xid3VuclRkUWI0X0w2MnVYaEhLbm5qQV84aVZ3aC1YNXFabWF2eGw2Z1lWdmVLLXp4NnBvdUJOdzRLUGdwZDlSMWIyR3NoSjI4WUpIUlBTNEFmMjBpcUZSdy1iaHlRd3o5THFhSWpobEt1RTlsN0FMeVgwUjNyeW9ob3FqaExWY1BMTWU2ZG5sU1BfSHlpeGQ?oc=5",
-   "pub": "2026-10-08 15:51",
-   "more": 1
+   "title": "“Industry-first” common protocol for evaluating film packaging recyclability in Japan",
+   "source": "Packaging Europe",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPLUVBVjRrTWNFUXhjZmRmeV9meXhOTWgxNTI5WS13LXVnSU15ZTZmT2U1enVxY0dpWmRHdUNNMGtPYzZsXzR3UmI3b0k2bE43NS1ONFV5YmtSQVR5V1JSQ19nQ2s5WGw0WW9vRExlVU5Ea3NxWVp5TGhqd1EwUl8zVzhUVk5nQTd1eG1lWW5BLTBWQ3g3M0E3cnNGTTBSQzM1RnZvZngzTXMyWFIwc2l0YXlBQ21kbHc?oc=5",
+   "pub": "2026-10-07 23:10",
+   "more": 0
   },
   {
    "title": "The PPWR Shift: What It Means for Products, Packaging and Data",
@@ -114,34 +142,6 @@
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYUhlWFppcjExelpmMUp2aEpkbjJtSGtEZTU4NmtCbEJkdzhHTV9mSWJYRFhWRzJlZkhNbEV0WXM2Y3A0c3MxaVJLM01xdXZSQzlNS3hqRUpVcXpGSHpjWEdwRGhEd2loenliR3gwSF91UzFxdG5zN2RsQ3R0OW9zTkIyb05BSWowSXczejNwNTlVeDFKRTlxRw?oc=5",
    "pub": "2026-10-07 22:50",
    "more": 0
-  },
-  {
-   "title": "CNG Expanding Recycle-Ready Films Platform",
-   "source": "PlasticsToday",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWXJuUVcxVmpSbURfT0QyWGdwaXVibWY5LXlXTjg4bU8yY2RNeVN1Ynp5em5aRm8xMzZ0WnRNcmlWV215ci1NMEZyY0Z2REd5Z2J1U1dwMkhVZ2Vtak1TOUoxZHBUUS1XN2RBeUhFcnhHV2Y1NkpzRk9NSGN6aTZaOFZTWGZkOWs?oc=5",
-   "pub": "2026-10-07 22:20",
-   "more": 0
-  },
-  {
-   "title": "PE prices turn higher again after steep summer decline",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON2tzbHVESndOT255MUhqVUhhRnM0V2toOEdjMlIycTZwUWtleG9GZURJQTJUdzNySTZxRUQ4QWVpSnpyYUhiTU1FODZjZFFZbDNfaHdHcUxIN2Z2aTROeHhmZ09UdmpyVWVkV252ek14eHI3WEtUaEtuS1Y5cnpUeTBfQ1Z2eVAzT0ZXZXJfQUtoeXd3dDU5U3VR?oc=5",
-   "pub": "2026-10-07 21:50",
-   "more": 0
-  },
-  {
-   "title": "Recyclable, high-barrier polypropylene pharma blister revealed by ACG",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT0V6YzdjUnBTMUloZHdRbUw4R3VHdEVteWRXS2REdWx6S2JGSWJOeU1RejFiMWItUHZtZkJ0Sk91WnU2d0hLVDBPb3BaeG0ySjh0X3k5UTBEd2NuLWY0REExajllc3g0Q1RGMExoME5LSXlXRUgtZWlkRXBzZ0c3eEplTGR3alFQUUc3VUpkU1RObXFoOEQzZU5EMFEzUUZ4Njlj?oc=5",
-   "pub": "2026-10-07 21:30",
-   "more": 1
-  },
-  {
-   "title": "Investments to boost Borouge’s mechanical recycling capacity for plastics",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNTmR2SGtRS1V3eVZUdy0wdm43a3hZb3VveFB3UWJjMFItUldHa19POFVHRlJRRWNBVG9sc25MVTNVSXJTampiUkdmQ2VGQ1lZMGQ0YVRDTkJWR0FSZVFQa2FEYldnRlBGaGhCQmVpM09VQlppbWhQckxGajduOHJLX1pTd0ppeVhFR1JBTG50ZllzeEdSWmRvMi1xeUxWbU5JMnZNdXNGekc?oc=5",
-   "pub": "2026-10-07 18:35",
-   "more": 2
   }
  ]
 }
