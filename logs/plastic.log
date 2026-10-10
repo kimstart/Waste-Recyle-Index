@@ -1,18 +1,16 @@
 >> [재생원료] 순환자원정보센터 실패: ValueError: 표 없음 (응답 제목 'ERROR')
-   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202609 수도권: code=200 NORMAL SERVICE. 21건
+   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
 >> [재생원료 API] 202609 전국: code=200 NORMAL SERVICE. 0건
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
-   [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
->> [재생원료 API] 202608 수도권 실패: HTTPError
+>> [재생원료 API] 202608 수도권: code=200 NORMAL SERVICE. 21건
 >> [재생원료 API] 202608 전국: code=200 NORMAL SERVICE. 0건
    [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
->> [재생원료 API] 202607 수도권: code=200 NORMAL SERVICE. 21건
-   [재시도 1/2] HTTPError: HTTP Error 504: Gateway Timeout
    [재시도 2/2] HTTPError: HTTP Error 504: Gateway Timeout
->> [재생원료 API] 202607 전국 실패: HTTPError
->> [재생원료 API] 월: ['2026-07', '2026-09'], 품목 예: ['폐지신문지', '폐지골판지', '압축PE', '압축PP', '압축PET', '플레이크PE', '플레이크PP', '플레이크PVC']
->> [재생원료] 공공데이터포털 API에서 수집: 월 ['2026-07', '2026-09'] (총 2개월)
+>> [재생원료 API] 202607 수도권 실패: HTTPError
+>> [재생원료 API] 202607 전국: code=200 NORMAL SERVICE. 0건
+>> [재생원료 API] 월: ['2026-08', '2026-09'], 품목 예: ['폐지신문지', '폐지골판지', '압축PE', '압축PP', '압축PET', '플레이크PE', '플레이크PP', '플레이크PVC']
+>> [재생원료] 공공데이터포털 API에서 수집: 월 ['2026-08', '2026-09'] (총 2개월)
 >> [수집 성공] r_comp_pet: 2026-09 614.0 (이전 2026-08 599.0)
 >> [수집 성공] r_comp_pe: 2026-09 479.0 (이전 2026-08 478.0)
 >> [수집 성공] r_comp_pp: 2026-09 378.0 (이전 2026-08 372.0)
