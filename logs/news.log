@@ -1,107 +1,103 @@
->> [plastic] 수집 범위 국내 95시간 / 해외 95시간
-   [국내] '폐플라스틱' 5건
-   [국내] '재생원료 플라스틱' 3건
-   [국내] '재생플라스틱' 9건
-   [국내] '플라스틱 재활용' 10건
-   [국내] '페트 재활용' 3건
-   [국내] '열분해유' 3건
-   [국내] '화학적 재활용' 2건
-   [국내] '폐비닐' 4건
-   [국내] '재생원료 사용 의무' 0건
-   [국내] '플라스틱 협약' 2건
+>> [plastic] 수집 범위 국내 36시간 / 해외 72시간
+   [국내] '폐플라스틱' 2건
+   [국내] '재생원료 플라스틱' 2건
+   [국내] '재생플라스틱' 8건
+   [국내] '플라스틱 재활용' 14건
+   [국내] '페트 재활용' 4건
+   [국내] '열분해유' 1건
+   [국내] '화학적 재활용' 3건
+   [국내] '폐비닐' 2건
+   [국내] '재생원료 사용 의무' 2건
+   [국내] '플라스틱 협약' 0건
    [국내] '순환경제 플라스틱' 3건
-   [국내] '재활용 선별장' 3건
-   [국내] 반복 소재어: []
-   [해외] 'rPET' 5건
+   [국내] '재활용 선별장' 1건
+   [국내] 반복 소재어: ['환경']
+   [해외] 'rPET' 7건
    [해외] '"recycled PET"' 9건
-   [해외] '"chemical recycling"' 7건
-   [해외] '"plastic pyrolysis"' 4건
-   [해외] '"recycled content" plastic' 13건
-   [해외] '"plastics treaty"' 6건
-   [해외] '"recycled polypropylene"' 7건
-   [해외] '"plastic recycling"' 16건
-   [해외] 'PPWR recycled' 5건
-   [해외] '"recycled plastic" prices' 20건
-   [해외 전문지] plasticsnews.com 18건
-   [해외 전문지] plasticstoday.com 33건
+   [해외] '"chemical recycling"' 10건
+   [해외] '"plastic pyrolysis"' 3건
+   [해외] '"recycled content" plastic' 11건
+   [해외] '"plastics treaty"' 5건
+   [해외] '"recycled polypropylene"' 8건
+   [해외] '"plastic recycling"' 18건
+   [해외] 'PPWR recycled' 10건
+   [해외] '"recycled plastic" prices' 17건
+   [해외 전문지] plasticsnews.com 23건
+   [해외 전문지] plasticstoday.com 35건
    [해외 전문지] packaginginsights.com 5건
-   [해외 전문지] resource-recycling.com 8건
-   [해외 전문지] recyclingtoday.com 21건
-   [해외 전문지] recyclinginternational.com 6건
+   [해외 전문지] resource-recycling.com 7건
+   [해외 전문지] recyclingtoday.com 22건
+   [해외 전문지] recyclinginternational.com 5건
    [해외 전문지] sustainableplastics.com 0건
-   [해외 전문지] euwid-recycling.com 6건
-   [해외 전문지] packagingeurope.com 47건
-   [해외 전문지] packaging-gateway.com 10건
-   [해외 전문지] letsrecycle.com 19건
-   [해외 전문지] icis.com 11건
+   [해외 전문지] euwid-recycling.com 5건
+   [해외 전문지] packagingeurope.com 60건
+   [해외 전문지] packaging-gateway.com 12건
+   [해외 전문지] letsrecycle.com 11건
+   [해외 전문지] icis.com 14건
    [해외 RSS] Recycling Today 4건
-   [해외] 전문지 외 제외: 3News, ALCHEMPro, Bioengineer.org, Deccan Herald, France 24, Inbox.lv, Ingka Group, InteriorDaily, Label and Narrow Web, Maastricht University, Packaging South Asia, Pluang, Recyclingportal, TAPinto, The Climate Watch, The Times of India, Urban Acres, Woolworths Group, resourcemedia.eco, وردنا
->> [plastic] 국내 47건 → 12건, 해외 280건 → 8건
+   [해외] 전문지 외 제외: 3News, American Recycler, BigMint, Bioengineer.org, Deccan Herald, Down To Earth, Hortidaily, Indian Chemical News, Spherical Insights, وردنا
+>> [plastic] 국내 42건 → 12건, 해외 301건 → 5건
+   - [헤럴드경제] EU 포장재 규제 시행 두 달…코트라, 21개국별 대응 지침 공개
+   - [미주조선일보] 캘리포니아 포장재 규제 둘러싼 집단소송 움직임
+   - [전국뉴스] [순환성과로 완성하는 환경책임]폐기물부담금·EPR 개편, 회수부터 재생원료까지 순환체계 연결해야
+   - [워터저널] [한국환경공단] 민간 협력을 통해 폐전기이륜차 회수･재활용 촉진
+   - [에너지프로슈머] 폐전기이륜차 재활용 체계 구축…전국 회수 거점 220곳으로 확대
+   - [뉴시스] 완주군, 봉동에 투명 페트병 무인회수기 설치…6곳으로 확대
+   - [법률신문] 법무법인(유) 태평양 환경팀과 (사)한국포장재재활용사업공제조합, EU 포장 및 포장폐기물 규정(PPWR) 고객초청 세미나
+   - [SDG뉴스] [친환경 포장재] 플라스틱 대신 종이병 시대 열리나...상업 생산 본격화
    - [https://www.koreasprint.com/] 도심 속 쓰레기를 기름으로 바꾸다... 이동식 연속식 열분해 청소차 상용화 돌입
    - [IndexBox] 전기·전자제품용 소비 후 재활용 플라스틱 시장, EPR 의무와 OEM 지속가능성 목표에 힘입어 2035년까지 확장 전망
-   - [제주뉴스] 제주 영농폐비닐 9209톤·폐농약용기 744만개 발생…농촌 환경오염 우려
-   - [투데이타임즈] [환경기획.진단] '쓰레기 산' 된 해양수도 부산… 매일 900톤 넘는 폐플라스틱 폭탄 터진다.
-   - [IndexBox] 글로벌 타이어 열분해유 시장: 규모, 동향 및 2035까지의 예측
-   - [브런치] 종이팩 수거함, 재활용률 13%대를 넘길까
-   - [데일리환경] 서인도양 10개국, 해양보호·플라스틱 대응 15개 결정 채택
-   - [리뷰타임스] [생활 리뷰] ‘재활용 최우수’ 왕뚜껑 컵라면, 먹고 나면 폐기물로 버려야
-   - [제주교통복지신문] “페트병 그냥 버리긴 아깝네”…벽걸이 소품함으로 재활용
-   - [비건뉴스] 플라스틱 재활용, 선별 원료의 ‘순도’만으로 판단하기 어려운 이유
-   - [https://technovalue.com/] 폐차 재활용률 10년 정체, "80% 후반대"...순환경제로의 전환 시급
-   - [파인드비] 분리배출 폐비닐로 종량제봉투 만든다… 정부, 제작 지원 3차 공모
+   - [비건뉴스] 보조배터리, 종량제·플라스틱함 금지…어디에 버리나
+   - [얼리어답터뉴스] [환경기획.진단] '쓰레기 산' 된 해양수도 부산… 매일 900톤 넘는 폐플라스틱 폭탄 터진다.
+   - [Plastics News] LYB says ELVR is accelerating automotive shift to recycled plastics
+   - [Plastics News] Polyethylene prices rise as export demand, oil costs climb
+   - [Packaging Insights] EU weighs PPWR compliance relief for small businesses
+   - [Packaging Insights] Z1ro develops non-wood molded fiber pack to replace plastic and virgin pulp
    - [ICIS] UK Environment Agency sets 83% threshold for 2026 plastic packaging recycling obligations
-   - [EUWID Recycling and Waste Management] German waste plastics market sees only modest recovery after summer holidays
-   - [Packaging Europe] Recycled plastic pallet to slot into automated fresh produce supply chains
-   - [EUWID Recycling and Waste Management] Helix Projects plans industrial-scale pyrolysis and upgrading capacity in the Netherlands
-   - [EUWID Recycling and Waste Management] German PET recycling market remains under pressure in September
-   - [Packaging Insights] ACG tackles pharma recyclability gap with PP blister
-   - [Packaging Gateway] Packaging costs: how resin, energy and freight affect prices
-   - [Plastics News] How Taiwan built one of Asia’s most successful plastics recycling systems
-   [요약] 실패 HTTPError: 종이팩 수거함, 재활용률 13%대를 넘길까
-   [요약] 8/12건
->> data/news_plastic.json, history/news_plastic_20261012.json 저장
->> [biogas] 수집 범위 국내 95시간 / 해외 95시간
-   [국내] '바이오가스' 3건
+   [요약] 10/12건
+>> data/news_plastic.json, history/news_plastic_20261013.json 저장
+>> [biogas] 수집 범위 국내 36시간 / 해외 72시간
+   [국내] '바이오가스' 2건
    [국내] '바이오메탄' 0건
    [국내] '바이오가스 생산목표제' 0건
-   [국내] '유기성폐자원' 0건
-   [국내] '음식물류폐기물 바이오가스' 3건
-   [국내] '가축분뇨 바이오가스' 4건
+   [국내] '유기성폐자원' 1건
+   [국내] '음식물류폐기물 바이오가스' 2건
+   [국내] '가축분뇨 바이오가스' 1건
    [국내] '혐기성소화' 1건
    [국내] '하수슬러지 바이오가스' 0건
-   [국내] '바이오가스화시설' 4건
+   [국내] '바이오가스화시설' 2건
    [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 54건
-   [해외] 'biogas' 48건
+   [해외] 'biomethane' 47건
+   [해외] 'biogas' 0건
    [해외] '"renewable natural gas"' 9건
-   [해외] '"anaerobic digestion"' 8건
+   [해외] '"anaerobic digestion"' 9건
    [해외] 'biomethane price' 12건
    [해외] '"guarantees of origin" biomethane' 3건
-   [해외] 'biomethane grid injection' 7건
+   [해외] 'biomethane grid injection' 6건
    [해외] 'RNG landfill gas' 5건
    [해외 전문지] bioenergy-news.com 6건
-   [해외 전문지] gasworld.com 22건
+   [해외 전문지] gasworld.com 17건
    [해외 전문지] endswasteandbioenergy.com 2건
-   [해외 전문지] argusmedia.com 1건
-   [해외 전문지] qcintel.com 36건
-   [해외 전문지] biomassmagazine.com 17건
+   [해외 전문지] argusmedia.com 6건
+   [해외 전문지] qcintel.com 30건
+   [해외 전문지] biomassmagazine.com 13건
    [해외 전문지] europeanbiogas.eu 0건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
    [해외 전문지] wastedive.com 3건
->> [biogas] 국내 15건 → 2건, 해외 233건 → 10건
-   - [안성뉴스] 안성 청년 축산리더·주민, 화성 바이오가스시설 찾아··가축분뇨 처리·자원화 과정 살펴
-   - [경기탑뉴스] 안성시, 가축분뇨 바이오가스화시설 선진지 견학
-   - [Bioengineer.org] Carbon prices and smart subsidies could unlock the hidden flexibility of Europe’s biogas plants
-   - [BioEnergy Times] Telangana: Osmania University professor honoured for turning campus waste into biogas and manure
+>> [biogas] 국내 9건 → 2건, 해외 168건 → 10건
+   - [경남신문] 남해읍에 ‘바이오가스화시설’ 들어선다
+   - [국제뉴스] 안성 청년 축산리더·주민, 바이오가스화시설 견학…가축분뇨 자원화 현장 체험
+   - [Waste360] Nopetro Energy, Johnson Controls Break Ground on RNG Facility
+   - [Bioenergy Insight Magazine] From landfill to last mile: How AD Fuels is building the UK’s biomethane supply chain
+   - [energynews.pro] Metacon secures EU funding for a biomethane-to-hydrogen pilot project in Crete
+   - [Grattan Institute] Building a renewable gas sector
+   - [CEEnergynews] Amber Grid issues record biomethane guarantees
    - [Biomass Magazine] Construction begins on liquefied biogas facility at the Port of Gothenburg in Sweden
+   - [ABC7 WWSB] Manatee County breaks ground on $50 million landfill gas-to-fuel project
    - [Biomass Magazine] Clean Energy announces new RNG agreements
-   - [www.marketscreener.com] FactSet Research : Renewable Natural Gas Production Growth in the U.S.
-   - [Quantum Commodity Intelligence] EBA calls for EU-wide biomethane mandate
-   - [Quantum Commodity Intelligence] Finland biogas pipeline comprises 1.7 TWh per year by 2030: SBB
-   - [Quantum Commodity Intelligence] French order raises future subsidised biomethane GO revenue deductions
-   - [marketscreener.com] Italgas connects Edison biogas plant to Caivano network
-   - [Bioenergy Insight Magazine] EBA identifies five regulatory barriers holding back European biogas sector
+   - [Waste Dive] Report charts growing adoption of wastewater AD; RNG news from Waga, Opal, Montauk
+   - [marketscreener.com] Italian fund Vesper joins race to buy Snam biomethane business, sources say
    [요약] 2/2건
->> data/news_biogas.json, history/news_biogas_20261012.json 저장
+>> data/news_biogas.json, history/news_biogas_20261013.json 저장
