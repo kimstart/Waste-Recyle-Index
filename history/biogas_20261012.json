@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12 09:47",
+ "updated": "2026-10-12 15:25",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -21,7 +21,6 @@
    "prev_value": 78.85,
    "src": "Yahoo Finance (ICE Endex)",
    "spark": [
-    79.5,
     82.6,
     80.1,
     78.0,
