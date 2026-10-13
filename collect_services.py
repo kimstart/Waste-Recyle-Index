@@ -17,18 +17,29 @@ KWS = ["재활용", "선별", "폐합성수지", "폐비닐", "플라스틱", "�
 RE_KWS = ["선별", "위탁", "대행", "재활용"]
 # 생활계 재활용품 선별·처리·운영 대행만 남긴다
 KEEP = re.compile(r"(재활용|선별|폐합성수지|폐비닐|플라스틱|스티로폼|발포).*(대행|위탁|처리|운영|선별|용역)|(대행|위탁|운영).*(재활용|선별|폐합성수지|폐비닐)")
-DROP = re.compile(r"건설|슬러지|폐수|의료|음식물|하수|분뇨|토사|아스콘|석면|폐목재|폐타이어|폐유|실험|인조잔디|철거|도로|공사|청소용역|폐가전|폐의약품|소각재|매립")
+DROP = re.compile(r"건설|슬러지|폐수|의료|음식물|하수|분뇨|토사|아스콘|석면|폐목재|폐타이어|폐유|실험|인조잔디|철거|도로|공사|청소|폐가전|폐의약품|소각재|매립|"
+                  r"형광등|체크리스트|학생|차량|시스템|인증|구축|개발|타당성|조사|연구|설계|개선사업|배송|봉투|내진|안전진단|원단|섬유|매트리스|"
+                  r"이차전지|배터리|지정폐기물|비산재|바닥재|킬레이트|오니|분진|슬래그|계근|경비|플랫폼|회수기|네프론|자판기|임차|지게차|금융|"
+                  r"복원사업|정비사업|경지정리|조성사업|수해|방치|마을|사업장|병원|공항|인삼|영농|성과평가|대형폐기물|대형생활폐기물|유지관리|컨설팅|교육|홍보|훼손지|농협|인천항|물류장|비품|이전 용역")
 T0, BUDGET = time.monotonic(), 14 * 60
 
 
 def tag(title):
     if re.search(r"운영", title):
         return "시설 운영 위탁"
-    if re.search(r"(?<!미)선별", title):
+    if re.search(r"잔재|협잡물", title) and not re.search(r"선별\s*(?:·|및)\s*잔재", title):
+        return "잔재물 처리"
+    if re.search(r"(?<!미)선별(?!\s*잔재|장|센터|시설|품)", title):
         return "선별 대행"
-    if re.search(r"수집|운반", title):
-        return "수집·운반·처리"
-    return "처리 대행"
+    if re.search(r"잔재|협잡물", title):
+        return "잔재물 처리"
+    if re.search(r"수집|운반", title) and not re.search(r"처리", title):
+        return "수집·운반"
+    return "폐합성수지·재활용 처리"
+
+
+def keep(title):
+    return bool(KEEP.search(title)) and not DROP.search(title) and "매각" not in title
 
 
 def g2b(path, params):
@@ -56,7 +67,7 @@ def collect_g2b(first):
             try:
                 for x in g2b("/ad/BidPublicInfoService/getBidPblancListInfoServcPPSSrch", {**rng, "bidNtceNm": kw}):
                     title = x.get("bidNtceNm", "")
-                    if not KEEP.search(title) or DROP.search(title) or "매각" in title:
+                    if not keep(title):
                         continue
                     org, inst = x.get("dminsttNm") or "", x.get("ntceInsttNm") or ""
                     reg, city = region_of(f"{title} {org} {inst}")
@@ -94,7 +105,7 @@ def collect_re(first):
                     break
                 for r in rows:
                     title = r["title"]
-                    if "용역" not in r["kind"] or not KEEP.search(title) or DROP.search(title):
+                    if "용역" not in r["kind"] or not keep(title):
                         continue
                     reg, city = region_of(f"{title} {r['org']}")
                     if reg == "기타":
@@ -116,7 +127,15 @@ def collect_re(first):
 def main():
     st = load(OUT, {}) or {}
     first = not st.get("backfilled")
-    items = {x["id"]: x for x in st.get("items", [])}
+    # 거르기 기준·분류가 바뀌어도 저장된 건에 다시 적용
+    items = {}
+    for x in st.get("items", []):
+        if not keep(x.get("title", "")):
+            continue
+        reg, city = region_of(f"{x.get('title', '')} {x.get('org', '')}")
+        if reg == "기타":
+            continue
+        items[x["id"]] = {**x, "region": reg, "city": city, "type": tag(x.get("title", ""))}
     g, cut, wins = collect_g2b(first) if DATA_KEY else ({}, False, {})
     for k, v in g.items():
         old = items.get(k, {})

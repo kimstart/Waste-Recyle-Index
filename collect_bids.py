@@ -64,8 +64,11 @@ def region_of(text):
     for c in INCHEON:
         if c in t:
             return "수도권", "인천"
+    t2 = re.sub(r"환경기초|경기장", "", t)          # '환경기초시설'·'경기장'의 '경기'를 지역으로 오인하지 않게
+    if re.search(r"경상|경북|경남|충청|충북|충남|전라|전북|전남|강원|제주|세종|대전|대구|부산|광주광역|울산", t2) and not re.search(r"경기도|서울|인천", t2):
+        return "기타", ""
     for c in GG:
-        if c in t:
+        if c in t2:
             return "수도권", "경기" if c == "경기" else c
     return "기타", ""
 

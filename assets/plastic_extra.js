@@ -186,11 +186,11 @@
   /* ---------------------------------------------------------------- 시작 */
 
   /* ---------------------------------------------------------------- ②-2 선별·처리 대행 용역 */
-  let SVC = [], SVC_SCOPE = 'cap', SVC_PERIOD = 365;
+  let SVC = [], SVC_SCOPE = 'cap', SVC_PERIOD = 365, SVC_TYPE = '';
   const eok = v => v == null ? '-' : v >= 1e8 ? `${(v / 1e8).toLocaleString('ko-KR', { maximumFractionDigits: 1 })}억원` : `${n0(v / 1e4)}만원`;
   function renderSvc() {
     const cut = Date.now() - SVC_PERIOD * 864e5;
-    const rows = SVC.filter(b => (SVC_SCOPE === 'focus' ? b.region === '중점' : true) && b.start && dayMs(b.start) >= cut);
+    const rows = SVC.filter(b => (SVC_SCOPE === 'focus' ? b.region === '중점' : true) && (!SVC_TYPE || b.type === SVC_TYPE) && b.start && dayMs(b.start) >= cut);
     const won = rows.filter(b => b.status === '낙찰' && b.win_amt);
     const live = rows.filter(b => b.end && dayMs(b.end) >= Date.now() - 864e5);
     const ests = rows.map(b => b.est).filter(v => v);
@@ -220,6 +220,7 @@
   }));
   segSvc('svcScope', v => SVC_SCOPE = v);
   segSvc('svcPeriod', v => SVC_PERIOD = +v);
+  segSvc('svcType', v => SVC_TYPE = v);
 
   getJson('data/recycle_history.json').then(h => { HIST = h; renderAnalysis(); }).catch(() => { $('anaBody').innerHTML = '<tr><td colspan="8" class="fl">자료 없음</td></tr>'; });
   getJson('data/bids.json').then(j => {
