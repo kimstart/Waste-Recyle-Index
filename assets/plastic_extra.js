@@ -193,10 +193,11 @@
     const rows = SVC.filter(b => (SVC_SCOPE === 'focus' ? b.region === '중점' : true) && (!SVC_TYPE || b.type === SVC_TYPE) && b.start && dayMs(b.start) >= cut);
     const won = rows.filter(b => b.status === '낙찰' && b.win_amt);
     // 단가계약은 낙찰금액이 톤당 단가로 들어온다(추정가격의 1/500 미만이면 단가로 판단)
-    const isUnit = b => b.win_amt && b.est && b.win_amt < b.est / 500;
+    const estUnit = b => b.est && b.est < 3e6 && /단가/.test(b.title || '');   // 추정가격 자체가 톤당 단가로 올라온 단가계약
+    const isUnit = b => b.win_amt && ((b.est && b.win_amt < b.est / 500) || estUnit(b));
     const wonTot = won.filter(b => !isUnit(b)), wonUnit = won.filter(isUnit);
     const live = rows.filter(b => b.end && dayMs(b.end) >= Date.now() - 864e5);
-    const ests = rows.map(b => b.est).filter(v => v);
+    const ests = rows.filter(b => !estUnit(b)).map(b => b.est).filter(v => v);
     const rates = won.map(b => b.win_rate).filter(v => v);
     const selU = wonUnit.filter(b => b.type === '선별 대행').map(b => b.win_amt);
     $('svcKpi').innerHTML = [
@@ -212,7 +213,7 @@
         : live.includes(b) ? `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((b.end || '').slice(5).replace('-', '.'))}</small>` : esc(b.status || '-');
       return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.type)}</td>
-        <td>${eok(b.est)}</td><td>${res}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : '순환자원')}</td></tr>`;
+        <td>${estUnit(b) ? n0(b.est) + '원/톤' : eok(b.est)}</td><td>${res}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : '순환자원')}</td></tr>`;
     }).join('') || '<tr><td colspan="8" class="fl">해당 기간·지역의 선별·처리 대행 용역 공고가 없습니다.</td></tr>';
   }
   getJson('data/services.json').then(j => {
