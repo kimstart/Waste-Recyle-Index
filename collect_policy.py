@@ -3,12 +3,14 @@
 - 국가법령정보 공동활용 API(LAW_API_KEY): data/policy_watch.json 의 법령·행정규칙(고시) 공포/발령일·시행일 변화 감시
 - 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판: 제목에 관련 단어가 들어간 새 글 감시
 새로 감지된 변경은 events 에 쌓고(화면 상단 알림), GITHUB_TOKEN 이 있으면 저장소 이슈로도 등록한다(구독자 메일)."""
+import socket
 import os, re, json, html, urllib.parse, urllib.request
 from datetime import timedelta
 from common import get, retry, load, save, now_kst
 
 OUT, WATCH = "data/policy.json", "data/policy_watch.json"
 LAW_KEY = os.environ.get("LAW_API_KEY", "")
+socket.setdefaulttimeout(40)
 LAW_API = "https://www.law.go.kr/DRF/lawSearch.do"
 MCEE = "https://www.mcee.go.kr"
 BOARDS = [("보도자료", 10598), ("입법예고", 68), ("행정예고", 10557), ("고시·훈령·예규", 71)]

@@ -24,18 +24,18 @@ jobs:
         continue-on-error: true
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: mkdir -p logs && python -u collect_bids.py 2>&1 | tee logs/bids.log
+        run: mkdir -p logs && timeout -k 15 1680 python -u collect_bids.py 2>&1 | tee logs/bids.log
       - name: 선별·처리 대행 용역 수집 (나라장터·순환자원정보센터)
         continue-on-error: true
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: python -u collect_services.py 2>&1 | tee logs/services.log
+        run: timeout -k 15 1200 python -u collect_services.py 2>&1 | tee logs/services.log
       - name: 제도 변경 감시 (법령정보·기후에너지환경부)
         continue-on-error: true
         env:
           LAW_API_KEY: ${{ secrets.LAW_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -u collect_policy.py 2>&1 | tee logs/policy.log
+        run: timeout -k 15 600 python -u collect_policy.py 2>&1 | tee logs/policy.log
       - name: 변경 저장
         run: |
           git config user.name "github-actions[bot]"
