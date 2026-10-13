@@ -192,18 +192,23 @@
     const cut = Date.now() - SVC_PERIOD * 864e5;
     const rows = SVC.filter(b => (SVC_SCOPE === 'focus' ? b.region === '중점' : true) && (!SVC_TYPE || b.type === SVC_TYPE) && b.start && dayMs(b.start) >= cut);
     const won = rows.filter(b => b.status === '낙찰' && b.win_amt);
+    // 단가계약은 낙찰금액이 톤당 단가로 들어온다(추정가격의 1/500 미만이면 단가로 판단)
+    const isUnit = b => b.win_amt && b.est && b.win_amt < b.est / 500;
+    const wonTot = won.filter(b => !isUnit(b)), wonUnit = won.filter(isUnit);
     const live = rows.filter(b => b.end && dayMs(b.end) >= Date.now() - 864e5);
     const ests = rows.map(b => b.est).filter(v => v);
     const rates = won.map(b => b.win_rate).filter(v => v);
+    const selU = wonUnit.filter(b => b.type === '선별 대행').map(b => b.win_amt);
     $('svcKpi').innerHTML = [
       ['공고', `${rows.length}건`, `진행 중 ${live.length}건 · 낙찰 ${won.length}건`],
-      ['추정가격 합계', ests.length ? eok(ests.reduce((a, b) => a + b, 0)) : '-', `추정가격 공개 ${ests.length}건`],
-      ['낙찰금액 합계', won.length ? eok(won.reduce((a, b) => a + b.win_amt, 0)) : '-', `낙찰 ${won.length}건`],
+      ['추정가격 합계', ests.length ? eok(ests.reduce((a, b) => a + b, 0)) : '-', `추정가격 공개 ${ests.length}건 (재공고 포함)`],
+      ['낙찰금액 합계 (총액계약)', wonTot.length ? eok(wonTot.reduce((a, b) => a + b.win_amt, 0)) : '-', `총액 낙찰 ${wonTot.length}건`],
+      ['선별 대행 낙찰 단가', selU.length ? `${n0(mean(selU))}원/톤` : '-', `단가계약 ${selU.length}건 평균`],
       ['평균 낙찰률', rates.length ? `${n1(mean(rates))}%` : '-', '낙찰금액 ÷ 예정가격']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
     $('svcBody').innerHTML = rows.slice(0, 25).map(b => {
       const reg = `<span class="reg${b.region === '중점' ? ' f' : ''}">${esc(b.city || '수도권')}</span>`;
-      const res = b.status === '낙찰' && b.win_amt ? `<b>${eok(b.win_amt)}</b>${b.win_rate ? `<small class="fl"> (${n1(b.win_rate)}%)</small>` : ''}<small class="fl" style="display:block">${esc(b.winner || '')}</small>`
+      const res = b.status === '낙찰' && b.win_amt ? `<b>${isUnit(b) ? n0(b.win_amt) + '원/톤' : eok(b.win_amt)}</b>${isUnit(b) ? '<small class="fl" style="display:block">단가계약</small>' : ''}${b.win_rate ? `<small class="fl"> (${n1(b.win_rate)}%)</small>` : ''}<small class="fl" style="display:block">${esc(b.winner || '')}</small>`
         : live.includes(b) ? `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((b.end || '').slice(5).replace('-', '.'))}</small>` : esc(b.status || '-');
       return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.type)}</td>
