@@ -84,7 +84,7 @@ def is_plastic(title):
     if not PLASTIC.search(title):
         return False
     # '재활용품(고철)', '재활용품(혼합병)'처럼 괄호 안이 비플라스틱뿐이면 제외
-    has_pl = re.search(r"PET|페트|플라스틱|합성수지|비닐|스티로폼|잉고트|\bPP\b|\bPE\b|선별품", title, re.I)
+    has_pl = re.search(r"PET|페트|플라스틱|합성수지|비닐|스티로폼|잉고트|\bPP\b|\bPE\b", title, re.I)
     if (NON_PLASTIC_ONLY.search(title) or NON_PLASTIC_WORD.search(title)) and not has_pl:
         return False
     return True
@@ -284,7 +284,8 @@ def collect_esti(old):
         st = x.get("pbancSttsNm") or ""
         b = {"id": f"esti:{x.get('pbancNo')}", "src": "순환자원정보센터(수의)", "no": x.get("pbancNo"), "ord": "0",
              "title": title, "org": norm(x.get("pbancIsrNm", "")), "start": _ymd(x.get("pbancBgngDt")), "end": _ymd(x.get("pbancDdlnDt")),
-             "open": _ymd(x.get("pbancDdlnDt")), "status": "낙찰" if st == "선정" else "유찰" if st in ("미선정", "유찰") else "입찰중" if "완료" not in st else "개찰완료",
+             "open": _ymd(x.get("pbancDdlnDt")), "status": "낙찰" if st == "선정" else "유찰" if st in ("미선정", "유찰") else
+                       "개찰완료" if "완료" in st or (_ymd(x.get("pbancDdlnDt")) or "9999") < now_kst().strftime("%Y-%m-%d") else "입찰중",
              "kind": "수의견적 (" + (x.get("estmtSeNm") or "") + ")", "cat": category(title), "region": reg, "city": city,
              "qty_kg": q, "price_type": (x.get("estmtPrcSeNm") or "") + "입찰", "pre_raw": (x.get("estmtPrnmntPrcCn") or "").split("(")[0] + ("원/kg" if "원/kg" in (x.get("estmtPrnmntPrcCn") or "") else "원"),
              "win_raw": x.get("estmtAmtCn") or "", "url": x.get("dtlInfoUrlAddr") or "", "detail_ok": 2}
