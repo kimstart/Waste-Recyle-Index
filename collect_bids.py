@@ -160,7 +160,13 @@ def re_detail(b):
 
 def collect_re(old, first_run):
     found, pages_max, t = {}, (40 if first_run else 2), time.monotonic()
-    for path, label in (("/bid/listBidResultPage.do", "결과"), ("/bid/listBidPartPage.do", "공고")):
+    if DATA_KEY:
+        try:
+            found = api_found()
+        except Exception as e:
+            print(f">> [순환자원 API] 실패 → 웹페이지 목록으로 수집: {type(e).__name__}: {str(e)[:120]}")
+            found = {}
+    for path, label in (() if found else (("/bid/listBidResultPage.do", "결과"), ("/bid/listBidPartPage.do", "공고"))):
         for q in RE_QUERIES:
             if over("순환자원정보센터", t):
                 break
@@ -184,7 +190,7 @@ def collect_re(old, first_run):
         if r["start"] < BACKFILL_FROM:
             continue
         title = r["title"]
-        if not is_plastic(title):
+        if not ("매각" in r["kind"] or "매각" in title or "판매" in title) or not is_plastic(title):
             continue
         reg, city = region_of(f"{title} {r['org']}")
         prev = old.get(key)
@@ -213,6 +219,80 @@ def collect_re(old, first_run):
     print(f">> [순환자원] 플라스틱 매각 {len(out)}건 (상세 새로 읽음 {fetched}건)")
     return out
 
+
+
+# ---------------------------------------------------------------- 순환자원정보센터 Open API (공공데이터포털, DATA_GO_KR_KEY)
+KECO = "https://apis.data.go.kr/B552584/kecoapi"
+
+
+def _ymd(v):
+    v = re.sub(r"\D", "", str(v or ""))
+    return f"{v[:4]}-{v[4:6]}-{v[6:8]}" if len(v) >= 8 else ""
+
+
+def keco_all(path, stop_before):
+    """공고일 최신순으로 받아 stop_before 보다 오래된 공고가 나오면 멈춘다"""
+    out, page = [], 1
+    while page <= 30:
+        q = {"serviceKey": DATA_KEY, "pageNo": page, "numOfRows": 1000, "returnType": "json"}
+        txt = retry(lambda: get(f"{KECO}/{path}?" + urllib.parse.urlencode(q), timeout=60), tries=3, wait=3)
+        body = json.loads(txt).get("body", {})
+        its = body.get("items") or []
+        its = its if isinstance(its, list) else its.get("item", [])
+        out += its
+        oldest = min((_ymd(x.get("bidBgngDt") or x.get("pbancBgngDt")) or "9999" for x in its), default="0000")
+        if not its or len(out) >= int(body.get("totalCount") or 0) or oldest < stop_before:
+            break
+        page += 1
+    return out
+
+
+def api_found():
+    """전자입찰 공고·결과 API → collect_re 가 쓰는 목록 행 형식"""
+    ads = keco_all("bidPbancService/getBidPbancInfo", BACKFILL_FROM)
+    res = {x.get("pbancNo"): x for x in keco_all("bidPbancService/getBidPbancRsltInfo", BACKFILL_FROM)}
+    today = now_kst().strftime("%Y-%m-%d")
+    found = {}
+    for x in ads + [r for k, r in res.items() if k not in {a.get("pbancNo") for a in ads}]:
+        no = x.get("pbancNo")
+        if not no:
+            continue
+        ordn = (re.search(r"bidTimeNum=(\d+)", x.get("dtlInfoUrlAddr") or "") or [None, "0"])[1]
+        r = res.get(no) or {}
+        end, opn = _ymd(x.get("bidDdlnDt")), _ymd(x.get("bdopnYmd"))
+        status = r.get("pbancRsltNm") or ("공고취소" if "취소" in (x.get("pbancSttsNm") or "") else
+                                         "개찰완료" if (opn or end) and (opn or end) < today else "입찰중")
+        found[f"re:{no}:{ordn}"] = {"no": no, "ord": ordn, "kind": f"{x.get('cmdtyLclsfNm', '')} ({x.get('bidSeNm', '') or '매각'})",
+                                    "title": norm(x.get("pbancNm", "")), "org": norm(x.get("pbancIsrNm", "")),
+                                    "start": _ymd(x.get("bidBgngDt")), "end": end, "open": opn, "status": status.split("(")[0].strip() if status != "유찰(공고취소)" else status}
+    print(f">> [순환자원 API] 공고 {len(ads)}건, 결과 {len(res)}건 → 매각 공고 {sum(1 for r in found.values() if '매각' in r['kind'] or '매각' in r['title'])}건")
+    return found
+
+
+def collect_esti(old):
+    """수의견적(전자 수의계약) 매각 공고·결과 API"""
+    ads = keco_all("pvctEstmtPbancService/getPvctEstmtPbancInfo", BACKFILL_FROM)
+    res = {x.get("pbancNo"): x for x in keco_all("pvctEstmtPbancService/getPvctEstmtPbancRsltInfo", BACKFILL_FROM)}
+    out = {}
+    for x in list(res.values()) + [a for a in ads if a.get("pbancNo") not in res]:
+        title = norm(x.get("pbancNm", ""))
+        if "매각" not in (x.get("estmtSeNm") or "") + title or not is_plastic(title):
+            continue
+        reg, city = region_of(f"{title} {x.get('pbancIsrNm', '')}")
+        qty = x.get("pbancCmdtyQtyCn") or ""
+        q = num(qty) * (1000 if "톤" in qty else 1) if num(qty) and ("kg" in qty or "톤" in qty) else None
+        st = x.get("pbancSttsNm") or ""
+        b = {"id": f"esti:{x.get('pbancNo')}", "src": "순환자원정보센터(수의)", "no": x.get("pbancNo"), "ord": "0",
+             "title": title, "org": norm(x.get("pbancIsrNm", "")), "start": _ymd(x.get("pbancBgngDt")), "end": _ymd(x.get("pbancDdlnDt")),
+             "open": _ymd(x.get("pbancDdlnDt")), "status": "낙찰" if st == "선정" else "유찰" if st in ("미선정", "유찰") else "입찰중" if "완료" not in st else "개찰완료",
+             "kind": "수의견적 (" + (x.get("estmtSeNm") or "") + ")", "cat": category(title), "region": reg, "city": city,
+             "qty_kg": q, "price_type": (x.get("estmtPrcSeNm") or "") + "입찰", "pre_raw": (x.get("estmtPrnmntPrcCn") or "").split("(")[0] + ("원/kg" if "원/kg" in (x.get("estmtPrnmntPrcCn") or "") else "원"),
+             "win_raw": x.get("estmtAmtCn") or "", "url": x.get("dtlInfoUrlAddr") or "", "detail_ok": 2}
+        if b["status"] != "낙찰":
+            b["win_raw"] = ""
+        out[b["id"]] = b
+    print(f">> [수의견적 API] 공고 {len(ads)}건, 결과 {len(res)}건 → 플라스틱 매각 {len(out)}건")
+    return out
 
 # ---------------------------------------------------------------- 나라장터
 def g2b(path, params):
@@ -301,6 +381,12 @@ def main():
     first = not st.get("backfilled")
     bids = dict(old)
     ok = False
+    if DATA_KEY:
+        try:
+            got = collect_esti({k: v for k, v in old.items() if v.get("src") == "순환자원정보센터(수의)"})
+            bids.update(got)
+        except Exception as e:
+            print(f">> [수의견적 API] 실패: {type(e).__name__}: {str(e)[:150]} → 이전 값 유지")
     for name, fn in (("순환자원정보센터", collect_re), ("나라장터", collect_g2b)):
         try:
             got = fn({k: v for k, v in old.items() if v.get("src") == name}, first)

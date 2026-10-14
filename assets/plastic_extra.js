@@ -130,7 +130,7 @@
       return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.cat)}</td>
         <td>${b.qty_kg ? n0(b.qty_kg / 1000) + '톤' : '-'}</td><td class="h-m">${b.pre_unit_price ? n0(b.pre_unit_price) + '원/kg' : b.pre_amt ? '공개' : '비공개'}</td>
-        <td>${res}${b.win_ratio && b.win_ratio < 1000 ? `<small class="fl"> (${n1(b.win_ratio)}%)</small>` : ''}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : '순환자원')}</td></tr>`;
+        <td>${res}${b.win_ratio && b.win_ratio < 1000 ? `<small class="fl"> (${n1(b.win_ratio)}%)</small>` : ''}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : b.src === '순환자원정보센터(수의)' ? '수의견적' : '순환자원')}</td></tr>`;
     }).join('') || '<tr><td colspan="9" class="fl">해당 기간·지역의 플라스틱 매각 공고가 없습니다.</td></tr>';
   }
 
