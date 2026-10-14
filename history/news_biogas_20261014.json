@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-14 10:16",
+ "updated": "2026-10-14 21:08",
  "domestic": [
+  {
+   "title": "셸, 기존 LNG 인프라 활용해 ISCC EU 인증 액화 바이오메탄을 싱가포르에 도입 - 뉴스 및 통계",
+   "source": "IndexBox",
+   "link": "https://www.indexbox.io/ko/blog/shell-delivers-certified-liquefied-biomethane-to-singapore-via-mass-balanced-lng-cargo/",
+   "pub": "2026-10-14 13:50",
+   "more": 0
+  },
   {
    "title": "쓰레기 에너지화, 탄소중립 해법 되려면 '환경성과'부터 입증해야",
    "source": "어반톡",
@@ -14,7 +21,7 @@
    "source": "뉴스1",
    "link": "https://www.news1.kr/economy/env-policy/6318809",
    "pub": "2026-10-14 06:00",
-   "more": 3
+   "more": 5
   },
   {
    "title": "Metacon, PUREHY2+ 바이오가스 수소 프로젝트 EU 자금 확보 - 뉴스 및 통계",
@@ -25,6 +32,13 @@
   }
  ],
  "overseas": [
+  {
+   "title": "UK green gas group warns ‘opportunity is slipping away’",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdnoySmdOS3RDMWtSczgwSTgtOVdvZmxJV29YajNtaDNEZkk2RVhjM3JCc0tMRGRYRFQ4SWxFc2hLbEpCbXlCMEhxMVowOWlIQlN6M1pseXUxQml6M21zSmswdGpabTl2OTFTakxteEk2UElZd3VmdS0waTRKbzhTLWVDM3JqUm93MVVIWHR5dmVJQlpGaXBLb3pMVHZVSjgzN1BV?oc=5",
+   "pub": "2026-10-14 18:14",
+   "more": 0
+  },
   {
    "title": "Copenhagen Infrastructure Partners invests in Via Verde, Italian biomethane platform",
    "source": "Biomass Magazine",
@@ -41,10 +55,10 @@
   },
   {
    "title": "Opponents kick up a stink as biogas plans approved",
-   "source": "Yahoo News Canada",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CREZSZjNXYkwtQ3V5ZmxDUEVIa25KemhDb0hKSWNVSUZXZG5MNVRkX2E4Q1N5cXBianVTb25vU3VUN1VJRjVyOE9pei1VLTl3SXJqMVRsWUZhYVh1NkJFMWZoM3JZWWZ6cVNBc1hGOVpYUDVodm8xQmhkaDViTm8?oc=5",
+   "source": "BBC",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1QWmxqaXpDWFlhTjNEc04tWWRHZlFIV1dhZnljUHJ2V1kzUXlWNEUtLXJET3ZJWmI0M1hUVjd4U2UwQm1DeUQ3QlM0SndaQ2xpaWhEMzRXZ0pTOGZPamc?oc=5",
    "pub": "2026-10-13 14:07",
-   "more": 4
+   "more": 3
   },
   {
    "title": "Cambridge start-up raises £2.1m to develop waste-to-SAF pilot at biogas plant",
@@ -65,7 +79,7 @@
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQi0tN0tTV3JENkpzRm54aXVmeWppV2F5bFo0cWdJekVsMkd3UmtoNURnYnhxMm0wOWhsQWlFUXI1QmpsQ3NFbjR3OElQb0xLWGtqTjlHRWZNWTVwUG1COHhFazVHTU9kQWNLN1dOaTZ5QVVMOGx5S0tkdTBlUU9ER2szUXlmakFYd0lpaDFFT19razJ4YWlUa2lxTkVNVU9NUUw5LWlza0JZYmxXN2IyUVd2RFA2Mi1RbVdEQg?oc=5",
    "pub": "2026-10-12 15:37",
-   "more": 2
+   "more": 1
   },
   {
    "title": "Nopetro breaks ground on $50m landfill gas-to-RNG facility in Florida",
@@ -79,21 +93,14 @@
    "source": "energynews.pro",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNeHgwUGdYclU4UlNzUE9WNTdqTjM4TTAzeXU2RWdKLWlvNm12N3Y0dU9BUFp0N0syemhYVkZkR20yV010Sk81d1NhSS1IaGJESEo3TkM1Ty1hX19MY2ZtZVNXTkFBWHV5YkJSNHBKSWdRM0F1UUgwVDlXSm84dF9RZFFjZ2ZnbTdlVWVRYkhRYlp5ZHM0R0dMTXJNczQ3MkV5UjZsa19jMA?oc=5",
    "pub": "2026-10-12 14:45",
-   "more": 12
+   "more": 14
   },
   {
    "title": "Amber Grid issues record biomethane guarantees",
    "source": "CEEnergynews",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPR3VWRFR6ZFpIQW9ZdXRfYXFqZ1laQk82WmxqMzVreTVHWXFWOXZjZnk5VXJGVXE3a0hNNFYtOGhySEJHQkpDYTNRY24tOFJRT3h2SV9XVVVQNURXdVljbTFQMkFFRlBRTmQ2eXhWQWM2eFNnNlNaVi12aHRqMVhIQ1Yza19WNGpxVUE?oc=5",
    "pub": "2026-10-11 23:36",
-   "more": 6
-  },
-  {
-   "title": "Carbon prices and smart subsidies could unlock the hidden flexibility of Europe’s biogas plants",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTUpSeUsyT084TGJwY0tldG40Ul8yQ1JhZllQSW9DUXZobm83cGw2SlhUX0hPRUdKLUJSdU52dDA0enBMWFB3NHZsTnlnRmZDOFRzQWs1bTJySlFhU0xWUVlFUnByWGFjNktJLWYwX0FGNUdUZXd4YWgxS21rMWsxdFhmVG93VWlrZ09ZWjlzVGg4bjljcndWaEx5ekhrb2x0b190LTFsUF9WODVNNTFUbGRkWUQwVHRrVUJV?oc=5",
-   "pub": "2026-10-11 22:13",
-   "more": 0
+   "more": 7
   }
  ]
 }

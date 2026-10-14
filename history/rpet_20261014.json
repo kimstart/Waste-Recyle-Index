@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14 10:19",
+ "updated": "2026-10-14 21:10",
  "points": [
   {
    "id": "26464ee4bd",
@@ -1417,6 +1417,78 @@
    "krw_low": 43.0,
    "krw_high": 43.0,
    "krw_kg": 43.0
+  },
+  {
+   "date": "2026-10-14",
+   "basis": "",
+   "grade": "베일",
+   "region": "아시아",
+   "cur": "USD",
+   "per": "t",
+   "low": 615.745,
+   "high": 615.745,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": 609.8,
+   "quote": "Bales without labels were heard at $615.7450/mt, up from $609.7900/mt and premium grade rPET flake prices increased to $950-$1,040/mt from $930 – $1,015/mt over the same period.",
+   "title": "China’s rPET Flake Prices Rise as Cooler Weather Tightens Supply: Sources",
+   "source": "OPIS, A Dow Jones Company",
+   "url": "https://www.opis.com/resources/energy-market-news-from-opis/chinas-rpet-flake-prices-rise-as-cooler-weather-tightens-supply-sources/",
+   "auto": true,
+   "id": "ec32fd0059",
+   "fx": 1341.45,
+   "krw_low": 826.0,
+   "krw_high": 826.0,
+   "krw_kg": 826.0,
+   "premium_krw_kg": 818.0
+  },
+  {
+   "date": "2026-10-14",
+   "basis": "",
+   "grade": "플레이크",
+   "region": "아시아",
+   "cur": "USD",
+   "per": "t",
+   "low": 950.0,
+   "high": 1040.0,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": 609.8,
+   "quote": "Bales without labels were heard at $615.7450/mt, up from $609.7900/mt and premium grade rPET flake prices increased to $950-$1,040/mt from $930 – $1,015/mt over the same period.",
+   "title": "China’s rPET Flake Prices Rise as Cooler Weather Tightens Supply: Sources",
+   "source": "OPIS, A Dow Jones Company",
+   "url": "https://www.opis.com/resources/energy-market-news-from-opis/chinas-rpet-flake-prices-rise-as-cooler-weather-tightens-supply-sources/",
+   "auto": true,
+   "id": "ac932a7022",
+   "fx": 1341.45,
+   "krw_low": 1274.4,
+   "krw_high": 1395.1,
+   "krw_kg": 1334.8,
+   "premium_krw_kg": 818.0
+  },
+  {
+   "date": "2026-10-14",
+   "basis": "",
+   "grade": "플레이크",
+   "region": "아시아",
+   "cur": "USD",
+   "per": "t",
+   "low": 930.0,
+   "high": 1015.0,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": 609.8,
+   "quote": "Bales without labels were heard at $615.7450/mt, up from $609.7900/mt and premium grade rPET flake prices increased to $950-$1,040/mt from $930 – $1,015/mt over the same period.",
+   "title": "China’s rPET Flake Prices Rise as Cooler Weather Tightens Supply: Sources",
+   "source": "OPIS, A Dow Jones Company",
+   "url": "https://www.opis.com/resources/energy-market-news-from-opis/chinas-rpet-flake-prices-rise-as-cooler-weather-tightens-supply-sources/",
+   "auto": true,
+   "id": "d2be9d94fe",
+   "fx": 1341.45,
+   "krw_low": 1247.5,
+   "krw_high": 1361.6,
+   "krw_kg": 1304.5,
+   "premium_krw_kg": 818.0
   }
  ],
  "fx": {
@@ -1457,7 +1529,8 @@
   "EUR:2026-07-06": 1747.72,
   "USD:2026-07-17": 1485.32,
   "USD:2026-09-09": 1336.2,
-  "USD:2026-09-21": 1372.18
+  "USD:2026-09-21": 1372.18,
+  "USD:2026-10-14": 1341.45
  },
  "seen": {
   "yamahamakesrecycledaluminumcommitment": "2026-10-07",
@@ -1495,6 +1568,7 @@
   "universityofferscriticalmineralsrecyclingaward": "2026-10-13",
   "srichakrapolyplastthe383crorerecyclerchasing1000croreonindiasplasticmandate": "2026-10-13",
   "2026remaroundtablesloomingaluminumscrapdeficitcouldbenefitrecyclers": "2026-10-14",
-  "euregulationsandbrandcommitmentsarecreatingastrongermarketforrecycledfiber": "2026-10-14"
+  "euregulationsandbrandcommitmentsarecreatingastrongermarketforrecycledfiber": "2026-10-14",
+  "chinasrpetflakepricesriseascoolerweathertightenssupplysources": "2026-10-14"
  }
 }
