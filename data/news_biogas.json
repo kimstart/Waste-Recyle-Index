@@ -1,6 +1,38 @@
 {
- "updated": "2026-10-16 09:30",
+ "updated": "2026-10-16 20:39",
  "domestic": [
+  {
+   "title": "“바이오메탄·바이오수소, 산업별 활용 방식 달라야”",
+   "source": "에너지신문",
+   "link": "http://www.energy-news.co.kr/news/articleView.html?idxno=229033",
+   "pub": "2026-10-16 19:00",
+   "more": 0,
+   "summary": "바이오메탄의 직접 사용과 바이오수소 전환을 산업별 특성에 맞춰 차별화해야 한다는 주장이 나왔다. 아울러 바이오수소 산업 활성화를 위해 수소발전 입찰 평가기준을 개선하고 기존 에너지 인프라를 활용한 새로운 사업모델을 마련해야 한다는 목소리도 나왔다. 바이오메탄을 수소로 개질하는 과정에서는 약 20~30%의 에너지 손실이 발생하고 추가 설비비용도 필요하다."
+  },
+  {
+   "title": "프랑스 엔지 CMA CGM 르아브르 바이오메탄 생산시설 공동 투자 선박 탈탄소화 가속",
+   "source": "https://www.2news.co.kr/",
+   "link": "https://www.2news.co.kr/news/articleView.html?idxno=29371",
+   "pub": "2026-10-16 17:41",
+   "more": 0,
+   "summary": "유럽 가스망 인증 매스밸런스 방식으로 연간 7000톤 공급 선박 온실가스 배출 67% 이상 감축 또한 혐기성 소화 및 정제 과정에서 영양분이 풍부한 유기물 소화잔여물(digestate) 10만 톤이 함께 생산되어 현지 농가의 천연 비료로 공급되며, 1만 3000톤의 바이오제닉 이산화탄소(CO₂)를 포집해 상업용으로 판매함으로써 프로젝트의 전반적인 감축 효율성을 극대화한다."
+  },
+  {
+   "title": "쓰레기도 에너지…새로운 폐기물 에너지화 해법 모색",
+   "source": "이투뉴스",
+   "link": "https://www.e2news.com/news/articleView.html?idxno=335165",
+   "pub": "2026-10-16 15:10",
+   "more": 0,
+   "summary": "국립환경과학원(원장 김영우)은 14일∼16일 포항시 북구 라한호텔에서 한국에너지기후환경협의회와 공동으로 자원·에너지 회수를 위한 미래형 폐기물 관리체계 발전방향을 논의하는 국제학술대회(12차 i-CIPEC)를 열었다. 이어 15∼16일 본회의를 열어 폐기물 처리기술을 중심으로 폐자원의 에너지·물질 회수와 환경안전성을 함께 고려하는 융합적 발전방향도 모색했다. 반도체·디스플레이 분야 온실가스 배출계수 최초 개발"
+  },
+  {
+   "title": "글로벌 해운사 CMA CGM, 엔지와 대형 바이오메탄 공장 착공",
+   "source": "임팩트온",
+   "link": "https://www.impacton.net/news/articleView.html?idxno=30282",
+   "pub": "2026-10-16 10:50",
+   "more": 0,
+   "summary": "글로벌 해운회사 CMA CGM이 프랑스 에너지기업 엔지(EPA: ENGI)와 손잡고, 친환경 선박연료를 생산하는 대규모 바이오메탄 생산공장 건립에 착수했다. 시설이 가동되면 연간 7000톤, 에너지량으로는 100GWh의 바이오메탄을 생산해 CMA CGM 선박에 공급할 계획이다. 생산시설은 최종투자결정과 인허가 절차를 거쳐 2029~2030년부터 가동하는 것이 목표다."
+  },
   {
    "title": "영주 통합바이오가스 시설 확충…284억 투입해 2030년 준공",
    "source": "한국사회복지저널",
@@ -18,29 +50,36 @@
    "summary": "영주시가 2027년부터 2030년까지 총 284억 900만 원을 투입해 적서로 131 일원에 통합바이오가스 생산시설을 확충한다. 이 사업에는 국비 142억 400만 원, 도비 42억 6,100만 원, 시비 99억 4,400만 원이 각각 투입되며, 기존 시설의 개량과 신규 설비 도입을 통해 연간 약 8억 2,000만 원의 운영비 절감이 예상된다."
   },
   {
+   "title": "'폐기물 에너지화', 넷제로 핵심기술 전환 집중 논의",
+   "source": "넷제로뉴스",
+   "link": "http://www.netzeronews.kr/news/articleView.html?idxno=6472",
+   "pub": "2026-10-15 11:58",
+   "more": 0,
+   "summary": "폐기물을 단순히 매립하거나 처리하는 방식에서 벗어나 에너지와 유용한 자원으로 전환하고, 이를 탄소중립 실현에 활용하기 위한 기술·정책 발전 방향이 국제학술대회에서 집중적으로 논의되고 있습니다. 기후에너지환경부 소속 국립환경과학원은 한국에너지기후환경협의회와 공동으로 14일부터 16일까지 경북 포항시 북구 라한호텔에서 제12차 아이씨펙(i-CIPEC) 국제학술대회를 개최하고 있습니다."
+  },
+  {
    "title": "영주시, 통합바이오가스 시설 구축…국비 142억원 확보",
    "source": "쿠키뉴스",
    "link": "https://www.kukinews.com/article/view/kuk202610150032",
    "pub": "2026-10-15 09:35",
    "more": 15
-  },
-  {
-   "title": "'폐기물 에너지화', 넷제로 핵심기술 전환 집중 논의",
-   "source": "넷제로뉴스",
-   "link": "http://www.netzeronews.kr/news/articleView.html?idxno=6472",
-   "pub": "2026-10-15 08:12",
-   "more": 1,
-   "summary": "폐기물을 단순히 매립하거나 처리하는 방식에서 벗어나 에너지와 유용한 자원으로 전환하고, 이를 탄소중립 실현에 활용하기 위한 기술·정책 발전 방향이 국제학술대회에서 집중적으로 논의되고 있습니다. 기후에너지환경부 소속 국립환경과학원은 한국에너지기후환경협의회와 공동으로 14일부터 16일까지 경북 포항시 북구 라한호텔에서 제12차 아이씨펙(i-CIPEC) 국제학술대회를 개최하고 있습니다."
-  },
-  {
-   "title": "드골 플뢰랑스, 에포페 제스티옹·에네르비보·우르비즈와 1,000만 유로 바이오메탄 플랫폼 자문 - 뉴스 및 통계",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/de-gaulle-fleurance-advises-on-eur10-million-biomethane-financing-platform-in-france/",
-   "pub": "2026-10-15 01:51",
-   "more": 0
   }
  ],
  "overseas": [
+  {
+   "title": "Organic Recycling Systems subsidiary secures fifth compressed biogas plant contract worth ₹50-100 crore from BPCL",
+   "source": "Trade Brains",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNbnFWbzBaQ3NsZWRlZDVYSzNnTXpTMm5LRUp1dDBJbnNiYkZvTGFUTi1FUTZYSVZxZ2t0NGQzS2RpeXl1SkVaVE5WMGtyQkxwTU9NLWlhencyM0ZyMWtlUmxjcFAyMHhFRlI0b0gwQU85ZmU0V09aeXRUR2FaX2kxS2JUUEZUTS1hb2o3eFVTUUtoTDZlemZscWI5ZGdPRkdGX3E5dlpXYjk1MUE0elliYzI4a3RGYU9MR0JvNHZfdmxpRjlfZElnNGY3U1NPTVo1T1ZWUmhRZHh1N2dJRmxfbkVhWnlwVjRDVGNra3RZN2g?oc=5",
+   "pub": "2026-10-16 13:55",
+   "more": 0
+  },
+  {
+   "title": "Faster-growing salt-loving microbes could make protein from biogas instead of natural gas",
+   "source": "Bioengineer.org",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY2EwS1N4RlJ1cUhpTGhxcTYzYTVLWnZuVVZuV2RBU0pWSG5vbmhLeFI3X1NFSDFjdHcxV0VmckdDN2FLZlNVcXczVXJZTXhua3N3Q2dXSnk2UFNyMWZTZmd4Ymo0SzBCdXVsVmlnUGtVQzM5cVN6X2dhRTF2bmhnN3lxQmNZQl9fbEI5VXlkTzlNZE5kUmVsRUJfVmJLT18zbzFNbUp2U3B4dWE0bjBwSm12cFQ?oc=5",
+   "pub": "2026-10-16 07:34",
+   "more": 0
+  },
   {
    "title": "Market uncertainty stifling scale up of EU biogas, warns EBA",
    "source": "ENDS Waste & Bioenergy",
@@ -49,11 +88,18 @@
    "more": 0
   },
   {
-   "title": "Engie partners with logistics firm to develop 100 GWh biomethane project",
-   "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnNYODVCRVl2S19PeWJHWkhXb3Z3TnU0LVVEbkYycW5JYmVxb0tGQTA5cElnMVcyVDN2X0NqNW93TXBjU1RTZFdEWEE0bTUxelRRNkYtc3RoMHRQS2xOQ19hUDZzekdZMkdsejZ4ZDY1R0Nmdkwtb0xxVFBwVTk4VWpSdXhyTjJYNVktbnhXQ0NLbE9BbENYWTdNOE1saUtpWTljWWdaSG43TWVDVFhRb1YwT0RFcjdrZWc?oc=5",
-   "pub": "2026-10-15 18:52",
+   "title": "FG to Deploy Biogas Technology in Abattoirs and Related Facilities in Nigeria",
+   "source": "Federal Ministry of Information and National Orientation",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcUJQeFdKUXJxZU9YcVhfcm5aQWFCZU1aX0RwUEt6RmtpeUZmdDBKa241NmQ0a25UcjQzdTdzVlFiT3BiMnZWQzBhOXhRekJpTHBLQjItTmY1LWowYTVubkFfZFJ3UXVwek5HLWxELUptTVg4RTRCN1V5THJqTUZmUUJCd3RFLVBNNTBHRnk0R2NXM054N3VWek1LaGI5OF9x?oc=5",
+   "pub": "2026-10-15 15:36",
    "more": 0
+  },
+  {
+   "title": "Wastewater Plants Could Unlock More Biogas Capacity",
+   "source": "Environment+Energy Leader",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbGxlWksyQ09hdmdKZVRFV2NVaFFxMi10TFlybXdHcml3UkxWcWVZUzlYZGk4NWJ1cXNmLWIxaDZpQmtvdlU2R2F1ekZBbHNMLTFpTE9tell1X2NYT3ltVjVEOGM2S3VPaHhqU0dMd29VMHlUOGJUWnJ3R19Gc2VBX0dOZHlQZjgzWjU0RGJka1QzMi0takRMNkZLY3VEWXBmY0VRYnRERmoyZw?oc=5",
+   "pub": "2026-10-15 05:00",
+   "more": 1
   },
   {
    "title": "UK green gas group warns ‘opportunity is slipping away’",
@@ -63,11 +109,11 @@
    "more": 0
   },
   {
-   "title": "France sets biogas production certificate obligations through 2044",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNV0IxY2R4TlNLdFJWU1ZOSEdjcU1yUmFFU0QwemE2UEg2YzdtTUhVa3g2OGtWbE5LUnMxcmkyb0RNWVduMDlzSjQxZUFpOFc0c3JkWFZtVm14c3NXSHRDOEhCN1kxZ0FsS0dKejY1MmtDSmxZRVdCbEZaR2pXcWZpN2ZyWnc4YmQySXZEbVNXS0Y2TXVyVThF?oc=5",
-   "pub": "2026-10-14 18:00",
-   "more": 0
+   "title": "FIRST HOME-BIOGAS PROJECT LAUNCHING AT KARAKADAHU, SOGERI",
+   "source": "emtv online",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeVAwam5oNEQ5NDlXRmh4eEZxRVV3cThEVzBtd3h3MHJBZkgwUWNhS25Fa0Zid3dpWjBGdEgzSzZzTHVZdjFSdF9JZzFMQm1JMW1EdDZZelpJbzhnb1A5ZFRQc3RidEZ0OUdJelJSR1lxUFdXU2JhVWhMNXBxZE53Z2p5RQ?oc=5",
+   "pub": "2026-10-14 08:53",
+   "more": 3
   },
   {
    "title": "How renewable natural gas (RNG) can help ease Bangladesh's gas crisis",
@@ -77,39 +123,18 @@
    "more": 1
   },
   {
-   "title": "Engie to build biomethane plant in France to fuel CMA CGM's fleet",
-   "source": "Reuters",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaGFFR2t1UDQzcWhqT0twV09lN3lnNW5SQkxhYVY0dTRUc1NVS2h2elp2R2FQTlZzTWt1TjJXWVluQVVHU2F6THZNS2xwQkZ0bFpfZjFzclpvcUdJRzVNemp5X1dIcmhkOE5UMUViTUJkRlJnZ3ZCOEw0a2hFeXhKblQwbk95NG15MkE4dlp0SC1lSG8wU1llWktRLTZhc1RiRHhDZmxXeUxWcjQ?oc=5",
-   "pub": "2026-10-14 01:09",
-   "more": 12
-  },
-  {
-   "title": "Biomethane for a Climate-Neutral Industry",
+   "title": "The Role of Biomethane in Creating a Climate-Neutral Industry",
    "source": "European Biogas Association",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNa1lSdEpEX25zcng4UVhic19yMkx4RVZveDExMGtXOE11aDhUY3AwOTh3djhMd0o4Nm1vTHIxUmt4amVTQm1ObTJJS1o5NFJWaXNjZ1ByekNEY2dEeF9KR0c2OTR4UnEyZkt6MVN3TEZSUzlUdHNzX0RjdkJlYXlLX19sVWxmMS1fZF9NUWFqQUtNUXN0b1dCR0JlZlVNVlAwQ1pzWURPMA?oc=5",
-   "pub": "2026-10-14 00:14",
-   "more": 8
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbW1MUG9oQUNVaXV1SGpBVWVGSmlibVdnUWoweDVHVXFRcmNVSDJBNGYtb3Q1eW1nd1VpYUtqeHdxNlhmRm5rZXBHY2NtZWV5RHZHeFBrQkxsbDFUME5TaHphY3VRQWJOX3hNWExzVTZpR25IZ05XWmpFdHhJSHpQcEl1SVA3MFRpdjg4dEhwQ1VIRHg2ZlplQ2VRbzhsdw?oc=5",
+   "pub": "2026-10-13 23:42",
+   "more": 26
   },
   {
-   "title": "Metacon wins EU funding for biogas-to-hydrogen project in Greece",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbFAtMEZzUkVJN0J0NkR2cElNSnp2R2h2WlNXVk91b2xXLWFLZE9rT3lqM2ltWFFQYkVwNDRVbkFtQWU3M3A5UVdvYnVoRDZVU2hDTWhBQ1Y3U3VsZlRKMERPTUxuM1dzVGptWi1wcUpxSWlfdWxVby01OVpLOHVkN0Y5cVhFeDR5T09CRjd2OHFfNXFEOUNSX2pQc21lNmg3cUNN?oc=5",
-   "pub": "2026-10-13 19:59",
-   "more": 4
-  },
-  {
-   "title": "Solapur Bioenergy Systems bags fourth BPCL compressed biogas EPCOM order",
-   "source": "Indian Chemical News",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWEx6eHhwY255bkRFbWc5SHBPTFhvWHFSY0h0RzktMGlfT3pzanNtcjJySjRabk9LMjFENkhoMEFVMjRWMDRwTGxlelhzWG5HbXg5azRHNVJLbEJqdHRnVEh0d2h5QmJkclhyTWNsaGVnXzI4dkZaekVwVk9UckRhWHdLY0pReGwydC12SXhoaE9rZXotYUhETUgtY1k3TjdXNl9yT1U0eFJyc2lVU21jSmdLSkYzTjhL0gG_AUFVX3lxTE04UHl4RXJwVkFFbWhBM1dMdjFHNDJCVmJEdjJwUDBvcF8tbnBmWnhxeFRPNXVObkdQOEtwY1ZEbzVvaXg4dVZJemZZRUlpbVdtdEFFTC1PdFRYcmFZdHozQThIX3BTQ2hpRjNKNWZtMHR6ajNXNnYwVFpDRU44bC14cGc5aVM4WENQTy1jUFNLTGloMDd2TWluY2VfNTZFNlAzOGJTY0Iwc1p5QzRVLTRRa1NWOWYxTmtERVdHc1Rn?oc=5",
-   "pub": "2026-10-13 17:01",
-   "more": 2
-  },
-  {
-   "title": "Opponents kick up a stink as biogas plans approved",
-   "source": "Yahoo News Canada",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CREZSZjNXYkwtQ3V5ZmxDUEVIa25KemhDb0hKSWNVSUZXZG5MNVRkX2E4Q1N5cXBianVTb25vU3VUN1VJRjVyOE9pei1VLTl3SXJqMVRsWUZhYVh1NkJFMWZoM3JZWWZ6cVNBc1hGOVpYUDVodm8xQmhkaDViTm8?oc=5",
-   "pub": "2026-10-13 14:07",
-   "more": 8
+   "title": "Maharashtra CM Devendra Fadnavis calls for task forces to set up waste-to-biogas projects",
+   "source": "Mid-Day",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZy03WWJncS1kU1JESVJsQkMzTXk2UVY0RU1sTWZhMVZ6d01zZmFHc19xMHJIZ3ZMS3ZTY25meGQwaW1BVE8wMXFnUTZCd3Y5SnhLTml5aENxbWgydDN4MWI0cWZJaFQ2bnVhbEYwNHl5cFpLNWR5ajFfTmM4dlJYY04xTDFwc1hYeHV3X3lIRnFoTF9YTDNuc3V5cWtiVnlNblJJRm02eGVoY2ZKMDhmTkRnX0VVMzNHRlRXTmJsRGxOemNIYmNRamtrS2o0U3FrTEdqONIB1AFBVV95cUxOZy03WWJncS1kU1JESVJsQkMzTXk2UVY0RU1sTWZhMVZ6d01zZmFHc19xMHJIZ3ZMS3ZTY25meGQwaW1BVE8wMXFnUTZCd3Y5SnhLTml5aENxbWgydDN4MWI0cWZJaFQ2bnVhbEYwNHl5cFpLNWR5ajFfTmM4dlJYY04xTDFwc1hYeHV3X3lIRnFoTF9YTDNuc3V5cWtiVnlNblJJRm02eGVoY2ZKMDhmTkRnX0VVMzNHRlRXTmJsRGxOemNIYmNRamtrS2o0U3FrTEdqOA?oc=5",
+   "pub": "2026-10-13 20:56",
+   "more": 6
   }
  ]
 }
