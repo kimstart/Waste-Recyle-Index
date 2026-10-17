@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17 09:35",
+ "updated": "2026-10-17 19:59",
  "domestic": [
   {
    "title": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 - 머니투데이",
@@ -30,7 +30,7 @@
    "source": "이투뉴스",
    "link": "https://www.e2news.com/news/articleView.html?idxno=335165",
    "pub": "2026-10-16 15:10",
-   "more": 1,
+   "more": 2,
    "summary": "국립환경과학원(원장 김영우)은 14일∼16일 포항시 북구 라한호텔에서 한국에너지기후환경협의회와 공동으로 자원·에너지 회수를 위한 미래형 폐기물 관리체계 발전방향을 논의하는 국제학술대회(12차 i-CIPEC)를 열었다. 이어 15∼16일 본회의를 열어 폐기물 처리기술을 중심으로 폐자원의 에너지·물질 회수와 환경안전성을 함께 고려하는 융합적 발전방향도 모색했다. 반도체·디스플레이 분야 온실가스 배출계수 최초 개발"
   },
   {
@@ -60,18 +60,39 @@
  ],
  "overseas": [
   {
-   "title": "Orcan Energy to harness waste heat for Alter Biogas Jato’s biogas plant",
-   "source": "Balkan Green Energy News",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNY0VmREJPUmNlbXlROGduMk9jb3kyT2N1cXBJREdwTjR3N01pc1ZjN0hIMUw0V3FkU2MxaUFNU0huV0lrWUoyTXNXcVRYR3R0S2czaDdTeDdXODNDcERrUFFrTnRKMW84RG5vbV83cU9vZ0tRN2w3U2lMMU9TdXJCc0RCNkFBT3IyTnVJLWVmWjZKRy0weTB4WVNLZ0hpbm11V1lCelFKa3A?oc=5",
-   "pub": "2026-10-16 23:51",
-   "more": 2
+   "title": "India and Japan Expand Dairy Biogas Cooperation",
+   "source": "Dairynews.today",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTmhrSEZJRU50bm1pSnB6ZkQ3dzUwb3hWbEFhekxKMXhOQUNXODV2X2pRakFLR0JDQWZJMWgzYWZ3MjNBbW4tNExXelpNTnEzSzI3c243aDZDTGxfbTEwdmNhRk01TEtZTFhCV0FRVFZCN0NJSlFveWEwWWxUaGhaMV9DYmpkR3ZJdl92M0dRMmlqd00?oc=5",
+   "pub": "2026-10-17 03:01",
+   "more": 0
+  },
+  {
+   "title": "Proposal for €80m biogas plant at The Downs",
+   "source": "Westmeath Examiner",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSGowU1pIeTJTdGVrT1lkbnUyR1dfWTVXRU9pbk92TldoUUxYV3NyZ1dLWFg2elJMd3pMTU1Ob2NUdDhDRG5TblZiQTBsUkl4X1FWSGw3TWozTDdwT1pwLVE4SXVGcjFFN3lpV00tOTI2bkV5TUhGdkpONHdFNFVuUjU2WmF0bG9ZVkhEeDkxVlVZQQ?oc=5",
+   "pub": "2026-10-17 01:00",
+   "more": 0
+  },
+  {
+   "title": "Biogas plant uses food waste to heat 7,000 homes",
+   "source": "Yahoo",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNUWFMUVhKU1hGdkJFOFRRMUxIMy1zeHhxNHpKZkhwdXlyWTh4VHFzYWN2Qk1LMkZOd3dzdXVJQzRPYVNWUDBpc1FkWHhPSThlcjFUa2JVblhWZEp5Y3RQZHRsZFNMX1NlRkZsbDVOaEJUWVNYSG5lRDBQcFpIM0dYTFlOLURpLUpPS19nZmdXZ1c?oc=5",
+   "pub": "2026-10-17 00:35",
+   "more": 0
+  },
+  {
+   "title": "Kompost & Biogas",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9PMmNodnpMZ2UwMUtpdDdpRkE4c2JIb2RuMGZONnJ4a0FWd3NiOVZtSkh1NHd2aG9QRHQxWlVPNnBXTGlrU2xvLVhJODh1WGg2d0xoOGdvZ1pFQjhwWWlqaWlraGxTcm9sZ2VneFBYQQ?oc=5",
+   "pub": "2026-10-16 21:23",
+   "more": 0
   },
   {
    "title": "DERFLEX 2026 - Biogas Conference",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1walZEU1MxRHZ3UmduSnhyaEZhc1pzUzhqT0VqTmwteXhuN2ItV0hXYVQzVkRacjhyOTNnbzdHX3dkNWFmdzdHWTl3MWRhMTNkZFJ3UmRVYVE5TDk1R2UwNHZpQlM2cmNsczJlSg?oc=5",
    "pub": "2026-10-16 13:41",
-   "more": 0
+   "more": 2
   },
   {
    "title": "Market uncertainty stifling scale up of EU biogas, warns EBA",
@@ -92,42 +113,21 @@
    "source": "Federal Ministry of Information and National Orientation",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcUJQeFdKUXJxZU9YcVhfcm5aQWFCZU1aX0RwUEt6RmtpeUZmdDBKa241NmQ0a25UcjQzdTdzVlFiT3BiMnZWQzBhOXhRekJpTHBLQjItTmY1LWowYTVubkFfZFJ3UXVwek5HLWxELUptTVg4RTRCN1V5THJqTUZmUUJCd3RFLVBNNTBHRnk0R2NXM054N3VWek1LaGI5OF9x?oc=5",
    "pub": "2026-10-15 15:36",
-   "more": 1
-  },
-  {
-   "title": "Commissioner for Energy Dan Jørgensen at European Biomethane Week 2026: Biomethane is a strategic asset for Europe’s energy security",
-   "source": "European Biogas Association",
-   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPREZXdDFqYk4ybDU0Z1pTaDdJMWRyZGVyTFRQZ2ZSay1zSWJBb0VtMG9yWE5meVdtYnRFcU1ONy1Pc2VxbFI4bDllSTlLeUYyZTZtbUxDTGExS2dFSmp3UUh4bDY2b1JyMnZXM2xCaWJSVHk0NVpzenBoUWhUcG04eVJaeWFJeDdlZXl6Q29ObDNlN1VvcHVJd3pKU0Zuc1ZnaVE0VW12dE9xT3l0R1M5el95WWNjNVh3TVF2ekFnWmQ0ZW5GMWxGZnp0alpWR2lRQVhQd3ZnR0NZbWNZOFhBUDl3QjRWX3c5TGRSM0VRNV9zOWtBWWZET2Zn?oc=5",
-   "pub": "2026-10-15 07:55",
    "more": 2
   },
   {
-   "title": "Metacon Gets EU Funding for Project Targeting High-Purity Green Hydrogen Production From Biogas",
-   "source": "Renewable Energy Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVFNXeVRoR2lSWVBjSlNFN1pDUElvVlU5cHNEMlluZjItWWxxVnJHVFZpSGRaVWR1bHpaTFNmalpmeGhPajQ0UWxQUGtjTzRKSjJ2Z0JGQnZpMjZMS1lYVFA5ejVCaHk2WDR4LVh2dzRlakZQZkJsV0pGM3d6VWZmTGhFOGN1SmktOHZ5bUVYQjJTeTVJVXhKd1NQdkxpMl9xRnF3?oc=5",
-   "pub": "2026-10-15 05:41",
-   "more": 2
+   "title": "EU energy commissioner calls biomethane a ‘strategic asset’",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdlZYNXMtRWtkVXRuTEpyeWk2emkxMVhhX21XVFFKSWYzclhUS0VpQkxRVF9HLV9MSFRxUHhWS3R1UmlDWUt3SXFDZll2THJGUzJPUmozWWNQZG5zUk1WcDEtZTR2Y0tDcVhYNEszRVJGOVAxQ3V4cHJHMlk4cGZndzljT1JvaXQtXzkwR1hXc0N4ajZiQ0lsNzBn?oc=5",
+   "pub": "2026-10-15 15:28",
+   "more": 4
   },
   {
    "title": "Wastewater Plants Could Unlock More Biogas Capacity",
    "source": "Environment+Energy Leader",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbGxlWksyQ09hdmdKZVRFV2NVaFFxMi10TFlybXdHcml3UkxWcWVZUzlYZGk4NWJ1cXNmLWIxaDZpQmtvdlU2R2F1ekZBbHNMLTFpTE9tell1X2NYT3ltVjVEOGM2S3VPaHhqU0dMd29VMHlUOGJUWnJ3R19Gc2VBX0dOZHlQZjgzWjU0RGJka1QzMi0takRMNkZLY3VEWXBmY0VRYnRERmoyZw?oc=5",
    "pub": "2026-10-15 05:00",
-   "more": 1
-  },
-  {
-   "title": "UK green gas group warns ‘opportunity is slipping away’",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdnoySmdOS3RDMWtSczgwSTgtOVdvZmxJV29YajNtaDNEZkk2RVhjM3JCc0tMRGRYRFQ4SWxFc2hLbEpCbXlCMEhxMVowOWlIQlN6M1pseXUxQml6M21zSmswdGpabTl2OTFTakxteEk2UElZd3VmdS0waTRKbzhTLWVDM3JqUm93MVVIWHR5dmVJQlpGaXBLb3pMVHZVSjgzN1BV?oc=5",
-   "pub": "2026-10-14 18:14",
-   "more": 0
-  },
-  {
-   "title": "French investors launch €10m platform to finance biomethane injection projects",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZUJVVWZEaFpISTZXaDVZeWx2OHJ5NElzbVJVLWRFVjRiYUxXclgxUDloZk9lNk9GcmZuMU1JTkowMU9xMlkydW1oXzRkR25NLThmdTRFcWdEbllMTl81UFJTa2R1OUx5ZWxzVHoxVDUybkF0MGFvMndLaTNRQmtxVUtSdmQxZEJhNzRnQzRDVW5PNmU1MjB1ZE9ralFDaWc3V2FUbFRzR0hPVEtJcFVPeWJHRGlQQQ?oc=5",
-   "pub": "2026-10-14 15:57",
-   "more": 7
+   "more": 2
   }
  ]
 }
