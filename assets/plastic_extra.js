@@ -102,20 +102,16 @@
   const dayMs = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
   const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
 
-  // 같은 품목 낙찰 단가의 로그값으로 사분위 범위를 잡고, 범위를 크게 벗어나면서 중앙값과 2.5배 이상 차이 나면 이상치로 본다
+  // 같은 품목(5건 미만이면 전체) 낙찰 단가의 중앙값보다 2.5배 넘게 높거나 낮은 건은 이상치로 본다
+  const median = a => { const v = a.slice().sort((x, y) => x - y), i = (v.length - 1) / 2; return v.length ? (v[Math.floor(i)] + v[Math.ceil(i)]) / 2 : null; };
   function outlierSet(list) {
     const out = new Set(), byCat = {};
     list.forEach(b => (byCat[b.cat] = byCat[b.cat] || []).push(b));
-    const q = (a, p) => { const i = (a.length - 1) * p, lo = Math.floor(i), hi = Math.ceil(i); return a[lo] + (a[hi] - a[lo]) * (i - lo); };
+    const pool = median(list.map(b => b.win_unit_price));
     Object.values(byCat).forEach(g => {
-      const pool = g.length >= 5 ? g : list;
-      const lv = pool.map(b => Math.log(b.win_unit_price)).sort((a, b) => a - b);
-      if (lv.length < 5) return;
-      const q1 = q(lv, 0.25), q3 = q(lv, 0.75), iqr = q3 - q1, med = q(lv, 0.5);
-      g.forEach(b => {
-        const v = Math.log(b.win_unit_price);
-        if ((v < q1 - 1.5 * iqr || v > q3 + 1.5 * iqr) && Math.abs(v - med) > Math.log(2.5)) out.add(b.id);
-      });
+      const med = g.length >= 5 ? median(g.map(b => b.win_unit_price)) : pool;
+      if (!med || list.length < 5) return;
+      g.forEach(b => { const r = b.win_unit_price / med; if (r > 2.5 || r < 0.4) out.add(b.id); });
     });
     return out;
   }
@@ -130,7 +126,7 @@
     // 유찰·취소 후 재공고된 같은 물량이 겹치지 않도록 낙찰됐거나 진행 중인 공고만 합산
     const live = rows.filter(b => !/유찰|취소/.test(b.status || ''));
     const tons = live.reduce((s, b) => s + (b.qty_kg || 0), 0) / 1000;
-    const pre = rows.map(b => b.pre_unit_price).filter(v => v);
+    const pre = rows.filter(b => !OUT.has(b.id)).map(b => b.pre_unit_price).filter(v => v && v < 5000);   // 수량 표기 오류로 생긴 비정상 단가 제외
     const ratio = rows.filter(b => !OUT.has(b.id)).map(b => b.win_ratio).filter(v => v && v < 1000);
     const catAvg = c => { const v = won.filter(b => b.cat === c).map(b => b.win_unit_price); return v.length ? `${n0(mean(v))}원/kg` : '-'; };
     const catN = c => won.filter(b => b.cat === c).length;
