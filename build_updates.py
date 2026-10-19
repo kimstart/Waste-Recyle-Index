@@ -94,16 +94,17 @@ def main():
     if sids:
         state["svc_ids"] = sids
 
-    # 제도 변경
-    pol = (load("data/policy.json", {}) or {}).get("events", [])
-    seen = set(state.get("policy_seen", []))
-    for e in pol:
-        k = f"{e.get('type')}|{e.get('title')}"
-        if k not in seen and not first and seen:
-            ev("plastic", f"제도 변경 감지 — {e.get('title', '')[:60]}")
-        seen.add(k)
-    if pol:
-        state["policy_seen"] = sorted(seen)[-300:]
+    # 제도 변경 (화면별)
+    for page, fn, sk in (("plastic", "data/policy.json", "policy_seen"), ("biogas", "data/policy_biogas.json", "policy_seen_biogas")):
+        pol = (load(fn, {}) or {}).get("events", [])
+        seen = set(state.get(sk, []))
+        had = sk in state
+        for e in pol:
+            k = f"{e.get('type')}|{e.get('title')}"
+            if k not in seen and not first and had:
+                ev(page, f"제도 변경 감지 — {e.get('title', '')[:60]}")
+            seen.add(k)
+        state[sk] = sorted(seen)[-300:]
 
     # 바이오가스
     it = B.get("gas_whole")

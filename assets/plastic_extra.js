@@ -36,17 +36,18 @@
     const y3 = [ymAdd(latest, -36), ymAdd(latest, -24), ymAdd(latest, -12)];
     $('anaHead').innerHTML = `<tr><th>품목</th><th>${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월<br><small>원/kg</small></th><th>전월 대비</th><th>전년 동월 대비</th><th>최근 12개월 범위에서 위치</th>
       ${y3.map(ym => `<th class="s3">${ym.slice(0, 4)}.${+ym.slice(5, 7)}</th>`).join('')}</tr>`;
+    const WHY = Object.fromEntries(((window.BOARD && window.BOARD.rows) || []).map(r => [r.key, r.why]));
     $('anaBody').innerHTML = h.items.map(it => {
       const cur = val(it.key, latest);
       if (cur == null) return '';
       const last12 = Array.from({ length: 12 }, (_, i) => val(it.key, ymAdd(latest, -i))).filter(v => v != null);
       const hi = Math.max(...last12), lo = Math.min(...last12), pos = hi > lo ? (cur - lo) / (hi - lo) * 100 : 50;
-      return `<tr><td class="nm">${esc(it.name)}</td><td><b>${n1(cur)}</b></td><td>${chg(pct(cur, val(it.key, ymAdd(latest, -1))))}</td>
+      return `<tr><td class="nm">${esc(it.name)}${WHY[it.key] ? `<small class="why-s">${esc(WHY[it.key])}</small>` : ''}</td><td><b>${n1(cur)}</b></td><td>${chg(pct(cur, val(it.key, ymAdd(latest, -1))))}</td>
         <td>${chg(pct(cur, val(it.key, ymAdd(latest, -12))))}</td>
         <td><div class="rng" title="최저 ${n1(lo)} · 최고 ${n1(hi)}"><i style="left:${pos.toFixed(0)}%"></i></div><div class="rng-l"><span>${n0(lo)}</span><span>${n0(hi)}</span></div></td>
         ${y3.map(ym => `<td class="s3">${n1(val(it.key, ym))}</td>`).join('')}</tr>`;
     }).join('');
-    $('anaNote').textContent = `${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월 기준, 수도권 값. 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
+    $('anaNote').textContent = `한국환경공단 '재활용가능자원 가격조사'의 수도권 값(VAT 포함, 원/kg, 매월 10일 기준 조사). ${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월 기준. 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
     const sel = $('seasonItem');
     if (!sel.options.length) {
       sel.innerHTML = h.items.map(it => `<option value="${it.key}">${esc(it.name)}</option>`).join('');
@@ -101,16 +102,36 @@
   const dayMs = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10));
   const mean = a => a.length ? a.reduce((x, y) => x + y, 0) / a.length : null;
 
+  // 같은 품목 낙찰 단가의 로그값으로 사분위 범위를 잡고, 범위를 크게 벗어나면서 중앙값과 2.5배 이상 차이 나면 이상치로 본다
+  function outlierSet(list) {
+    const out = new Set(), byCat = {};
+    list.forEach(b => (byCat[b.cat] = byCat[b.cat] || []).push(b));
+    const q = (a, p) => { const i = (a.length - 1) * p, lo = Math.floor(i), hi = Math.ceil(i); return a[lo] + (a[hi] - a[lo]) * (i - lo); };
+    Object.values(byCat).forEach(g => {
+      const pool = g.length >= 5 ? g : list;
+      const lv = pool.map(b => Math.log(b.win_unit_price)).sort((a, b) => a - b);
+      if (lv.length < 5) return;
+      const q1 = q(lv, 0.25), q3 = q(lv, 0.75), iqr = q3 - q1, med = q(lv, 0.5);
+      g.forEach(b => {
+        const v = Math.log(b.win_unit_price);
+        if ((v < q1 - 1.5 * iqr || v > q3 + 1.5 * iqr) && Math.abs(v - med) > Math.log(2.5)) out.add(b.id);
+      });
+    });
+    return out;
+  }
+
   function renderBids() {
     const cut = Date.now() - PERIOD * 864e5;
     const rows = BIDS.filter(b => inScope(b) && b.start && dayMs(b.start) >= cut);
     const done = rows.filter(b => /낙찰|유찰/.test(b.status || ''));
-    const won = rows.filter(b => b.win_unit_price);
+    const wonAll = rows.filter(b => b.win_unit_price);
+    const OUT = outlierSet(wonAll);
+    const won = wonAll.filter(b => !OUT.has(b.id));
     // 유찰·취소 후 재공고된 같은 물량이 겹치지 않도록 낙찰됐거나 진행 중인 공고만 합산
     const live = rows.filter(b => !/유찰|취소/.test(b.status || ''));
     const tons = live.reduce((s, b) => s + (b.qty_kg || 0), 0) / 1000;
     const pre = rows.map(b => b.pre_unit_price).filter(v => v);
-    const ratio = rows.map(b => b.win_ratio).filter(v => v && v < 1000);
+    const ratio = rows.filter(b => !OUT.has(b.id)).map(b => b.win_ratio).filter(v => v && v < 1000);
     const catAvg = c => { const v = won.filter(b => b.cat === c).map(b => b.win_unit_price); return v.length ? `${n0(mean(v))}원/kg` : '-'; };
     const catN = c => won.filter(b => b.cat === c).length;
     $('bidKpi').innerHTML = [
@@ -123,10 +144,11 @@
       ['스티로폼 낙찰단가', catAvg('스티로폼'), `${catN('스티로폼')}건 평균`]
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
     drawBidChart(won);
+    if ($('bidOut')) $('bidOut').textContent = OUT.size ? `다른 낙찰과 단가 차이가 큰 ${OUT.size}건은 차트와 평균에서 뺐습니다(표에는 '이상치'로 표시).` : '';
     const list = rows.slice(0, 20);
     $('bidBody').innerHTML = list.map(b => {
       const reg = b.region === '중점' ? `<span class="reg f">${esc(b.city)}</span>` : b.region === '수도권' ? `<span class="reg">${esc(b.city)}</span>` : `<span class="reg">${esc(b.city || '기타')}</span>`;
-      const res = b.win_unit_price ? `<b>${n0(b.win_unit_price)}</b>원/kg` : b.win_amt ? `${n0(b.win_amt / 1e4)}만원` : esc(b.status || '-');
+      const res = b.win_unit_price ? `<b>${n0(b.win_unit_price)}</b>원/kg${OUT.has(b.id) ? '<span class="tag-auto">이상치</span>' : ''}` : b.win_amt ? `${n0(b.win_amt / 1e4)}만원` : esc(b.status || '-');
       return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.cat)}</td>
         <td>${b.qty_kg ? n0(b.qty_kg / 1000) + '톤' : '-'}</td><td class="h-m">${b.pre_unit_price ? n0(b.pre_unit_price) + '원/kg' : b.pre_amt ? '공개' : '비공개'}</td>
@@ -166,23 +188,6 @@
   }
 
   /* ---------------------------------------------------------------- ③ 제도 */
-  function renderPolicy(facts, pol) {
-    const badge = s => `<span class="badge ${s === '시행중' ? 'on' : s === '시행예정' ? 'soon' : 'plan'}">${esc(s)}</span>`;
-    const recent = (pol && pol.events || []).filter(e => Date.now() - dayMs(e.date) < 14 * 864e5);
-    $('polAlert').innerHTML = recent.length ? `<div class="alert"><b>최근 2주 제도 변경 감지 ${recent.length}건</b>${recent.map(e =>
-      `<div>· ${esc(e.date.slice(5).replace('-', '.'))} [${esc(e.type)}] <a href="${esc(e.url)}" target="_blank" rel="noopener noreferrer">${esc(e.title)}</a></div>`).join('')}</div>` : '';
-    const order = ['재생원료 의무', 'EPR', '부담금·기타'];
-    $('polBody').innerHTML = (facts || []).slice().sort((a, b) => order.indexOf(a.group) - order.indexOf(b.group)).map(f =>
-      `<tr><td class="h-m">${esc(f.group)}</td><td class="l"><b>${esc(f.item)}</b></td><td class="d">${esc(f.detail)}</td><td>${badge(f.status)}</td>
-       <td>${esc(f.effective || '-')}</td><td class="h-m"><a href="${esc(f.source_url)}" target="_blank" rel="noopener noreferrer">${esc((f.source_date || '').slice(0, 7) || '출처')}</a></td></tr>`).join('');
-    const laws = Object.values((pol && pol.laws) || {}).sort((a, b) => (b.promulgated || '').localeCompare(a.promulgated || ''));
-    $('polLaws').innerHTML = laws.length ? laws.map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.name)}</a>
-      <small> — ${esc(l.kind || '')} ${esc(l.promulgated || '')}${l.effective ? ` · 시행 ${esc(l.effective)}` : ''}</small></li>`).join('') : '<li class="fl">법령 감시 자료를 아직 받지 못했습니다.</li>';
-    const posts = ((pol && pol.posts) || []).slice(0, 6);
-    $('polPosts').innerHTML = posts.length ? posts.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a> <small>${esc(p.board)} ${esc(p.date || '')}</small></li>`).join('') : '<li class="fl">관련 게시글 없음</li>';
-    $('polUpd').textContent = pol && pol.updated ? `감시 갱신 ${pol.updated}` : '';
-  }
-
   /* ---------------------------------------------------------------- 시작 */
 
   /* ---------------------------------------------------------------- ②-2 선별·처리 대행 용역 */
@@ -234,7 +239,6 @@
     $('bidUpd').textContent = j.updated ? `갱신 ${j.updated} · 누적 ${BIDS.length}건` : '';
     renderBids();
   }).catch(() => { $('bidBody').innerHTML = '<tr><td colspan="9" class="fl">입찰 자료를 아직 받지 못했습니다.</td></tr>'; });
-  Promise.all([getJson('data/policy_facts.json').catch(() => []), getJson('data/policy.json').catch(() => null)]).then(([f, p]) => renderPolicy(f, p));
   document.querySelectorAll('#bidScope button').forEach(b => b.addEventListener('click', () => {
     SCOPE = b.dataset.v; document.querySelectorAll('#bidScope button').forEach(x => x.classList.toggle('on', x === b)); renderBids();
   }));

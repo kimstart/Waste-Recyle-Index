@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261014a">
+<link rel="stylesheet" href="assets/board.css?v=20261019a">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 제도 · 신재 시장 · 뉴스 · 해외 참고</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 대행 용역 · 제도 · 신재 시장 · 뉴스 · 해외</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -32,18 +32,7 @@
   </div>
   <div id="pastNote" class="pastnote"></div>
 
-  <h2>주요 지표 <small>수도권 재활용 플라스틱 단가</small></h2>
-  <table class="ind">
-    <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
-    <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
-    <tbody id="indBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
-  </table>
-  <div class="note">
-    재활용 플라스틱: 한국환경공단 '재활용가능자원 가격조사'의 <b>수도권</b> 값(VAT 포함, 원/kg, 매월 10일 기준 조사). 전월·전년 동월 대비는 2023년 1월부터 쌓은 월별 자료와 비교합니다.<br>
-    자료 갱신: <span id="indUpdated">-</span>
-  </div>
-
-  <h2>수도권 재활용 가격 분석 <small>전월·전년 동월·12개월 범위·3개년 동월</small></h2>
+  <h2>수도권 재활용 가격 분석 <small>전월·전년 동월·12개월 범위·3개년 동월 · 자료 갱신 <span id="indUpdated">-</span></small></h2>
   <table class="cmp ana">
     <thead id="anaHead"></thead>
     <tbody id="anaBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
@@ -61,6 +50,7 @@
   <div class="kpis" id="bidKpi"></div>
   <div class="ctl"><b style="font-size:13px">낙찰 단가 추이</b><div class="rp-legend" id="bidLegend"></div></div>
   <div class="rp-chart" id="bidChart"></div>
+  <div class="note" id="bidOut"></div>
   <table class="cmp bids">
     <thead><tr><th>공고일</th><th>지역</th><th class="h-m">공고기관</th><th>공고명</th><th class="h-m">품목</th><th>물량</th><th class="h-m">예정단가</th><th>결과</th><th class="h-m">출처</th></tr></thead>
     <tbody id="bidBody"><tr><td colspan="9" class="fl">불러오는 중...</td></tr></tbody>
@@ -89,12 +79,6 @@
     <thead><tr><th class="h-m">구분</th><th>항목</th><th>내용</th><th>상태</th><th>시행</th><th class="h-m">출처</th></tr></thead>
     <tbody id="polBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
   </table>
-  <div class="news2" style="margin-top:12px">
-    <div><h3>감시 중인 법령·고시<span>국가법령정보 공동활용</span></h3><ul class="plain" id="polLaws"></ul></div>
-    <div><h3>관련 부처 게시글<span>기후에너지환경부</span></h3><ul class="plain" id="polPosts"></ul></div>
-  </div>
-  <div class="note">하루 세 번 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 이 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록해 저장소 구독자에게 메일이 갑니다.</div>
-
   <h2>신재 시장·폐플라스틱 수출입 <small>참고 지표 · 재활용 단가와 비교하지 않음</small></h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
@@ -114,7 +98,9 @@
   </div>
   <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
 
-  <h2>해외 참고 지표 <small>의무화 시장 참고 · 영국 PRN · 유럽/아시아 rPET</small></h2>
+  <section class="cat">
+    <div class="cat-head"><b>해외</b><span>의무화 시장 참고 — 영국 PRN · 유럽/아시아 rPET · 영국 포장세 · 독일 시황</span></div>
+  <h2 class="sub">해외 참고 지표 <small>의무화 시장 참고 · 영국 PRN · 유럽/아시아 rPET</small></h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
     <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
@@ -125,7 +111,7 @@
     rPET(기사 기준): 기사에 보도된 가격을 기사 게재일 기준으로 표시합니다. 가격 기준(평가기관·인도조건)이 기사마다 달라 같은 시기라도 차이가 날 수 있습니다.
   </div>
 
-  <h2>rPET 가격 추이 <small id="rpUpd"></small></h2>
+  <h2 class="sub">rPET 가격 추이 <small id="rpUpd"></small></h2>
   <div class="rp-bar">
     <div class="rp-seg" id="rpSeg">
       <button type="button" data-g="식품용 펠렛" class="on">식품용 펠렛</button><button type="button" data-g="플레이크">플레이크</button><button type="button" data-g="베일">선별품</button>
@@ -146,8 +132,19 @@
     점을 누르면 원문 기사로 이동합니다. 국내 식품용 rPET 가격은 공개 기사에 나오는 대로 자동 추가됩니다.
   </div>
 
-  <h2>참고 자료 <small>영국 플라스틱 포장세 · 독일 재생원료 시황</small></h2>
+  <h2 class="sub">참고 자료 <small>영국 플라스틱 포장세 · 독일 재생원료 시황</small></h2>
   <div id="extra"></div>
+  </section>
+
+  <section class="cat ref-cat">
+    <div class="cat-head"><b>참고</b><span>제도 변경 감시 — 법령·고시 개정과 관련 부처 게시글</span></div>
+  <div class="news2" >
+    <div><h3>감시 중인 법령·고시<span>국가법령정보 공동활용</span></h3><ul class="plain" id="polLaws"></ul></div>
+    <div><h3>관련 부처 게시글<span>기후에너지환경부</span></h3><ul class="plain" id="polPosts"></ul></div>
+  </div>
+  <div class="note">하루 세 번 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 이 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록해 저장소 구독자에게 메일이 갑니다.</div>
+
+  </section>
 
   <div class="foot">출처: 한국환경공단(재활용가능자원 가격조사·순환자원정보센터 전자입찰), 조달청 나라장터, 관세청, Sina Finance(중국 상품거래소), 국가법령정보센터, 기후에너지환경부, letsrecycle.com, rPET 가격은 Argus·OPIS·S&P Global·EUWID·ChemOrbis·Resource Recycling 등 각 기사(표에 출처 표기), 영국 국세청(HMRC), bvse(독일 재활용협회)·plasticker.de, 구글 뉴스, Recycling Today</div>
 </div>
@@ -208,8 +205,9 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261014a"></script>
-<script src="assets/rpet.js?v=20261014a"></script>
-<script src="assets/plastic_extra.js?v=20261014a"></script>
+<script src="assets/board.js?v=20261019a"></script>
+<script src="assets/rpet.js?v=20261019a"></script>
+<script src="assets/policy.js?v=20261019a" data-facts="data/policy_facts.json" data-state="data/policy.json" data-order="재생원료 의무,EPR,부담금·기타"></script>
+<script src="assets/plastic_extra.js?v=20261019a"></script>
 </body>
 </html>

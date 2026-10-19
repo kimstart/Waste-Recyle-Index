@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>바이오가스 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261013a">
+<link rel="stylesheet" href="assets/board.css?v=20261019a">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>바이오가스 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 제도 · 뉴스</p>
     </div>
     <nav class="menu">
       <a href="plastic.html">‹ 폐플라스틱</a>
@@ -51,6 +51,14 @@
   <h2>유럽 바이오메탄 vs 국내 도시가스 <small>원/㎥ 환산 비교 · 참고용 추정</small></h2>
   <div id="extra"></div>
 
+  <h2>제도·규제 <small>바이오가스법 · 생산목표제 · REC · <span id="polUpd"></span></small></h2>
+  <div id="polAlert"></div>
+  <table class="cmp pol">
+    <thead><tr><th class="h-m">구분</th><th>항목</th><th>내용</th><th>상태</th><th>시행</th><th class="h-m">출처</th></tr></thead>
+    <tbody id="polBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">공개 보도자료·법령 원문으로 확인한 내용을 정리했습니다. 출처 칸을 누르면 원문으로 이동합니다. 법령·고시가 개정되면 이 영역 위에 2주 동안 알림이 뜹니다.</div>
+
   <h2>바이오가스 뉴스<small id="newsUpd"></small></h2>
   <div class="news2">
     <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
@@ -58,7 +66,16 @@
   </div>
   <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Bioenergy Insight, gasworld, ENDS, Argus 등 전문지를 우선하고 주가·시장보고서 광고성 기사는 제외합니다. 제목을 누르면 원문으로 이동합니다.</div>
 
-  <div class="foot">출처: 한국전력거래소, ICE Endex(Yahoo Finance), 한국거래소 배출권시장 정보플랫폼, 한국가스공사, EEX(European Energy Exchange), 구글 뉴스</div>
+  <section class="cat ref-cat">
+    <div class="cat-head"><b>참고</b><span>제도 변경 감시 — 법령·고시 개정과 관련 부처 게시글</span></div>
+  <div class="news2">
+    <div><h3>감시 중인 법령·고시<span>국가법령정보 공동활용</span></h3><ul class="plain" id="polLaws"></ul></div>
+    <div><h3>관련 부처 게시글<span>기후에너지환경부</span></h3><ul class="plain" id="polPosts"></ul></div>
+  </div>
+  <div class="note">하루 세 번 바이오가스 관련 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 제도·규제 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록합니다.</div>
+  </section>
+
+  <div class="foot">출처: 한국전력거래소, ICE Endex(Yahoo Finance), 한국거래소 배출권시장 정보플랫폼, 한국가스공사, EEX(European Energy Exchange), 국가법령정보센터, 기후에너지환경부, 구글 뉴스</div>
 </div>
 
 <script>
@@ -97,6 +114,7 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261013a"></script>
+<script src="assets/board.js?v=20261019a"></script>
+<script src="assets/policy.js?v=20261019a" data-facts="data/policy_facts_biogas.json" data-state="data/policy_biogas.json" data-order="법·제도,생산목표제,이용·보급,REC·인센티브,탄소·수소,시설·지원,계획"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""EPR·재생원료 의무 등 제도 변경 감시 → data/policy.json
+"""제도 변경 감시 → data/policy.json(폐플라스틱), data/policy_biogas.json(바이오가스)
 - 국가법령정보 공동활용 API(LAW_API_KEY): data/policy_watch.json 의 법령·행정규칙(고시) 공포/발령일·시행일 변화 감시
 - 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판: 제목에 관련 단어가 들어간 새 글 감시
 새로 감지된 변경은 events 에 쌓고(화면 상단 알림), GITHUB_TOKEN 이 있으면 저장소 이슈로도 등록한다(구독자 메일)."""
@@ -16,6 +16,13 @@ MCEE = "https://www.mcee.go.kr"
 BOARDS = [("보도자료", 10598), ("입법예고", 68), ("행정예고", 10557), ("고시·훈령·예규", 71)]
 KEYWORDS = re.compile(r"재생원료|재활용의무|생산자책임재활용|EPR|자원재활용법|자원의 절약|분담금|포장재|플라스틱|페트|폐기물부담금|"
                       r"순환경제|재활용 용이성|일회용|폐비닐|재활용품|선별|순환자원|직매립")
+KW_BIO = re.compile(r"바이오가스|바이오메탄|유기성 ?폐자원|생산목표|음식물류? ?폐기물|가축분뇨|하수찌꺼기|하수 ?슬러지|혐기성|소화가스|"
+                    r"신재생|공급인증서|REC|청정수소|상쇄|외부사업|에너지화")
+PAGES = [  # (화면 이름, 결과 파일, 감시 법령 목록, 게시글 단어)
+    ("폐플라스틱", "data/policy.json", "data/policy_watch.json", KEYWORDS),
+    ("바이오가스", "data/policy_biogas.json", "data/policy_watch_biogas.json", KW_BIO),
+]
+_BOARD_HTML = {}
 
 
 def norm(s):
@@ -38,13 +45,13 @@ def law_search(target, query):
     return out
 
 
-def watch_laws(state):
+def watch_laws(state, watch_file):
     if not LAW_KEY:
         print(">> [법령] LAW_API_KEY 없음 → 건너뜀")
         return state.get("laws", {}), []
     prev = state.get("laws", {})
     laws, events = {}, []
-    for w in load(WATCH, []):
+    for w in load(watch_file, []):
         name, target = w["name"], w["target"]
         query = re.sub(r"^\d{4}년\s*", "", name)          # 연도별 고시는 연도를 빼고 검색해 최신 것을 찾는다
         try:
@@ -78,15 +85,19 @@ def watch_laws(state):
     return laws, events
 
 
-def watch_boards(state):
+def watch_boards(state, kw):
     seen = set(state.get("board_seen", []))
     first = not seen
     posts, events = [], []
     for label, mid in BOARDS:
-        try:
-            h = retry(lambda: get(f"{MCEE}/home/web/index.do?menuId={mid}", timeout=40), tries=3)
-        except Exception as e:
-            print(f">> [부처] {label} 실패: {type(e).__name__}")
+        if mid not in _BOARD_HTML:      # 게시판은 한 번만 받아 두 화면이 같이 쓴다
+            try:
+                _BOARD_HTML[mid] = retry(lambda: get(f"{MCEE}/home/web/index.do?menuId={mid}", timeout=40), tries=3)
+            except Exception as e:
+                print(f">> [부처] {label} 실패: {type(e).__name__}")
+                _BOARD_HTML[mid] = None
+        h = _BOARD_HTML[mid]
+        if h is None:
             continue
         n = 0
         for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
@@ -102,7 +113,7 @@ def watch_boards(state):
             url = MCEE + html.unescape(href).split(";jsessionid")[0] if href.startswith("/") else html.unescape(href)
             key = f"{mid}:{bid.group(1) if bid else title}"
             n += 1
-            if not KEYWORDS.search(title):
+            if not kw.search(title):
                 continue
             posts.append({"key": key, "board": label, "title": title, "date": date, "url": url})
             if key not in seen and not first:
@@ -112,12 +123,12 @@ def watch_boards(state):
     return posts, events, sorted(seen)[-1000:]
 
 
-def open_issues(events):
+def open_issues(events, label=""):
     tok, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
     if not (tok and repo and events):
         return
     for e in events[:10]:
-        body = json.dumps({"title": f"[제도 변경 감지] {e['title'][:120]}",
+        body = json.dumps({"title": f"[제도 변경 감지{' · ' + label if label else ''}] {e['title'][:110]}",
                            "body": f"- 구분: {e['type']}\n- 감지일: {e['date']}\n- 원문: {e['url']}\n\n폐플라스틱 데일리 리포트가 자동으로 등록한 알림입니다."}).encode()
         req = urllib.request.Request(f"https://api.github.com/repos/{repo}/issues", data=body, method="POST",
                                      headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
@@ -128,20 +139,29 @@ def open_issues(events):
             print(f">> [알림] 이슈 등록 실패: {type(ex).__name__} {str(ex)[:120]}")
 
 
-def main():
-    st = load(OUT, {}) or {}
-    laws, ev1 = watch_laws(st)
-    posts, ev2, seen = watch_boards(st)
+def run_page(label, out, watch_file, kw):
+    st = load(out, {}) or {}
+    laws, ev1 = watch_laws(st, watch_file)
+    posts, ev2, seen = watch_boards(st, kw)
     old_posts = {p["key"]: p for p in st.get("posts", [])}
     for p in posts:
         old_posts[p["key"]] = p
     cut = (now_kst() - timedelta(days=365)).strftime("%Y-%m-%d")
     posts_all = sorted((p for p in old_posts.values() if (p.get("date") or "9999") >= cut), key=lambda p: p.get("date", ""), reverse=True)[:60]
     events = (ev1 + ev2 + st.get("events", []))[:50]
-    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "laws": laws, "posts": posts_all, "events": events,
+    save(out, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "laws": laws, "posts": posts_all, "events": events,
                "board_seen": seen})
-    open_issues(ev1 + ev2)
-    print(f">> 저장: 법령 {len(laws)}건, 관련 게시글 {len(posts_all)}건, 새 변경 {len(ev1) + len(ev2)}건")
+    open_issues(ev1 + ev2, label)
+    print(f">> [{label}] 저장: 법령 {len(laws)}건, 관련 게시글 {len(posts_all)}건, 새 변경 {len(ev1) + len(ev2)}건")
+
+
+def main():
+    for label, out, watch_file, kw in PAGES:
+        print(f"==== {label}")
+        try:
+            run_page(label, out, watch_file, kw)
+        except Exception as e:
+            print(f">> [{label}] 실패: {type(e).__name__}: {str(e)[:200]}")
 
 
 if __name__ == "__main__":

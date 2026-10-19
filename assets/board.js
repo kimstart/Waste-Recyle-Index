@@ -36,8 +36,8 @@
   function renderTable(st) {
     const items = (st && st.items) || {};
     B.items = items;
-    $('indUpdated').textContent = st && st.updated ? st.updated + ' (KST)' : '-';
-    renderRows(B.rows.filter(r => !r.sec), 'indBody', items);
+    if ($('indUpdated')) $('indUpdated').textContent = st && st.updated ? st.updated + ' (KST)' : '-';
+    if ($('indBody')) renderRows(B.rows.filter(r => !r.sec), 'indBody', items);
     if ($('refBody')) renderRows(B.rows.filter(r => r.sec === 'ref'), 'refBody', items);
     if ($('mktBody')) renderRows(B.rows.filter(r => r.sec === 'mkt'), 'mktBody', items);
     if (B.extra && $('extra')) $('extra').innerHTML = B.extra(items, fmt) || '';
@@ -96,14 +96,14 @@
     $('btnToday').style.display = key === TODAY ? 'none' : '';
     const pn = $('pastNote');
     if (key === TODAY) pn.style.display = 'none'; else { pn.style.display = 'block'; pn.textContent = `${fmtLong(key)}에 저장된 자료를 보고 있습니다.`; }
-    $('indBody').innerHTML = `<tr><td colspan="6" class="fl">불러오는 중...</td></tr>`;
+    if ($('indBody')) $('indBody').innerHTML = `<tr><td colspan="6" class="fl">불러오는 중...</td></tr>`;
     const isToday = key === TODAY;
     const [st, nj] = await Promise.all([
       getJson(isToday ? `data/${B.name}.json` : `history/${B.name}_${key}.json`).catch(() => null),
       getJson(isToday ? `data/news_${B.name}.json` : `history/news_${B.name}_${key}.json`).catch(() => null)
     ]);
     if (my !== SEQ) return;
-    if (!st) { $('indBody').innerHTML = `<tr><td colspan="6" class="fl">${isToday ? '아직 수집된 자료가 없습니다.' : '해당 일자에 저장된 자료가 없습니다.'}</td></tr>`; if ($('extra')) $('extra').innerHTML = ''; }
+    if (!st) { if ($('indBody')) $('indBody').innerHTML = `<tr><td colspan="6" class="fl">${isToday ? '아직 수집된 자료가 없습니다.' : '해당 일자에 저장된 자료가 없습니다.'}</td></tr>`; if ($('extra')) $('extra').innerHTML = ''; }
     else renderTable(st);
     renderNews(nj);
   }
