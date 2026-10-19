@@ -42,12 +42,20 @@
       if (cur == null) return '';
       const last12 = Array.from({ length: 12 }, (_, i) => val(it.key, ymAdd(latest, -i))).filter(v => v != null);
       const hi = Math.max(...last12), lo = Math.min(...last12), pos = hi > lo ? (cur - lo) / (hi - lo) * 100 : 50;
-      return `<tr><td class="nm">${esc(it.name)}${WHY[it.key] ? `<small class="why-s">${esc(WHY[it.key])}</small>` : ''}</td><td><b>${n1(cur)}</b></td><td>${chg(pct(cur, val(it.key, ymAdd(latest, -1))))}</td>
+      // 최근 12개월 추이 스파크라인 (그 기간 최저~최고로 맞춰 그림, 첫 달보다 오르면 빨강·내리면 파랑)
+      const ser = Array.from({ length: 12 }, (_, i) => val(it.key, ymAdd(latest, i - 11))).filter(v => v != null);
+      let sp = '';
+      if (ser.length >= 3) {
+        const w = 84, hh = 20, mn = Math.min(...ser), mx = Math.max(...ser), rr = (mx - mn) || 1;
+        const pts = ser.map((v, i) => `${(i / (ser.length - 1) * w).toFixed(1)},${(hh - 2 - (v - mn) / rr * (hh - 4)).toFixed(1)}`).join(' ');
+        sp = `<svg class="spk" width="${w}" height="${hh}" viewBox="0 0 ${w} ${hh}" aria-label="최근 12개월 추이"><polyline fill="none" stroke="${ser[ser.length - 1] >= ser[0] ? '#d93f3c' : '#005587'}" stroke-width="1.5" points="${pts}"/></svg>`;
+      }
+      return `<tr><td class="nm">${esc(it.name)}${WHY[it.key] ? `<small class="why-s">${esc(WHY[it.key])}</small>` : ''}</td><td><b>${n1(cur)}</b>${sp}</td><td>${chg(pct(cur, val(it.key, ymAdd(latest, -1))))}</td>
         <td>${chg(pct(cur, val(it.key, ymAdd(latest, -12))))}</td>
         <td><div class="rng" title="최저 ${n1(lo)} · 최고 ${n1(hi)}"><i style="left:${pos.toFixed(0)}%"></i></div><div class="rng-l"><span>${n0(lo)}</span><span>${n0(hi)}</span></div></td>
         ${y3.map(ym => `<td class="s3">${n1(val(it.key, ym))}</td>`).join('')}</tr>`;
     }).join('');
-    $('anaNote').textContent = `한국환경공단 '재활용가능자원 가격조사'의 수도권 값(VAT 포함, 원/kg, 매월 10일 기준 조사). ${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월 기준. 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
+    $('anaNote').textContent = `한국환경공단 '재활용가능자원 가격조사'의 수도권 값(VAT 포함, 원/kg, 매월 10일 기준 조사). ${latest.slice(0, 4)}년 ${+latest.slice(5, 7)}월 기준. 단가 아래 선은 최근 12개월 추이입니다(첫 달보다 오르면 빨강, 내리면 파랑). 위치 막대는 최근 12개월 최저(왼쪽)~최고(오른쪽) 사이에서 이번 달 값이 어디쯤인지 보여줍니다. 오른쪽 세 열은 최근 3개년의 같은 달 값입니다.`;
     const sel = $('seasonItem');
     if (!sel.options.length) {
       sel.innerHTML = h.items.map(it => `<option value="${it.key}">${esc(it.name)}</option>`).join('');
