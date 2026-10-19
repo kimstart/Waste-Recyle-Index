@@ -167,6 +167,10 @@ td.nm small.why-s, .ana svg.spk { display:block; margin:3px auto 0; }
   .upd { flex-basis:100%; } .pick { margin-left:0; }
   table.ana col.c-s3, table.ana th.s3, table.ana td.s3 { display:none; }
   table.bids th.h-m, table.bids td.h-m { display:none; }
+  table.bids th, table.bids td { padding:6px 3px; font-size:11px; }
+  table.bids td b { font-size:12px; } table.bids td.t, table.bids td small { overflow-wrap:anywhere; } table.bids td:first-child { white-space:nowrap; }
+  table.pol th, table.pol td { padding:6px 4px; font-size:11.5px; } table.pol td { overflow-wrap:anywhere; }
+  table.ana th, table.ana td { padding:6px 3px; font-size:11px; }
   table.pol th.h-m, table.pol td.h-m { display:none; }
   table.rp col.c-q, table.rp th.q, table.rp td.q { display:none; }
   table.rp { table-layout:auto; } table.rp col { width:auto !important; }

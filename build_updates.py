@@ -94,6 +94,20 @@ def main():
     if sids:
         state["svc_ids"] = sids
 
+    # 유기성폐자원 입찰·용역·공사 (수도권, 바이오가스 화면)
+    bio = (load("data/bio_bids.json", {}) or {}).get("items", [])
+    bids_ = {b["id"]: b.get("status") for b in bio}
+    old_b = state.get("bio_ids", {})
+    if not first and old_b:
+        new = [b for b in bio if b["id"] not in old_b]
+        won = [b for b in bio if b.get("status") == "낙찰" and old_b.get(b["id"]) not in (None, "낙찰")]
+        if new:
+            ev("biogas", f"유기성폐자원 {new[0].get('type', '')} 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""))
+        if won:
+            ev("biogas", f"유기성폐자원 입찰 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}".rstrip())
+    if bids_:
+        state["bio_ids"] = bids_
+
     # 제도 변경 (화면별)
     for page, fn, sk in (("plastic", "data/policy.json", "policy_seen"), ("biogas", "data/policy_biogas.json", "policy_seen_biogas")):
         pol = (load(fn, {}) or {}).get("events", [])

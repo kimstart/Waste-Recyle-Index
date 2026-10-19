@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>바이오가스 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261019b">
+<link rel="stylesheet" href="assets/board.css?v=20261019c">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>바이오가스 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 제도 · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 유기성폐자원 입찰 · 제도 · 뉴스</p>
     </div>
     <nav class="menu">
       <a href="plastic.html">‹ 폐플라스틱</a>
@@ -51,6 +51,22 @@
   <h2>유럽 바이오메탄 vs 국내 도시가스 <small>원/㎥ 환산 비교 · 참고용 추정</small></h2>
   <div id="extra"></div>
 
+  <h2>수도권 유기성폐자원 입찰·용역·공사 <small id="bioUpd"></small></h2>
+  <div class="ctl">
+    <div class="rp-seg" id="bioScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
+    <div class="rp-seg" id="bioPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
+    <div class="rp-seg" id="bioType"><button type="button" data-v="" class="on">전체 유형</button><button type="button" data-v="시설 운영">시설 운영</button><button type="button" data-v="처리 대행">처리 대행</button><button type="button" data-v="수집·운반">수집·운반</button><button type="button" data-v="EPC·공사">EPC·공사</button><button type="button" data-v="매각·매입">매각·매입</button></div>
+  </div>
+  <div class="kpis" id="bioKpi"></div>
+  <table class="cmp bids">
+    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">발주기관</th><th>공고명</th><th class="h-m">유형</th><th>추정·예정가격</th><th>결과</th><th class="h-m">출처</th></tr></thead>
+    <tbody id="bioBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note"><span id="bioMore"></span>
+    음식물류폐기물·음폐수·동식물성잔재물·유기성오니(하수찌꺼기)·가축분뇨 등 바이오가스 원료가 되는 폐기물의 시설 운영, 처리 대행, 수집·운반 용역과 처리시설 공사·설계(EPC), 순환자원정보센터 매각·매입 공고입니다.
+    공고명 아래 작은 글씨는 폐기물 종류와 공고 구분입니다. 추정가격은 부가세를 뺀 계약 예상 총액이며, 단가계약은 낙찰 단가만 '단가계약'으로 표시합니다(톤당·kg당 등 단위는 공고문 확인 필요).
+    급식·감량기·용기 구입, 연구·타당성 조사, 정수 슬러지 등은 제외했고, 유찰·재공고된 같은 건은 여러 줄로 나올 수 있습니다. 출처: 조달청 나라장터(용역·공사 입찰공고·낙찰정보), 순환자원정보센터 전자입찰·수의견적.</div>
+
   <h2>제도·규제 <small>바이오가스법 · 생산목표제 · REC · <span id="polUpd"></span></small></h2>
   <div id="polAlert"></div>
   <table class="cmp pol">
@@ -75,7 +91,7 @@
   <div class="note">하루 세 번 바이오가스 관련 법령·고시의 공포/발령일과 시행일, 기후에너지환경부 보도자료·입법예고·행정예고·고시 게시판의 관련 글을 확인합니다. 바뀐 내용이 생기면 제도·규제 영역 위에 2주 동안 알림을 띄우고, GitHub 저장소 이슈로도 등록합니다.</div>
   </section>
 
-  <div class="foot">출처: 한국전력거래소, ICE Endex(Yahoo Finance), 한국거래소 배출권시장 정보플랫폼, 한국가스공사, EEX(European Energy Exchange), 국가법령정보센터, 기후에너지환경부, 구글 뉴스</div>
+  <div class="foot">출처: 한국전력거래소, ICE Endex(Yahoo Finance), 한국거래소 배출권시장 정보플랫폼, 한국가스공사, EEX(European Energy Exchange), 조달청 나라장터, 순환자원정보센터, 국가법령정보센터, 기후에너지환경부, 구글 뉴스</div>
 </div>
 
 <script>
@@ -115,6 +131,7 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js?v=20261019a"></script>
+<script src="assets/biogas_extra.js?v=20261019a"></script>
 <script src="assets/policy.js?v=20261019a" data-facts="data/policy_facts_biogas.json" data-state="data/policy_biogas.json" data-order="법·제도,생산목표제,이용·보급,REC·인센티브,탄소·수소,시설·지원,계획"></script>
 </body>
 </html>

@@ -22,7 +22,11 @@ ORG_CLS = re.compile(r"음식물|유기성오니|동식물성|폐식용유|분�
 DROP = re.compile(r"급식|식당|조리|식재료|식자재|RFID|종량|감량기|계량|수거\s*용기|전용\s*용기|용기\s*(?:구입|구매|제작)|봉투|스티커|납부필증|홍보|교육|연구|타당성|"
                   r"기본\s*계획|기본구상|컨설팅|평가|조사|진단|측정|분석|모니터링|정수|무기성|준설|토사|건설폐기물|석면|의료|지정폐기물|소화기|소화전|소화설비|"
                   r"구입|구매|임차|렌탈|청소차|집하장|분리수거장|거점|보험|검사|수질|TMS|전산|시스템|프로그램|앱|플랫폼|인허가|보상|감정|수목|조경|도색|"
-                  r"수거함|화장실|정화조\s*청소|대행료\s*산정|원가\s*산정|원가계산|정산|용역비|퇴비\s*살포|비료\s*(?:구입|공급)|사료\s*구입")
+                  r"수거함|화장실|정화조\s*청소|대행료\s*산정|원가\s*산정|원가계산|정산|용역비|퇴비\s*살포|비료\s*(?:구입|공급)|사료\s*구입|"
+                  # 하수처리장·처리시설의 부품 정비·보수(사업 기회가 아닌 유지관리)는 뺀다
+                  r"정비|유지\s*보수|보수|수리|교체|차륜|펌프|밸브|배관|케이블|MCC|점검|검교정|교정|오일|부품|수집기|탈취기|탈황|스컴|스키머|계장|"
+                  r"감시제어|도장|방수|누수|철거|기술지도|안전|제작\s*설치|부대설비|전기설비|임시\s*운영|호퍼|교반기|윤활|세척|청소|유량계|협잡물|오버홀|대수선|"
+                  r"연결부|유입관|제어실|공동구|폴리머|정보통신|혼합폐기물")
 T0, BUDGET = time.monotonic(), 16 * 60
 
 
@@ -35,7 +39,7 @@ def tag(title, cnstwk=False):
             return "EPC·공사"
     if re.search(r"운영|관리\s*대행|위탁\s*관리|운전", t):
         return "시설 운영"
-    if re.search(r"수집|운반|수거", t) and not re.search(r"처리", t):
+    if re.search(r"수집|운반|운송|수거", t) and not re.search(r"(?<!감량)처리(?!\s*(?:시설|장|장치))", t):
         return "수집·운반"
     return "처리 대행"
 
@@ -53,10 +57,20 @@ def keep(title):
     return bool(ORG.search(title or "")) and not DROP.search(title or "")
 
 
-def region(text):
-    if "수도권매립지" in (text or ""):
-        return "수도권", "인천"
-    return region_of(text)
+OTHER = re.compile(r"경상|경북|경남|충청|충북|충남|전라|전북|전남|강원|제주|세종|대전|대구|부산|광주광역|울산|원주|춘천|강릉|속초|삼척|태백|홍천|횡성|"
+                   r"청주|충주|제천|천안|공주|보령|아산|서산|논산|당진|홍성|전주|군산|익산|목포|여수|순천|포항|경주|김천|안동|구미|창원|진주|김해|양산|통영|거제")
+
+
+def region(*texts):
+    """공고명 → 수요기관 → 공고기관 순으로 본다 (예: 서울지방교정청이 낸 '의정부교도소' 건은 의정부)"""
+    for t in texts:
+        t = t or ""
+        if "수도권매립지" in t:
+            return "수도권", "인천"
+        r = region_of(t)
+        if r[0] != "기타" or OTHER.search(t):
+            return r
+    return "기타", ""
 
 
 def g2b(path, params):
@@ -74,13 +88,16 @@ def g2b(path, params):
     return out
 
 
-def collect_g2b(first):
+def collect_g2b(first, start_k=0):
+    """30일 창으로 거꾸로 훑는다. 처음 모으기(400일)가 시간 한도에 걸리면 멈춘 위치(bf_k)를 저장해 다음 실행에서 이어 간다."""
     now, days = now_kst(), (400 if first else 21)
     out, wins, fails, cut = {}, {}, 0, False
-    for k in range(0, days, 30):
+    ks = [0] + [k for k in range(max(start_k, 30) if first and start_k else 30, days, 30)] if first else [0]
+    done_k = start_k
+    for k in ks:
         if time.monotonic() - T0 > BUDGET or fails >= 8:
             cut = True
-            print(">> [나라장터] 시간 한도 또는 연속 실패 → 여기까지 저장")
+            print(f">> [나라장터] 시간 한도 또는 연속 실패 → {k}일 전까지 저장, 다음 실행에서 이어서 수집")
             break
         e, s = now - timedelta(days=k), now - timedelta(days=min(k + 30, days))
         rng = {"inqryDiv": 1, "inqryBgnDt": s.strftime("%Y%m%d0000"), "inqryEndDt": e.strftime("%Y%m%d2359")}
@@ -92,7 +109,7 @@ def collect_g2b(first):
                         if not keep(title):
                             continue
                         org, inst = x.get("dminsttNm") or "", x.get("ntceInsttNm") or ""
-                        reg, city = region(f"{title} {org} {inst}")
+                        reg, city = region(title, org, inst)
                         if reg == "기타":
                             continue
                         key = f"g2b:{x.get('bidNtceNo')}"
@@ -112,8 +129,10 @@ def collect_g2b(first):
                     fails += 1
                     print(f">> [나라장터] {kind} '{kw}' {s:%Y-%m-%d} 실패: {type(ex).__name__}: {str(ex)[:100]}")
                 time.sleep(0.15)
-    print(f">> [나라장터] 수도권 유기성 용역·공사 {len(out)}건, 낙찰 후보 {len(wins)}건")
-    return out, cut, wins
+        if fails == 0:
+            done_k = max(done_k, k + 30)
+    print(f">> [나라장터] 수도권 유기성 용역·공사 {len(out)}건, 낙찰 후보 {len(wins)}건 (처음 모으기 {done_k}/{days}일)")
+    return out, cut, wins, done_k
 
 
 def collect_re(old):
@@ -129,7 +148,7 @@ def collect_re(old):
         if not no or no in seen or not (ORG_CLS.search(cls) or ORG.search(title)):
             continue
         seen.add(no)
-        reg, city = region(f"{title} {x.get('pbancIsrNm', '')}")
+        reg, city = region(title, x.get("pbancIsrNm", ""))
         if reg == "기타":
             continue
         ordn = (re.search(r"bidTimeNum=(\d+)", x.get("dtlInfoUrlAddr") or "") or [None, "0"])[1]
@@ -163,7 +182,7 @@ def collect_re(old):
         cls = " ".join(x.get(f) or "" for f in ("cmdtyLclsfNm", "cmdtyMclsfNm", "cmdtySclsfNm"))
         if not (ORG_CLS.search(cls) or ORG.search(title)):
             continue
-        reg, city = region(f"{title} {x.get('pbancIsrNm', '')}")
+        reg, city = region(title, x.get("pbancIsrNm", ""))
         if reg == "기타":
             continue
         st, se = x.get("pbancSttsNm") or "", x.get("estmtSeNm") or ""
@@ -190,14 +209,14 @@ def main():
     for x in st.get("items", []):        # 거르기 기준·분류가 바뀌어도 저장된 건에 다시 적용
         if x.get("src") == "나라장터" and not keep(x.get("title", "")):
             continue
-        reg, city = region(f"{x.get('title', '')} {x.get('org', '')}")
+        reg, city = region(x.get("title", ""), x.get("org", ""))
         if reg == "기타":
             continue
         typ = x.get("type") if x.get("src") != "나라장터" else tag(x.get("title", ""), x.get("kind") == "공사")
         items[x["id"]] = {**x, "region": reg, "city": city, "type": typ, "waste": waste_of(f"{x.get('title', '')} {x.get('cls', '')}")}
-    g, cut, wins = ({}, False, {})
+    g, cut, wins, bf_k = ({}, False, {}, st.get("bf_k", 0))
     if DATA_KEY:
-        g, cut, wins = collect_g2b(first)
+        g, cut, wins, bf_k = collect_g2b(first, st.get("bf_k", 0))
         try:
             items.update(collect_re({k: v for k, v in items.items() if k.startswith("re:")}))
         except Exception as e:
@@ -214,7 +233,8 @@ def main():
                         winner=x.get("bidwinnrNm") or "", bidders=int(num(x.get("prtcptCnum") or "") or 0),
                         open=(x.get("rlOpengDt") or items[k].get("open") or "")[:10])
     lst = sorted(items.values(), key=lambda b: (b.get("start") or "", b["id"]), reverse=True)
-    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or (bool(g) and not cut), "items": lst})
+    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or (first and bf_k >= 400),
+               "bf_k": bf_k, "items": lst})
     from collections import Counter
     print(f">> 저장: 유기성폐자원 입찰·용역·공사 {len(lst)}건 · 유형 {dict(Counter(b['type'] for b in lst))} · "
           f"폐기물 {dict(Counter(b['waste'] for b in lst))} · 낙찰 {sum(b.get('status') == '낙찰' for b in lst)}")
