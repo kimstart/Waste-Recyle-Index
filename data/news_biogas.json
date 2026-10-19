@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18 20:25",
+ "updated": "2026-10-19 09:15",
  "domestic": [
   {
    "title": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 - 머니투데이",
@@ -29,12 +29,19 @@
    "title": "쓰레기도 에너지…새로운 폐기물 에너지화 해법 모색",
    "source": "이투뉴스",
    "link": "https://www.e2news.com/news/articleView.html?idxno=335165",
-   "pub": "2026-10-16 15:44",
-   "more": 0,
+   "pub": "2026-10-16 15:10",
+   "more": 1,
    "summary": "국립환경과학원(원장 김영우)은 14일∼16일 포항시 북구 라한호텔에서 한국에너지기후환경협의회와 공동으로 자원·에너지 회수를 위한 미래형 폐기물 관리체계 발전방향을 논의하는 국제학술대회(12차 i-CIPEC)를 열었다. 이어 15∼16일 본회의를 열어 폐기물 처리기술을 중심으로 폐자원의 에너지·물질 회수와 환경안전성을 함께 고려하는 융합적 발전방향도 모색했다. 반도체·디스플레이 분야 온실가스 배출계수 최초 개발"
   }
  ],
  "overseas": [
+  {
+   "title": "In the UK, a protester is removed as Lincolnshire approves biogas plant locals call 'a disaster'",
+   "source": "The Cool Down",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOeDVYYzl6c3puZDdadUZyTHJnVVpLc1ZPY3hMZ2lwQzV4WjREN1Y2MTFJb0owQlJPbDdXNkhrbjZUUVdGYnN5YTJhMDRtV1lyY1ZZZ1F0MlVnV0lQbldTY1o4QmFhZ00xd1FfaWI5aXd3TTVJOGxmMUk0UkYzSnNiaVNDN2Jta05UVnlBZTBqUmRteHpU?oc=5",
+   "pub": "2026-10-18 19:13",
+   "more": 0
+  },
   {
    "title": "India and Japan Expand Dairy Biogas Cooperation",
    "source": "Dairynews.today",
@@ -64,11 +71,25 @@
    "more": 0
   },
   {
-   "title": "Nigeria explores biogas production from abattoir waste through new biotechnology partnership",
-   "source": "BioEnergy Times",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVXg5MktEYy0wS29QdzZpZ0hHakFfVXpjSUcwVHpJbV9XdkVKckNlVTdTMGktUXhLYlhDR2RXc2d6WkxDY05EOW5JdFFiTlA0WW1CUmstV01DR0NmWUlxQjdFVHFITG5valNuS2Uzcmd5NEU4S21xcHNtT193WGJ6dFhwbnAxbTV0YXowN0xENXBBZGlEa3JRV2ViQTFnMHNwRExRMGFfVWgtNFZEYjVRNVAyNUFGS2Q1eE5raw?oc=5",
-   "pub": "2026-10-16 21:23",
-   "more": 3
+   "title": "Dorset food waste operator opens £20m anaerobic digestion plant with grid injection",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWkMtZERfekRBSWFrYk9Vc0Q0R2hfLTQzam5SM2VhYi11ZTF1aG1RYWpDN1BNMFgyQ1BwREVZcF9ienBod1FhU0gwNjAwN2l5RkhUUk92Q09meW1JVjJEaWRTQnU0X1lNeFR1VDFsUEpLS3lnbEJoeW9CbVcxcUJSSUFWUGdoVGRaREk4YW5lWGxjSUU3TEFLbHg4MU12RDNUSmZKbFhXVzVrdlNJTVJ0cm9KOVhyamRZWlBV?oc=5",
+   "pub": "2026-10-16 19:56",
+   "more": 4
+  },
+  {
+   "title": "Jørgensen urges EU to ramp up biomethane for energy security",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOWjBuQy1XSjVKdDVXZTl4VVhSMVJfYUlKdGRBSFREck43Y1I1OXZfa2p5aHZ1RjdrSm10RjNvNm03djc3TXRPZEJyR3o3LUxXbW9aRUtVQk5DV09hdm13cVdZOTJ0ZjFJQjlxV0VsUDZyQXRaTTBUX2tvU2o0NFlUQjd1NFk1RUgzclh1M1NQVHpOOVFXSFZGckNqcXRlQWdKbXdpMHR5X2haSk55?oc=5",
+   "pub": "2026-10-16 19:56",
+   "more": 0
+  },
+  {
+   "title": "MOL Group inaugurates Hungarian biomethane plant",
+   "source": "ship.energy",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOS0VtU2JFQ01MRnJDWVpxaUJwZllKODhVQ1ppV0FTbXpxMW9CWnZkN08yczdtTnlnNXBLa3pSS010VXdseXhUcnlEMDEwbmZZSWZjY2pUaTlrSUdxbEhZVEpDU3FMRFpPNXQ1aFJjQ2EyMWd2X0dLcjhQSnNBUUctZVJ3?oc=5",
+   "pub": "2026-10-16 19:03",
+   "more": 4
   },
   {
    "title": "Organic Recycling Systems subsidiary secures fifth compressed biogas plant contract worth ₹50-100 crore from BPCL",
@@ -83,27 +104,6 @@
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1walZEU1MxRHZ3UmduSnhyaEZhc1pzUzhqT0VqTmwteXhuN2ItV0hXYVQzVkRacjhyOTNnbzdHX3dkNWFmdzdHWTl3MWRhMTNkZFJ3UmRVYVE5TDk1R2UwNHZpQlM2cmNsczJlSg?oc=5",
    "pub": "2026-10-16 13:41",
    "more": 2
-  },
-  {
-   "title": "Faster-growing salt-loving microbes could make protein from biogas instead of natural gas",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY2EwS1N4RlJ1cUhpTGhxcTYzYTVLWnZuVVZuV2RBU0pWSG5vbmhLeFI3X1NFSDFjdHcxV0VmckdDN2FLZlNVcXczVXJZTXhua3N3Q2dXSnk2UFNyMWZTZmd4Ymo0SzBCdXVsVmlnUGtVQzM5cVN6X2dhRTF2bmhnN3lxQmNZQl9fbEI5VXlkTzlNZE5kUmVsRUJfVmJLT18zbzFNbUp2U3B4dWE0bjBwSm12cFQ?oc=5",
-   "pub": "2026-10-16 07:34",
-   "more": 0
-  },
-  {
-   "title": "Angry campaigners react as biogas plant is approved and councillor says: ‘It’s not a good day for Lincolnshire’",
-   "source": "LincsOnline",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZ2RYNWhaQW1IOVlYZ1dQeVJaamU4S3VyQVM3bUJVbmNoZzd3Si1vd3FJajdfTVJXUzBtV2xpRXFTWGlUcE5icGh5d0lhcU9XRkVSU2tNdnBNSjF5c1hMbG9aNk1uN1gxT3ctMjdBekFnVmx0Wm55SkxFeFVGVk1GSUR2SnFZd3M0SU9BNGgwbjhNd252SlIxTkpuSE44M3N2Rlp3WlQzZ191S3A0?oc=5",
-   "pub": "2026-10-16 00:55",
-   "more": 1
-  },
-  {
-   "title": "MOL completes Hungary biomethane plant upgrade",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdDRlT095ZHZkb3d6Q3VsbURuNndlR0ZiSk5feElyejY0YURkU2hOU2VpYl9wTExnZGpFT0hobDdIZmRqZy1tUUZ4Rzd6bHNFcy1ldUUwdnRvaVRIa1VPd2VZZG1sU0xyUllMdmh4Zm04TE9CUERuNGFHY0d3blM2U0M3RHhjdUhtNEZjVklVQi1jMzNrNVNsTU9R?oc=5",
-   "pub": "2026-10-15 21:06",
-   "more": 9
   }
  ]
 }
