@@ -14,7 +14,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,6 +30,11 @@ jobs:
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: timeout -k 15 1200 python -u collect_services.py 2>&1 | tee logs/services.log
+      - name: 유기성폐자원 입찰·용역·공사 수집 (순환자원정보센터·나라장터)
+        continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: timeout -k 15 1260 python -u collect_bio_bids.py 2>&1 | tee logs/bio_bids.log
       - name: 제도 변경 감시 (법령정보·기후에너지환경부)
         continue-on-error: true
         env:
