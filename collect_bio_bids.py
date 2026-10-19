@@ -88,6 +88,52 @@ def g2b(path, params):
     return out
 
 
+def docs_of(x):
+    return [[x.get(f"ntceSpecFileNm{i}") or "", x[f"ntceSpecDocUrl{i}"]] for i in range(1, 11) if x.get(f"ntceSpecDocUrl{i}")]
+
+
+def enrich(items, stop_at):
+    """① 개찰일이 지났는데 결과가 없는 공고 → 공고번호로 다시 조회해 취소공고인지 확인
+       ② 처리 대행 → 첨부 공고문·과업지시서에서 예상 처리물량(톤)을 읽어 톤당 단가 계산에 쓴다"""
+    from doc_qty import qty_from_docs
+    today = now_kst().strftime("%Y-%m-%d")
+    lim = (now_kst() - timedelta(days=2)).strftime("%Y-%m-%d")
+    todo = [b for b in items.values() if b.get("src") == "나라장터" and (
+        (b.get("type") == "처리 대행" and not b.get("qty_checked")) or
+        (b.get("status") == "공고" and (b.get("open") or "9999") < lim and b.get("kind_checked") != b.get("open")))]
+    todo.sort(key=lambda b: b.get("start") or "", reverse=True)
+    n_q = n_c = 0
+    for b in todo:
+        if time.monotonic() > stop_at:
+            print(f">> [첨부 확인] 시간 한도 → 남은 {len(todo) - todo.index(b)}건은 다음 실행에서")
+            break
+        need_kind = b.get("status") == "공고" and (b.get("open") or "9999") < lim and b.get("kind_checked") != b.get("open")
+        if need_kind or not b.get("docs"):
+            ep = "Cnstwk" if b.get("kind") == "공사" else "Servc"
+            try:
+                rows = g2b(f"/ad/BidPublicInfoService/getBidPblancListInfo{ep}", {"inqryDiv": 2, "bidNtceNo": b["no"]})
+                if rows:
+                    x = max(rows, key=lambda r: r.get("bidNtceOrd") or "")
+                    b["ntce_kind"] = x.get("ntceKindNm") or b.get("ntce_kind", "")
+                    b["docs"] = docs_of(x) or b.get("docs") or []
+                    if "취소" in b["ntce_kind"] and b.get("status") != "낙찰":
+                        b["status"] = "공고취소"
+                        n_c += 1
+                if need_kind:
+                    b["kind_checked"] = b.get("open")
+            except Exception as ex:
+                print(f">> [첨부 확인] {b['no']} 조회 실패: {type(ex).__name__}: {str(ex)[:80]}")
+                continue
+        if b.get("type") == "처리 대행" and not b.get("qty_checked") and b.get("docs"):
+            q, note = qty_from_docs(b["docs"], b.get("est"))
+            b["qty_checked"] = today
+            if q:
+                b["qty_t"], b["qty_note"] = q, note
+                n_q += 1
+        time.sleep(0.2)
+    print(f">> [첨부 확인] 대상 {len(todo)}건 → 예상물량 확인 {n_q}건, 취소공고 {n_c}건")
+
+
 def collect_g2b(first, start_k=0):
     """30일 창으로 거꾸로 훑는다. 처음 모으기(400일)가 시간 한도에 걸리면 멈춘 위치(bf_k)를 저장해 다음 실행에서 이어 간다."""
     now, days = now_kst(), (400 if first else 21)
@@ -121,7 +167,8 @@ def collect_g2b(first, start_k=0):
                                     "start": (x.get("bidNtceDt") or "")[:10], "end": (x.get("bidClseDt") or "")[:10],
                                     "open": (x.get("opengDt") or "")[:10], "method": x.get("cntrctCnclsMthdNm") or "",
                                     "est": num(x.get("presmptPrce") or "") or None, "budget": num(x.get("asignBdgtAmt") or "") or None,
-                                    "status": "공고", "url": x.get("bidNtceDtlUrl") or ""}
+                                    "status": "공고취소" if "취소" in (x.get("ntceKindNm") or "") else "공고",
+                                    "ntce_kind": x.get("ntceKindNm") or "", "docs": docs_of(x), "url": x.get("bidNtceDtlUrl") or ""}
                     for x in g2b(f"/as/ScsbidInfoService/getScsbidListSttus{ep}PPSSrch", {**rng, "bidNtceNm": kw}):
                         wins[f"g2b:{x.get('bidNtceNo')}"] = x
                     fails = 0
@@ -226,6 +273,11 @@ def main():
     for k, v in g.items():
         old = items.get(k, {})
         items[k] = {**old, **v, **{f: old[f] for f in ("status", "win_amt", "win_rate", "winner", "bidders", "open") if f in old and old.get("status") == "낙찰"}}
+    if DATA_KEY:
+        try:
+            enrich(items, T0 + 22 * 60)
+        except Exception as e:
+            print(f">> [첨부 확인] 실패: {type(e).__name__}: {str(e)[:150]}")
     for k, x in wins.items():
         if k not in items:
             continue
@@ -238,6 +290,12 @@ def main():
     from collections import Counter
     print(f">> 저장: 유기성폐자원 입찰·용역·공사 {len(lst)}건 · 유형 {dict(Counter(b['type'] for b in lst))} · "
           f"폐기물 {dict(Counter(b['waste'] for b in lst))} · 낙찰 {sum(b.get('status') == '낙찰' for b in lst)}")
+    pq = [b for b in lst if b.get("qty_t")]
+    print(f">> 처리 대행 예상물량 확인 {len(pq)}건 / 확인 시도 {sum(1 for b in lst if b.get('qty_checked'))}건")
+    for b in pq[:25]:
+        wt = (b["win_amt"] / b["qty_t"] if b.get("win_amt") and b["win_amt"] > b.get("est", 0) / 500 else None)
+        print(f"   {b['city']} | {b['title'][:40]} | 추정 {b.get('est')} | {b['qty_t']:,.1f}톤 → 추정 {(b.get('est') or 0) / b['qty_t'] / 1e4:.1f}만원/톤"
+              f"{f' · 낙찰 {wt / 1e4:.1f}만원/톤' if wt else ''} | {b['qty_note'][:60]}")
     for b in lst[:40]:
         print(f"   {b['start']} {b['city']:4} | {b['type']:6} | {b['src'][:6]} | {b['org'][:14]} | {b['title'][:50]} | 추정 {b.get('est')} | {b.get('status')} {b.get('win_amt') or b.get('win_raw') or ''}")
 
