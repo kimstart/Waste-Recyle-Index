@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19 17:36",
+ "updated": "2026-10-19 17:37",
  "backfilled": true,
  "bf_k": 420,
  "items": [
@@ -1598,33 +1598,6 @@
    "qty_checked": "2026-10-19",
    "qty_t": 6000.0,
    "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(4차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및"
-  },
-  {
-   "id": "g2b:R26BK01453215",
-   "src": "나라장터",
-   "kind": "용역",
-   "no": "R26BK01453215",
-   "ord": "000",
-   "title": "[수의시담] 바이오가스 생산목표제 시행에 따른 시ㆍ군 처리 유형별 대응방안",
-   "org": "경기연구원",
-   "region": "수도권",
-   "city": "경기",
-   "type": "처리 대행",
-   "waste": "바이오가스",
-   "start": "2026-04-09",
-   "end": "2026-04-09",
-   "open": "2026-04-09",
-   "method": "수의계약",
-   "est": 20000000.0,
-   "budget": 22000000.0,
-   "status": "낙찰",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01453215&bidPbancOrd=000",
-   "win_amt": 20850000.0,
-   "win_rate": 97.703,
-   "winner": "안양대학교 산학협력단",
-   "bidders": 1,
-   "ntce_kind": "등록공고",
-   "docs": []
   },
   {
    "id": "g2b:R26BK01448821",
@@ -3500,41 +3473,6 @@
    "ntce_kind": "취소공고",
    "docs": [],
    "kind_checked": "2026-01-06"
-  },
-  {
-   "id": "g2b:R25BK01253014",
-   "src": "나라장터",
-   "kind": "용역",
-   "no": "R25BK01253014",
-   "ord": "000",
-   "title": "[수의시담] 2026년 고양바이오매스에너지시설 음식물류폐기물(중간가공폐기물) 운반처리 용역",
-   "org": "고양도시관리공사",
-   "region": "수도권",
-   "city": "고양",
-   "type": "처리 대행",
-   "waste": "음식물",
-   "start": "2025-12-30",
-   "end": "2025-12-30",
-   "open": "2025-12-30",
-   "method": "수의계약",
-   "est": 395048727.0,
-   "budget": 434553600.0,
-   "status": "낙찰",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01253014&bidPbancOrd=000",
-   "win_amt": 146450.0,
-   "win_rate": 87.623,
-   "winner": "(주)그린월드",
-   "bidders": 1,
-   "ntce_kind": "등록공고",
-   "docs": [
-    [
-     "2. 시방서(중간가공폐기물 운반처리)_(26년재공고).hwp",
-     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01253014&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
-    ]
-   ],
-   "qty_checked": "2026-10-19",
-   "qty_t": 2600.0,
-   "qty_note": "2. 시방서(중간가공폐기물 운반처리)_(26년재공고).hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 2,600톤(예정) 음식물류폐"
   },
   {
    "id": "g2b:R25BK01252852",
@@ -6301,105 +6239,6 @@
     [
      "과업지시서.hwp",
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01212997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
-    ]
-   ],
-   "qty_checked": "2026-10-19"
-  },
-  {
-   "id": "g2b:R25BK01212568",
-   "src": "나라장터",
-   "kind": "용역",
-   "no": "R25BK01212568",
-   "ord": "000",
-   "title": "[수의시담] 포천시 슬러지 유동상 소각시설 민간투자사업 관리이행계획 수립(사업추진방안 검토)",
-   "org": "경기연구원",
-   "region": "수도권",
-   "city": "포천",
-   "type": "처리 대행",
-   "waste": "하수찌꺼기·슬러지",
-   "start": "2025-12-08",
-   "end": "2025-12-10",
-   "open": "2025-12-10",
-   "method": "수의계약",
-   "est": 11818182.0,
-   "budget": 13000000.0,
-   "status": "낙찰",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01212568&bidPbancOrd=000",
-   "win_amt": 12400000.0,
-   "win_rate": 97.637,
-   "winner": "이지회계법인",
-   "bidders": 1,
-   "ntce_kind": "등록공고",
-   "docs": [
-    [
-     "과업이행요청서_포천시 슬러지 유동상 소각시설_사업추진방안 검토.hwp",
-     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01212568&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
-    ]
-   ],
-   "qty_checked": "2026-10-19"
-  },
-  {
-   "id": "g2b:R25BK01212478",
-   "src": "나라장터",
-   "kind": "용역",
-   "no": "R25BK01212478",
-   "ord": "000",
-   "title": "[수의시담] 포천시 슬러지 유동상 소각시설 민간투자사업 관리이행계획 수립(수요 추정 및 규모 적정성 검토)",
-   "org": "경기연구원",
-   "region": "수도권",
-   "city": "포천",
-   "type": "처리 대행",
-   "waste": "하수찌꺼기·슬러지",
-   "start": "2025-12-08",
-   "end": "2025-12-10",
-   "open": "2025-12-10",
-   "method": "수의계약",
-   "est": 18181818.0,
-   "budget": 20000000.0,
-   "status": "낙찰",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01212478&bidPbancOrd=000",
-   "win_amt": 19500000.0,
-   "win_rate": 98.984,
-   "winner": "주식회사 선진엔지니어링종합건축사사무소",
-   "bidders": 1,
-   "ntce_kind": "등록공고",
-   "docs": [
-    [
-     "과업이행요청서_포천시 슬러지 유동상 소각시설_수요 추정 및 규모 적정성 검토.hwp",
-     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01212478&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
-    ]
-   ],
-   "qty_checked": "2026-10-19"
-  },
-  {
-   "id": "g2b:R25BK01212301",
-   "src": "나라장터",
-   "kind": "용역",
-   "no": "R25BK01212301",
-   "ord": "000",
-   "title": "[수의시담] 포천시 슬러지 유동상 소각시설 민간투자사업 관리이행계획 수립(기술적 검토 및 비용 추정)",
-   "org": "경기연구원",
-   "region": "수도권",
-   "city": "포천",
-   "type": "처리 대행",
-   "waste": "하수찌꺼기·슬러지",
-   "start": "2025-12-08",
-   "end": "2025-12-10",
-   "open": "2025-12-10",
-   "method": "수의계약",
-   "est": 18181818.0,
-   "budget": 20000000.0,
-   "status": "낙찰",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01212301&bidPbancOrd=000",
-   "win_amt": 19500000.0,
-   "win_rate": 98.984,
-   "winner": "주식회사 레오엔지니어링",
-   "bidders": 1,
-   "ntce_kind": "등록공고",
-   "docs": [
-    [
-     "과업이행요청서_포천시 슬러지 유동상 소각시설_기술적 검토 및 비용 추정.hwp",
-     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01212301&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
     ]
    ],
    "qty_checked": "2026-10-19"
