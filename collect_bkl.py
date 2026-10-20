@@ -8,6 +8,7 @@ import io, re, time, urllib.request
 from common import load, save, now_kst
 
 OUT = "data/bkl_policy.json"
+VER = 2          # 표 읽기 방식이 바뀌면 올려서 저장된 호를 다시 읽는다
 BASE = "https://www.bkl.co.kr"
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 TITLE = re.compile(r"(\d{4})년\s*(\d{1,2})월\s*환경\s*주요\s*정책\s*동향")
@@ -126,7 +127,7 @@ def discover(st):
     nos = sorted({int(n) for n in re.findall(r"(?:newsletter/|itemNo=|goPrevNext\(')(\d{4,5})", h)}, reverse=True)
     checked = set(st.get("checked", []))
     cand = [n for n in nos if n not in checked]
-    if not st.get("backfilled") and nos:
+    if nos:          # 지난 호를 찾기 위해 최근 90개 번호를 한 번씩 확인(한 번 확인한 번호는 다시 보지 않음)
         cand += [n for n in range(nos[0] - 1, nos[0] - 90, -1) if n not in checked and n not in cand]
     return cand
 
@@ -143,7 +144,8 @@ def main():
         cand = []
     found = 0
     for no in cand:
-        if time.monotonic() - t0 > 240 or (found >= 6 and not st.get("backfilled")):
+        if time.monotonic() - t0 > 240:
+            print(">> 시간 한도 → 나머지 번호는 다음 실행에서")
             break
         try:
             title = page_title(no)
@@ -153,7 +155,7 @@ def main():
         checked.add(no)
         time.sleep(0.7)
         m = TITLE.search(title)
-        if not m or no in issues:
+        if not m or (no in issues and issues[no].get("ver") == VER):
             continue
         y, mo = int(m.group(1)), int(m.group(2))
         pdf = f"{BASE}/newsLetter/itemUrl.do?itemNo={no}"
@@ -164,7 +166,7 @@ def main():
             checked.discard(no)
             continue
         issues[no] = {"no": no, "title": f"{y}년 {mo}월 환경 주요 정책 동향", "month": f"{y}-{mo:02d}",
-                      "url": f"{BASE}/law/insight/newsletter/{no}", "pdf": pdf, "added": now_kst().strftime("%Y-%m-%d"),
+                      "url": f"{BASE}/law/insight/newsletter/{no}", "pdf": pdf, "ver": VER, "added": now_kst().strftime("%Y-%m-%d"),
                       "n_total": len(items), "items": [i for i in items if i["pages"]]}
         found += 1
         from collections import Counter
@@ -174,8 +176,9 @@ def main():
             print(f"   [{i['sec'][:4]}] {i['date']}{'~' + i['until'] if i.get('until') else ''}{' 시행 ' + i['effective'] if i.get('effective') else ''}"
                   f" | {i['field']} | {i['name'][:40]} | {i.get('by', '')[:16]} | {','.join(i['pages'])} {i['kw']}")
     lst = sorted(issues.values(), key=lambda i: i["month"], reverse=True)[:6]
-    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": True if cand or st.get("backfilled") else False,
-               "checked": sorted(checked)[-400:], "issues": lst})
+    # 읽기 방식이 바뀐 호는 다음 실행에서 다시 읽도록 확인 목록에서 뺀다
+    checked -= {i["no"] for i in lst if i.get("ver") != VER}
+    save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "checked": sorted(checked)[-400:], "issues": lst})
     print(f">> 저장: {len(lst)}개 호 ({', '.join(i['month'] for i in lst)})")
 
 
