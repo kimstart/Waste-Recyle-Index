@@ -30,12 +30,12 @@ def text(h):
     return re.sub(r"[ \t\xa0]+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
 
-def gist(t, n=160):
+def gist(t, n=180):
     """결론 문장('이에 …하려는 것임') 우선, 없으면 첫 문장"""
     t = re.sub(r"\s+", " ", t or "").strip()
     t = re.sub(r"^(?:[◇□○ㅇ]\s*)?(?:제안이유|(?:제·?)?개정\s*이유|제정\s*이유|추진\s*배경)?\s*(?:및\s*주요\s*내용)?\s*[:：]?\s*", "", t)
     t = re.sub(r"\((?:안\s*)?제\d+조[^)]*\)", "", t)                       # '(안 제14조)' 같은 조문 표시 제거
-    sents = [x.strip(" ㅇ○-·*") for x in re.split(r"(?<=것임)\.?\s*|(?<=[다함음])\.\s+", t) if len(x.strip()) > 15]
+    sents = [x.strip(" ㅇ○-·*") for x in re.split(r"(?<=것임)\.?\s*|(?<=[다함음임됨])\.\s+", t) if len(x.strip()) > 15]
     def score(x):
         v = 0
         if re.match(r"이에\s|따라서\s", x): v += 3                                   # 결론 문장
@@ -44,7 +44,14 @@ def gist(t, n=160):
         if re.search(r"(?:있음|있다|실정임|실정이다|필요가\s*있다|필요함)$", x): v -= 1
         return v
     s = max(sents, key=lambda x: (score(x), -sents.index(x))) if sents else ""
+    # '이와 같은 의견을 반영하여 미비점을 개선…' 처럼 내용 없는 결론이면 가장 구체적인(긴) 앞 문장을 쓴다
+    if re.search(r"이와\s*같은|미비점을\s*(?:개선|보완)|위와\s*같은", s) and len(sents) > 1:
+        s = max((x for x in sents if x is not s), key=len)
     s = re.sub(r"^이에\s*(?:따라|따라서)?\s*,?\s*", "", s).strip()
+    if "함으로써" in s and len(s) > 90:                     # '…하도록 함으로써 …에 기여하려는 것임' → 앞부분(무엇을 바꾸는지)만
+        base = s.split("함으로써")[0]
+        s = base.rstrip(" ,") + (" 함" if base.endswith(" ") else "함")
+    s = re.sub(r"\s*하려는\s*것임$", "하려는 것", s)
     return s if len(s) <= n else s[:n - 1].rstrip() + "…"
 
 
