@@ -132,7 +132,14 @@
    "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89078?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOpnYn=N&btnType=1"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-20",
+   "type": "입법예고",
+   "title": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 시행규칙 일부개정령안 입법예고",
+   "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89078?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOpnYn=N&btnType=1"
+  }
+ ],
  "board_seen": [
   "68:89078"
  ]

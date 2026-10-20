@@ -88,7 +88,7 @@ def watch_laws(state, watch_file):
 
 def watch_boards(state, kw):
     seen = set(state.get("board_seen", []))
-    first = not seen
+    first = "board_seen" not in state       # 저장된 상태가 아예 없을 때만 알림 없이 기록
     posts, events = [], []
     for label, mid in BOARDS:
         if mid not in _BOARD_HTML:      # 게시판은 한 번만 받아 두 화면이 같이 쓴다

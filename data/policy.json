@@ -176,7 +176,14 @@
    "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89024?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOpnYn=N&btnType=1"
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-20",
+   "type": "입법예고",
+   "title": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙 일부개정령안 입법예고",
+   "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89024?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOpnYn=N&btnType=1"
+  }
+ ],
  "board_seen": [
   "68:89024"
  ]
