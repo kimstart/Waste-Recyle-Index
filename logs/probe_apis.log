@@ -1,59 +1,14 @@
-curl 401 0.657977s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 5.943524s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.627938s https://www.re.or.kr/
-scripts: ['/bill/static/assets/axios/axios.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.min.js?ver=2.2.0', '/bill/static/assets/jquery/ui/jquery-ui.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.serializeObject.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.form.min.js?ver=2.2.0', '/bill/static/assets/etc/lodash.min.js?ver=2.2.0', '/bill/static/assets/etc/moment-with-locales.min.js?ver=2.2.0', '/bill/static/assets/etc/moment-lunar.min.js?ver=2.2.0', '@{/static/assets/etc/bluebird.min.js(ver=${libVersion})}', '/bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=2.2.0', '/bill/static/js/common/common.js?ver=2.2.0', '/bill/static/js/common/commonHelpUtil.js?ver=2.2.0', '/bill/static/js/common/commonStrUtil.js?ver=2.2.0', '/bill/static/js/common/commonSheetUtil.js?ver=2.2.0', '/bill/static/js/common/commonChartUtil.js?ver=2.2.0', '/bill/static/js/common/commonCalendarUtil.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.fileDownload.js?ver=2.2.0', '/bill/static/assets/jquery/bxslider/jquery.bxslider.js?ver=2.2.0', '/bill/static/js/bi/common.js?ver=2.2.0', '/bill/static/js/common/commonStrUtil.js?ver=2.2.0', '/bill/static/js/bi/biInit.js?ver=2.2.0', '/bill/static/js/bi/navigation.js?ver=2.2.0', '/bill/static/assets/etc/clipboard.min.js?ver=2.2.0', '/bill/static/assets/jquery/sns/kakao.js?ver=2.2.0', '/bill/static/assets/flatpickr/flatpickr.min.js?ver=2.2.0', '/bill/static/assets/flatpickr/l10n/ko.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-html.min.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-common.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-config-likmsassembly.js?ver=2.2.0', '/bill/static/assets/canvas/html2canvas.min.js']
-inline url들: ['/bi/common/findBillDetail.do', '/bi/common/selectUserFavoriteMenuList.do', '/bi/mobile/myContentsHistory.do', '/bi/nacms/mypage/updateMyFavoriteMenu.do', '/bi/user/ssoLoginPage.do']
-   /bill/static/assets/axios/axios.min.js?ver=2.2.0 53986 []
-   /bill/static/assets/jquery/jquery.min.js?ver=2.2.0 89476 []
-   /bill/static/assets/jquery/ui/jquery-ui.min.js?ver=2.2.0 256157 []
-   /bill/static/assets/jquery/jquery.serializeObject.min.js?ver=2.2.0 230 []
-   /bill/static/assets/jquery/jquery.form.min.js?ver=2.2.0 17108 []
-   /bill/static/assets/etc/lodash.min.js?ver=2.2.0 73015 []
-   /bill/static/assets/etc/moment-with-locales.min.js?ver=2.2.0 369019 []
-   /bill/static/assets/etc/moment-lunar.min.js?ver=2.2.0 4439 []
-   /bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=2.2.0 143046 []
-   /bill/static/js/common/common.js?ver=2.2.0 3920 []
-   /bill/static/js/common/commonHelpUtil.js?ver=2.2.0 38096 ['/portal/login/loginPage.do']
-   /bill/static/js/common/commonStrUtil.js?ver=2.2.0 49105 []
-   /bill/static/js/common/commonSheetUtil.js?ver=2.2.0 37538 ['/portal/excel/bill/directDown2excel.do', '/portal/excel/law/directDown2excel.do', '/portal/excel/pvn/directDown2excel.do']
-   /bill/static/js/common/commonChartUtil.js?ver=2.2.0 2410 []
-   /bill/static/js/common/commonCalendarUtil.js?ver=2.2.0 2956 []
-   /bill/static/assets/jquery/jquery.fileDownload.js?ver=2.2.0 20939 []
-   /bill/static/assets/jquery/bxslider/jquery.bxslider.js?ver=2.2.0 65221 []
-   /bill/static/js/bi/common.js?ver=2.2.0 40555 ['/bi/common/preview/pdfPreview.do', '/bi/common/selectComCd.do', '/bi/excel/chkExcelCnt.do', '/bi/excel/excelDownload.do', '/bi/nacms/mypage/updateMyFavoriteMenu.do', '/bi/user/ssoLoginPage.do', '/bill/bi/dwld/bndlDwld.do']
-   /bill/static/js/common/commonStrUtil.js?ver=2.2.0 49105 []
-   /bill/static/js/bi/biInit.js?ver=2.2.0 4991 []
-   /bill/static/js/bi/navigation.js?ver=2.2.0 67504 ['/bi/bill/sch/checkSameNm.do', '/bi/bill/sch/findAgeCmt.do', '/bi/intro/saveSatis.do', '/bi/petit/findPetitAgeCmt.do', '/bi/popup/GlossPop.do', '/bi/popup/abbrvtnLawNm.do', '/bi/popup/agePeriod.do', '/bi/popup/assmMemb.do', '/bi/popup/assmMembSameName.do', '/bi/popup/billProposer.do', '/bi/popup/billSummary.do', '/bi/popup/billWithdraw.do', '/bi/popup/gnStatsPop.do', '/bi/popup/helpPop.do', '/bi/popup/selSameNmMemb.do', '/bi/popup/sessionPeriod.do', '/bi/popup/visualComt.do']
-   /bill/static/assets/etc/clipboard.min.js?ver=2.2.0 10675 []
-   /bill/static/assets/jquery/sns/kakao.js?ver=2.2.0 243778 []
-   /bill/static/assets/flatpickr/flatpickr.min.js?ver=2.2.0 50679 []
-   /bill/static/assets/flatpickr/l10n/ko.js?ver=2.2.0 1636 []
-   /bill/EDotXPressHtml/js/edotxpress-html.min.js?ver=2.2.0 114544 []
-   /bill/EDotXPressHtml/js/edotxpress-common.js?ver=2.2.0 4258 []
-   /bill/EDotXPressHtml/js/edotxpress-config-likmsassembly.js?ver=2.2.0 5758 []
-   /bill/static/assets/canvas/html2canvas.min.js 197782 []
-   /bill/static/assets/charts/highcharts.js 277577 []
-   /bill/static/assets/charts/highcharts-more.js 94680 []
-   /bill/static/assets/charts/modules/exporting.js 19683 []
-   /bill/static/assets/charts/modules/offline-exporting.js 26968 []
-   /bill/static/assets/charts/modules/data.js 16646 []
-   /bill/static/assets/charts/modules/accessibility.js 135219 []
-   /bill/static/assets/charts/modules/heatmap.js 19406 []
-   /bill/static/assets/charts/modules/treemap.js 28662 []
-   /bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=1.0.0 143046 []
-   /bill/static/js/bi/bill/billDetail.js?ver=1.0.0 30029 ['/bi/bill/detail/confInfoList.do', '/bi/bill/detail/interestBill.do', '/bi/bill/sch/detailedSchPage.do', '/bi/bill/sch/sentenceSchPage.do', '/bi/bill/state/beforeProposePage.do', '/bi/bill/state/discardPop.do', '/bi/bill/state/finishBillPage.do', '/bi/bill/state/mooringBillPage.do', '/bi/bill/state/suggestBillPage.do', '/bi/dwld/docBndlDwldPage.do', '/bi/nacms/mypage/bill/myPage.do', '/bi/petit/petitSchPage.do', '/bi/petit/petitStatePage.do']
-/bill/summaryPopup.do 실패 HTTPError HTTP Error 404: Not Found
-/bill/bi/popup/summaryPopup.do 실패 HTTPError HTTP Error 404: Not Found
-/bill/bi/bill/detail/summary.json 실패 HTTPError HTTP Error 404: Not Found
-/bill/bi/bill/detail/billSummary.do 실패 HTTPError HTTP Error 404: Not Found
-BILLINFODETAIL {"BILLINFODETAIL":[{"head":[{"list_total_count":1},{"RESULT":{"CODE":"INFO-000","MESSAGE":"정상 처리되었습니다."}}]},{"row":[{"BILL_ID":"PRC_2CE1D6BED1FC48AF8E69CB92893E04","BILL_NO":"2221764","BILL_NM":"폐기물관리법 일부개정법률안","PPSR_KIND":"의원","PPSR":"윤준병의원 등 12인","PPSL_DT":"2026-10-02","PPSL_SESS":"439","JRCMIT_NM":"기후에너지환경노동위원회","JRCMIT_CMMT_DT":"2026-10-06","JRCMIT_PRSNT_DT":null,"JRCMIT_PROC_DT":null,"JRCMIT_
-TVBPMBILL11 {"RESULT":{"CODE":"ERROR-300","MESSAGE":"필수 값이 누락되어 있습니다. 요청인자를 참고 하십시오."}}
-BPMBILLSUMMARY {"RESULT":{"CODE":"ERROR-300","MESSAGE":"필수 값이 누락되어 있습니다. 요청인자를 참고 하십시오."}}
-Traceback (most recent call last):
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 40, in <module>
-    print(f"\nnw={nw}:", [(r.get("공포일자"), r.get("시행일자"), r.get("현행연혁코드"), r.get("법령일련번호")) for r in (json.loads(s).get("LawSearch", {}).get("law") or [])][:8] if s.strip().startswith("{") else s[:200].replace(LAW, "<KEY>"))
-                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 40, in <listcomp>
-    print(f"\nnw={nw}:", [(r.get("공포일자"), r.get("시행일자"), r.get("현행연혁코드"), r.get("법령일련번호")) for r in (json.loads(s).get("LawSearch", {}).get("law") or [])][:8] if s.strip().startswith("{") else s[:200].replace(LAW, "<KEY>"))
-                           ^^^^^
-AttributeError: 'str' object has no attribute 'get'
+curl 401 1.007022s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 5.241294s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.809965s https://www.re.or.kr/
+/bill/bi/popup/billSummary.do GET 11302 제안이유 및 주요내용 창닫기 [2221764] 폐기물관리법 일부개정법률안 <em onclick="Navigation.bill.popup.billProposer({billId: &#39;PRC_2CE1D6BED1FC48AF8E69CB92893E04&#39;, billNo: &#39;2221764&#39;, billName: &#39;\uD3D0\uAE30\uBB3C\uAD00\uB9AC\uBC95 \uC77C\uBD80\uAC1C\uC815\uBC95\uB960\uC548&#39;, info: &#39;\uC724\uC900\uBCD1\uC758\uC6D0 \uB4F1 12\uC778&#39;, callPop: 
+/bill/bi/popup/billSummary.do POST 11302 제안이유 및 주요내용 창닫기 [2221764] 폐기물관리법 일부개정법률안 <em onclick="Navigation.bill.popup.billProposer({billId: &#39;PRC_2CE1D6BED1FC48AF8E69CB92893E04&#39;, billNo: &#39;2221764&#39;, billName: &#39;\uD3D0\uAE30\uBB3C\uAD00\uB9AC\uBC95 \uC77C\uBD80\uAC1C\uC815\uBC95\uB960\uC548&#39;, info: &#39;\uC724\uC900\uBCD1\uC758\uC6D0 \uB4F1 12\uC778&#39;, callPop: 
+/bi/popup/billSummary.do GET 375 제안이유 없음: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <html> <head> <title>ȸý</title> <meta http-equiv="Content-Type" content="text/html; charset=euc-kr"> </head> <center> <body background="
+/bi/popup/billSummary.do POST 실패 HTTPError HTTP Error 307: Temporary Redirect
+BILLINFODETAIL 키: ['BILL_ID', 'BILL_NO', 'BILL_NM', 'PPSR_KIND', 'PPSR', 'PPSL_DT', 'PPSL_SESS', 'JRCMIT_NM', 'JRCMIT_CMMT_DT', 'JRCMIT_PRSNT_DT', 'JRCMIT_PROC_DT', 'JRCMIT_PROC_RSLT', 'LAW_CMMT_DT', 'LAW_PRSNT_DT', 'LAW_PROC_DT', 'LAW_PROC_RSLT', 'RGS_PRSNT_DT', 'RGS_RSLN_DT', 'RGS_CONF_NM', 'RGS_CONF_RSLT', 'GVRN_TRSF_DT', 'PROM_LAW_NM', 'PROM_DT', 'PROM_NO']
+
+nw=2: [('20260915', '20270316', '시행예정', '289779')]
+
+nw=1: [('20260915', '20270316', '시행예정', '289779'), ('20251001', '20251001', '현행', '276799'), ('20260407', '20260407', '현행', '285285')]
+
+행정예고 상세:  전자메일 magicnoja@korea.kr ⊙기후에너지환경부공고제2026-886호 &nbsp; 「재활용가능자원의 분리수거 등에 관한 지침」(기후에너지환경부훈령 제18호, 2026. 1. 1.)을 일부개정함에 있어 행정절차법 제46조에 따라 국민에게 미리 알려 의견을 듣고자 그 취지와 주요내용을 다음과 같이 공고합니다. 2026년 1월 1일 기후에너지환경부장관 &nbsp; &nbsp; 재활용가능자원의 분리수거 등에 관한 지침 일부개정훈령안 행정예고 &nbsp; &nbsp; 1. 개정이유 &nbsp; 중앙정부-지자체 간 분리수거 기준 정합성을 확보하고, 공동주택 종이팩 분리배출 제도
