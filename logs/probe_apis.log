@@ -1,91 +1,59 @@
-curl 401 1.003098s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 15.628668s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.310734s https://www.re.or.kr/
-제안이유 위치: []
-ajax/url 후보: ['/bill/bi/annRpt/annRptPage.do', '/bill/bi/bill/detail/downloadDtlZip.do', '/bill/bi/bill/sch/detailedSchPage.do', '/bill/bi/bill/sch/sentenceSchPage.do', '/bill/bi/bill/state/beforeProposePage.do', '/bill/bi/bill/state/finishBillPage.do', '/bill/bi/bill/state/mooringBillPage.do', '/bill/bi/bill/state/suggestBillPage.do', '/bill/bi/bill/state/voteInfoMemPage.do', '/bill/bi/bill/state/voteInfoSchPage.do', '/bill/bi/bod/nacms/BILL3001/bodListPage.do', '/bill/bi/dwld/docBndlDwldPage.do', '/bill/bi/globalSch/searchPage.do', '/bill/bi/intro/billItroPage.do', '/bill/bi/intro/serviceIntroPage.do', '/bill/bi/intro/siteMapPage.do', '/bill/bi/nafs/bdgPage.do', '/bill/bi/nafs/nafsInfoPage.do', '/bill/bi/nafs/relSttu/relSttuPage.do', '/bill/bi/nafs/stats/inscHstPage.do', '/bill/bi/nafs/stats/nafsStatsPage.do', '/bill/bi/petit/petitContentPage.do', '/bill/bi/petit/petitSchPage.do', '/bill/bi/petit/petitStatPage.do', '/bill/bi/petit/petitStatePage.do', '/bill/bi/petit/petitVisualMstPage.do', '/bill/bi/stats/gnStatsPage.do', '/bill/bi/stats/visual/visualMstPage.do', '/bill/bi/user/ssoLoginPage.do']
-
-법령검색: {"LawSearch": {
-    "law": [
-        {
-            "현행연혁코드": "현행",
-            "법령일련번호": "276799",
-            "자법타법여부": "",
-            "법령상세링크": "/DRF/lawService.do?OC=<KEY>&target=law&MST=276799&type=HTML&mobileYn=&efYd=20251001",
-            "법령명한글": "폐기물의 국가 간 이동 및 그 처리에 관한 법률",
-            "법령구분명": "법률",
-            "소관부처명": "기후에너지환경부",
-            "공포번호": "21065",
-            "제개정구분명": "타법개정",
-            "소관부처코드": "1482000",
-            "id": "1",
-            "법령ID": "000154",
-            "공동부령정보": "",
-            "시행일자": "20251001",
-            "공포일자": "20251001",
-            "법령약칭명": "폐기물국가간이동법"
-        },
-        {
-            "현행연혁코드": "현행",
-            "법령일련번호": "285285",
-법령본문 태그: ['개정문', '개정문내용', '공동부령정보', '공포번호', '공포법령여부', '공포일자', '기본정보', '목', '목내용', '목번호', '법령명약칭', '별표편집여부', '부서명', '부서연락처', '부칙', '부칙공포번호', '부칙공포일자', '부칙내용', '생략', '소관부처명', '소관부처코드', '시행일자', '언어', '연락부서', '전화번호', '제개정구분', '제개정이유', '제개정이유내용', '제명변경여부', '조문', '조문가지번호', '조문내용', '조문번호', '조문변경여부', '조문시행일자', '조문여부', '조문이동이전', '조문이동이후', '조문제개정유형', '조문제개정일자문자열', '조문제목', '조문참고자료', '편장절관', '한글법령여부', '항', '항내용', '항번호', '항제개정유형', '항제개정일자문자열', '호']
-  제개정이유내용:  [일부개정] ◇ 개정이유 특정 부처에 집중된 기능과 권한을 분산ㆍ재배치하여 권한 집중에 관한 우려를 해소하고 업무 고유의 전문성을 강화하며, 기후위기 및 인공지능 대전환 등 행정환경의 변화에 능동적으로 대응할 수 있도록 정부 조직 체계를 재설계하고, 과학기술ㆍ인공지능 분야와 국가 데이터 및 지식재산 행정의 역량을 강화하기 위하여 부총리제 및 국무총리 소속 부처 체계를 재조정하며, 성평등 정책 및 산업안전보건 정책을 적극적으로 추진할 수 있도록 정부 기능을 강화하려는 것임. ◇ 주요내용 가. 방송통신위원회를 폐지하고, 방송미디어통신위원회를 신설하며, 과학기술정보통신부가 수행하고 있는 방송 진흥에 관한 사무를 방송미디어통신위원회로 이관함(제2조제2항제1호 및 제31조). 나. 경제정책, 과학기술 및 인공지능 정책을 총괄ㆍ조정하기 위하여 부총리 2명을 두고, 재정경제부장관과 과학기술정보통신부장관이 각각 겸임하도록 하되, 교육부장관이 겸임하는 부총리를 폐지함(제19조). 다. 예산 및 경제 기능 간 상호 견제와 균형을 확보하고 각 기능의 전문성을 강화하기 위하여 기획재정부를 국무총리 소속의 기획예산처와 재정경제부로 분리함(제23조 신설, 제30조). 라. 통계청 및 특허청을 국무총리 소속의 국가데이터처 및 지식재산처로 각각 격상함(제27조ㆍ제28조 신설). 마. 부총리 및 행정각부 개편에 따른 행정각부 순서를 조정하고, 기후에너지환경부 및
-
-행정규칙검색: {"AdmRulSearch": {
-    "resultMsg": "success",
-    "키워드": "공급의무화제도",
-    "page": "1",
-    "resultCode": "00",
-    "target": "admrul",
-    "admrul": {
-        "현행연혁구분": "현행",
-        "행정규칙명": "재생에너지 공급의무화제도 및 연료 혼합의무화제도 관리ㆍ운영지침",
-        "발령일자": "20260918",
-        "행정규칙종류": "고시",
-        "소관부처명": "기후에너지환경부",
-        "제개정구분코드": "200403",
-        "행정규칙상세링크": "/DRF/lawService.do?OC=<KEY>&target=admrul&ID=2100000285272&type=HTML&mobileYn=",
-        "제개정구분명": "일부개정",
-        "id": "1",
-        "생성일자": "20260921",
-        "행정규칙ID": "2044168",
-        "시행일자": "20260918",
-        "발령번호": "2026-
-행정규칙 태그: ['담당부서기관명', '담당부서기관코드', '담당자명', '발령번호', '발령일자', '별표', '별표가지번호', '별표구분', '별표내용', '별표번호', '별표서식파일링크', '별표제목', '부칙', '부칙공포번호', '부칙공포일자', '삭제', '상위부처명', '생성일자', '소관부처명', '소관부처코드', '시행일자', '전화번호', '제개정구분명', '제개정구분코드', '제개정이유', '제개정이유내용', '조문내용', '조문형식여부', '첨부파일', '첨부파일링크', '첨부파일명', '행정규칙기본정보', '행정규칙명', '행정규칙일련번호', '행정규칙종류', '행정규칙종류코드', '현행여부']
-  제개정이유:  <제개정이유내용> <![CDATA[◇ 추진 배경]]> <![CDATA[]]> <![CDATA[ ㅇ 기존 신재생에너지법이 재생에너지법과 수소법으로 분법되어, 재생에너지법(‘26.3.17), 시행령(‘26.8.18), 시행규칙(‘26.8.27)이 개정됨에 따라 법령의 개정내용을 반영하여 제명 변경 및 신에너지와 관련된 사항을 제외하여 정비하려는 것임]]> <![CDATA[]]> <![CDATA[ * 제외되는 신에너지 관련 내용은 ‘수소법’ 및 수소법 하위법령으로 이관 ]]> <![CDATA[]]> <![CDATA[]]> <![CDATA[]]> <![CDATA[◇ 개정 내용]]> <![CDATA[]]> <![CDATA[ ㅇ 제명을「재생에너지 공급의무화제도 및 연료혼합의무화제도 관리ㆍ운영 지침」으로 변경(제명안)]]> <![CDATA[]]> <![CDATA[ ㅇ 조문 내 신에너지 용어 모두 삭제(안 제1조~제17조)]]> <![CDATA[]]> <![CDATA[ ㅇ 기관 등의 명칭을 ‘재
-
-행정예고 분리/선별 글: 재활용가능자원의 분리수거 등에 관한 지침 일부개정훈령안 행정예고 이동
+curl 401 0.657977s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 5.943524s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.627938s https://www.re.or.kr/
+scripts: ['/bill/static/assets/axios/axios.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.min.js?ver=2.2.0', '/bill/static/assets/jquery/ui/jquery-ui.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.serializeObject.min.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.form.min.js?ver=2.2.0', '/bill/static/assets/etc/lodash.min.js?ver=2.2.0', '/bill/static/assets/etc/moment-with-locales.min.js?ver=2.2.0', '/bill/static/assets/etc/moment-lunar.min.js?ver=2.2.0', '@{/static/assets/etc/bluebird.min.js(ver=${libVersion})}', '/bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=2.2.0', '/bill/static/js/common/common.js?ver=2.2.0', '/bill/static/js/common/commonHelpUtil.js?ver=2.2.0', '/bill/static/js/common/commonStrUtil.js?ver=2.2.0', '/bill/static/js/common/commonSheetUtil.js?ver=2.2.0', '/bill/static/js/common/commonChartUtil.js?ver=2.2.0', '/bill/static/js/common/commonCalendarUtil.js?ver=2.2.0', '/bill/static/assets/jquery/jquery.fileDownload.js?ver=2.2.0', '/bill/static/assets/jquery/bxslider/jquery.bxslider.js?ver=2.2.0', '/bill/static/js/bi/common.js?ver=2.2.0', '/bill/static/js/common/commonStrUtil.js?ver=2.2.0', '/bill/static/js/bi/biInit.js?ver=2.2.0', '/bill/static/js/bi/navigation.js?ver=2.2.0', '/bill/static/assets/etc/clipboard.min.js?ver=2.2.0', '/bill/static/assets/jquery/sns/kakao.js?ver=2.2.0', '/bill/static/assets/flatpickr/flatpickr.min.js?ver=2.2.0', '/bill/static/assets/flatpickr/l10n/ko.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-html.min.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-common.js?ver=2.2.0', '/bill/EDotXPressHtml/js/edotxpress-config-likmsassembly.js?ver=2.2.0', '/bill/static/assets/canvas/html2canvas.min.js']
+inline url들: ['/bi/common/findBillDetail.do', '/bi/common/selectUserFavoriteMenuList.do', '/bi/mobile/myContentsHistory.do', '/bi/nacms/mypage/updateMyFavoriteMenu.do', '/bi/user/ssoLoginPage.do']
+   /bill/static/assets/axios/axios.min.js?ver=2.2.0 53986 []
+   /bill/static/assets/jquery/jquery.min.js?ver=2.2.0 89476 []
+   /bill/static/assets/jquery/ui/jquery-ui.min.js?ver=2.2.0 256157 []
+   /bill/static/assets/jquery/jquery.serializeObject.min.js?ver=2.2.0 230 []
+   /bill/static/assets/jquery/jquery.form.min.js?ver=2.2.0 17108 []
+   /bill/static/assets/etc/lodash.min.js?ver=2.2.0 73015 []
+   /bill/static/assets/etc/moment-with-locales.min.js?ver=2.2.0 369019 []
+   /bill/static/assets/etc/moment-lunar.min.js?ver=2.2.0 4439 []
+   /bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=2.2.0 143046 []
+   /bill/static/js/common/common.js?ver=2.2.0 3920 []
+   /bill/static/js/common/commonHelpUtil.js?ver=2.2.0 38096 ['/portal/login/loginPage.do']
+   /bill/static/js/common/commonStrUtil.js?ver=2.2.0 49105 []
+   /bill/static/js/common/commonSheetUtil.js?ver=2.2.0 37538 ['/portal/excel/bill/directDown2excel.do', '/portal/excel/law/directDown2excel.do', '/portal/excel/pvn/directDown2excel.do']
+   /bill/static/js/common/commonChartUtil.js?ver=2.2.0 2410 []
+   /bill/static/js/common/commonCalendarUtil.js?ver=2.2.0 2956 []
+   /bill/static/assets/jquery/jquery.fileDownload.js?ver=2.2.0 20939 []
+   /bill/static/assets/jquery/bxslider/jquery.bxslider.js?ver=2.2.0 65221 []
+   /bill/static/js/bi/common.js?ver=2.2.0 40555 ['/bi/common/preview/pdfPreview.do', '/bi/common/selectComCd.do', '/bi/excel/chkExcelCnt.do', '/bi/excel/excelDownload.do', '/bi/nacms/mypage/updateMyFavoriteMenu.do', '/bi/user/ssoLoginPage.do', '/bill/bi/dwld/bndlDwld.do']
+   /bill/static/js/common/commonStrUtil.js?ver=2.2.0 49105 []
+   /bill/static/js/bi/biInit.js?ver=2.2.0 4991 []
+   /bill/static/js/bi/navigation.js?ver=2.2.0 67504 ['/bi/bill/sch/checkSameNm.do', '/bi/bill/sch/findAgeCmt.do', '/bi/intro/saveSatis.do', '/bi/petit/findPetitAgeCmt.do', '/bi/popup/GlossPop.do', '/bi/popup/abbrvtnLawNm.do', '/bi/popup/agePeriod.do', '/bi/popup/assmMemb.do', '/bi/popup/assmMembSameName.do', '/bi/popup/billProposer.do', '/bi/popup/billSummary.do', '/bi/popup/billWithdraw.do', '/bi/popup/gnStatsPop.do', '/bi/popup/helpPop.do', '/bi/popup/selSameNmMemb.do', '/bi/popup/sessionPeriod.do', '/bi/popup/visualComt.do']
+   /bill/static/assets/etc/clipboard.min.js?ver=2.2.0 10675 []
+   /bill/static/assets/jquery/sns/kakao.js?ver=2.2.0 243778 []
+   /bill/static/assets/flatpickr/flatpickr.min.js?ver=2.2.0 50679 []
+   /bill/static/assets/flatpickr/l10n/ko.js?ver=2.2.0 1636 []
+   /bill/EDotXPressHtml/js/edotxpress-html.min.js?ver=2.2.0 114544 []
+   /bill/EDotXPressHtml/js/edotxpress-common.js?ver=2.2.0 4258 []
+   /bill/EDotXPressHtml/js/edotxpress-config-likmsassembly.js?ver=2.2.0 5758 []
+   /bill/static/assets/canvas/html2canvas.min.js 197782 []
+   /bill/static/assets/charts/highcharts.js 277577 []
+   /bill/static/assets/charts/highcharts-more.js 94680 []
+   /bill/static/assets/charts/modules/exporting.js 19683 []
+   /bill/static/assets/charts/modules/offline-exporting.js 26968 []
+   /bill/static/assets/charts/modules/data.js 16646 []
+   /bill/static/assets/charts/modules/accessibility.js 135219 []
+   /bill/static/assets/charts/modules/heatmap.js 19406 []
+   /bill/static/assets/charts/modules/treemap.js 28662 []
+   /bill/static/assets/jquery/swiper/swiper-bundle.min.js?ver=1.0.0 143046 []
+   /bill/static/js/bi/bill/billDetail.js?ver=1.0.0 30029 ['/bi/bill/detail/confInfoList.do', '/bi/bill/detail/interestBill.do', '/bi/bill/sch/detailedSchPage.do', '/bi/bill/sch/sentenceSchPage.do', '/bi/bill/state/beforeProposePage.do', '/bi/bill/state/discardPop.do', '/bi/bill/state/finishBillPage.do', '/bi/bill/state/mooringBillPage.do', '/bi/bill/state/suggestBillPage.do', '/bi/dwld/docBndlDwldPage.do', '/bi/nacms/mypage/bill/myPage.do', '/bi/petit/petitSchPage.do', '/bi/petit/petitStatePage.do']
+/bill/summaryPopup.do 실패 HTTPError HTTP Error 404: Not Found
+/bill/bi/popup/summaryPopup.do 실패 HTTPError HTTP Error 404: Not Found
+/bill/bi/bill/detail/summary.json 실패 HTTPError HTTP Error 404: Not Found
+/bill/bi/bill/detail/billSummary.do 실패 HTTPError HTTP Error 404: Not Found
+BILLINFODETAIL {"BILLINFODETAIL":[{"head":[{"list_total_count":1},{"RESULT":{"CODE":"INFO-000","MESSAGE":"정상 처리되었습니다."}}]},{"row":[{"BILL_ID":"PRC_2CE1D6BED1FC48AF8E69CB92893E04","BILL_NO":"2221764","BILL_NM":"폐기물관리법 일부개정법률안","PPSR_KIND":"의원","PPSR":"윤준병의원 등 12인","PPSL_DT":"2026-10-02","PPSL_SESS":"439","JRCMIT_NM":"기후에너지환경노동위원회","JRCMIT_CMMT_DT":"2026-10-06","JRCMIT_PRSNT_DT":null,"JRCMIT_PROC_DT":null,"JRCMIT_
+TVBPMBILL11 {"RESULT":{"CODE":"ERROR-300","MESSAGE":"필수 값이 누락되어 있습니다. 요청인자를 참고 하십시오."}}
+BPMBILLSUMMARY {"RESULT":{"CODE":"ERROR-300","MESSAGE":"필수 값이 누락되어 있습니다. 요청인자를 참고 하십시오."}}
 Traceback (most recent call last):
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 41, in <module>
-    d = get(u)
-        ^^^^^^
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 6, in get
-    with urllib.request.urlopen(urllib.request.Request(u, data=data, headers={**H, **(hdr or {})}), timeout=40) as r:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 519, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 536, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1404, in https_open
-    return self.do_open(http.client.HTTPSConnection, req,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1361, in do_open
-    h.request(req.get_method(), req.selector, req.data, headers,
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1351, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1362, in _send_request
-    self.putrequest(method, url, **skips)
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1200, in putrequest
-    self._output(self._encode_request(request))
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1280, in _encode_request
-    return request.encode('ascii')
-           ^^^^^^^^^^^^^^^^^^^^^^^
-UnicodeEncodeError: 'ascii' codec can't encode characters in position 82-89: ordinal not in range(128)
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 40, in <module>
+    print(f"\nnw={nw}:", [(r.get("공포일자"), r.get("시행일자"), r.get("현행연혁코드"), r.get("법령일련번호")) for r in (json.loads(s).get("LawSearch", {}).get("law") or [])][:8] if s.strip().startswith("{") else s[:200].replace(LAW, "<KEY>"))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 40, in <listcomp>
+    print(f"\nnw={nw}:", [(r.get("공포일자"), r.get("시행일자"), r.get("현행연혁코드"), r.get("법령일련번호")) for r in (json.loads(s).get("LawSearch", {}).get("law") or [])][:8] if s.strip().startswith("{") else s[:200].replace(LAW, "<KEY>"))
+                           ^^^^^
+AttributeError: 'str' object has no attribute 'get'
