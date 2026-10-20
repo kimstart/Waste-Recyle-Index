@@ -137,6 +137,8 @@ table.pol td a { color:var(--navy2); }
 .bkl-iss { font-size:13px; margin:6px 0; color:#334155; } .bkl-iss a { color:var(--navy2); }
 table.pol.bkl td { font-size:12.5px; } .nw { white-space:nowrap; }
 .bkl-old { margin:8px 0; font-size:13px; } .bkl-old summary { cursor:pointer; color:var(--navy2); }
+table.pol tr.trend td { background:#f7fafd; } table.pol tr.trend td.h-m { color:var(--navy2); font-weight:700; }
+#bklNote a { color:var(--navy2); }
 ul.plain { margin:4px 0 0; padding-left:18px; font-size:13px; line-height:1.7; color:#334155; }
 ul.plain a { color:#0f172a; } ul.plain small { color:var(--mute); }
 /* 카테고리 묶음 (해외·참고) */
