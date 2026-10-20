@@ -1,12 +1,19 @@
 {
- "updated": "2026-10-20 10:07",
+ "updated": "2026-10-20 20:52",
  "domestic": [
+  {
+   "title": "수도권 생활폐기물 직매립 금지…바이오가스 생산목표제 확대",
+   "source": "에너지프로슈머",
+   "link": "https://www.energyprosumer.info/6600",
+   "pub": "2026-10-20 07:42",
+   "more": 0
+  },
   {
    "title": "영주시, 통합바이오가스 생산시설 구축사업 선정···국비 284억원 확보",
    "source": "대구신문",
    "link": "https://www.idaegu.co.kr/news/articleView.html?idxno=562643",
    "pub": "2026-10-19 14:36",
-   "more": 1,
+   "more": 0,
    "summary": "영주시가 유기성 폐자원을 활용한 에너지 생산 기반 확충에 나선다. 시는 2027년부터 2030년까지 4년간 적서로 131 일원에 총사업비 284억900만원을 투입한다. 국비 142억400만원을 비롯해 도비 42억6천100만원, 시비 99억4천400만원이 투입되며 기존 바이오가스 생산시설 개선과 생산 기반 확충이 이뤄진다."
   },
   {
@@ -20,24 +27,10 @@
  ],
  "overseas": [
   {
-   "title": "Hydrogen and Biogas Could Replace Nearly 40% of Natural Gas by Volume, but There’s a Trade-Off",
-   "source": "Devdiscourse",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPX243Q2ZHaE5kYkltWER4b3dGSS1EdERyTzg4VjZHMVZRVGRObzFQWjYtdXp5MGFLdTFzWnAxSHgzVUp5SnRRTlQ0bk1BU2o2Smg5ZDJNMUMwTnhURjZ0WnZhXzVpVk9SZGFtTTJ4U0cxVHM5OVBUZTNVNlFFakRRWmZKclViVDZYQUxxdzRjSUpGY3dNWmQ0UFRaanlkZ1dERUlhTndtVDI3Q1BCbFIyd01kMDhudWZxMU9hMVdSYXRDTXFIOFllYXhWME9yRkptSmkxbFA5RVhqcUpkZ2dOalJoZ9IB4wFBVV95cUxPX243Q2ZHaE5kYkltWER4b3dGSS1EdERyTzg4VjZHMVZRVGRObzFQWjYtdXp5MGFLdTFzWnAxSHgzVUp5SnRRTlQ0bk1BU2o2Smg5ZDJNMUMwTnhURjZ0WnZhXzVpVk9SZGFtTTJ4U0cxVHM5OVBUZTNVNlFFakRRWmZKclViVDZYQUxxdzRjSUpGY3dNWmQ0UFRaanlkZ1dERUlhTndtVDI3Q1BCbFIyd01kMDhudWZxMU9hMVdSYXRDTXFIOFllYXhWME9yRkptSmkxbFA5RVhqcUpkZ2dOalJoZw?oc=5",
-   "pub": "2026-10-20 03:02",
-   "more": 1
-  },
-  {
    "title": "Nopetro Energy and Johnson Controls break ground on first-of-its-kind $50 million RNG facility in Florida",
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbjYwVGNBS001N2NuWl84ejFYWjNWNFh0QlJ6NkFZNm5MMm8xOWpSY2Rka0xCS0tQbVdCVkx5MFhTZDVpSWVTUi05OFhSYkpPQ0lsMkVOYlZPSVhTZE1pd1ZKMWJsQXhWNlJrLUU3cnlYTU5saFZOYUs5WGljRGx5Zm9ZX1RiS05yUTMyR1E3YkJndTcxcjQzcG16ZTkyQmVPbDB1NXBHc0FqTmNRaTlGM3RERW4wcHUzYXAyLXctbnctN1VxV0c0UkY0NEMtUUFzbjhvQnh4cFY?oc=5",
    "pub": "2026-10-20 02:20",
-   "more": 0
-  },
-  {
-   "title": "Opal Fuels, Cespira among Energy Vision award winners for renewable natural gas",
-   "source": "Truck News",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT0VRYS1yS0pjYXZMckpYQzRidjM3Z3F3NHg0ZkpDQUNnd1U4cnNObGplUjZDeDQ2bEV2TjVXWXMyNU9hLW1vZk5zYUZXTWZ6RTlZby1KdnV1MkVtUlcyUDAySUpsYkdrSktBZl9OalV5dHNhdW03RXFZSl9jZXVkYmlwTnpjdUFpT29vdTZJTW11T2VZTHp4bU9FNmlJZGpPM0FSdFN1a1ozOHhYQkxDN3ZabE5CaDNYaExOeElVdXpDRWYzUWVlbXMwMA?oc=5",
-   "pub": "2026-10-20 01:40",
    "more": 0
   },
   {
@@ -55,25 +48,39 @@
    "more": 0
   },
   {
+   "title": "BBE - Biogas Conference",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yWTl3cWxTTVFySGRRXy1rdWNPVWtOQzBqMEN4My1QV0JfNjJ4LUNLeDF6N2dudnlrS3RWZUtVZ19vQ19Gc2ZaQ1duZzRMdE8taWJXMl9yellZS0ZjeFp4WA?oc=5",
+   "pub": "2026-10-19 16:29",
+   "more": 0
+  },
+  {
    "title": "ENGIE and CMA CGM to build biomethane plant at Le Havre for marine fuel supply",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQclZqd2xtYUUyN2EzWWNoNUF6Mjd6eHVxN1ZqS3R5dWZDaDFPRUVMTGk0YnRSVDJjeVg4NjVyTWJ2czBwc3ZyRTVrV2REdHFCNEI2MTNNV2M3Z3N0STVmTmVERWtVMjNwVTI5OEFBUFlkOGxEM1JuNUh4YUtlQ21nOGlIX2J2SHRzUFg0bEFuTl9ZOWZDVXdSZzJmeTl0OGxNOEs0U2hRRko2R1licTFwcU5qOHVlQQ?oc=5",
    "pub": "2026-10-19 15:36",
-   "more": 2
+   "more": 1
   },
   {
    "title": "CM Rekha Gupta Inaugurates Rs 16-Crore Biogas Plant at Goyla Dairy to Boost Clean Energy and Curb Yamuna Pollution",
    "source": "Hindusthan Samachar English",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZTFZNUI0NVhrZUpab09hQzFneklUdnR4SWJpSXMxOEtsSDRUZkN6dkRlS2EzV2NlWVFVWEhFMjlVdlEySHZBbno1Nmd4bDVqbGx1ZjdrdklDZGVQZFZWbDRzZ3lUak53Wk1NMzMxNkpHOWVDZkNsR0R4c2VpdDFGS1g4ckdpZl8tMmo0enpR?oc=5",
    "pub": "2026-10-19 10:30",
-   "more": 3
+   "more": 4
   },
   {
    "title": "Delhi CM inaugurates state-of-the-art biogas pl…",
    "source": "United News of India",
    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPMHAxV3JJSGNpdE4xVF9FTnF5dkhzQ1JzV2RoYTlaaWxEREs4X1c5dFpNaHM0UDBzbERHdjJHYjBrWFU2VlBoNGdocEhjU01BaUJLMDFuQ3lILTlwbXliWWV0N3lSTm8yWUQzSkttRGFNekhfbWwyWlVXVm1CREFjd3R6OThfT2VvVDFKR3VUOGduM2lxTkJoWUNQMFE3SDFmWkdGUW94azhENEJkX0FkT2QwNDhYWEo0M3FFaFhHWGpMYW52SUxNWXZrSDBNQUlNUW1RaFgyZDk?oc=5",
    "pub": "2026-10-19 06:43",
-   "more": 13
+   "more": 17
+  },
+  {
+   "title": "Olds College researchers turning manure into renewable natural gas",
+   "source": "The Albertan",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQLXJSZXZmNWJtcDhGSE1PUnd5azg2MHV2XzhRVG5sbVpxNUNvSEo4RkJfSEcyOURNSEwxV1hvd2RSUG9mOEpBZ3ZJUm0zaVpqTlk2ZlhVTTI2eGNTdXExaDdUdlZQT2d4RnNaTE5CTWFha0lJWmtuVHdITFJsM3RwZGpWaDdpZF8tX0wzOURHM211V3M3ZEg1RFpMc1lWNWFwREgyVGVaUU1vaG1OTnJtbzNtMA?oc=5",
+   "pub": "2026-10-18 21:00",
+   "more": 4
   },
   {
    "title": "In the UK, a protester is removed as Lincolnshire approves biogas plant locals call 'a disaster'",
@@ -87,7 +94,7 @@
    "source": "Voice of Nigeria",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUw5WWU2Wm5CdjEyVDQ4NDIzZ0hYX3hRNzUtR1pnRFVHa2lvQngwMThSay1lbllad3RJLWJsMHBuNjVrNXZpM1Bza1dKMGRTWExuTlQ0TlA0UEpjMjlUdjdYZlpwZnJmdWRBMHJ4aC0yZEZwUXFySFhiTWYyMWFRUDNfajBtcXFPdFNIejlaQ2gtbzBVeXc?oc=5",
    "pub": "2026-10-18 03:09",
-   "more": 1
+   "more": 4
   }
  ]
 }
