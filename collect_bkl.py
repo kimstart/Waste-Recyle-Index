@@ -146,7 +146,7 @@ def main():
         cand = []
     found = 0
     for no in cand:
-        if time.monotonic() - t0 > 240:
+        if time.monotonic() - t0 > 200:
             print(">> 시간 한도 → 나머지 번호는 다음 실행에서")
             break
         try:
@@ -178,6 +178,31 @@ def main():
             print(f"   [{i['sec'][:4]}] {i['date']}{'~' + i['until'] if i.get('until') else ''}{' 시행 ' + i['effective'] if i.get('effective') else ''}"
                   f" | {i['field']} | {i['name'][:40]} | {i.get('by', '')[:16]} | {','.join(i['pages'])} {i['kw']}")
     lst = sorted(issues.values(), key=lambda i: i["month"], reverse=True)[:6]
+    # 관련 항목의 대략적인 내용: 공식 원문(국회 의안·법령 제개정이유·입법/행정예고문)에서 요지를 가져온다
+    from official_gist import lookup
+    n_ok = n_try = 0
+    for iss in lst[:2]:
+        for it in iss.get("items", []):
+            if it.get("gist") or it.get("gist_tries", 0) >= 3:
+                continue
+            if time.monotonic() - t0 > 330:
+                print(">> [요지] 시간 한도 → 나머지는 다음 실행에서")
+                break
+            n_try += 1
+            try:
+                g = lookup(it)
+            except Exception as e:
+                g = None
+                print(f">> [요지] {it['name'][:30]} 실패: {type(e).__name__}: {str(e)[:80]}")
+            it["gist_tries"] = it.get("gist_tries", 0) + 1
+            if g and g.get("gist"):
+                it.update(gist=g["gist"], gist_src=g["src"], gist_url=g.get("url", ""))
+                n_ok += 1
+                print(f"   [요지] {it['sec'][:4]} {it['name'][:28]} ← {g['src']}: {g['gist'][:110]}")
+            else:
+                print(f"   [요지 없음] {it['sec'][:4]} {it['name'][:40]} {it.get('by', '')}")
+            time.sleep(0.5)
+    print(f">> [요지] 시도 {n_try}건 → 확인 {n_ok}건")
     # 읽기 방식이 바뀐 호는 다음 실행에서 다시 읽도록 확인 목록에서 뺀다
     checked -= {i["no"] for i in lst if i.get("ver") != VER}
     save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "checked": sorted(checked)[-400:], "issues": lst})
