@@ -4,7 +4,7 @@ import io, urllib.request, pdfplumber
 H = {"User-Agent": "Mozilla/5.0"}
 b = urllib.request.urlopen(urllib.request.Request("https://www.bkl.co.kr/newsLetter/itemUrl.do?itemNo=6820", headers=H), timeout=60).read()
 with pdfplumber.open(io.BytesIO(b)) as pdf:
-    for i in (5, 6, 14, 18, 19):
+    for i in (19, 20, 23):
         p = pdf.pages[i]
         print(f"\n## p{i + 1} size {p.width:.0f}x{p.height:.0f}")
         hs = sorted({round(e["top"]) for e in p.horizontal_edges if e["x1"] - e["x0"] > 200})
@@ -15,6 +15,6 @@ with pdfplumber.open(io.BytesIO(b)) as pdf:
         lines = {}
         for w in ws:
             lines.setdefault(round(w["top"] / 3), []).append(w)
-        for k in sorted(lines)[:60]:
+        for k in sorted(lines)[:45]:
             l = sorted(lines[k], key=lambda w: w["x0"])
             print(f"  y{l[0]['top']:.0f}: " + " ".join(f"[{w['x0']:.0f}]{w['text'][:10]}" for w in l)[:190])
