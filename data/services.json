@@ -1,25 +1,25 @@
 {
- "updated": "2026-10-20 09:58",
+ "updated": "2026-10-20 18:21",
  "backfilled": true,
  "items": [
   {
    "id": "g2b:R26BK01756208",
    "src": "나라장터",
    "no": "R26BK01756208",
-   "ord": "000",
+   "ord": "001",
    "title": "서울특별시 양천구 재활용폐기물 선별·처리 용역",
    "org": "서울특별시 양천구",
    "region": "수도권",
    "city": "서울",
    "type": "선별 대행",
-   "start": "2026-10-12",
+   "start": "2026-10-20",
    "end": "2026-11-23",
    "open": "2026-11-27",
    "method": "제한경쟁",
    "est": 3859200000.0,
    "budget": 3859200000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01756208&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01756208&bidPbancOrd=001"
   },
   {
    "id": "g2b:R26BK01751591",

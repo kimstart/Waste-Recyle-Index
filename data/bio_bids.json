@@ -1,8 +1,44 @@
 {
- "updated": "2026-10-20 10:01",
+ "updated": "2026-10-20 18:24",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01780918",
+   "src": "나라장터",
+   "kind": "공사",
+   "no": "R26BK01780918",
+   "ord": "000",
+   "title": "2026년 슬러지처리장 조명 및 에어커튼 공사",
+   "org": "서울특별시 물재생센터 난지물재생센터",
+   "region": "수도권",
+   "city": "서울",
+   "type": "EPC·공사",
+   "waste": "하수찌꺼기·슬러지",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "open": "2026-10-20",
+   "method": "수의계약",
+   "est": 48487273.0,
+   "budget": null,
+   "status": "낙찰",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "3. 시방서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01780918&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=07"
+    ],
+    [
+     "10. 공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01780918&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=07"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01780918&bidPbancOrd=000",
+   "win_amt": 48002000.0,
+   "win_rate": 89.999,
+   "winner": "(주)기성테크",
+   "bidders": 1
+  },
   {
    "id": "g2b:R26BK01762598",
    "src": "나라장터",
