@@ -36,9 +36,14 @@ def gist(t, n=160):
     t = re.sub(r"^(?:[◇□○ㅇ]\s*)?(?:제안이유|(?:제·?)?개정\s*이유|제정\s*이유|추진\s*배경)?\s*(?:및\s*주요\s*내용)?\s*[:：]?\s*", "", t)
     t = re.sub(r"\((?:안\s*)?제\d+조[^)]*\)", "", t)                       # '(안 제14조)' 같은 조문 표시 제거
     sents = [x.strip(" ㅇ○-·*") for x in re.split(r"(?<=것임)\.?\s*|(?<=[다함음])\.\s+", t) if len(x.strip()) > 15]
-    conc = [x for x in sents if re.match(r"이에\s", x)]                         # '이에 …하려는 것임'이 결론 문장
-    pick = [x for x in sents if re.search(r"하려는\s*것임$|하고자\s*함$|하려\s*함$|것임$", x) and not re.match(r"아울러|또한|그리고|이는", x)]
-    s = conc[0] if conc else (pick[0] if pick else (sents[0] if sents else ""))
+    def score(x):
+        v = 0
+        if re.match(r"이에\s|따라서\s", x): v += 3                                   # 결론 문장
+        if re.search(r"하려는\s*것임$|하고자\s*함$|하려\s*함$|하려는\s*것$|것임$", x): v += 2
+        if re.match(r"현행|해외|최근|그간|그동안|아울러|또한|이는|한편|프랑스|미국|정부는", x): v -= 2   # 배경·부연 문장
+        if re.search(r"(?:있음|있다|실정임|실정이다|필요가\s*있다|필요함)$", x): v -= 1
+        return v
+    s = max(sents, key=lambda x: (score(x), -sents.index(x))) if sents else ""
     s = re.sub(r"^이에\s*(?:따라|따라서)?\s*,?\s*", "", s).strip()
     return s if len(s) <= n else s[:n - 1].rstrip() + "…"
 
