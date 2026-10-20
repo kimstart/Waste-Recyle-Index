@@ -1,27 +1,91 @@
-curl 401 0.559288s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 15.515656s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.701286s https://www.re.or.kr/
+curl 401 1.003098s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 15.628668s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.310734s https://www.re.or.kr/
+제안이유 위치: []
+ajax/url 후보: ['/bill/bi/annRpt/annRptPage.do', '/bill/bi/bill/detail/downloadDtlZip.do', '/bill/bi/bill/sch/detailedSchPage.do', '/bill/bi/bill/sch/sentenceSchPage.do', '/bill/bi/bill/state/beforeProposePage.do', '/bill/bi/bill/state/finishBillPage.do', '/bill/bi/bill/state/mooringBillPage.do', '/bill/bi/bill/state/suggestBillPage.do', '/bill/bi/bill/state/voteInfoMemPage.do', '/bill/bi/bill/state/voteInfoSchPage.do', '/bill/bi/bod/nacms/BILL3001/bodListPage.do', '/bill/bi/dwld/docBndlDwldPage.do', '/bill/bi/globalSch/searchPage.do', '/bill/bi/intro/billItroPage.do', '/bill/bi/intro/serviceIntroPage.do', '/bill/bi/intro/siteMapPage.do', '/bill/bi/nafs/bdgPage.do', '/bill/bi/nafs/nafsInfoPage.do', '/bill/bi/nafs/relSttu/relSttuPage.do', '/bill/bi/nafs/stats/inscHstPage.do', '/bill/bi/nafs/stats/nafsStatsPage.do', '/bill/bi/petit/petitContentPage.do', '/bill/bi/petit/petitSchPage.do', '/bill/bi/petit/petitStatPage.do', '/bill/bi/petit/petitStatePage.do', '/bill/bi/petit/petitVisualMstPage.do', '/bill/bi/stats/gnStatsPage.do', '/bill/bi/stats/visual/visualMstPage.do', '/bill/bi/user/ssoLoginPage.do']
 
-== 열린국회 발의법률안: 200 4474자 → https://open.assembly.go.kr/portal/openapi/nzmimeepazxkubdpn?Type=json&pIndex=1&pSize=5&AG
-    {"nzmimeepazxkubdpn":[{"head":[{"list_total_count":48},{"RESULT":{"CODE":"INFO-000","MESSAGE":"정상 처리되었습니다."}}]},{"row":[{"BILL_ID":"PRC_2CE1D6BED1FC48AF8E69CB92893E04","BILL_NO":"2221764","BILL_NAME":"폐기물관리법 일부개정법률안","COMMITTEE":"기후에너지환경노동위원회","PROPOSE_DT":"2026-10-02","PROC_RESULT":null,"AGE":"22","DETAIL_LINK":"http://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_2CE1D6BED1FC48AF8E69CB92893E04&ageFrom=22&ageTo=22","PROPOSER":"윤준병의원 등 12인","MEMBER_LIST":"http://likms.assembly.go.kr/bill/coactorListPopup.do?billId=PRC_2CE1D6BED1FC48AF8E69CB92893E04","LAW_PROC_DT":null,"LAW_PROC_RESULT_CD":null,"RST_MONA_CD":"JC14718Q","LAW_PRESENT_DT":null,"LAW_SUBMIT_DT":null,"CMT_PROC_RESULT_CD":null,"CMT_PROC_DT":null,"CMT_PRESENT_DT":null,"COMMITTEE_DT":"2026-10-06","PROC_DT":null,"COMMITTEE_ID":"9700585","PUBL_MONA_CD":"1JI2689F,X639721U,43Q3892U,CK143054,M4O5221T,DOZ1588B,XEF29171,CCU1009B,H7X
+법령검색: {"LawSearch": {
+    "law": [
+        {
+            "현행연혁코드": "현행",
+            "법령일련번호": "276799",
+            "자법타법여부": "",
+            "법령상세링크": "/DRF/lawService.do?OC=<KEY>&target=law&MST=276799&type=HTML&mobileYn=&efYd=20251001",
+            "법령명한글": "폐기물의 국가 간 이동 및 그 처리에 관한 법률",
+            "법령구분명": "법률",
+            "소관부처명": "기후에너지환경부",
+            "공포번호": "21065",
+            "제개정구분명": "타법개정",
+            "소관부처코드": "1482000",
+            "id": "1",
+            "법령ID": "000154",
+            "공동부령정보": "",
+            "시행일자": "20251001",
+            "공포일자": "20251001",
+            "법령약칭명": "폐기물국가간이동법"
+        },
+        {
+            "현행연혁코드": "현행",
+            "법령일련번호": "285285",
+법령본문 태그: ['개정문', '개정문내용', '공동부령정보', '공포번호', '공포법령여부', '공포일자', '기본정보', '목', '목내용', '목번호', '법령명약칭', '별표편집여부', '부서명', '부서연락처', '부칙', '부칙공포번호', '부칙공포일자', '부칙내용', '생략', '소관부처명', '소관부처코드', '시행일자', '언어', '연락부서', '전화번호', '제개정구분', '제개정이유', '제개정이유내용', '제명변경여부', '조문', '조문가지번호', '조문내용', '조문번호', '조문변경여부', '조문시행일자', '조문여부', '조문이동이전', '조문이동이후', '조문제개정유형', '조문제개정일자문자열', '조문제목', '조문참고자료', '편장절관', '한글법령여부', '항', '항내용', '항번호', '항제개정유형', '항제개정일자문자열', '호']
+  제개정이유내용:  [일부개정] ◇ 개정이유 특정 부처에 집중된 기능과 권한을 분산ㆍ재배치하여 권한 집중에 관한 우려를 해소하고 업무 고유의 전문성을 강화하며, 기후위기 및 인공지능 대전환 등 행정환경의 변화에 능동적으로 대응할 수 있도록 정부 조직 체계를 재설계하고, 과학기술ㆍ인공지능 분야와 국가 데이터 및 지식재산 행정의 역량을 강화하기 위하여 부총리제 및 국무총리 소속 부처 체계를 재조정하며, 성평등 정책 및 산업안전보건 정책을 적극적으로 추진할 수 있도록 정부 기능을 강화하려는 것임. ◇ 주요내용 가. 방송통신위원회를 폐지하고, 방송미디어통신위원회를 신설하며, 과학기술정보통신부가 수행하고 있는 방송 진흥에 관한 사무를 방송미디어통신위원회로 이관함(제2조제2항제1호 및 제31조). 나. 경제정책, 과학기술 및 인공지능 정책을 총괄ㆍ조정하기 위하여 부총리 2명을 두고, 재정경제부장관과 과학기술정보통신부장관이 각각 겸임하도록 하되, 교육부장관이 겸임하는 부총리를 폐지함(제19조). 다. 예산 및 경제 기능 간 상호 견제와 균형을 확보하고 각 기능의 전문성을 강화하기 위하여 기획재정부를 국무총리 소속의 기획예산처와 재정경제부로 분리함(제23조 신설, 제30조). 라. 통계청 및 특허청을 국무총리 소속의 국가데이터처 및 지식재산처로 각각 격상함(제27조ㆍ제28조 신설). 마. 부총리 및 행정각부 개편에 따른 행정각부 순서를 조정하고, 기후에너지환경부 및
 
-== 의안 상세(DETAIL_LINK): 200 204861자 → http://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_2CE1D6BED1FC48AF8E69CB928
-     의안검색|기본검색 <link rel="apple-touc
+행정규칙검색: {"AdmRulSearch": {
+    "resultMsg": "success",
+    "키워드": "공급의무화제도",
+    "page": "1",
+    "resultCode": "00",
+    "target": "admrul",
+    "admrul": {
+        "현행연혁구분": "현행",
+        "행정규칙명": "재생에너지 공급의무화제도 및 연료 혼합의무화제도 관리ㆍ운영지침",
+        "발령일자": "20260918",
+        "행정규칙종류": "고시",
+        "소관부처명": "기후에너지환경부",
+        "제개정구분코드": "200403",
+        "행정규칙상세링크": "/DRF/lawService.do?OC=<KEY>&target=admrul&ID=2100000285272&type=HTML&mobileYn=",
+        "제개정구분명": "일부개정",
+        "id": "1",
+        "생성일자": "20260921",
+        "행정규칙ID": "2044168",
+        "시행일자": "20260918",
+        "발령번호": "2026-
+행정규칙 태그: ['담당부서기관명', '담당부서기관코드', '담당자명', '발령번호', '발령일자', '별표', '별표가지번호', '별표구분', '별표내용', '별표번호', '별표서식파일링크', '별표제목', '부칙', '부칙공포번호', '부칙공포일자', '삭제', '상위부처명', '생성일자', '소관부처명', '소관부처코드', '시행일자', '전화번호', '제개정구분명', '제개정구분코드', '제개정이유', '제개정이유내용', '조문내용', '조문형식여부', '첨부파일', '첨부파일링크', '첨부파일명', '행정규칙기본정보', '행정규칙명', '행정규칙일련번호', '행정규칙종류', '행정규칙종류코드', '현행여부']
+  제개정이유:  <제개정이유내용> <![CDATA[◇ 추진 배경]]> <![CDATA[]]> <![CDATA[ ㅇ 기존 신재생에너지법이 재생에너지법과 수소법으로 분법되어, 재생에너지법(‘26.3.17), 시행령(‘26.8.18), 시행규칙(‘26.8.27)이 개정됨에 따라 법령의 개정내용을 반영하여 제명 변경 및 신에너지와 관련된 사항을 제외하여 정비하려는 것임]]> <![CDATA[]]> <![CDATA[ * 제외되는 신에너지 관련 내용은 ‘수소법’ 및 수소법 하위법령으로 이관 ]]> <![CDATA[]]> <![CDATA[]]> <![CDATA[]]> <![CDATA[◇ 개정 내용]]> <![CDATA[]]> <![CDATA[ ㅇ 제명을「재생에너지 공급의무화제도 및 연료혼합의무화제도 관리ㆍ운영 지침」으로 변경(제명안)]]> <![CDATA[]]> <![CDATA[ ㅇ 조문 내 신에너지 용어 모두 삭제(안 제1조~제17조)]]> <![CDATA[]]> <![CDATA[ ㅇ 기관 등의 명칭을 ‘재
 
-== 의안 상세 likms: 200 204861자 → https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_2CE1D6BED1FC48AF8E69CB92
-     의안검색|기본검색 <link rel="apple-touc
-
-== 의안 요약 ajax: 실패 HTTPError: HTTP Error 404: Not Found
-
-== 법령 검색: 200 1448자 → https://www.law.go.kr/DRF/lawSearch.do?OC=101706160407&target=law&type=JSON&query=%ED%8F%9
-
-== 행정규칙 검색: 200 720자 → https://www.law.go.kr/DRF/lawSearch.do?OC=101706160407&target=admrul&type=JSON&query=%EA%B
-
-== 입법예고 상세 89078: 200 49952자 → https://opinion.lawmaking.go.kr/gcom/ogLmPp/89078?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOp
-    주요내용을 국민에게 미리 알려 이에 대한 의견을 듣기 위하여 &#39;행정절차법&#39; 제41조에 따라 다음과 같이 공고합니다. 2026년 10월 19일 기후에너지환경부장관 &nbsp; &nbsp; 유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 시행규칙 일부개정령안 입법예고 &nbsp; &nbsp; 1. 개정이유 &nbsp; 「유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법」 제2조제4호에서 &quot;바이오가스 생산시설&quot;을 유기성 폐자원을 활용하여 바이오가스를 생산하는 시설로 정의하고, 동 법률에서 그 대상시설을 구체화하도록 위임하고 있음. 이에 따라 규정된 기존 시설 외 유기성 폐자원을 활용하여 바이오가스를 생산하는 「물환경보전법」 제2조제12호에 따른 수질오염방지시설을 추가하려는 것임. &nbsp; &nbsp; 2. 주요내용 &nbsp; <p class="HStyle0" style="m
-
-== 입법예고 목록 검색: 200 66337자 → https://opinion.lawmaking.go.kr/gcom/ogLmPp?lsNm=%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A
-    ogLmPp/88734?cptOfiOrgCd=1482000&amp;lsNm=%EC%9E%AC%EC%83%9D%EC%97%90%EB%84%88%EC%A7%80" title="재생에너지 개발ㆍ이용ㆍ보급 촉진법 시행령 일부개정령안 입법예고" title="재생에너지 개발ㆍ이용ㆍ보급 촉진법 시행령 일부개정령안 입법예고">재생에너지 개발ㆍ이용ㆍ보급 촉진법 시행령 일부개정령안 입법예고 <span class="ogmark_2" aria-label=
-
-== 행정예고 목록: 200 281063자 → https://opinion.lawmaking.go.kr/gcom/admpp/list?asndOfiNm=%EA%B8%B0%ED%9B%84%EC%97%90%EB%8
-    admpp/47544?announceType=TYPE6&mappingAdmRulSeq=2000000332098&asndOfiNm=기후에너지환경부" title="인체급성유해성물질, 인체만성유해성물질 및 생태유해성물질의 지정고시 일부... 이동"> 진행 
+행정예고 분리/선별 글: 재활용가능자원의 분리수거 등에 관한 지침 일부개정훈령안 행정예고 이동
+Traceback (most recent call last):
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 41, in <module>
+    d = get(u)
+        ^^^^^^
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_src.py", line 6, in get
+    with urllib.request.urlopen(urllib.request.Request(u, data=data, headers={**H, **(hdr or {})}), timeout=40) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1404, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1361, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1351, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1362, in _send_request
+    self.putrequest(method, url, **skips)
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1200, in putrequest
+    self._output(self._encode_request(request))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1280, in _encode_request
+    return request.encode('ascii')
+           ^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 82-89: ordinal not in range(128)
