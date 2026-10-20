@@ -8,7 +8,7 @@ import io, re, time, urllib.request
 from common import load, save, now_kst
 
 OUT = "data/bkl_policy.json"
-VER = 2          # 표 읽기 방식이 바뀌면 올려서 저장된 호를 다시 읽는다
+VER = 4          # 표 읽기 방식이 바뀌면 올려서 저장된 호를 다시 읽는다
 BASE = "https://www.bkl.co.kr"
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 TITLE = re.compile(r"(\d{4})년\s*(\d{1,2})월\s*환경\s*주요\s*정책\s*동향")
@@ -16,7 +16,7 @@ SEC = {"II": "법령·고시 개정", "III": "입법·행정예고", "IV": "의�
 # 법령명에서 찾을 낱말(넓게)과 주요 내용에서 찾을 낱말(좁게). 본문은 저장하지 않고 분류에만 쓴다
 KW_NAME = {
     "plastic": re.compile(r"폐기물|재활용|재생원료|플라스틱|순환경제|자원의\s*절약|포장|1회용|일회용|생산자책임|분리\s*수거|분리\s*배출|선별시설"),
-    "biogas": re.compile(r"바이오|유기성|음식물|가축분뇨|분뇨|하수|공급\s*의무화|혼합\s*의무화|재생에너지\s*개발|신에너지|도시가스|수소경제|배출권|탄소중립·녹색성장"),
+    "biogas": re.compile(r"바이오|유기성|음식물|가축분뇨|분뇨|(?<!지)하수\s*(?:찌꺼기|슬러지)|공급\s*의무화|혼합\s*의무화|재생에너지\s*개발|신에너지|도시가스|수소경제|배출권|탄소중립·녹색성장"),
 }
 KW_BODY = {
     "plastic": re.compile(r"재생원료|플라스틱|폐비닐|페트병|포장재|포장폐기물|1회용|일회용|생산자책임|EPR|재활용\s*(?:의무|목표|률|시설|업)|선별시설|분리\s*배출|순환경제"),
@@ -100,6 +100,8 @@ def parse(pdf_bytes, base_y, base_m):
     out = []
     for r in rows:
         nm = re.sub(r"\s+", " ", r["name"]).strip()
+        nm = re.sub(r"\s*\(이하[^)]*\)", "", nm)                    # '(이하 “신재생에너지법”)' 제거
+        nm = re.sub(r"^\((.+)\)$", r"「\1」", nm)                     # 고시·지침 등 행정규칙은 괄호로 표기됨
         d = r["date_raw"]
         it = {"sec": r["sec"], "name": nm, "field": r["field"]}
         if r["sec"] == "입법·행정예고":

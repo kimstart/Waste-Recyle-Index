@@ -40,11 +40,11 @@
     if (!its.length) return head + '<p class="fl">이 페이지와 관련된 항목이 없습니다.</p>';
     const kind = s => s === '법령·고시 개정' ? '<span class="badge on">개정</span>' : s === '입법·행정예고' ? '<span class="badge soon">예고</span>' : '<span class="badge plan">발의</span>';
     const rows = its.map(i => {
-      const when = i.sec === '입법·행정예고' ? `${dot(i.date)}~${dot(i.until)}` : dot(i.date);
-      const note = i.sec === '법령·고시 개정' ? (i.effective ? `시행 ${dot(i.effective)}` : '')
+      const when = i.sec === '입법·행정예고' ? `${dot(i.date)}~<wbr>${i.until && i.until.slice(0, 4) === (i.date || '').slice(0, 4) ? dot(i.until).slice(3) : dot(i.until)}` : dot(i.date);
+      const note = i.sec === '법령·고시 개정' ? (i.effective ? `시행 <span class="nw">${dot(i.effective)}</span>` : '')
         : i.sec === '입법·행정예고' ? (i.until && i.until >= today ? '<b class="up">의견 제출 가능</b>' : '예고 종료')
         : esc(i.by || '');
-      return `<tr><td>${kind(i.sec)}</td><td>${esc(when)}</td><td class="l"><b>${esc(i.name)}</b></td><td class="h-m">${esc(i.field)}</td><td>${note}</td></tr>`;
+      return `<tr><td>${kind(i.sec)}</td><td>${when}</td><td class="l"><b>${esc(i.name)}</b></td><td class="h-m">${esc(i.field)}</td><td>${note}</td></tr>`;
     }).join('');
     return head + `<table class="cmp pol bkl"><thead><tr><th>구분</th><th>날짜</th><th>법령·고시명</th><th class="h-m">분야</th><th>비고</th></tr></thead><tbody>${rows}</tbody></table>`;
   }
