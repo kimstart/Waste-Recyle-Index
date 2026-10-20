@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-19 22:40",
+ "updated": "2026-10-20 10:07",
  "domestic": [
+  {
+   "title": "원더플라스틱, 서울 성수동서 플로깅 진행",
+   "source": "한스경제",
+   "link": "https://www.hansbiz.co.kr/news/articleView.html?idxno=874341",
+   "pub": "2026-10-20 09:13",
+   "more": 0,
+   "summary": "| 서울=한스경제 신연수 기자 | 친환경 업사이클 전문기업 원더플라스틱(대표 김민석)이 19일 카카오페이·함께일하는재단과 함께 서울시 성동구 성수동 일대에서 플로깅(Plogging) 활동을 진행했다. 원더플라스틱은 2018년 울산을 시작으로 지역사회 곳곳의 환경 사각지대에 방치된 쓰레기를 수거하는 환경정화 활동을 이어오고 있다."
+  },
+  {
+   "title": "[현장]갯벌 속 50년 전 폐비닐까지… 서울·경기 한강 쓰레기로 몸살 앓는 인천 바다",
+   "source": "경향신문",
+   "link": "https://www.khan.co.kr/article/202610200600031",
+   "pub": "2026-10-20 06:00",
+   "more": 0,
+   "summary": "강화 더미리포구에서 걷어 올린 그물에서 젓새우(아래)와 쓰레기를 선별하고 있다. 지난 12일 간이 상점 대부분이 문을 닫은 상태였다. 약 2시간 전 수심 6~9m 저층에 설치해 둔 그물이었다."
+  },
+  {
+   "title": "공무원연금공단 대구지부, 폐플라스틱 병뚜껑으로 자원순환 실천…시민 참여형 체험부스 운영",
+   "source": "라이브제주 LIVEJEJU",
+   "link": "http://www.livejeju.co.kr/news/articleView.html?idxno=3021374",
+   "pub": "2026-10-19 23:28",
+   "more": 0,
+   "summary": "공무원연금공단 대구지부가 버려지는 플라스틱 병뚜껑을 활용한 시민 참여형 체험 프로그램을 통해 자원순환의 가치를 알리고 환경보호 실천에 나섰다. 공무원연금공단(이사장 김우호, 이하 공단) 대구지부는 지난 17일 대구 두류공원 2·28자유광장에서 열린 ‘제20회 대구자원봉사박람회’에서 폐플라스틱 병뚜껑을 재활용한 팔찌 만들기 체험부스를 운영했다고 19일 밝혔다."
+  },
   {
    "title": "기후부, 세종시와 손잡고 다회용컵 확산 탈플라스틱 주도",
    "source": "국토일보",
@@ -17,12 +41,18 @@
    "summary": "울산항만공사(UPA, 사장 변재영)가 지역사회와 손잡고 버려지는 폐 현수막을 자원으로 전환하며 환경보호와 지역경제 활성화라는 이석이조의 성과를 거두고 있다. 울산항만공사는 울주군 및 울산항 업·단체와 협업해 △전자현수막 사용 △유사 행사 현수막 다회 사용 △폐현수막 수거 등의 캠페인을 통해 폐현수막 약 1.5t을 수거했다."
   },
   {
-   "title": "원더플라스틱, 카카오페이·함께일하는재단과 서울 성수동서 플로깅 진행",
-   "source": "경상일보",
-   "link": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1069935",
-   "pub": "2026-10-19 16:23",
-   "more": 0,
-   "summary": "친환경 업사이클 전문기업 주식회사 원더플라스틱(대표 김민석)이 19일 카카오페이, 함께일하는재단과 함께 서울 성수동 일대에서 플로깅(Plogging) 활동을 진행하며 환경보호와 자원순환의 가치를 전파해 눈길을 끌고 있다. 원더플라스틱은 2018년 울산을 시작으로 지역사회 곳곳의 환경 사각지대에 방치된 쓰레기를 수거하는 환경정화 활동을 꾸준히 이어오고 있다."
+   "title": "세종시, 다회용 컵 보증금제 시범 도입…일회용 플라스틱 줄인다",
+   "source": "경충일보",
+   "link": "https://www.kcilbo.com/news/view.php?no=166716",
+   "pub": "2026-10-19 16:15",
+   "more": 0
+  },
+  {
+   "title": "한국환경공단 체험형 홍보부스 ‘순환경제 스테이션’ 운영",
+   "source": "월간포장",
+   "link": "https://packnet.co.kr/30/?bmode=view&idx=175169003",
+   "pub": "2026-10-19 16:14",
+   "more": 0
   },
   {
    "title": "폐플라스틱 컵 100개, 어린이 손에서 ‘에코화분’으로",
@@ -37,7 +67,7 @@
    "source": "데일리안",
    "link": "https://www.dailian.co.kr/news/view/1703172/%EC%83%9D%EA%B8%B0%EC%9B%90-EU-%ED%99%98%EA%B2%BD%EA%B7%9C%EC%A0%9C-%EB%8C%80%EC%9D%91%EC%9E%AC%EC%83%9D%EC%9B%90%EB%A3%8C-%EC%9D%B8-2026",
    "pub": "2026-10-19 14:38",
-   "more": 0,
+   "more": 2,
    "summary": "한국생산기술연구원은 19일 서울 양재 엘타워에서 '2026 대한민국 순환경제 페스티벌'을 열고 오는 20일까지 공급망 전략과 재생원료 인증 방안 등을 논의한다고 밝혔다. 한국생산기술연구원은 19일 서울 양재 엘타워에서 '2026 대한민국 순환경제 페스티벌'을 열고 오는 20일까지 공급망 전략과 재생원료 인증 방안 등을 논의한다고 밝혔다. 생기원은 자원효율등급제와 재생원료 인증제 추진 방안도 소개한다."
   },
   {
@@ -45,7 +75,7 @@
    "source": "서울경제",
    "link": "https://www.sedaily.com/article/20103261?ref=sedailyEng",
    "pub": "2026-10-19 13:26",
-   "more": 3,
+   "more": 4,
    "summary": "‘글로벌 공급망 위기’ 속에 이를 돌파할 국내 제조업의 생존 전략과 해법을 모색하는 자리가 마련됐다. 한국생산기술연구원은 19~20일 서울 양재 엘타워에서 ‘2026 대한민국 순환경제 페스티벌’을 열고 자원안보 시대의 글로벌 공급망 전략을 제시한다고 밝혔다. 20일에는 산업 현장에서 순환경제를 실천하고 있는 9개 선도기업의 사례 발표가 이어진다."
   },
   {
@@ -62,73 +92,28 @@
    "pub": "2026-10-18 22:33",
    "more": 1,
    "summary": "- 생기원, ‘2026 대한민국 순환경제 페스티벌’ 개최 한국생산기술연구원은 19~20일 서울 양재 엘타워에서 ‘2026 대한민국 순환경제 페스티벌’을 개최한다고 밝혔다. 경제협력개발기구(OECD)에 따르면 2022~2024년 세계 핵심 원자재 교역의 약 16%가 한 가지 이상의 수출 제한 조치를 적용받았다."
-  },
-  {
-   "title": "청정기술 고급 포장 시장 2035년 전망: 순환경제 의무화가 소재 혁신 이끈다 - 뉴스 및 통계",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/clean-technology-advanced-packaging-market-forecast-to-2035-driven-by-circular-economy-mandates-and-material-innovation/",
-   "pub": "2026-10-18 02:16",
-   "more": 0
-  },
-  {
-   "title": "재활용 수거량과 재생원료 무게가 다른 이유",
-   "source": "비건뉴스",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=393615",
-   "pub": "2026-10-18 01:01",
-   "more": 0,
-   "summary": "수거한 재활용품의 무게가 그대로 새 재생원료의 무게가 되는 것은 아니다. 환경부가 안내한 페트병 재활용 과정은 수거 뒤 재질별로 선별·압축하고, 재활용 단계에서 분쇄해 재생원료를 만드는 흐름이다. 따라서 수거 차량에 실린 무게와 선별품, 세척·가공을 마친 재생원료의 무게는 각각 다른 공정 단계의 수치다."
-  },
-  {
-   "title": "식품용 재생 PET, 오염 제거 성능 입증해야",
-   "source": "비건뉴스",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=393572",
-   "pub": "2026-10-17 23:26",
-   "more": 1,
-   "summary": "재활용 PET를 식품과 직접 닿는 용기에 쓰려면 재생 공정이 오염물질을 제거하는 성능을 갖췄는지 입증하고 식품의약품안전처의 인정을 받아야 한다. 재생 공정에 투입하는 플레이크 등 원료는 환경부의 「식품용기 사용 재생원료 기준」에 적합해야 한다. 현행 기준은 시험 결과가 PET의 오염물질 용출량 기준인 0.01 mg/L 이하, 잔류량 기준인 0.22 mg/kg 이하 중 하나를 충족하도록 한다."
-  },
-  {
-   "title": "[인터뷰] \"최고의 재활용은 안 쓰는 것, 썼다면 씻어주세요\"… '플라랩' 이종영 대표의 플라스틱 새활용 랩소디",
-   "source": "가치소비뉴스 컨슈머와이드",
-   "link": "https://www.consumerwide.com/news/articleView.html?idxno=67131",
-   "pub": "2026-10-16 15:07",
-   "more": 1,
-   "summary": "무심코 버려진 폐플라스틱이 세상에 단 하나뿐인 마블링 가구와 트렌디한 소품으로 다시 태어난다 . 16 일 서울 aT 센터 비건페스타 현장에서 만난 소셜벤처 ' 플라랩 ' 의 이종영 대표는 진정한 가치소비란 완벽한 재활용 이전에 ' 안 쓰는 것 ', 그리고 불가피하게 썼다면 ' 제대로 비우고 씻어 버리는 것 ' 이라는 묵직한 실천의 화두를 던졌다 . 플라랩 ( 우리동네 플라스틱 연구소 ) 은 사회적 기업 ' 동네형 ' 이 전개하는 폐플라스틱 전문 업사이클링 브랜드다 ."
   }
  ],
  "overseas": [
+  {
+   "title": "A push for stronger signals for ‘good plastics’ in California packaging EPR",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVm9CLVkxYzJRWkRiQU9KeGw4Y1V0bTB3OUNLX1MwUnltdHphaE42b1oxZ0tyR2hpMldRRUVIZE5MWFVCLXNSNFJoMmVrRFgtLWlUckV1T0VJeEUwZ2ZwclR4RGtGb1Qzb3ZmakkxZmtROWlPLWlUaG5ydzdaekFTYUJneUJhWHRDMW8tMXJGRzM4RnBZNVRoUTZ1UHg?oc=5",
+   "pub": "2026-10-20 01:55",
+   "more": 0
+  },
+  {
+   "title": "Enzymatic recycling of PE and PP lacks evidence, researchers warn",
+   "source": "Packaging Insights",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMWY3SlR1RUVYaHBndmhlcjlHeHB6Y2hhbnJfN1hCbTFhQmpZbXFORy1ibUdoUnVWMDNaTnF0bjFBMy15WGFTNHBFRmI3S3FfS0RGM05yUlA3WGZ2YkZ2a2MzNk9XUFVPaE94NG5mak9pdnphMGRQX0g2RjZvMFVpMnpkSHdHN0tjWVY0RklsQ2VkUQ?oc=5",
+   "pub": "2026-10-19 19:18",
+   "more": 0
+  },
   {
    "title": "How to optimise extrusion of recycled and bio-based plastics",
    "source": "Plastics News",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdFNhSGpEUlp6R0FaS2NKdEN2VXBoSVgyVUxyWDYtWkVERktOdURBbVpILUdnWVVBOUxMbEttZDVMZG5xODhoWmNsQ19zLWcwZnZ1YUU2Yk02OGJpT1dUWHQtZm42TEZhdTRhVjJteDV3OEl5RlZNdGFBLTViTVRIQVU2M05QVGtZRlpNTjEzeGFlZ0pLUHJvWTByLWpEREhxOEV6RFpsNWRvb0hjMTJhczZ5V1BRMk85Zzgw?oc=5",
    "pub": "2026-10-19 18:46",
-   "more": 0
-  },
-  {
-   "title": "New Verbania Facility Debuts Recycled PET Resin",
-   "source": "PlasticsToday",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ2ZQaFQ5SmRGdUxuWTY3UmhrZ09USkhGcUEwNmFoZU1JS2JrOGIyankxX1FLc2pxWElENmtiMGdyX3VxYVVlNlkwcEZCeVdkWjBoQ01TZkoyRGR5NEgxNTBhM3ZMNkl6dXVHb3dnRlI3a0VpZjZUS3BIR25yOEREZ0N4Nk1vNmpiV0JPUg?oc=5",
-   "pub": "2026-10-17 03:35",
-   "more": 1
-  },
-  {
-   "title": "Collaboration and open conversation key to solving the black plastic recycling challenge",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU3dkalNqRmxlRWhaVzlWeEFTdmtQc2I4VnQ1OVdZZDNINnBBLXl0YTBmNUhoQzdZaWFmbWVNUHpoc0ZiR1NrS3V6QUswbldNbGx2OUhFSzlrTkpDc2lhOVpEdHhRbW5mT0ZlaTVoVXJOMEZESnpCYmc4VHRwOUtycEt6Vno1Vkc1TTFIamRtRi1UWlJYd3N4S01hSFNqQ09ESEdHVzFZckFlNURuc2NDZmlpeG5SMndDNWp5NC13?oc=5",
-   "pub": "2026-10-17 00:27",
-   "more": 1
-  },
-  {
-   "title": "Garçon Wines Launches New Pink 100% Recycled PET Bottle",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR1hGRUlkYm9TWmxPWXpBb1pUbkJPT09VbFNLMk9MSEVFLXF6cUtLQ0liRW1ObDVFY3JMdWZUOTVtM2VhWmxFeXJYcHZZTWZ3UFNXSWpSOTNkajRibldzb2dkSnZ1cFJmSHRKTnU5TlZFaTFjNUs4OG1HT3hpSDFKT2NQRzVoUEpSUzJORlJzX3A?oc=5",
-   "pub": "2026-10-16 16:00",
-   "more": 0
-  },
-  {
-   "title": "Recycled polymer procurement platform raises €5.1m in seed funding",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUWtkSGRuVVpxSUVIM2FjTFA0VXdadVVwN2h1SHlmVVBkZVhseWdpVXYyYXRkdUlQVDV4VGQ2eUZjamtXWERwN2piMnZ1N0FDbUdIQ01sVEszQXA3TEdBbEFISzRYc1pwdzNlcl8xbDl3OWlyZ25uUWx0M1NzUENGQVE1d2ItWEhxQWFXemJOdmxfNzE0a3VSb1pJdzV3LTlVd2NB?oc=5",
-   "pub": "2026-10-16 15:56",
    "more": 0
   }
  ]
