@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20 01:30",
+ "updated": "2026-10-20 09:33",
  "laws": {
   "자원의 절약과 재활용촉진에 관한 법률": {
    "name": "자원의 절약과 재활용촉진에 관한 법률",
@@ -111,6 +111,17 @@
    "why": "재활용 어려움 등급 → 분담금 할증(20%→30% 확대 계획) 연계",
    "url": "https://www.law.go.kr/행정규칙/%ED%8F%AC%EC%9E%A5%EC%9E%AC%20%EC%9E%AC%ED%99%9C%EC%9A%A9%20%EC%9A%A9%EC%9D%B4%EC%84%B1%20%EB%93%B1%EA%B8%89%ED%8F%89%EA%B0%80%20%EA%B8%B0%EC%A4%80"
   },
+  "포장재 재질ㆍ구조 등급표시 기준": {
+   "name": "포장재 재질·구조 등급표시 기준",
+   "target": "admrul",
+   "kind": "일부개정",
+   "promulgated": "2026-07-20",
+   "effective": "2026-07-20",
+   "no": "2026-186",
+   "ministry": "기후에너지환경부",
+   "why": "등급 표시 의무",
+   "url": "https://www.law.go.kr/행정규칙/%ED%8F%AC%EC%9E%A5%EC%9E%AC%20%EC%9E%AC%EC%A7%88%C2%B7%EA%B5%AC%EC%A1%B0%20%EB%93%B1%EA%B8%89%ED%91%9C%EC%8B%9C%20%EA%B8%B0%EC%A4%80"
+  },
   "분리배출 표시에 관한 지침": {
    "name": "분리배출 표시에 관한 지침",
    "target": "admrul",
@@ -143,9 +154,30 @@
    "ministry": "기후에너지환경부",
    "why": "연도별 의무량 산출 조정계수(검색 결과상 '2026년도 특정관리제품 재활용의무량 산출에 필요한 조정계수' 존재)",
    "url": "https://www.law.go.kr/행정규칙/2026%EB%85%84%EB%8F%84%20%ED%8A%B9%EC%A0%95%EA%B4%80%EB%A6%AC%EC%A0%9C%ED%92%88%20%EC%9E%AC%ED%99%9C%EC%9A%A9%EC%9D%98%EB%AC%B4%EB%9F%89%20%EC%82%B0%EC%B6%9C%EC%97%90%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%A1%B0%EC%A0%95%EA%B3%84%EC%88%98"
+  },
+  "제품ㆍ포장재별 장기 재활용목표율": {
+   "name": "2027년도 제품·포장재별 장기재활용목표율",
+   "target": "admrul",
+   "kind": "일부개정",
+   "promulgated": "2025-10-01",
+   "effective": "2025-10-01",
+   "no": "2025-165",
+   "ministry": "기후에너지환경부",
+   "why": "중장기 재활용목표율 — 정확한 고시 제목 미확인",
+   "url": "https://www.law.go.kr/행정규칙/2027%EB%85%84%EB%8F%84%20%EC%A0%9C%ED%92%88%C2%B7%ED%8F%AC%EC%9E%A5%EC%9E%AC%EB%B3%84%20%EC%9E%A5%EA%B8%B0%EC%9E%AC%ED%99%9C%EC%9A%A9%EB%AA%A9%ED%91%9C%EC%9C%A8"
   }
  },
- "posts": [],
+ "posts": [
+  {
+   "key": "68:89024",
+   "board": "입법예고",
+   "title": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙 일부개정령안 입법예고",
+   "date": "2026-10-16",
+   "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89024?opYn=Y&cptOfiOrgCd=1482000&isOgYn=Y&myOpnYn=N&btnType=1"
+  }
+ ],
  "events": [],
- "board_seen": []
+ "board_seen": [
+  "68:89024"
+ ]
 }
