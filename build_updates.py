@@ -108,6 +108,16 @@ def main():
     if bids_:
         state["bio_ids"] = bids_
 
+    # 태평양(BKL) 월간 환경 정책 동향 새 호
+    bk = (load("data/bkl_policy.json", {}) or {}).get("issues", [])
+    if bk:
+        top = bk[0]
+        if changed("bkl_month", top.get("month")):
+            for page, label in (("plastic", "폐기물·재활용"), ("biogas", "바이오가스·재생에너지")):
+                its = [i for i in top.get("items", []) if page in i.get("pages", [])]
+                live = sum(1 for i in its if i.get("until", "") >= today)
+                ev(page, f"{top['title']}(태평양) 반영 — {label} 관련 {len(its)}건" + (f", 의견 제출 가능한 예고 {live}건" if live else ""))
+
     # 제도 변경 (화면별)
     for page, fn, sk in (("plastic", "data/policy.json", "policy_seen"), ("biogas", "data/policy_biogas.json", "policy_seen_biogas")):
         pol = (load(fn, {}) or {}).get("events", [])

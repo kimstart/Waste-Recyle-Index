@@ -27,5 +27,33 @@
     if ($('polPosts')) $('polPosts').innerHTML = posts.length ? posts.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">${esc(p.title)}</a> <small>${esc(p.board)} ${esc(p.date || '')}</small></li>`).join('') : '<li class="fl">최근 관련 게시글 없음</li>';
     if ($('polUpd')) $('polUpd').textContent = pol && pol.updated ? `감시 갱신 ${pol.updated}` : '';
   }
+  /* 태평양(BKL) 월간 환경 정책 동향 — data-page(plastic|biogas) 관련 항목 */
+  const PAGE = me.dataset.page, BKL = me.dataset.bkl;
+  const SEC_ORDER = ['법령·고시 개정', '입법·행정예고', '의원 발의'];
+  const dot = d => d ? d.slice(2).replace(/-/g, '.') : '';
+  const today = new Date(Date.now() + 9 * 36e5).toISOString().slice(0, 10);
+  function bklTable(iss) {
+    const its = (iss.items || []).filter(i => (i.pages || []).includes(PAGE))
+      .sort((a, b) => SEC_ORDER.indexOf(a.sec) - SEC_ORDER.indexOf(b.sec) || (b.date || '').localeCompare(a.date || ''));
+    const head = `<div class="bkl-iss"><b>${esc(iss.title)}</b> · 관련 ${its.length}건 / 전체 ${iss.n_total || '-'}건 ·
+      <a href="${esc(iss.pdf)}" target="_blank" rel="noopener noreferrer">원문 PDF</a> · <a href="${esc(iss.url)}" target="_blank" rel="noopener noreferrer">소개 페이지</a></div>`;
+    if (!its.length) return head + '<p class="fl">이 페이지와 관련된 항목이 없습니다.</p>';
+    const kind = s => s === '법령·고시 개정' ? '<span class="badge on">개정</span>' : s === '입법·행정예고' ? '<span class="badge soon">예고</span>' : '<span class="badge plan">발의</span>';
+    const rows = its.map(i => {
+      const when = i.sec === '입법·행정예고' ? `${dot(i.date)}~${dot(i.until)}` : dot(i.date);
+      const note = i.sec === '법령·고시 개정' ? (i.effective ? `시행 ${dot(i.effective)}` : '')
+        : i.sec === '입법·행정예고' ? (i.until && i.until >= today ? '<b class="up">의견 제출 가능</b>' : '예고 종료')
+        : esc(i.by || '');
+      return `<tr><td>${kind(i.sec)}</td><td>${esc(when)}</td><td class="l"><b>${esc(i.name)}</b></td><td class="h-m">${esc(i.field)}</td><td>${note}</td></tr>`;
+    }).join('');
+    return head + `<table class="cmp pol bkl"><thead><tr><th>구분</th><th>날짜</th><th>법령·고시명</th><th class="h-m">분야</th><th>비고</th></tr></thead><tbody>${rows}</tbody></table>`;
+  }
+  if (BKL && $('polBkl')) getJson(BKL).then(j => {
+    const iss = j.issues || [];
+    $('polBkl').innerHTML = iss.length ? bklTable(iss[0]) + (iss.length > 1 ? `<details class="bkl-old"><summary>지난 호 보기 (${iss.slice(1).map(i => esc(i.month)).join(', ')})</summary>${iss.slice(1).map(bklTable).join('')}</details>` : '')
+      : '<p class="fl">아직 받은 호가 없습니다.</p>';
+    if ($('bklUpd')) $('bklUpd').textContent = j.updated ? `확인 ${j.updated}` : '';
+  }).catch(() => { $('polBkl').innerHTML = '<p class="fl">월간 동향 자료를 아직 받지 못했습니다.</p>'; });
+
   Promise.all([getJson(FACTS).catch(() => []), getJson(STATE).catch(() => null)]).then(([f, p]) => render(f, p));
 })();

@@ -12,13 +12,18 @@ BASE = "https://www.bkl.co.kr"
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 TITLE = re.compile(r"(\d{4})년\s*(\d{1,2})월\s*환경\s*주요\s*정책\s*동향")
 SEC = {"II": "법령·고시 개정", "III": "입법·행정예고", "IV": "의원 발의"}
-KW = {
-    "plastic": re.compile(r"폐기물|재활용|재생원료|플라스틱|순환경제|순환이용|자원의\s*절약|포장|1회용|일회용|생산자책임|EPR|분리\s*수거|분리\s*배출|선별시설|폐비닐|페트|용기"),
-    "biogas": re.compile(r"바이오|유기성|음식물|가축분뇨|분뇨|슬러지|하수\s*찌꺼기|공급\s*의무화|혼합\s*의무화|RPS|REC|재생에너지\s*개발|재생에너지법|신에너지|도시가스|"
-                         r"수소경제|청정수소|배출권|탄소중립·녹색성장|온실가스\s*감축"),
+# 법령명에서 찾을 낱말(넓게)과 주요 내용에서 찾을 낱말(좁게). 본문은 저장하지 않고 분류에만 쓴다
+KW_NAME = {
+    "plastic": re.compile(r"폐기물|재활용|재생원료|플라스틱|순환경제|자원의\s*절약|포장|1회용|일회용|생산자책임|분리\s*수거|분리\s*배출|선별시설"),
+    "biogas": re.compile(r"바이오|유기성|음식물|가축분뇨|분뇨|하수|공급\s*의무화|혼합\s*의무화|재생에너지\s*개발|신에너지|도시가스|수소경제|배출권|탄소중립·녹색성장"),
 }
-# 표의 열 경계(x, pt): 날짜 | 법령명 | 주요 내용 | 분야
-X_NAME, X_BODY, X_FIELD = 117, 257, 477
+KW_BODY = {
+    "plastic": re.compile(r"재생원료|플라스틱|폐비닐|페트병|포장재|포장폐기물|1회용|일회용|생산자책임|EPR|재활용\s*(?:의무|목표|률|시설|업)|선별시설|분리\s*배출|순환경제"),
+    "biogas": re.compile(r"바이오가스|바이오\s*메탄|바이오매스|유기성\s*폐자원|음식물|가축분뇨|RPS|REC|공급\s*의무화|혼합\s*의무화|청정수소|배출권"),
+}
+NOT_PLASTIC = re.compile(r"방사성|고준위|원자력")
+# 표의 열 경계(x, pt): 날짜 | 법령명 | 주요 내용 | 분야 — 의원 발의 표는 제안자 칸이 넓다
+COLS = {"II": (117, 257, 477), "III": (117, 257, 477), "IV": (144, 250, 482)}
 
 
 def fetch(url, n=10_000_000):
@@ -27,7 +32,14 @@ def fetch(url, n=10_000_000):
 
 
 def page_title(no):
-    h = fetch(f"{BASE}/law/insight/newsletter/{no}", 400_000).decode("utf8", "ignore")
+    for k in range(3):
+        try:
+            h = fetch(f"{BASE}/law/insight/newsletter/{no}", 400_000).decode("utf8", "ignore")
+            break
+        except Exception:
+            if k == 2:
+                raise
+            time.sleep(3 + 3 * k)
     m = re.search(r"<title>(.*?)</title>", h, re.S)
     return re.sub(r"\s+", " ", m.group(1)).strip() if m else ""
 
@@ -63,6 +75,7 @@ def parse(pdf_bytes, base_y, base_m):
                     prev = None
                     continue
                 ws = [w for w in words if top <= (w["top"] + w["bottom"]) / 2 < bot]
+                X_NAME, X_BODY, X_FIELD = COLS[sec]
                 col = lambda lo, hi: " ".join(w["text"] for w in sorted(ws, key=lambda w: (round(w["top"]), w["x0"])) if lo <= w["x0"] < hi)
                 d, name, body, field = col(0, X_NAME), col(X_NAME, X_BODY), col(X_BODY, X_FIELD), col(X_FIELD, 999)
                 if (re.search(r"법령명|행정규칙명|주요\s*(?:개정\s*)?내용|일자|예고기간|제안자|고시\s*등\)", d + name + body) and not re.search(r"\d", d)
@@ -73,8 +86,10 @@ def parse(pdf_bytes, base_y, base_m):
                     prev["name"] = (prev["name"] + " " + name).strip()   # 페이지를 넘어간 행
                     prev["_body"] += " " + body
                     continue
-                if not (name or body):
+                if not (name or body) or (not d and prev is None):
                     continue
+                if re.search(r"\(\d+건\)|의원\s*입법\s*발의|입법\(행정\)\s*예고", name + d) and not re.search(r"\d+\.\s*\d", d):
+                    continue                       # 장 제목
                 if not d and prev is not None:     # 같은 날짜 칸을 여러 행이 나눠 쓰는 경우
                     d = prev["date_raw"]
                 if not field and prev is not None:
@@ -97,9 +112,10 @@ def parse(pdf_bytes, base_y, base_m):
             if r["sec"] == "의원 발의":
                 who = re.sub(r"[‘'’]?\d{2}\.\s*|\d{1,2}\.\s*\d{1,2}\.?|[()]", " ", d)
                 it["by"] = re.sub(r"\s+", " ", who).strip()
-        txt = f"{nm} {r['_body']}"
-        it["pages"] = [k for k, rx in KW.items() if rx.search(txt)]
-        it["kw"] = sorted({m.group(0) for k in it["pages"] for m in KW[k].finditer(txt)})[:6]
+        it["pages"] = [k for k in KW_NAME if KW_NAME[k].search(nm) or KW_BODY[k].search(r["_body"])]
+        if "plastic" in it["pages"] and NOT_PLASTIC.search(nm):
+            it["pages"].remove("plastic")
+        it["kw"] = sorted({m.group(0) for k in it["pages"] for rx in (KW_NAME[k], KW_BODY[k]) for m in rx.finditer(f"{nm} {r['_body']}")})[:6]
         out.append(it)
     return out
 
@@ -111,7 +127,7 @@ def discover(st):
     checked = set(st.get("checked", []))
     cand = [n for n in nos if n not in checked]
     if not st.get("backfilled") and nos:
-        cand += [n for n in range(nos[0] - 1, nos[0] - 160, -1) if n not in checked and n not in cand]
+        cand += [n for n in range(nos[0] - 1, nos[0] - 90, -1) if n not in checked and n not in cand]
     return cand
 
 
@@ -135,6 +151,7 @@ def main():
             print(f">> {no} 제목 실패: {type(e).__name__}")
             continue
         checked.add(no)
+        time.sleep(0.7)
         m = TITLE.search(title)
         if not m or no in issues:
             continue

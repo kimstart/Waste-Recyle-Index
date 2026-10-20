@@ -133,6 +133,10 @@ table.bids td.t a:hover { text-decoration:underline; }
 table.pol td { font-size:13px; vertical-align:top; }
 table.pol td.l { text-align:left; } table.pol td.d { text-align:left; color:#334155; line-height:1.55; }
 table.pol td a { color:var(--navy2); }
+.bkl-h { font-size:15px; margin:20px 0 4px; color:var(--navy, #0f2a44); } .bkl-h > span { font-size:12px; font-weight:500; color:var(--mute); margin-left:6px; }
+.bkl-iss { font-size:13px; margin:6px 0; color:#334155; } .bkl-iss a { color:var(--navy2); }
+table.pol.bkl td { font-size:12.5px; } table.pol.bkl td:nth-child(2) { white-space:nowrap; }
+.bkl-old { margin:8px 0; font-size:13px; } .bkl-old summary { cursor:pointer; color:var(--navy2); }
 ul.plain { margin:4px 0 0; padding-left:18px; font-size:13px; line-height:1.7; color:#334155; }
 ul.plain a { color:#0f172a; } ul.plain small { color:var(--mute); }
 /* 카테고리 묶음 (해외·참고) */
