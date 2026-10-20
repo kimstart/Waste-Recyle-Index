@@ -35,8 +35,9 @@ def gist(t, n=160):
     t = re.sub(r"^(?:[◇□○ㅇ]\s*)?(?:제안이유|(?:제·?)?개정\s*이유|제정\s*이유|추진\s*배경)?\s*(?:및\s*주요\s*내용)?\s*[:：]?\s*", "", t)
     t = re.sub(r"\((?:안\s*)?제\d+조[^)]*\)", "", t)                       # '(안 제14조)' 같은 조문 표시 제거
     sents = [x.strip(" ㅇ○-·*") for x in re.split(r"(?<=것임)\.?\s*|(?<=[다함음])\.\s+", t) if len(x.strip()) > 15]
-    pick = [x for x in sents if re.search(r"하려는\s*것임$|하고자\s*함$|하려\s*함$|것임$", x)]
-    s = pick[-1] if pick else (sents[0] if sents else "")
+    conc = [x for x in sents if re.match(r"이에\s", x)]                         # '이에 …하려는 것임'이 결론 문장
+    pick = [x for x in sents if re.search(r"하려는\s*것임$|하고자\s*함$|하려\s*함$|것임$", x) and not re.match(r"아울러|또한|그리고|이는", x)]
+    s = conc[0] if conc else (pick[0] if pick else (sents[0] if sents else ""))
     s = re.sub(r"^이에\s*(?:따라|따라서)?\s*,?\s*", "", s).strip()
     return s if len(s) <= n else s[:n - 1].rstrip() + "…"
 
@@ -44,7 +45,7 @@ def gist(t, n=160):
 def bill(name, by, date):
     """열린국회정보에서 같은 법률명·대표발의자·발의일의 의안을 찾아 제안이유 요지"""
     lead = re.sub(r"의원.*", "", by or "").strip()
-    q = {"Type": "json", "pIndex": 1, "pSize": 5, "AGE": 22, "BILL_NAME": name}
+    q = {"Type": "json", "pIndex": 1, "pSize": 5, "AGE": 22, "BILL_NAME": re.split(r"[·ㆍ]", name)[0].strip()}   # 가운뎃점 표기 차이 회피
     if lead:
         q["PROPOSER"] = lead
     j = json.loads(get("https://open.assembly.go.kr/portal/openapi/nzmimeepazxkubdpn?" + urllib.parse.urlencode(q)))
@@ -55,7 +56,7 @@ def bill(name, by, date):
         return None
     h = get(f"{LIKMS}/bill/bi/popup/billSummary.do?billId={r['BILL_ID']}")
     t = text(h)
-    i = t.find("제안이유")
+    i = t.rfind("제안이유")                       # 창 제목 말고 본문 머리의 '제안이유 및 주요내용' 뒤부터
     body = t[i:] if i >= 0 else t
     body = re.split(r"참고사항|창닫기\s*$", body)[0]
     body = re.sub(r"^제안이유\s*및\s*주요내용\s*(?:창닫기)?\s*\[\d+\][^\n]*", "", body)

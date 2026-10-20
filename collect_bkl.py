@@ -183,7 +183,7 @@ def main():
     n_ok = n_try = 0
     for iss in lst[:2]:
         for it in iss.get("items", []):
-            if it.get("gist") and re.search(r"^및\s*주요|행정절차법|의견을\s*듣", it["gist"]):
+            if it.get("gist") and (re.search(r"^및\s*주요|행정절차법|의견을\s*듣|^이는|^아울러|의원\s*등\s*\d+인", it["gist"]) or it.get("gist_v", 0) < 2):
                 it.pop("gist"); it["gist_tries"] = 0
             if it.get("gist") or it.get("gist_tries", 0) >= 3:
                 continue
@@ -198,7 +198,7 @@ def main():
                 print(f">> [요지] {it['name'][:30]} 실패: {type(e).__name__}: {str(e)[:80]}")
             it["gist_tries"] = it.get("gist_tries", 0) + 1
             if g and g.get("gist"):
-                it.update(gist=g["gist"], gist_src=g["src"], gist_url=g.get("url", ""))
+                it.update(gist=g["gist"], gist_src=g["src"], gist_url=g.get("url", ""), gist_v=2)
                 n_ok += 1
                 print(f"   [요지] {it['sec'][:4]} {it['name'][:28]} ← {g['src']}: {g['gist'][:110]}")
             else:
