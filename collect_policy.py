@@ -63,8 +63,9 @@ def watch_laws(state, watch_file):
             continue
         nm_key = "법령명한글" if target == "law" else "행정규칙명"
         cands = [r for r in rows if r.get(nm_key)]
-        exact = [r for r in cands if r[nm_key].replace(" ", "") == name.replace(" ", "")]
-        pool = exact or [r for r in cands if query.replace(" ", "") in r[nm_key].replace(" ", "")]
+        nz = lambda t: re.sub(r"[ㆍ·‧∙]", "·", re.sub(r"\s+", "", t or ""))     # 띄어쓰기·가운뎃점(ㆍ/·) 차이 무시
+        exact = [r for r in cands if nz(r[nm_key]) == nz(name)]
+        pool = exact or [r for r in cands if nz(query) in nz(r[nm_key])]
         if not pool:
             print(f">> [법령] {name}: 결과 없음 ({len(rows)}건 중)")
             continue
@@ -100,23 +101,35 @@ def watch_boards(state, kw):
         if h is None:
             continue
         n = 0
+        board_new = not any(k.startswith(f"{mid}:") for k in seen)     # 처음 제대로 읽히는 게시판은 최근 2주 글만 알림
         for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", h, re.S):
-            a = re.search(r'<a[^>]*title="([^"]+)"[^>]*href="([^"]*board/read\.do[^"]*)"', tr) or \
-                re.search(r'<a[^>]*href="([^"]*board/read\.do[^"]*)"[^>]*title="([^"]+)"', tr)
+            # 보도자료·행정예고는 board/read.do, 고시는 law/read.do, 입법예고는 국민참여입법센터(opinion.lawmaking.go.kr) 링크
+            a = None
+            for m in re.finditer(r"<a\b([^>]*)>", tr):
+                at = m.group(1)
+                hm, tm = re.search(r'href="([^"]+)"', at), re.search(r'title="([^"]+)"', at)
+                if hm and tm and re.search(r"read\.do|lawmaking\.go\.kr/gcom/ogLmPp/\d", hm.group(1)):
+                    a = (tm.group(1), hm.group(1))
+                    break
             if not a:
                 continue
-            title, href = (a.group(1), a.group(2)) if "read.do" in a.group(2) else (a.group(2), a.group(1))
-            title = norm(title)
-            bid = re.search(r"boardId=(\d+)", href)
-            d = re.search(r"(\d{4})[.-](\d{2})[.-](\d{2})", norm(tr))
-            date = f"{d.group(1)}-{d.group(2)}-{d.group(3)}" if d else ""
-            url = MCEE + html.unescape(href).split(";jsessionid")[0] if href.startswith("/") else html.unescape(href)
-            key = f"{mid}:{bid.group(1) if bid else title}"
+            title, href = a
+            title = re.sub(r"\s*새\s*창으로\s*연결$", "", norm(title))
+            title = re.sub(r"^\[(?:진행|종료)\]\s*", "", title)
+            bid = re.search(r"boardId=(\d+)|lawSeq=(\d+)|ogLmPp/(\d+)", href)
+            bid = next((g for g in bid.groups() if g), None) if bid else None
+            d = re.search(r"(\d{4})\s*[.-]\s*(\d{1,2})\s*[.-]\s*(\d{1,2})", norm(tr))
+            date = f"{d.group(1)}-{int(d.group(2)):02d}-{int(d.group(3)):02d}" if d else ""
+            href = html.unescape(href)
+            href = re.sub(r";jsessionid=[^?]*", "", href)
+            url = MCEE + href if href.startswith("/") else href
+            key = f"{mid}:{bid or title}"
             n += 1
             if not kw.search(title):
                 continue
             posts.append({"key": key, "board": label, "title": title, "date": date, "url": url})
-            if key not in seen and not first:
+            recent = date and date >= (now_kst() - timedelta(days=14)).strftime("%Y-%m-%d")
+            if key not in seen and not first and (not board_new or recent):
                 events.append({"date": now_kst().strftime("%Y-%m-%d"), "type": label, "title": title, "url": url})
             seen.add(key)
         print(f">> [부처] {label}: 글 {n}건 확인")
