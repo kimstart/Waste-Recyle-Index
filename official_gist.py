@@ -24,7 +24,8 @@ def nz(t):
 
 
 def text(h):
-    h = re.sub(r"<!\[CDATA\[|\]\]>", "", h or "")
+    h = re.sub(r"<(script|style)\b.*?</\1>", " ", h or "", flags=re.S | re.I)
+    h = re.sub(r"<!\[CDATA\[|\]\]>", "", h)
     h = re.sub(r"<(br|/p|/div|/li)[^>]*>", "\n", h, flags=re.I)
     return re.sub(r"[ \t\xa0]+", " ", html.unescape(re.sub(r"<[^>]+>", " ", h))).strip()
 
