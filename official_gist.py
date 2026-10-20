@@ -32,7 +32,7 @@ def text(h):
 def gist(t, n=160):
     """결론 문장('이에 …하려는 것임') 우선, 없으면 첫 문장"""
     t = re.sub(r"\s+", " ", t or "").strip()
-    t = re.sub(r"^(?:◇\s*)?(?:제안이유(?:\s*및\s*주요내용)?|개정이유|추진\s*배경|제·?개정이유)\s*[:：]?\s*", "", t)
+    t = re.sub(r"^(?:[◇□○ㅇ]\s*)?(?:제안이유|(?:제·?)?개정\s*이유|제정\s*이유|추진\s*배경)?\s*(?:및\s*주요\s*내용)?\s*[:：]?\s*", "", t)
     t = re.sub(r"\((?:안\s*)?제\d+조[^)]*\)", "", t)                       # '(안 제14조)' 같은 조문 표시 제거
     sents = [x.strip(" ㅇ○-·*") for x in re.split(r"(?<=것임)\.?\s*|(?<=[다함음])\.\s+", t) if len(x.strip()) > 15]
     pick = [x for x in sents if re.search(r"하려는\s*것임$|하고자\s*함$|하려\s*함$|것임$", x)]
@@ -110,10 +110,12 @@ def notice(name, date, admrul=False):
             u = html.unescape(href)
             u = OPINION + u if u.startswith("/") else u
             t = text(get(u))
-            m = re.search(r"개정이유\s*(.*?)(?:2\.\s*주요\s*내용|주요\s*내용\s*가\.)", t, re.S)
-            if not m:
+            m = (re.search(r"1\.\s*(?:개정|제정)\s*이유\s*(.*?)(?:2\.\s*주요\s*내용|$)", t, re.S) or
+                 re.search(r"(?<!취지)(?:개정|제정)\s*이유\s*(.*?)(?:2\.\s*주요\s*내용|주요\s*내용\s*가\.|$)", t, re.S))
+            g = gist(m.group(1)[:3000]) if m else ""
+            if not g or re.search(r"행정절차법|의견을\s*듣", g):
                 continue
-            return {"gist": gist(m.group(1)), "src": "국민참여입법센터", "url": u.split(";jsessionid")[0], "title": re.sub(r"\s*이동$", "", title)}
+            return {"gist": g, "src": "국민참여입법센터", "url": u.split(";jsessionid")[0], "title": re.sub(r"\s*이동$", "", title)}
     return None
 
 

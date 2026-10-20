@@ -146,7 +146,7 @@ def main():
         cand = []
     found = 0
     for no in cand:
-        if time.monotonic() - t0 > 200:
+        if time.monotonic() - t0 > 120:
             print(">> 시간 한도 → 나머지 번호는 다음 실행에서")
             break
         try:
@@ -183,9 +183,11 @@ def main():
     n_ok = n_try = 0
     for iss in lst[:2]:
         for it in iss.get("items", []):
+            if it.get("gist") and re.search(r"^및\s*주요|행정절차법|의견을\s*듣", it["gist"]):
+                it.pop("gist"); it["gist_tries"] = 0
             if it.get("gist") or it.get("gist_tries", 0) >= 3:
                 continue
-            if time.monotonic() - t0 > 330:
+            if time.monotonic() - t0 > 390:
                 print(">> [요지] 시간 한도 → 나머지는 다음 실행에서")
                 break
             n_try += 1
