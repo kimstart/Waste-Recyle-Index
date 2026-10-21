@@ -1,8 +1,56 @@
 {
- "updated": "2026-10-21 09:29",
+ "updated": "2026-10-21 18:19",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01784418",
+   "src": "나라장터",
+   "kind": "공사",
+   "no": "R26BK01784418",
+   "ord": "001",
+   "title": "공촌하수처리장 슬러지케익 저장시설 설치 전기공사",
+   "org": "인천환경공단",
+   "region": "수도권",
+   "city": "인천",
+   "type": "EPC·공사",
+   "waste": "하수찌꺼기·슬러지",
+   "start": "2026-10-21",
+   "end": "2026-10-27",
+   "open": "2026-10-27",
+   "method": "수의계약",
+   "est": 89023727.0,
+   "budget": null,
+   "status": "공고",
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "수의계약 안내공고문 [공촌하수처리장 슬러지케익 저장시설 설치 전기공사].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=07"
+    ],
+    [
+     "수의계약 안내공고문 [공촌하수처리장 슬러지케익 저장시설 설치 전기공사].pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=07"
+    ],
+    [
+     "설계내역서(전기)-입찰용.xls",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=07"
+    ],
+    [
+     "공사시방서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=4&prcmBsneSeCd=07"
+    ],
+    [
+     "전기 기자재 시방서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=5&prcmBsneSeCd=07"
+    ],
+    [
+     "안전관리지침.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01784418&bidPbancOrd=001&fileType=&fileSeq=6&prcmBsneSeCd=07"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01784418&bidPbancOrd=001"
+  },
   {
    "id": "g2b:R26BK01780918",
    "src": "나라장터",
