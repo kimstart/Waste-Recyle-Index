@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22 09:46",
+ "updated": "2026-10-22 21:09",
  "points": [
   {
    "id": "26464ee4bd",
@@ -1489,6 +1489,53 @@
    "krw_high": 1361.6,
    "krw_kg": 1304.5,
    "premium_krw_kg": 818.0
+  },
+  {
+   "date": "2026-10-22",
+   "basis": "",
+   "grade": "베일",
+   "region": "아시아",
+   "cur": "USD",
+   "per": "t",
+   "low": 640.475,
+   "high": 640.475,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": null,
+   "quote": "According to OPIS data, prices for bales with labels were assessed at $640.4750 per metric ton as of the week ended Oct. 16, up from $557.3650/mt the previous week.",
+   "title": "China’s rPET Flake Prices Steady Amid Cooler Weather, Rising vPET: Sources",
+   "source": "OPIS, A Dow Jones Company",
+   "url": "https://www.opis.com/resources/energy-market-news-from-opis/chinas-rpet-flake-prices-steady-amid-cooler-weather-rising-vpet-sources/",
+   "auto": true,
+   "id": "ee1e06ae95",
+   "fx": 1325.57,
+   "krw_low": 849.0,
+   "krw_high": 849.0,
+   "krw_kg": 849.0
+  },
+  {
+   "date": "2026-10-22",
+   "basis": "",
+   "grade": "베일",
+   "region": "아시아",
+   "cur": "USD",
+   "per": "t",
+   "low": 692.27,
+   "high": 692.27,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": 615.7,
+   "quote": "Bales without labels were heard at $692.2700/mt, up from $615.7450/mt and premium grade rPET flake prices remained at $950-$1,040/mt over the same period.",
+   "title": "China’s rPET Flake Prices Steady Amid Cooler Weather, Rising vPET: Sources",
+   "source": "OPIS, A Dow Jones Company",
+   "url": "https://www.opis.com/resources/energy-market-news-from-opis/chinas-rpet-flake-prices-steady-amid-cooler-weather-rising-vpet-sources/",
+   "auto": true,
+   "id": "b8adfb1f8e",
+   "fx": 1325.57,
+   "krw_low": 917.7,
+   "krw_high": 917.7,
+   "krw_kg": 917.7,
+   "premium_krw_kg": 816.2
   }
  ],
  "fx": {
@@ -1530,7 +1577,8 @@
   "USD:2026-07-17": 1485.32,
   "USD:2026-09-09": 1336.2,
   "USD:2026-09-21": 1372.18,
-  "USD:2026-10-14": 1341.45
+  "USD:2026-10-14": 1341.45,
+  "USD:2026-10-22": 1325.57
  },
  "seen": {
   "yamahamakesrecycledaluminumcommitment": "2026-10-07",
@@ -1597,6 +1645,10 @@
   "recycledplasticsmarkettoreach1179billionby2031at9cagrwissenresearch": "2026-10-22",
   "riceuniversityresearchersdevelopelectronicsrecyclingmethod": "2026-10-22",
   "fourthmillioncansrecyclingcontestbegins": "2026-10-22",
-  "toraydevelopspolyesternylonfiberwithrecycledcontent": "2026-10-22"
+  "toraydevelopspolyesternylonfiberwithrecycledcontent": "2026-10-22",
+  "chinasrpetflakepricessteadyamidcoolerweatherrisingvpetsources": "2026-10-22",
+  "시장전망재활용플라스틱시장규제가당기고공급부족이발목": "2026-10-22",
+  "polyethyleneterephthalatepetprocurementguide": "2026-10-22",
+  "recycledvirginpetspreadhitszeroamidrisingvirginfeedstockcosts": "2026-10-22"
  }
 }
