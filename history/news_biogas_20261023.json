@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-23 09:44",
+ "updated": "2026-10-23 20:51",
  "domestic": [
+  {
+   "title": "인제군, 바이오가스 처리수수료 톤당 10만원 확정…위원회 원안가결",
+   "source": "국제뉴스",
+   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3730040",
+   "pub": "2026-10-23 14:21",
+   "more": 0,
+   "summary": "인제군은 지난 20일 2026년 인제군 지방물가대책위원회를 열고 바이오가스 에너지센터 처리수수료 결정안과 환경자원센터 폐기물 반입수수료 조정안 등 2건의 안건을 원안대로 의결했다. 위원회는 바이오가스 에너지센터의 처리수수료를 음식물류폐기물은 톤당 10만 원, 가축분뇨(돈분)는 9,500원, 하수찌꺼기는 16만 원으로 결정했다. '민생지원금 1인당 30만 원' 30일까지 신청 놓치지 마세요"
+  },
   {
    "title": "황화수소 스크러버 시장 2035년 전망: 바이오가스 수요와 배출 규제가 성장 뒷받침 - 뉴스 및 통계",
    "source": "IndexBox",
@@ -9,35 +17,41 @@
    "more": 0
   },
   {
-   "title": "장성군, 2030년부터 바이오가스 생산…‘폐자원의 친환경 에너지화’ 본격화",
-   "source": "더페어",
-   "link": "https://www.thefairnews.co.kr/news/articleViewAmp.html?idxno=91458",
-   "pub": "2026-10-21 23:29",
-   "more": 0,
-   "summary": "장성군(군수 김한종)이 유기성 폐자원을 활용해 친환경 에너지를 생산하는 ‘통합바이오가스화시설’ 구축 사업을 본격 추진한다. 장성군은 오는 2027년부터 2030년까지 총사업비 481억 원을 투입해 맑은물관리사업소 내 잔여 부지 약 1만 2,900㎡에 군 최초 통합바이오가스화시설을 건립한다고 21일 밝혔다. 생산된 바이오가스는 열병합 발전에 투입돼 청정 전력 및 열에너지로 전환될 예정이다."
-  },
-  {
-   "title": "장성군, 481억 투입 ‘통합바이오가스화시설’ 건립 본격화",
-   "source": "브레이크뉴스",
-   "link": "https://www.breaknews.com/1244792",
-   "pub": "2026-10-21 22:58",
+   "title": "장성군, 481억원 들여 통합바이오가스화시설 건립…2030년 완료 목표",
+   "source": "더파워",
+   "link": "https://www.thepowernews.co.kr/view.php?ud=2026102121320717726d16d784a7_7",
+   "pub": "2026-10-22 09:41",
    "more": 3
   }
  ],
  "overseas": [
   {
-   "title": "Aemetis Begins Operation of Two New Biogas Digesters",
-   "source": "lincolnjournal.com",
-   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPMHNSVGE4Z2NmOW9MbkpTWTJQVHU0MmxoT3BrZGRTb1pkQzE5S0puaTNobHBROTBMbHcwaDdwb0xzam5Ja01TR2diRTFXbUxkNUlrWE1WWDhIdjcwNmJjOGR2MWJ0TFVKRjBlOWdaMVlNNTNhS0VqY3hFVnlYbEFlQVRwaGpYUTlrcDhBc1FZRjFnNXFEaVY3cUNHXzhtTjVDZFZ5RGV4ZG1BZ2I5cEIzRzdrSi1hUHVoM1ZLYVZLZ0JuLVhtbjFZYXpvRjJXMGs3aGxQX2NfeDJGeW5CWVlBcG81MTM3VktOZFdOcmNnbWJ6enBRZ0c4?oc=5",
-   "pub": "2026-10-22 21:00",
-   "more": 1
+   "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
+   "pub": "2026-10-23 16:56",
+   "more": 0
   },
   {
-   "title": "PurposeEnergy commissions $40m plant converting Danone yoghurt waste to biogas",
+   "title": "BPCL holds workshop to scale up compressed biogas projects in Maharashtra",
+   "source": "PSU Watch",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcWZCLUtSLXk2UmZQYlFxVGNWRmF2c0dXZkVzaDRLLW9jemNlRjVmc3A0UW9TNG82MDZKT2QzVi1ZOWNBa3pxMktoZklTN0Mwa3pnMXhlWGk1VEoxb2NMYjRDdndmSHJYWlRmandQeTN6am9TQ1pjY25uS0JRYzkxX3gtLUVSRm5uXzJROUhBN3JabEQ4OWdxWk15UHR1UWFxd1c4TUs2Qjc3UdIBtwFBVV95cUxQQmhDNXBjMnRhQ01uY2ZLODBZWlJVLWdnRFJvQ2E2NjRqY3BxejR4S2JfUnFGTDVIZU5BaUYzMlpSSDlJX2xUWlh4QjdyUHpQRlVWVjNzZjVyZjdXa1lZNGpNa2ZZb2s5ZjRsRGhhMEd0bGFMek9XeEc3aGFaNEozMHZLSldoOURrUldQQkJsU2RwOVNVOVM5NWRVNnpsRzRDTjlPVnU1UWpyM0F0QVVpd2hfdkszb1k?oc=5",
+   "pub": "2026-10-23 00:25",
+   "more": 2
+  },
+  {
+   "title": "Waga Energy launches Indiana landfill RNG facility",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWXJmcWltRVdlSUJ3Z1l1aGNVUlNrM2otYVQyclkycVVwQjdtMVlaLTBwOHVkekpmMWVwTkZIUmFDbzl2THVDQllXbENmaEhTUUNXWVowYUxWbUdyeF9rSm01U20tN2VQdGdCaTB5YzdhMHUyVVFacGVNMlNIU2JCS1JySzVyS3hVRkYyM1VyQkdScllzcGlTR01rcFZVSVk?oc=5",
+   "pub": "2026-10-22 22:10",
+   "more": 3
+  },
+  {
+   "title": "ADBA calls for Green Gas Support Scheme boost after Jackdaw approval",
    "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc1ZqRkxVdG9NTHdlcDdIeWs0OFJWWWtqX2lJNlNCYnlzdEFTLUJvc1NvQ1BxZ0FCcEo1V1BFWXYxbXNjMS1pMS1FbHg5T2R3eEM1NjhCWnZ5NzdMai1MOTl4NTZlS3NHLWZCTVhNV2JGanBaTHVnSFNnN05pYzU2eU5OMXdsTnJkazNPS2pXTkwyR3BOUTZyTUFNLVJ6Nk50NklkbW5Cb3lRRlhxeC1UTnVpbHU?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ1RxajBGbnlGdU5xM190YlVObFpIZFQ2MkhVcGI3amhxU0VVTzVpd2M3VmlfdXhXVFVpcEl1XzRIRmlFVk5FUjMzbGtoeDc2U29EUEtRNGpUOGNfSExQN3hneTktd2c2OUFMU201ZnU4eWdRcC1tNktMaE04TXI1VmR6MTc1dnVfLWNLWnc2ZlZSeS02dk9UOEdtVHpmNl9wcDdxZzBOX3c?oc=5",
    "pub": "2026-10-22 19:42",
-   "more": 1
+   "more": 0
   },
   {
    "title": "Lab study: Sawdust biochar raises chicken-manure biogas while reducing resistance genes",
@@ -47,11 +61,11 @@
    "more": 0
   },
   {
-   "title": "Acorn seeks permit for 100,000-tonne anaerobic digestion plant in Devon",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMjdzTWVUN3NkVUlFeGh4MlQ5WmItTWdubl9BbTlYVjRyMC1fejlKVHRtSFFTN0VmNy0tSDZhRU9qTjFfQ0RVSTVCaVZ3amNtbUdvTHRNNFFZMzM4WHBhX2ZSZGRvam5QeGNEOF9QOFRTZDRpODRvUGh0NWM5RWFKalRiLTlsaUpDMTlxRWFIUEV0Vm1ua1BWbW53N1dUbWJhOVNKX1p4Y2kzMWM?oc=5",
-   "pub": "2026-10-21 15:49",
-   "more": 0
+   "title": "Biogas plants to be expanded to remote areas within two yrs: Aminul",
+   "source": "Bangladesh Sangbad Sangstha (BSS)",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE93MUlGMmZ0SURyelU4MFlNSXpVMWxodWplQWhSTmZ2aEJ1NERyMnhkODFSZUpNalJMc25OUGJmTFlPNTVDY0ZDYkwwbUl4QQ?oc=5",
+   "pub": "2026-10-21 18:29",
+   "more": 5
   },
   {
    "title": "Advisory Board - Biogas Conference",
@@ -61,39 +75,25 @@
    "more": 0
   },
   {
+   "title": "State policies emerge as key drivers of India’s Compressed Biogas expansion, says CSE expert at IFGE conference",
+   "source": "AgroSpectrum India",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQNkE2eVY2V3gzcTE3bnFGdkVSMTFpekNvSkU0SHlEMmFDa0dlQWgzejdQSlRaVDdBZllROTFTa0tCRzhTakJHY2hPcUpSY2ZFQ0tLZVE1d3hvWXRBaGp6OG1HNmQxTUhXSmJUdkJNZ1ZnU1lzLXBLTnI2S2xhTUxuNDdPMUx0UnY4YlBHV0ZPUHZydDFsX1BjNUtPNDloc1dlQUp1Q0NCRlAzX2VTdGZTaHRtXzFQTTd2M2NTSGhyTjJWR1N2Mm9BNkFQcTFQMVB0UXphYi0zQmF1bGtUc2JPQkYyRGJfTzVVOG8zLWFVVQ?oc=5",
+   "pub": "2026-10-21 09:06",
+   "more": 6
+  },
+  {
    "title": "Toyota facility in the UK achieves carbon neutrality with the help of biogas",
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPOFdNdjZ5dzFSNWQwQndCMXpVai13Y21WclJONUp6VWNiZ24tWWFtQmpzWlBybXYxMklnRk5LWXRtamlaVzBWaWxUaDZTXzVheEdRTUxEMFFNN0t4M3hZZnB4NV9ySXhJSlMxRm5oQVNnTFJhQ3Bfa211a2hydzRLalk4LUl3ams3bU9FOXlEOFJ3aXBibmowUG4xcFJ1SmVmejBJeXVudWt2RmpQSF96Vk5Ccw?oc=5",
    "pub": "2026-10-21 08:25",
-   "more": 1
+   "more": 2
   },
   {
-   "title": "Biomethane finance platform launches",
+   "title": "Acorn Bioenergy seeks permit for Devon biogas plant",
    "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTnRmdnc1OGhqUEtWQVFRQVV4VkdHcHpVYzlkSmpzdEpockRqRkFEVUZfM0xJN0psV21PR3NhUU5YRmxrbDN3S2thN0pJT0xHWkJyX2RWVVhVYlZIU0NvYWZLdmItaE5lM2h6NTV2R0FsUVVRZEk0dU4yUjB4YVZkTjJSaWh2S1hBMEE4TWN6SnloaXhZ?oc=5",
-   "pub": "2026-10-21 07:34",
-   "more": 1
-  },
-  {
-   "title": "Opportunities exist to expand biogas production & use",
-   "source": "Brownfield Ag News",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWlBQU09HT0pGX0FTbHdJZUl1eWVLcVVZMzJLU1JKRDJRNWNqWmFGX0U3VTFDNExsNGNHSjJjMzhSWnhIOE5mNy0yczg4NFBMVldZeDVScWVQYUlPa1poaEVfV0xVbWVHdzRFNndJNGNNRGd2T0h6THo5NXdFcGdNYjEyRzdpNUY4SWxxNEdtSQ?oc=5",
-   "pub": "2026-10-20 17:06",
-   "more": 3
-  },
-  {
-   "title": "Fremsyn secures funding for Danish biomethane expansion",
-   "source": "Argus Media",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUWJtUG9DT1JiS3pLYXF6TE10VHctRjNETHAyb09vLVFOcHNKWHI4YlJZbmstNTdJaTNfYzkydHV2cTJjci1Ec3JDV2dzQ3ltQWNxc3Ric3AybTVvTF9JOVZmS3ZidDlYWkI5aF8tUXlKLTBGR1pOZ3VrZVV5a2k0S0E0T1dpR1ZlenhadjY1UF9DMFRxdXVybGIyNmlaS1p2eDFaQVpYYXQzSmtXaHMxeW9ZbGRHMzY4dVhHZGYyeFROT01CQ25Wb3Rn?oc=5",
-   "pub": "2026-10-20 16:00",
-   "more": 4
-  },
-  {
-   "title": "MOL Group opens its first biomethane plant in Szarvas for about €7 million",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRXEzUnNyd0FjV0RvT29WZ3E1UUpDRFM5WDRsX2VFeDBiU3k2RjJsQmRqcVA5d1VKOHBTNWFMZmt4dG1OVXFXNFpPMFZ1ZkhUN3FJQm1zV19qYjBUMkNTX2RlSkdmYjhIYTlXUVBuYlBHbVQ4R3BXME5OQ0NlVl9PckNCNWhMZVNzWkl4aEg4OUtwMVhnekNxd1BDM2FjeDg2?oc=5",
-   "pub": "2026-10-20 11:07",
-   "more": 16
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWTFJRHJZTFNRb3d0cmpwWlBGaS1qWW00bjhrV1o4d2l3VEFMbVhQWURib2Z5Vnc4bXBMeVlOSHVjeHkxREY1bEU2ZXlzSzNweW5aWXduZ0RXeDFkS0Z2bjNwZE5DekRlLUNuMndkWXQ1Ry1oUWtqZFh6M09pVmFISDZaTnJUcExtdnRuOG9kcXdfbEZURGY1Q3AzZmZRcU5QOUhr?oc=5",
+   "pub": "2026-10-21 01:54",
+   "more": 5
   }
  ]
 }
