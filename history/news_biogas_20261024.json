@@ -1,21 +1,29 @@
 {
- "updated": "2026-10-24 09:49",
+ "updated": "2026-10-24 20:18",
  "domestic": [
+  {
+   "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이",
+   "source": "머니투데이",
+   "link": "https://www.mt.co.kr/future/2026/10/24/2026101915435945145",
+   "pub": "2026-10-24 10:00",
+   "more": 1,
+   "summary": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 이형술 대표 \"기본 방식보다 생산량이 4배 많아…해외도 진출\" 업계에선 농업부산물 발생량이 연간 약 1400만톤에 달할 것이란 추산도 나온다."
+  },
+  {
+   "title": "[人사이트] 최영화 블루그린링크 대표 “바이오가스 발전 국산화…물 넘어 에너지로 도약”",
+   "source": "전자신문",
+   "link": "https://www.etnews.com/20261023000091",
+   "pub": "2026-10-24 10:00",
+   "more": 0,
+   "summary": "“20년 넘게 축적한 수처리 기술을 바탕으로 바이오가스 에너지까지 사업 영역을 넓히고 있습니다. 물과 자원순환, 에너지를 연결하는 환경기술 전문기업으로 도약하겠습니다.” 블루그린링크는 2003년 설립된 수처리 전문기업이다."
+  },
   {
    "title": "청주시, 하수슬러지 자체 처리 확대…바이오가스 에너지 활용도",
    "source": "뉴시스",
    "link": "https://www.newsis.com/view/NISX20261024_0003839434",
    "pub": "2026-10-24 09:25",
-   "more": 0,
+   "more": 1,
    "summary": "시설 정비·효율 개선…위탁처리비 6억9000만원 절감 그 결과 올해 3분기까지 신재생에너지시설의 월평균 하수슬러지 처리량은 전년 동기보다 9% 증가한 2292t, 소각처리시설 처리량은 31% 늘어난 3919t에 달했다. 1년 전보다 외부 위탁 처리량이 5100t 줄며 위탁 처리비도 6억9000만원 절감했다."
-  },
-  {
-   "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색'",
-   "source": "유니콘팩토리",
-   "link": "https://www.unicornfactory.co.kr/article/2026101915435945145",
-   "pub": "2026-10-24 09:00",
-   "more": 0,
-   "summary": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 이형술 대표 \"기본 방식보다 생산량이 4배 많아…해외도 진출\" 업계에선 농업부산물 발생량이 연간 약 1400만톤에 달할 것이란 추산도 나온다."
   },
   {
    "title": "도요타통상 토호가스 브라질 사탕수수 부산물 바이오가스 실증 사업 선정",
@@ -30,7 +38,7 @@
    "source": "매일일보",
    "link": "https://www.m-i.kr/news/articleView.html?idxno=2009789",
    "pub": "2026-10-23 20:42",
-   "more": 0,
+   "more": 1,
    "summary": "매일일보 = 윤성수 기자 | 장성군이 가축분뇨와 음식물 폐기물 등 유기성 폐자원을 처리해 에너지를 생산하는 통합바이오가스화시설을 2030년 완공 목표로 추진한다. 시설 조성에는 2027년부터 2030년까지 총사업비 481억원을 투입할 계획이다. 건립 장소는 맑은물관리사업소 잔여 부지 약 1만2900㎡로, 2030년까지 공사를 마치는 일정이다."
   },
   {
@@ -44,13 +52,6 @@
  ],
  "overseas": [
   {
-   "title": "Data-driven operation of biogas plants: Generating electricity when wind and solar power are scarce",
-   "source": "Tech Xplore",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWDM4ZW9fbm5mQVE1LU9IRWF4anZIV1RaZmp1M3drcW1oanJiMG5FdGxkZUs0ZHZtY24weC0wUWl1SEpaLU0tem4yR3dKTTlsbkZjcVZ2Nnd6azc5aFpfN0tkbmQ0djJHb1BrTU9YT3plRDBDR3VxXzRjMGZ3ZDZ1aU0tNmh1X1JWSmdJ?oc=5",
-   "pub": "2026-10-23 20:20",
-   "more": 2
-  },
-  {
    "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
@@ -58,60 +59,67 @@
    "more": 0
   },
   {
-   "title": "Waga Energy launches Indiana landfill RNG facility",
+   "title": "Singapore pairs biomethane pilot with S$143m industrial decarbonisation funding",
    "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWXJmcWltRVdlSUJ3Z1l1aGNVUlNrM2otYVQyclkycVVwQjdtMVlaLTBwOHVkekpmMWVwTkZIUmFDbzl2THVDQllXbENmaEhTUUNXWVowYUxWbUdyeF9rSm01U20tN2VQdGdCaTB5YzdhMHUyVVFacGVNMlNIU2JCS1JySzVyS3hVRkYyM1VyQkdScllzcGlTR01rcFZVSVk?oc=5",
-   "pub": "2026-10-22 22:10",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV09OX052aDhrS2d6SVU1eTcyVnlfLW1ramxsbWxscWFVMUtlMlJSdDFGNGFMTVdtSEl5ZUN0dWpSSkNqVDZhZXdYYl9rbG0tQktUaF9xQUltQkNCOEJYY1lLQ3FZX2RtQ2FwSzNnelpQLXRWVkkwOGpJV2NVWlFDeUxrby1yQktsYlZOQzB0NWdjRWlxN0M5dEE4WGtnMFkwdVpqWkNBVDd0b2dPMTBncl9WMDRZWUY3bFpfWVRhMi1ocFg4?oc=5",
+   "pub": "2026-10-23 17:41",
+   "more": 1
+  },
+  {
+   "title": "The Landfill Group Announces Commercial Operation of First Renewable Natural Gas Facility in Columbus, Georgia",
+   "source": "PR Newswire",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPTGVuMElpS3ZDTWRGcDhhU2x4ZW9TeG1TRWxYQ2drcFB3dnJYT01PM25zSUlkN194OUFDVDlxekwyT1FFMHZTNmNrUFZXWnZ2NzBmYkoxODNnYlJ6U1Q4QTA4MkZpOC16VUlpMHZ1Y28xVUsyck1KTWhBVzlkUHBvNUl6Y0ZYY203TzN2THJWYmlFcDF3N1MyZnh2eEVVR0hqVWVkRjMtcklWZXVQTXJwVGh2X0tuVnNfb2NHWTJ3c3FuLVhMSk9iX1BkeWptNFpmRGhyUGRndG5JZ2hMMTdvRVNGUjFmdmtITmVjN0VwVFNSRWxkdWxKeA?oc=5",
+   "pub": "2026-10-22 21:00",
+   "more": 7
+  },
+  {
+   "title": "BPCL Hosts ‘Waste to Wealth – Scaling GOBARdhan’ Workshop to Strengthen Maharashtra’s Biogas Sector",
+   "source": "Indian Masterminds",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT21fcnJTQU9zWE16MzlsWHFTZE04eVVvLTJHVVVkdlEtSlVBQnFIcXJ5MUozRUtlWnl5WWlvSzZ1WEkta0RYdTVlYm1EZUtHb1huWHlIUTlVT0QxRm9BQ1E2Wk1VanpFeENkY0xGMEpCaHBtNzlNQjMwekRaZ1JBNGJ6WFpTUFJKNW93djVtNVRDdW5hdUxrS040dDJpWVRTUV9kRFRlREdRZw?oc=5",
+   "pub": "2026-10-22 18:50",
    "more": 3
   },
   {
-   "title": "Aemetis Begins Operation of Two New Biogas Digesters",
-   "source": "Moomoo",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd3FUbzJNVUR3djF3dzViZ0R5V3RRc01xVzBueWkzdkdla29sOENSTlVpNGFPVjhqa3ctaTdOUkJnZ1lyUHlvZ0xVMnI1bVgyMndKS0kyWlB0aG1YMzdHTGFjTE8wbk9ZXzF1SEZSRkJ2NGR4aVpHZmFyRDFySF9UbWw1bnpOSlJtQ2FLZ2IyWFp3TnNoa2pJbExMTTE?oc=5",
-   "pub": "2026-10-22 21:00",
-   "more": 3
+   "title": "AEMETIS adds 2 dairy digesters in October, expanding biogas operations to 17 dairies",
+   "source": "Traders Union",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTZlSFdwcllBTHU1S2RweDd3YnZVMUZEakd3Qi1xN0hFM3Fid1pubUNDNnlVcG5wV2pHQ285VWRGU3JkTG50NGozSGItTlVPb0RpcmZuYzNGaHZ0VHJCM2NWYzVhV295ODJiRmY3X0x1UDQ2SWwyVTF6WER5YWQtOVBBVlFnRE42clNjMg?oc=5",
+   "pub": "2026-10-22 03:00",
+   "more": 4
+  },
+  {
+   "title": "Beyond the Digester",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85c3pDa1p4MmcySHhRM1ZrYUwtcnNQYi1HVHRaY1RIYkJvMHlZellONzlmRnNmck5MbWlNS00tZjR0RjQxa2htamdGNWtjUEM2amxuc2FPVXRZZjZiUE04SV9acE1JeGM?oc=5",
+   "pub": "2026-10-22 02:30",
+   "more": 0
+  },
+  {
+   "title": "Biogas plants to reach remote areas within two years: State minister",
+   "source": "The Business Standard",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeUp6WlgtV1M0VmZaeXJlcm04QS1YcTU1elpJU2J4THhYcDVaYjJNNEZpNzVZZUlsaVEta3Jtd0JpSHpZd0tNRHBJX0RQd3NNTnJrUWc5cEkzUkUtSGJoUjN3ZFBLeEFxRklBZkhFZHRxcVY3UHljck9md1ljZFZ1NXpTRTZzT3dVMmJpbUh3R1Nlazl4THFibXVBUXJ4S3ZZclJRM1hJNFN1clU4WVZfbA?oc=5",
+   "pub": "2026-10-22 00:38",
+   "more": 5
   },
   {
    "title": "Lab study: Sawdust biochar raises chicken-manure biogas while reducing resistance genes",
    "source": "Bioengineer.org",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTnpkQXNUQ3RjTkdZWUFxaDh0Y2VRLUgwYW9UVnV0OTJxQnpLMWRPYTRKRXAzRzctTDlVNUVHQkJJdEtVcmgzQTVIaHVtaXQ5LXNHamFjZFJ6QTZ5anhwT1BrOXVTZlppQjZPc2lUN0xNUzFXcEpud2x0WngzOG42SnFtTGNBYklaVHNQU29PWWdVS1c2eUgxUExaT21Qd0FzcDJveDZCdkZmZDg3WWhCcw?oc=5",
    "pub": "2026-10-21 22:38",
-   "more": 0
+   "more": 2
   },
   {
    "title": "UK biomethane sector calls for funding boost after Jackdaw approval",
    "source": "gasworld",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUjFlWU5EVVNHNXhrT29lOTRzMWktYXMyQVozYzhWT2lvYm1UNUwyT2xwSVZTOFVyVXo1V2FCdmdfTWF2djZWNF9wZ185dURpN2x5S0tqVlZZVkVsWTBIcHQyNEw3OURzMUpBZjNIdDJVcXV3X21BTEJ2RWUzN0N0N3RTSUNoX0ZUWlZqbUlucUl3UzR1MnlEanE0Q2E2Y0EzbUxLNlAydndwVlNUdnNZajJsTFkxdw?oc=5",
    "pub": "2026-10-21 21:20",
-   "more": 3
+   "more": 6
   },
   {
    "title": "Northern Ireland seeks views on biomethane sector development",
    "source": "gasworld",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSjlUZTE3SE1weDZQcDc0S0gzRVNYb0lsanBQZDhPdld0c2djWWFQM0lINHBjQVAwbWlNX2ZYc0hHVUZqclZZMGJOTEUwemIyWDhaYzN0MlR1T3BiYWNuZzBHMzZwbXM5cERudDdhalpueFBETUlJdmtKM2NIaXNjakhLaDFvNWRYUmVjMkV6SDJKRkk1Wm9tTnU0TWkxZF9leVdwQng5TnZkZnBmaEE?oc=5",
    "pub": "2026-10-21 20:31",
-   "more": 6
-  },
-  {
-   "title": "Acorn seeks permit for 100,000-tonne anaerobic digestion plant in Devon",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMjdzTWVUN3NkVUlFeGh4MlQ5WmItTWdubl9BbTlYVjRyMC1fejlKVHRtSFFTN0VmNy0tSDZhRU9qTjFfQ0RVSTVCaVZ3amNtbUdvTHRNNFFZMzM4WHBhX2ZSZGRvam5QeGNEOF9QOFRTZDRpODRvUGh0NWM5RWFKalRiLTlsaUpDMTlxRWFIUEV0Vm1ua1BWbW53N1dUbWJhOVNKX1p4Y2kzMWM?oc=5",
-   "pub": "2026-10-21 15:49",
-   "more": 1
-  },
-  {
-   "title": "New Biogas plant approved for site at Royal Wootton Bassett",
-   "source": "BBC",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE41M3d4S2ZHUWxKRDdlMG5INGp0NWRqUGtiU3dCaHQ0Ti1pV1JPQ1loZ01MWEd5NmtPS0pMeWZULXlDRHNPeFJXd1pwdmJSX3VMbGFSbEpZaHJWWUoxWXc?oc=5",
-   "pub": "2026-10-21 14:14",
-   "more": 12
-  },
-  {
-   "title": "Advisory Board - Biogas Conference",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1PdlB5enVxR3Awa2lBQlZvVUFMTXJZd0haNUxycEhyQ3gxUFU2Tkd3dUZEUkQ5OF9lZkdNVUFidk1KVlJLdUVsRzh2dl9aUGp1UjBsaXcxci16U28xMjZmYXJQdjZSY2tz?oc=5",
-   "pub": "2026-10-21 13:49",
-   "more": 0
+   "more": 10
   }
  ]
 }
