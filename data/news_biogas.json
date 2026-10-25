@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24 20:18",
+ "updated": "2026-10-25 09:23",
  "domestic": [
   {
    "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이",
@@ -22,7 +22,7 @@
    "source": "뉴시스",
    "link": "https://www.newsis.com/view/NISX20261024_0003839434",
    "pub": "2026-10-24 09:25",
-   "more": 1,
+   "more": 0,
    "summary": "시설 정비·효율 개선…위탁처리비 6억9000만원 절감 그 결과 올해 3분기까지 신재생에너지시설의 월평균 하수슬러지 처리량은 전년 동기보다 9% 증가한 2292t, 소각처리시설 처리량은 31% 늘어난 3919t에 달했다. 1년 전보다 외부 위탁 처리량이 5100t 줄며 위탁 처리비도 6억9000만원 절감했다."
   },
   {
@@ -52,6 +52,13 @@
  ],
  "overseas": [
   {
+   "title": "Mixing plant material with manure may be key to profitable biogas production",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGxVamwxWjMtZDcwbXVSZUxlbE0tTnNYcU1Gd2U5MlRDc09sSmhsV3N2SDl1ci1hZmdtZ0NsY29OUVFmY3Z0U3Nsa29NMWJsQlBqLVFjbHc1Q3FFWmdzRnB6MEdiRHhDYzNqNVZxQ2IxZVJ1VVFFUFBzV0s4TFQ4V2NkbmxPTElkbUUyeGhhNEpkb1ZxTlpJZDFieHhXbDdTYVhTX2Zxbjh1Y0diWVdUUVJrMA?oc=5",
+   "pub": "2026-10-24 03:24",
+   "more": 0
+  },
+  {
    "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
@@ -59,10 +66,10 @@
    "more": 0
   },
   {
-   "title": "Singapore pairs biomethane pilot with S$143m industrial decarbonisation funding",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV09OX052aDhrS2d6SVU1eTcyVnlfLW1ramxsbWxscWFVMUtlMlJSdDFGNGFMTVdtSEl5ZUN0dWpSSkNqVDZhZXdYYl9rbG0tQktUaF9xQUltQkNCOEJYY1lLQ3FZX2RtQ2FwSzNnelpQLXRWVkkwOGpJV2NVWlFDeUxrby1yQktsYlZOQzB0NWdjRWlxN0M5dEE4WGtnMFkwdVpqWkNBVDd0b2dPMTBncl9WMDRZWUY3bFpfWVRhMi1ocFg4?oc=5",
-   "pub": "2026-10-23 17:41",
+   "title": "Quit truck-driving job to take up farming: Biogas cuts cooking costs, slurry reduces fertiliser expenses an...",
+   "source": "Bhaskar English",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSlVuVUpDOXJiVTNBZ1dIc0FDbks2ZGx6c1lybGFSSGRtNG5SelVLbzEtVWsyODE0LVdjX1JMQURnWjBXSng5SlFNcC1CWmpnSHdVaGpPV0RnWjRaS1pBR1ZuRlFpSHJKSk1sdlNMbDhzQnlacHdMelNMYjN0TE1kT2pvY1YxWkhVU0NZTEJkcW9UejRPcVVObHc4TkotRUh5TDE2cGdLR2tEOHdSekR6bEZPSWZZcUI1X0Z1MEtBem1xYm5iNllSdTJ30gHPAUFVX3lxTFBRalBGNVUyNnA0LWZ5RkpGaEtiX2ZMU3pWZmNEaDhUTkcyY3FtQnFwVy1ZbkRlTFZzOXI0Zk1ubkNvN183Q1YwU2tSakpoX3FYdExEMTlES2NnZ0tEQjhBLTV2Y2xZU2RZUGRaVVJTZG02MEJZdGE0eFhNSXIyUW56Y3dLcG81Q2tqOHJDY2ZCWTRMYS1TZHdLb2Y4UDdJUkZSUjZGdGMyTUV4SHdtNTZNQnNoRlc5dXEwWFZNN1NkTG1PbXZMdk1sX2xQS0RwNA?oc=5",
+   "pub": "2026-10-23 08:30",
    "more": 1
   },
   {
@@ -73,53 +80,46 @@
    "more": 7
   },
   {
-   "title": "BPCL Hosts ‘Waste to Wealth – Scaling GOBARdhan’ Workshop to Strengthen Maharashtra’s Biogas Sector",
-   "source": "Indian Masterminds",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT21fcnJTQU9zWE16MzlsWHFTZE04eVVvLTJHVVVkdlEtSlVBQnFIcXJ5MUozRUtlWnl5WWlvSzZ1WEkta0RYdTVlYm1EZUtHb1huWHlIUTlVT0QxRm9BQ1E2Wk1VanpFeENkY0xGMEpCaHBtNzlNQjMwekRaZ1JBNGJ6WFpTUFJKNW93djVtNVRDdW5hdUxrS040dDJpWVRTUV9kRFRlREdRZw?oc=5",
-   "pub": "2026-10-22 18:50",
-   "more": 3
+   "title": "Aemetis Begins Operation of Two New Biogas Digesters",
+   "source": "Moomoo",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd3FUbzJNVUR3djF3dzViZ0R5V3RRc01xVzBueWkzdkdla29sOENSTlVpNGFPVjhqa3ctaTdOUkJnZ1lyUHlvZ0xVMnI1bVgyMndKS0kyWlB0aG1YMzdHTGFjTE8wbk9ZXzF1SEZSRkJ2NGR4aVpHZmFyRDFySF9UbWw1bnpOSlJtQ2FLZ2IyWFp3TnNoa2pJbExMTTE?oc=5",
+   "pub": "2026-10-22 21:00",
+   "more": 1
   },
   {
-   "title": "AEMETIS adds 2 dairy digesters in October, expanding biogas operations to 17 dairies",
-   "source": "Traders Union",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPdTZlSFdwcllBTHU1S2RweDd3YnZVMUZEakd3Qi1xN0hFM3Fid1pubUNDNnlVcG5wV2pHQ285VWRGU3JkTG50NGozSGItTlVPb0RpcmZuYzNGaHZ0VHJCM2NWYzVhV295ODJiRmY3X0x1UDQ2SWwyVTF6WER5YWQtOVBBVlFnRE42clNjMg?oc=5",
-   "pub": "2026-10-22 03:00",
-   "more": 4
-  },
-  {
-   "title": "Beyond the Digester",
-   "source": "Biomass Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE85c3pDa1p4MmcySHhRM1ZrYUwtcnNQYi1HVHRaY1RIYkJvMHlZellONzlmRnNmck5MbWlNS00tZjR0RjQxa2htamdGNWtjUEM2amxuc2FPVXRZZjZiUE04SV9acE1JeGM?oc=5",
-   "pub": "2026-10-22 02:30",
+   "title": "ADBA calls for Green Gas Support Scheme boost after Jackdaw approval",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ1RxajBGbnlGdU5xM190YlVObFpIZFQ2MkhVcGI3amhxU0VVTzVpd2M3VmlfdXhXVFVpcEl1XzRIRmlFVk5FUjMzbGtoeDc2U29EUEtRNGpUOGNfSExQN3hneTktd2c2OUFMU201ZnU4eWdRcC1tNktMaE04TXI1VmR6MTc1dnVfLWNLWnc2ZlZSeS02dk9UOEdtVHpmNl9wcDdxZzBOX3c?oc=5",
+   "pub": "2026-10-22 19:42",
    "more": 0
   },
   {
-   "title": "Biogas plants to reach remote areas within two years: State minister",
-   "source": "The Business Standard",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNeUp6WlgtV1M0VmZaeXJlcm04QS1YcTU1elpJU2J4THhYcDVaYjJNNEZpNzVZZUlsaVEta3Jtd0JpSHpZd0tNRHBJX0RQd3NNTnJrUWc5cEkzUkUtSGJoUjN3ZFBLeEFxRklBZkhFZHRxcVY3UHljck9md1ljZFZ1NXpTRTZzT3dVMmJpbUh3R1Nlazl4THFibXVBUXJ4S3ZZclJRM1hJNFN1clU4WVZfbA?oc=5",
-   "pub": "2026-10-22 00:38",
-   "more": 5
+   "title": "PurposeEnergy opens $40m biogas facility in Ohio",
+   "source": "Food and Drink International",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZHNubTBKa3pnSnliR1pWcnJVWVBOeFAyMnpEX0VxSHlQNEZCdnpEN1B0cF80bXhzR0c3SDc5Z0tOYW44MnU1b2NUNVNkQ2RwaTc5WU9ISDhOMkFkd2hDSGFtLUFhejJGTFBvUURIa21jVVBfTjZuTDdQcXFJVzNyUmRtWGtQUHRRMktwVm9USQ?oc=5",
+   "pub": "2026-10-22 17:00",
+   "more": 4
   },
   {
-   "title": "Lab study: Sawdust biochar raises chicken-manure biogas while reducing resistance genes",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTnpkQXNUQ3RjTkdZWUFxaDh0Y2VRLUgwYW9UVnV0OTJxQnpLMWRPYTRKRXAzRzctTDlVNUVHQkJJdEtVcmgzQTVIaHVtaXQ5LXNHamFjZFJ6QTZ5anhwT1BrOXVTZlppQjZPc2lUN0xNUzFXcEpud2x0WngzOG42SnFtTGNBYklaVHNQU29PWWdVS1c2eUgxUExaT21Qd0FzcDJveDZCdkZmZDg3WWhCcw?oc=5",
-   "pub": "2026-10-21 22:38",
+   "title": "Agra Energy Hits TRL 9, Converts Dairy Biogas Into SAF and Naphtha",
+   "source": "ChemAnalyst",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRkJSQ2lNUVVCRDE3ajljbU9GcVJfT3E3WHpMdVlqMENkUUFlWmkyQVZhNG9qcURENFdJMFd1NDROaEdrckNpejBGNEhJVDlQYkJnb2tTM1BnREJYWC02MUlIckVRdHJ6Q05UWjRKTmJtTDZEN056T3F4c3NLM1dXS1FEdjlScFhtNTBtbE1RWmY2eGhpS0VPc00yVzJNMktGUXpiTEg5XzNEcmdpaDBwWjB3?oc=5",
+   "pub": "2026-10-22 16:15",
    "more": 2
   },
   {
-   "title": "UK biomethane sector calls for funding boost after Jackdaw approval",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUjFlWU5EVVNHNXhrT29lOTRzMWktYXMyQVozYzhWT2lvYm1UNUwyT2xwSVZTOFVyVXo1V2FCdmdfTWF2djZWNF9wZ185dURpN2x5S0tqVlZZVkVsWTBIcHQyNEw3OURzMUpBZjNIdDJVcXV3X21BTEJ2RWUzN0N0N3RTSUNoX0ZUWlZqbUlucUl3UzR1MnlEanE0Q2E2Y0EzbUxLNlAydndwVlNUdnNZajJsTFkxdw?oc=5",
-   "pub": "2026-10-21 21:20",
-   "more": 6
+   "title": "Developing Biogas, a Low-carbon, Renewable and Local Energy Source",
+   "source": "TotalEnergies.com",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRzFkMFp2d0JzbHRDanQ2ZWhDWEdndHUyYWotcjJ6c0plZFpIdmFhRVBTTkNEYW1sc2dHd1htOWxYdllXWDV4enZmOTB0NzNuTldNUHJ5US1tb3pRemh5cVg2T0w2bG9HSWNfNFNKcnotNFBiN21qbEpwQ0oya1liNFRSRWp6cW1PbVcyQjZDZEJPeEJpMDJudUtvOXNiZw?oc=5",
+   "pub": "2026-10-22 16:00",
+   "more": 3
   },
   {
-   "title": "Northern Ireland seeks views on biomethane sector development",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSjlUZTE3SE1weDZQcDc0S0gzRVNYb0lsanBQZDhPdld0c2djWWFQM0lINHBjQVAwbWlNX2ZYc0hHVUZqclZZMGJOTEUwemIyWDhaYzN0MlR1T3BiYWNuZzBHMzZwbXM5cERudDdhalpueFBETUlJdmtKM2NIaXNjakhLaDFvNWRYUmVjMkV6SDJKRkk1Wm9tTnU0TWkxZF9leVdwQng5TnZkZnBmaEE?oc=5",
-   "pub": "2026-10-21 20:31",
-   "more": 10
+   "title": "Mahanagar Gas signs MoU to explore biogas projects in Maharashtra, Karnataka",
+   "source": "The Financial Express",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVFNaXzRlOE1LWWFlYWFBQ0hGakV5MkJlZUx4bUhleHhXRnR0RlpEN0N0eWtFQktGakpBeE9WaGxFVDEzejNfN1J1TTNmZ25FTXZRakFfengza2lWaDFUUUk4T25aOHV6bndLMmJsY2lqU1U2WHpURGFtMUFzUmFwUFNSRkszbEhlSFlsbVZnMzFrN1h1MExWc2VkYmFpU0c2ZC1ISTlWWTFLVWlLYVE1SGRmb3NvT3BvWVM4Rl9kcVFqeFZrZklIWjg1ZWg5dHdB0gHXAUFVX3lxTE5tb1JmZmlZanJnTlItVGlYZ1VLX0RUcFNrSEpfZFlrZHNRTWVoS0FfQUlWUE5ja3B3TmdXdGF3d0FCYVAzb0ZOT21uakswMlhVT1F6aVc4bTZtNWlFeFJvQzlHZkI5OVF6OFBFT0p5VWhvcnBFVF9LMFJ6dmlSVnVDVVpxQV9mT3d5WXVYT2taclpGV3ZBYXZabnROb1ZtaDBNV21OMEM4M241Q2ZNb2syc084VHpWZEN6RnJVYUkxV3daTmx5TDhzYWloNkpUREtndUxIVEFJ?oc=5",
+   "pub": "2026-10-22 13:38",
+   "more": 7
   }
  ]
 }
