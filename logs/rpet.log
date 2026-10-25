@@ -1,2 +1,20 @@
+>> [검색] "rPET" prices 실패: HTTPError
+>> [검색] "rPET" price tonne 실패: HTTPError
+>> [검색] "recycled PET" prices 실패: HTTPError
+>> [검색] "food-grade" rPET pellets 실패: HTTPError
+>> [검색] rPET flakes prices 실패: HTTPError
+>> [검색] "recycled polymer" prices PET 실패: HTTPError
+>> [검색] rPET site:opis.com 실패: HTTPError
+>> [검색] rPET site:argusmedia.com 실패: HTTPError
+>> [검색] rPET site:spglobal.com 실패: HTTPError
+>> [검색] rPET site:chemorbis.com 실패: HTTPError
+>> [검색] rPET site:euwid-recycling.com 실패: HTTPError
+>> [검색] "PET bales" prices 실패: HTTPError
+>> [검색] rPET 가격 실패: HTTPError
+>> [검색] 재생 페트 가격 실패: HTTPError
+>> [검색] 식품용 rPET 실패: HTTPError
+>> [검색] 재생 PET 칩 가격 실패: HTTPError
+>> [검색] 페트 플레이크 가격 실패: HTTPError
+>> [검색] 재생원료 페트 단가 실패: HTTPError
 >> 기사 0건 확인, 자동 추출 0건 추가 (확인 60 · 자동 6)
 >> data/rpet.json, history/rpet_20261025.json 저장
