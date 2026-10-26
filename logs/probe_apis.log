@@ -1,5 +1,25 @@
-curl 401 0.640815s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 7.127295s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.625963s https://www.re.or.kr/
-{'currency': 'EUR', 'symbol': 'CO2.L', 'exchangeName': 'LSE', 'fullExchangeName': 'LSE', 'instrumentType': 'EQUITY', 'longName': 'SparkChange Physical Carbon EUA ETC', 'shortName': 'HANETF ETC SECURITIES PLC SPARK', 'regularMarketPrice': 82.27, 'regularMarketTime': 1792750967}
-최근 종가: [83.68, 83.65, 82.71, 81.94, 80.92, 81.64, 81.47, 81.5, 82.25, 82.27]
+curl 401 0.544692s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 20.531158s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.940768s https://www.re.or.kr/
+
+== https://www.k-apt.go.kr/: 200 97자 → https://www.k-apt.go.kr/
+   title: 
+   입찰 링크: []
+   ajax 후보: []
+   select: []
+   form input: []
+
+== https://www.k-apt.go.kr/bid/bidList.do: 200 294690자 → https://www.k-apt.go.kr/bid/bidList.do
+   title: K-apt 공동주택관리정보시스템
+   입찰 링크: ['/bid/bidAreaElctrnBidStats.do', '/bid/bidAreaElctrnSysUseStats.do', '/bid/bidDetail.do', '/bid/bidGuide.do', '/bid/bidGuide.do#certification', '/bid/bidList.do', '/bid/bidList.do?type=3', '/bid/bidResultList.do', '/bid/bidStatistic.do', '/bid/getBidCodeGroup.do', '/bid/privateContractList.do']
+   ajax 후보: ['/bid/getBidCodeGroup.do', '/cmmn/session/loginIngEdateUpdate.do']
+   select: [('searchYYYY', [('', '')]), ('searchMM', [('', '')]), ('comboSIDO', [('', '광역시')]), ('comboSGG', [('', '시/군/구')]), ('comboEMD', [('', '읍/면/동')]), ('comboSIDO', [('', '광역시')]), ('comboSGG', [('', '시/군/구')]), ('searchBidGb', [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')])]
+   form input: ['BJD_kapt_name', '_csrf', 'aptCode', 'aptName', 'bidArea', 'bidNo', 'bidNum', 'bidTitle', 'bjd_code', 'bjd_name', 'dTime', 'dateArea', 'dateEnd', 'dateStart', 'go_url', 'kaptDuty', 'kapt_code', 'mainKaptCode', 'pageNo', 'pageSelect', 'search_date', 'type']
+   tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026133303604"> <td onclick="javascript:goView('20261026133303604')">2456</td> <td onclick="javascript:goView('20261026133303604')">K-APT</td> <td onclick="javascript:goView('20261026133303604')">최저 낙찰</td> <td onclick="javascript:goView('20261026133303604')" class="txtL" colName="bidTitle"> <b>[강원] 스크린골프 장비 렌탈업체 선정 입찰공고<img src="/images/icon/icon_file.gif" alt="첨부파일있음" style="vertical-align: middle;margin-top:-2px; margin-left:5px;"/></b> </td> <td onclick="javascript:goView('20261026133303604')">2026-11-06 17:00:00</td> <td onclick="javascript:goView('20261026133303604')"> <span class="bid bid1">신규공고</span> </td> <td class="txtL" onclick="initList(4, 'A20016002');" colName="apt_name" title='단지명 : '> 춘천 포스코 더샵</td> <td onclick="javascript:goView('20261026133303604')">2026-10-26 13:47:08</td> </tr> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" styl
+
+== https://www.k-apt.go.kr/bid/bidListNew.do: 200 247834자 → https://www.k-apt.go.kr/bid/bidListNew.do
+   title: K-apt 공동주택관리정보시스템
+   입찰 링크: ['/bid/bidAreaElctrnBidStats.do', '/bid/bidGuide.do', '/bid/bidGuide.do#certification', '/bid/bidList.do', '/bid/bidList.do?type=3', '/bid/bidResultList.do', '/bid/bidStatistic.do', '/bid/privateContractList.do']
+   ajax 후보: ['/cmmn/session/loginIngEdateUpdate.do']
+   select: [('searchYYYY', [('', '')]), ('searchMM', [('', '')]), ('comboSIDO', [('', '광역시')]), ('comboSGG', [('', '시/군/구')]), ('comboEMD', [('', '읍/면/동')]), ('comboSIDO', [('', '광역시')]), ('comboSGG', [('', '시/군/구')])]
+   form input: ['BJD_kapt_name', '_csrf', 'bjd_code', 'bjd_name', 'go_url', 'kaptDuty', 'kapt_code', 'search_date']
