@@ -1,6 +1,6 @@
-curl 401 0.967622s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 10.633445s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.925728s https://www.re.or.kr/
+curl 401 0.860005s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 1.244118s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.680205s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
@@ -12,9 +12,9 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'A33980024');", "initList(4, 'B11122980');", "initList(4, 'A15809601');", "initList(4, 'A41507007');", "initList(4, 'B11126556');", "initList(4, 'B11124897');", "initList(4, 'B11115211');", "initList(4, 'A70225009');", "initList(4, 'A50680103');"]
+검색 버튼: ["initList(4, '');", "initList(4, 'B11125805');", "initList(4, 'A33980024');", "initList(4, 'B11122980');", "initList(4, 'A15809601');", "initList(4, 'A41507007');", "initList(4, 'B11126556');", "initList(4, 'B11124897');", "initList(4, 'B11115211');", "initList(4, 'A70225009');"]
 
-GET: 응답 293962자, 행 7개, 총건수 표시 None
+GET: 응답 293964자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
    20261026090155525 ['18', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
    20261023132621265 ['17', 'K-APT', '최고 낙찰', '[경기] 폐 변압기 매입 및 절연유 등 폐기 처리 사업자 선정 공고', '2026-11-12 17:00:00', '신규공고', '대림한숲', '2026-10-23 13:26:21']
@@ -24,4 +24,35 @@ GET: 응답 293962자, 행 7개, 총건수 표시 None
    20261022132427342 ['13', 'K-APT', '최고 낙찰', '[경기] 제활용품 수거업체 선정공고', '2026-11-04 17:00:00', '신규공고', '평택한일', '2026-10-22 13:24:27']
    20261021112126877 ['10', 'K-APT', '최고 낙찰', '[서울] 승강기 내·외부 미디어보드 설치 및 운영업체 선정 입찰 재공고(2차)', '2026-11-02 17:00:00', '신규공고', '아카데미스위트', '2026-10-21 13:24:59']
 
-결과 머리: 
+마감공고 1쪽: 4 건; 페이지 링크: []
+tbody tr 수: 6 dataId tr 수: 6
+Traceback (most recent call last):
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_kapt.py", line 56, in <module>
+    d = get(B + f"/bid/bidDetail.do?bidNum={did}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_kapt.py", line 8, in get
+    r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": B + "/bid/bidList.do", **(hdr or {})}), timeout=60)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1404, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1365, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
