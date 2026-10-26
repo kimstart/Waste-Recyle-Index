@@ -1,6 +1,6 @@
-curl 401 0.860005s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 1.244118s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.680205s https://www.re.or.kr/
+curl 401 0.748746s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 10.829935s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.895296s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
@@ -12,9 +12,9 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'B11125805');", "initList(4, 'A33980024');", "initList(4, 'B11122980');", "initList(4, 'A15809601');", "initList(4, 'A41507007');", "initList(4, 'B11126556');", "initList(4, 'B11124897');", "initList(4, 'B11115211');", "initList(4, 'A70225009');"]
+검색 버튼: ["initList(4, '');", "initList(4, 'A15809601');", "initList(4, 'B11125805');", "initList(4, 'A33980024');", "initList(4, 'B11122980');", "initList(4, 'A15809601');", "initList(4, 'A41507007');", "initList(4, 'B11126556');", "initList(4, 'B11124897');", "initList(4, 'B11115211');"]
 
-GET: 응답 293964자, 행 7개, 총건수 표시 None
+GET: 응답 293963자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
    20261026090155525 ['18', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
    20261023132621265 ['17', 'K-APT', '최고 낙찰', '[경기] 폐 변압기 매입 및 절연유 등 폐기 처리 사업자 선정 공고', '2026-11-12 17:00:00', '신규공고', '대림한숲', '2026-10-23 13:26:21']
@@ -23,36 +23,55 @@ GET: 응답 293964자, 행 7개, 총건수 표시 None
    20261022155445840 ['14', 'K-APT', '적격심사', '[서울] 재활용품 수거업체 선정 긴급 입찰공고', '2026-10-28 17:00:00', '신규공고', '미성아파트(불광동)', '2026-10-22 15:56:27']
    20261022132427342 ['13', 'K-APT', '최고 낙찰', '[경기] 제활용품 수거업체 선정공고', '2026-11-04 17:00:00', '신규공고', '평택한일', '2026-10-22 13:24:27']
    20261021112126877 ['10', 'K-APT', '최고 낙찰', '[서울] 승강기 내·외부 미디어보드 설치 및 운영업체 선정 입찰 재공고(2차)', '2026-11-02 17:00:00', '신규공고', '아카데미스위트', '2026-10-21 13:24:59']
+  1쪽: tr 10, 신규 7
+   (재시도 1 RemoteDisconnected )
+  2쪽: tr 10, 신규 8
+  3쪽: tr 2, 신규 1
+   (재시도 1 RemoteDisconnected )
+  4쪽: tr 0, 신규 0
+1년 합계 16 건; 상태 분포: {'신규공고': 11, '재공고': 1, '입찰마감': 4}
+    ['8', 'K-APT', '최고 낙찰', '[서울] 재활용품 수거업체 선정공고', '2026-10-26 17:00:00', '재공고', '이문아이파크자이', '2026-10-14 11:52:13']
+    ['7', 'K-APT', '최고 낙찰', '[경기] 폐자전거 매각 업체 선정 입찰공고폐(재공고)', '2026-10-26 17:00:00', '신규공고', '중동팰리스카운티', '2026-10-13 11:42:26']
+    ['5', 'K-APT', '최고 낙찰', '[경기] 승강기 교체공사 폐자재 매각 입찰공고', '2026-10-14 17:00:00', '입찰마감', '초월역동광뷰엘', '2026-10-01 13:17:19']
+    ['4', 'K-APT', '최고 낙찰', '[경기] 고철 및 폐자재 매각 공고', '2026-06-15 15:00:00', '입찰마감', '연성쉐르빌', '2026-06-02 15:35:05']
+    ['3', 'K-APT', '적격심사', '[인천] 재활용품 수거업체 선정', '2026-05-06 10:00:00', '입찰마감', '하늘도시 서한이다음아파트', '2026-04-24 18:41:56']
+    ['2', 'K-APT', '적격심사', '[인천] 재활용품 수거업체 선정', '2026-04-23 17:00:00', '입찰마감', '하늘도시 서한이다음아파트', '2026-04-17 15:12:15']
 
-마감공고 1쪽: 4 건; 페이지 링크: []
-tbody tr 수: 6 dataId tr 수: 6
-Traceback (most recent call last):
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_kapt.py", line 56, in <module>
-    d = get(B + f"/bid/bidDetail.do?bidNum={did}")
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_kapt.py", line 8, in get
-    r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": B + "/bid/bidList.do", **(hdr or {})}), timeout=60)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 519, in open
-    response = self._open(req, data)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 536, in _open
-    result = self._call_chain(self.handle_open, protocol, protocol +
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 496, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1404, in https_open
-    return self.do_open(http.client.HTTPSConnection, req,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/urllib/request.py", line 1365, in do_open
-    r = h.getresponse()
-        ^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 1443, in getresponse
-    response.begin()
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 337, in begin
-    version, status, reason = self._read_status()
-                              ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/http/client.py", line 306, in _read_status
-    raise RemoteDisconnected("Remote end closed connection without"
-http.client.RemoteDisconnected: Remote end closed connection without response
+상세 20261001110611995: [('주택관리업자 단지명 관리사무소', '20261001110611995'), ('입찰방법', '전자입찰'), ('입찰서 제출 마감일', '2026-10-14 17:00:00'), ('입찰제목', '승강기 교체공사 폐자재 매각 입찰공고'), ('긴급입찰여부', '긴급 일반'), ('입찰종류', '일반경쟁'), ('낙찰방법', '최고 낙찰'), ('입찰분류', '사업자 - 물품 - 매각'), ('신용평가등급확인서 제출여부', '미제출'), ('현장설명', '현장설명회있음( 필수 임의 ) 없음 현장설명이 있을 시, 불참업체는 낙찰 선정에 불이익을 받으실 수 있습니다.'), ('관리(공사용역) 실적증명서 제', '미제출'), ('현장설명일시', ''), ('현장설명장소', ''), ('입찰구비서류', '있음 없음 &nbsp;&nbsp; 공고문 참조 입찰구비서류 부적정 업체는 낙찰 선정에 불이익을 받으실 수 있습니다.'), ('서류제출마감일', '2026-10-14 17:00:00'), ('입찰보증금', '입찰가격의[5]% 이상 제출'), ('지급조건', ''), ('내용', '입찰공고문 참조'), ('파일첨부', '체크 다운로드 전체 다운로드')]
+   [낙찰] hecked'> 입찰종류 일반경쟁 낙찰방법 최고 낙찰 입찰분류 사업자 - 물품 - 매각 신용평가등급확인서 제출여부 미제출 
+   [낙찰]  입찰종류 일반경쟁 낙찰방법 최고 낙찰 입찰분류 사업자 - 물품 - 매각 신용평가등급확인서 제출여부 미제출 </t
+   [결과]  회계감사 공동주택 회계감사결과, 회계감사 통계자료를 확인 할 수 있습니다. <a href='javascript:goMapView("/audt/openAudt.do")' title="우리단지 회계
+   [결과]  우리단지 회계감사결과 지역별 감사의견 통계 회계감사결
+   첨부: ["'BID_FILE','CHECKED', true", "'BID_FILE','AUTO', true", ' "input[ name=fileNum ] " '] []
+
+상세 20260602153505166: [('단지명 관리사무소 주소 전화번', '20260602153505166'), ('입찰방법', '전자입찰'), ('입찰서 제출 마감일', '2026-06-15 15:00:00'), ('입찰제목', '고철 및 폐자재 매각 공고'), ('긴급입찰여부', '긴급 일반'), ('입찰종류', '일반경쟁'), ('낙찰방법', '최고 낙찰'), ('입찰분류', '사업자 - 물품 - 매각'), ('신용평가등급확인서 제출여부', '미제출'), ('현장설명', '현장설명회있음( 필수 임의 ) 없음 현장설명이 있을 시, 불참업체는 낙찰 선정에 불이익을 받으실 수 있습니다.'), ('관리(공사용역) 실적증명서 제', '미제출'), ('현장설명일시', ''), ('현장설명장소', ''), ('입찰구비서류', '있음 없음 &nbsp;&nbsp; 공고문 참조 입찰구비서류 부적정 업체는 낙찰 선정에 불이익을 받으실 수 있습니다.'), ('서류제출마감일', '2026-06-15 15:00:00'), ('입찰보증금', '입찰가격의[5]% 이상 제출'), ('지급조건', ''), ('내용', '낙찰후 3일이내 계약체결조건입니다'), ('파일첨부', '체크 다운로드 전체 다운로드')]
+   [낙찰] hecked'> 입찰종류 일반경쟁 낙찰방법 최고 낙찰 입찰분류 사업자 - 물품 - 매각 신용평가등급확인서 제출여부 미제출 
+   [낙찰]  입찰종류 일반경쟁 낙찰방법 최고 낙찰 입찰분류 사업자 - 물품 - 매각 신용평가등급확인서 제출여부 미제출 </t
+   [결과]  회계감사 공동주택 회계감사결과, 회계감사 통계자료를 확인 할 수 있습니다. <a href='javascript:goMapView("/audt/openAudt.do")' title="우리단지 회계
+   [결과]  우리단지 회계감사결과 지역별 감사의견 통계 회계감사결
+   첨부: ["'BID_FILE','CHECKED', true", "'BID_FILE','AUTO', true", ' "input[ name=fileNum ] " '] []
+   (재시도 1 HTTPError )
+   (재시도 2 HTTPError )
+   (재시도 3 HTTPError )
+
+단지정보 /apt/danjiInfo.do?kaptCode=A15809601 실패 RuntimeError
+   (재시도 1 HTTPError )
+   (재시도 2 HTTPError )
+   (재시도 3 HTTPError )
+
+단지정보 /kaptinfo/openkaptinfo.do?kapt_code=A15809601 실패 RuntimeError
+   (재시도 1 HTTPError )
+   (재시도 2 HTTPError )
+   (재시도 3 HTTPError )
+
+단지정보 /cmmn/kaptInfo.do?kapt_code=A15809601 실패 RuntimeError
+   (재시도 1 HTTPError )
+   (재시도 2 TimeoutError )
+   (재시도 3 HTTPError )
+
+API AptBasisInfoServiceV4/getAphusBassInfoV4 실패 RuntimeError K-APT 응답 없음
+   (재시도 1 HTTPError )
+   (재시도 2 HTTPError )
+   (재시도 3 HTTPError )
+
+API AptBasisInfoServiceV3/getAphusBassInfoV3 실패 RuntimeError K-APT 응답 없음
