@@ -80,6 +80,18 @@ def main():
     if ids:
         state["bid_ids"] = ids
 
+    # 아파트 단지 재활용품 매각·수거 (K-APT 공고 + 업로드한 입찰결과)
+    apt = load("data/apt_sales.json", {}) or {}
+    aids = sorted(x["id"] for x in apt.get("items", []))
+    old_a = state.get("apt_ids")
+    if not first and old_a is not None:
+        new = [x for x in apt.get("items", []) if x["id"] not in set(old_a)]
+        if new:
+            ev("plastic", f"아파트 재활용품 매각·수거 공고 신규 {len(new)}건 — {new[0].get('apt', '')}" + (" 외" if len(new) > 1 else ""))
+    state["apt_ids"] = aids
+    if changed("apt_results", apt.get("results_updated")):
+        ev("plastic", f"아파트 재활용품 입찰결과 엑셀 반영 — 누적 {len(apt.get('results', []))}건")
+
     # 선별·처리 대행 용역 (수도권)
     svc = (load("data/services.json", {}) or {}).get("items", [])
     sids = {b["id"]: b.get("status") for b in svc}

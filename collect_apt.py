@@ -15,7 +15,8 @@ AREA = "11|28|41"                       # 서울·인천·경기
 KW = ["재활용"]
 FOCUS = ["화성", "수원", "평택", "오산"]
 KEEP = re.compile(r"재활용|폐지|고철|캔|페트|PET|폐비닐|스티로폼|수거")
-DROP = re.compile(r"음식물|폐가전|폐변압기|미디어보드|광고|승강기|자전거")
+DROP = re.compile(r"음식물|폐가전|폐변압기|미디어보드|광고|승강기|자전거|공사|확장|설치|도색|보수")
+DROP_CLS = re.compile(r"공사|주택관리업자")      # 재활용장 공사·위탁관리 공고 제외
 _op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
 
 
@@ -109,6 +110,7 @@ def main():
                     n_new += 1
                 it["region"], it["city"] = region_of(title, it)
                 items[r["id"]] = it
+    items = {k: v for k, v in items.items() if not DROP_CLS.search(v.get("cls", "")) and not DROP.search(v.get("title", ""))}
     lst = sorted(items.values(), key=lambda x: (x.get("reg") or "", x["id"]), reverse=True)
     save(OUT, {"updated": now.strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or (first and ok),
                "results_updated": st.get("results_updated"), "items": lst, "results": st.get("results", [])})

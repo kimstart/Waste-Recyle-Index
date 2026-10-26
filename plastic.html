@@ -12,7 +12,7 @@
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 대행 용역 · 제도 · 신재 시장 · 뉴스 · 해외</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 아파트 매각 · 대행 용역 · 제도 · 신재 시장 · 뉴스 · 해외</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -57,6 +57,21 @@
   </table>
   <div class="note">순환자원정보센터 전자입찰·수의견적(공공데이터포털 API)과 나라장터에 올라온 지자체·공공기관·업체의 플라스틱 관련 매각(최고가) 공고입니다. 공고명·공고기관·입찰가능지역으로 지역을 나눴습니다.
     낙찰 단가는 단가 입찰이면 낙찰 금액, 총액 입찰이면 낙찰 총액÷수량으로 계산했습니다. 예정가격을 공개하지 않는 공고가 많아 낙찰/예정가격 비율은 공개된 건만 계산합니다. 연간 단가계약이 많아 공고는 12~1월에 몰립니다.</div>
+
+  <h2>아파트 단지 재활용품 매각·수거 <small id="aptUpd"></small></h2>
+  <div class="ctl">
+    <div class="rp-seg" id="aptScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
+    <div class="rp-seg" id="aptPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
+  </div>
+  <div class="kpis" id="aptKpi"></div>
+  <table class="cmp bids">
+    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">단지명</th><th>공고명</th><th class="h-m">낙찰방법</th><th>결과</th></tr></thead>
+    <tbody id="aptBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
+  </table>
+  <div class="note">아파트 관리주체가 재활용품 수거업체를 고르는 입찰입니다(공고명에 '재활용'이 들어간 서울·인천·경기 공고). 단지마다 '물품 매각', '기타 용역', '잡수입' 등 분류가 달라 제목으로 찾습니다.
+    공고는 K-APT 공동주택관리정보시스템 공개 목록을 하루 한 번 확인합니다. KG2B·아파트비드포유·아파트장터 같은 민간 전자입찰 공고도 K-APT에 함께 올라와 포함됩니다.
+    낙찰금액·낙찰업체·세대수는 K-APT가 자동 조회를 막고 있어, K-APT '입찰결과' 엑셀을 <a href="https://github.com/kimstart/Waste-Recyle-Index/tree/main/uploads/kapt" target="_blank" rel="noopener noreferrer">저장소 uploads/kapt 폴더</a>에 올리면 반영됩니다.
+    세대당 금액은 낙찰금액 ÷ 세대수이며, 계약기간(월·연)은 공고문에서 확인이 필요합니다.</div>
 
   <h2>수도권 선별·처리 대행 용역 <small id="svcUpd"></small></h2>
   <div class="ctl">
@@ -207,6 +222,7 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js?v=20261026a"></script>
+<script src="assets/apt.js?v=20261026a"></script>
 <script src="assets/rpet.js?v=20261019a"></script>
 <script src="assets/policy.js?v=20261020c" data-page="plastic" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts.json" data-state="data/policy.json" data-order="재생원료 의무,EPR,부담금·기타"></script>
 <script src="assets/plastic_extra.js?v=20261019c"></script>
