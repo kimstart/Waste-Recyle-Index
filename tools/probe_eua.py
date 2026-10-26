@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-import sys, os, re, urllib.parse
+"""EUA 가격 후보 점검: Yahoo 심볼들, EEX 경매 결과 웹서비스"""
+import sys, os, re, json, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common import get
-from collect_biogas import _xlsx_sheets
-h = get("https://www.eex.com/en/market-data/environmentals/eu-ets-auctions")
-print("api 후보:", sorted(set(re.findall(r"https?://[a-z0-9.-]*(?:gvsi|webservice|api)[a-z0-9./_-]*", h, re.I)))[:20])
-print("fileadmin:", sorted(set(re.findall(r"/fileadmin/[^\"' ]+", h)))[:20])
-for i in [m.start() for m in re.finditer(r"(?i)auction report|primary market auction", h)][:3]:
-    print("ctx:", re.sub(r"\s+", " ", h[i - 300:i + 300]))
-base = "https://www.eex.com/fileadmin/EEX/Downloads/EUA_Emission_Spot_Primary_Market_Auction_Report/"
-for u in (base + "Archive_Reports/emission-spot-primary-market-auction-report-2026-data.xlsx",
-          base + "emission-spot-primary-market-auction-report-2026-data.xlsx",
-          base + "Archive_Reports/emission-spot-primary-market-auction-report-2025-data.xlsx"):
+from collect_biogas import yahoo_series
+for sym in ("CO2.L", "CO2.DE", "CO2.AS", "KEUA", "EUA=F", "CFI2Z6.NYM", "CKZ26.NYM", "MOZ26.NYM", "ECF=F", "C=F"):
     try:
-        b = get(u, raw=True)
-        print("OK", u, len(b))
-        sh = _xlsx_sheets(b)
-        for name, rows in sh.items():
-            print(f"  시트 {name}: {len(rows)}행")
-            for r in rows[:7]: print("     ", dict(list(r.items())[:14]))
-            for r in rows[-2:]: print("   …", dict(list(r.items())[:14]))
+        s = yahoo_series(sym)
+        print(f"{sym}: {len(s)}개, 최근 {s[-3:]}")
     except Exception as e:
-        print("실패", u.split('/')[-1], type(e).__name__, str(e)[:80])
+        print(f"{sym}: 실패 {type(e).__name__} {str(e)[:60]}")
+# EEX 경매 결과: 페이지 JS에서 쓰는 웹서비스 경로 찾기
+h = get("https://www.eex.com/en/market-data/environmentals/eu-ets-auctions")
+js = re.findall(r'<script[^>]+src="([^"]+)"', h)
+print("js:", [j for j in js if "eex" in j or j.startswith("/")][:15])
+for j in js:
+    if not (j.startswith("/") or "eex.com" in j): continue
+    try:
+        t = get(urllib.parse.urljoin("https://www.eex.com", j))
+        hits = sorted(set(re.findall(r"https?://[A-Za-z0-9.-]+/[A-Za-z0-9/_.-]*(?:query|json|api)[A-Za-z0-9/_.-]*", t)))
+        if hits: print("  ", j[-60:], hits[:8])
+    except Exception:
+        pass
