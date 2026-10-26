@@ -71,7 +71,8 @@
         chg += `<small class="yoy">전년 동월 <span class="${c}">${p >= 0 ? '+' : ''}${p.toFixed(1)}%</span></small>`;
       }
       const krw = it.krw_kg != null ? `<span class="krw">≈ ${fmt(it.krw_kg, 0)} 원/kg</span>`
-        : it.krw_m3 != null ? `<span class="krw">≈ ${fmt(it.krw_m3, 0)} 원/㎥</span>` : '';
+        : it.krw_m3 != null ? `<span class="krw">≈ ${fmt(it.krw_m3, 0)} 원/㎥</span>`
+        : it.krw_t != null ? `<span class="krw">≈ ${fmt(it.krw_t, 0)} 원/톤</span>` : '';
       return `<tr${cls}>${cyc}${nm}<td class="v">${fmt(it.value, r.dec)}${krw}${spark(it.spark)}</td><td class="d">${fmtDate(it.date)}</td><td class="chg">${chg}</td>${why}</tr>`;
     }).join('');
   }

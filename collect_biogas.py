@@ -2,7 +2,7 @@
 """바이오가스 페이지 지표 수집 → data/biogas.json
 - 일간: REC 현물 평균가 (전력거래소 홈페이지 → 공공데이터포털)
 - 일간: TTF 천연가스 선물 (Yahoo Finance, €/MWh)
-- 일간: KCU 상쇄배출권 (한국거래소 배출권시장 정보플랫폼, 최근 거래일 종가)
+- 일간: KAU 할당배출권·KCU 상쇄배출권 (한국거래소 배출권시장 정보플랫폼), EU 배출권(실물 EUA ETC, Yahoo Finance)
 - 월간: 도시가스용 천연가스 도매요금 평균 (한국가스공사, 원/MJ)
 - 분기: 프랑스 바이오가스 원산지보증서(GO) 국가 경매 기준가격 (EEX, €/MWh)
 수집에 실패한 항목은 이전 값을 그대로 둔다."""
@@ -128,44 +128,76 @@ def _n(v):
 
 
 def fetch_kcu(items, extra):
-    """KCU(외부사업 감축실적을 전환한 상쇄배출권)는 거래가 드물다.
-    ① 최근 1년 일자별 자료에서 실제 거래(거래량>0)가 있었던 마지막 두 거래일 종가
-    ② 거래가 없으면 현재가 표의 올해 연도물 가격(기준가)을 '거래 없음'으로 표시"""
+    """배출권 가격 (한국거래소 일자별 시세 한 번 조회로 KAU·KCU를 함께 만든다)
+    - KAU(할당배출권): 거의 매 거래일 거래. 가장 최근 거래일에 거래량이 가장 많은 연도물의 종가
+    - KCU(외부사업 감축실적을 전환한 상쇄배출권): 거래가 드물어 최근 1년 중 실제 거래가 있었던 마지막 두 거래일 종가.
+      같은 날(없으면 그 직전) KAU 종가 대비 비율을 함께 적는다. 1년간 거래가 없으면 현재가 표의 올해 연도물 가격"""
     base, op, H = _krx_session()
     now = now_kst()
     yy = now.strftime("%y")
     form = {"isu_cd": "", "fromdate": (now - timedelta(days=365)).strftime("%Y%m%d"), "todate": now.strftime("%Y%m%d"),
             "pagePath": "/contents/ETS/03/03010000/ETS03010000.jsp", "gNo": "98f13708210194c475687be6106a3b84"}
-    trades = []
+    trades = {"KAU": [], "KCU": []}
     try:
         j = _krx_post(base, op, H, "ETS/03/03010000/ets03010000_05", "grid", form)
         for x in _find_rows(j):
             nm = str(x.get("isu_eng_abbrv") or x.get("isu_cd") or "")
-            if not re.fullmatch(r"KCU\d{2}", nm):  # i-KCU(국제) 제외
+            m = re.fullmatch(r"(KAU|KCU)\d{2}", nm)            # i-KCU(국제)·KOC 등 제외
+            if not m:
                 continue
             vol, px = _n(x.get("acc_trdvol")) or 0, _n(x.get("tdd_clsprc"))
             dd = re.sub(r"\D", "", str(x.get("trd_dd", "")))
             if vol > 0 and px and len(dd) == 8:
-                trades.append((dd, nm, px, vol))
-        print(f">> [KCU] 최근 1년 거래 {len(trades)}건: {sorted(trades)[-3:]}")
+                trades[m.group(1)].append((dd, nm, px, vol))
+        print(f">> [배출권] 최근 1년 거래 KAU {len(trades['KAU'])}건, KCU {len(trades['KCU'])}건: KCU {sorted(trades['KCU'])[-2:]}")
     except Exception as e:
-        print(f">> [KCU] 일자별 조회 실패: {type(e).__name__}: {str(e)[:100]}")
+        print(f">> [배출권] 일자별 조회 실패: {type(e).__name__}: {str(e)[:100]}")
     ymd = lambda d: f"{d[:4]}-{d[4:6]}-{d[6:]}"
-    if trades:
-        trades.sort()
-        cur = trades[-1]
-        prev = next((t for t in reversed(trades[:-1]) if t[0] < cur[0]), None)
-        return {"kcu": {"name": "KCU 상쇄배출권", "item": cur[1], "unit": "원/톤", "date": ymd(cur[0]), "value": cur[2],
-                        "prev_date": ymd(prev[0]) if prev else None, "prev_value": prev[2] if prev else None,
-                        "volume": cur[3], "src": "한국거래소", "basis": "최근 거래일 종가"}}
+    out = {}
+    kau_by_day = {}
+    for t in trades["KAU"]:                                   # 날짜별 거래량 최대 연도물
+        if t[0] not in kau_by_day or t[3] > kau_by_day[t[0]][3]:
+            kau_by_day[t[0]] = t
+    if kau_by_day:
+        cur = kau_by_day[max(kau_by_day)]
+        ser = sorted(t for t in trades["KAU"] if t[1] == cur[1])
+        prev = next((t for t in reversed(ser) if t[0] < cur[0]), None)
+        out["kau"] = {"name": "KAU 할당배출권", "item": cur[1], "unit": "원/톤", "date": ymd(cur[0]), "value": cur[2],
+                      "prev_date": ymd(prev[0]) if prev else None, "prev_value": prev[2] if prev else None,
+                      "volume": cur[3], "src": "한국거래소", "basis": "최근 거래일 종가, 거래량 최대 연도물",
+                      "spark": [t[2] for t in ser[-30:]]}
+        print(f">> [KAU] {cur}")
+    if trades["KCU"]:
+        tr = sorted(trades["KCU"])
+        cur = tr[-1]
+        prev = next((t for t in reversed(tr[:-1]) if t[0] < cur[0]), None)
+        k = next((kau_by_day[d] for d in sorted(kau_by_day, reverse=True) if d <= cur[0]), None)
+        ratio = round(cur[2] / k[2] * 100) if k else None
+        out["kcu"] = {"name": "KCU 상쇄배출권", "item": cur[1], "unit": "원/톤", "date": ymd(cur[0]), "value": cur[2],
+                      "prev_date": ymd(prev[0]) if prev else None, "prev_value": prev[2] if prev else None,
+                      "volume": cur[3], "src": "한국거래소",
+                      "basis": "최근 거래일 종가" + (f", 같은 날 KAU 대비 {ratio}%" if ratio else ""), "vs_kau": ratio}
+        return out
     j = _krx_post(base, op, H, "ETS/03/03010000/ets03010000_04", "tablesubmit", {"bldcode": "ETS/03/03010000/ets03010000_04"})
     lst = next((v for v in j.values() if isinstance(v, list)), []) if isinstance(j, dict) else []
     row = next((x for x in lst if str(x.get("isu_cd", "")) == "KCU" + yy), None)
-    if not row or not _n(row.get("tdd_clsprc")):
-        raise ValueError("KCU 자료 없음")
-    return {"kcu": {"name": "KCU 상쇄배출권", "item": "KCU" + yy, "unit": "원/톤", "date": now.date().isoformat(),
-                    "value": _n(row["tdd_clsprc"]), "prev_date": None, "prev_value": None, "src": "한국거래소",
-                    "basis": "최근 1년 거래 없음 (거래소 표시 가격)"}}
+    if row and _n(row.get("tdd_clsprc")):
+        out["kcu"] = {"name": "KCU 상쇄배출권", "item": "KCU" + yy, "unit": "원/톤", "date": now.date().isoformat(),
+                      "value": _n(row["tdd_clsprc"]), "prev_date": None, "prev_value": None, "src": "한국거래소",
+                      "basis": "최근 1년 거래 없음 (거래소 표시 가격)"}
+    if not out:
+        raise ValueError("배출권 자료 없음")
+    return out
+
+
+def fetch_eua(items, extra):
+    """EU 배출권(EUA) 시세: 실물 EUA를 보유한 상장상품(SparkChange Physical Carbon EUA ETC, 런던증권거래소, 유로 표시)의 종가.
+    1단위가 EUA 1톤에 연동(보수만큼 미세하게 낮음)돼 EUA 현물가격의 무료 일간 대용치로 쓴다."""
+    s = yahoo_series("CO2.L")
+    (d, v), (pd, pv) = last_two(s)
+    return {"eua": {"name": "EU 배출권(EUA)", "item": "실물 EUA ETC", "unit": "€/톤", "date": d, "value": round(v, 2),
+                    "prev_date": pd, "prev_value": round(pv, 2) if pv else None,
+                    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)", "spark": [round(x[1], 2) for x in s[-30:]]}}
 
 
 # ---------------------------------------------------------------- 천연가스 도매요금
@@ -221,6 +253,8 @@ def add_krw_m3(items, extra):
     """€/MWh → 원/㎥ = €/MWh × 원/유로 × (열량 MJ/㎥ ÷ 3,600 MJ/MWh). 열량은 가스공사 공시 육지권역 예상열량."""
     eur = (items.get("fx_eur") or {}).get("value")
     heat = (items.get("gas_whole") or {}).get("heat_mj")
+    if eur and items.get("eua"):          # €/톤 → 원/톤
+        items["eua"]["krw_t"] = round(items["eua"]["value"] * eur)
     if not eur or not heat:
         print(f">> [환산] 원/유로({eur}) 또는 열량({heat}) 없음 → 원/㎥ 환산 생략")
         return
@@ -322,5 +356,5 @@ def fetch_go_auction(items, extra):
 
 
 if __name__ == "__main__":
-    run_all("biogas", [("REC", fetch_rec), ("TTF", fetch_ttf), ("KCU", fetch_kcu), ("원/유로", fetch_eur),
+    run_all("biogas", [("REC", fetch_rec), ("TTF", fetch_ttf), ("KAU·KCU 배출권", fetch_kcu), ("EU 배출권", fetch_eua), ("원/유로", fetch_eur),
                        ("천연가스 도매요금", fetch_gas_tariff), ("프랑스 GO 경매", fetch_go_auction)], post=add_krw_m3)

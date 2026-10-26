@@ -12,7 +12,7 @@
   <div class="in">
     <div>
       <h1>바이오가스 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · KCU · 천연가스 도매요금 · 유럽 GO 경매 · 유기성폐자원 입찰 · 제도 · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · 배출권(KAU·KCU·EUA) · 천연가스 도매요금 · 유럽 GO 경매 · 유기성폐자원 입찰 · 제도 · 뉴스</p>
     </div>
     <nav class="menu">
       <a href="plastic.html">‹ 폐플라스틱</a>
@@ -41,7 +41,8 @@
   <div class="note">
     REC: 전력거래소 현물시장 육지 평균가로 거래일(화·목)에만 값이 있어 기준일이 며칠 전일 수 있습니다.
     TTF: ICE Endex 네덜란드 TTF 근월물 종가(Yahoo Finance).
-    KCU: 한국거래소 배출권시장 정보플랫폼의 KCU(국내 상쇄배출권) 최근 거래일 종가로, 거래가 드물어 기준일이 몇 주~몇 달 전일 수 있습니다.
+    KAU·KCU: 한국거래소 배출권시장 정보플랫폼 일자별 종가. KAU는 최근 거래일에 거래량이 가장 많은 연도물, KCU(국내 상쇄배출권)는 거래가 드물어 최근 실제 거래일 종가이며 같은 날 KAU 대비 비율을 비고에 적습니다.
+    EU 배출권: 실물 EUA를 보유한 런던증권거래소 상장상품(SparkChange Physical Carbon EUA ETC, 유로 표시) 종가로, EUA 1톤 가격에 연동되는 무료 일간 대용치입니다(Yahoo Finance). 원/톤은 원/유로 환율로 환산합니다.
     천연가스 도매요금: 한국가스공사 도시가스용 도매요금 평균(원료비+공급비, 부가세 별도, 매월 1일 기준).
     프랑스 GO 경매: EEX가 분기마다(2·5·8·11월) 공개하는 프랑스 바이오가스 원산지보증서 경매의 전체 가중평균 낙찰가(기준가격).
     원/㎥ 환산: €/MWh × 원/유로 × 열량(MJ/N㎥) ÷ 3,600, 도매요금은 원/MJ × 열량. 열량은 한국가스공사가 매월 공시하는 육지권역 공급 예상열량을 씁니다(<span id="convNote">-</span>).
@@ -102,7 +103,9 @@ window.BOARD = {
   rows: [
     { cyc: '일간', key: 'rec', label: 'REC 현물', dec: 0, why: '바이오가스 발전 수익의 핵심. 발전 매출 = 전력판매(SMP) + REC. 현물시장은 화·목 거래' },
     { cyc: '일간', key: 'ttf', label: 'TTF 천연가스', dec: 2, why: "유럽 천연가스 기준가격. 유럽 바이오메탄은 'TTF + 인증(GO) 프리미엄'으로 거래돼 유럽 바이오메탄 시세의 기준" },
-    { cyc: '일간', key: 'kcu', label: 'KCU 상쇄배출권', dec: 0, why: '바이오가스 등 외부사업 감축실적(KOC)을 배출권 할당업체가 쓸 수 있게 전환한 상쇄배출권. 바이오가스 감축실적을 팔 때의 기준 가격' },
+    { cyc: '일간', key: 'kau', label: 'KAU 할당배출권', dec: 0, why: '국내 배출권거래제의 기준 탄소가격(거의 매 거래일 거래). 할당업체는 KAU 대신 일정 한도 안에서 KCU를 낼 수 있어, 바이오가스 감축실적(KCU) 가격의 위쪽 기준이 된다' },
+    { cyc: '일간', key: 'kcu', label: 'KCU 상쇄배출권', dec: 0, why: '바이오가스 등 외부사업 감축실적(KOC)을 할당업체가 쓸 수 있게 전환한 상쇄배출권. 감축실적을 팔 때의 실제 가격이지만 거래가 드물어 기준일이 멀 수 있어 KAU 대비 비율을 함께 본다' },
+    { cyc: '일간', key: 'eua', label: 'EU 배출권(EUA)', dec: 2, why: '세계 탄소가격의 기준인 EU 배출권거래제 가격. 국내 KAU와의 차이로 국내 탄소가격 수준을 가늠하고, 유럽 바이오메탄 사업성(탄소 비용)과 연결해 본다' },
     { cyc: '월간', key: 'gas_whole', label: '천연가스 도매요금', dec: 3, why: '바이오메탄이 도시가스를 대체할 때 경쟁하는 국내 가스 가격. 바이오가스 생산목표제 이행비용 판단 기준' },
     { cyc: '분기', key: 'go_fr', label: '프랑스 바이오가스 GO 경매', dec: 2, why: "프랑스 정부가 보조금 바이오메탄의 원산지보증서를 분기마다 경매한 평균 낙찰가. 유럽 바이오메탄 '인증 프리미엄'의 무료 공개 기준값" }
   ],
@@ -130,7 +133,7 @@ window.BOARD = {
   }
 };
 </script>
-<script src="assets/board.js?v=20261019a"></script>
+<script src="assets/board.js?v=20261026a"></script>
 <script src="assets/biogas_extra.js?v=20261019b"></script>
 <script src="assets/policy.js?v=20261020c" data-page="biogas" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts_biogas.json" data-state="data/policy_biogas.json" data-order="법·제도,생산목표제,이용·보급,REC·인센티브,탄소·수소,시설·지원,계획"></script>
 </body>
