@@ -64,23 +64,27 @@ for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
     print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
 csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
 print("csrf:", bool(csrf2))
-m = re.search(r"function fnTab\((.*?)\}\s*function", r, re.S)
-print("fnTab:", sq(m.group(0))[:900] if m else None)
-print("탭:", re.findall(r'fnTab\((\d+)[^)]*\)[^>]*>\s*(?:<[^>]+>)*\s*([^<]{2,20})', r)[:8])
-base = {"_csrf": csrf2.group(1), "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "bidTitle": "재활용", "codeWay": "01",
+m = re.search(r"url: '/bid/bidResultListAjax\.do'.*?success", r, re.S)
+print("AJAX data 전체:", sq(m.group(0))[:1500] if m else None)
+m = re.search(r"function fnTopKeyword.*?\}\s*\}", r, re.S)
+print("fnTopKeyword:", sq(m.group(0))[:1200] if m else None)
+m = re.search(r"function goList\(.*?var\s+comboSIDO[^;]*;", r, re.S)
+print("goList 앞:", sq(m.group(0))[:1500] if m else None)
+print("comboSIDO 옵션:", re.findall(r'<select[^>]*name="comboSIDO"[^>]*>(.*?)</select>', r, re.S)[:1])
+print("키워드 버튼:", re.findall(r'fnKeyword\([^)]*\)|topKeyword[^"]{0,80}', r)[:10])
+base = {"_csrf": csrf2.group(1), "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "codeWay": "01",
         "dateStart": (date.today() - timedelta(days=364)).isoformat(), "dateEnd": date.today().isoformat(), "pageNo": "1",
-        "pageSelect": "20", "bidState05Yn": "N", "sortType": "1", "comboSGG": "", "codeClassifyType1": "", "codeClassifyType2": "", "codeClassifyType3": "",
-        "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": ""}
-for sido in ("11", "41"):
-    for tab in ("1", "2", "3", "4"):
-        q = dict(base, comboSIDO=sido, tabNum=tab)
-        try:
-            t = get(B + "/bid/bidResultListAjax.do", data=urllib.parse.urlencode(q).encode(),
-                    hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
-            trs = re.findall(r"<tr[^>]*>(.*?)</tr>", t[t.find("<tbody"):], re.S)
-            tot = re.search(r"총\s*([\d,]+)\s*건|([\d,]+)\s*건", re.sub(r"<[^>]+>", " ", t))
-            print(f"\n시도 {sido} 탭 {tab}: tr {len(trs)}, {tot.group(0) if tot else ''}")
-            for tr in trs[:5]:
-                print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:40] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
-        except Exception as e:
-            print("시도", sido, "탭", tab, "실패", type(e).__name__)
+        "pageSelect": "20", "bidState05Yn": "N", "sortType": "1", "comboSGG": "", "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": ""}
+tries = [dict(base, tabNum="2", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14"),
+         dict(base, tabNum="3", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14"),
+         dict(base, tabNum="2", comboSIDO="", bidTitle="재활용", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="")]
+for q in tries:
+    try:
+        t = get(B + "/bid/bidResultListAjax.do", data=urllib.parse.urlencode(q).encode(),
+                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-CSRF-TOKEN": csrf2.group(1)})
+        trs = re.findall(r"<tr[^>]*>(.*?)</tr>", t[t.find("<tbody"):], re.S)
+        print(f"\n탭 {q['tabNum']} 분류 {q['codeClassifyType3']} 제목 {q['bidTitle']}: tr {len(trs)}")
+        for tr in trs[:6]:
+            print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:40] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
+    except Exception as e:
+        print("실패", type(e).__name__)
