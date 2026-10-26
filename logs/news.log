@@ -1,107 +1,110 @@
->> [plastic] 수집 범위 국내 70시간 / 해외 72시간
-   [국내] '폐플라스틱' 5건
-   [국내] '재생원료 플라스틱' 5건
-   [국내] '재생플라스틱' 5건
-   [국내] '플라스틱 재활용' 10건
-   [국내] '페트 재활용' 0건
-   [국내] '열분해유' 0건
-   [국내] '화학적 재활용' 2건
-   [국내] '폐비닐' 4건
+>> [plastic] 수집 범위 국내 83시간 / 해외 83시간
+   [국내] '폐플라스틱' 12건
+   [국내] '재생원료 플라스틱' 11건
+   [국내] '재생플라스틱' 10건
+   [국내] '플라스틱 재활용' 17건
+   [국내] '페트 재활용' 7건
+   [국내] '열분해유' 5건
+   [국내] '화학적 재활용' 4건
+   [국내] '폐비닐' 9건
    [국내] '재생원료 사용 의무' 0건
-   [국내] '플라스틱 협약' 0건
-   [국내] '순환경제 플라스틱' 6건
+   [국내] '플라스틱 협약' 1건
+   [국내] '순환경제 플라스틱' 10건
    [국내] '재활용 선별장' 1건
-   [국내] 반복 소재어: []
-   [해외] 'rPET' 3건
-   [해외] '"recycled PET"' 9건
-   [해외] '"chemical recycling"' 9건
+   [국내] 반복 소재어: ['노인', '수거']
+   [해외] 'rPET' 5건
+   [해외] '"recycled PET"' 10건
+   [해외] '"chemical recycling"' 7건
    [해외] '"plastic pyrolysis"' 0건
-   [해외] '"recycled content" plastic' 11건
-   [해외] '"plastics treaty"' 3건
+   [해외] '"recycled content" plastic' 10건
+   [해외] '"plastics treaty"' 2건
    [해외] '"recycled polypropylene"' 10건
-   [해외] '"plastic recycling"' 27건
+   [해외] '"plastic recycling"' 29건
    [해외] 'PPWR recycled' 7건
-   [해외] '"recycled plastic" prices' 10건
-   [해외 전문지] plasticsnews.com 19건
-   [해외 전문지] plasticstoday.com 75건
-   [해외 전문지] packaginginsights.com 10건
-   [해외 전문지] resource-recycling.com 7건
-   [해외 전문지] recyclingtoday.com 29건
-   [해외 전문지] recyclinginternational.com 5건
+   [해외] '"recycled plastic" prices' 9건
+   [해외 전문지] plasticsnews.com 23건
+   [해외 전문지] plasticstoday.com 64건
+   [해외 전문지] packaginginsights.com 9건
+   [해외 전문지] resource-recycling.com 8건
+   [해외 전문지] recyclingtoday.com 25건
+   [해외 전문지] recyclinginternational.com 3건
    [해외 전문지] sustainableplastics.com 0건
-   [해외 전문지] euwid-recycling.com 5건
-   [해외 전문지] packagingeurope.com 17건
-   [해외 전문지] packaging-gateway.com 4건
-   [해외 전문지] letsrecycle.com 10건
-   [해외 전문지] icis.com 7건
-   [해외 RSS] Recycling Today 2건
-   [해외] 전문지 외 제외: Businessday NG, Informat.ro, Japan Today, Koreabizwire, Lokmat Times, Nairametrics, Plastemart.com, Prothom Alo English, Stomp, Sustainability Online, TAPinto, The Times of India, UA.NEWS, UK News Group
->> [plastic] 국내 38건 → 12건, 해외 279건 → 5건
-   - [대한뉴스방송] 시흥시, 하반기 영농폐비닐 집중수거… 불법소각 예방과 재활용률 향상 도모
+   [해외 전문지] euwid-recycling.com 4건
+   [해외 전문지] packagingeurope.com 20건
+   [해외 전문지] packaging-gateway.com 3건
+   [해외 전문지] letsrecycle.com 8건
+   [해외 전문지] icis.com 12건
+   [해외 RSS] Recycling Today 4건
+   [해외] 전문지 외 제외: Digital Journal, Fibre2Fashion, Head Topics, Informat.ro, Japan Today, Lokmat Times, Nairametrics, Plastemart.com, Prothom Alo English, Stomp, Sustainability Online, Sustainable Packaging News, TAPinto, The Nation Newspaper, The Times of India, UA.NEWS, UK News Group, WBOC TV, mykxlg.com
+>> [plastic] 국내 87건 → 12건, 해외 272건 → 6건
+   - [OMATE 시니어] 어르신 손으로 모은 페트병 41.8톤 노인일자리가 순환경제를 키운다
+   - [서울경제TV] 코웨이, 순환경제 정책 제안…재생 플라스틱 2030톤 사용
+   - [비즈니스포스트] "깨끗한 플라스틱도 물 닿으면 암 유발 가능성", 국제적 '생산 규제' 요구 거세질 가능성
+   - [브레이크뉴스] 환경단체 "기후부 플라스틱 감축 목표, 달성해도 15% 늘어"
+   - [파이낸셜뉴스] 우성머티리얼스, 열분해유 활용 고효율 발전기 초도 공급계약 체결 "연료비 30% 절감 기대"
+   - [뉴스워커] “자원순환이 핵심 경쟁력”… 코웨이, 순환경제 페스티발서 혁신 사례·정책 제안
+   - [기호일보] 인천 부평고 학생들, 페트병 재활용 공장서 자원순환 배웠다
+   - [경기평화신문] 시흥시, 하반기 영농폐비닐 집중수거… 불법소각 예방과 재활용률 향상 도모
    - [비건뉴스] 플라스틱 수거 늘어도 재활용은 별개…영국 보고서, 재처리 역량 강조
-   - [임팩트온] 펩시코, 기후테크 스타트업 5곳과 손잡았다...전기 트랙터·과자봉지 재활용 상용화 추진
-   - [진일보 | 전남일보] "플라스틱 확 줄이고 과즙 꽉 채우고"…국민 사이다의 상큼한 변신
-   - [제주교통복지신문] "빨대도 플라스틱인데 왜 골라내기 어려울까"…작은 크기가 변수
-   - [제주교통복지신문] 생분해 플라스틱, 일반 플라스틱 재활용품과 섞지 말아야
-   - [비건뉴스] 재생원료 비율, 투입량과 완제품 기준 구분해야
+   - [IndexBox] 생분해성 슈링크 랩 시장 2035년 전망: 일회용 플라스틱 규제 확대로 수요 증가 - 뉴스 및 통계
    - [포커스온경제] [ESGC] EU 플라스틱 포장폐기물 1인당 35.9kg⋯재활용 늘어도 폐기물 급증
    - [IndexBox] 기계적·화학적 재활용 폴리에틸렌 시장 2035년 전망: 브랜드 재활용 원료 의무화가 성장 견인 - 뉴스 및 통계
-   - [IndexBox] 글로벌 플라스틱제 소상 및 장식용품 시장: 규모, 동향 및 2035까지의 예측
-   - [매일신문] 수확철 합천 들녘 폐비닐·쓰레기 치워…어르신들은 교복 입고 카메라 앞에
-   - [복지투데이] 부평구노인인력개발센터, 폐플라스틱 20톤 수거…자원순환·노인일자리 ‘결실’
+   - [Packaging Insights] EU delays PPWR labeling rules to Q2 2027, plans consultation
    - [Packaging Europe] How does the PPWR align with other global regulations?
    - [ICIS] VIDEO: Europe rPET November outlook uncertain as PET prices rise
    - [Packaging Europe] Nestlé, Coca-Cola and Danone agree to change recycling claims on bottles
    - [Packaging Insights] Südpack Medica launches recyclable mono-PE sterile barrier for pharma packaging
    - [ChemAnalyst] Aliplast Opens €55M Recycling Plant to Boost Europe’s Recycled Plastics Supply
-   [요약] 9/12건
+   [요약] 실패 HTTPError: "깨끗한 플라스틱도 물 닿으면 암 유발 가능성", 국제적 '생산 규제' 
+   [요약] 6/12건
 >> data/news_plastic.json, history/news_plastic_20261026.json 저장
->> [biogas] 수집 범위 국내 70시간 / 해외 72시간
-   [국내] '바이오가스' 7건
+>> [biogas] 수집 범위 국내 83시간 / 해외 83시간
+   [국내] '바이오가스' 9건
    [국내] '바이오메탄' 2건
    [국내] '바이오가스 생산목표제' 0건
-   [국내] '유기성폐자원' 2건
+   [국내] '유기성폐자원' 3건
    [국내] '음식물류폐기물 바이오가스' 1건
-   [국내] '가축분뇨 바이오가스' 2건
+   [국내] '가축분뇨 바이오가스' 3건
    [국내] '혐기성소화' 1건
    [국내] '하수슬러지 바이오가스' 1건
    [국내] '바이오가스화시설' 5건
    [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 34건
-   [해외] 'biogas' 73건
-   [해외] '"renewable natural gas"' 18건
-   [해외] '"anaerobic digestion"' 8건
-   [해외] 'biomethane price' 17건
-   [해외] '"guarantees of origin" biomethane' 3건
-   [해외] 'biomethane grid injection' 4건
+   [해외] 'biomethane' 39건
+   [해외] 'biogas' 75건
+   [해외] '"renewable natural gas"' 15건
+   [해외] '"anaerobic digestion"' 13건
+   [해외] 'biomethane price' 9건
+   [해외] '"guarantees of origin" biomethane' 2건
+   [해외] 'biomethane grid injection' 5건
    [해외] 'RNG landfill gas' 8건
-   [해외 전문지] bioenergy-news.com 7건
-   [해외 전문지] gasworld.com 22건
+   [해외 전문지] bioenergy-news.com 6건
+   [해외 전문지] gasworld.com 21건
    [해외 전문지] endswasteandbioenergy.com 2건
-   [해외 전문지] argusmedia.com 28건
-   [해외 전문지] qcintel.com 25건
-   [해외 전문지] biomassmagazine.com 11건
+   [해외 전문지] argusmedia.com 24건
+   [해외 전문지] qcintel.com 26건
+   [해외 전문지] biomassmagazine.com 10건
    [해외 전문지] europeanbiogas.eu 0건
    [해외 전문지] biogasworld.com 0건
-   [해외 전문지] montelnews.com 1건
-   [해외 전문지] wastedive.com 4건
->> [biogas] 국내 21건 → 6건, 해외 265건 → 10건
-   - [머니투데이] 바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이
+   [해외 전문지] montelnews.com 0건
+   [해외 전문지] wastedive.com 3건
+>> [biogas] 국내 25건 → 7건, 해외 258건 → 10건
+   - [기계설비신문] 바이오가스·저GWP 냉매 등 친환경 연료·기술 개발 성행
    - [전자신문] [人사이트] 최영화 블루그린링크 대표 “바이오가스 발전 국산화…물 넘어 에너지로 도약”
+   - [머니투데이] 바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이
    - [뉴시스] 청주시, 하수슬러지 자체 처리 확대…바이오가스 에너지 활용도
    - [https://www.2news.co.kr/] 도요타통상 토호가스 브라질 사탕수수 부산물 바이오가스 실증 사업 선정
    - [매일일보] 장성군, 통합바이오가스화시설 2030년 완공 목표로 건립 추진
    - [국제뉴스] 인제군, 바이오가스 처리수수료 톤당 10만원 확정…위원회 원안가결
+   - [Bioenergy Insight Magazine] Future Biogas takes full ownership of six AD plants in £104m deal
+   - [Sharecast.com] Computacenter raises guidance after strong Q3, 3i Infrastructure backs £104m Future Biogas buyout
+   - [BusinessLine] Petronet’s bets ₹1,200 cr on biogas as LNG import risks rise
    - [UA.NEWS] In Kenya, youth turn water hyacinth into biogas — Nation Kenya
-   - [MarketScale] The Early Scale: Danone's Ohio yogurt waste becomes biogas, says ESG Dive
-   - [UrduPoint] Sindh Proposes $30m Biogas Facilities In Five Cities
    - [Biomass Magazine] The RNG gap ethanol can’t afford to ignore
+   - [Biomass Magazine] Mixing plant material with manure may be key to profitable biogas production
    - [Biomass Magazine] Aemetis begins operation of 2 new biogas digesters
-   - [Bioengineer.org] Why So Many Household Biogas Plants Fail After the Installers Leave
-   - [Construction World] Delhi CM Launches Rs. 160 mn Biogas Plant in Najafgarh
-   - [Tech Xplore] Data-driven operation of biogas plants: Generating electricity when wind and solar power are scarce
-   - [Bioenergy Insight Magazine] Virginia Natural Gas breaks ground on first renewable natural gas facility
    - [Bioenergy Insight Magazine] Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry
-   [요약] 6/6건
+   - [Bioenergy Insight Magazine] Virginia Natural Gas breaks ground on first renewable natural gas facility
+   - [BusinessLine] BPCL, MoPNG and Maharashtra government aim to scale compressed biogas projects in the state
+   [요약] 7/7건
 >> data/news_biogas.json, history/news_biogas_20261026.json 저장

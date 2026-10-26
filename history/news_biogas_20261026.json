@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-26 09:28",
+ "updated": "2026-10-26 22:20",
  "domestic": [
   {
-   "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이",
-   "source": "머니투데이",
-   "link": "https://www.mt.co.kr/future/2026/10/24/2026101915435945145",
-   "pub": "2026-10-24 10:00",
-   "more": 1,
-   "summary": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 이형술 대표 \"기본 방식보다 생산량이 4배 많아…해외도 진출\" 업계에선 농업부산물 발생량이 연간 약 1400만톤에 달할 것이란 추산도 나온다."
+   "title": "바이오가스·저GWP 냉매 등 친환경 연료·기술 개발 성행",
+   "source": "기계설비신문",
+   "link": "https://www.kmecnews.co.kr/news/articleView.html?idxno=52490",
+   "pub": "2026-10-26 12:02",
+   "more": 0,
+   "summary": "강화된 환경 규제에 대응하기 위해 온실가스 배출의 주범으로 지목된 불화온실가스를 대체할 ‘냉매’와 ‘바이오가스’ 기술 개발이 성행하고 있다. 한국미래기술연구원은 12월 10일 서울 여의도 소재 FKI 컨퍼런스센터에서 ‘2027 친환경 연료·소재 기술 개발과 인증 전략’ 세미나를 개최한다고 밝혔다. 최근 ‘바이오가스 촉진법’ 시행과 맞물려 바이오메탄의 배관망 혼입 기술이 주목받고 있다."
   },
   {
    "title": "[人사이트] 최영화 블루그린링크 대표 “바이오가스 발전 국산화…물 넘어 에너지로 도약”",
@@ -16,6 +16,14 @@
    "pub": "2026-10-24 10:00",
    "more": 0,
    "summary": "“20년 넘게 축적한 수처리 기술을 바탕으로 바이오가스 에너지까지 사업 영역을 넓히고 있습니다. 물과 자원순환, 에너지를 연결하는 환경기술 전문기업으로 도약하겠습니다.” 블루그린링크는 2003년 설립된 수처리 전문기업이다."
+  },
+  {
+   "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이",
+   "source": "머니투데이",
+   "link": "https://www.mt.co.kr/future/2026/10/24/2026101915435945145",
+   "pub": "2026-10-24 10:00",
+   "more": 0,
+   "summary": "버려진 볏집, 전기로 재탄생…바이오가스 만드는 신기술 주목 이형술 대표 \"기본 방식보다 생산량이 4배 많아…해외도 진출\" 업계에선 농업부산물 발생량이 연간 약 1400만톤에 달할 것이란 추산도 나온다."
   },
   {
    "title": "청주시, 하수슬러지 자체 처리 확대…바이오가스 에너지 활용도",
@@ -38,7 +46,7 @@
    "source": "매일일보",
    "link": "https://www.m-i.kr/news/articleView.html?idxno=2009789",
    "pub": "2026-10-23 20:42",
-   "more": 1,
+   "more": 2,
    "summary": "매일일보 = 윤성수 기자 | 장성군이 가축분뇨와 음식물 폐기물 등 유기성 폐자원을 처리해 에너지를 생산하는 통합바이오가스화시설을 2030년 완공 목표로 추진한다. 시설 조성에는 2027년부터 2030년까지 총사업비 481억원을 투입할 계획이다. 건립 장소는 맑은물관리사업소 잔여 부지 약 1만2900㎡로, 2030년까지 공사를 마치는 일정이다."
   },
   {
@@ -52,25 +60,32 @@
  ],
  "overseas": [
   {
+   "title": "Future Biogas takes full ownership of six AD plants in £104m deal",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbDZEcGY3ZUUyN19TbEk2ODFDQ2I4ODNpb2ZxNE9MZTFYSld4WHJkUzlQRU00cURVVDZxUHdSSUtPS0RUZkRPeGZOWUJiaE5RU0VEemdVM25YSDdtQ25TS29WVHNtMnVWN3VUTlVJSFY5NnpGNDdsV21TSTFzLWUwdWk2anNiYTdNc1puU1RsZ3F0bVVlWmpfc2g5dGNGeXF5QVJR?oc=5",
+   "pub": "2026-10-26 16:54",
+   "more": 1
+  },
+  {
+   "title": "Computacenter raises guidance after strong Q3, 3i Infrastructure backs £104m Future Biogas buyout",
+   "source": "Sharecast.com",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQY3J1MUJVUTlqVWdUa0pSVDdIMlBkRnpRVlBqMUx5T3puWlpRRE5wNThrOV9NazlXNzgyQmtDalJTZFFISjR2RE1laXlxSDN3d3A3YnNNcDlrUlREZVNQOHhRQ0NxRTdUbnBFblJfNmFYWVJuTlNpMGFYX3pIY0lqSw?oc=5",
+   "pub": "2026-10-26 16:50",
+   "more": 1
+  },
+  {
+   "title": "Petronet’s bets ₹1,200 cr on biogas as LNG import risks rise",
+   "source": "BusinessLine",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTlF1NERXOWg5NllMajJzT3dCVlc3VlJpQnNKOGhFR1pHTVY2YkJEd3M4ZDBxNHVZYlN0NnFCcmdrTGFsZ1JuZE5HUHBucUdjVm11ZHgzaU9GTmZBeUJEZnA1QXNRQ3lUbUV0TS1fWkxpMVhHVGphSUVqVzRFemFJazRTM0E1LWIyV25EcTVWM1plX0dqMHFmemt4VTZmVUVTZ2dlNjFOTmpUTUFaMGtXR0l2ajFXczlpODBmdUU2aXBpNzdON29PWm9DcmdZQm56MWNhMEpUWF_SAd8BQVVfeXFMTnVoWjgxc21hd3VtVXRveFptVWkycVYyT001TTNuVWtIenpyZFoxQnZaVElPRWNmVTRIYno0dE1faVlZSm5mcXNQLXgxaTFvUm81b3RmejFWbm9XWG94TEcxRzJIb1hEYnA0Vk5acHMwUE9TLTNlaUhtdXNSSkxVTElvQ2h4OFZUUWtHUnpObW94MlUtemVUVDVqMkFjREUzODlocXotMkFPR01Ea2VQbEN0VThYVWFGaVdZc2lLYlowUXdRTTdacERMVjdnTU1OR1ZNSVZieE8wYVpzZHZ3NA?oc=5",
+   "pub": "2026-10-26 14:58",
+   "more": 0
+  },
+  {
    "title": "In Kenya, youth turn water hyacinth into biogas — Nation Kenya",
    "source": "UA.NEWS",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd2JIblFBSHpkclpiMVFYbmdHZDdFeFY3OUU0YUdBNW11YkxFZG1qTVkteThoTmZIcUtfb0tKUDNNMU1pU1lieWt3WmtNM0dxT2Q4eVJtNEtsdWZMS25yalIzOE10RW1YQy13cjMzdExwaUQwSzhYcWJ1NW9RSmVET095Y25YR1ZBX1FHM0hCTG4xeTZuZWpDRlVWTzQxdWRUSUhB?oc=5",
    "pub": "2026-10-26 07:11",
-   "more": 0
-  },
-  {
-   "title": "The Early Scale: Danone's Ohio yogurt waste becomes biogas, says ESG Dive",
-   "source": "MarketScale",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTjBVcXdnWWU5em5FbEdTLWJjWnlvbkQ3QXFYdXRvZWZ1LTBkT1VXXzB3NDBZb2NYb0pBYXZVNnVQcmFhajBZMXRTSFJSQVlOOVY0VURhWWJtU0NSdTRhZlBoQmFzRk9uT1B1Y3BMbUpiZ0hQbFNaRzVGSV9KaGd1bVVXcF9OY2tvcDBJ?oc=5",
-   "pub": "2026-10-25 19:00",
-   "more": 0
-  },
-  {
-   "title": "Sindh Proposes $30m Biogas Facilities In Five Cities",
-   "source": "UrduPoint",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOckJELTdpbUc2UHJiOFV2STJlUVVtTHkySVVKNGo5c1FZSkh0VTZGU05ka1JLTGpza1V6anhiaGRXNE5tbkwxMVB2VDBfUVBlX1c3UnBxLXRjeVZtR3lvTmtCS08xXzN3MHpJcG55M3hiaFFEWFZKWVlZeFhhRGo3WlZSbm5EcmROZkQxeVp3S1JNeGotS1JSSGVTNA?oc=5",
-   "pub": "2026-10-24 21:35",
-   "more": 0
+   "more": 2
   },
   {
    "title": "The RNG gap ethanol can’t afford to ignore",
@@ -80,6 +95,13 @@
    "more": 0
   },
   {
+   "title": "Mixing plant material with manure may be key to profitable biogas production",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGxVamwxWjMtZDcwbXVSZUxlbE0tTnNYcU1Gd2U5MlRDc09sSmhsV3N2SDl1ci1hZmdtZ0NsY29OUVFmY3Z0U3Nsa29NMWJsQlBqLVFjbHc1Q3FFWmdzRnB6MEdiRHhDYzNqNVZxQ2IxZVJ1VVFFUFBzV0s4TFQ4V2NkbmxPTElkbUUyeGhhNEpkb1ZxTlpJZDFieHhXbDdTYVhTX2Zxbjh1Y0diWVdUUVJrMA?oc=5",
+   "pub": "2026-10-24 03:24",
+   "more": 1
+  },
+  {
    "title": "Aemetis begins operation of 2 new biogas digesters",
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcFYxekdxV0RURzQ4M1pEY3Y1Zm1qRVd2QTFRd2xlSXpkSmp3UDh5VE1QN3M3RU12TDJNMlc5TW9VbW1VVGdWUEQ0ZmtlcEIwV3gweFZWdnNsWHNhQjRPZlRwdDVRMzdPLWEyQllvak5qc3ZGR3U1TlZEVjZPUnAtdGY5SXpkSmRCV3FkZnBRXzQ?oc=5",
@@ -87,39 +109,25 @@
    "more": 1
   },
   {
-   "title": "Why So Many Household Biogas Plants Fail After the Installers Leave",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHljSTlzRnd3cXpfVnZVX2ZLaWhMS0hkMjZ1TFl6Tk45Rk9ZMWZtdjRJMDBLV0oxQnJGQjJ1OGE4NENFaXBFNlRhNjdXbFYzM1ZidXBPTmF2R0JwR1RPTEhFS2Zsd2ZxSkNqNjVqZDRQUnRmcENWQWRzSEthRkpvLUxMZjRzaF85eDFLdXBpVkVrVVZINE9F?oc=5",
-   "pub": "2026-10-24 00:18",
-   "more": 0
-  },
-  {
-   "title": "Delhi CM Launches Rs. 160 mn Biogas Plant in Najafgarh",
-   "source": "Construction World",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSUVhUGhfTDFMUG5nWUJBRDVTSUxETkRNUFkxMUFpNk5IYXNXOXBoczdKWnRJZXFmTnNkOHFDZzk0dURGVnlWUWdGNnh1LXRESlNsLVFKcks4UDV2ZkNlWFFnRjVaMHlpd1BTUC1DTW1BTDRpcnpLSHVoYTBKcmEzMlRZOWNOdXpDUWIwRUFtMUJDYjRSSkUzM3BKR1E1bkU3X3NHRUlZZmptQS1WT21HSlZlWmw4U3hXSEZVYmxvY2VURW1BaGc?oc=5",
-   "pub": "2026-10-23 23:09",
-   "more": 0
-  },
-  {
-   "title": "Data-driven operation of biogas plants: Generating electricity when wind and solar power are scarce",
-   "source": "Tech Xplore",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWDM4ZW9fbm5mQVE1LU9IRWF4anZIV1RaZmp1M3drcW1oanJiMG5FdGxkZUs0ZHZtY24weC0wUWl1SEpaLU0tem4yR3dKTTlsbkZjcVZ2Nnd6azc5aFpfN0tkbmQ0djJHb1BrTU9YT3plRDBDR3VxXzRjMGZ3ZDZ1aU0tNmh1X1JWSmdJ?oc=5",
-   "pub": "2026-10-23 20:20",
-   "more": 2
+   "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
+   "pub": "2026-10-23 19:40",
+   "more": 1
   },
   {
    "title": "Virginia Natural Gas breaks ground on first renewable natural gas facility",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdjlOSnNacWYzSkRiZjN3cFRicTAwazZheTNoTGNxQkxaQ3BDV19oLUFVUTdxUU9DUEtQX0VpeTdFMmtScThZSFpBOVFuazhpbkpwYjVJalVjeV9zODFTYlBSR2ZCek5yV0JpcVRydGFTUG53M2FlSl9nZ0JyUGZvX3RmblZiS3JFLV9PZ3V1Rmk3MldBcnFmdWFabmFabHE2N1F2WElmZXFXaS1YbWE3SA?oc=5",
    "pub": "2026-10-23 19:40",
-   "more": 2
+   "more": 1
   },
   {
-   "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
-   "pub": "2026-10-23 19:40",
-   "more": 0
+   "title": "BPCL, MoPNG and Maharashtra government aim to scale compressed biogas projects in the state",
+   "source": "BusinessLine",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNUkdvcUhPam40aWxKbGxRMWdIWDVLZ1M3N1VnRzFDcnJGYTFmMmxja1lKZ0JGUFVsVEVCZ0xVX1psWTdkanBLRmZKWjYtcXQ2WTJwWFhaMHF2SWVRWFA3WjdRaXVrR1VVMG5lV19FYjVNbllERFFRa1hwSE5RVHE3bmRGc1NnYUl4TTZ5MjQ1VV95TnRhMDNjU0dhekJ1bjBSN0NEVF9ROVBWbDZ5cjA3X1BRbUxEU1BDSkI0NkJOQ1lqalprVnAzWXdjYzk1YTZBaFdfRlJBMVRfN0U4X2s2aXF0ZVNmQdIB7AFBVV95cUxPdUtKaklJd1RHV1dkOVRpNWZHOE9LeHVfUmF0ODEwRlJ5UExtbU85Q0tFZTZxNFJFQkZpcElyLWxvMUJOMi1vS3BTVUxkYUpwdmZTNWxMSzNEY3Y4ZTRmaFZzMDhfdGRzU2ROaF83VU5mTjdEWUpIa3ZEcFRxNHpoX3FqbU1XbUJzWlA5VU9GdWp6M3JtRlBNdjdjbF9qM2tJMDNTZ2N0dWlGRXhsa2JPbHFURzVSdTRTSGM2aTZ6Snk3RVM1dGdDTm81V2lLMzhGcVBTOUJWV0FwYXNmbTg0R1R1WjZiaHRFTWpRbg?oc=5",
+   "pub": "2026-10-23 12:43",
+   "more": 14
   }
  ]
 }
