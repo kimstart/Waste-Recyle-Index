@@ -1,6 +1,6 @@
-curl 401 1.152393s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 000 14.790318s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.876452s https://www.re.or.kr/
+curl 401 1.018490s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 1.032792s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.346440s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
    (재시도 1 RemoteDisconnected )
 물품 하위: [('13', '구입'), ('14', '매각')]
@@ -13,7 +13,7 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'B11125133');", "initList(4, 'A10025134');", "initList(4, 'A46572201');", "initList(4, 'A30575105');", "initList(4, 'B11122352');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');", "initList(4, 'A15809601');"]
+검색 버튼: ["initList(4, '');", "initList(4, 'A10027934');", "initList(4, 'A10023588');", "initList(4, 'A10025134');", "initList(4, 'A46572201');", "initList(4, 'A30575105');", "initList(4, 'B11122352');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');"]
 
 GET: 응답 293962자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
@@ -33,17 +33,24 @@ AJAX 주변: chForm select[name=comboSGG] option:selected").val(); var bidTitle 
   codeSucWay None
   codeAuth None
 csrf: True
-AJAX data 전체: url: '/bid/bidResultListAjax.do', type: "post", data: { "searchDateGb" : searchDateGb, "searchBidGb" : searchBidGb, "searchCompany": searchCompany, "bidTitle": bidTitle, "comboSIDO": comboSIDO, "comboSGG": comboSGG, "codeClassifyType1": codeClassifyType1, "codeClassifyType2": codeClassifyType2, "codeClassifyType3": codeClassifyType3, "kaptdaCntStart": kaptdaCntStart, "kaptdaCntEnd": kaptdaCntEnd, "dateStart": dateStart, "dateEnd": dateEnd, "pageNo": pageNo, "tabNum": String(tabNum), "codeWay": codeWay, "sortType" : sortType, "bidState05Yn": bidState05Yn, "amountMin" : amountMin, "amountMax" : amountMax, "pageSelect" : pageSelect, "_csrf": "bb5cd28a-8169-488f-b8b2-aa615e6f767c" }, dataType: "html", beforeSend: function () { $("#lodingDiv").show(); }, complete: function () { $("#lodingDiv").hide(); }, error: function () { alert("시스템 오류입니다. 관리자에게 문의하세요."); }, success
+초기 hTab/tabNum: [] dateStart: ['']
+ready: $(document).ready(function () { $(".allM_Sc").mCustomScrollbar({ axis: "y", scrollbarPosition: "outside", scrollInertia: 950, autoHideScrollbar: false, theme: "dark" });
+AJAX data 전체: url: '/bid/bidResultListAjax.do', type: "post", data: { "searchDateGb" : searchDateGb, "searchBidGb" : searchBidGb, "searchCompany": searchCompany, "bidTitle": bidTitle, "comboSIDO": comboSIDO, "comboSGG": comboSGG, "codeClassifyType1": codeClassifyType1, "codeClassifyType2": codeClassifyType2, "codeClassifyType3": codeClassifyType3, "kaptdaCntStart": kaptdaCntStart, "kaptdaCntEnd": kaptdaCntEnd, "dateStart": dateStart, "dateEnd": dateEnd, "pageNo": pageNo, "tabNum": String(tabNum), "codeWay": codeWay, "sortType" : sortType, "bidState05Yn": bidState05Yn, "amountMin" : amountMin, "amountMax" : amountMax, "pageSelect" : pageSelect, "_csrf": "be694f02-9b06-45c9-a11b-108a9e565b78" }, dataType: "html", beforeSend: function () { $("#lodingDiv").show(); }, complete: function () { $("#lodingDiv").hide(); }, error: function () { alert("시스템 오류입니다. 관리자에게 문의하세요."); }, success
 fnTopKeyword: function fnTopKeyword(val) { var pageNo = 1; if (val == "into") { val = ""; pageNo = ""; } $("#keyWord").val(val); $(".chBtab").removeClass('on'); $("#chBtab" + val).addClass('on'); $("#bidTitle").val($("#spanK" + val).text()); goList(pageNo, "addr"); } function fnCodeWay(val) { var codeWay = val; $("#codeWay").val(val); $("#dItemNm").text("입찰마감일"); if ($("#tabNum").val() == 3) { $(".tab3_ex_class").hide(); if (codeWay == "01") { $(".tab3_ex_class").show(); } }
 goList 앞: function goList(pageNo, type) { var dateStart = new Date( $("input[name=dateStart]").val().split("-")[0], $("input[name=dateStart]").val().split("-")[1]-1, $("input[name=dateStart]").val().split("-")[2] ); var dateEnd = new Date( $("input[name=dateEnd]").val().split("-")[0], $("input[name=dateEnd]").val().split("-")[1]-1, $("input[name=dateEnd]").val().split("-")[2] ); var betweenDay = (dateEnd.getTime() - dateStart.getTime()) / 1000 / 60 / 60 / 24; var dateStartYear = new Date( $("input[name=dateStart]").val().split("-")[0], $("input[name=dateStart]").val().split("-")[1]-1, $("input[name=dateStart]").val().split("-")[2] ); var dateEndYear = new Date( $("input[name=dateEnd]").val().split("-")[0], $("input[name=dateEnd]").val().split("-")[1]-1, $("input[name=dateEnd]").val().split("-")[2] ); dateStartYear.setYear(dateStartYear.getFullYear()+1); dateEndYear.setYear(dateEndYear.getFullYear()-1); if(dateStart < dateEndYear || dateEnd > dateStartYear){ alert("검색기간은 1년 이하입니다. 검색기간을 체크해주세요."); $(':input[name=dateEnd]').focus(); $(".subCbox").hideLoading(); return false; }else if(0 > betweenDay){ alert("검색기간 종료일이 시작일보다 빠릅니다. 검색기간을 체크해주세요."); $(':input[name=dateStart]').focus(); $(".subCbox").hideLoading(); return false; } if (Number($("#searchForm input[name=amountMin]").val()) > Number($("#searchForm input[name=amountMax]").val())) { alert("낙찰/계약금액(원)의 범위를 다시 확인해주세요."); $(':input[name=amountMin]').focus(); return; } if (type == "addr") $("#hTab").val("1"); if (pageNo == "") pageNo =
 comboSIDO 옵션: ['\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<option value="">광역시</option>\r\n\t\t\t\t\t\t\t\t\t\t\t\t']
 키워드 버튼: []
+   (재시도 1 HTTPError )
+   (재시도 2 HTTPError )
+   (재시도 3 HTTPError )
+실패 RuntimeError
 
 탭 2 분류 14 제목 : tr 1
     ['입찰 정보가 존재 하지 않습니다.'] []
 
 탭 3 분류 14 제목 : tr 1
     ['입찰 정보가 존재 하지 않습니다.'] []
+   (재시도 1 RemoteDisconnected )
 
 탭 2 분류  제목 재활용: tr 1
     ['입찰 정보가 존재 하지 않습니다.'] []
