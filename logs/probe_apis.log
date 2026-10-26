@@ -1,9 +1,7 @@
-curl 401 0.992362s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 000 14.787789s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.161124s https://www.re.or.kr/
+curl 401 0.847299s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 1.610005s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.689809s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
   searchDateGb [('reg', '입찰공고일'), ('bid', '입찰마감일')]
@@ -14,9 +12,10 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');", "initList(4, 'A15809601');", "initList(4, 'B11125805');", "initList(4, 'A33980024');", "initList(4, 'B11122980');", "initList(4, 'A15809601');", "initList(4, 'A41507007');"]
+검색 버튼: ["initList(4, '');", "initList(4, 'B11125133');", "initList(4, 'A10025134');", "initList(4, 'A46572201');", "initList(4, 'A30575105');", "initList(4, 'B11122352');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');", "initList(4, 'A15809601');"]
+   (재시도 1 RemoteDisconnected )
 
-GET: 응답 293963자, 행 7개, 총건수 표시 None
+GET: 응답 293961자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
    20261026090155525 ['18', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
    20261023132621265 ['17', 'K-APT', '최고 낙찰', '[경기] 폐 변압기 매입 및 절연유 등 폐기 처리 사업자 선정 공고', '2026-11-12 17:00:00', '신규공고', '대림한숲', '2026-10-23 13:26:21']
@@ -25,47 +24,16 @@ GET: 응답 293963자, 행 7개, 총건수 표시 None
    20261022155445840 ['14', 'K-APT', '적격심사', '[서울] 재활용품 수거업체 선정 긴급 입찰공고', '2026-10-28 17:00:00', '신규공고', '미성아파트(불광동)', '2026-10-22 15:56:27']
    20261022132427342 ['13', 'K-APT', '최고 낙찰', '[경기] 제활용품 수거업체 선정공고', '2026-11-04 17:00:00', '신규공고', '평택한일', '2026-10-22 13:24:27']
    20261021112126877 ['10', 'K-APT', '최고 낙찰', '[서울] 승강기 내·외부 미디어보드 설치 및 운영업체 선정 입찰 재공고(2차)', '2026-11-02 17:00:00', '신규공고', '아카데미스위트', '2026-10-21 13:24:59']
-   (재시도 1 RemoteDisconnected )
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
-   (재시도 1 RemoteDisconnected )
-   (재시도 1 RemoteDisconnected )
-제목 '재활용' 1년: 35건, 6쪽; 낙찰방법 Counter({'최고 낙찰': 20, '적격심사': 10, '최저(고) 낙찰': 3, '최저 낙찰': 2}); 상태 Counter({'신규공고': 20, '입찰마감': 11, '재공고': 4})
-    ['51', 'K-APT', '적격심사', '[경기] 재활용품 처리 용역 사업자 선정 재공고', '2026-11-11 17:00:00', '신규공고', '영통벽적골롯데', '2026-10-26 13:14:40']
-    ['50', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
-    ['48', 'K-APT', '최고 낙찰', '[경기] 재활용품 처리업체 선정 입찰공고', '2026-11-04 17:00:00', '신규공고', '평촌어바인퍼스트', '2026-10-23 13:07:14']
-    ['47', 'K-APT', '최고 낙찰', '[서울] 재활용품 수거업체 선정 입찰공고', '2026-12-03 17:00:00', '신규공고', '흑석롯데캐슬에듀포레', '2026-10-23 11:31:49']
-    ['46', 'K-APT', '최고 낙찰', '[경기] 재활용품 수거업체 선정 공고', '2026-11-03 17:00:00', '신규공고', '봉담신일해피트리2차', '2026-10-23 10:53:25']
-    ['3', '한국환경공단', '최저(고) 낙찰', '[서울] 재활용품 수거업체 선정공고', '2025-11-12 17:00:00', '입찰마감', '구로신성미소지움', '2025-10-30 00:00:00']
-    ['2', '한국환경공단', '최저(고) 낙찰', '[경기] 재활용품 수거 용역업체 선정 입찰 공고 (푸른마을신안실크벨리1차)', '2025-11-10 12:00:00', '입찰마감', '푸른마을신안실크벨리1차', '2025-10-28 00:00:00']
-    ['1', '한국환경공단', '최저(고) 낙찰', '[경기] 재활용품 수거업체 선정 입찰공고(호수마으4단지 럭키롯대아파트)', '2025-11-10 17:00:00', '입찰마감', '호수마을4단지롯데럭키', '2025-10-28 00:00:00']
-   분류 20261026131440777 사업자 - 용역 - 기타 용역
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
-   분류 20261026090155525 사업자 - 물품 - 매각
-   분류 20261023130620623 사업자 - 물품 - 매각
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
-   분류 20261023113149010 사업자 - 기타 - 잡수입
-   분류 20261023105325577 사업자 - 기타 - 잡수입
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
-   분류 20261023093652361 사업자 - 용역 - 기타 용역
-
-결과목록 286781 머리: 
-   (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
-
-결과목록 286817 머리: 
-API AptBasisInfoServiceV4/getAphusBassInfoV4 HTTP 400 {
-  "OpenAPI_ServiceResponse": {
-    "cmmMsgHeader": {
-      "errMsg": "NO_OPENAPI_SERVICE_ERROR",
-      "returnAuthMsg": "해당 오픈API 서비스가 없거나 폐기됨",
-      "returnReasonCode":
-API AptBasisInfoServiceV3/getAphusBassInfoV3 HTTP 400 {
-  "OpenAPI_ServiceResponse": {
-    "cmmMsgHeader": {
-      "errMsg": "NO_OPENAPI_SERVICE_ERROR",
-      "returnAuthMsg": "해당 오픈API 서비스가 없거나 폐기됨",
-      "returnReasonCode":
+결과 페이지 286779 title: K-apt 공동주택관리정보시스템
+forms: ['<form name="topActionForm" id="topActionForm" method="post" style="display:none" >', '<form id="cmnmMapFrm" method="post" action="/cmmn/selectKapt.do">', '<form id="bjdCodeFrm">', '<form name="searchForm" id="searchForm" action="">', '<form name="excelForm" id="excelForm" method="get" target="hiddenFrame">']
+[낙찰금액] 0회 
+[낙찰업체] 0회 
+[낙찰자] 0회 
+[개찰] 0회 
+[goView] 1회  if (codeWay == "01") { $(".tab3_ex_class").show(); } } if (val == "03") { $("#dItemNm").text("등록일"); } } function goView(bidNum) { applyReadPush(bidNum); $(".subCbox").showLoading(); if ($("#searchForm select[name=codeWay] option:selected").val() == "03") { document.searchForm.pcNum.value = bidNum; document.searchForm.sortType.value = $(':radio[name=sortType]:checked').val(); document.searchForm.action = "/bid/privateContractDetail.do"; } else { document.searchForm.bidNum.value = bidNum; document.searchFor
+[goResult] 0회 
+[resultView] 0회 
+[tbody] 0회 
+[<table] 0회 
+결과 initList: None
+결과 링크: ['/bid/bidAreaElctrnBidStats.do', '/bid/bidAreaElctrnSysUseStats.do', '/bid/bidDetail.do', '/bid/bidGuide.do', '/bid/bidList.do', '/bid/bidResultList.do', '/bid/bidResultListAjax.do', '/bid/bidResultListExcel.do', '/bid/bidStatistic.do', '/bid/getBidCodeGroup.do', '/bid/privateContractDetail.do', '/bid/privateContractList.do']
