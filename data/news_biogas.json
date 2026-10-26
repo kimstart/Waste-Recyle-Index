@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25 09:23",
+ "updated": "2026-10-26 09:28",
  "domestic": [
   {
    "title": "바이오가스·AI 더빙·실내위치인식…과기대 교원창업 '3인3색' - 머니투데이",
@@ -52,11 +52,67 @@
  ],
  "overseas": [
   {
-   "title": "Mixing plant material with manure may be key to profitable biogas production",
-   "source": "Biomass Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGxVamwxWjMtZDcwbXVSZUxlbE0tTnNYcU1Gd2U5MlRDc09sSmhsV3N2SDl1ci1hZmdtZ0NsY29OUVFmY3Z0U3Nsa29NMWJsQlBqLVFjbHc1Q3FFWmdzRnB6MEdiRHhDYzNqNVZxQ2IxZVJ1VVFFUFBzV0s4TFQ4V2NkbmxPTElkbUUyeGhhNEpkb1ZxTlpJZDFieHhXbDdTYVhTX2Zxbjh1Y0diWVdUUVJrMA?oc=5",
-   "pub": "2026-10-24 03:24",
+   "title": "In Kenya, youth turn water hyacinth into biogas — Nation Kenya",
+   "source": "UA.NEWS",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOd2JIblFBSHpkclpiMVFYbmdHZDdFeFY3OUU0YUdBNW11YkxFZG1qTVkteThoTmZIcUtfb0tKUDNNMU1pU1lieWt3WmtNM0dxT2Q4eVJtNEtsdWZMS25yalIzOE10RW1YQy13cjMzdExwaUQwSzhYcWJ1NW9RSmVET095Y25YR1ZBX1FHM0hCTG4xeTZuZWpDRlVWTzQxdWRUSUhB?oc=5",
+   "pub": "2026-10-26 07:11",
    "more": 0
+  },
+  {
+   "title": "The Early Scale: Danone's Ohio yogurt waste becomes biogas, says ESG Dive",
+   "source": "MarketScale",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTjBVcXdnWWU5em5FbEdTLWJjWnlvbkQ3QXFYdXRvZWZ1LTBkT1VXXzB3NDBZb2NYb0pBYXZVNnVQcmFhajBZMXRTSFJSQVlOOVY0VURhWWJtU0NSdTRhZlBoQmFzRk9uT1B1Y3BMbUpiZ0hQbFNaRzVGSV9KaGd1bVVXcF9OY2tvcDBJ?oc=5",
+   "pub": "2026-10-25 19:00",
+   "more": 0
+  },
+  {
+   "title": "Sindh Proposes $30m Biogas Facilities In Five Cities",
+   "source": "UrduPoint",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOckJELTdpbUc2UHJiOFV2STJlUVVtTHkySVVKNGo5c1FZSkh0VTZGU05ka1JLTGpza1V6anhiaGRXNE5tbkwxMVB2VDBfUVBlX1c3UnBxLXRjeVZtR3lvTmtCS08xXzN3MHpJcG55M3hiaFFEWFZKWVlZeFhhRGo3WlZSbm5EcmROZkQxeVp3S1JNeGotS1JSSGVTNA?oc=5",
+   "pub": "2026-10-24 21:35",
+   "more": 0
+  },
+  {
+   "title": "The RNG gap ethanol can’t afford to ignore",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTUVSdy1xeVFQQXgyRUVYVXJ3Zmo1aXZmdy1hc1ZfWUFWVF9GWjUxSHlfRmpIYU5kMk9NRUhtY3h5Zm5ZUmxITUlocU9GVHFDMDJCLXhhLVdldG1YeENCVlI0UTR1MnZSNzkwQTdrNkN4Y01Gc0d5bGItRnpqOUMxbHVOU0M?oc=5",
+   "pub": "2026-10-24 17:55",
+   "more": 0
+  },
+  {
+   "title": "Aemetis begins operation of 2 new biogas digesters",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcFYxekdxV0RURzQ4M1pEY3Y1Zm1qRVd2QTFRd2xlSXpkSmp3UDh5VE1QN3M3RU12TDJNMlc5TW9VbW1VVGdWUEQ0ZmtlcEIwV3gweFZWdnNsWHNhQjRPZlRwdDVRMzdPLWEyQllvak5qc3ZGR3U1TlZEVjZPUnAtdGY5SXpkSmRCV3FkZnBRXzQ?oc=5",
+   "pub": "2026-10-24 01:18",
+   "more": 1
+  },
+  {
+   "title": "Why So Many Household Biogas Plants Fail After the Installers Leave",
+   "source": "Bioengineer.org",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWHljSTlzRnd3cXpfVnZVX2ZLaWhMS0hkMjZ1TFl6Tk45Rk9ZMWZtdjRJMDBLV0oxQnJGQjJ1OGE4NENFaXBFNlRhNjdXbFYzM1ZidXBPTmF2R0JwR1RPTEhFS2Zsd2ZxSkNqNjVqZDRQUnRmcENWQWRzSEthRkpvLUxMZjRzaF85eDFLdXBpVkVrVVZINE9F?oc=5",
+   "pub": "2026-10-24 00:18",
+   "more": 0
+  },
+  {
+   "title": "Delhi CM Launches Rs. 160 mn Biogas Plant in Najafgarh",
+   "source": "Construction World",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSUVhUGhfTDFMUG5nWUJBRDVTSUxETkRNUFkxMUFpNk5IYXNXOXBoczdKWnRJZXFmTnNkOHFDZzk0dURGVnlWUWdGNnh1LXRESlNsLVFKcks4UDV2ZkNlWFFnRjVaMHlpd1BTUC1DTW1BTDRpcnpLSHVoYTBKcmEzMlRZOWNOdXpDUWIwRUFtMUJDYjRSSkUzM3BKR1E1bkU3X3NHRUlZZmptQS1WT21HSlZlWmw4U3hXSEZVYmxvY2VURW1BaGc?oc=5",
+   "pub": "2026-10-23 23:09",
+   "more": 0
+  },
+  {
+   "title": "Data-driven operation of biogas plants: Generating electricity when wind and solar power are scarce",
+   "source": "Tech Xplore",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWDM4ZW9fbm5mQVE1LU9IRWF4anZIV1RaZmp1M3drcW1oanJiMG5FdGxkZUs0ZHZtY24weC0wUWl1SEpaLU0tem4yR3dKTTlsbkZjcVZ2Nnd6azc5aFpfN0tkbmQ0djJHb1BrTU9YT3plRDBDR3VxXzRjMGZ3ZDZ1aU0tNmh1X1JWSmdJ?oc=5",
+   "pub": "2026-10-23 20:20",
+   "more": 2
+  },
+  {
+   "title": "Virginia Natural Gas breaks ground on first renewable natural gas facility",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdjlOSnNacWYzSkRiZjN3cFRicTAwazZheTNoTGNxQkxaQ3BDV19oLUFVUTdxUU9DUEtQX0VpeTdFMmtScThZSFpBOVFuazhpbkpwYjVJalVjeV9zODFTYlBSR2ZCek5yV0JpcVRydGFTUG53M2FlSl9nZ0JyUGZvX3RmblZiS3JFLV9PZ3V1Rmk3MldBcnFmdWFabmFabHE2N1F2WElmZXFXaS1YbWE3SA?oc=5",
+   "pub": "2026-10-23 19:40",
+   "more": 2
   },
   {
    "title": "Wasaline signs 42 GWh biogas supply deal with St1 Biokraft for Baltic Sea ferry",
@@ -64,62 +120,6 @@
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRUZMVFctLVBLNlNSd2ZlbkZOTkl4SGlwY2VpMXAySmUyWTJIcFZGVFNlek96TnUtd1N1dl9rXzFjSk9KWS1hZjJrMnJOY0pQZC11b1ZnVXFvdEQzY01zS3MzY1ZndGd0UU5DZGd0cERFZHV6dFlGTzhPTmRzaldobmJ2UkdUMGtFLUdxS0t1UFdLSUlJZFNtbEtCczl4YURmOC1pSW1fWXVoVjNBNkJGenBHVEdCcVU?oc=5",
    "pub": "2026-10-23 19:40",
    "more": 0
-  },
-  {
-   "title": "Quit truck-driving job to take up farming: Biogas cuts cooking costs, slurry reduces fertiliser expenses an...",
-   "source": "Bhaskar English",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSlVuVUpDOXJiVTNBZ1dIc0FDbks2ZGx6c1lybGFSSGRtNG5SelVLbzEtVWsyODE0LVdjX1JMQURnWjBXSng5SlFNcC1CWmpnSHdVaGpPV0RnWjRaS1pBR1ZuRlFpSHJKSk1sdlNMbDhzQnlacHdMelNMYjN0TE1kT2pvY1YxWkhVU0NZTEJkcW9UejRPcVVObHc4TkotRUh5TDE2cGdLR2tEOHdSekR6bEZPSWZZcUI1X0Z1MEtBem1xYm5iNllSdTJ30gHPAUFVX3lxTFBRalBGNVUyNnA0LWZ5RkpGaEtiX2ZMU3pWZmNEaDhUTkcyY3FtQnFwVy1ZbkRlTFZzOXI0Zk1ubkNvN183Q1YwU2tSakpoX3FYdExEMTlES2NnZ0tEQjhBLTV2Y2xZU2RZUGRaVVJTZG02MEJZdGE0eFhNSXIyUW56Y3dLcG81Q2tqOHJDY2ZCWTRMYS1TZHdLb2Y4UDdJUkZSUjZGdGMyTUV4SHdtNTZNQnNoRlc5dXEwWFZNN1NkTG1PbXZMdk1sX2xQS0RwNA?oc=5",
-   "pub": "2026-10-23 08:30",
-   "more": 1
-  },
-  {
-   "title": "The Landfill Group Announces Commercial Operation of First Renewable Natural Gas Facility in Columbus, Georgia",
-   "source": "PR Newswire",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPTGVuMElpS3ZDTWRGcDhhU2x4ZW9TeG1TRWxYQ2drcFB3dnJYT01PM25zSUlkN194OUFDVDlxekwyT1FFMHZTNmNrUFZXWnZ2NzBmYkoxODNnYlJ6U1Q4QTA4MkZpOC16VUlpMHZ1Y28xVUsyck1KTWhBVzlkUHBvNUl6Y0ZYY203TzN2THJWYmlFcDF3N1MyZnh2eEVVR0hqVWVkRjMtcklWZXVQTXJwVGh2X0tuVnNfb2NHWTJ3c3FuLVhMSk9iX1BkeWptNFpmRGhyUGRndG5JZ2hMMTdvRVNGUjFmdmtITmVjN0VwVFNSRWxkdWxKeA?oc=5",
-   "pub": "2026-10-22 21:00",
-   "more": 7
-  },
-  {
-   "title": "Aemetis Begins Operation of Two New Biogas Digesters",
-   "source": "Moomoo",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd3FUbzJNVUR3djF3dzViZ0R5V3RRc01xVzBueWkzdkdla29sOENSTlVpNGFPVjhqa3ctaTdOUkJnZ1lyUHlvZ0xVMnI1bVgyMndKS0kyWlB0aG1YMzdHTGFjTE8wbk9ZXzF1SEZSRkJ2NGR4aVpHZmFyRDFySF9UbWw1bnpOSlJtQ2FLZ2IyWFp3TnNoa2pJbExMTTE?oc=5",
-   "pub": "2026-10-22 21:00",
-   "more": 1
-  },
-  {
-   "title": "ADBA calls for Green Gas Support Scheme boost after Jackdaw approval",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZ1RxajBGbnlGdU5xM190YlVObFpIZFQ2MkhVcGI3amhxU0VVTzVpd2M3VmlfdXhXVFVpcEl1XzRIRmlFVk5FUjMzbGtoeDc2U29EUEtRNGpUOGNfSExQN3hneTktd2c2OUFMU201ZnU4eWdRcC1tNktMaE04TXI1VmR6MTc1dnVfLWNLWnc2ZlZSeS02dk9UOEdtVHpmNl9wcDdxZzBOX3c?oc=5",
-   "pub": "2026-10-22 19:42",
-   "more": 0
-  },
-  {
-   "title": "PurposeEnergy opens $40m biogas facility in Ohio",
-   "source": "Food and Drink International",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZHNubTBKa3pnSnliR1pWcnJVWVBOeFAyMnpEX0VxSHlQNEZCdnpEN1B0cF80bXhzR0c3SDc5Z0tOYW44MnU1b2NUNVNkQ2RwaTc5WU9ISDhOMkFkd2hDSGFtLUFhejJGTFBvUURIa21jVVBfTjZuTDdQcXFJVzNyUmRtWGtQUHRRMktwVm9USQ?oc=5",
-   "pub": "2026-10-22 17:00",
-   "more": 4
-  },
-  {
-   "title": "Agra Energy Hits TRL 9, Converts Dairy Biogas Into SAF and Naphtha",
-   "source": "ChemAnalyst",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRkJSQ2lNUVVCRDE3ajljbU9GcVJfT3E3WHpMdVlqMENkUUFlWmkyQVZhNG9qcURENFdJMFd1NDROaEdrckNpejBGNEhJVDlQYkJnb2tTM1BnREJYWC02MUlIckVRdHJ6Q05UWjRKTmJtTDZEN056T3F4c3NLM1dXS1FEdjlScFhtNTBtbE1RWmY2eGhpS0VPc00yVzJNMktGUXpiTEg5XzNEcmdpaDBwWjB3?oc=5",
-   "pub": "2026-10-22 16:15",
-   "more": 2
-  },
-  {
-   "title": "Developing Biogas, a Low-carbon, Renewable and Local Energy Source",
-   "source": "TotalEnergies.com",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRzFkMFp2d0JzbHRDanQ2ZWhDWEdndHUyYWotcjJ6c0plZFpIdmFhRVBTTkNEYW1sc2dHd1htOWxYdllXWDV4enZmOTB0NzNuTldNUHJ5US1tb3pRemh5cVg2T0w2bG9HSWNfNFNKcnotNFBiN21qbEpwQ0oya1liNFRSRWp6cW1PbVcyQjZDZEJPeEJpMDJudUtvOXNiZw?oc=5",
-   "pub": "2026-10-22 16:00",
-   "more": 3
-  },
-  {
-   "title": "Mahanagar Gas signs MoU to explore biogas projects in Maharashtra, Karnataka",
-   "source": "The Financial Express",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVFNaXzRlOE1LWWFlYWFBQ0hGakV5MkJlZUx4bUhleHhXRnR0RlpEN0N0eWtFQktGakpBeE9WaGxFVDEzejNfN1J1TTNmZ25FTXZRakFfengza2lWaDFUUUk4T25aOHV6bndLMmJsY2lqU1U2WHpURGFtMUFzUmFwUFNSRkszbEhlSFlsbVZnMzFrN1h1MExWc2VkYmFpU0c2ZC1ISTlWWTFLVWlLYVE1SGRmb3NvT3BvWVM4Rl9kcVFqeFZrZklIWjg1ZWg5dHdB0gHXAUFVX3lxTE5tb1JmZmlZanJnTlItVGlYZ1VLX0RUcFNrSEpfZFlrZHNRTWVoS0FfQUlWUE5ja3B3TmdXdGF3d0FCYVAzb0ZOT21uakswMlhVT1F6aVc4bTZtNWlFeFJvQzlHZkI5OVF6OFBFT0p5VWhvcnBFVF9LMFJ6dmlSVnVDVVpxQV9mT3d5WXVYT2taclpGV3ZBYXZabnROb1ZtaDBNV21OMEM4M241Q2ZNb2syc084VHpWZEN6RnJVYUkxV3daTmx5TDhzYWloNkpUREtndUxIVEFJ?oc=5",
-   "pub": "2026-10-22 13:38",
-   "more": 7
   }
  ]
 }
