@@ -64,14 +64,23 @@ for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
     print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
 csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
 print("csrf:", bool(csrf2))
-q = {"_csrf": csrf2.group(1) if csrf2 else "", "bidArea": "11|28|41", "bidTitle": "재활용", "searchBidGb": "bid_gb_1", "codeWay": "01",
-     "dateStart": (date.today() - timedelta(days=364)).isoformat(), "dateEnd": date.today().isoformat(), "pageNo": "1", "searchDateGb": "reg", "type": "4"}
-for meth in ("POST", "GET"):
-    try:
-        enc = urllib.parse.urlencode(q)
-        t = get(B + "/bid/bidResultListAjax.do" + ("?" + enc if meth == "GET" else ""), data=enc.encode() if meth == "POST" else None,
-                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
-        print(f"\nAJAX {meth}: {len(t)}자", sq(t[:1500]))
-        break
-    except Exception as e:
-        print("AJAX", meth, "실패", type(e).__name__)
+m = re.search(r"function fnTab\((.*?)\}\s*function", r, re.S)
+print("fnTab:", sq(m.group(0))[:900] if m else None)
+print("탭:", re.findall(r'fnTab\((\d+)[^)]*\)[^>]*>\s*(?:<[^>]+>)*\s*([^<]{2,20})', r)[:8])
+base = {"_csrf": csrf2.group(1), "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "bidTitle": "재활용", "codeWay": "01",
+        "dateStart": (date.today() - timedelta(days=364)).isoformat(), "dateEnd": date.today().isoformat(), "pageNo": "1",
+        "pageSelect": "20", "bidState05Yn": "N", "sortType": "1", "comboSGG": "", "codeClassifyType1": "", "codeClassifyType2": "", "codeClassifyType3": "",
+        "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": ""}
+for sido in ("11", "41"):
+    for tab in ("1", "2", "3", "4"):
+        q = dict(base, comboSIDO=sido, tabNum=tab)
+        try:
+            t = get(B + "/bid/bidResultListAjax.do", data=urllib.parse.urlencode(q).encode(),
+                    hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
+            trs = re.findall(r"<tr[^>]*>(.*?)</tr>", t[t.find("<tbody"):], re.S)
+            tot = re.search(r"총\s*([\d,]+)\s*건|([\d,]+)\s*건", re.sub(r"<[^>]+>", " ", t))
+            print(f"\n시도 {sido} 탭 {tab}: tr {len(trs)}, {tot.group(0) if tot else ''}")
+            for tr in trs[:5]:
+                print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:40] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
+        except Exception as e:
+            print("시도", sido, "탭", tab, "실패", type(e).__name__)
