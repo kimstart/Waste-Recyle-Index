@@ -1,6 +1,6 @@
-curl 401 0.847299s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 1.610005s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.689809s https://www.re.or.kr/
+curl 401 0.958359s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 1.210216s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.933171s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
@@ -13,7 +13,6 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
 검색 버튼: ["initList(4, '');", "initList(4, 'B11125133');", "initList(4, 'A10025134');", "initList(4, 'A46572201');", "initList(4, 'A30575105');", "initList(4, 'B11122352');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');", "initList(4, 'A15809601');"]
-   (재시도 1 RemoteDisconnected )
 
 GET: 응답 293961자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
@@ -24,16 +23,14 @@ GET: 응답 293961자, 행 7개, 총건수 표시 None
    20261022155445840 ['14', 'K-APT', '적격심사', '[서울] 재활용품 수거업체 선정 긴급 입찰공고', '2026-10-28 17:00:00', '신규공고', '미성아파트(불광동)', '2026-10-22 15:56:27']
    20261022132427342 ['13', 'K-APT', '최고 낙찰', '[경기] 제활용품 수거업체 선정공고', '2026-11-04 17:00:00', '신규공고', '평택한일', '2026-10-22 13:24:27']
    20261021112126877 ['10', 'K-APT', '최고 낙찰', '[서울] 승강기 내·외부 미디어보드 설치 및 운영업체 선정 입찰 재공고(2차)', '2026-11-02 17:00:00', '신규공고', '아카데미스위트', '2026-10-21 13:24:59']
-결과 페이지 286779 title: K-apt 공동주택관리정보시스템
-forms: ['<form name="topActionForm" id="topActionForm" method="post" style="display:none" >', '<form id="cmnmMapFrm" method="post" action="/cmmn/selectKapt.do">', '<form id="bjdCodeFrm">', '<form name="searchForm" id="searchForm" action="">', '<form name="excelForm" id="excelForm" method="get" target="hiddenFrame">']
-[낙찰금액] 0회 
-[낙찰업체] 0회 
-[낙찰자] 0회 
-[개찰] 0회 
-[goView] 1회  if (codeWay == "01") { $(".tab3_ex_class").show(); } } if (val == "03") { $("#dItemNm").text("등록일"); } } function goView(bidNum) { applyReadPush(bidNum); $(".subCbox").showLoading(); if ($("#searchForm select[name=codeWay] option:selected").val() == "03") { document.searchForm.pcNum.value = bidNum; document.searchForm.sortType.value = $(':radio[name=sortType]:checked').val(); document.searchForm.action = "/bid/privateContractDetail.do"; } else { document.searchForm.bidNum.value = bidNum; document.searchFor
-[goResult] 0회 
-[resultView] 0회 
-[tbody] 0회 
-[<table] 0회 
-결과 initList: None
-결과 링크: ['/bid/bidAreaElctrnBidStats.do', '/bid/bidAreaElctrnSysUseStats.do', '/bid/bidDetail.do', '/bid/bidGuide.do', '/bid/bidList.do', '/bid/bidResultList.do', '/bid/bidResultListAjax.do', '/bid/bidResultListExcel.do', '/bid/bidStatistic.do', '/bid/getBidCodeGroup.do', '/bid/privateContractDetail.do', '/bid/privateContractList.do']
+   (재시도 1 RemoteDisconnected )
+AJAX 주변: chForm select[name=comboSGG] option:selected").val(); var bidTitle = $("#searchForm input[name=bidTitle]").val(); var kaptdaCntStart = $("#searchForm input[name=kaptdaCntStart]").val(); var kaptdaCntEnd = $("#searchForm input[name=kaptdaCntEnd]").val(); var searchCompany = $("#searchForm input[name=searchCompany]").val(); var dateStart = $("#searchForm input[name=dateStart]").val(); var dateEnd = $("#searchForm input[name=dateEnd]").val(); var codeWay = $("#searchForm select[name=codeWay] option:selected").val(); var bidState05Yn = $('#searchForm input[name=bidState05Yn]').is(":checked") ? "Y" : "N"; var amountMin = $("#searchForm input[name=amountMin]").val(); var amountMax = $("#searchForm input[name=amountMax]").val(); var sortType = $(":radio[name=sortType]:checked").val(); if ($("#hTab").val() == "1") { } else { codeClassifyType1 = $("#codeClassifyType1 option:selected").val(); codeClassifyType2 = $("#codeClassifyType2 option:selected").val(); codeClassifyType3 = $("#codeClassifyType3 option:selected").val(); } if (codeWay == "01") fnCodeWay(1); if (codeWay == "03") fnCodeWay(3); fnTab(tabNum,''); fnCodeWay(codeWay); let pageSelect = $("#pageSelect").val(); $.ajax({ url: '/bid/bidResultListAjax.do', type: "post", data: { "searchDateGb" : searchDateGb, "searchBidGb" : searchBidGb, "searchCompany": searchCompany, "bidTitle": bidTitle, "comboSIDO": comboSIDO, "comboSGG": comboSGG, "codeClassifyType1": codeClassifyType1, "codeClassifyType2": codeClassifyType2, "codeClassifyType3": codeClassifyType3, "kaptdaCntStart": kaptdaCntStart, "kaptdaCntEnd": kaptdaCntEnd, "dateStart": dateStart, "dateEnd": dateEnd, "pageNo": pageNo, "tabNum": String(tabNum), "codeWay": codeWay, 
+결과 searchForm 필드: ['bidNum', 'pcNum', 'pageInfo', 'tabNum', 'pageNo', 'sortType', 'pageSelect', 'searchBidGb', 'searchCompany', 'bidState05Yn', 'codeClassifyType1', 'codeClassifyType2', 'codeClassifyType3', 'bidTitle', 'bjdCode', 'eubCode', 'comboSIDO', 'comboSGG', 'comboEMD', 'kaptdaCntStart', 'kaptdaCntEnd', 'codeWay', 'searchDateGb', 'dateStart', 'dateEnd', 'dateArea', 'dateArea', 'dateArea', 'dateArea', 'amountMin', 'amountMax']
+  codeWay [('01', '경쟁입찰'), ('03', '수의계약')]
+  searchDateGb [('reg', '\r\n                                            입찰공고일\r\n                                        '), ('bid', '\r\n                                            입찰마감일\r\n                                        ')]
+  sortType None
+  codeSucWay None
+  codeAuth None
+csrf: True
+
+AJAX POST: 1630자  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <table class="contTbl txtC" summary="이 표는 입찰 목록입니다." id="tblBidList"> <colgroup> <col style="width:5%"> <col style="width:13%"> <col style="width:5%"> <col style="width:20%"> <col style="width:8%"> <col style="width:9%"> <col style="width:13%" class="tab2_class"> <col style="width:9%" class="tab2_class tab3_ex_class"> <col style="width:13%" class="tab3_ex_class"> </colgroup> <thead> <tr> <th scope="col">순번</th> <th scope="col">단지명</th> <th scope="col">세대수</th> <th scope="col">입찰공고명</th> <th scope="col"><span id="dItemNm">입찰마감일</span></th> <th scope="col">낙찰금액</th> <th scope="col" class="tab2_class">낙찰업체</th> <th scope="col" class="tab2_class tab3_ex_class">응찰금액</th> <th scope="col" class="tab3_ex_class"><span class="tab4_class">낙찰</span>업체</th> </tr> </thead> <tbody> <tr> <td colspan="6" class="tbl_noData">입찰 정보가 존재 하지 않습니다.</td> </tr> </tbody> </table> <div class="pagination"> <div class="select-wrapper"> <select id="pageSelect" onchange="goList(1, '');"> <option value="10" selected="selected">10개씩 보기</option> <option value="20">20개씩 보기</option> <option val
