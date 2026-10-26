@@ -1,7 +1,8 @@
-curl 401 0.673557s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 16.155436s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.669800s https://www.re.or.kr/
-== https://www.eex.com/en/market-data/environmentals/eu-ets-auctions: 194347자, 파일 링크 0
-== https://www.eex.com/en/markets/environmental-markets/eu-ets-auctions: 208330자, 파일 링크 2
-    /fileadmin/EEX/Downloads/Trading/Calendar/Auction_Calendar/EEX_Auction_Calendar_EUA_MSR_adjustment_2026_30.7.2026.xlsx
-    /fileadmin/EEX/Downloads/Trading/Calendar/Auction_Calendar/EEX_ETS1_Auction_Calendar_2027_30.9.2026.xlsx
+curl 401 0.995045s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 6.833065s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.615132s https://www.re.or.kr/
+api 후보: []
+fileadmin: ['/fileadmin/EEX/Downloads/Training/2025919_AGB_T_E_en_Korrektur.pdf', '/fileadmin/EEX/Market_Data/Data_Source/DS-Cloud_Stream_API_1100x750.png);', '/fileadmin/Global/Certificates_EEX_ECC/iso-27001.jpg', '/fileadmin/Global/Certificates_EEX_ECC/iso_9001.jpg', '/fileadmin/Global/Entity_Logos/insightcommodity_logo1.png', '/fileadmin/Global/Logos-Teaser_todo_cleanup/logo_teaser-epexspot.jpg);', '/fileadmin/Global/Teaser_Pics/All_News_A.jpg);', '/fileadmin/Global/Teaser_Pics/FAQs_visual_01.png);', '/fileadmin/Global/Teaser_Pics/MDS-visual-210x357.png);', '/fileadmin/Global/Teaser_Pics/Market_data_teaser.png);', '/fileadmin/Global/Teaser_Pics/Teaser-pic_Innovations___Start-Up_510x357px.png);', '/fileadmin/Test_Unternehmen_Online/deutsche_boerse_group_logo.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/ecc_logo_color_sRGB.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/ecc_logo_white_sRGB_monochrome.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/eex_group_logo_black_sRGB.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/eex_logo_color_sRGB.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/eex_logo_white_sRGB_monochrome.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/epexspot_logo_color_sRGB.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/epexspot_logo_white_sRGB_monochrome.svg', '/fileadmin/Test_Unternehmen_Online/eex_Group/nodal_logo_color_sRGB.svg']
+실패 emission-spot-primary-market-auction-report-2026-data.xlsx HTTPError HTTP Error 404: Not Found
+실패 emission-spot-primary-market-auction-report-2026-data.xlsx HTTPError HTTP Error 404: Not Found
+실패 emission-spot-primary-market-auction-report-2025-data.xlsx HTTPError HTTP Error 404: Not Found
