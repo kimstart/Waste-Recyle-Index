@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26 14:12",
+ "updated": "2026-10-26 17:03",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -184,9 +184,6 @@
    "prev_value": 82.25,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
-    81.72,
-    82.46,
-    82.62,
     81.93,
     81.6,
     80.94,
