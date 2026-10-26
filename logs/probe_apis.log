@@ -1,7 +1,8 @@
-curl 401 0.938372s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 1.284006s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.297718s https://www.re.or.kr/
+curl 401 0.874109s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 6.243976s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.324244s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
+   (재시도 1 RemoteDisconnected )
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
   searchDateGb [('reg', '입찰공고일'), ('bid', '입찰마감일')]
@@ -12,7 +13,7 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
   codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
   searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
 type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'A44658010');", "initList(4, 'B11118448');", "initList(4, 'A41503003');", "initList(4, 'A61282408');", "initList(4, 'B11124897');", "initList(4, 'A10027934');", "initList(4, 'A10023588');", "initList(4, 'A10025134');", "initList(4, 'A46572201');"]
+검색 버튼: ["initList(4, '');", "initList(4, 'B11116084');", "initList(4, 'A54580903');", "initList(4, 'B11116084');", "initList(4, 'A44658010');", "initList(4, 'B11118448');", "initList(4, 'A41503003');", "initList(4, 'A61282408');", "initList(4, 'B11124897');", "initList(4, 'A10027934');"]
 
 GET: 응답 293964자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
@@ -32,26 +33,25 @@ AJAX 주변: chForm select[name=comboSGG] option:selected").val(); var bidTitle 
   codeSucWay None
   codeAuth None
 csrf: True
-[fnTab(1]  <div class="subCbox"> <!--서브컨텐츠시작--> <div class="tab_01" style="margin: 0 0 -1px 0;"> <ul class="tab-5" id="popupTab"> <li class="chAtab on" id="chAtab1"><a href="" onclick="javascript:fnTab(1,1,'tab')">주요 사업별 가격비교 </a></li> <li class="chAtab" id="chAtab2"><a href="" onclick="javascript:fnTab(2,1,'tab')">유사 아파트 사업별 가격비교</a></li> <li class="chAtab" id="chAtab3"><a href="" onclick="javascript:fnTab(3,1,'tab')">업체별 가격비교</a></li> <input type="hidden" id="hTab"/> </ul> </div> <div class="filterBox filterBoxWide" style="margin-bo
-[fnTab(1]  fnTab(tabNum, 1, "", "load"); goList("", ""); }, 500); }, 500); } else if (paramCodeWay == "") { funcDateAreaChk(); getClassifyType(""); fnTab(1,1,'tab'); } else { $(".chAtab").removeClass('on'); $("#chAtab" + tabNum).addClass('on'); if ("" == "") $("input[name=bidState05Yn]").prop("checked", false); if ("" != "") { setTimeout(function () { $("#comboSIDO_resultList").val(""); addrSearchUtils.onChangeBjdHist(document.getElementById("comboSIDO_resultList"), 'co
-[fnTab(2]  <ul class="tab-5" id="popupTab"> <li class="chAtab on" id="chAtab1"><a href="" onclick="javascript:fnTab(1,1,'tab')">주요 사업별 가격비교 </a></li> <li class="chAtab" id="chAtab2"><a href="" onclick="javascript:fnTab(2,1,'tab')">유사 아파트 사업별 가격비교</a></li> <li class="chAtab" id="chAtab3"><a href="" onclick="javascript:fnTab(3,1,'tab')">업체별 가격비교</a></li> <input type="hidden" id="hTab"/> </ul> </div> <div class="filterBox filterBoxWide" style="margin-bottom:5px;"> <div class="filterForm"> <div class="filterForm_in"> 
-[excelForm] ('popResultInfo')"><i class="fas fa-times"></i> <span class="blind">닫기</span></button> </div> <img style="width: 550px;" src="/knew/img/bidResultList01.png" alt="계약분류표" onclick="closePopupLayer('popResultInfo')"> </div> <form name="excelForm" id="excelForm" method="get" target="hiddenFrame"> <input type="hidden" name="searchDateGb" value=""> <input type="hidden" name="searchBidGb" value=""> <input type="hidden" name="searchType" value=""> <input type="hidden" name="searchCompany" value=""> <input type="hidden" name="bidTitle" value=""> <input type="hidden" name="comboSIDO" value=""> <input type="hidden" name="comboSGG" value=""> <inpu
-[excelForm] ')"><i class="fas fa-times"></i> <span class="blind">닫기</span></button> </div> <img style="width: 550px;" src="/knew/img/bidResultList01.png" alt="계약분류표" onclick="closePopupLayer('popResultInfo')"> </div> <form name="excelForm" id="excelForm" method="get" target="hiddenFrame"> <input type="hidden" name="searchDateGb" value=""> <input type="hidden" name="searchBidGb" value=""> <input type="hidden" name="searchType" value=""> <input type="hidden" name="searchCompany" value=""> <input type="hidden" name="bidTitle" value=""> <input type="hidden" name="comboSIDO" value=""> <input type="hidden" name="comboSGG" value=""> <input type="hidden"
-[bidResultListExcel] celForm input[name=bidState05Yn]" ).val(bidState05Yn); alert("데이터 양이 많을 경우 다운로드가 장시간 소요될 수 있습니다.\n(PC 및 네트워크 환경에 따라 다를 수 있습니다.)"); $("#lodingDiv").show(); // lodingTimeOut(); $("#excelForm").attr("action", "/bid/bidResultListExcel.do"); $("#excelForm").submit(); $("#lodingDiv").hide(); } function showPopupLayer(val){ $("#"+val).show(); } function closePopupLayer(val){ $("#"+val).hide(); } $("#lodingDiv").attr("style", "display:none;position:absolute;z-Index:9999;top:700px;left:" + (document.body.clientWidth / 2 + 100) + "px"); </script></div> <!-- FOOTER --> <footer id="footer"
-[dateStart]').val(]  }); }, error:function(e){ alert(e.responseText); } }); } /* 20160211 입찰공고 검색시 날짜 조건 추가 */ function funcDateAreaChk() { $('#searchForm :input[name=dateStart]').val(''); var areaGb = $('#searchForm :radio[name=dateArea]:checked').val(); var date = new Date(); var sy = date.getFullYear(); var sm = date.getMonth() + 1; var sd = date.getDate(); if (areaGb == "1") { date.setMonth(date.getMonth() - 1); } else if (areaGb == "2") { date.setMonth(date.getMonth() - 3); } else if (areaGb == "3") { 
-[dateStart]').val(] f (areaGb == "4") { //1년전 date.setFullYear(date.getFullYear() - 1); } var syyyy = date.getFullYear(); var smm = date.getMonth() + 1; var sdd = date.getDate(); $('#searchForm :input[name=dateStart]').val(syyyy + '-' + addZero(smm) + '-' + addZero(sdd)); $('#searchForm :input[name=dateEnd]').val(sy + '-' + addZero(sm) + '-' + addZero(sd)); } function addZero(n) { return n < 10 ? "0" + n : n; } function goList(pageNo, type) { var dateStart = new Date( $("input[name=dateStart]").val().split("-")[0], $("input[name=dateStart]").val().split("-")[1]-1, $("input[name=dateStart]").val()
-   (재시도 1 RemoteDisconnected )
+AJAX 토큰 일치: True
+상위 키워드: [('1', '도장'), ('2', '균열 보수'), ('3', '소방시설'), ('4', '승강기'), ('5', '조경'), ('6', '청소 용역'), ('7', '경비 용역'), ('8', '소독'), ('9', '회계감사'), ('10', '재활용품')]
 
-탭 2 분류 14 날짜 2026-04-29: tr 1 응답 1630
+탭 1 분류  제목 도장 날짜 2025-10-27: tr 1 응답 1630
     ['입찰 정보가 존재 하지 않습니다.'] []
 
-탭 2 분류 14 날짜 2026.04.29: tr 1 응답 1630
+탭 1 분류  제목 재활용 날짜 2025-10-27: tr 1 응답 1630
     ['입찰 정보가 존재 하지 않습니다.'] []
 
-탭 2 분류 14 날짜 20260429: tr 1 응답 1630
+탭 2 분류 14 제목  날짜 2026-04-29: tr 1 응답 1630
     ['입찰 정보가 존재 하지 않습니다.'] []
    (재시도 1 RemoteDisconnected )
-   (재시도 2 RemoteDisconnected )
 
-탭 3 분류  날짜 2026-04-29: tr 1 응답 1630
+탭 2 분류 14 제목  날짜 2026.04.29: tr 1 응답 1630
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+탭 2 분류 14 제목  날짜 20260429: tr 1 응답 1630
+    ['입찰 정보가 존재 하지 않습니다.'] []
+   (재시도 1 RemoteDisconnected )
+
+탭 3 분류  제목  날짜 2026-04-29: tr 1 응답 1630
     ['입찰 정보가 존재 하지 않습니다.'] []
