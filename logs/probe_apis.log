@@ -1,7 +1,8 @@
-curl 401 0.958359s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 1.210216s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.933171s https://www.re.or.kr/
+curl 401 0.783945s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 10.917024s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.110130s https://www.re.or.kr/
 사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
+   (재시도 1 RemoteDisconnected )
 물품 하위: [('13', '구입'), ('14', '매각')]
 searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
   searchDateGb [('reg', '입찰공고일'), ('bid', '입찰마감일')]
@@ -14,7 +15,7 @@ searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), (
 type input: ['<input type="hidden" name="type" value="4">']
 검색 버튼: ["initList(4, '');", "initList(4, 'B11125133');", "initList(4, 'A10025134');", "initList(4, 'A46572201');", "initList(4, 'A30575105');", "initList(4, 'B11122352');", "initList(4, 'A13508009');", "initList(4, 'A50601013');", "initList(4, 'A10023526');", "initList(4, 'A15809601');"]
 
-GET: 응답 293961자, 행 7개, 총건수 표시 None
+GET: 응답 293964자, 행 7개, 총건수 표시 None
    tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
    20261026090155525 ['18', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
    20261023132621265 ['17', 'K-APT', '최고 낙찰', '[경기] 폐 변압기 매입 및 절연유 등 폐기 처리 사업자 선정 공고', '2026-11-12 17:00:00', '신규공고', '대림한숲', '2026-10-23 13:26:21']
@@ -32,5 +33,31 @@ AJAX 주변: chForm select[name=comboSGG] option:selected").val(); var bidTitle 
   codeSucWay None
   codeAuth None
 csrf: True
+fnTab: function fnTab(val, codeWay, type, type2) { if ($("#hTab").val() != val) { $("#hTab").val(val); if (type2 != "load") { $("#bidTitle").val(""); $("#searchCompany").val(""); $("#pageSelect").val("10"); } } tabNum = val; $("#tabNum").val(val); $(".tab2_class").hide(); $(".tab3_2_class").hide(); $(".tab4_class").hide(); $(".chBtab_class").hide(); $("#dlClassity").show(); if (val == 1) { $(".tab4_class").show(); $(".chBtab_class").show(); $("#dlClassity").hide(); } if (val == 2) $(".tab4_class").show(); if (val == 3) $(".tab2_class").show(); if (type == "tab") { if (val == 1) { fnTopKeyword(1); } else { goList(1, ""); } } } function
+탭: [('1', '주요 사업별 가격비교 '), ('2', '유사 아파트 사업별 가격비교'), ('3', '업체별 가격비교'), ('1', '{\r\n            const')]
 
-AJAX POST: 1630자  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> <table class="contTbl txtC" summary="이 표는 입찰 목록입니다." id="tblBidList"> <colgroup> <col style="width:5%"> <col style="width:13%"> <col style="width:5%"> <col style="width:20%"> <col style="width:8%"> <col style="width:9%"> <col style="width:13%" class="tab2_class"> <col style="width:9%" class="tab2_class tab3_ex_class"> <col style="width:13%" class="tab3_ex_class"> </colgroup> <thead> <tr> <th scope="col">순번</th> <th scope="col">단지명</th> <th scope="col">세대수</th> <th scope="col">입찰공고명</th> <th scope="col"><span id="dItemNm">입찰마감일</span></th> <th scope="col">낙찰금액</th> <th scope="col" class="tab2_class">낙찰업체</th> <th scope="col" class="tab2_class tab3_ex_class">응찰금액</th> <th scope="col" class="tab3_ex_class"><span class="tab4_class">낙찰</span>업체</th> </tr> </thead> <tbody> <tr> <td colspan="6" class="tbl_noData">입찰 정보가 존재 하지 않습니다.</td> </tr> </tbody> </table> <div class="pagination"> <div class="select-wrapper"> <select id="pageSelect" onchange="goList(1, '');"> <option value="10" selected="selected">10개씩 보기</option> <option value="20">20개씩 보기</option> <option val
+시도 11 탭 1: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+시도 11 탭 2: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+시도 11 탭 3: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+   (재시도 1 RemoteDisconnected )
+
+시도 11 탭 4: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+시도 41 탭 1: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+   (재시도 1 RemoteDisconnected )
+
+시도 41 탭 2: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+시도 41 탭 3: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
+
+시도 41 탭 4: tr 1, 
+    ['입찰 정보가 존재 하지 않습니다.'] []
