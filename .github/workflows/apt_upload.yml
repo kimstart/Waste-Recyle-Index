@@ -1,0 +1,39 @@
+name: K-APT 입찰결과 엑셀 반영
+on:
+  push:
+    paths:
+      - 'uploads/kapt/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: market
+  cancel-in-progress: false
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 엑셀 읽어 결과 반영
+        run: |
+          pip install -q xlrd >/dev/null 2>&1
+          mkdir -p logs
+          python -u ingest_kapt.py 2>&1 | tee logs/ingest_kapt.log
+      - name: 원본 지우고 결과 저장
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          files=$(grep '^PROCESSED:' logs/ingest_kapt.log | sed 's/^PROCESSED://' | tr '|' '\n')
+          for f in $files; do [ -f "$f" ] && git rm -q "$f"; done
+          git add data logs
+          git diff --staged --quiet && { echo "변경 없음"; exit 0; }
+          git commit -m "Auto: K-APT 입찰결과 반영 [$(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push 재시도 $i/5"; sleep 5
+          done
+          exit 1
