@@ -4,9 +4,17 @@ from datetime import date, timedelta
 H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
 op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
 B = "https://www.k-apt.go.kr"
+import time
 def get(u, data=None, hdr=None):
-    r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": B + "/bid/bidList.do", **(hdr or {})}), timeout=60)
-    return r.read(4_000_000).decode("utf8", "ignore")
+    for k in range(3):
+        try:
+            time.sleep(2.5)
+            r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": B + "/bid/bidList.do", **(hdr or {})}), timeout=60)
+            return r.read(4_000_000).decode("utf8", "ignore")
+        except Exception as e:
+            print("   (재시도", k + 1, type(e).__name__, ")")
+            time.sleep(8 * (k + 1))
+    raise RuntimeError("K-APT 응답 없음")
 sq = lambda t: re.sub(r"\s+", " ", t)
 h = get(B + "/bid/bidList.do")
 csrf = re.search(r'_csrf=" \+ "([0-9a-f-]+)"', h).group(1)
@@ -44,15 +52,26 @@ for meth in ("GET", "POST"):
         if rows: break
     except Exception as e:
         print(meth, "실패", type(e).__name__, str(e)[:100])
-# 마감 공고 상세: 결과(낙찰) 표시 여부
-f2 = dict(form, bidState="100", dateStart=(date.today() - timedelta(days=360)).isoformat(), dateArea="4")
-r = get(B + "/bid/bidList.do?" + urllib.parse.urlencode(f2))
-ids = re.findall(r"goView\('(\d+)'\)", r)
-ids = list(dict.fromkeys(ids))
-print("\n마감공고 1쪽:", len(ids), "건; 페이지 링크:", sorted(set(re.findall(r"goPage\((\d+)\)|pageNo=(\d+)", r)))[:12])
-tb = r[r.find("<tbody"):r.find("</tbody>")]
-print("tbody tr 수:", len(re.findall(r"<tr", tb)), "dataId tr 수:", len(re.findall(r"dataId=", tb)))
-for did in ids[:3]:
+# 1년 전체(상태 무관) 페이지 넘기기
+f2 = dict(form, bidState="", dateStart=(date.today() - timedelta(days=364)).isoformat(), dateArea="4")
+ids, allrows = [], []
+for pg in range(1, 15):
+    f2["pageNo"] = str(pg)
+    r = get(B + "/bid/bidList.do?" + urllib.parse.urlencode(f2))
+    tb = r[r.find("<tbody"):r.find("</tbody>")]
+    trs = re.findall(r"<tr[^>]*>(.*?)</tr>", tb, re.S)
+    got = 0
+    for tr in trs:
+        did = re.search(r"goView\('(\d+)'\)", tr)
+        tds = [sq(re.sub(r"<[^>]+>", " ", x)).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+        if did and did.group(1) not in ids:
+            ids.append(did.group(1)); allrows.append(tds); got += 1
+    print(f"  {pg}쪽: tr {len(trs)}, 신규 {got}")
+    if got == 0:
+        break
+print("1년 합계", len(ids), "건; 상태 분포:", {x: sum(1 for r in allrows if len(r) > 5 and r[5] == x) for x in set(r[5] for r in allrows if len(r) > 5)})
+for r in allrows[-6:]: print("   ", r)
+for did in [i for i, r in zip(ids, allrows) if len(r) > 5 and '마감' in r[5]][:2] or ids[-2:]:
     d = get(B + f"/bid/bidDetail.do?bidNum={did}")
     rows = re.findall(r"<th[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>", d, re.S)
     print(f"\n상세 {did}:", [(sq(re.sub(r"<[^>]+>", " ", a)).strip()[:16], sq(re.sub(r"<[^>]+>", " ", b)).strip()[:70]) for a, b in rows][:45])
