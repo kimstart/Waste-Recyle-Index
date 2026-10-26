@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26 20:28",
+ "updated": "2026-10-27 00:26",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -43,8 +43,8 @@
     93.9,
     96.1
    ],
-   "krw_m3": 1687.6,
-   "fx_used": 1482.46,
+   "krw_m3": 1687.9,
+   "fx_used": 1482.72,
    "heat_used": 42.653
   },
   "gas_whole": {
@@ -105,8 +105,8 @@
      20.23
     ]
    ],
-   "krw_m3": 355.3,
-   "fx_used": 1482.46,
+   "krw_m3": 355.4,
+   "fx_used": 1482.72,
    "heat_used": 42.653
   },
   "kcu": {
@@ -125,10 +125,10 @@
   "fx_eur": {
    "name": "원/유로",
    "unit": "원",
-   "date": "2026-10-23",
-   "value": 1482.46,
-   "prev_date": "2026-10-22",
-   "prev_value": 1484.25,
+   "date": "2026-10-26",
+   "value": 1482.72,
+   "prev_date": "2026-10-23",
+   "prev_value": 1482.46,
    "src": "ECB 기준환율"
   },
   "kau": {
@@ -180,7 +180,7 @@
    "item": "실물 EUA ETC",
    "unit": "€/톤",
    "date": "2026-10-26",
-   "value": 83.56,
+   "value": 83.48,
    "prev_date": "2026-10-23",
    "prev_value": 82.27,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
@@ -205,9 +205,9 @@
     81.5,
     82.25,
     82.27,
-    83.56
+    83.48
    ],
-   "krw_t": 123874
+   "krw_t": 123777
   }
  },
  "extra": {
