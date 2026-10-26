@@ -9,7 +9,8 @@ def get(u, data=None, hdr=None):
     for k in range(3):
         try:
             time.sleep(2.5)
-            r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": B + "/bid/bidList.do", **(hdr or {})}), timeout=60)
+            ref = B + ("/bid/bidResultList.do" if "Result" in u else "/bid/bidList.do")
+            r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": ref, "Origin": B, **(hdr or {})}), timeout=60)
             return r.read(4_000_000).decode("utf8", "ignore")
         except Exception as e:
             print("   (재시도", k + 1, type(e).__name__, ")")
@@ -64,6 +65,9 @@ for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
     print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
 csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
 print("csrf:", bool(csrf2))
+print("초기 hTab/tabNum:", re.findall(r'id="(?:hTab|tabNum)"[^>]*value="([^"]*)"', r), "dateStart:", re.findall(r'name="dateStart"[^>]*value="([^"]*)"', r))
+m = re.search(r"\$\(document\)\.ready\(function.*?\}\);", r, re.S)
+print("ready:", sq(m.group(0))[:800] if m else None)
 m = re.search(r"url: '/bid/bidResultListAjax\.do'.*?success", r, re.S)
 print("AJAX data 전체:", sq(m.group(0))[:1500] if m else None)
 m = re.search(r"function fnTopKeyword.*?\}\s*\}", r, re.S)
@@ -75,7 +79,8 @@ print("키워드 버튼:", re.findall(r'fnKeyword\([^)]*\)|topKeyword[^"]{0,80}'
 base = {"_csrf": csrf2.group(1), "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "codeWay": "01",
         "dateStart": (date.today() - timedelta(days=364)).isoformat(), "dateEnd": date.today().isoformat(), "pageNo": "1",
         "pageSelect": "20", "bidState05Yn": "N", "sortType": "1", "comboSGG": "", "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": ""}
-tries = [dict(base, tabNum="2", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14"),
+tries = [dict(base, tabNum="1", comboSIDO="", bidTitle="", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="", pageNo=""),
+         dict(base, tabNum="2", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14"),
          dict(base, tabNum="3", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14"),
          dict(base, tabNum="2", comboSIDO="", bidTitle="재활용", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="")]
 for q in tries:
