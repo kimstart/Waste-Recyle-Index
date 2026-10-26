@@ -65,24 +65,29 @@ for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
     print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
 csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
 print("csrf:", bool(csrf2))
-for kw in ("fnTab(1", "fnTab(2", "excelForm", "bidResultListExcel", "dateStart\"]).val(", "dateStart]').val("):
-    for mm in list(re.finditer(re.escape(kw), r))[:2]:
-        print(f"[{kw}]", sq(r[max(0, mm.start() - 250):mm.start() + 450])[:700])
-base = {"_csrf": csrf2.group(1), "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "codeWay": "01", "pageSelect": "20", "bidState05Yn": "N",
+tok = re.search(r'"_csrf"\s*:\s*"([0-9a-f-]+)"', r).group(1)
+print("AJAX 토큰 일치:", tok == csrf2.group(1))
+spanK = re.findall(r'id="spanK(\d+)"[^>]*>([^<]*)<', r)
+print("상위 키워드:", spanK[:10])
+base = {"_csrf": tok, "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "codeWay": "01", "pageSelect": "20", "bidState05Yn": "N",
         "sortType": "1", "comboSGG": "", "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": "", "pageNo": "1"}
 d0, d1 = date.today() - timedelta(days=180), date.today()
 tries = []
 for fmt in ("%Y-%m-%d", "%Y.%m.%d", "%Y%m%d"):
     tries.append(dict(base, tabNum="2", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14",
                       dateStart=d0.strftime(fmt), dateEnd=d1.strftime(fmt)))
+tries.insert(0, dict(base, tabNum="1", comboSIDO="", bidTitle=(spanK[0][1] if spanK else ""), codeClassifyType1="", codeClassifyType2="", codeClassifyType3="",
+                     dateStart=(date.today() - timedelta(days=364)).isoformat(), dateEnd=d1.isoformat()))
+tries.insert(1, dict(base, tabNum="1", comboSIDO="", bidTitle="재활용", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="",
+                     dateStart=(date.today() - timedelta(days=364)).isoformat(), dateEnd=d1.isoformat()))
 tries.append(dict(base, tabNum="3", comboSIDO="", bidTitle="", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="", searchDateGb="reg",
                   dateStart=d0.isoformat(), dateEnd=d1.isoformat()))
 for q in tries:
     try:
         t = get(B + "/bid/bidResultListAjax.do", data=urllib.parse.urlencode(q).encode(),
-                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-CSRF-TOKEN": csrf2.group(1)})
+                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-CSRF-TOKEN": tok})
         trs = re.findall(r"<tr[^>]*>(.*?)</tr>", t[t.find("<tbody"):], re.S)
-        print(f"\n탭 {q['tabNum']} 분류 {q['codeClassifyType3']} 날짜 {q['dateStart']}: tr {len(trs)} 응답 {len(t)}")
+        print(f"\n탭 {q['tabNum']} 분류 {q['codeClassifyType3']} 제목 {q['bidTitle']} 날짜 {q['dateStart']}: tr {len(trs)} 응답 {len(t)}")
         for tr in trs[:6]:
             print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:40] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
     except Exception as e:
