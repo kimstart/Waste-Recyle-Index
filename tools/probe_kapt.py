@@ -21,9 +21,14 @@ mae = next((c for c, v in c3 if "매각" in v), None)
 f = re.search(r'<form name="searchForm".*?</form>', h, re.S).group(0)
 names = re.findall(r'<(?:input|select)[^>]*name="([^"]+)"[^>]*?(?:value="([^"]*)")?', f)
 print("searchForm 필드:", names[:60])
+for nm in ("searchDateGb", "bidState", "pageSelect", "codeAuth", "codeWay", "codeSucWay", "searchBidGb"):
+    m = re.search(rf'<select[^>]*name="{nm}"[^>]*>(.*?)</select>', h, re.S)
+    print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:12] if m else None)
+print("type input:", re.findall(r'<input[^>]*name="type"[^>]*>', h))
+print("검색 버튼:", re.findall(r'onclick="(initList\([^"]*)"', h)[:10])
 form = {n: v for n, v in names}
 form.update({"_csrf": csrf, "bidArea": "11|28|41", "codeClassifyType1": "02", "codeClassifyType2": mul, "codeClassifyType3": mae,
-             "dateStart": (date.today() - timedelta(days=90)).isoformat(), "dateEnd": date.today().isoformat(), "dateArea": "2", "pageNo": "1"})
+             "dateStart": (date.today() - timedelta(days=90)).isoformat(), "dateEnd": date.today().isoformat(), "dateArea": "2", "pageNo": "1", "type": "4", "searchDateGb": "reg", "pageSelect": "10"})
 for meth in ("GET", "POST"):
     try:
         q = urllib.parse.urlencode(form)
@@ -31,7 +36,8 @@ for meth in ("GET", "POST"):
                 hdr={"Content-Type": "application/x-www-form-urlencoded"} if meth == "POST" else None)
         rows = re.findall(r'<tr[^>]*dataId="(\d+)"(.*?)</tr>', r, re.S)
         tot = re.search(r"총\s*<[^>]*>?\s*([\d,]+)\s*건|전체\s*([\d,]+)\s*건|total[^\d]{0,20}([\d,]+)", r)
-        print(f"\n{meth}: 행 {len(rows)}개, 총건수 표시 {tot.group(0)[:40] if tot else None}")
+        print(f"\n{meth}: 응답 {len(r)}자, 행 {len(rows)}개, 총건수 표시 {tot.group(0)[:40] if tot else None}")
+        i = r.find("<tbody"); print("   tbody:", sq(r[i:i + 600]))
         for i, (did, tr) in enumerate(rows[:12]):
             tds = [sq(re.sub(r"<[^>]+>", " ", x)).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
             print("  ", did, tds)
