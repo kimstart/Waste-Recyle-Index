@@ -1,57 +1,30 @@
-curl 401 0.874109s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 6.243976s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.324244s https://www.re.or.kr/
-사업자 하위: [('02', '공사'), ('03', '용역'), ('04', '물품'), ('05', '기타')]
-   (재시도 1 RemoteDisconnected )
-물품 하위: [('13', '구입'), ('14', '매각')]
-searchForm 필드: [('pageSelect', ''), ('searchBidGb', ''), ('bidTitle', ''), ('aptName', ''), ('searchDateGb', ''), ('dateStart', ''), ('dateEnd', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('dateArea', ''), ('bidState', ''), ('codeAuth', ''), ('codeWay', ''), ('codeAuthSub', ''), ('codeSucWay', ''), ('codeClassifyType1', ''), ('codeClassifyType2', ''), ('codeClassifyType3', ''), ('pageNo', ''), ('type', ''), ('bidArea', ''), ('bidNum', ''), ('bidNo', ''), ('dTime', ''), ('mainKaptCode', ''), ('aptCode', '')]
-  searchDateGb [('reg', '입찰공고일'), ('bid', '입찰마감일')]
-  bidState [('', '전체'), ('1', '신규공고'), ('2', '수정공고'), ('3', '재공고'), ('100', '마감공고')]
-  pageSelect None
-  codeAuth [('', '전체'), ('02', '조달청'), ('01', 'K-APT'), ('04,05,03,06,07,08,09,10', '민간운영')]
-  codeWay [('', '전체'), ('00', '직접입찰'), ('01', '전자입찰')]
-  codeSucWay [('', '전체'), ('02', '적격심사'), ('03', '최저낙찰'), ('04', '최고낙찰')]
-  searchBidGb [('bid_gb_1', '입찰공고명'), ('bid_gb_2', '입찰번호')]
-type input: ['<input type="hidden" name="type" value="4">']
-검색 버튼: ["initList(4, '');", "initList(4, 'B11116084');", "initList(4, 'A54580903');", "initList(4, 'B11116084');", "initList(4, 'A44658010');", "initList(4, 'B11118448');", "initList(4, 'A41503003');", "initList(4, 'A61282408');", "initList(4, 'B11124897');", "initList(4, 'A10027934');"]
-
-GET: 응답 293964자, 행 7개, 총건수 표시 None
-   tbody: <tbody> <tr onmouseover="javascript:changeTrColor(this, '#FFFFFF', '#d8dee4')" style="cursor:pointer;cursor:hand; font-family: 'Noto Sans KR'; font-weight:370" class="notice-row" dataId="20261026090155525"> <td onclick="javascript:goView('20261026090155525')">18</td> <td onclick="javascript:goView('20261026090155525')">K-APT</td> <td onclick="javascript:goView('20261026090155525')">적격심사</td> <td onclick="javascript:goView('20261026090155525')" class="txtL" colName="bidTitle"> <b>[인천] 재활용 수거업체 선정<img src="/images/icon/icon_file.gif" alt="첨부파일있음
-   20261026090155525 ['18', 'K-APT', '적격심사', '[인천] 재활용 수거업체 선정', '2026-11-12 17:00:00', '신규공고', '검단신도시디에트르더힐아파트', '2026-10-26 09:04:00']
-   20261023132621265 ['17', 'K-APT', '최고 낙찰', '[경기] 폐 변압기 매입 및 절연유 등 폐기 처리 사업자 선정 공고', '2026-11-12 17:00:00', '신규공고', '대림한숲', '2026-10-23 13:26:21']
-   20261023130620623 ['16', 'K-APT', '최고 낙찰', '[경기] 재활용품 처리업체 선정 입찰공고', '2026-11-04 17:00:00', '신규공고', '평촌어바인퍼스트', '2026-10-23 13:07:14']
-   20261022165045290 ['15', 'K-APT', '최고 낙찰', '[서울] 재활용품 수거업체 선정 입찰공고', '2026-11-02 17:00:00', '신규공고', '영등포아트자이', '2026-10-22 16:50:45']
-   20261022155445840 ['14', 'K-APT', '적격심사', '[서울] 재활용품 수거업체 선정 긴급 입찰공고', '2026-10-28 17:00:00', '신규공고', '미성아파트(불광동)', '2026-10-22 15:56:27']
-   20261022132427342 ['13', 'K-APT', '최고 낙찰', '[경기] 제활용품 수거업체 선정공고', '2026-11-04 17:00:00', '신규공고', '평택한일', '2026-10-22 13:24:27']
-   20261021112126877 ['10', 'K-APT', '최고 낙찰', '[서울] 승강기 내·외부 미디어보드 설치 및 운영업체 선정 입찰 재공고(2차)', '2026-11-02 17:00:00', '신규공고', '아카데미스위트', '2026-10-21 13:24:59']
-   (재시도 1 RemoteDisconnected )
-AJAX 주변: chForm select[name=comboSGG] option:selected").val(); var bidTitle = $("#searchForm input[name=bidTitle]").val(); var kaptdaCntStart = $("#searchForm input[name=kaptdaCntStart]").val(); var kaptdaCntEnd = $("#searchForm input[name=kaptdaCntEnd]").val(); var searchCompany = $("#searchForm input[name=searchCompany]").val(); var dateStart = $("#searchForm input[name=dateStart]").val(); var dateEnd = $("#searchForm input[name=dateEnd]").val(); var codeWay = $("#searchForm select[name=codeWay] option:selected").val(); var bidState05Yn = $('#searchForm input[name=bidState05Yn]').is(":checked") ? "Y" : "N"; var amountMin = $("#searchForm input[name=amountMin]").val(); var amountMax = $("#searchForm input[name=amountMax]").val(); var sortType = $(":radio[name=sortType]:checked").val(); if ($("#hTab").val() == "1") { } else { codeClassifyType1 = $("#codeClassifyType1 option:selected").val(); codeClassifyType2 = $("#codeClassifyType2 option:selected").val(); codeClassifyType3 = $("#codeClassifyType3 option:selected").val(); } if (codeWay == "01") fnCodeWay(1); if (codeWay == "03") fnCodeWay(3); fnTab(tabNum,''); fnCodeWay(codeWay); let pageSelect = $("#pageSelect").val(); $.ajax({ url: '/bid/bidResultListAjax.do', type: "post", data: { "searchDateGb" : searchDateGb, "searchBidGb" : searchBidGb, "searchCompany": searchCompany, "bidTitle": bidTitle, "comboSIDO": comboSIDO, "comboSGG": comboSGG, "codeClassifyType1": codeClassifyType1, "codeClassifyType2": codeClassifyType2, "codeClassifyType3": codeClassifyType3, "kaptdaCntStart": kaptdaCntStart, "kaptdaCntEnd": kaptdaCntEnd, "dateStart": dateStart, "dateEnd": dateEnd, "pageNo": pageNo, "tabNum": String(tabNum), "codeWay": codeWay, 
-결과 searchForm 필드: ['bidNum', 'pcNum', 'pageInfo', 'tabNum', 'pageNo', 'sortType', 'pageSelect', 'searchBidGb', 'searchCompany', 'bidState05Yn', 'codeClassifyType1', 'codeClassifyType2', 'codeClassifyType3', 'bidTitle', 'bjdCode', 'eubCode', 'comboSIDO', 'comboSGG', 'comboEMD', 'kaptdaCntStart', 'kaptdaCntEnd', 'codeWay', 'searchDateGb', 'dateStart', 'dateEnd', 'dateArea', 'dateArea', 'dateArea', 'dateArea', 'amountMin', 'amountMax']
-  codeWay [('01', '경쟁입찰'), ('03', '수의계약')]
-  searchDateGb [('reg', '\r\n                                            입찰공고일\r\n                                        '), ('bid', '\r\n                                            입찰마감일\r\n                                        ')]
-  sortType None
-  codeSucWay None
-  codeAuth None
-csrf: True
-AJAX 토큰 일치: True
-상위 키워드: [('1', '도장'), ('2', '균열 보수'), ('3', '소방시설'), ('4', '승강기'), ('5', '조경'), ('6', '청소 용역'), ('7', '경비 용역'), ('8', '소독'), ('9', '회계감사'), ('10', '재활용품')]
-
-탭 1 분류  제목 도장 날짜 2025-10-27: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
-
-탭 1 분류  제목 재활용 날짜 2025-10-27: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
-
-탭 2 분류 14 제목  날짜 2026-04-29: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
-   (재시도 1 RemoteDisconnected )
-
-탭 2 분류 14 제목  날짜 2026.04.29: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
-
-탭 2 분류 14 제목  날짜 20260429: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
-   (재시도 1 RemoteDisconnected )
-
-탭 3 분류  제목  날짜 2026-04-29: tr 1 응답 1630
-    ['입찰 정보가 존재 하지 않습니다.'] []
+curl 401 0.693298s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 10.837152s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.690450s https://www.re.or.kr/
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> 저장: 아파트 재활용 공고 35건 (이번 확인 35건, 새 상세 35건) · 분류 {'사업자 - 용역 - 기타 용역': 12, '사업자 - 물품 - 매각': 8, '사업자 - 기타 - 잡수입': 8, '사업자 - 공사 - 장기수선': 2, '사업자 - 공사 - 일반보수': 1, '주택관리업자 - 공동주택위탁관리': 4} · 지역 {'수원시': 2, '인천': 4, '안양시': 1, '서울': 7, '화성시': 4, '성남시': 1, '경기': 8, '광명시': 1, '평택시': 1, '가평군': 1, '이천시': 1, '의정부시': 1, '김포시': 1, '군포시': 1, '남양주시': 1}
+   2026-10-26 수원시  | 적격심사   | 영통벽적골롯데 | 재활용품 처리 용역 사업자 선정 재공고 | 사업자 - 용역 - 기타 용역 | 신규공고
+   2026-10-26 인천   | 적격심사   | 검단신도시디에트르더힐아파트 | 재활용 수거업체 선정 | 사업자 - 물품 - 매각 | 신규공고
+   2026-10-23 안양시  | 최고 낙찰  | 평촌어바인퍼스트 | 재활용품 처리업체 선정 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
+   2026-10-23 서울   | 최고 낙찰  | 흑석롯데캐슬에듀포레 | 재활용품 수거업체 선정 입찰공고 | 사업자 - 기타 - 잡수입 | 신규공고
+   2026-10-23 화성시  | 최고 낙찰  | 봉담신일해피트리2차 | 재활용품 수거업체 선정 공고 | 사업자 - 기타 - 잡수입 | 신규공고
+   2026-10-23 화성시  | 최고 낙찰  | 진안동 월드메르디앙 1,2 | 재활용 수거업체 선정 공고 | 사업자 - 용역 - 기타 용역 | 신규공고
+   2026-10-22 서울   | 최고 낙찰  | 영등포아트자이 | 재활용품 수거업체 선정 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
+   2026-10-22 성남시  | 최고 낙찰  | 힐스테이트위례 | 재활용품 수거 용역업체 선정 입찰 공고 | 사업자 - 용역 - 기타 용역 | 신규공고
+   2026-10-22 서울   | 적격심사   | 미성아파트(불광동) | 재활용품 수거업체 선정 긴급 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
+   2026-10-22 화성시  | 최고 낙찰  | 송산그린시티 금강펜테리움센 | 재활용품 매각 사업자선정 입찰공고 | 사업자 - 기타 - 잡수입 | 재공고
+   2026-10-22 경기   | 최고 낙찰  | 송추역북한산경남아너스빌 | 재활용품 수거 용역 사업자 선정 입찰 재공고(긴급) | 사업자 - 용역 - 기타 용역 | 신규공고
+   2026-10-21 경기   | 최저 낙찰  | e편한세상구성역플랫폼시티 | 재활용장(1개소) 확장공사 업체 선정 입찰공고 | 사업자 - 공사 - 장기수선 | 신규공고
