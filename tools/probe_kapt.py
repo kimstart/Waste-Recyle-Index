@@ -52,12 +52,26 @@ for meth in ("GET", "POST"):
         if rows: break
     except Exception as e:
         print(meth, "실패", type(e).__name__, str(e)[:100])
-# 입찰결과 화면 구조
+# 입찰결과 AJAX
 r = get(B + "/bid/bidResultList.do")
-print("결과 페이지", len(r), "title:", (re.search(r"<title>(.*?)</title>", r, re.S) or [0, ""])[1].strip()[:40])
-print("forms:", re.findall(r"<form[^>]*>", r)[:6])
-for kw in ("낙찰금액", "낙찰업체", "낙찰자", "개찰", "goView", "goResult", "resultView", "tbody", "<table"):
-    i = r.find(kw); print(f"[{kw}] {r.count(kw)}회", sq(r[max(0, i - 200):i + 500])[:700] if i >= 0 else "")
-i = r.find("function initList(")
-print("결과 initList:", sq(r[i:i + 1500]) if i > 0 else None)
-print("결과 링크:", sorted(set(re.findall(r'["\'](/bid/[A-Za-z0-9_/]+\.do)', r))))
+for m in re.finditer(r"bidResultListAjax\.do", r):
+    print("AJAX 주변:", sq(r[max(0, m.start() - 1500):m.start() + 800])); break
+fr = re.search(r'<form name="searchForm".*?</form>', r, re.S).group(0)
+names = re.findall(r'<(?:input|select)[^>]*name="([^"]+)"', fr)
+print("결과 searchForm 필드:", names)
+for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
+    m = re.search(rf'<select[^>]*name="{nm}"[^>]*>(.*?)</select>', fr, re.S)
+    print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
+csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
+print("csrf:", bool(csrf2))
+q = {"_csrf": csrf2.group(1) if csrf2 else "", "bidArea": "11|28|41", "bidTitle": "재활용", "searchBidGb": "bid_gb_1", "codeWay": "01",
+     "dateStart": (date.today() - timedelta(days=364)).isoformat(), "dateEnd": date.today().isoformat(), "pageNo": "1", "searchDateGb": "reg", "type": "4"}
+for meth in ("POST", "GET"):
+    try:
+        enc = urllib.parse.urlencode(q)
+        t = get(B + "/bid/bidResultListAjax.do" + ("?" + enc if meth == "GET" else ""), data=enc.encode() if meth == "POST" else None,
+                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
+        print(f"\nAJAX {meth}: {len(t)}자", sq(t[:1500]))
+        break
+    except Exception as e:
+        print("AJAX", meth, "실패", type(e).__name__)
