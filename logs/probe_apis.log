@@ -1,46 +1,5 @@
-curl 401 0.882978s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 6.099444s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.133026s https://www.re.or.kr/
-CO2.L: 23개, 최근 [('2026-10-21', 81.49500274658203), ('2026-10-22', 82.25499725341797), ('2026-10-23', 82.2699966430664)]
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-CO2.DE: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-CO2.AS: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-KEUA: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-EUA=F: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-CFI2Z6.NYM: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-CKZ26.NYM: 실패 HTTPError HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-MOZ26.NYM: 실패 HTTPError HTTP Error 404: Not Found
-ECF=F: 실패 ValueError Yahoo ECF=F 자료 없음
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 1/2] HTTPError: HTTP Error 404: Not Found
-   [재시도 2/2] HTTPError: HTTP Error 404: Not Found
-C=F: 실패 HTTPError HTTP Error 404: Not Found
-js: ['/typo3temp/assets/compressed/merged-b41f248ef8656113aed4ec12fa02dafa-2eebea4012fba72005db95240232e64c.js?1681216198', '/typo3temp/assets/compressed/merged-e6eae4e1471edfed2fd84cdde46de603-6cd10988eece685a010844ffcfdd3c88.js?1681216198', '//static.etracker.com/code/e.js', '/typo3temp/assets/compressed/merged-03c8ef43e498bfd84bf2e94294da9d1e-fe37de2ab9ea0a88f9af0820065157f9.js?1777018028', '/typo3conf/ext/uo_vorschlagsuche/Resources/Public/js/vorschlagsuche.js?1774976794', '/typo3conf/ext/uo_vorschlagsuche/Resources/Public/js/custom_autocomplete.js?1774976794']
+curl 401 0.640815s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 7.127295s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.625963s https://www.re.or.kr/
+{'currency': 'EUR', 'symbol': 'CO2.L', 'exchangeName': 'LSE', 'fullExchangeName': 'LSE', 'instrumentType': 'EQUITY', 'longName': 'SparkChange Physical Carbon EUA ETC', 'shortName': 'HANETF ETC SECURITIES PLC SPARK', 'regularMarketPrice': 82.27, 'regularMarketTime': 1792750967}
+최근 종가: [83.68, 83.65, 82.71, 81.94, 80.92, 81.64, 81.47, 81.5, 82.25, 82.27]
