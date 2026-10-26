@@ -171,12 +171,15 @@ def fetch_kcu(items, extra):
         tr = sorted(trades["KCU"])
         cur = tr[-1]
         prev = next((t for t in reversed(tr[:-1]) if t[0] < cur[0]), None)
-        k = next((kau_by_day[d] for d in sorted(kau_by_day, reverse=True) if d <= cur[0]), None)
+        same = "KAU" + cur[1][-2:]                            # 같은 연도물(KCU25 ↔ KAU25)과 비교, 없으면 그날 주력 연도물
+        k = (next((t for t in sorted(trades["KAU"], reverse=True) if t[1] == same and t[0] <= cur[0]), None)
+             or next((kau_by_day[d] for d in sorted(kau_by_day, reverse=True) if d <= cur[0]), None))
         ratio = round(cur[2] / k[2] * 100) if k else None
+        print(f">> [KCU] {cur} ↔ 비교 KAU {k} → {ratio}%  (그날 주력 {next((kau_by_day[d] for d in sorted(kau_by_day, reverse=True) if d <= cur[0]), None)})")
         out["kcu"] = {"name": "KCU 상쇄배출권", "item": cur[1], "unit": "원/톤", "date": ymd(cur[0]), "value": cur[2],
                       "prev_date": ymd(prev[0]) if prev else None, "prev_value": prev[2] if prev else None,
                       "volume": cur[3], "src": "한국거래소",
-                      "basis": "최근 거래일 종가" + (f", 같은 날 KAU 대비 {ratio}%" if ratio else ""), "vs_kau": ratio}
+                      "basis": "최근 거래일 종가" + (f", 같은 시점 {k[1]} 대비 {ratio}%" if ratio else ""), "vs_kau": ratio}
         return out
     j = _krx_post(base, op, H, "ETS/03/03010000/ets03010000_04", "tablesubmit", {"bldcode": "ETS/03/03010000/ets03010000_04"})
     lst = next((v for v in j.values() if isinstance(v, list)), []) if isinstance(j, dict) else []
