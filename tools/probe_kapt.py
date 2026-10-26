@@ -52,49 +52,12 @@ for meth in ("GET", "POST"):
         if rows: break
     except Exception as e:
         print(meth, "실패", type(e).__name__, str(e)[:100])
-# ① 제목 '재활용' 검색(분류 무관) 1년: 건수·낙찰방법 분포
-f3 = dict(form, codeClassifyType1="", codeClassifyType2="", codeClassifyType3="", bidState="", searchBidGb="bid_gb_1", bidTitle="재활용",
-          dateStart=(date.today() - timedelta(days=364)).isoformat(), dateArea="4")
-ids, allrows = [], []
-for pg in range(1, 40):
-    f3["pageNo"] = str(pg)
-    r = get(B + "/bid/bidList.do?" + urllib.parse.urlencode(f3))
-    tb = r[r.find("<tbody"):r.find("</tbody>")]
-    got = 0
-    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", tb, re.S):
-        did = re.search(r"goView\('(\d+)'\)", tr)
-        tds = [sq(re.sub(r"<[^>]+>", " ", x)).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
-        if did and did.group(1) not in ids:
-            ids.append(did.group(1)); allrows.append(tds); got += 1
-    if got == 0:
-        break
-from collections import Counter
-print(f"제목 '재활용' 1년: {len(ids)}건, {pg - 1}쪽; 낙찰방법 {Counter(r[2] for r in allrows if len(r) > 2)}; 상태 {Counter(r[5] for r in allrows if len(r) > 5)}")
-for r in allrows[:5] + allrows[-3:]: print("   ", r)
-# 분류 확인: 앞 6건 상세의 입찰분류
-for did in ids[:6]:
-    d = get(B + f"/bid/bidDetail.do?bidNum={did}")
-    m = re.search(r"입찰분류</th>\s*<td[^>]*>(.*?)</td>", d, re.S)
-    print("   분류", did, sq(re.sub(r"<[^>]+>", " ", m.group(1))).strip() if m else None)
-# ② 입찰결과 목록
-for q in ({"type": "4"}, dict(f3, pageNo="1")):
-    try:
-        r = get(B + "/bid/bidResultList.do?" + urllib.parse.urlencode(q))
-        i = r.find("<thead"); j = r.find("<tbody")
-        print("\n결과목록", len(r), "머리:", sq(re.sub(r"<[^>]+>", "|", r[i:i + 900]))[:400])
-        for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", r[j:r.find("</tbody>", j)], re.S)[:6]:
-            print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:30] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
-    except Exception as e:
-        print("결과목록 실패", type(e).__name__)
-# ③ 세대수 API 승인 여부(응답 코드만)
-import os
-key = urllib.parse.unquote(os.environ.get("DATA_GO_KR_KEY", ""))
-code = re.findall(r"initList\(4, '([AB]\d+)'\)", h)[0]
-for ep in ("AptBasisInfoServiceV4/getAphusBassInfoV4", "AptBasisInfoServiceV3/getAphusBassInfoV3"):
-    try:
-        t = urllib.request.urlopen(f"https://apis.data.go.kr/1613000/{ep}?" + urllib.parse.urlencode({"serviceKey": key, "kaptCode": code, "_type": "json"}), timeout=30).read().decode("utf8", "ignore")
-        print("API", ep, t[:400].replace(key, "<KEY>"))
-    except urllib.error.HTTPError as e:
-        print("API", ep, "HTTP", e.code, e.read()[:200].decode("utf8", "ignore"))
-    except Exception as e:
-        print("API", ep, type(e).__name__)
+# 입찰결과 화면 구조
+r = get(B + "/bid/bidResultList.do")
+print("결과 페이지", len(r), "title:", (re.search(r"<title>(.*?)</title>", r, re.S) or [0, ""])[1].strip()[:40])
+print("forms:", re.findall(r"<form[^>]*>", r)[:6])
+for kw in ("낙찰금액", "낙찰업체", "낙찰자", "개찰", "goView", "goResult", "resultView", "tbody", "<table"):
+    i = r.find(kw); print(f"[{kw}] {r.count(kw)}회", sq(r[max(0, i - 200):i + 500])[:700] if i >= 0 else "")
+i = r.find("function initList(")
+print("결과 initList:", sq(r[i:i + 1500]) if i > 0 else None)
+print("결과 링크:", sorted(set(re.findall(r'["\'](/bid/[A-Za-z0-9_/]+\.do)', r))))
