@@ -53,13 +53,14 @@ def list_page(kw, d0, d1, page):
         tds = [clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
         if len(tds) < 9:
             continue
-        bid = re.search(r"goView\('(\d+)'\)", tr)
+        bid = re.search(r"goView\('([^']+)'\)", tr)
+        code = re.search(r"initList\(\d+,\s*'([AB]\d{6,})'\)", tr)
         # 순번 | 종류(입찰시스템) | 낙찰방법 | 입찰공고명 | 입찰마감일 | 상태 | 낙찰금액 | 단지명 | 공고일
         key = bid.group(1) if bid else "x" + re.sub(r"\D", "", tds[8])[:14] + "_" + re.sub(r"\W", "", tds[7])[:12]
         amt = re.sub(r"[^\d]", "", tds[6])
         rows.append({"id": key, "sys": tds[1], "way": tds[2], "title_raw": tds[3], "end": tds[4][:16], "state": tds[5],
                      "win_amt": float(amt) if amt else None, "apt": tds[7], "reg": tds[8][:10], "reg_dt": tds[8][:19],
-                     "kapt": bool(bid)})
+                     "kapt": bool(bid) and key.isdigit(), "kapt_code": code.group(1) if code else ""})
     return rows
 
 
@@ -76,11 +77,13 @@ def notice_page(kw, d0, d1, page):
     rows = []
     for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", tb, re.S):
         bid = re.search(r"goView\('(\d+)'\)", tr)
+        code = re.search(r"initList\(\d+,\s*'([AB]\d{6,})'\)", tr)
         tds = [clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
         if bid and len(tds) >= 8:
             # 순번 | 종류 | 낙찰방법 | 공고명 | 마감 | 상태(신규공고·재공고·입찰마감) | 단지명 | 등록일시
             rows.append({"id": bid.group(1), "sys": tds[1], "way": tds[2], "title_raw": tds[3], "end": tds[4][:16],
-                         "state": tds[5], "win_amt": None, "apt": tds[6], "reg": tds[7][:10], "reg_dt": tds[7][:19], "kapt": True})
+                         "state": tds[5], "win_amt": None, "apt": tds[6], "reg": tds[7][:10], "reg_dt": tds[7][:19], "kapt": True,
+                         "kapt_code": code.group(1) if code else ""})
     return rows
 
 
@@ -95,6 +98,52 @@ def detail(bid):
             "content": f.get("내용", "")[:200]}
 
 
+INFO = "data/apt_info.json"
+DATA_KEY = urllib.parse.unquote(__import__("os").environ.get("DATA_GO_KR_KEY", ""))
+
+
+def apt_info(codes, limit=400):
+    """국토교통부_공동주택 기본 정보제공 서비스(V5): 단지코드 → 세대수·주소. 결과는 data/apt_info.json 에 모아 두고 180일마다 갱신."""
+    cache = load(INFO, {}) or {}
+    if not DATA_KEY:
+        return cache
+    today = now_kst().strftime("%Y-%m-%d")
+    stale = (now_kst() - timedelta(days=180)).strftime("%Y-%m-%d")
+    todo = [c for c in dict.fromkeys(codes) if c and (c not in cache or cache[c].get("t", "") < stale)][:limit]
+    n = 0
+    for c in todo:
+        u = "https://apis.data.go.kr/1613000/AptBasisInfoServiceV5/getAphusBassInfoV5?" + urllib.parse.urlencode(
+            {"serviceKey": DATA_KEY, "kaptCode": c, "_type": "json"})
+        try:
+            t = urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read().decode("utf8", "ignore")
+        except urllib.error.HTTPError as e:
+            body = e.read()[:400].decode("utf8", "ignore")
+            if "NOT_REGISTERED" in body or e.code in (401, 403):
+                print(">> [세대수] 공공데이터포털 '국토교통부_공동주택 기본 정보제공 서비스' 활용신청이 필요합니다(승인 전이라 건너뜀)")
+                break
+            print(f">> [세대수] {c} HTTP {e.code}")
+            continue
+        except Exception as e:
+            print(f">> [세대수] {c} {type(e).__name__}")
+            continue
+        try:
+            it = __import__("json").loads(t).get("response", {}).get("body", {}).get("item") or {}
+        except ValueError:
+            it = {}
+        if n == 0 and it:
+            print(f">> [세대수] 응답 항목: {sorted(it.keys())}")
+        hh = next((it.get(k) for k in ("kaptdaCnt", "hoCnt", "kaptHoCnt") if str(it.get(k) or "").strip()), None)
+        addr = it.get("doroJuso") or it.get("kaptAddr") or ""
+        cache[c] = {"t": today, "name": it.get("kaptName", ""), "households": int(float(hh)) if hh else None, "addr": addr,
+                    "approve": it.get("kaptUsedate", "")}
+        n += 1
+        time.sleep(0.15)
+    if n:
+        save(INFO, cache)
+    print(f">> [세대수] 새로 조회 {n}건, 누적 {len(cache)}개 단지")
+    return cache
+
+
 def region_of(title, it):
     sido = (re.match(r"\[(서울|인천|경기)\]", title) or [None, ""])[1] or {"서울특별시": "서울", "인천광역시": "인천", "경기도": "경기"}.get(it.get("addr_sido"), "")
     city = it.get("addr_city", "")
@@ -107,6 +156,8 @@ def main():
     st = load(OUT, {}) or {}
     if st.get("ver") != 2:                  # 예전(공고 목록 기준) 자료는 새 기준으로 다시 모은다
         st = {"results": st.get("results", []), "results_updated": st.get("results_updated")}
+    if not st.get("codes"):                 # 단지코드를 받기 전 자료: 1년 채우기를 처음부터 다시(단지코드 붙이기)
+        st["bf_to"], st["bf_done"], st["codes"] = None, False, True
     items = {x["id"]: x for x in st.get("items", [])}
     now = now_kst()
     last = st.get("updated")
@@ -168,15 +219,24 @@ def main():
             x["region"], x["city"] = region_of(x["title_raw"], x)
         keep = [v for v in items.values() if not DROP_CLS.search(v.get("cls", "") or "")]
         lst = sorted(keep, key=lambda x: (x.get("reg_dt") or "", x["id"]), reverse=True)
-        save(OUT, {"ver": 2, "updated": now.strftime("%Y-%m-%d %H:%M"), "bf_to": st.get("bf_to"), "bf_done": st.get("bf_done", False),
+        save(OUT, {"ver": 2, "codes": True, "updated": now.strftime("%Y-%m-%d %H:%M"), "bf_to": st.get("bf_to"), "bf_done": st.get("bf_done", False),
                    "results_updated": st.get("results_updated"), "items": lst, "results": st.get("results", [])})
         return lst
+    # 세대수·주소: 국토부 공동주택 기본정보 API(단지코드). 주소의 시·군·구로 중점 지역도 가린다
+    info = apt_info([x.get("kapt_code") for x in sorted(items.values(), key=lambda x: x.get("reg_dt") or "", reverse=True)])
+    for x in items.values():
+        i = info.get(x.get("kapt_code") or "")
+        if i:
+            x["households"] = i.get("households")
+            m = re.search(r"(서울특별시|인천광역시|경기도)\s*([가-힣]+?(?:시|군|구))", i.get("addr", ""))
+            if m and not x.get("addr_city"):
+                x["addr_sido"], x["addr_city"] = m.group(1), m.group(2)
     store()                                  # 목록까지 먼저 저장(상세 읽다 시간이 끝나도 남게)
     # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터. 실행 시간 12분 안에서만
     todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)
     done = 0
     for x in todo:
-        if time.monotonic() - T0 > 12 * 60:
+        if time.monotonic() - T0 > 11 * 60 or (x.get("addr_city") and done >= 20):
             print(f">> 상세 시간 한도 → 남은 {len(todo) - done}건은 다음 실행에서")
             break
         x.update(detail(x["id"]) or {"cls": ""})

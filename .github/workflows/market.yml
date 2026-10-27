@@ -37,7 +37,9 @@ jobs:
         run: pip install -q olefile >/dev/null 2>&1; sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1; timeout -k 15 1500 python -u collect_bio_bids.py 2>&1 | tee logs/bio_bids.log
       - name: 아파트 단지 재활용품 매각 공고 (K-APT, 하루 1회)
         continue-on-error: true
-        run: timeout -k 15 900 python -u collect_apt.py 2>&1 | tee logs/apt.log
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: timeout -k 15 900 python -u collect_apt.py 2>&1 | tee logs/apt.log; git add data/apt_info.json 2>/dev/null || true
       - name: 월간 환경 정책 동향 (태평양 뉴스레터)
         continue-on-error: true
         env:

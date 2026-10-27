@@ -47,7 +47,7 @@
       ['공고', `${rows.length}건`, `진행 중 ${live.length}건 · 유찰 ${fail}건`],
       ['낙찰', `${done.length}건`, rows.length ? `결과 나온 건 중 ${Math.round(done.length / Math.max(1, done.length + fail) * 100)}%` : ''],
       ['낙찰금액 (중앙값)', amts.length ? won(median(amts)) : '-', amts.length ? `${amts.length}건 · ${won(Math.min(...amts))}~${won(Math.max(...amts))}` : ''],
-      ['세대당 낙찰금액 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · 세대수 엑셀 반영분` : '세대수는 엑셀 올리면 계산']
+      ['세대당 낙찰금액 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · 낙찰금액 ÷ 세대수` : '세대수 자료 준비 중']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
     $('aptBody').innerHTML = rows.slice(0, 40).map(r => {
       const reg = `<span class="reg${r.region === '중점' ? ' f' : ''}">${esc(r.city || '수도권')}</span>`;

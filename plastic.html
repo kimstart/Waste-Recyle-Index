@@ -70,7 +70,7 @@
   </table>
   <div class="note"><span id="aptNote"></span> 아파트 관리주체가 재활용품 수거업체를 고르는 입찰입니다(공고명에 '재활용'이 들어간 서울·인천·경기 건). 단지마다 '물품 매각', '기타 용역', '잡수입' 등 분류가 달라 제목으로 찾습니다.
     K-APT 공동주택관리정보시스템의 '사업자 선정(경쟁입찰) 결과 공개' 목록을 하루 한 번 읽어 상태(낙찰·유찰·진행)와 낙찰금액을 보여주며, KG2B 등 민간 전자입찰 건도 함께 나옵니다.
-    낙찰금액은 계약 총액이며 계약기간(월·연)은 공고문에서 확인이 필요합니다. 세대당 금액을 보려면 K-APT '사업비 비교검색' 화면의 EXCEL(검색기간 1개월 단위)을 <a href="https://github.com/kimstart/Waste-Recyle-Index/tree/main/uploads/kapt" target="_blank" rel="noopener noreferrer">저장소 uploads/kapt 폴더</a>에 올리면 세대수가 붙습니다(선택).</div>
+    낙찰금액은 계약 총액이며 계약기간(월·연)은 공고문에서 확인이 필요합니다. 세대수와 주소(시·군·구)는 국토교통부 공동주택 기본정보(공공데이터포털)에서 단지코드로 가져오며, 세대당 금액 = 낙찰금액 ÷ 세대수입니다.</div>
 
   <h2>수도권 선별·처리 대행 용역 <small id="svcUpd"></small></h2>
   <div class="ctl">
@@ -221,7 +221,7 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js?v=20261026a"></script>
-<script src="assets/apt.js?v=20261027a"></script>
+<script src="assets/apt.js?v=20261027b"></script>
 <script src="assets/rpet.js?v=20261019a"></script>
 <script src="assets/policy.js?v=20261020c" data-page="plastic" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts.json" data-state="data/policy.json" data-order="재생원료 의무,EPR,부담금·기타"></script>
 <script src="assets/plastic_extra.js?v=20261019c"></script>
