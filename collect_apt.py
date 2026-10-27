@@ -18,6 +18,7 @@ FOCUS = ["화성", "수원", "평택", "오산"]
 KEEP = re.compile(r"재활용|폐지|고철|캔|페트|PET|폐비닐|스티로폼|수거")
 DROP = re.compile(r"음식물|폐가전|폐변압기|미디어보드|광고|승강기|자전거|공사|확장|설치|도색|보수")
 DROP_CLS = re.compile(r"공사|주택관리업자")      # 재활용장 공사·위탁관리 공고 제외
+T0 = time.monotonic()
 _op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
 
 
@@ -159,16 +160,26 @@ def main():
     if ok and len(spans) > 1:
         st["bf_to"] = spans[-1][0]
         st["bf_done"] = spans[-1][0] <= limit
-    # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터 하루 80건
-    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)[:80]
+    def store():
+        for x in items.values():
+            x["region"], x["city"] = region_of(x["title_raw"], x)
+        keep = [v for v in items.values() if not DROP_CLS.search(v.get("cls", "") or "")]
+        lst = sorted(keep, key=lambda x: (x.get("reg_dt") or "", x["id"]), reverse=True)
+        save(OUT, {"ver": 2, "updated": now.strftime("%Y-%m-%d %H:%M"), "bf_to": st.get("bf_to"), "bf_done": st.get("bf_done", False),
+                   "results_updated": st.get("results_updated"), "items": lst, "results": st.get("results", [])})
+        return lst
+    store()                                  # 목록까지 먼저 저장(상세 읽다 시간이 끝나도 남게)
+    # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터. 실행 시간 12분 안에서만
+    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)
+    done = 0
     for x in todo:
+        if time.monotonic() - T0 > 12 * 60:
+            print(f">> 상세 시간 한도 → 남은 {len(todo) - done}건은 다음 실행에서")
+            break
         x.update(detail(x["id"]) or {"cls": ""})
-    for x in items.values():
-        x["region"], x["city"] = region_of(x["title_raw"], x)
-    items = {k: v for k, v in items.items() if not DROP_CLS.search(v.get("cls", "") or "")}
-    lst = sorted(items.values(), key=lambda x: (x.get("reg_dt") or "", x["id"]), reverse=True)
-    save(OUT, {"ver": 2, "updated": now.strftime("%Y-%m-%d %H:%M"), "bf_to": st.get("bf_to"), "bf_done": st.get("bf_done", False),
-               "results_updated": st.get("results_updated"), "items": lst, "results": st.get("results", [])})
+        done += 1
+    todo = todo[:done]
+    lst = store()
     from collections import Counter
     print(f">> 저장: {len(lst)}건 · 상태 {dict(Counter(x['state'] for x in lst))} · 시스템 {dict(Counter(x['sys'] for x in lst))} · "
           f"상세 {len(todo)}건 읽음 · 1년 채우기 {'완료' if st.get('bf_done') else st.get('bf_to')}")
