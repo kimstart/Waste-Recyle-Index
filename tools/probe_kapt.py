@@ -1,94 +1,11 @@
 # -*- coding: utf-8 -*-
-import re, json, urllib.request, urllib.parse, http.cookiejar
-from datetime import date, timedelta
-H = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
-op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-B = "https://www.k-apt.go.kr"
-import time
-def get(u, data=None, hdr=None):
-    for k in range(3):
-        try:
-            time.sleep(2.5)
-            ref = B + ("/bid/bidResultList.do" if "Result" in u else "/bid/bidList.do")
-            r = op.open(urllib.request.Request(u, data=data, headers={**H, "Referer": ref, "Origin": B, **(hdr or {})}), timeout=60)
-            return r.read(4_000_000).decode("utf8", "ignore")
-        except Exception as e:
-            print("   (재시도", k + 1, type(e).__name__, ")")
-            time.sleep(8 * (k + 1))
-    raise RuntimeError("K-APT 응답 없음")
+"""K-APT 입찰결과 화면에서 엑셀 버튼이 어디에, 어떤 조건으로 보이는지 (화면 HTML 1회 조회)"""
+import re, urllib.request
+from common import UA
+h = urllib.request.urlopen(urllib.request.Request("https://www.k-apt.go.kr/bid/bidResultList.do", headers=UA), timeout=60).read().decode("utf8", "ignore")
 sq = lambda t: re.sub(r"\s+", " ", t)
-h = get(B + "/bid/bidList.do")
-csrf = re.search(r'_csrf=" \+ "([0-9a-f-]+)"', h).group(1)
-def codes(g):
-    t = get(B + "/bid/getBidCodeGroup.do", data=f"group_id={g}&_csrf={csrf}".encode(),
-            hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"})
-    return [(x["code"], x["codeValue"]) for x in (json.loads(t) or [])]
-c2 = codes("CODE_CLASSIFY_TYPE_1_02"); print("사업자 하위:", c2)
-mul = next((c for c, v in c2 if "물품" in v), None)
-c3 = codes(f"CODE_CLASSIFY_TYPE_1_02_{mul}") if mul else []; print("물품 하위:", c3)
-mae = next((c for c, v in c3 if "매각" in v), None)
-f = re.search(r'<form name="searchForm".*?</form>', h, re.S).group(0)
-names = re.findall(r'<(?:input|select)[^>]*name="([^"]+)"[^>]*?(?:value="([^"]*)")?', f)
-print("searchForm 필드:", names[:60])
-for nm in ("searchDateGb", "bidState", "pageSelect", "codeAuth", "codeWay", "codeSucWay", "searchBidGb"):
-    m = re.search(rf'<select[^>]*name="{nm}"[^>]*>(.*?)</select>', h, re.S)
-    print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:12] if m else None)
-print("type input:", re.findall(r'<input[^>]*name="type"[^>]*>', h))
-print("검색 버튼:", re.findall(r'onclick="(initList\([^"]*)"', h)[:10])
-form = {n: v for n, v in names}
-form.update({"_csrf": csrf, "bidArea": "11|28|41", "codeClassifyType1": "02", "codeClassifyType2": mul, "codeClassifyType3": mae,
-             "dateStart": (date.today() - timedelta(days=90)).isoformat(), "dateEnd": date.today().isoformat(), "dateArea": "2", "pageNo": "1", "type": "4", "searchDateGb": "reg", "pageSelect": "10"})
-for meth in ("GET", "POST"):
-    try:
-        q = urllib.parse.urlencode(form)
-        r = get(B + "/bid/bidList.do" + ("?" + q if meth == "GET" else ""), data=q.encode() if meth == "POST" else None,
-                hdr={"Content-Type": "application/x-www-form-urlencoded"} if meth == "POST" else None)
-        rows = re.findall(r'<tr[^>]*dataId="(\d+)"(.*?)</tr>', r, re.S)
-        tot = re.search(r"총\s*<[^>]*>?\s*([\d,]+)\s*건|전체\s*([\d,]+)\s*건|total[^\d]{0,20}([\d,]+)", r)
-        print(f"\n{meth}: 응답 {len(r)}자, 행 {len(rows)}개, 총건수 표시 {tot.group(0)[:40] if tot else None}")
-        i = r.find("<tbody"); print("   tbody:", sq(r[i:i + 600]))
-        for i, (did, tr) in enumerate(rows[:12]):
-            tds = [sq(re.sub(r"<[^>]+>", " ", x)).strip() for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
-            print("  ", did, tds)
-        if rows: break
-    except Exception as e:
-        print(meth, "실패", type(e).__name__, str(e)[:100])
-# 입찰결과 AJAX
-r = get(B + "/bid/bidResultList.do")
-for m in re.finditer(r"bidResultListAjax\.do", r):
-    print("AJAX 주변:", sq(r[max(0, m.start() - 1500):m.start() + 800])); break
-fr = re.search(r'<form name="searchForm".*?</form>', r, re.S).group(0)
-names = re.findall(r'<(?:input|select)[^>]*name="([^"]+)"', fr)
-print("결과 searchForm 필드:", names)
-for nm in ("codeWay", "searchDateGb", "sortType", "codeSucWay", "codeAuth"):
-    m = re.search(rf'<select[^>]*name="{nm}"[^>]*>(.*?)</select>', fr, re.S)
-    print(" ", nm, re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)', m.group(1))[:10] if m else None)
-csrf2 = re.search(r'name="_csrf"[^>]*value="([^"]+)"', r) or re.search(r'_csrf=" \+ "([0-9a-f-]+)"', r) or re.search(r'_csrf"\s*:\s*"([0-9a-f-]+)"', r)
-print("csrf:", bool(csrf2))
-tok = re.search(r'"_csrf"\s*:\s*"([0-9a-f-]+)"', r).group(1)
-print("AJAX 토큰 일치:", tok == csrf2.group(1))
-spanK = re.findall(r'id="spanK(\d+)"[^>]*>([^<]*)<', r)
-print("상위 키워드:", spanK[:10])
-base = {"_csrf": tok, "searchDateGb": "bid", "searchBidGb": "bid_gb_1", "codeWay": "01", "pageSelect": "20", "bidState05Yn": "N",
-        "sortType": "1", "comboSGG": "", "kaptdaCntStart": "", "kaptdaCntEnd": "", "searchCompany": "", "amountMin": "", "amountMax": "", "pageNo": "1"}
-d0, d1 = date.today() - timedelta(days=180), date.today()
-tries = []
-for fmt in ("%Y-%m-%d", "%Y.%m.%d", "%Y%m%d"):
-    tries.append(dict(base, tabNum="2", comboSIDO="", bidTitle="", codeClassifyType1="02", codeClassifyType2="04", codeClassifyType3="14",
-                      dateStart=d0.strftime(fmt), dateEnd=d1.strftime(fmt)))
-tries.insert(0, dict(base, tabNum="1", comboSIDO="", bidTitle=(spanK[0][1] if spanK else ""), codeClassifyType1="", codeClassifyType2="", codeClassifyType3="",
-                     dateStart=(date.today() - timedelta(days=364)).isoformat(), dateEnd=d1.isoformat()))
-tries.insert(1, dict(base, tabNum="1", comboSIDO="", bidTitle="재활용", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="",
-                     dateStart=(date.today() - timedelta(days=364)).isoformat(), dateEnd=d1.isoformat()))
-tries.append(dict(base, tabNum="3", comboSIDO="", bidTitle="", codeClassifyType1="", codeClassifyType2="", codeClassifyType3="", searchDateGb="reg",
-                  dateStart=d0.isoformat(), dateEnd=d1.isoformat()))
-for q in tries:
-    try:
-        t = get(B + "/bid/bidResultListAjax.do", data=urllib.parse.urlencode(q).encode(),
-                hdr={"X-Requested-With": "XMLHttpRequest", "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8", "X-CSRF-TOKEN": tok})
-        trs = re.findall(r"<tr[^>]*>(.*?)</tr>", t[t.find("<tbody"):], re.S)
-        print(f"\n탭 {q['tabNum']} 분류 {q['codeClassifyType3']} 제목 {q['bidTitle']} 날짜 {q['dateStart']}: tr {len(trs)} 응답 {len(t)}")
-        for tr in trs[:6]:
-            print("   ", [sq(re.sub(r"<[^>]+>", " ", x)).strip()[:40] for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)], re.findall(r"\('(\d{10,})'", tr)[:1])
-    except Exception as e:
-        print("실패", type(e).__name__)
+for kw in ("엑셀", "excel", "Excel", "다운로드"):
+    for m in list(re.finditer(kw, h))[:6]:
+        print(f"[{kw}]", sq(h[max(0, m.start() - 300):m.start() + 200]))
+m = re.search(r"function\s+(\w+)\s*\([^)]*\)\s*\{[^{}]*?bidResultListExcel", h, re.S)
+print("엑셀 함수:", m.group(1) if m else None)
