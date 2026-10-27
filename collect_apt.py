@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-"""아파트 단지 재활용품 매각·수거업체 선정 공고 → data/apt_sales.json
-① K-APT(공동주택관리정보시스템) 입찰공고 목록: 제목에 '재활용'이 들어간 서울·인천·경기 공고(분류 무관 — 물품 매각·기타 용역·잡수입으로 섞여 등록됨).
-   민간 전자입찰(KG2B·아파트비드포유·아파트장터) 공고도 K-APT에 함께 등록되므로 K-APT만 본다.
-   공공 화면을 하루 한 번, 요청 사이 3초씩 쉬며 몇 쪽만 읽는다. 새 공고만 상세를 한 번 읽는다(입찰분류·주소).
-② 입찰결과(낙찰금액·낙찰업체·세대수): K-APT가 자동 조회를 허용하지 않아, 사용자가 '입찰결과' 엑셀을 내려받아
-   uploads/kapt/ 에 올리면 ingest_kapt.py 가 읽어 이 파일에 합친다(이 스크립트는 결과를 건드리지 않음)."""
+"""아파트 단지 재활용품 매각·수거업체 선정 → data/apt_sales.json
+K-APT(공동주택관리정보시스템) '사업자 선정(경쟁입찰) 결과 공개' 공개 목록(/bid/bidList.do?type=3)에서
+제목에 '재활용'이 들어간 서울·인천·경기 건의 상태(낙찰·유찰·취소·진행)와 낙찰금액을 읽는다.
+K-APT 자체 공고뿐 아니라 KG2B 등 민간 전자입찰 건도 이 목록에 함께 나온다.
+공공 화면을 하루 한 번, 요청 사이 3초씩 쉬며 읽는다: 최근 45일 + (처음 1년 채우기) 지난 달 한 구간씩.
+K-APT 자체 공고는 상세를 한 번 읽어 입찰분류·주소(시군구)를 붙인다(하루 최대 40건).
+세대수는 목록에 없어, '사업비 비교검색' EXCEL을 uploads/kapt/ 에 올리면 ingest_kapt.py 가 붙인다(선택)."""
 import re, time, html, urllib.parse, urllib.request, http.cookiejar
 from datetime import timedelta
 from common import UA, load, save, now_kst
@@ -38,8 +39,8 @@ def clean(t):
 
 
 def list_page(kw, d0, d1, page):
-    q = {"type": "4", "bidArea": AREA, "searchBidGb": "bid_gb_1", "bidTitle": kw, "searchDateGb": "reg",
-         "dateStart": d0, "dateEnd": d1, "dateArea": "4", "pageNo": str(page), "bidState": "",
+    q = {"type": "3", "bidArea": AREA, "searchBidGb": "bid_gb_1", "bidTitle": kw, "searchDateGb": "reg",
+         "dateStart": d0, "dateEnd": d1, "dateArea": "", "pageNo": str(page), "bidState": "",
          "codeAuth": "", "codeWay": "", "codeAuthSub": "", "codeSucWay": "",
          "codeClassifyType1": "", "codeClassifyType2": "", "codeClassifyType3": ""}
     h = fetch("/bid/bidList.do", q)
@@ -48,12 +49,16 @@ def list_page(kw, d0, d1, page):
     tb = h[h.find("<tbody"):h.find("</tbody>")]
     rows = []
     for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", tb, re.S):
-        bid = re.search(r"goView\('(\d+)'\)", tr)
         tds = [clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
-        code = re.search(r"initList\(\d+,\s*'([A-Z]\d+)'\)", tr)
-        if bid and len(tds) >= 8:
-            rows.append({"id": bid.group(1), "sys": tds[1], "way": tds[2], "title_raw": tds[3], "end": tds[4][:16],
-                         "state": tds[5], "apt": tds[6], "reg": tds[7][:10], "kapt_code": code.group(1) if code else ""})
+        if len(tds) < 9:
+            continue
+        bid = re.search(r"goView\('(\d+)'\)", tr)
+        # 순번 | 종류(입찰시스템) | 낙찰방법 | 입찰공고명 | 입찰마감일 | 상태 | 낙찰금액 | 단지명 | 공고일
+        key = bid.group(1) if bid else "x" + re.sub(r"\D", "", tds[8])[:14] + "_" + re.sub(r"\W", "", tds[7])[:12]
+        amt = re.sub(r"[^\d]", "", tds[6])
+        rows.append({"id": key, "sys": tds[1], "way": tds[2], "title_raw": tds[3], "end": tds[4][:16], "state": tds[5],
+                     "win_amt": float(amt) if amt else None, "apt": tds[7], "reg": tds[8][:10], "reg_dt": tds[8][:19],
+                     "kapt": bool(bid)})
     return rows
 
 
@@ -78,19 +83,26 @@ def region_of(title, it):
 
 def main():
     st = load(OUT, {}) or {}
+    if st.get("ver") != 2:                  # 예전(공고 목록 기준) 자료는 새 기준으로 다시 모은다
+        st = {"results": st.get("results", []), "results_updated": st.get("results_updated")}
     items = {x["id"]: x for x in st.get("items", [])}
     now = now_kst()
     last = st.get("updated")
-    if st.get("backfilled") and last and (now.replace(tzinfo=None) - __import__("datetime").datetime.strptime(last, "%Y-%m-%d %H:%M")).total_seconds() < 20 * 3600:
+    if st.get("bf_done") and last and (now.replace(tzinfo=None) - __import__("datetime").datetime.strptime(last, "%Y-%m-%d %H:%M")).total_seconds() < 20 * 3600:
         print(f">> 오늘 이미 확인함({last}) → 하루 한 번만 조회")
         return
-    first = not st.get("backfilled")
-    d0 = (now - timedelta(days=364 if first else 40)).strftime("%Y-%m-%d")
-    d1 = now.strftime("%Y-%m-%d")
-    seen, n_new, ok = set(), 0, True
-    for kw in KW:
-        for page in range(1, 12):
-            rows = list_page(kw, d0, d1, page)
+    # 조회 구간: 최근 45일 + 아직 1년을 다 못 채웠으면 그 이전 30일 한 구간
+    spans = [((now - timedelta(days=45)).strftime("%Y-%m-%d"), now.strftime("%Y-%m-%d"))]
+    bf_to = st.get("bf_to") or (now - timedelta(days=45)).strftime("%Y-%m-%d")
+    limit = (now - timedelta(days=365)).strftime("%Y-%m-%d")
+    if not st.get("bf_done"):
+        e = __import__("datetime").datetime.strptime(bf_to, "%Y-%m-%d")
+        spans.append(((e - timedelta(days=30)).strftime("%Y-%m-%d"), bf_to))
+    n_rows, ok = 0, True
+    for d0, d1 in spans:
+        seen = set()
+        for page in range(1, 60):
+            rows = list_page(KW[0], d0, d1, page)
             if rows is None:
                 ok = False
                 break
@@ -99,26 +111,31 @@ def main():
                 break
             for r in fresh:
                 seen.add(r["id"])
-                title = r["title_raw"]
-                if not KEEP.search(title) or DROP.search(title):
+                if not KEEP.search(r["title_raw"]) or DROP.search(r["title_raw"]):
                     continue
                 old = items.get(r["id"], {})
-                it = {**old, **r, "title": re.sub(r"^\[[^\]]+\]\s*", "", title), "src": "K-APT",
-                      "url": f"{B}/bid/bidDetail.do?bidNum={r['id']}"}
-                if "cls" not in old:                       # 새 공고만 상세 한 번
-                    it.update(detail(r["id"]))
-                    n_new += 1
-                it["region"], it["city"] = region_of(title, it)
-                items[r["id"]] = it
-    items = {k: v for k, v in items.items() if not DROP_CLS.search(v.get("cls", "")) and not DROP.search(v.get("title", ""))}
-    lst = sorted(items.values(), key=lambda x: (x.get("reg") or "", x["id"]), reverse=True)
-    save(OUT, {"updated": now.strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or (first and ok),
+                items[r["id"]] = {**old, **r, "title": re.sub(r"^\[[^\]]+\]\s*", "", r["title_raw"]),
+                                  "url": f"{B}/bid/bidDetail.do?bidNum={r['id']}" if r["kapt"] else f"{B}/bid/bidList.do?type=3"}
+            n_rows += len(fresh)
+        print(f">> [K-APT 결과공개] {d0}~{d1}: {len(seen)}건 확인")
+    if ok and len(spans) > 1:
+        st["bf_to"] = spans[1][0]
+        st["bf_done"] = spans[1][0] <= limit
+    # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터 하루 40건
+    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)[:40]
+    for x in todo:
+        x.update(detail(x["id"]) or {"cls": ""})
+    for x in items.values():
+        x["region"], x["city"] = region_of(x["title_raw"], x)
+    items = {k: v for k, v in items.items() if not DROP_CLS.search(v.get("cls", "") or "")}
+    lst = sorted(items.values(), key=lambda x: (x.get("reg_dt") or "", x["id"]), reverse=True)
+    save(OUT, {"ver": 2, "updated": now.strftime("%Y-%m-%d %H:%M"), "bf_to": st.get("bf_to"), "bf_done": st.get("bf_done", False),
                "results_updated": st.get("results_updated"), "items": lst, "results": st.get("results", [])})
     from collections import Counter
-    print(f">> 저장: 아파트 재활용 공고 {len(lst)}건 (이번 확인 {len(seen)}건, 새 상세 {n_new}건) · "
-          f"분류 {dict(Counter(x.get('cls', '') for x in lst))} · 지역 {dict(Counter(x.get('city', '') for x in lst))}")
-    for x in lst[:12]:
-        print(f"   {x['reg']} {x.get('city', ''):4} | {x['way']:6} | {x['apt'][:14]} | {x['title'][:40]} | {x.get('cls', '')} | {x['state']}")
+    print(f">> 저장: {len(lst)}건 · 상태 {dict(Counter(x['state'] for x in lst))} · 시스템 {dict(Counter(x['sys'] for x in lst))} · "
+          f"상세 {len(todo)}건 읽음 · 1년 채우기 {'완료' if st.get('bf_done') else st.get('bf_to')}")
+    for x in [x for x in lst if x.get("win_amt")][:10]:
+        print(f"   {x['reg']} {x.get('city', ''):5} | {x['sys'][:8]} | {x['apt'][:14]} | {x['title'][:30]} | 낙찰 {x['win_amt']:,.0f}")
 
 
 if __name__ == "__main__":
