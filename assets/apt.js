@@ -28,7 +28,7 @@
       g.sort((a, b) => (b.reg_dt || '').localeCompare(a.reg_dt || ''));
       const cl = [];
       g.forEach(x => { const c = cl.find(c => Math.abs(dayMs(c[0].date) - dayMs(x.date)) <= 120 * 864e5); c ? c.push(x) : cl.push([x]); });
-      cl.forEach(c => { const w = c.filter(x => x.state === '낙찰'); w.length ? out.push(...w) : out.push(c[0]); });
+      cl.forEach(c => { const w = c.filter((x, i) => x.state === '낙찰' && c.findIndex(y => y.state === '낙찰' && y.win_amt === x.win_amt && y.reg_dt === x.reg_dt) === i); w.length ? out.push(...w) : out.push(c[0]); });   // 같은 금액·같은 등록시각 낙찰은 한 번만
     });
     DROPPED = all.length - out.length;
     return out.sort((a, b) => (b.reg_dt || '').localeCompare(a.reg_dt || ''));

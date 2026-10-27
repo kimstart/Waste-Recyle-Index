@@ -215,6 +215,20 @@ def main():
         st["bf_to"] = spans[-1][0]
         st["bf_done"] = spans[-1][0] <= limit
     def store():
+        # 같은 건이 다른 번호로 두 번 저장된 경우(예전 'x…' 임시 번호 ↔ 'kg2b_…' 번호) 단지·등록시각·공고명으로 합친다
+        nk = lambda x: (re.sub(r"\s", "", x.get("apt", "")), x.get("reg_dt", ""), re.sub(r"\W", "", x.get("title_raw", "")))
+        best = {}
+        for k, x in list(items.items()):
+            key = nk(x)
+            o = best.get(key)
+            if o is None:
+                best[key] = k
+                continue
+            a, b = items[o], x
+            keep, drop = (o, k) if (not o.startswith("x") or k.startswith("x")) else (k, o)
+            items[keep] = {**items[drop], **{f: v for f, v in items[keep].items() if v not in (None, "")}}
+            items.pop(drop, None)
+            best[key] = keep
         for x in items.values():
             x["region"], x["city"] = region_of(x["title_raw"], x)
         keep = [v for v in items.values() if not DROP_CLS.search(v.get("cls", "") or "")]
