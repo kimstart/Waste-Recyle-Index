@@ -41,20 +41,26 @@
     const live = rows.filter(isLive);
     const done = rows.filter(r => r.state === '낙찰' && r.win_amt);
     const amts = done.map(r => r.win_amt);
-    const per = done.filter(r => r.households).map(r => r.win_amt / r.households);
+    // 낙찰금액은 대개 1년치 총액(세대당 월 단가 × 세대수 × 12) → 세대당 월 단가 = 낙찰금액 ÷ 세대수 ÷ 12
+    const perAll = done.filter(r => r.households).map(r => r.win_amt / r.households / 12);
+    const mid0 = perAll.length ? median(perAll) : 0;
+    const per = perAll.filter(v => v <= mid0 * 3 && v >= mid0 / 3);           // 다년 계약 등 튀는 값 제외
+    const perOut = perAll.length - per.length;
     const fail = rows.filter(r => r.state === '유찰' || r.state === '낙찰무효').length;
     $('aptKpi').innerHTML = [
       ['공고', `${rows.length}건`, `진행 중 ${live.length}건 · 유찰 ${fail}건`],
       ['낙찰', `${done.length}건`, rows.length ? `결과 나온 건 중 ${Math.round(done.length / Math.max(1, done.length + fail) * 100)}%` : ''],
       ['낙찰금액 (중앙값)', amts.length ? won(median(amts)) : '-', amts.length ? `${amts.length}건 · ${won(Math.min(...amts))}~${won(Math.max(...amts))}` : ''],
-      ['세대당 낙찰금액 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · 낙찰금액 ÷ 세대수` : '세대수 자료 준비 중']
+      ['세대당 월 단가 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · ${n0(Math.min(...per))}~${n0(Math.max(...per))}원${perOut ? ` · 이상치 ${perOut}건 제외` : ''}` : '세대수 자료 준비 중']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
     $('aptBody').innerHTML = rows.slice(0, 40).map(r => {
       const reg = `<span class="reg${r.region === '중점' ? ' f' : ''}">${esc(r.city || '수도권')}</span>`;
       const hh = r.households ? `<small class="fl" style="display:block">${n0(r.households)}세대</small>` : '';
       let res;
       if (r.state === '낙찰' && r.win_amt) {
-        res = `<b>${won(r.win_amt)}</b>${r.households ? `<small class="fl" style="display:block">세대당 ${n0(r.win_amt / r.households)}원</small>` : ''}`;
+        const m = r.households ? r.win_amt / r.households / 12 : null;
+        res = r.households ? `<b>월 ${n0(m)}원/세대</b><small class="fl" style="display:block">연 ${won(r.win_amt)}</small>`
+          : `<b>${won(r.win_amt)}</b><small class="fl" style="display:block">세대수 미확인</small>`;
       } else if (isLive(r)) {
         res = `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((r.end || '').slice(5, 10).replace('-', '.'))}</small>`;
       } else res = `<span class="fl">${esc(r.state || '-')}</span>`;

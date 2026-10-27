@@ -175,7 +175,7 @@ def main():
     for d0, d1 in spans:
         seen = set()
         for page in range(1, 60):
-            if time.monotonic() - T0 > 8 * 60:
+            if time.monotonic() - T0 > 10.5 * 60:
                 print(">> 목록 시간 한도 → 이 구간은 다음 실행에서 다시")
                 ok = False
                 break
@@ -233,10 +233,11 @@ def main():
                 x["addr_sido"], x["addr_city"] = m.group(1), m.group(2)
     store()                                  # 목록까지 먼저 저장(상세 읽다 시간이 끝나도 남게)
     # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터. 실행 시간 12분 안에서만
-    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)
+    # 주소는 국토부 API로 받으므로, 상세는 주소를 못 받은 K-APT 건만 읽는다
+    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x and not x.get("addr_city")], key=lambda x: x["reg_dt"], reverse=True)
     done = 0
     for x in todo:
-        if time.monotonic() - T0 > 11 * 60 or (x.get("addr_city") and done >= 20):
+        if time.monotonic() - T0 > 13 * 60:
             print(f">> 상세 시간 한도 → 남은 {len(todo) - done}건은 다음 실행에서")
             break
         x.update(detail(x["id"]) or {"cls": ""})
