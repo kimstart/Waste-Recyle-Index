@@ -1,33 +1,30 @@
-curl 401 0.906565s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 6.349800s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 1.070894s https://www.re.or.kr/
+curl 401 0.494285s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 000 14.788977s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.811608s https://www.re.or.kr/
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-09-12~2026-10-27: 105건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-08-13~2026-09-12: 136건 확인
+>> [K-APT 결과공개] 2026-09-12~2026-10-27: 106건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-07-14~2026-08-13: 137건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-06-14~2026-07-14: 108건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 25건
 >> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> 저장: 225건 · 상태 {'취소': 61, '낙찰': 92, '유찰': 67, '낙찰무효': 5} · 시스템 {'K-APT': 135, 'KG2B전자입찰': 80, '아파트장터 A2P': 10} · 상세 40건 읽음 · 1년 채우기 2026-08-13
-   2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 35,692,800
-   2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
-   2026-10-14 인천    | K-APT | 연수2차우성아파트 | 재활용수거업체 선정공고 | 낙찰 26,980,800
-   2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
-   2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000
-   2026-10-12 인천    | KG2B전자입찰 | 원당 e-편한세상 아파트 | 재활용품 수거업체 선정 입찰공고 | 낙찰 6,519,480
-   2026-10-08 경기    | KG2B전자입찰 | 호반써밋더프라임아파트 | 재활용품 수거 용역 업체선정 재입찰 공고 | 낙찰 20,815,200
-   2026-10-06 경기    | 아파트장터 A2 | 평택고덕LH17단지아파트 | 재활용품 수거업체 선정 입찰 공고 | 낙찰 8,767,440
-   2026-10-06 남양주시  | K-APT | 다산역 경기행복주택아파트 | 재활용수거업체 선정 입찰 공고 | 낙찰 4,656,000
-   2026-10-06 인천    | K-APT | 신검단중앙역풍경채어바니티아 | 재활용 수거업체 선정 | 낙찰 35,910,000
