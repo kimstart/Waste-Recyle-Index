@@ -4,7 +4,7 @@ K-APT(공동주택관리정보시스템) '사업자 선정(경쟁입찰) 결과 
 제목에 '재활용'이 들어간 서울·인천·경기 건의 상태(낙찰·유찰·취소·진행)와 낙찰금액을 읽는다.
 K-APT 자체 공고뿐 아니라 KG2B 등 민간 전자입찰 건도 이 목록에 함께 나온다.
 공공 화면을 하루 한 번, 요청 사이 3초씩 쉬며 읽는다: 최근 45일 + (처음 1년 채우기) 지난 달 한 구간씩.
-K-APT 자체 공고는 상세를 한 번 읽어 입찰분류·주소(시군구)를 붙인다(하루 최대 40건).
+K-APT 자체 공고는 상세를 한 번 읽어 입찰분류·주소(시군구)를 붙인다(하루 최대 80건).
 세대수는 목록에 없어, '사업비 비교검색' EXCEL을 uploads/kapt/ 에 올리면 ingest_kapt.py 가 붙인다(선택)."""
 import re, time, html, urllib.parse, urllib.request, http.cookiejar
 from datetime import timedelta
@@ -62,6 +62,27 @@ def list_page(kw, d0, d1, page):
     return rows
 
 
+def notice_page(kw, d0, d1, page):
+    """진행 중 공고(입찰공고 목록, type=4): 결과 공개 목록에는 마감 전 공고가 아직 없다"""
+    q = {"type": "4", "bidArea": AREA, "searchBidGb": "bid_gb_1", "bidTitle": kw, "searchDateGb": "reg",
+         "dateStart": d0, "dateEnd": d1, "dateArea": "", "pageNo": str(page), "bidState": "",
+         "codeAuth": "", "codeWay": "", "codeAuthSub": "", "codeSucWay": "",
+         "codeClassifyType1": "", "codeClassifyType2": "", "codeClassifyType3": ""}
+    h = fetch("/bid/bidList.do", q)
+    if h is None:
+        return None
+    tb = h[h.find("<tbody"):h.find("</tbody>")]
+    rows = []
+    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", tb, re.S):
+        bid = re.search(r"goView\('(\d+)'\)", tr)
+        tds = [clean(x) for x in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+        if bid and len(tds) >= 8:
+            # 순번 | 종류 | 낙찰방법 | 공고명 | 마감 | 상태(신규공고·재공고·입찰마감) | 단지명 | 등록일시
+            rows.append({"id": bid.group(1), "sys": tds[1], "way": tds[2], "title_raw": tds[3], "end": tds[4][:16],
+                         "state": tds[5], "win_amt": None, "apt": tds[6], "reg": tds[7][:10], "reg_dt": tds[7][:19], "kapt": True})
+    return rows
+
+
 def detail(bid):
     h = fetch("/bid/bidDetail.do", {"bidNum": bid})
     if not h:
@@ -95,9 +116,10 @@ def main():
     spans = [((now - timedelta(days=45)).strftime("%Y-%m-%d"), now.strftime("%Y-%m-%d"))]
     bf_to = st.get("bf_to") or (now - timedelta(days=45)).strftime("%Y-%m-%d")
     limit = (now - timedelta(days=365)).strftime("%Y-%m-%d")
-    if not st.get("bf_done"):
+    if not st.get("bf_done"):               # 하루에 지난 두 달씩 채운다
         e = __import__("datetime").datetime.strptime(bf_to, "%Y-%m-%d")
         spans.append(((e - timedelta(days=30)).strftime("%Y-%m-%d"), bf_to))
+        spans.append(((e - timedelta(days=60)).strftime("%Y-%m-%d"), (e - timedelta(days=30)).strftime("%Y-%m-%d")))
     n_rows, ok = 0, True
     for d0, d1 in spans:
         seen = set()
@@ -118,11 +140,27 @@ def main():
                                   "url": f"{B}/bid/bidDetail.do?bidNum={r['id']}" if r["kapt"] else f"{B}/bid/bidList.do?type=3"}
             n_rows += len(fresh)
         print(f">> [K-APT 결과공개] {d0}~{d1}: {len(seen)}건 확인")
+    # 진행 중 공고: 입찰공고 목록(최근 45일). 결과 목록에 같은 공고가 있으면 결과 쪽 상태를 우선한다
+    seen = set()
+    for page in range(1, 8):
+        rows = notice_page(KW[0], spans[0][0], spans[0][1], page)
+        if not rows or all(r["id"] in seen for r in rows):
+            break
+        for r in rows:
+            seen.add(r["id"])
+            if not KEEP.search(r["title_raw"]) or DROP.search(r["title_raw"]):
+                continue
+            old = items.get(r["id"], {})
+            if old.get("state") in ("낙찰", "유찰", "취소", "낙찰무효"):
+                continue
+            items[r["id"]] = {**old, **r, "title": re.sub(r"^\[[^\]]+\]\s*", "", r["title_raw"]),
+                              "url": f"{B}/bid/bidDetail.do?bidNum={r['id']}"}
+    print(f">> [K-APT 입찰공고] 진행 공고 확인 {len(seen)}건")
     if ok and len(spans) > 1:
-        st["bf_to"] = spans[1][0]
-        st["bf_done"] = spans[1][0] <= limit
-    # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터 하루 40건
-    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)[:40]
+        st["bf_to"] = spans[-1][0]
+        st["bf_done"] = spans[-1][0] <= limit
+    # 상세(입찰분류·주소): K-APT 자체 공고 중 아직 안 읽은 것, 최신부터 하루 80건
+    todo = sorted([x for x in items.values() if x.get("kapt") and "cls" not in x], key=lambda x: x["reg_dt"], reverse=True)[:80]
     for x in todo:
         x.update(detail(x["id"]) or {"cls": ""})
     for x in items.values():

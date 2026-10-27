@@ -12,47 +12,62 @@
   const getJson = u => fetch(u + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   let ROWS = [], META = {}, SCOPE = 'cap', PERIOD = 365;
 
+  // 취소된 공고는 숨기고, 같은 단지·같은 공고명이 120일 안에 여러 번 나오면(재공고) 낙찰된 건 또는 가장 최근 건만 남긴다
+  const normT = t => String(t || '').replace(/\(?(긴급|재공고|재입찰|\d차)\)?|입찰|공고|선정|\s|[·ㆍ\-_,.()\[\]]/g, '');
+  let DROPPED = 0;
   function build(j) {
-    const items = (j.items || []).map(x => ({ ...x, date: x.reg || '', kind: 'notice' }));
-    // 목록에 없는(1년 넘은 등) 결과도 표에 넣는다
-    const extra = (j.results || []).filter(r => !r.matched).map(r => ({
-      id: 'r:' + r.key, date: r.end || '', end: r.end || '', apt: r.apt, title: r.title, way: '', households: r.households,
-      win_amt: r.amount, winner: r.winner, region: /수원|화성|평택|오산/.test(r.area || '') ? '중점' : '수도권', city: r.area || '',
-      src: 'K-APT 입찰결과', url: 'https://www.k-apt.go.kr/bid/bidResultList.do', kind: 'result'
-    }));
-    return items.concat(extra).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    const all = (j.items || []).map(x => ({ ...x, date: x.reg || '' }));
+    const res = {};
+    (j.results || []).forEach(r => { res[(r.apt || '').replace(/\s/g, '')] = r; });   // 엑셀(선택)에서 세대수
+    all.forEach(x => { const r = res[(x.apt || '').replace(/\s/g, '')]; if (r && r.households) x.households = r.households; });
+    const live = all.filter(x => x.state !== '취소');
+    const groups = {};
+    live.forEach(x => (groups[(x.apt || '') + '|' + normT(x.title)] ||= []).push(x));
+    const out = [];
+    Object.values(groups).forEach(g => {
+      g.sort((a, b) => (b.reg_dt || '').localeCompare(a.reg_dt || ''));
+      const cl = [];
+      g.forEach(x => { const c = cl.find(c => Math.abs(dayMs(c[0].date) - dayMs(x.date)) <= 120 * 864e5); c ? c.push(x) : cl.push([x]); });
+      cl.forEach(c => { const w = c.filter(x => x.state === '낙찰'); w.length ? out.push(...w) : out.push(c[0]); });
+    });
+    DROPPED = all.length - out.length;
+    return out.sort((a, b) => (b.reg_dt || '').localeCompare(a.reg_dt || ''));
   }
 
+  const isLive = r => !['낙찰', '유찰', '취소', '낙찰무효'].includes(r.state) && r.end && dayMs(r.end.slice(0, 10)) >= Date.now() - 864e5;
   function render() {
     const cut = Date.now() - PERIOD * 864e5;
     const rows = ROWS.filter(r => (SCOPE === 'focus' ? r.region === '중점' : true) && r.date && dayMs(r.date) >= cut);
-    const live = rows.filter(r => r.kind === 'notice' && r.end && dayMs(r.end.slice(0, 10)) >= Date.now() - 864e5 && !r.win_amt);
-    const done = rows.filter(r => r.win_amt);
+    const live = rows.filter(isLive);
+    const done = rows.filter(r => r.state === '낙찰' && r.win_amt);
+    const amts = done.map(r => r.win_amt);
     const per = done.filter(r => r.households).map(r => r.win_amt / r.households);
+    const fail = rows.filter(r => r.state === '유찰' || r.state === '낙찰무효').length;
     $('aptKpi').innerHTML = [
-      ['공고', `${rows.filter(r => r.kind === 'notice').length}건`, `진행 중 ${live.length}건`],
-      ['낙찰 결과', `${done.length}건`, META.results_updated ? `엑셀 반영 ${META.results_updated.slice(0, 10)}` : '입찰결과 엑셀을 올리면 표시'],
-      ['세대당 낙찰금액 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · 낙찰금액 ÷ 세대수` : '세대수 있는 결과 없음'],
-      ['평균 세대수', done.filter(r => r.households).length ? `${n0(done.filter(r => r.households).reduce((a, r) => a + r.households, 0) / done.filter(r => r.households).length)}세대` : '-', '결과 반영 단지']
+      ['공고', `${rows.length}건`, `진행 중 ${live.length}건 · 유찰 ${fail}건`],
+      ['낙찰', `${done.length}건`, rows.length ? `결과 나온 건 중 ${Math.round(done.length / Math.max(1, done.length + fail) * 100)}%` : ''],
+      ['낙찰금액 (중앙값)', amts.length ? won(median(amts)) : '-', amts.length ? `${amts.length}건 · ${won(Math.min(...amts))}~${won(Math.max(...amts))}` : ''],
+      ['세대당 낙찰금액 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · 세대수 엑셀 반영분` : '세대수는 엑셀 올리면 계산']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
-    $('aptBody').innerHTML = rows.slice(0, 30).map(r => {
+    $('aptBody').innerHTML = rows.slice(0, 40).map(r => {
       const reg = `<span class="reg${r.region === '중점' ? ' f' : ''}">${esc(r.city || '수도권')}</span>`;
       const hh = r.households ? `<small class="fl" style="display:block">${n0(r.households)}세대</small>` : '';
       let res;
-      if (r.win_amt) {
-        res = `<b>${won(r.win_amt)}</b>${r.households ? `<small class="fl" style="display:block">세대당 ${n0(r.win_amt / r.households)}원</small>` : ''}<small class="fl" style="display:block">${esc(r.winner || '')}</small>`;
-      } else if (live.includes(r)) {
+      if (r.state === '낙찰' && r.win_amt) {
+        res = `<b>${won(r.win_amt)}</b>${r.households ? `<small class="fl" style="display:block">세대당 ${n0(r.win_amt / r.households)}원</small>` : ''}`;
+      } else if (isLive(r)) {
         res = `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((r.end || '').slice(5, 10).replace('-', '.'))}</small>`;
-      } else res = `<span class="fl">${esc(r.state === '입찰마감' ? '마감 · 결과 미반영' : r.state || '-')}</span>`;
+      } else res = `<span class="fl">${esc(r.state || '-')}</span>`;
       const sub = [r.cls, r.sys && r.sys !== 'K-APT' ? r.sys : ''].filter(Boolean).join(' · ');
       return `<tr><td>${esc((r.date || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(r.apt)}${hh}</td>
         <td class="t"><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${sub ? `<small class="why-s">${esc(sub)}</small>` : ''}</td>
         <td class="h-m">${esc(r.way || '-')}</td><td>${res}</td></tr>`;
     }).join('') || '<tr><td colspan="6" class="fl">해당 기간·지역의 아파트 재활용품 공고가 없습니다.</td></tr>';
+    if ($('aptNote')) $('aptNote').textContent = `${rows.length > 40 ? `최근 40건만 표시(전체 ${rows.length}건). ` : ''}취소·재공고 중복 ${DROPPED}건 제외.`;
   }
   getJson('data/apt_sales.json').then(j => {
     META = j; ROWS = build(j);
-    $('aptUpd').textContent = j.updated ? `공고 확인 ${j.updated}` : '';
+    $('aptUpd').textContent = j.updated ? `확인 ${j.updated}${j.bf_done ? '' : ' · 지난 1년치 채우는 중'}` : '';
     render();
   }).catch(() => { $('aptBody').innerHTML = '<tr><td colspan="6" class="fl">자료를 아직 받지 못했습니다.</td></tr>'; });
   const seg = (id, fn) => document.querySelectorAll(`#${id} button`).forEach(b => b.addEventListener('click', () => {

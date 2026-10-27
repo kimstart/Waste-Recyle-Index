@@ -14,7 +14,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -37,7 +37,7 @@ jobs:
         run: pip install -q olefile >/dev/null 2>&1; sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1; timeout -k 15 1500 python -u collect_bio_bids.py 2>&1 | tee logs/bio_bids.log
       - name: 아파트 단지 재활용품 매각 공고 (K-APT, 하루 1회)
         continue-on-error: true
-        run: timeout -k 15 600 python -u collect_apt.py 2>&1 | tee logs/apt.log
+        run: timeout -k 15 900 python -u collect_apt.py 2>&1 | tee logs/apt.log
       - name: 월간 환경 정책 동향 (태평양 뉴스레터)
         continue-on-error: true
         env:
