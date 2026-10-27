@@ -117,14 +117,17 @@ def main():
     spans = [((now - timedelta(days=45)).strftime("%Y-%m-%d"), now.strftime("%Y-%m-%d"))]
     bf_to = st.get("bf_to") or (now - timedelta(days=45)).strftime("%Y-%m-%d")
     limit = (now - timedelta(days=365)).strftime("%Y-%m-%d")
-    if not st.get("bf_done"):               # 하루에 지난 두 달씩 채운다
+    if not st.get("bf_done"):               # 하루에 지난 한 달씩 채운다(상세 읽을 시간 확보)
         e = __import__("datetime").datetime.strptime(bf_to, "%Y-%m-%d")
         spans.append(((e - timedelta(days=30)).strftime("%Y-%m-%d"), bf_to))
-        spans.append(((e - timedelta(days=60)).strftime("%Y-%m-%d"), (e - timedelta(days=30)).strftime("%Y-%m-%d")))
     n_rows, ok = 0, True
     for d0, d1 in spans:
         seen = set()
         for page in range(1, 60):
+            if time.monotonic() - T0 > 8 * 60:
+                print(">> 목록 시간 한도 → 이 구간은 다음 실행에서 다시")
+                ok = False
+                break
             rows = list_page(KW[0], d0, d1, page)
             if rows is None:
                 ok = False
