@@ -1,30 +1,7 @@
-curl 401 0.693298s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 10.837152s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.690450s https://www.re.or.kr/
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> 저장: 아파트 재활용 공고 35건 (이번 확인 35건, 새 상세 35건) · 분류 {'사업자 - 용역 - 기타 용역': 12, '사업자 - 물품 - 매각': 8, '사업자 - 기타 - 잡수입': 8, '사업자 - 공사 - 장기수선': 2, '사업자 - 공사 - 일반보수': 1, '주택관리업자 - 공동주택위탁관리': 4} · 지역 {'수원시': 2, '인천': 4, '안양시': 1, '서울': 7, '화성시': 4, '성남시': 1, '경기': 8, '광명시': 1, '평택시': 1, '가평군': 1, '이천시': 1, '의정부시': 1, '김포시': 1, '군포시': 1, '남양주시': 1}
-   2026-10-26 수원시  | 적격심사   | 영통벽적골롯데 | 재활용품 처리 용역 사업자 선정 재공고 | 사업자 - 용역 - 기타 용역 | 신규공고
-   2026-10-26 인천   | 적격심사   | 검단신도시디에트르더힐아파트 | 재활용 수거업체 선정 | 사업자 - 물품 - 매각 | 신규공고
-   2026-10-23 안양시  | 최고 낙찰  | 평촌어바인퍼스트 | 재활용품 처리업체 선정 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
-   2026-10-23 서울   | 최고 낙찰  | 흑석롯데캐슬에듀포레 | 재활용품 수거업체 선정 입찰공고 | 사업자 - 기타 - 잡수입 | 신규공고
-   2026-10-23 화성시  | 최고 낙찰  | 봉담신일해피트리2차 | 재활용품 수거업체 선정 공고 | 사업자 - 기타 - 잡수입 | 신규공고
-   2026-10-23 화성시  | 최고 낙찰  | 진안동 월드메르디앙 1,2 | 재활용 수거업체 선정 공고 | 사업자 - 용역 - 기타 용역 | 신규공고
-   2026-10-22 서울   | 최고 낙찰  | 영등포아트자이 | 재활용품 수거업체 선정 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
-   2026-10-22 성남시  | 최고 낙찰  | 힐스테이트위례 | 재활용품 수거 용역업체 선정 입찰 공고 | 사업자 - 용역 - 기타 용역 | 신규공고
-   2026-10-22 서울   | 적격심사   | 미성아파트(불광동) | 재활용품 수거업체 선정 긴급 입찰공고 | 사업자 - 물품 - 매각 | 신규공고
-   2026-10-22 화성시  | 최고 낙찰  | 송산그린시티 금강펜테리움센 | 재활용품 매각 사업자선정 입찰공고 | 사업자 - 기타 - 잡수입 | 재공고
-   2026-10-22 경기   | 최고 낙찰  | 송추역북한산경남아너스빌 | 재활용품 수거 용역 사업자 선정 입찰 재공고(긴급) | 사업자 - 용역 - 기타 용역 | 신규공고
-   2026-10-21 경기   | 최저 낙찰  | e편한세상구성역플랫폼시티 | 재활용장(1개소) 확장공사 업체 선정 입찰공고 | 사업자 - 공사 - 장기수선 | 신규공고
+curl 401 1.125282s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 000 14.789695s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.897346s https://www.re.or.kr/
+Traceback (most recent call last):
+  File "/home/runner/work/Waste-Recyle-Index/Waste-Recyle-Index/tools/probe_kapt.py", line 4, in <module>
+    from common import UA
+ModuleNotFoundError: No module named 'common'
