@@ -1,25 +1,25 @@
 {
- "updated": "2026-10-27 01:05",
+ "updated": "2026-10-27 10:17",
  "backfilled": true,
  "items": [
   {
    "id": "g2b:R26BK01786797",
    "src": "나라장터",
    "no": "R26BK01786797",
-   "ord": "000",
+   "ord": "001",
    "title": "(긴급)2027~2028년 재활용품 선별시설 운영 및 잔재폐기물 처리 용역(협상)",
    "org": "서울특별시 중구",
    "region": "수도권",
    "city": "서울",
    "type": "시설 운영 위탁",
-   "start": "2026-10-26",
+   "start": "2026-10-27",
    "end": "",
    "open": "2026-11-06",
    "method": "제한경쟁",
    "est": 3054231000.0,
    "budget": 3054231000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786797&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786797&bidPbancOrd=001"
   },
   {
    "id": "g2b:R26BK01756208",
