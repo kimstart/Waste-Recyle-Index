@@ -1,12 +1,12 @@
-curl 401 0.494285s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 000 14.788977s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.811608s https://www.re.or.kr/
+curl 401 0.919194s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 000 14.790236s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 0.770092s https://www.re.or.kr/
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-09-12~2026-10-27: 106건 확인
+>> [K-APT 결과공개] 2026-09-12~2026-10-27: 107건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
@@ -26,5 +26,15 @@ curl 200 0.811608s https://www.re.or.kr/
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT 입찰공고] 진행 공고 확인 25건
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidDetail.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> 상세 시간 한도 → 남은 276건은 다음 실행에서
+>> 저장: 479건 · 상태 {'신규공고': 18, '취소': 117, '재공고': 1, '낙찰': 199, '유찰': 133, '입찰마감': 3, '낙찰무효': 8} · 시스템 {'K-APT': 315, 'KG2B전자입찰': 148, '아파트장터 A2P': 16} · 상세 0건 읽음 · 1년 채우기 2026-06-14
+   2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 35,692,800
+   2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
+   2026-10-14 인천    | K-APT | 연수2차우성아파트 | 재활용수거업체 선정공고 | 낙찰 26,980,800
+   2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
+   2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000
+   2026-10-12 인천    | KG2B전자입찰 | 원당 e-편한세상 아파트 | 재활용품 수거업체 선정 입찰공고 | 낙찰 6,519,480
+   2026-10-08 경기    | KG2B전자입찰 | 호반써밋더프라임아파트 | 재활용품 수거 용역 업체선정 재입찰 공고 | 낙찰 20,815,200
+   2026-10-08 경기    | KG2B전자입찰 | 힐스테이트 탑석 | 재활용품 수거사업자 선정 입찰 재공고 | 낙찰 14,577,120
+   2026-10-06 경기    | 아파트장터 A2 | 평택고덕LH17단지아파트 | 재활용품 수거업체 선정 입찰 공고 | 낙찰 8,767,440
+   2026-10-06 남양주시  | K-APT | 다산역 경기행복주택아파트 | 재활용수거업체 선정 입찰 공고 | 낙찰 4,656,000
