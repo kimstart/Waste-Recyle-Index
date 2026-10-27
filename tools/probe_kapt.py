@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """K-APT 입찰결과 화면에서 엑셀 버튼이 어디에, 어떤 조건으로 보이는지 (화면 HTML 1회 조회)"""
 import re, urllib.request
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common import UA
 h = urllib.request.urlopen(urllib.request.Request("https://www.k-apt.go.kr/bid/bidResultList.do", headers=UA), timeout=60).read().decode("utf8", "ignore")
 sq = lambda t: re.sub(r"\s+", " ", t)
