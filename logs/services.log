@@ -1,4 +1,21 @@
-   [재시도 1/2] URLError: <urlopen error _ssl.c:999: The handshake operation timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '재활용' 2026-10-07 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '선별' 2026-10-07 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '폐합성수지' 2026-10-07 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '폐비닐' 2026-10-07 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '플라스틱' 2026-10-07 실패: URLError: <urlopen error timed out>
+   [재시도 1/2] URLError: <urlopen error timed out>
+   [재시도 2/2] URLError: <urlopen error timed out>
+>> [나라장터] '스티로폼' 2026-10-07 실패: URLError: <urlopen error timed out>
 >> 저장: 선별·처리 대행 용역 135건 (중점 12 · 수도권 123 · 낙찰 82)
    2026-10-27 서울 | 서울특별시 중구 | (긴급)2027~2028년 재활용품 선별시설 운영 및 잔재폐기물 처리 용역(협상) | 추정 3054231000.0 | 공고 
    2026-10-27 서울 | 서울특별시 중구 | (긴급)2027~2028년 재활용품 선별시설 운영 및 잔재폐기물 처리 용역(협상) | 추정 3054231000.0 | 공고 

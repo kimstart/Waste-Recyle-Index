@@ -1,7 +1,7 @@
 {
  "ver": 2,
  "codes": true,
- "updated": "2026-10-27 18:45",
+ "updated": "2026-10-28 00:38",
  "bf_to": "2026-08-13",
  "bf_done": false,
  "results_updated": null,
@@ -5861,7 +5861,8 @@
    "title": "재활용품수거 사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260807082211158",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "cls": ""
   },
   {
    "id": "20260807113543350",
@@ -5878,7 +5879,8 @@
    "title": "재활용 수거업체 선정 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260807113543350",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "cls": ""
   },
   {
    "id": "x20260807091142_염리동청년안심주택",
