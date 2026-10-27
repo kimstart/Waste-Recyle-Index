@@ -1,5 +1,36 @@
-curl 401 0.955692s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
-curl 200 11.893906s https://www.law.go.kr/DRF/lawSearch.do
-curl 200 0.919469s https://www.re.or.kr/
-A10023559 {"response":{"body":{"item":{"kaptCode":"A10023559","kaptName":"평촌어바인퍼스트","kaptAddr":"경기도 안양동안구 호계동 1296 평촌어바인퍼스트","codeSaleNm":"분양","codeHeatNm":"지역난방","kaptTarea":514855.0,"kaptDongCnt":"34","kaptdaCnt":3850.0,"kaptBcompany":"포스코, 대우건설, 현대건설,SK건설","kaptAcompany":"호원초등학교주변지구 주택재개발정비사업조합","kaptTel":"0313600542","kaptUrl":"urvine.aptner.com","codeAptNm":"아파트","doroJuso":"경기도 안양시 동안구 경수대로 581","codeMgrNm":"위탁관리","codeHallNm":"혼합식","kaptUsedate":"20210407","kaptFax":"0313600543","hoCnt":3850,"kaptMarea":340557.6,"kaptMparea60":2682.0,"kaptMparea85":1168.0,"kaptMparea135":0.0,"kaptMparea136":0.0,"privArea":"242491.91","bjdCode":"4117310400","kaptTopFloor":29,"ktownFlrNo":29,"kaptBaseFloor":3,"kaptdEcntp":89,"zipcode":"14116"}},"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."}}}
-A44690205 {"response":{"body":{"item":{"kaptCode":"A44690205","kaptName":"한보라마을휴먼시아7단지","kaptAddr":"경기도 용인기흥구 공세동 674 한보라마을휴먼시아7단지","codeSaleNm":"임대","codeHeatNm":"지역난방","kaptTarea":72936.81,"kaptDongCnt":"10","kaptdaCnt":851.0,"kaptBcompany":"삼능건설","kaptAcompany":"삼능건설","kaptTel":"0316939186","kaptUrl":" ","codeAptNm":"아파트","doroJuso":"경기도 용인시 기흥구 한보라2로 168","codeMgrNm":"위탁관리","codeHallNm":"혼합식","kaptUsedate":"20061124","kaptFax":"0316939187","hoCnt":861,"kaptMarea":39735.75,"kaptMparea60":851.0,"kaptMparea85":0.0,"kaptMparea135":0.0,"kaptMparea136":0.0,"privArea":"39735.75","bjdCode":"4146310700","kaptTopFloor":25,"ktownFlrNo":25,"kaptBaseFloor":2,"kaptdEcntp":19,"zipcode":"17083"}},"header":{"resultCode":"00","resultMsg":"NORMAL SERVICE."}}}
+curl 401 0.568837s https://apis.data.go.kr/B552584/reutilMrktPrcExmn/getlist
+curl 200 6.257709s https://www.law.go.kr/DRF/lawSearch.do
+curl 200 1.082306s https://www.re.or.kr/
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-09-12~2026-10-27: 111건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> 목록 시간 한도 → 이 구간은 다음 실행에서 다시
+>> [K-APT 결과공개] 2026-08-13~2026-09-12: 136건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 25건
+>> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
+>> [세대수] A10020422 URLError
+>> [세대수] 새로 조회 126건, 누적 126개 단지
+>> 상세 시간 한도 → 남은 351건은 다음 실행에서
+>> 저장: 687건 · 상태 {'신규공고': 20, '취소': 167, '재공고': 1, '낙찰': 296, '유찰': 189, '입찰마감': 2, '낙찰무효': 12} · 시스템 {'K-APT': 399, '아파트장터 A2P': 28, 'KG2B전자입찰': 260} · 상세 0건 읽음 · 1년 채우기 None
+   2026-10-19 인천    | KG2B전자입찰 | 신검단중앙역센트레빌 | 재활용품 수거업체 선정 입찰공고(긴급) | 낙찰 32,754,240
+   2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 22,389,120
+   2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 22,389,120
+   2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
+   2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
+   2026-10-14 인천    | K-APT | 연수2차우성아파트 | 재활용수거업체 선정공고 | 낙찰 26,980,800
+   2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
+   2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
+   2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000
+   2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000

@@ -1,10 +1,74 @@
 {
  "ver": 2,
- "updated": null,
- "bf_to": "2026-05-15",
+ "codes": true,
+ "updated": "2026-10-27 13:32",
+ "bf_to": null,
  "bf_done": false,
  "results_updated": null,
  "items": [
+  {
+   "id": "20261027131327000",
+   "sys": "K-APT",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정",
+   "end": "2026-11-09 17:00",
+   "state": "신규공고",
+   "win_amt": null,
+   "apt": "백현마을동일하이빌",
+   "reg": "2026-10-27",
+   "reg_dt": "2026-10-27 13:13:27",
+   "kapt": true,
+   "kapt_code": "A44691615",
+   "title": "재활용품 처리업체 선정",
+   "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261027131327000",
+   "households": 743,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
+  {
+   "id": "20261027130927086",
+   "sys": "K-APT",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정",
+   "end": "2026-11-10 17:00",
+   "state": "신규공고",
+   "win_amt": null,
+   "apt": "강선마을19단지우성아파트",
+   "reg": "2026-10-27",
+   "reg_dt": "2026-10-27 13:09:27",
+   "kapt": true,
+   "kapt_code": "A41137106",
+   "title": "재활용품 수거업체 선정",
+   "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261027130927086",
+   "households": 412,
+   "addr_sido": "경기도",
+   "addr_city": "고양시",
+   "region": "수도권",
+   "city": "고양시"
+  },
+  {
+   "id": "A20261027091753109",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품수거사업자선정공개경쟁입찰",
+   "end": "2026-11-09 15:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "한보라마을휴먼시아7단지",
+   "reg": "2026-10-27",
+   "reg_dt": "2026-10-27 09:17:53",
+   "kapt": false,
+   "kapt_code": "A44690205",
+   "title": "재활용품수거사업자선정공개경쟁입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 851,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
   {
    "id": "20261026152214700",
    "sys": "K-APT",
@@ -25,7 +89,9 @@
    "kind": "일반경쟁",
    "addr_city": "제물포구",
    "addr_sido": "인천광역시",
-   "content": "입찰공고문 참조"
+   "content": "입찰공고문 참조",
+   "kapt_code": "A10021741",
+   "households": 583
   },
   {
    "id": "20261026162322211",
@@ -47,7 +113,9 @@
    "kind": "제한경쟁",
    "addr_city": "과천시",
    "addr_sido": "경기도",
-   "content": "재활용품 수거 용역업체 선정 입찰입니다."
+   "content": "재활용품 수거 용역업체 선정 입찰입니다.",
+   "kapt_code": "A10022542",
+   "households": 547
   },
   {
    "id": "20261026154736129",
@@ -69,7 +137,9 @@
    "kind": "일반경쟁",
    "addr_city": "안양시",
    "addr_sido": "경기도",
-   "content": "공고문참조"
+   "content": "공고문참조",
+   "kapt_code": "A10024077",
+   "households": 1199
   },
   {
    "id": "20261026131440777",
@@ -91,7 +161,9 @@
    "kind": "제한경쟁",
    "addr_city": "수원시",
    "addr_sido": "경기도",
-   "content": "첨부 공고문 참조"
+   "content": "첨부 공고문 참조",
+   "kapt_code": "A44347019",
+   "households": 1040
   },
   {
    "id": "20261026090155525",
@@ -111,9 +183,11 @@
    "city": "인천",
    "cls": "사업자 - 물품 - 매각",
    "kind": "일반경쟁",
-   "addr_city": "",
-   "addr_sido": "",
-   "content": "첨부자료 참조"
+   "addr_city": "검단구",
+   "addr_sido": "인천광역시",
+   "content": "첨부자료 참조",
+   "kapt_code": "A10023624",
+   "households": 1417
   },
   {
    "id": "20261023130620623",
@@ -135,7 +209,9 @@
    "kind": "제한경쟁",
    "addr_city": "안양시",
    "addr_sido": "경기도",
-   "content": "재활용품 처리업체 선정"
+   "content": "재활용품 처리업체 선정",
+   "kapt_code": "A10023559",
+   "households": 3850
   },
   {
    "id": "20261023120329901",
@@ -157,7 +233,9 @@
    "addr_sido": "경기도",
    "content": "재활용품 처리업체 선정 입찰",
    "region": "수도권",
-   "city": "안양시"
+   "city": "안양시",
+   "kapt_code": "A10023559",
+   "households": 3850
   },
   {
    "id": "20261023113149010",
@@ -179,7 +257,9 @@
    "kind": "일반경쟁",
    "addr_city": "동작구",
    "addr_sido": "서울특별시",
-   "content": "입찰공고문 참조"
+   "content": "입찰공고문 참조",
+   "kapt_code": "A10025867",
+   "households": 545
   },
   {
    "id": "x20261023105810_오포문형양우내안애아파트",
@@ -197,6 +277,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_142461",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 업체 입찰 공고",
+   "end": "2026-11-03 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "오포문형 양우내안애 아파트",
+   "reg": "2026-10-23",
+   "reg_dt": "2026-10-23 10:58:10",
+   "kapt": false,
+   "kapt_code": "A10025974",
+   "title": "재활용품 수거 업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1028,
+   "addr_sido": "경기도",
+   "addr_city": "광주시",
+   "region": "수도권",
+   "city": "광주시"
   },
   {
    "id": "20261023105325577",
@@ -218,7 +319,9 @@
    "kind": "일반경쟁",
    "addr_city": "화성시",
    "addr_sido": "경기도",
-   "content": "화성시 신일해피트리2차아파트 재활용품 수거업체 선정 입찰 공고."
+   "content": "화성시 신일해피트리2차아파트 재활용품 수거업체 선정 입찰 공고.",
+   "kapt_code": "A44575909",
+   "households": 500
   },
   {
    "id": "20261012133007267",
@@ -240,7 +343,9 @@
    "addr_sido": "서울특별시",
    "content": "공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10025867",
+   "households": 545
   },
   {
    "id": "20261023093652361",
@@ -262,7 +367,9 @@
    "kind": "일반경쟁",
    "addr_city": "화성시",
    "addr_sido": "경기도",
-   "content": "공고문 참조"
+   "content": "공고문 참조",
+   "kapt_code": "A44571803",
+   "households": 545
   },
   {
    "id": "20261021145833185",
@@ -279,7 +386,11 @@
    "title": "재활용품 수거 용역 사업자 선정 입찰 재공고(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261021145833185",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10023381",
+   "households": 604,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "20261022165045290",
@@ -296,7 +407,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261022165045290",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15076702",
+   "households": 836,
+   "addr_sido": "서울특별시",
+   "addr_city": "영등포구"
   },
   {
    "id": "20261022164028926",
@@ -313,7 +428,11 @@
    "title": "재활용품 수거 용역업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261022164028926",
    "region": "수도권",
-   "city": "경기"
+   "city": "성남시",
+   "kapt_code": "A10027720",
+   "households": 621,
+   "addr_sido": "경기도",
+   "addr_city": "성남시"
   },
   {
    "id": "20261022155445840",
@@ -330,7 +449,11 @@
    "title": "재활용품 수거업체 선정 긴급 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261022155445840",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A12285703",
+   "households": 1340,
+   "addr_sido": "서울특별시",
+   "addr_city": "은평구"
   },
   {
    "id": "20261022113518362",
@@ -348,11 +471,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261022113518362",
    "cls": "사업자 - 물품 - 매각",
    "kind": "일반경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "은평구",
+   "addr_sido": "서울특별시",
    "content": "재활용품 수거업체 선정을 위하여 첨부파일과같이 긴급 입찰공고 하오니 많은 참여 바랍니다.",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A12285703",
+   "households": 1340
   },
   {
    "id": "20261022101119074",
@@ -368,8 +493,12 @@
    "kapt": true,
    "title": "재활용품 매각 사업자선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261022101119074",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "화성시",
+   "kapt_code": "A10025264",
+   "households": 692,
+   "addr_sido": "경기도",
+   "addr_city": "화성시"
   },
   {
    "id": "20261021155044076",
@@ -391,7 +520,9 @@
    "addr_sido": "경기도",
    "content": "공고문",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A10024753",
+   "households": 199
   },
   {
    "id": "x20261021131753_오포문형양우내안애아파트",
@@ -411,6 +542,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_142351",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 입찰 공고",
+   "end": "2026-11-02 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "오포문형 양우내안애 아파트",
+   "reg": "2026-10-21",
+   "reg_dt": "2026-10-21 13:17:53",
+   "kapt": false,
+   "kapt_code": "A10025974",
+   "title": "재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1028,
+   "addr_sido": "경기도",
+   "addr_city": "광주시",
+   "region": "수도권",
+   "city": "광주시"
+  },
+  {
    "id": "20261021112957976",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -425,7 +577,11 @@
    "title": "재활용품 (매각)수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261021112957976",
    "region": "수도권",
-   "city": "경기"
+   "city": "광명시",
+   "kapt_code": "A10027643",
+   "households": 2351,
+   "addr_sido": "경기도",
+   "addr_city": "광명시"
   },
   {
    "id": "20261021092854628",
@@ -447,7 +603,9 @@
    "addr_sido": "경기도",
    "content": "재활용품 (매각)수거업체 선정 입찰공고",
    "region": "수도권",
-   "city": "광명시"
+   "city": "광명시",
+   "kapt_code": "A10027643",
+   "households": 2351
   },
   {
    "id": "20261020151949347",
@@ -463,8 +621,12 @@
    "kapt": true,
    "title": "재활용품 수거 업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261020151949347",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "평택시",
+   "kapt_code": "A10023007",
+   "households": 496,
+   "addr_sido": "경기도",
+   "addr_city": "평택시"
   },
   {
    "id": "x20261020150000_한보라마을휴먼시아7단지",
@@ -482,6 +644,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "A20261020094047699",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품수거사업자선정공개경쟁입찰",
+   "end": "2026-11-02 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "한보라마을휴먼시아7단지",
+   "reg": "2026-10-20",
+   "reg_dt": "2026-10-20 15:00:00",
+   "kapt": false,
+   "kapt_code": "A44690205",
+   "title": "재활용품수거사업자선정공개경쟁입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 851,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
   },
   {
    "id": "20261020101036230",
@@ -503,7 +686,27 @@
    "addr_sido": "경기도",
    "content": "입찰 공고문 참조",
    "region": "중점",
-   "city": "평택시"
+   "city": "평택시",
+   "kapt_code": "A10023007",
+   "households": 496
+  },
+  {
+   "id": "kg2b_142272",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰공고(긴급)",
+   "end": "2026-10-26 17:00",
+   "state": "낙찰",
+   "win_amt": 32754240.0,
+   "apt": "신검단중앙역센트레빌",
+   "reg": "2026-10-19",
+   "reg_dt": "2026-10-19 15:36:42",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체 선정 입찰공고(긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
   },
   {
    "id": "20261019131739395",
@@ -520,7 +723,11 @@
    "title": "재활용품 수거 용역업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261019131739395",
    "region": "수도권",
-   "city": "경기"
+   "city": "가평군",
+   "kapt_code": "A10022813",
+   "households": 451,
+   "addr_sido": "경기도",
+   "addr_city": "가평군"
   },
   {
    "id": "20261016163708038",
@@ -537,7 +744,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261016163708038",
    "region": "수도권",
-   "city": "경기"
+   "city": "이천시",
+   "kapt_code": "A10020033",
+   "households": 785,
+   "addr_sido": "경기도",
+   "addr_city": "이천시"
   },
   {
    "id": "20261016162628778",
@@ -559,7 +770,9 @@
    "addr_sido": "경기도",
    "content": "상세 내용은 첨부된 입찰 공고를 참조하여 주시기 바랍니다.",
    "region": "수도권",
-   "city": "이천시"
+   "city": "이천시",
+   "kapt_code": "A10020033",
+   "households": 785
   },
   {
    "id": "x20261016150935_한빛마을7단지",
@@ -573,6 +786,24 @@
    "reg": "2026-10-16",
    "reg_dt": "2026-10-16 15:09:35",
    "kapt": false,
+   "title": "(긴급) 재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_142226",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] (긴급) 재활용품 수거업체 입찰 공고",
+   "end": "2026-10-22 17:00",
+   "state": "낙찰",
+   "win_amt": 22389120.0,
+   "apt": "한빛마을7단지",
+   "reg": "2026-10-16",
+   "reg_dt": "2026-10-16 15:09:35",
+   "kapt": false,
+   "kapt_code": "",
    "title": "(긴급) 재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -596,6 +827,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_142172",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용업자 선정 (긴급)입찰공고",
+   "end": "2026-10-21 17:00",
+   "state": "낙찰",
+   "win_amt": 6163200.0,
+   "apt": "회천중앙역 대광로제비앙 그랜드센텀",
+   "reg": "2026-10-15",
+   "reg_dt": "2026-10-15 13:52:51",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용업자 선정 (긴급)입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "x20261015115233_회천중앙역대광로제비앙그",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -607,6 +856,24 @@
    "reg": "2026-10-15",
    "reg_dt": "2026-10-15 11:52:33",
    "kapt": false,
+   "title": "재활용업자 선정 (긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_142164",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용업자 선정 (긴급)",
+   "end": "2026-10-21 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "회천중앙역 대광로제비앙 그랜드센텀",
+   "reg": "2026-10-15",
+   "reg_dt": "2026-10-15 11:52:33",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용업자 선정 (긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -628,11 +895,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261015093620809",
    "cls": "사업자 - 물품 - 매각",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "송파구",
+   "addr_sido": "서울특별시",
    "content": "첨부파일 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13813008",
+   "households": 749
   },
   {
    "id": "x20261015092943_동문굿모닝힐맘시티3단지",
@@ -650,6 +919,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_142150",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용업자 선정 입찰 재공고",
+   "end": "2026-10-21 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "동문굿모닝힐맘시티3단지",
+   "reg": "2026-10-15",
+   "reg_dt": "2026-10-15 09:29:43",
+   "kapt": false,
+   "kapt_code": "A10024174",
+   "title": "재활용업자 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1134,
+   "addr_sido": "경기도",
+   "addr_city": "평택시",
+   "region": "중점",
+   "city": "평택시"
   },
   {
    "id": "20261014183355548",
@@ -671,7 +961,9 @@
    "addr_sido": "경기도",
    "content": "입찰 참가자격에 관한 사항 가. 「주택관리업자 및 사업자 선정지침」 제26조(참가자격의 제한) 제1항 각 호의 어느 하나에 해당하지 않은 업체 나. 자본금 - 입찰공고일 현재 자본금 10억원 이상인 업체 다. 사업실적 - 입찰공고일 현재 최근 5년간 공동주택 1000세대 이상 사업실적이 5건 이상인 업체 라. 현장설명회에 참여한 업체에 한해서 입찰에",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40676307",
+   "households": 2044
   },
   {
    "id": "20261014165255349",
@@ -688,7 +980,11 @@
    "title": "재활용품 수거업체 선정입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261014165255349",
    "region": "수도권",
-   "city": "경기"
+   "city": "의정부시",
+   "kapt_code": "A48092201",
+   "households": 673,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시"
   },
   {
    "id": "20261014132210177",
@@ -705,7 +1001,11 @@
    "title": "재활용품 처리업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261014132210177",
    "region": "수도권",
-   "city": "경기"
+   "city": "안양시",
+   "kapt_code": "A43106002",
+   "households": 708,
+   "addr_sido": "경기도",
+   "addr_city": "안양시"
   },
   {
    "id": "20261014115213146",
@@ -723,11 +1023,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261014115213146",
    "cls": "사업자 - 물품 - 매각",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "동대문구",
+   "addr_sido": "서울특별시",
    "content": "입찰공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020344",
+   "households": 4169
   },
   {
    "id": "20261014111857388",
@@ -749,7 +1051,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문참조",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A48092201",
+   "households": 673
   },
   {
    "id": "x20261013162820_고덕국제신도시미래도파밀",
@@ -763,6 +1067,24 @@
    "reg": "2026-10-13",
    "reg_dt": "2026-10-13 16:28:20",
    "kapt": false,
+   "title": "재활용품 수거용역 업체 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_142077",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거용역 업체 선정 입찰 재공고",
+   "end": "2026-10-19 17:00",
+   "state": "낙찰",
+   "win_amt": 5392800.0,
+   "apt": "고덕국제신도시미래도파밀리에",
+   "reg": "2026-10-13",
+   "reg_dt": "2026-10-13 16:28:20",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거용역 업체 선정 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -783,7 +1105,11 @@
    "title": "재활용품 수거 업체 선정 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261013143423001",
    "region": "수도권",
-   "city": "경기"
+   "city": "안산시",
+   "kapt_code": "A42590615",
+   "households": 1043,
+   "addr_sido": "경기도",
+   "addr_city": "안산시"
   },
   {
    "id": "x20261013155151_성남신촌1단지",
@@ -797,6 +1123,24 @@
    "reg": "2026-10-13",
    "reg_dt": "2026-10-13 15:51:51",
    "kapt": false,
+   "title": "재활용품 수거업체선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_142070",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체선정 입찰 재공고",
+   "end": "2026-10-19 17:00",
+   "state": "낙찰",
+   "win_amt": 1362000.0,
+   "apt": "성남신촌1단지",
+   "reg": "2026-10-13",
+   "reg_dt": "2026-10-13 15:51:51",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체선정 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -820,13 +1164,31 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_142062",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰공고(긴급)",
+   "end": "2026-10-19 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "신검단중앙역센트레빌",
+   "reg": "2026-10-13",
+   "reg_dt": "2026-10-13 15:13:42",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체 선정 입찰공고(긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20261013134318387",
    "sys": "K-APT",
    "way": "최고 낙찰",
    "title_raw": "[경기] 재활용품 수거업체 선정공고",
    "end": "2026-10-26 17:00",
-   "state": "입찰마감",
-   "win_amt": null,
+   "state": "낙찰",
+   "win_amt": 53913600.0,
    "apt": "캐슬&파밀리에시티 2단지",
    "reg": "2026-10-13",
    "reg_dt": "2026-10-13 13:43:18",
@@ -834,7 +1196,11 @@
    "title": "재활용품 수거업체 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261013134318387",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A10025007",
+   "households": 1872,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "20261012143212873",
@@ -856,7 +1222,9 @@
    "addr_sido": "경기도",
    "content": "상세 내용은 첨부된 입찰 공고를 참조하여 주시기 바랍니다.",
    "region": "수도권",
-   "city": "이천시"
+   "city": "이천시",
+   "kapt_code": "A10020033",
+   "households": 785
   },
   {
    "id": "20261012141307893",
@@ -878,7 +1246,9 @@
    "addr_sido": "경기도",
    "content": "상세 내용은 첨부된 입찰 공고를 참조하여 주시기 바랍니다.",
    "region": "수도권",
-   "city": "이천시"
+   "city": "이천시",
+   "kapt_code": "A10020033",
+   "households": 785
   },
   {
    "id": "x20261012111308_힐스테이트메디알레",
@@ -892,6 +1262,24 @@
    "reg": "2026-10-12",
    "reg_dt": "2026-10-12 11:13:08",
    "kapt": false,
+   "title": "재활용수거업체",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
+   "id": "kg2b_141982",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[서울] 재활용수거업체",
+   "end": "2026-10-26 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "힐스테이트메디알레",
+   "reg": "2026-10-12",
+   "reg_dt": "2026-10-12 11:13:08",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용수거업체",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -915,6 +1303,27 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_141978",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-10-23 17:00",
+   "state": "낙찰",
+   "win_amt": 6519480.0,
+   "apt": "원당 e-편한세상 아파트",
+   "reg": "2026-10-12",
+   "reg_dt": "2026-10-12 10:46:33",
+   "kapt": false,
+   "kapt_code": "A40432001",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 449,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "x20261008160955_한빛마을7단지",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -926,6 +1335,24 @@
    "reg": "2026-10-08",
    "reg_dt": "2026-10-08 16:09:55",
    "kapt": false,
+   "title": "긴급 재활용품 수거업체 입찰 공고(2차)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141955",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 긴급 재활용품 수거업체 입찰 공고(2차)",
+   "end": "2026-10-14 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-10-08",
+   "reg_dt": "2026-10-08 16:09:55",
+   "kapt": false,
+   "kapt_code": "",
    "title": "긴급 재활용품 수거업체 입찰 공고(2차)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -949,6 +1376,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141934",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역 업체선정 재입찰 공고",
+   "end": "2026-10-19 17:00",
+   "state": "낙찰",
+   "win_amt": 20815200.0,
+   "apt": "호반써밋더프라임아파트",
+   "reg": "2026-10-08",
+   "reg_dt": "2026-10-08 14:27:32",
+   "kapt": false,
+   "kapt_code": "A10023386",
+   "title": "재활용품 수거 용역 업체선정 재입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 826,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시",
+   "region": "수도권",
+   "city": "시흥시"
+  },
+  {
    "id": "x20261008133348_힐스테이트탑석",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -966,6 +1414,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141922",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거사업자 선정 입찰 재공고",
+   "end": "2026-10-19 17:00",
+   "state": "낙찰",
+   "win_amt": 14577120.0,
+   "apt": "힐스테이트 탑석",
+   "reg": "2026-10-08",
+   "reg_dt": "2026-10-08 13:33:48",
+   "kapt": false,
+   "kapt_code": "A10020454",
+   "title": "재활용품 수거사업자 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 636,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시",
+   "region": "수도권",
+   "city": "의정부시"
+  },
+  {
    "id": "x20261006163353_평택고덕LH17단지아파",
    "sys": "아파트장터 A2P",
    "way": "최고 낙찰",
@@ -981,6 +1450,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "A20261006163353417",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰 공고",
+   "end": "2026-10-19 13:00",
+   "state": "낙찰",
+   "win_amt": 8767440.0,
+   "apt": "평택고덕LH17단지아파트",
+   "reg": "2026-10-06",
+   "reg_dt": "2026-10-06 16:33:53",
+   "kapt": false,
+   "kapt_code": "A10025052",
+   "title": "재활용품 수거업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 594,
+   "addr_sido": "경기도",
+   "addr_city": "평택시",
+   "region": "중점",
+   "city": "평택시"
   },
   {
    "id": "20261006150314646",
@@ -1002,7 +1492,9 @@
    "addr_sido": "경기도",
    "content": "첨부파일 공고문 참조",
    "region": "수도권",
-   "city": "남양주시"
+   "city": "남양주시",
+   "kapt_code": "A10025306",
+   "households": 970
   },
   {
    "id": "20261006134615946",
@@ -1024,7 +1516,9 @@
    "addr_sido": "경기도",
    "content": "\"입찰공고문 참조\"",
    "region": "중점",
-   "city": "화성시"
+   "city": "화성시",
+   "kapt_code": "A10025264",
+   "households": 692
   },
   {
    "id": "20261006101554001",
@@ -1042,11 +1536,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261006101554001",
    "cls": "사업자 - 용역 - 기타 용역",
    "kind": "일반경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "검단구",
+   "addr_sido": "인천광역시",
    "content": "재활용품 수거업체 선정을 위한 입찰입니다 많은 업체 응찰 요합니다.",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10021094",
+   "households": 1425
   },
   {
    "id": "20261006093012230",
@@ -1063,7 +1559,11 @@
    "title": "단지 내 재활용장 환경개선 업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261006093012230",
    "region": "수도권",
-   "city": "경기"
+   "city": "과천시",
+   "kapt_code": "A10025670",
+   "households": 543,
+   "addr_sido": "경기도",
+   "addr_city": "과천시"
   },
   {
    "id": "20261002114918280",
@@ -1081,11 +1581,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261002114918280",
    "cls": "사업자 - 물품 - 매각",
    "kind": "일반경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "수원시",
+   "addr_sido": "경기도",
    "content": "입찰공고문 참조",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A44175203",
+   "households": 481
   },
   {
    "id": "20261002094229626",
@@ -1103,11 +1605,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20261002094229626",
    "cls": "사업자 - 기타 - 잡수입",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "송파구",
+   "addr_sido": "서울특별시",
    "content": "공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13813008",
+   "households": 749
   },
   {
    "id": "x20261001170108_한빛마을7단지",
@@ -1121,6 +1625,24 @@
    "reg": "2026-10-01",
    "reg_dt": "2026-10-01 17:01:08",
    "kapt": false,
+   "title": "긴급 재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141719",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 긴급 재활용품 수거업체 입찰 공고",
+   "end": "2026-10-07 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 17:01:08",
+   "kapt": false,
+   "kapt_code": "",
    "title": "긴급 재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1144,6 +1666,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141699",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체선정 입찰공고",
+   "end": "2026-10-12 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "성남신촌A1BL",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 15:27:05",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "x20261001142805_군포금강펜테리움센트럴파",
    "sys": "아파트장터 A2P",
    "way": "최고 낙찰",
@@ -1161,6 +1701,27 @@
    "city": "경기"
   },
   {
+   "id": "A20261001142805570",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰공고 [긴급]",
+   "end": "2026-10-07 17:00",
+   "state": "낙찰",
+   "win_amt": 10728000.0,
+   "apt": "군포금강펜테리움센트럴파크2차아파트",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 14:28:05",
+   "kapt": false,
+   "kapt_code": "A10025954",
+   "title": "재활용품 수거업체 선정 입찰공고 [긴급]",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 447,
+   "addr_sido": "경기도",
+   "addr_city": "군포시",
+   "region": "수도권",
+   "city": "군포시"
+  },
+  {
    "id": "x20261001132216_영종국제도시제일풍경채디",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -1172,6 +1733,24 @@
    "reg": "2026-10-01",
    "reg_dt": "2026-10-01 13:22:16",
    "kapt": false,
+   "title": "재활용품 수거업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_141680",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰 공고",
+   "end": "2026-10-13 17:00",
+   "state": "낙찰",
+   "win_amt": 10291200.0,
+   "apt": "영종국제도시제일풍경채디오션",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 13:22:16",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1195,6 +1774,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141663",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 폐기물관리법에 따른 재활용품 수거업체 선정공고",
+   "end": "2026-10-19 17:00",
+   "state": "낙찰",
+   "win_amt": 7101600.0,
+   "apt": "풍무당곡마을범양",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 10:35:11",
+   "kapt": false,
+   "kapt_code": "A41507003",
+   "title": "폐기물관리법에 따른 재활용품 수거업체 선정공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 538,
+   "addr_sido": "경기도",
+   "addr_city": "김포시",
+   "region": "수도권",
+   "city": "김포시"
+  },
+  {
    "id": "20261001101735712",
    "sys": "K-APT",
    "way": "적격심사",
@@ -1214,7 +1814,9 @@
    "addr_sido": "경기도",
    "content": "첨부 공고문 참조",
    "region": "중점",
-   "city": "수원시"
+   "city": "수원시",
+   "kapt_code": "A44347019",
+   "households": 1040
   },
   {
    "id": "20261001100853323",
@@ -1236,7 +1838,9 @@
    "addr_sido": "경기도",
    "content": "산성역포레스티아 아파트 4089세대 재활용수거장 35개소 중소형차량에 의한 인력수거방식",
    "region": "수도권",
-   "city": "용인시"
+   "city": "용인시",
+   "kapt_code": "A10024631",
+   "households": 4089
   },
   {
    "id": "x20261001095647_평택화양휴먼빌퍼스트시티",
@@ -1250,6 +1854,24 @@
    "reg": "2026-10-01",
    "reg_dt": "2026-10-01 09:56:47",
    "kapt": false,
+   "title": "재활용품 처리업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141653",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정 입찰공고",
+   "end": "2026-10-14 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "평택화양휴먼빌퍼스트시티",
+   "reg": "2026-10-01",
+   "reg_dt": "2026-10-01 09:56:47",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 처리업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1275,7 +1897,9 @@
    "addr_sido": "경기도",
    "content": "계약기간 2년입니다. 전체 금액을 계약 후 10일 이내 전액 납부조건 입찰입니다.",
    "region": "수도권",
-   "city": "고양시"
+   "city": "고양시",
+   "kapt_code": "A41182503",
+   "households": 496
   },
   {
    "id": "x20260930172213_이편한세상평촌어반밸리",
@@ -1289,6 +1913,24 @@
    "reg": "2026-09-30",
    "reg_dt": "2026-09-30 17:22:13",
    "kapt": false,
+   "title": "재활용품 수거업체 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141632",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 입찰",
+   "end": "2026-10-06 17:00",
+   "state": "낙찰",
+   "win_amt": 3206000.0,
+   "apt": "이편한세상평촌어반밸리",
+   "reg": "2026-09-30",
+   "reg_dt": "2026-09-30 17:22:13",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 입찰",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1310,11 +1952,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260930101304244",
    "cls": "사업자 - 기타 - 잡수입",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "송파구",
+   "addr_sido": "서울특별시",
    "content": "공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13813008",
+   "households": 749
   },
   {
    "id": "20260930092851043",
@@ -1332,11 +1976,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260930092851043",
    "cls": "사업자 - 기타 - 잡수입",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "남동구",
+   "addr_sido": "인천광역시",
    "content": "- 본 입찰은 하한가 적용하며, 하한가 미만 입찰은 무효. - 상세한 사항은 입찰 공고문 참조.",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40585008",
+   "households": 880
   },
   {
    "id": "x20260930092448_동문굿모닝힐맘시티3단지",
@@ -1354,6 +2000,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_141553",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용업자 선정 입찰공고",
+   "end": "2026-10-14 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "동문굿모닝힐맘시티3단지",
+   "reg": "2026-09-30",
+   "reg_dt": "2026-09-30 09:24:48",
+   "kapt": false,
+   "kapt_code": "A10024174",
+   "title": "재활용업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1134,
+   "addr_sido": "경기도",
+   "addr_city": "평택시",
+   "region": "중점",
+   "city": "평택시"
   },
   {
    "id": "20260929170634139",
@@ -1375,7 +2042,9 @@
    "addr_sido": "서울특별시",
    "content": "공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13003007",
+   "households": 2652
   },
   {
    "id": "20260929165908836",
@@ -1393,11 +2062,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260929165908836",
    "cls": "사업자 - 물품 - 매각",
    "kind": "일반경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "양천구",
+   "addr_sido": "서울특별시",
    "content": "파일추가",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256
   },
   {
    "id": "20260929114727152",
@@ -1415,11 +2086,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260929114727152",
    "cls": "사업자 - 용역 - 기타 용역",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "양주시",
+   "addr_sido": "경기도",
    "content": "1. 현장설명회가 별도로 없으니 개별 방문하시기 바랍니다. 2. 입찰 참가자격과 제출서류를 꼭 확인하세요. 3. 계약조건은 연간 계약금액 선납(부가세 포함) 4. 입찰서류는 제출서류 순서대로 하나의 파일로 등록해주세요.",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10023381",
+   "households": 604
   },
   {
    "id": "20260929131030006",
@@ -1441,7 +2114,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문참조",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A48092201",
+   "households": 673
   },
   {
    "id": "x20260929113514_대림솔거",
@@ -1459,6 +2134,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_141514",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정 입찰공고",
+   "end": "2026-10-15 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "대림솔거",
+   "reg": "2026-09-29",
+   "reg_dt": "2026-09-29 11:35:14",
+   "kapt": false,
+   "kapt_code": "A43572706",
+   "title": "재활용품 처리업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1158,
+   "addr_sido": "경기도",
+   "addr_city": "군포시",
+   "region": "수도권",
+   "city": "군포시"
   },
   {
    "id": "20260929113308726",
@@ -1480,7 +2176,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문 참조",
    "region": "수도권",
-   "city": "양주시"
+   "city": "양주시",
+   "kapt_code": "A10019917",
+   "households": 1474
   },
   {
    "id": "20260929105355487",
@@ -1502,7 +2200,9 @@
    "addr_sido": "경기도",
    "content": "재활용품 수거업체 선정 입찰공고 ⌜공동주택관리법⌟시행령 제25조 및 주택관리업자 및 사업자 선정지침(국토부고시 제2024-196호) 제24조에 의거 재활용품 수거 용역 사업자를 선정하기 위하여 아래와 같이 입찰 공고합니다. 1. 단지 개요 가. 단지명: 한강신도시중흥S클래스파크애비뉴아파트 나. 소재지: 경기도 김포시 김포한강2로 362 다. 단지 규모: 1",
    "region": "수도권",
-   "city": "김포시"
+   "city": "김포시",
+   "kapt_code": "A41574409",
+   "households": 1007
   },
   {
    "id": "20260929105332038",
@@ -1520,11 +2220,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260929105332038",
    "cls": "사업자 - 용역 - 기타 용역",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "강화군",
+   "addr_sido": "인천광역시",
    "content": "많은 참여 부탁드립니다.",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10022378",
+   "households": 1324
   },
   {
    "id": "x20260929100536_대림솔거",
@@ -1544,6 +2246,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141496",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정 입찰공고",
+   "end": "2026-10-15 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "대림솔거",
+   "reg": "2026-09-29",
+   "reg_dt": "2026-09-29 10:05:36",
+   "kapt": false,
+   "kapt_code": "A43572706",
+   "title": "재활용품 처리업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1158,
+   "addr_sido": "경기도",
+   "addr_city": "군포시",
+   "region": "수도권",
+   "city": "군포시"
+  },
+  {
    "id": "x20260928173044_대림솔거",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -1559,6 +2282,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_141479",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정 입찰공고",
+   "end": "2026-10-15 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "대림솔거",
+   "reg": "2026-09-28",
+   "reg_dt": "2026-09-28 17:30:44",
+   "kapt": false,
+   "kapt_code": "A43572706",
+   "title": "재활용품 처리업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1158,
+   "addr_sido": "경기도",
+   "addr_city": "군포시",
+   "region": "수도권",
+   "city": "군포시"
   },
   {
    "id": "20260928145957413",
@@ -1580,7 +2324,9 @@
    "addr_sido": "서울특별시",
    "content": "첨부파일참조",
    "region": "수도권",
-   "city": "서초구"
+   "city": "서초구",
+   "kapt_code": "A10023008",
+   "households": 526
   },
   {
    "id": "20260928140919654",
@@ -1598,11 +2344,13 @@
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260928140919654",
    "cls": "사업자 - 물품 - 매각",
    "kind": "제한경쟁",
-   "addr_city": "",
-   "addr_sido": "",
+   "addr_city": "동대문구",
+   "addr_sido": "서울특별시",
    "content": "입찰공고문 참조",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020344",
+   "households": 4169
   },
   {
    "id": "20260928134318220",
@@ -1624,7 +2372,9 @@
    "addr_sido": "경기도",
    "content": "첨부된 파일 입찰공고문 참조",
    "region": "수도권",
-   "city": "고양시"
+   "city": "고양시",
+   "kapt_code": "A42003032",
+   "households": 1251
   },
   {
    "id": "20260928102544611",
@@ -1646,7 +2396,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문참조",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A48092201",
+   "households": 673
   },
   {
    "id": "x20260928100208_고덕국제신도시미래도파밀",
@@ -1660,6 +2412,24 @@
    "reg": "2026-09-28",
    "reg_dt": "2026-09-28 10:02:08",
    "kapt": false,
+   "title": "재활용품 수거 용역 업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141425",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역 업체 선정 입찰공고",
+   "end": "2026-10-12 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "고덕국제신도시미래도파밀리에",
+   "reg": "2026-09-28",
+   "reg_dt": "2026-09-28 10:02:08",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거 용역 업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1685,7 +2455,9 @@
    "addr_sido": "경기도",
    "content": "첨부파일참고",
    "region": "중점",
-   "city": "수원시"
+   "city": "수원시",
+   "kapt_code": "A44379709",
+   "households": 710
   },
   {
    "id": "20260928083153842",
@@ -1707,7 +2479,9 @@
    "addr_sido": "경기도",
    "content": "첨부 참조",
    "region": "수도권",
-   "city": "광주시"
+   "city": "광주시",
+   "kapt_code": "A10024213",
+   "households": 464
   },
   {
    "id": "20260923095204807",
@@ -1729,7 +2503,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문 참조",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A48093010",
+   "households": 814
   },
   {
    "id": "20260923141725011",
@@ -1751,7 +2527,9 @@
    "addr_sido": "경기도",
    "content": "입찰공고문참조",
    "region": "수도권",
-   "city": "의정부시"
+   "city": "의정부시",
+   "kapt_code": "A48092201",
+   "households": 673
   },
   {
    "id": "20260923144416584",
@@ -1773,7 +2551,9 @@
    "addr_sido": "경기도",
    "content": "첨부 입찰공고문",
    "region": "수도권",
-   "city": "파주시"
+   "city": "파주시",
+   "kapt_code": "A41301012",
+   "households": 563
   },
   {
    "id": "x20260923093639_의왕센트라인데시앙",
@@ -1787,6 +2567,24 @@
    "reg": "2026-09-23",
    "reg_dt": "2026-09-23 09:36:39",
    "kapt": false,
+   "title": "재활용 처리업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141344",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용 처리업체 선정 공고",
+   "end": "2026-10-06 17:00",
+   "state": "낙찰",
+   "win_amt": 7036800.0,
+   "apt": "의왕센트라인데시앙",
+   "reg": "2026-09-23",
+   "reg_dt": "2026-09-23 09:36:39",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용 처리업체 선정 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1807,7 +2605,11 @@
    "title": "재활용품 수거계약 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260923091757352",
    "region": "수도권",
-   "city": "경기"
+   "city": "안양시",
+   "kapt_code": "A43107007",
+   "households": 1996,
+   "addr_sido": "경기도",
+   "addr_city": "안양시"
   },
   {
    "id": "x20260922164446_역곡동부센트레빌1단지2",
@@ -1827,6 +2629,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141329",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-10-06 17:00",
+   "state": "낙찰",
+   "win_amt": 15055200.0,
+   "apt": "역곡동부센트레빌1단지2단지",
+   "reg": "2026-09-22",
+   "reg_dt": "2026-09-22 16:44:46",
+   "kapt": false,
+   "kapt_code": "A42010202",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 697,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "20260922143206015",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -1840,8 +2663,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260922143206015",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "평택시",
+   "kapt_code": "A45970304",
+   "households": 420,
+   "addr_sido": "경기도",
+   "addr_city": "평택시"
   },
   {
    "id": "x20260922115952_힐스테이트탑석",
@@ -1861,6 +2688,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141297",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거사업자 선정 입찰 공고",
+   "end": "2026-10-06 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "힐스테이트 탑석",
+   "reg": "2026-09-22",
+   "reg_dt": "2026-09-22 11:59:52",
+   "kapt": false,
+   "kapt_code": "A10020454",
+   "title": "재활용품 수거사업자 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 636,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시",
+   "region": "수도권",
+   "city": "의정부시"
+  },
+  {
    "id": "x20260922110240_광명센트럴아이파크",
    "sys": "KG2B전자입찰",
    "way": "적격심사",
@@ -1872,6 +2720,24 @@
    "reg": "2026-09-22",
    "reg_dt": "2026-09-22 11:02:40",
    "kapt": false,
+   "title": "재활용품 매각 사업자 선정(긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141284",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[경기] 재활용품 매각 사업자 선정(긴급)",
+   "end": "2026-09-28 09:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "광명센트럴아이파크",
+   "reg": "2026-09-22",
+   "reg_dt": "2026-09-22 11:02:40",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 매각 사업자 선정(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -1892,7 +2758,11 @@
    "title": "재활용수거업체 선정 입찰공고(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260922103300632",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10019917",
+   "households": 1474,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "20260922102708911",
@@ -1908,8 +2778,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260922102708911",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "평택시",
+   "kapt_code": "A45970304",
+   "households": 420,
+   "addr_sido": "경기도",
+   "addr_city": "평택시"
   },
   {
    "id": "20260922101253972",
@@ -1926,7 +2800,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260922101253972",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260921170327676",
@@ -1943,7 +2821,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921170327676",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260921163428872",
@@ -1960,7 +2842,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921163428872",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260921152824002",
@@ -1977,7 +2863,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921152824002",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260921133802282",
@@ -1994,7 +2884,11 @@
    "title": "재활용수거업체 선정 입찰공고(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921133802282",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10019917",
+   "households": 1474,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "20260921143249829",
@@ -2011,7 +2905,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921143249829",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260921110121365",
@@ -2028,7 +2926,11 @@
    "title": "재활용수거업체선정을위한입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921110121365",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A10025007",
+   "households": 1872,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "20260921105146424",
@@ -2045,7 +2947,11 @@
    "title": "재활용품 매입업체선정 긴급입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921105146424",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023127",
+   "households": 2426,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구"
   },
   {
    "id": "x20260921103131_역곡동부센트레빌1단지2",
@@ -2065,6 +2971,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141203",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-10-02 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "역곡동부센트레빌1단지2단지",
+   "reg": "2026-09-21",
+   "reg_dt": "2026-09-21 10:31:31",
+   "kapt": false,
+   "kapt_code": "A42010202",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 697,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "20260921101344251",
    "sys": "K-APT",
    "way": "최저 낙찰",
@@ -2079,7 +3006,11 @@
    "title": "재활용수거업체선정을위한입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921101344251",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A10025007",
+   "households": 1872,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "20260921100704468",
@@ -2096,7 +3027,11 @@
    "title": "재활용수거업체선정을위한입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921100704468",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A10025007",
+   "households": 1872,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "20260921094634213",
@@ -2113,7 +3048,11 @@
    "title": "재활용수거업체선정을위한입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260921094634213",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A10025007",
+   "households": 1872,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "x20260919142501_역곡동부센트레빌1단지2",
@@ -2133,6 +3072,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141190",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-09-30 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "역곡동부센트레빌1단지2단지",
+   "reg": "2026-09-19",
+   "reg_dt": "2026-09-19 14:25:01",
+   "kapt": false,
+   "kapt_code": "A42010202",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 697,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "x20260917203501_한빛마을7단지",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -2144,6 +3104,24 @@
    "reg": "2026-09-17",
    "reg_dt": "2026-09-17 20:35:01",
    "kapt": false,
+   "title": "긴급재활용품 수거업체 입찰 공고(2차)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141139",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 긴급재활용품 수거업체 입찰 공고(2차)",
+   "end": "2026-09-23 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-09-17",
+   "reg_dt": "2026-09-17 20:35:01",
+   "kapt": false,
+   "kapt_code": "",
    "title": "긴급재활용품 수거업체 입찰 공고(2차)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2164,7 +3142,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260917155246623",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40585008",
+   "households": 880,
+   "addr_sido": "인천광역시",
+   "addr_city": "남동구"
   },
   {
    "id": "20260917154139373",
@@ -2181,7 +3163,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260917154139373",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40585008",
+   "households": 880,
+   "addr_sido": "인천광역시",
+   "addr_city": "남동구"
   },
   {
    "id": "20260917133728896",
@@ -2198,7 +3184,11 @@
    "title": "재활용품 수거업체 선정 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260917133728896",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13611006",
+   "households": 1605,
+   "addr_sido": "서울특별시",
+   "addr_city": "성북구"
   },
   {
    "id": "x20260917142540_더샵일산퍼스트월드2단지",
@@ -2212,6 +3202,24 @@
    "reg": "2026-09-17",
    "reg_dt": "2026-09-17 14:25:40",
    "kapt": false,
+   "title": "재활용 수거업체 선정 입찰공고(재공고)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_141114",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용 수거업체 선정 입찰공고(재공고)",
+   "end": "2026-09-23 17:00",
+   "state": "낙찰",
+   "win_amt": 41566800.0,
+   "apt": "더샵일산퍼스트월드2단지",
+   "reg": "2026-09-17",
+   "reg_dt": "2026-09-17 14:25:40",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용 수거업체 선정 입찰공고(재공고)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2232,7 +3240,11 @@
    "title": "재활용품 수거업체 선정 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260917131333575",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13611006",
+   "households": 1605,
+   "addr_sido": "서울특별시",
+   "addr_city": "성북구"
   },
   {
    "id": "20260916143532614",
@@ -2249,7 +3261,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260916143532614",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40585008",
+   "households": 880,
+   "addr_sido": "인천광역시",
+   "addr_city": "남동구"
   },
   {
    "id": "20260916104749802",
@@ -2266,7 +3282,11 @@
    "title": "재활용품 수거 업체 선정 입찰",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260916104749802",
    "region": "수도권",
-   "city": "경기"
+   "city": "고양시",
+   "kapt_code": "A10025328",
+   "households": 890,
+   "addr_sido": "경기도",
+   "addr_city": "고양시"
   },
   {
    "id": "x20260916094728_호반써밋더프라임아파트",
@@ -2286,6 +3306,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141048",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역 업체선정 재입찰 공고",
+   "end": "2026-09-28 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "호반써밋더프라임아파트",
+   "reg": "2026-09-16",
+   "reg_dt": "2026-09-16 09:47:28",
+   "kapt": false,
+   "kapt_code": "A10023386",
+   "title": "재활용품 수거 용역 업체선정 재입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 826,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시",
+   "region": "수도권",
+   "city": "시흥시"
+  },
+  {
    "id": "x20260916094116_부천범박힐스테이트4단지",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -2303,6 +3344,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_141047",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업자 선정 입찰 재공고",
+   "end": "2026-10-02 17:00",
+   "state": "낙찰",
+   "win_amt": 36616800.0,
+   "apt": "부천범박힐스테이트4단지",
+   "reg": "2026-09-16",
+   "reg_dt": "2026-09-16 09:41:16",
+   "kapt": false,
+   "kapt_code": "A42280405",
+   "title": "재활용품 수거업자 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1387,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "20260915132306758",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2317,7 +3379,11 @@
    "title": "재활용품 수거 매각 처리 사업자 선정 입찰공고(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260915132306758",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15101504",
+   "households": 2810,
+   "addr_sido": "서울특별시",
+   "addr_city": "관악구"
   },
   {
    "id": "20260915093156958",
@@ -2334,7 +3400,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260915093156958",
    "region": "수도권",
-   "city": "경기"
+   "city": "의정부시",
+   "kapt_code": "A48084701",
+   "households": 494,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시"
   },
   {
    "id": "x20260914175843_광명센트럴아이파크",
@@ -2348,6 +3418,24 @@
    "reg": "2026-09-14",
    "reg_dt": "2026-09-14 17:58:43",
    "kapt": false,
+   "title": "재활용품 매각 사업자 선정",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140972",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[경기] 재활용품 매각 사업자 선정",
+   "end": "2026-09-21 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "광명센트럴아이파크",
+   "reg": "2026-09-14",
+   "reg_dt": "2026-09-14 17:58:43",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 매각 사업자 선정",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2371,6 +3459,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140943",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고 (긴급)",
+   "end": "2026-09-21 17:00",
+   "state": "낙찰",
+   "win_amt": 48842400.0,
+   "apt": "더샵일산퍼스트월드1단지",
+   "reg": "2026-09-14",
+   "reg_dt": "2026-09-14 09:32:04",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체 선정 공고 (긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "20260911181747693",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2385,7 +3491,11 @@
    "title": "재활용품 수거사업자 선정 (재공고)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260911181747693",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A41570101",
+   "households": 1074,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "x20260911175847_녹양주공1단지",
@@ -2405,6 +3515,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140931",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역업체 선정 입찰 공고",
+   "end": "2026-09-23 17:00",
+   "state": "낙찰",
+   "win_amt": 13384800.0,
+   "apt": "녹양주공1단지",
+   "reg": "2026-09-11",
+   "reg_dt": "2026-09-11 17:58:47",
+   "kapt": false,
+   "kapt_code": "A48012009",
+   "title": "재활용품 수거 용역업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 858,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시",
+   "region": "수도권",
+   "city": "의정부시"
+  },
+  {
    "id": "x20260911175843_녹양주공2단지",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -2422,6 +3553,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140932",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역업체 선정 입찰 공고",
+   "end": "2026-09-23 17:00",
+   "state": "낙찰",
+   "win_amt": 4914000.0,
+   "apt": "녹양주공2단지",
+   "reg": "2026-09-11",
+   "reg_dt": "2026-09-11 17:58:43",
+   "kapt": false,
+   "kapt_code": "A48090811",
+   "title": "재활용품 수거 용역업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 315,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시",
+   "region": "수도권",
+   "city": "의정부시"
+  },
+  {
    "id": "x20260911175418_한빛마을7단지",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -2433,6 +3585,24 @@
    "reg": "2026-09-11",
    "reg_dt": "2026-09-11 17:54:18",
    "kapt": false,
+   "title": "재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140930",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 입찰 공고",
+   "end": "2026-09-17 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-09-11",
+   "reg_dt": "2026-09-11 17:54:18",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2456,6 +3626,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140925",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 긴급 재활용품 수거업체 입찰 공고",
+   "end": "2026-09-17 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-09-11",
+   "reg_dt": "2026-09-11 17:13:49",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "긴급 재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "20260911150746791",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2470,7 +3658,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260911150746791",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10022378",
+   "households": 1324,
+   "addr_sido": "인천광역시",
+   "addr_city": "강화군"
   },
   {
    "id": "x20260911132717_고덕그라시움아파트",
@@ -2490,6 +3682,27 @@
    "city": "서울"
   },
   {
+   "id": "kg2b_140908",
+   "sys": "KG2B전자입찰",
+   "way": "최저 낙찰",
+   "title_raw": "[서울] 재활용품 수거(처리) 용역업체 선정 입찰",
+   "end": "2026-09-23 17:00",
+   "state": "낙찰",
+   "win_amt": 42000000.0,
+   "apt": "고덕 그라시움 아파트",
+   "reg": "2026-09-11",
+   "reg_dt": "2026-09-11 13:27:17",
+   "kapt": false,
+   "kapt_code": "A10025263",
+   "title": "재활용품 수거(처리) 용역업체 선정 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 4932,
+   "addr_sido": "서울특별시",
+   "addr_city": "강동구",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
    "id": "20260911125220234",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2504,7 +3717,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260911125220234",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023151",
+   "households": 2958,
+   "addr_sido": "인천광역시",
+   "addr_city": "미추홀구"
   },
   {
    "id": "20260911091409061",
@@ -2521,7 +3738,11 @@
    "title": "재활용품 매입업체 선정 입찰 공고(수정)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260911091409061",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023127",
+   "households": 2426,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구"
   },
   {
    "id": "20260911090545447",
@@ -2538,7 +3759,11 @@
    "title": "재활용품 매입업체 선정 입찰 공고(수정)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260911090545447",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023127",
+   "households": 2426,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구"
   },
   {
    "id": "x20260910165943_간석금호어울림아파트",
@@ -2558,6 +3783,27 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_140879",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거처리 사업자 선정 입찰공고",
+   "end": "2026-09-22 17:00",
+   "state": "낙찰",
+   "win_amt": 12477600.0,
+   "apt": "간석 금호어울림 아파트",
+   "reg": "2026-09-10",
+   "reg_dt": "2026-09-10 16:59:43",
+   "kapt": false,
+   "kapt_code": "A40571701",
+   "title": "재활용품 수거처리 사업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1733,
+   "addr_sido": "인천광역시",
+   "addr_city": "남동구",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20260910160857989",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2572,7 +3818,11 @@
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260910160857989",
    "region": "수도권",
-   "city": "경기"
+   "city": "의정부시",
+   "kapt_code": "A10026113",
+   "households": 992,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시"
   },
   {
    "id": "20260910155804341",
@@ -2589,7 +3839,11 @@
    "title": "재활용품 수거업체 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260910155804341",
    "region": "수도권",
-   "city": "경기"
+   "city": "안양시",
+   "kapt_code": "A43107007",
+   "households": 1996,
+   "addr_sido": "경기도",
+   "addr_city": "안양시"
   },
   {
    "id": "20260910152636540",
@@ -2606,7 +3860,11 @@
    "title": "재활용품 수거업체 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260910152636540",
    "region": "수도권",
-   "city": "경기"
+   "city": "안양시",
+   "kapt_code": "A43107007",
+   "households": 1996,
+   "addr_sido": "경기도",
+   "addr_city": "안양시"
   },
   {
    "id": "20260910113113022",
@@ -2623,7 +3881,11 @@
    "title": "재활용품 수거업체",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260910113113022",
    "region": "수도권",
-   "city": "경기"
+   "city": "시흥시",
+   "kapt_code": "A10024572",
+   "households": 839,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시"
   },
   {
    "id": "x20260910112210_한빛마을7단지",
@@ -2637,6 +3899,24 @@
    "reg": "2026-09-10",
    "reg_dt": "2026-09-10 11:22:10",
    "kapt": false,
+   "title": "긴급 재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140847",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 긴급 재활용품 수거업체 입찰 공고",
+   "end": "2026-09-16 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "한빛마을7단지",
+   "reg": "2026-09-10",
+   "reg_dt": "2026-09-10 11:22:10",
+   "kapt": false,
+   "kapt_code": "",
    "title": "긴급 재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2657,7 +3937,11 @@
    "title": "인천삼산단지 재활용품(폐의류제외) 수거 사업자선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909092224634",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40375202",
+   "households": 1972,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구"
   },
   {
    "id": "x20260909175946_옥길센트리뷰",
@@ -2677,6 +3961,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140830",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 및 판매 용역업체 입찰 선정 공고",
+   "end": "2026-09-15 17:00",
+   "state": "낙찰",
+   "win_amt": 24514800.0,
+   "apt": "옥길센트리뷰",
+   "reg": "2026-09-09",
+   "reg_dt": "2026-09-09 17:59:46",
+   "kapt": false,
+   "kapt_code": "A10026570",
+   "title": "재활용품 수거 및 판매 용역업체 입찰 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1318,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "20260909153610105",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2690,8 +3995,12 @@
    "kapt": true,
    "title": "재활용품수거 업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909153610105",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "화성시",
+   "kapt_code": "A10020548",
+   "households": 679,
+   "addr_sido": "경기도",
+   "addr_city": "화성시"
   },
   {
    "id": "20260909135910231",
@@ -2708,7 +4017,11 @@
    "title": "재활용품수거용역",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909135910231",
    "region": "수도권",
-   "city": "경기"
+   "city": "시흥시",
+   "kapt_code": "A10022462",
+   "households": 431,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시"
   },
   {
    "id": "20260909133353604",
@@ -2725,7 +4038,11 @@
    "title": "재활용품 수거 시업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909133353604",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023710",
+   "households": 1116,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구"
   },
   {
    "id": "20260909131658912",
@@ -2742,7 +4059,11 @@
    "title": "재활용품 수거업체선정 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909131658912",
    "region": "수도권",
-   "city": "경기"
+   "city": "성남시",
+   "kapt_code": "A10024631",
+   "households": 4089,
+   "addr_sido": "경기도",
+   "addr_city": "성남시"
   },
   {
    "id": "x20260909132648_성원상떼레이크뷰",
@@ -2762,6 +4083,27 @@
    "city": "경기"
   },
   {
+   "id": "A20260909132648902",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용수거용역 사업자 선정 입찰공고(재공고)",
+   "end": "2026-09-15 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "성원상떼레이크뷰",
+   "reg": "2026-09-09",
+   "reg_dt": "2026-09-09 13:26:48",
+   "kapt": false,
+   "kapt_code": "A44679604",
+   "title": "재활용수거용역 사업자 선정 입찰공고(재공고)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 345,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
+  {
    "id": "20260909110447416",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2775,8 +4117,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260909110447416",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10027921",
+   "households": 800,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "20260908140144821",
@@ -2793,7 +4139,11 @@
    "title": "재활용품 매각 사업자 선정 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260908140144821",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10023212",
+   "households": 1086,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "20260908135955652",
@@ -2810,7 +4160,11 @@
    "title": "재활용품수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260908135955652",
    "region": "수도권",
-   "city": "경기"
+   "city": "고양시",
+   "kapt_code": "A10024064",
+   "households": 1382,
+   "addr_sido": "경기도",
+   "addr_city": "고양시"
   },
   {
    "id": "20260908111720336",
@@ -2827,7 +4181,11 @@
    "title": "재활용수거 사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260908111720336",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10027898",
+   "households": 999,
+   "addr_sido": "인천광역시",
+   "addr_city": "연수구"
   },
   {
    "id": "20260908110112086",
@@ -2843,8 +4201,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260908110112086",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10027921",
+   "households": 800,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "x20260908101816_검단SKVIEW아파트",
@@ -2860,6 +4222,27 @@
    "kapt": false,
    "title": "재활용품 수거업체 선정 입찰",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "A20260908101816313",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰",
+   "win_amt": 14310000.0,
+   "apt": "검단 SK VIEW 아파트",
+   "reg": "2026-09-08",
+   "reg_dt": "2026-09-08 10:18:16",
+   "kapt": false,
+   "kapt_code": "A10026787",
+   "title": "재활용품 수거업체 선정 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 530,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구",
    "region": "수도권",
    "city": "인천"
   },
@@ -2881,6 +4264,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140723",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[경기] 재활용품 수거 사업자 선정 입찰 공고(2차)",
+   "end": "2026-09-21 17:00",
+   "state": "낙찰",
+   "win_amt": 57727800.0,
+   "apt": "풍무센트럴푸르지오",
+   "reg": "2026-09-08",
+   "reg_dt": "2026-09-08 09:56:10",
+   "kapt": false,
+   "kapt_code": "A10026165",
+   "title": "재활용품 수거 사업자 선정 입찰 공고(2차)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 2467,
+   "addr_sido": "경기도",
+   "addr_city": "김포시",
+   "region": "수도권",
+   "city": "김포시"
+  },
+  {
    "id": "20260907182820091",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2895,7 +4299,11 @@
    "title": "재활용품 수거사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260907182820091",
    "region": "수도권",
-   "city": "경기"
+   "city": "고양시",
+   "kapt_code": "A10027815",
+   "households": 1066,
+   "addr_sido": "경기도",
+   "addr_city": "고양시"
   },
   {
    "id": "20260907113458268",
@@ -2912,7 +4320,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260907113458268",
    "region": "수도권",
-   "city": "경기"
+   "city": "파주시",
+   "kapt_code": "A41390110",
+   "households": 650,
+   "addr_sido": "경기도",
+   "addr_city": "파주시"
   },
   {
    "id": "20260907104949859",
@@ -2929,7 +4341,11 @@
    "title": "재활용품 수거업체선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260907104949859",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13587603",
+   "households": 293,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "x20260904100707_검단우방아이유쉘",
@@ -2943,6 +4359,24 @@
    "reg": "2026-09-04",
    "reg_dt": "2026-09-04 10:07:07",
    "kapt": false,
+   "title": "재활용수거업체선정재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140612",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용수거업체선정재공고",
+   "end": "2026-09-16 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "검단우방아이유쉘",
+   "reg": "2026-09-04",
+   "reg_dt": "2026-09-04 10:07:07",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용수거업체선정재공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -2966,6 +4400,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140586",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업자 선정 입찰공고",
+   "end": "2026-09-14 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "부천범박힐스테이트4단지",
+   "reg": "2026-09-03",
+   "reg_dt": "2026-09-03 15:34:23",
+   "kapt": false,
+   "kapt_code": "A42280405",
+   "title": "재활용품 수거업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1387,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "20260903111958609",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -2980,7 +4435,11 @@
    "title": "재활용품 수거용역 업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260903111958609",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10023079",
+   "households": 1223,
+   "addr_sido": "서울특별시",
+   "addr_city": "은평구"
   },
   {
    "id": "x20260903105430_호반써밋더프라임아파트",
@@ -3000,6 +4459,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140554",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역업체 선정 입찰공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰무효",
+   "win_amt": null,
+   "apt": "호반써밋더프라임아파트",
+   "reg": "2026-09-03",
+   "reg_dt": "2026-09-03 10:54:30",
+   "kapt": false,
+   "kapt_code": "A10023386",
+   "title": "재활용품 수거 용역업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 826,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시",
+   "region": "수도권",
+   "city": "시흥시"
+  },
+  {
    "id": "20260902190813933",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3014,7 +4494,11 @@
    "title": "재활용품 수거 및 매각업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260902190813933",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15875101",
+   "households": 1882,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260902165309237",
@@ -3031,7 +4515,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260902165309237",
    "region": "수도권",
-   "city": "경기"
+   "city": "의정부시",
+   "kapt_code": "A48084701",
+   "households": 494,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시"
   },
   {
    "id": "x20260902134606_인천검단LH37단지",
@@ -3047,6 +4535,27 @@
    "kapt": false,
    "title": "재활용품 수거 사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140486",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거 사업자 선정 입찰 공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰",
+   "win_amt": 19186200.0,
+   "apt": "인천검단 LH37단지",
+   "reg": "2026-09-02",
+   "reg_dt": "2026-09-02 13:46:06",
+   "kapt": false,
+   "kapt_code": "A10020453",
+   "title": "재활용품 수거 사업자 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 855,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구",
    "region": "수도권",
    "city": "인천"
   },
@@ -3068,6 +4577,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140514",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-09-14 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "더샵일산퍼스트월드1단지",
+   "reg": "2026-09-02",
+   "reg_dt": "2026-09-02 13:40:51",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "20260902131939300",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3081,8 +4608,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260902131939300",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10023989",
+   "households": 1833,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "x20260902131905_제일풍경채계양위너스카이",
@@ -3096,6 +4627,24 @@
    "reg": "2026-09-02",
    "reg_dt": "2026-09-02 13:19:05",
    "kapt": false,
+   "title": "재활용품 수거 업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140511",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[인천] 재활용품 수거 업체 선정 입찰 공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰",
+   "win_amt": 10488000.0,
+   "apt": "제일풍경채계양위너스카이A블럭",
+   "reg": "2026-09-02",
+   "reg_dt": "2026-09-02 13:19:05",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거 업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3119,6 +4668,24 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140509",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용 수거업체 선정 입찰공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰무효",
+   "win_amt": null,
+   "apt": "더샵일산퍼스트월드2단지",
+   "reg": "2026-09-02",
+   "reg_dt": "2026-09-02 13:13:40",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
    "id": "20260902091716172",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3133,7 +4700,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260902091716172",
    "region": "수도권",
-   "city": "경기"
+   "city": "성남시",
+   "kapt_code": "A10024631",
+   "households": 4089,
+   "addr_sido": "경기도",
+   "addr_city": "성남시"
   },
   {
    "id": "20260901183653146",
@@ -3150,7 +4721,11 @@
    "title": "재활용품 수거업체 선정 긴급 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260901183653146",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10019964",
+   "households": 577,
+   "addr_sido": "서울특별시",
+   "addr_city": "강서구"
   },
   {
    "id": "x20260901140834_판교퍼스트힐푸르지오아파",
@@ -3170,6 +4745,27 @@
    "city": "경기"
   },
   {
+   "id": "A20260901140834151",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 매각 사업자선정",
+   "end": "2026-09-16 17:00",
+   "state": "낙찰",
+   "win_amt": 32726400.0,
+   "apt": "판교퍼스트힐푸르지오아파트",
+   "reg": "2026-09-01",
+   "reg_dt": "2026-09-01 14:08:34",
+   "kapt": false,
+   "kapt_code": "A10023326",
+   "title": "재활용품 매각 사업자선정",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 974,
+   "addr_sido": "경기도",
+   "addr_city": "성남시",
+   "region": "수도권",
+   "city": "성남시"
+  },
+  {
    "id": "20260901103602541",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3184,7 +4780,11 @@
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260901103602541",
    "region": "수도권",
-   "city": "경기"
+   "city": "용인시",
+   "kapt_code": "A44657504",
+   "households": 712,
+   "addr_sido": "경기도",
+   "addr_city": "용인시"
   },
   {
    "id": "x20260901104213_고덕그라시움아파트",
@@ -3204,6 +4804,27 @@
    "city": "서울"
   },
   {
+   "id": "kg2b_140416",
+   "sys": "KG2B전자입찰",
+   "way": "최저 낙찰",
+   "title_raw": "[서울] 재활용품 수거(처리) 용역업체 선정 입찰",
+   "end": "2026-09-14 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "고덕 그라시움 아파트",
+   "reg": "2026-09-01",
+   "reg_dt": "2026-09-01 10:42:13",
+   "kapt": false,
+   "kapt_code": "A10025263",
+   "title": "재활용품 수거(처리) 용역업체 선정 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 4932,
+   "addr_sido": "서울특별시",
+   "addr_city": "강동구",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
    "id": "20260901085728588",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3218,7 +4839,11 @@
    "title": "재활용품 수거업체 선정(재공고)",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260901085728588",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023081",
+   "households": 438,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구"
   },
   {
    "id": "x20260831171551_운정중앙역이지더원",
@@ -3232,6 +4857,24 @@
    "reg": "2026-08-31",
    "reg_dt": "2026-08-31 17:15:51",
    "kapt": false,
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140390",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰",
+   "win_amt": 3638400.0,
+   "apt": "운정중앙역 이지더원",
+   "reg": "2026-08-31",
+   "reg_dt": "2026-08-31 17:15:51",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3255,6 +4898,27 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_140385",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-09-14 17:00",
+   "state": "낙찰",
+   "win_amt": 6066000.0,
+   "apt": "송림휴먼시아1단지",
+   "reg": "2026-08-31",
+   "reg_dt": "2026-08-31 16:37:55",
+   "kapt": false,
+   "kapt_code": "A40172201",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1011,
+   "addr_sido": "인천광역시",
+   "addr_city": "제물포구",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20260831153547832",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3269,7 +4933,11 @@
    "title": "재활용품 수거사업자 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260831153547832",
    "region": "수도권",
-   "city": "경기"
+   "city": "김포시",
+   "kapt_code": "A41570101",
+   "households": 1074,
+   "addr_sido": "경기도",
+   "addr_city": "김포시"
   },
   {
    "id": "x20260831144035_강변역센트럴아이파크",
@@ -3289,6 +4957,24 @@
    "city": "서울"
   },
   {
+   "id": "kg2b_140378",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] 재활용품 처리업체 선정 입찰공고",
+   "end": "2026-09-07 17:00",
+   "state": "낙찰무효",
+   "win_amt": null,
+   "apt": "강변역센트럴아이파크",
+   "reg": "2026-08-31",
+   "reg_dt": "2026-08-31 14:40:35",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 처리업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
    "id": "20260831112930902",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3302,8 +4988,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260831112930902",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10023989",
+   "households": 1833,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "x20260828174608_동탄파크릭스A55BL아",
@@ -3323,6 +5013,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140351",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-09-08 17:00",
+   "state": "낙찰",
+   "win_amt": 12672000.0,
+   "apt": "동탄 파크릭스 A55BL 아파트",
+   "reg": "2026-08-28",
+   "reg_dt": "2026-08-28 17:46:08",
+   "kapt": false,
+   "kapt_code": "A10020518",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 660,
+   "addr_sido": "경기도",
+   "addr_city": "화성시",
+   "region": "중점",
+   "city": "화성시"
+  },
+  {
    "id": "x20260828162518_고덕그라시움아파트",
    "sys": "KG2B전자입찰",
    "way": "최저 낙찰",
@@ -3336,6 +5047,27 @@
    "kapt": false,
    "title": "재활용품 수거(처리) 용역업체 선정 입찰",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
+   "id": "kg2b_140342",
+   "sys": "KG2B전자입찰",
+   "way": "최저 낙찰",
+   "title_raw": "[서울] 재활용품 수거(처리) 용역업체 선정 입찰",
+   "end": "2026-09-09 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "고덕 그라시움 아파트",
+   "reg": "2026-08-28",
+   "reg_dt": "2026-08-28 16:25:18",
+   "kapt": false,
+   "kapt_code": "A10025263",
+   "title": "재활용품 수거(처리) 용역업체 선정 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 4932,
+   "addr_sido": "서울특별시",
+   "addr_city": "강동구",
    "region": "수도권",
    "city": "서울"
   },
@@ -3357,6 +5089,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140340",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업자 선정 입찰공고",
+   "end": "2026-09-08 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "부천범박힐스테이트4단지",
+   "reg": "2026-08-28",
+   "reg_dt": "2026-08-28 16:09:29",
+   "kapt": false,
+   "kapt_code": "A42280405",
+   "title": "재활용품 수거업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1387,
+   "addr_sido": "경기도",
+   "addr_city": "부천시",
+   "region": "수도권",
+   "city": "부천시"
+  },
+  {
    "id": "x20260828150858_e편한세상비전센터포레",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3368,6 +5121,24 @@
    "reg": "2026-08-28",
    "reg_dt": "2026-08-28 15:08:58",
    "kapt": false,
+   "title": "재활용품 수거업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140332",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰 공고",
+   "end": "2026-09-10 17:00",
+   "state": "낙찰",
+   "win_amt": 10843800.0,
+   "apt": "e편한세상 비전 센터포레",
+   "reg": "2026-08-28",
+   "reg_dt": "2026-08-28 15:08:58",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3388,7 +5159,11 @@
    "title": "재활용품 수거 매각 처리 사업자 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260828143014955",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15101504",
+   "households": 2810,
+   "addr_sido": "서울특별시",
+   "addr_city": "관악구"
   },
   {
    "id": "20260828123053611",
@@ -3405,7 +5180,11 @@
    "title": "재활용품 수거 용역 사업자선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260828123053611",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "20260828102957553",
@@ -3422,7 +5201,11 @@
    "title": "재활용품 수거 용역 사업자선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260828102957553",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A15884703",
+   "households": 2256,
+   "addr_sido": "서울특별시",
+   "addr_city": "양천구"
   },
   {
    "id": "x20260828105926_교문한가람",
@@ -3442,6 +5225,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140304",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 업체 선정 입찰 재공고",
+   "end": "2026-09-09 17:00",
+   "state": "낙찰",
+   "win_amt": 8971200.0,
+   "apt": "교문한가람",
+   "reg": "2026-08-28",
+   "reg_dt": "2026-08-28 10:59:26",
+   "kapt": false,
+   "kapt_code": "A47171712",
+   "title": "재활용품 수거 업체 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 712,
+   "addr_sido": "경기도",
+   "addr_city": "구리시",
+   "region": "수도권",
+   "city": "구리시"
+  },
+  {
    "id": "x20260827141650_중산마을8단지대우삼성",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3457,6 +5261,27 @@
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
    "city": "경기"
+  },
+  {
+   "id": "kg2b_140261",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용수거업체 선정",
+   "end": "2026-09-07 17:00",
+   "state": "낙찰",
+   "win_amt": 21340800.0,
+   "apt": "중산마을8단지대우삼성",
+   "reg": "2026-08-27",
+   "reg_dt": "2026-08-27 14:16:50",
+   "kapt": false,
+   "kapt_code": "A41072902",
+   "title": "재활용수거업체 선정",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 720,
+   "addr_sido": "경기도",
+   "addr_city": "고양시",
+   "region": "수도권",
+   "city": "고양시"
   },
   {
    "id": "x20260827133141_시흥배곧SKVIEW아파",
@@ -3476,6 +5301,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140253",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-09-08 17:00",
+   "state": "낙찰",
+   "win_amt": 23360400.0,
+   "apt": "시흥 배곧 SK VIEW 아파트",
+   "reg": "2026-08-27",
+   "reg_dt": "2026-08-27 13:31:41",
+   "kapt": false,
+   "kapt_code": "A10027950",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1443,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시",
+   "region": "수도권",
+   "city": "시흥시"
+  },
+  {
    "id": "20260827113329477",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3490,7 +5336,11 @@
    "title": "2026년 인천갈산2단지 재활용품 수거사업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260827113329477",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A40308002",
+   "households": 1170,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구"
   },
   {
    "id": "x20260827112602_성원상떼레이크뷰",
@@ -3510,6 +5360,27 @@
    "city": "경기"
   },
   {
+   "id": "A20260827112602129",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용수거용역 사업자 선정 입찰공고",
+   "end": "2026-09-07 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "성원상떼레이크뷰",
+   "reg": "2026-08-27",
+   "reg_dt": "2026-08-27 11:26:02",
+   "kapt": false,
+   "kapt_code": "A44679604",
+   "title": "재활용수거용역 사업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 345,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
+  {
    "id": "x20260827101735_신도림대림12차",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3523,6 +5394,27 @@
    "kapt": false,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
+   "id": "kg2b_140234",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-09-02 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "신도림대림1,2차",
+   "reg": "2026-08-27",
+   "reg_dt": "2026-08-27 10:17:35",
+   "kapt": false,
+   "kapt_code": "A15288814",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 2298,
+   "addr_sido": "서울특별시",
+   "addr_city": "구로구",
    "region": "수도권",
    "city": "서울"
   },
@@ -3541,7 +5433,11 @@
    "title": "재활용품 매각 사업자 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260827092304168",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10023212",
+   "households": 1086,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "x20260826204501_시흥배곧SKVIEW아파",
@@ -3561,6 +5457,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140221",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 공고",
+   "end": "2026-09-07 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "시흥 배곧 SK VIEW 아파트",
+   "reg": "2026-08-26",
+   "reg_dt": "2026-08-26 20:45:01",
+   "kapt": false,
+   "kapt_code": "A10027950",
+   "title": "재활용품 수거업체 선정 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1443,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시",
+   "region": "수도권",
+   "city": "시흥시"
+  },
+  {
    "id": "x20260826175806_강변역센트럴아이파크",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3572,6 +5489,24 @@
    "reg": "2026-08-26",
    "reg_dt": "2026-08-26 17:58:06",
    "kapt": false,
+   "title": "폐기물관리법에 따른 재활용 가능자원 처리업체 선정공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
+   "id": "kg2b_140214",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] 폐기물관리법에 따른 재활용 가능자원 처리업체 선정공고",
+   "end": "2026-09-01 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "강변역센트럴아이파크",
+   "reg": "2026-08-26",
+   "reg_dt": "2026-08-26 17:58:06",
+   "kapt": false,
+   "kapt_code": "",
    "title": "폐기물관리법에 따른 재활용 가능자원 처리업체 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3592,7 +5527,11 @@
    "title": "재활용품수거용역",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260826164654134",
    "region": "수도권",
-   "city": "경기"
+   "city": "시흥시",
+   "kapt_code": "A10022462",
+   "households": 431,
+   "addr_sido": "경기도",
+   "addr_city": "시흥시"
   },
   {
    "id": "20260826154240803",
@@ -3609,7 +5548,8 @@
    "title": "재활용품 처리사업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260826154240803",
    "region": "수도권",
-   "city": "경기"
+   "city": "경기",
+   "kapt_code": "A10020422"
   },
   {
    "id": "x20260826150739_회천중앙역대광로제비앙",
@@ -3623,6 +5563,24 @@
    "reg": "2026-08-26",
    "reg_dt": "2026-08-26 15:07:39",
    "kapt": false,
+   "title": "재활용품 처리업체 선정 입찰공고(긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140200",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 처리업체 선정 입찰공고(긴급)",
+   "end": "2026-09-03 17:00",
+   "state": "낙찰",
+   "win_amt": 16394400.0,
+   "apt": "회천중앙역 대광로제비앙",
+   "reg": "2026-08-26",
+   "reg_dt": "2026-08-26 15:07:39",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 처리업체 선정 입찰공고(긴급)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3646,6 +5604,27 @@
    "city": "경기"
   },
   {
+   "id": "A20260826143344950",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용수거용역 사업자 선정 입찰공고",
+   "end": "2026-09-07 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "성원상떼레이크뷰",
+   "reg": "2026-08-26",
+   "reg_dt": "2026-08-26 14:33:44",
+   "kapt": false,
+   "kapt_code": "A44679604",
+   "title": "재활용수거용역 사업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 345,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
+  {
    "id": "x20260826092411_평택지제역동문디이스트2",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3663,6 +5642,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140162",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 용역 업체 선정 입찰공고",
+   "end": "2026-09-09 17:00",
+   "state": "낙찰",
+   "win_amt": 20851320.0,
+   "apt": "평택지제역동문디이스트2단지",
+   "reg": "2026-08-26",
+   "reg_dt": "2026-08-26 09:24:11",
+   "kapt": false,
+   "kapt_code": "A10025311",
+   "title": "재활용품 수거 용역 업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1030,
+   "addr_sido": "경기도",
+   "addr_city": "평택시",
+   "region": "중점",
+   "city": "평택시"
+  },
+  {
    "id": "20260825173351791",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3677,7 +5677,11 @@
    "title": "재활용수거 사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260825173351791",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10027898",
+   "households": 999,
+   "addr_sido": "인천광역시",
+   "addr_city": "연수구"
   },
   {
    "id": "20260825151321156",
@@ -3694,7 +5698,11 @@
    "title": "재활용품 수거사업자 선정을 위한 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260825151321156",
    "region": "수도권",
-   "city": "경기"
+   "city": "고양시",
+   "kapt_code": "A10027815",
+   "households": 1066,
+   "addr_sido": "경기도",
+   "addr_city": "고양시"
   },
   {
    "id": "x20260825154409_청천영진아파트",
@@ -3714,6 +5722,27 @@
    "city": "인천"
   },
   {
+   "id": "A20260825154409886",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거 용역 사업자 선정 입찰공고",
+   "end": "2026-08-31 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "청천영진아파트",
+   "reg": "2026-08-25",
+   "reg_dt": "2026-08-25 15:44:09",
+   "kapt": false,
+   "kapt_code": "A40385301",
+   "title": "재활용품 수거 용역 사업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 196,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20260825145657934",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3727,8 +5756,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260825145657934",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10027921",
+   "households": 800,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "x20260825133000_검단SKVIEW아파트",
@@ -3744,6 +5777,27 @@
    "kapt": false,
    "title": "재활용품 수거업체 선정 입찰",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "A20260825132407242",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 선정 입찰",
+   "end": "2026-09-07 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "검단 SK VIEW 아파트",
+   "reg": "2026-08-25",
+   "reg_dt": "2026-08-25 13:30:00",
+   "kapt": false,
+   "kapt_code": "A10026787",
+   "title": "재활용품 수거업체 선정 입찰",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 530,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구",
    "region": "수도권",
    "city": "인천"
   },
@@ -3765,6 +5819,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140125",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-09-09 17:00",
+   "state": "낙찰",
+   "win_amt": 35298180.0,
+   "apt": "힐스테이트용인고진역1단지",
+   "reg": "2026-08-25",
+   "reg_dt": "2026-08-25 13:07:06",
+   "kapt": false,
+   "kapt_code": "A10022387",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 1345,
+   "addr_sido": "경기도",
+   "addr_city": "용인시",
+   "region": "수도권",
+   "city": "용인시"
+  },
+  {
    "id": "x20260825130401_검단호수공원역풍경채어바",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -3776,6 +5851,24 @@
    "reg": "2026-08-25",
    "reg_dt": "2026-08-25 13:04:01",
    "kapt": false,
+   "title": "재활용 처리업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140124",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용 처리업체 선정 입찰 공고",
+   "end": "2026-09-07 17:00",
+   "state": "낙찰",
+   "win_amt": 4392000.0,
+   "apt": "검단호수공원역풍경채어바니티",
+   "reg": "2026-08-25",
+   "reg_dt": "2026-08-25 13:04:01",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용 처리업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3796,7 +5889,11 @@
    "title": "재활용수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260825095059210",
    "region": "수도권",
-   "city": "경기"
+   "city": "이천시",
+   "kapt_code": "A10020231",
+   "households": 849,
+   "addr_sido": "경기도",
+   "addr_city": "이천시"
   },
   {
    "id": "x20260825093539_인천검단우미린파크뷰1단",
@@ -3810,6 +5907,24 @@
    "reg": "2026-08-25",
    "reg_dt": "2026-08-25 09:35:39",
    "kapt": false,
+   "title": "재활용품 수거용역 사업자 선정 입찰공고(재공고)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140097",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거용역 사업자 선정 입찰공고(재공고)",
+   "end": "2026-09-01 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "인천검단우미린파크뷰1단지",
+   "reg": "2026-08-25",
+   "reg_dt": "2026-08-25 09:35:39",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거용역 사업자 선정 입찰공고(재공고)",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -3830,7 +5945,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260825091216601",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020281",
+   "households": 49,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "20260824191401553",
@@ -3847,7 +5966,11 @@
    "title": "재활용품 수거업체 선정 긴급 재입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824191401553",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10019964",
+   "households": 577,
+   "addr_sido": "서울특별시",
+   "addr_city": "강서구"
   },
   {
    "id": "20260824172455921",
@@ -3864,7 +5987,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824172455921",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10020473",
+   "households": 566,
+   "addr_sido": "인천광역시",
+   "addr_city": "계양구"
   },
   {
    "id": "20260824171948720",
@@ -3881,7 +6008,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824171948720",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020281",
+   "households": 49,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "20260824151147894",
@@ -3898,7 +6029,11 @@
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824151147894",
    "region": "수도권",
-   "city": "경기"
+   "city": "의정부시",
+   "kapt_code": "A10026113",
+   "households": 992,
+   "addr_sido": "경기도",
+   "addr_city": "의정부시"
   },
   {
    "id": "20260824150303581",
@@ -3915,7 +6050,11 @@
    "title": "[긴급]재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824150303581",
    "region": "수도권",
-   "city": "경기"
+   "city": "성남시",
+   "kapt_code": "A46170401",
+   "households": 1015,
+   "addr_sido": "경기도",
+   "addr_city": "성남시"
   },
   {
    "id": "20260824105747776",
@@ -3932,7 +6071,11 @@
    "title": "재활용품 수거업체선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824105747776",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13587603",
+   "households": 293,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "20260824104516127",
@@ -3949,7 +6092,11 @@
    "title": "재활용품 수거업체선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824104516127",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13587603",
+   "households": 293,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "x20260824104340_풍무센트럴푸르지오",
@@ -3969,6 +6116,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_140060",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[경기] 재활용품 수거 사업자 선정 입찰 재공고",
+   "end": "2026-09-07 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "풍무센트럴푸르지오",
+   "reg": "2026-08-24",
+   "reg_dt": "2026-08-24 10:43:40",
+   "kapt": false,
+   "kapt_code": "A10026165",
+   "title": "재활용품 수거 사업자 선정 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 2467,
+   "addr_sido": "경기도",
+   "addr_city": "김포시",
+   "region": "수도권",
+   "city": "김포시"
+  },
+  {
    "id": "20260824091728844",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -3983,7 +6151,11 @@
    "title": "재활용품수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260824091728844",
    "region": "수도권",
-   "city": "경기"
+   "city": "부천시",
+   "kapt_code": "A42002001",
+   "households": 3090,
+   "addr_sido": "경기도",
+   "addr_city": "부천시"
   },
   {
    "id": "x20260821172329_송내역푸르지오센트비엔1",
@@ -3997,6 +6169,24 @@
    "reg": "2026-08-21",
    "reg_dt": "2026-08-21 17:23:29",
    "kapt": false,
+   "title": "재활용품 수거업체 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "경기"
+  },
+  {
+   "id": "kg2b_140041",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거업체 입찰 공고",
+   "end": "2026-08-27 17:10",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "송내역푸르지오센트비엔1단지",
+   "reg": "2026-08-21",
+   "reg_dt": "2026-08-21 17:23:29",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -4017,7 +6207,11 @@
    "title": "재활용품 수거 사업자 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260821171520605",
    "region": "수도권",
-   "city": "경기"
+   "city": "양주시",
+   "kapt_code": "A10026991",
+   "households": 1550,
+   "addr_sido": "경기도",
+   "addr_city": "양주시"
   },
   {
    "id": "20260821130557756",
@@ -4034,7 +6228,11 @@
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260821130557756",
    "region": "수도권",
-   "city": "경기"
+   "city": "구리시",
+   "kapt_code": "A47176404",
+   "households": 492,
+   "addr_sido": "경기도",
+   "addr_city": "구리시"
   },
   {
    "id": "x20260821154211_검단우방아이유쉘",
@@ -4048,6 +6246,24 @@
    "reg": "2026-08-21",
    "reg_dt": "2026-08-21 15:42:11",
    "kapt": false,
+   "title": "재활용수거업체선정공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "kg2b_140023",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용수거업체선정공고",
+   "end": "2026-09-03 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "검단우방아이유쉘",
+   "reg": "2026-08-21",
+   "reg_dt": "2026-08-21 15:42:11",
+   "kapt": false,
+   "kapt_code": "",
    "title": "재활용수거업체선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -4068,7 +6284,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260821153001819",
    "region": "수도권",
-   "city": "경기"
+   "city": "고양시",
+   "kapt_code": "A41273302",
+   "households": 1320,
+   "addr_sido": "경기도",
+   "addr_city": "고양시"
   },
   {
    "id": "20260821093721420",
@@ -4085,7 +6305,11 @@
    "title": "재활용품 수거업체 선정공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260821093721420",
    "region": "수도권",
-   "city": "경기"
+   "city": "용인시",
+   "kapt_code": "A44879317",
+   "households": 643,
+   "addr_sido": "경기도",
+   "addr_city": "용인시"
   },
   {
    "id": "20260820175041734",
@@ -4102,7 +6326,11 @@
    "title": "재활용품 수거업체 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260820175041734",
    "region": "수도권",
-   "city": "경기"
+   "city": "용인시",
+   "kapt_code": "A10025933",
+   "households": 1219,
+   "addr_sido": "경기도",
+   "addr_city": "용인시"
   },
   {
    "id": "20260820164635459",
@@ -4119,7 +6347,11 @@
    "title": "재활용 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260820164635459",
    "region": "수도권",
-   "city": "경기"
+   "city": "안산시",
+   "kapt_code": "A42590611",
+   "households": 656,
+   "addr_sido": "경기도",
+   "addr_city": "안산시"
   },
   {
    "id": "20260820132959687",
@@ -4136,7 +6368,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260820132959687",
    "region": "수도권",
-   "city": "경기"
+   "city": "구리시",
+   "kapt_code": "A47171004",
+   "households": 434,
+   "addr_sido": "경기도",
+   "addr_city": "구리시"
   },
   {
    "id": "x20260820110319_신도림대림12차",
@@ -4156,6 +6392,27 @@
    "city": "서울"
   },
   {
+   "id": "kg2b_139942",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] 재활용품 수거업체 선정 입찰공고(긴급)",
+   "end": "2026-08-26 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "신도림대림1,2차",
+   "reg": "2026-08-20",
+   "reg_dt": "2026-08-20 11:03:19",
+   "kapt": false,
+   "kapt_code": "A15288814",
+   "title": "재활용품 수거업체 선정 입찰공고(긴급)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 2298,
+   "addr_sido": "서울특별시",
+   "addr_city": "구로구",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
    "id": "20260820110251593",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -4170,7 +6427,11 @@
    "title": "재활용품 수거 사업자 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260820110251593",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10025985",
+   "households": 854,
+   "addr_sido": "서울특별시",
+   "addr_city": "광진구"
   },
   {
    "id": "20260820090059324",
@@ -4187,7 +6448,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260820090059324",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023081",
+   "households": 438,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구"
   },
   {
    "id": "x20260819164551_신도림대림12차",
@@ -4207,6 +6472,27 @@
    "city": "서울"
   },
   {
+   "id": "kg2b_139920",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] 재활용품 수거업체 선정 입찰공고",
+   "end": "2026-08-31 17:00",
+   "state": "취소",
+   "win_amt": null,
+   "apt": "신도림대림1,2차",
+   "reg": "2026-08-19",
+   "reg_dt": "2026-08-19 16:45:51",
+   "kapt": false,
+   "kapt_code": "A15288814",
+   "title": "재활용품 수거업체 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 2298,
+   "addr_sido": "서울특별시",
+   "addr_city": "구로구",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
    "id": "x20260819154844_엘리프미아역",
    "sys": "KG2B전자입찰",
    "way": "최고 낙찰",
@@ -4218,6 +6504,24 @@
    "reg": "2026-08-19",
    "reg_dt": "2026-08-19 15:48:44",
    "kapt": false,
+   "title": "[서울] [엘리프 미아역] 재활용품 수거업체 입찰 재공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "서울"
+  },
+  {
+   "id": "kg2b_139917",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[서울] [서울] [엘리프 미아역] 재활용품 수거업체 입찰 재공고",
+   "end": "2026-08-25 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "엘리프 미아역",
+   "reg": "2026-08-19",
+   "reg_dt": "2026-08-19 15:48:44",
+   "kapt": false,
+   "kapt_code": "",
    "title": "[서울] [엘리프 미아역] 재활용품 수거업체 입찰 재공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
    "region": "수도권",
@@ -4241,6 +6545,24 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_139916",
+   "sys": "KG2B전자입찰",
+   "way": "적격심사",
+   "title_raw": "[인천] 재활용품 수거 용역 사업자 선정 입찰 공고 (재공고)",
+   "end": "2026-08-25 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "시티오씨엘3단지아파트",
+   "reg": "2026-08-19",
+   "reg_dt": "2026-08-19 15:47:22",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거 용역 사업자 선정 입찰 공고 (재공고)",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20260819093315601",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -4254,8 +6576,12 @@
    "kapt": true,
    "title": "화성태안12단지 재활용품 수거사업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260819093315601",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "화성시",
+   "kapt_code": "A44597203",
+   "households": 1178,
+   "addr_sido": "경기도",
+   "addr_city": "화성시"
   },
   {
    "id": "20260819091732975",
@@ -4271,8 +6597,12 @@
    "kapt": true,
    "title": "화성태안8단지 재활용품 수거사업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260819091732975",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "화성시",
+   "kapt_code": "A44577912",
+   "households": 836,
+   "addr_sido": "경기도",
+   "addr_city": "화성시"
   },
   {
    "id": "20260818175655028",
@@ -4289,7 +6619,11 @@
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260818175655028",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020281",
+   "households": 49,
+   "addr_sido": "서울특별시",
+   "addr_city": "강남구"
   },
   {
    "id": "20260818172600184",
@@ -4306,7 +6640,11 @@
    "title": "재활용 수거업체 선정 긴급 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260818172600184",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10019964",
+   "households": 577,
+   "addr_sido": "서울특별시",
+   "addr_city": "강서구"
   },
   {
    "id": "20260818115441080",
@@ -4323,7 +6661,11 @@
    "title": "재활용품 수거업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260818115441080",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023151",
+   "households": 2958,
+   "addr_sido": "인천광역시",
+   "addr_city": "미추홀구"
   },
   {
    "id": "20260814160632793",
@@ -4339,8 +6681,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260814160632793",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "화성시",
+   "kapt_code": "A10020532",
+   "households": 616,
+   "addr_sido": "경기도",
+   "addr_city": "화성시"
   },
   {
    "id": "20260814141901658",
@@ -4357,7 +6703,11 @@
    "title": "재활용업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260814141901658",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A13985106",
+   "households": 1147,
+   "addr_sido": "서울특별시",
+   "addr_city": "노원구"
   },
   {
    "id": "20260814104656403",
@@ -4374,7 +6724,11 @@
    "title": "재활용품 매입 업체 선정 입찰 공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260814104656403",
    "region": "수도권",
-   "city": "인천"
+   "city": "인천",
+   "kapt_code": "A10023127",
+   "households": 2426,
+   "addr_sido": "인천광역시",
+   "addr_city": "검단구"
   },
   {
    "id": "20260814082523912",
@@ -4391,7 +6745,11 @@
    "title": "재활용",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260814082523912",
    "region": "수도권",
-   "city": "경기"
+   "city": "남양주시",
+   "kapt_code": "A47282206",
+   "households": 330,
+   "addr_sido": "경기도",
+   "addr_city": "남양주시"
   },
   {
    "id": "x20260813163109_운서역푸르지오더스카이2",
@@ -4411,6 +6769,24 @@
    "city": "인천"
   },
   {
+   "id": "kg2b_139780",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거업체 입찰 재공고[긴급]",
+   "end": "2026-08-19 17:00",
+   "state": "낙찰",
+   "win_amt": 9655800.0,
+   "apt": "운서역푸르지오더스카이2차",
+   "reg": "2026-08-13",
+   "reg_dt": "2026-08-13 16:31:09",
+   "kapt": false,
+   "kapt_code": "",
+   "title": "재활용품 수거업체 입찰 재공고[긴급]",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
    "id": "20260813143744470",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -4424,8 +6800,12 @@
    "kapt": true,
    "title": "재활용품 수거업체 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260813143744470",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "수원시",
+   "kapt_code": "A10023989",
+   "households": 1833,
+   "addr_sido": "경기도",
+   "addr_city": "수원시"
   },
   {
    "id": "20260813140034210",
@@ -4441,8 +6821,12 @@
    "kapt": true,
    "title": "재활용품 수거 업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260813140034210",
-   "region": "수도권",
-   "city": "경기"
+   "region": "중점",
+   "city": "평택시",
+   "kapt_code": "A10020488",
+   "households": 569,
+   "addr_sido": "경기도",
+   "addr_city": "평택시"
   },
   {
    "id": "x20260813133839_청천영진아파트",
@@ -4458,6 +6842,27 @@
    "kapt": false,
    "title": "재활용품 수거 용역 사업자 선정 입찰공고",
    "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "region": "수도권",
+   "city": "인천"
+  },
+  {
+   "id": "A20260813133839724",
+   "sys": "아파트장터 A2P",
+   "way": "최고 낙찰",
+   "title_raw": "[인천] 재활용품 수거 용역 사업자 선정 입찰공고",
+   "end": "2026-08-24 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "청천영진아파트",
+   "reg": "2026-08-13",
+   "reg_dt": "2026-08-13 13:38:39",
+   "kapt": false,
+   "kapt_code": "A40385301",
+   "title": "재활용품 수거 용역 사업자 선정 입찰공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 196,
+   "addr_sido": "인천광역시",
+   "addr_city": "부평구",
    "region": "수도권",
    "city": "인천"
   },
@@ -4479,6 +6884,27 @@
    "city": "경기"
   },
   {
+   "id": "kg2b_139749",
+   "sys": "KG2B전자입찰",
+   "way": "최고 낙찰",
+   "title_raw": "[경기] 재활용품 수거 업체 선정 입찰 공고",
+   "end": "2026-08-27 17:00",
+   "state": "유찰",
+   "win_amt": null,
+   "apt": "교문한가람",
+   "reg": "2026-08-13",
+   "reg_dt": "2026-08-13 10:34:39",
+   "kapt": false,
+   "kapt_code": "A47171712",
+   "title": "재활용품 수거 업체 선정 입찰 공고",
+   "url": "https://www.k-apt.go.kr/bid/bidList.do?type=3",
+   "households": 712,
+   "addr_sido": "경기도",
+   "addr_city": "구리시",
+   "region": "수도권",
+   "city": "구리시"
+  },
+  {
    "id": "20260813103235680",
    "sys": "K-APT",
    "way": "최고 낙찰",
@@ -4493,7 +6919,11 @@
    "title": "재활용품 수거업체 선정",
    "url": "https://www.k-apt.go.kr/bid/bidDetail.do?bidNum=20260813103235680",
    "region": "수도권",
-   "city": "서울"
+   "city": "서울",
+   "kapt_code": "A10020562",
+   "households": 827,
+   "addr_sido": "서울특별시",
+   "addr_city": "서대문구"
   },
   {
    "id": "20260812174410630",
