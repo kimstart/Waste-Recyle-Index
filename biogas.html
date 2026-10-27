@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>바이오가스 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261020b">
+<link rel="stylesheet" href="assets/board.css?v=20261027a">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>바이오가스 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | REC · TTF · 배출권(KAU·KCU·EUA) · 천연가스 도매요금 · 유럽 GO 경매 · 유기성폐자원 입찰 · 제도 · 뉴스</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 매일 자동 갱신</p>
     </div>
     <nav class="menu">
       <a href="plastic.html">‹ 폐플라스틱</a>
@@ -32,7 +32,7 @@
   </div>
   <div id="pastNote" class="pastnote"></div>
 
-  <h2>주요 지표</h2>
+  <h2 id="ind" data-nav="주요 지표" data-dot="도매요금|GO 경매|KCU|KAU|배출권|REC">주요 지표</h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
     <thead><tr><th>구분</th><th>지표</th><th>가격</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
@@ -52,7 +52,7 @@
   <h2>유럽 바이오메탄 vs 국내 도시가스 <small>원/㎥ 환산 비교 · 참고용 추정</small></h2>
   <div id="extra"></div>
 
-  <h2>수도권 유기성폐자원 입찰·용역·공사 <small id="bioUpd"></small></h2>
+  <h2 id="bio" data-nav="입찰·용역·공사" data-dot="유기성폐자원">수도권 유기성폐자원 입찰·용역·공사 <small id="bioUpd"></small></h2>
   <div class="ctl">
     <div class="rp-seg" id="bioScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
     <div class="rp-seg" id="bioPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
@@ -68,7 +68,7 @@
     공고명 아래 작은 글씨는 폐기물 종류와 공고 구분입니다. 추정가격은 부가세를 뺀 계약 예상 총액입니다. 처리 대행은 톤당 단가(만원/톤)로 보여줍니다 — 총액계약은 공고 첨부파일(과업지시서·공고문)의 예상 처리물량으로 낙찰금액을 나눈 값이고, 단가계약은 낙찰 단가 그대로입니다(1,000원 미만 단가는 kg·L당으로 보고 톤당으로 환산). 물량을 첨부파일에서 찾지 못한 건은 '물량 미확인'으로 표시하며, 실제 처리량은 계약 후 달라질 수 있습니다.
     급식·감량기·용기 구입, 연구·타당성 조사, 정수 슬러지 등은 제외했습니다. 같은 기관이 같은 이름으로 다시 낸 공고(재공고·긴급·취소 후 재공고)는 결과가 나온 한 건만 남기고, 취소공고는 숨깁니다. 출처: 조달청 나라장터(용역·공사 입찰공고·낙찰정보), 순환자원정보센터 전자입찰·수의견적.</div>
 
-  <h2>제도·규제 <small>바이오가스법 · 생산목표제 · REC · <span id="polUpd"></span></small></h2>
+  <h2 id="pol" data-nav="제도·규제" data-dot="제도|정책 동향">제도·규제 <small>바이오가스법 · 생산목표제 · REC · <span id="polUpd"></span></small></h2>
   <div id="polAlert"></div>
   <table class="cmp pol">
     <thead><tr><th class="h-m">구분</th><th>항목</th><th>내용</th><th>상태</th><th>시행</th><th class="h-m">출처</th></tr></thead>
@@ -76,7 +76,7 @@
   </table>
   <div class="note">공개 보도자료·법령 원문으로 확인한 내용을 정리했습니다. 출처 칸을 누르면 원문으로 이동합니다. 법령·고시가 개정되면 이 영역 위에 2주 동안 알림이 뜹니다. <span id="bklNote"></span></div>
 
-  <h2>바이오가스 뉴스<small id="newsUpd"></small></h2>
+  <h2 id="news" data-nav="뉴스">바이오가스 뉴스<small id="newsUpd"></small></h2>
   <div class="news2">
     <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
     <div><h3>해외<span>바이오에너지·가스 전문지 우선</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
@@ -134,6 +134,7 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js?v=20261026a"></script>
+<script src="assets/nav.js?v=20261027a" data-page="biogas"></script>
 <script src="assets/biogas_extra.js?v=20261019b"></script>
 <script src="assets/policy.js?v=20261020c" data-page="biogas" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts_biogas.json" data-state="data/policy_biogas.json" data-order="법·제도,생산목표제,이용·보급,REC·인센티브,탄소·수소,시설·지원,계획"></script>
 </body>

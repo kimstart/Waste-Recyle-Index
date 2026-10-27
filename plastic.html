@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>폐플라스틱 데일리 리포트</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/board.css?v=20261020b">
+<link rel="stylesheet" href="assets/board.css?v=20261027a">
 </head>
 <body>
 <header class="site-header">
   <div class="in">
     <div>
       <h1>폐플라스틱 데일리 리포트</h1>
-      <p class="sub">기준일: <b id="baseDate">-</b> | 수도권 재활용 단가 · 매각입찰 · 아파트 매각 · 대행 용역 · 제도 · 신재 시장 · 뉴스 · 해외</p>
+      <p class="sub">기준일: <b id="baseDate">-</b> | 매일 자동 갱신</p>
     </div>
     <nav class="menu">
       <a href="plastic.html" class="on">폐플라스틱</a>
@@ -32,7 +32,7 @@
   </div>
   <div id="pastNote" class="pastnote"></div>
 
-  <h2>수도권 재활용 가격 분석 <small>전월·전년 동월·12개월 범위·3개년 동월 · 자료 갱신 <span id="indUpdated">-</span></small></h2>
+  <h2 id="price" data-nav="가격 분석" data-dot="재활용 단가">수도권 재활용 가격 분석 <small>전월·전년 동월·12개월 범위·3개년 동월 · 자료 갱신 <span id="indUpdated">-</span></small></h2>
   <table class="cmp ana">
     <thead id="anaHead"></thead>
     <tbody id="anaBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
@@ -42,7 +42,7 @@
   <div class="rp-chart" id="seasonChart"></div>
   <div class="note">같은 품목의 연도별 월간 가격을 겹쳐 그려 계절적으로 오르내리는 시기를 비교합니다. 진한 선이 올해입니다. 마우스를 올리면 그 달의 연도별 값을 볼 수 있습니다.</div>
 
-  <h2>수도권 매각입찰 <small id="bidUpd"></small></h2>
+  <h2 id="bids" data-nav="매각입찰" data-dot="매각입찰">수도권 매각입찰 <small id="bidUpd"></small></h2>
   <div class="ctl">
     <div class="rp-seg" id="bidScope"><button type="button" data-v="focus" class="on">화성·수원·평택·오산</button><button type="button" data-v="cap">수도권 전체</button><button type="button" data-v="all">전국</button></div>
     <div class="rp-seg" id="bidPeriod"><button type="button" data-v="90">최근 3개월</button><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
@@ -58,7 +58,7 @@
   <div class="note">순환자원정보센터 전자입찰·수의견적(공공데이터포털 API)과 나라장터에 올라온 지자체·공공기관·업체의 플라스틱 관련 매각(최고가) 공고입니다. 공고명·공고기관·입찰가능지역으로 지역을 나눴습니다.
     낙찰 단가는 단가 입찰이면 낙찰 금액, 총액 입찰이면 낙찰 총액÷수량으로 계산했습니다. 예정가격을 공개하지 않는 공고가 많아 낙찰/예정가격 비율은 공개된 건만 계산합니다. 연간 단가계약이 많아 공고는 12~1월에 몰립니다.</div>
 
-  <h2>아파트 단지 재활용품 매각·수거 <small id="aptUpd"></small></h2>
+  <h2 id="apt" data-nav="아파트 매각" data-dot="아파트">아파트 단지 재활용품 매각·수거 <small id="aptUpd"></small></h2>
   <div class="ctl">
     <div class="rp-seg" id="aptScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
     <div class="rp-seg" id="aptPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
@@ -72,7 +72,7 @@
     K-APT 공동주택관리정보시스템의 '사업자 선정(경쟁입찰) 결과 공개' 목록을 하루 한 번 읽어 상태(낙찰·유찰·진행)와 낙찰금액을 보여주며, KG2B 등 민간 전자입찰 건도 함께 나옵니다.
     세대수와 주소(시·군·구)는 국토교통부 공동주택 기본정보(공공데이터포털)에서 단지코드로 가져오며, 낙찰금액은 대부분 1년치 총액(세대당 월 단가 × 세대수 × 12)이어서, 세대당 월 단가 = 낙찰금액 ÷ 세대수 ÷ 12로 계산합니다(낙찰 건의 약 90%가 정확히 12의 배수). 다년 계약 등 중앙값의 1/3~3배를 벗어나는 값은 요약 지표에서 뺍니다.</div>
 
-  <h2>수도권 선별·처리 대행 용역 <small id="svcUpd"></small></h2>
+  <h2 id="svc" data-nav="대행 용역" data-dot="대행 용역">수도권 선별·처리 대행 용역 <small id="svcUpd"></small></h2>
   <div class="ctl">
     <div class="rp-seg" id="svcScope"><button type="button" data-v="focus">화성·수원·평택·오산</button><button type="button" data-v="cap" class="on">수도권 전체</button></div>
     <div class="rp-seg" id="svcPeriod"><button type="button" data-v="365" class="on">최근 12개월</button><button type="button" data-v="1100">전체</button></div>
@@ -87,14 +87,14 @@
     선별장 입장에서는 수주 기회입니다. 추정가격은 부가세를 뺀 계약 예상 총액, 낙찰금액은 낙찰자의 투찰 금액입니다. 단가계약은 낙찰금액이 톤당 단가로 표시되며(추정가격의 1/500 미만인 경우 '단가계약'으로 표시), 단위는 공고문에서 확인이 필요합니다.
     유찰·재공고된 같은 용역은 여러 줄로 나올 수 있습니다. 연구·설계·장비 임차·건설·하수·음식물·사업장 폐기물 등 다른 용역은 제외했습니다. 출처: 조달청 나라장터(입찰공고·낙찰정보), 순환자원정보센터 전자입찰.</div>
 
-  <h2>제도·규제 <small>EPR · 재생원료 사용 의무 · <span id="polUpd"></span></small></h2>
+  <h2 id="pol" data-nav="제도·규제" data-dot="제도|정책 동향">제도·규제 <small>EPR · 재생원료 사용 의무 · <span id="polUpd"></span></small></h2>
   <div id="polAlert"></div>
   <table class="cmp pol">
     <thead><tr><th class="h-m">구분</th><th>항목</th><th>내용</th><th>상태</th><th>시행</th><th class="h-m">출처</th></tr></thead>
     <tbody id="polBody"><tr><td colspan="6" class="fl">불러오는 중...</td></tr></tbody>
   </table>
   <div class="note"><span id="bklNote"></span> 법령·고시가 개정되면 이 영역 위에 2주 동안 알림이 뜹니다.</div>
-  <h2>신재 시장·폐플라스틱 수출입 <small>참고 지표 · 재활용 단가와 비교하지 않음</small></h2>
+  <h2 id="mkt" data-nav="신재·수출입" data-dot="관세청|신재">신재 시장·폐플라스틱 수출입 <small>참고 지표 · 재활용 단가와 비교하지 않음</small></h2>
   <table class="ind">
     <colgroup><col class="c-cyc"><col class="c-nm"><col class="c-v"><col class="c-d"><col class="c-chg"><col class="c-why"></colgroup>
     <thead><tr><th>구분</th><th>지표</th><th>가격·물량</th><th>기준일</th><th>변동</th><th class="why">비고</th></tr></thead>
@@ -106,14 +106,14 @@
     폐플라스틱 수출입: 관세청 HS 3915(플라스틱 웨이스트·스크랩)의 월별 물량(톤), 단가는 금액÷중량입니다. 관세청 자료는 한두 달 늦게 공개됩니다.
   </div>
 
-  <h2>폐플라스틱 뉴스<small id="newsUpd"></small></h2>
+  <h2 id="news" data-nav="뉴스">폐플라스틱 뉴스<small id="newsUpd"></small></h2>
   <div class="news2">
     <div><h3>국내<span>구글 뉴스</span></h3><ol class="news" id="newsKo"><li class="fl">불러오는 중...</li></ol></div>
     <div><h3>해외<span>재활용·플라스틱 전문지</span></h3><ol class="news" id="newsEn"><li class="fl">불러오는 중...</li></ol></div>
   </div>
   <div class="note">같은 내용의 기사는 하나로 합쳐 보여줍니다. 해외 뉴스는 Plastics News, Recycling Today, Resource Recycling, Packaging Insights 등 전문지 기사만 모읍니다. 제목을 누르면 원문으로 이동합니다.</div>
 
-  <section class="cat">
+  <section class="cat" id="intl" data-nav="해외" data-dot="PRN|bvse|rPET">
     <div class="cat-head"><b>해외</b><span>의무화 시장 참고 — 영국 PRN · 유럽/아시아 rPET · 영국 포장세 · 독일 시황</span></div>
   <h2 class="sub">해외 참고 지표 <small>의무화 시장 참고 · 영국 PRN · 유럽/아시아 rPET</small></h2>
   <table class="ind">
@@ -221,6 +221,7 @@ window.BOARD = {
 };
 </script>
 <script src="assets/board.js?v=20261026a"></script>
+<script src="assets/nav.js?v=20261027a" data-page="plastic"></script>
 <script src="assets/apt.js?v=20261027c"></script>
 <script src="assets/rpet.js?v=20261019a"></script>
 <script src="assets/policy.js?v=20261020c" data-page="plastic" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts.json" data-state="data/policy.json" data-order="재생원료 의무,EPR,부담금·기타"></script>

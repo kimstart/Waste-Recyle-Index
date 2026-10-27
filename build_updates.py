@@ -85,7 +85,8 @@ def main():
     aids = sorted(x["id"] for x in apt.get("items", []))
     old_a = state.get("apt_ids")
     if not first and old_a is not None:
-        new = [x for x in apt.get("items", []) if x["id"] not in set(old_a)]
+        wk = (now_kst() - timedelta(days=7)).strftime("%Y-%m-%d")      # 지난 1년 채우기로 들어온 옛 공고는 '신규'로 세지 않음
+        new = [x for x in apt.get("items", []) if x["id"] not in set(old_a) and (x.get("reg") or "") >= wk and x.get("state") != "취소"]
         if new:
             ev("plastic", f"아파트 재활용품 매각·수거 공고 신규 {len(new)}건 — {new[0].get('apt', '')}" + (" 외" if len(new) > 1 else ""))
     state["apt_ids"] = aids

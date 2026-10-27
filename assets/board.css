@@ -4,6 +4,17 @@ html, body { background:#fff; }
 body { margin:0; font-family:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif; color:#1a1a1a; word-break:keep-all; }
 .wrap { max-width:1120px; margin:0 auto; padding:24px 16px 48px; }
 
+/* 섹션 바로가기 탭 */
+.secnav { position:sticky; top:var(--navTop, 0px); z-index:90; background:#fff; border-bottom:1px solid var(--line); box-shadow:0 2px 6px rgba(15,42,61,.06); }
+.secnav .in { max-width:1120px; margin:0 auto; padding:0 16px; display:flex; gap:2px; overflow-x:auto; scrollbar-width:none; }
+.secnav .in::-webkit-scrollbar { display:none; }
+.secnav a { position:relative; flex:0 0 auto; padding:11px 12px 9px; font-size:14px; font-weight:600; color:#475569; text-decoration:none; white-space:nowrap; border-bottom:3px solid transparent; }
+@media (hover:hover) { .secnav a:hover { color:var(--navy); background:var(--bg2); } }
+.secnav a.on { color:var(--navy); border-bottom-color:var(--accent); }
+.secnav a:focus-visible { outline:2px solid var(--navy2); outline-offset:-2px; }
+.secnav .dot { position:absolute; top:7px; right:3px; width:7px; height:7px; border-radius:50%; background:#e11d48; }
+[data-nav] { scroll-margin-top:var(--navOff, 120px); }
+@media print { .secnav { display:none; } }
 .site-header { position:sticky; top:0; z-index:100; background:var(--navy); color:#fff; box-shadow:0 2px 8px rgba(0,0,0,.18); }
 .site-header .in { max-width:1120px; margin:0 auto; padding:16px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
 .site-header h1 { margin:0; font-size:26px; font-weight:900; letter-spacing:-.02em; line-height:1.2; }
@@ -156,6 +167,7 @@ td.nm small.why-s, .ana svg.spk { display:block; margin:3px auto 0; }
 
 @media (max-width:760px) {
   .site-header { position:static; }
+  .secnav a { padding:10px 10px 8px; font-size:13px; } .secnav .in { padding:0 8px; }
   .site-header .in { padding:12px 14px; gap:10px; }
   .site-header h1 { font-size:21px; }
   .menu { width:100%; } .menu a { flex:1; min-width:0; height:38px; font-size:13px; }
