@@ -50,7 +50,8 @@
     history.replaceState(null, '', '#' + a.dataset.id);
   }));
   // #섹션 주소로 들어오면 표가 다 그려진 뒤 다시 맞춘다
-  if (location.hash && document.getElementById(location.hash.slice(1))) {
+  // ?hl= 공유 링크면 행 위치 맞추기는 mark.js가 한다(섹션 머리로 되돌리지 않음)
+  if (location.hash && document.getElementById(location.hash.slice(1)) && !new URLSearchParams(location.search).has('hl')) {
     const go = () => document.getElementById(location.hash.slice(1)).scrollIntoView({ block: 'start' });
     window.addEventListener('load', () => { go(); setTimeout(go, 1200); setTimeout(go, 3000); });
   }

@@ -75,8 +75,12 @@
         flashed = true;
         const navOff = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--navOff')) || 120;
         const go = () => window.scrollTo({ top: rows[0].getBoundingClientRect().top + window.scrollY - navOff - 40, behavior: 'auto' });
-        go(); setTimeout(go, 600); setTimeout(go, 1600);
-        rows.forEach(tr => { tr.classList.add('mk-flash'); setTimeout(() => tr.classList.remove('mk-flash'), 6000); });
+        // 위쪽 표·차트가 늦게 그려지며 화면이 밀리므로 몇 초간 다시 맞춘다. 사용자가 직접 스크롤하면 멈춘다
+        let stop = false;
+        const quit = () => { stop = true; };
+        ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(t => window.addEventListener(t, quit, { once: true, passive: true }));
+        [0, 300, 800, 1500, 2500, 3500, 5000].forEach(ms => setTimeout(() => { if (!stop) go(); }, ms));
+        rows.forEach(tr => { tr.classList.add('mk-flash'); setTimeout(() => tr.classList.remove('mk-flash'), 8000); });
       }
     }
   }
