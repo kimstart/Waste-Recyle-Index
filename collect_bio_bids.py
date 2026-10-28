@@ -132,7 +132,7 @@ def enrich(items, stop_at, want_qty=lambda b: b.get("type") == "처리 대행"):
             q, note = qty_from_docs(b["docs"], est)
             b["qty_checked"], b["qty_v"] = today, QTY_V
             b["qty_t"], b["qty_note"] = (q, note) if q else (None, "")
-                n_q += 1
+            n_q += bool(q)
         time.sleep(0.2)
     print(f">> [첨부 확인] 대상 {len(todo)}건 → 예상물량 확인 {n_q}건, 취소공고 {n_c}건")
 
