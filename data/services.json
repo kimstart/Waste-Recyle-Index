@@ -1,7 +1,52 @@
 {
- "updated": "2026-10-28 10:04",
+ "updated": "2026-10-28 15:14",
  "backfilled": true,
  "items": [
+  {
+   "id": "g2b:R26BK01791500",
+   "src": "나라장터",
+   "no": "R26BK01791500",
+   "ord": "000",
+   "title": "2027년 반입불가폐기물(폐합성수지류) 처리용역",
+   "org": "서울특별시 용산구",
+   "region": "수도권",
+   "city": "서울",
+   "type": "폐합성수지·재활용 처리",
+   "start": "2026-10-28",
+   "end": "2026-11-05",
+   "open": "2026-11-05",
+   "method": "일반경쟁",
+   "est": 792000000.0,
+   "budget": 792000000.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "과업지시서 및 특수조건(2027년 반입불가폐기물_폐합성수지류 처리용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01791500&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서[2027년 반입불가폐기물(폐합성수지류) 처리용역].hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01791500&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "서울특별시 용역계약 특수조건.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01791500&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문(최종).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01791500&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문(최종).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01791500&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01791500&bidPbancOrd=000",
+   "qty_checked": "2026-10-28",
+   "qty_t": 3000.0,
+   "qty_note": "공고문(최종).hwp: 역내용 : 용역설명서및과업지시서참조(예상처리물량 : 3,000톤) 다. 용역관련사"
+  },
   {
    "id": "g2b:R26BK01792837",
    "src": "나라장터",
@@ -19,7 +64,29 @@
    "est": 3054231000.0,
    "budget": 3054231000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01792837&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01792837&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_(긴급)2027~2028년 재활용품 선별시설 운영 및 잔재폐기물 처리 용역(협상).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792837&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문_(긴급)2027~2028년 재활용품 선별시설 운영 및 잔재폐기물 처리 용역(협상).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792837&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 및 단가계약 특수조건서 (수정).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792837&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서_수정.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01792837&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 40000.0,
+   "qty_note": "제안요청서_수정.hwpx: 처리단가 : 76,355원/톤 4. 예정물량 : 40,000톤 (20,000톤/"
   },
   {
    "id": "g2b:R26BK01786797",
@@ -37,8 +104,10 @@
    "method": "제한경쟁",
    "est": 3054231000.0,
    "budget": 3054231000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786797&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01786797&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": []
   },
   {
    "id": "g2b:R26BK01756208",
@@ -56,8 +125,10 @@
    "method": "제한경쟁",
    "est": 3859200000.0,
    "budget": 3859200000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01756208&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01756208&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": []
   },
   {
    "id": "g2b:R26BK01751591",
@@ -76,7 +147,26 @@
    "est": 36000000.0,
    "budget": 36000000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01751591&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01751591&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "110-2027년 노원구 재활용가능스티로폼 처리용역(연간단가).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01751591&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "110-2027년 노원구 재활용가능스티로폼 처리용역(연간단가).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01751591&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업내용서(2027년 노원구 재활용가능스티로폼 처리용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01751591&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-10-08",
+   "qty_checked": "2026-10-28",
+   "qty_t": 120.0,
+   "qty_note": "2. 과업내용서(2027년 노원구 재활용가능스티로폼 처리용역).hwpx: 6,000천원(부가가치세면세) 1) 예정물량 : 120톤/연 2) 처리단가"
   },
   {
    "id": "g2b:R26BK01665855",
@@ -99,7 +189,19 @@
    "win_amt": 19900000.0,
    "win_rate": null,
    "winner": "주식회사 자연수지",
-   "bidders": 1
+   "bidders": 1,
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "(필독)계약 및 대가 청구 관련 안내사항.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01665855&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "0. 수의계약 체결 제한여부 확인서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01665855&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01624867",
@@ -122,7 +224,19 @@
    "win_amt": 131951.0,
    "win_rate": 87.991,
    "winner": "주식회사 더엘",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026이천시생활자원회수센터 폐비닐 용역.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01624867&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026폐비닐처리용역 과업지시서.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01624867&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01557617",
@@ -145,7 +259,29 @@
    "win_amt": 87720000.0,
    "win_rate": 88.519,
    "winner": "엠엔테크(주) 화성선별장",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026년 하반기 용인시 재활용센터 미선별 재활용품 처리용역_입찰공고.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01557617&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 하반기 용인시 재활용센터 미선별 재활용품 처리용역_입찰공고.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01557617&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01557617&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "수량산출서.xls",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01557617&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3300.0,
+   "qty_note": "과업지시서.hwp: 기물의운반·처리(해체및상차포함) ▪ 예정물량 : 3,300,000kg 5. 과업기간 :"
   },
   {
    "id": "g2b:R26BK01548688",
@@ -168,7 +304,41 @@
    "win_amt": 457740000.0,
    "win_rate": 85.496,
    "winner": "리뉴에너지대원 주식회사",
-   "bidders": 61
+   "bidders": 61,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년 하반기 폐합성수지류 폐기물 처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "입찰공고문(2026년 하반기 폐합성수지류 폐기물 처리 용역).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "계약특수조건.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "근로자 권리보호 이행 서약서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "안전보건관리_준수_서약서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ],
+    [
+     "청렴계약이행서약서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01548688&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2000.0,
+   "qty_note": "용역설명서.hwpx: 방법 : 일반경쟁입찰(총액입찰) ◯ 위탁량 : 2,000톤 ◯ 용역내용 :"
   },
   {
    "id": "g2b:R26BK01448606",
@@ -191,7 +361,19 @@
    "win_amt": 1072000.0,
    "win_rate": 88.412,
    "winner": "(주)청송산업개발",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년 폐스티로폼 위탁처리용역(단가))(새로운공고).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01448606&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서 및 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01448606&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01446528",
@@ -214,7 +396,25 @@
    "win_amt": 426855000.0,
    "win_rate": 87.084,
    "winner": "선풍산업 주식회사",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(★)공고문_안산도시공사_용역-06호_2026년 재활용선별센터 혼합재활용 처리 용역.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446528&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서_2026년 안산시재활용선별센터 미선별 혼합재활용 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446528&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "(★)공고문_안산도시공사_용역-06호_2026년 재활용선별센터 혼합재활용 처리 용역.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446528&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3000.0,
+   "qty_note": "과업지시서_2026년 안산시재활용선별센터 미선별 혼합재활용 처리 용역.hwp: 26. 5. 1. ~ 12. 31. 처리물량총 3,000톤처리대상안산시일반주"
   },
   {
    "id": "g2b:R26BK01446127",
@@ -237,7 +437,37 @@
    "win_amt": 800712000.0,
    "win_rate": 85.635,
    "winner": "주식회사재운산업",
-   "bidders": 36
+   "bidders": 36,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분)](변환본).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문[2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분))(변환본).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급입찰사유서(2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분))(변환본).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급입찰사유서(2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01446127&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2000.0,
+   "qty_note": "과업지시서(2026년 이천시 생활폐기물(폐합성수지류 등) 위탁처리 용역(2차분)).hwp: 1일 80톤이상을운반하여야함다. 1차처리물량(2,000톤) : 상반기정기보"
   },
   {
    "id": "g2b:R26BK01413978",
@@ -256,7 +486,20 @@
    "est": 132000000.0,
    "budget": 145200000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01413978&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01413978&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년 폐스티로폼 위탁처리용역(단가)).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01413978&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서 및 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01413978&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-04-01",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01411052",
@@ -274,8 +517,17 @@
    "method": "제한경쟁",
    "est": 132000000.0,
    "budget": 145200000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01411052&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01411052&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [
+    [
+     "[취소 공고문] 2026년 폐스티로폼 위탁처리용역(단가) 제한경쟁입찰 취소 공고.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01411052&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-03-30",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01320494",
@@ -294,7 +546,48 @@
    "est": 38625000.0,
    "budget": 42487500.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01320494&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01320494&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "1. 입찰공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "1. 입찰공고문.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업내용서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "3. 입찰유의서, 계약일반조건(2024.04).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "4. 청렴계약이행을 위한 입찰특별유의서 및 특수조건.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "5. 서울특별시 용역계약 특수조건(서울특별시예규)(제00713호)(20121108).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ],
+    [
+     "6. 청렴계약이행서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+    ],
+    [
+     "7. 근로자권리보호이행서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03"
+    ],
+    [
+     "8. 서울시 일반용역 적격심사세부기준 개정안(2024.8.12.시행).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01320494&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-02-13",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01318769",
@@ -317,7 +610,19 @@
    "win_amt": 50846000.0,
    "win_rate": 88.905,
    "winner": "주식회사 태민환경",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "1. 공고문_2026년 생활폐기물(재활용 잔재물) 위탁처리 용역.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01318769&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업지시서_2026년 생활폐기물(재활용 잔재물) 위탁처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01318769&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01298505",
@@ -340,7 +645,15 @@
    "win_amt": 110000.0,
    "win_rate": 84.615,
    "winner": "명민산업(주)",
-   "bidders": 1
+   "bidders": 1,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "수의시담 제안 요청[2026~2027년 재활용품 민간 선별처리 대행 용역(단가,장기)].pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01298505&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01301221",
@@ -359,7 +672,40 @@
    "est": 38625000.0,
    "budget": 42487500.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01301221&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01301221&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "1. 입찰공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업내용서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "3. 입찰유의서, 계약일반조건(2024.04).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "4. 청렴계약이행을 위한 입찰특별유의서 및 특수조건.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "5. 서울특별시 용역계약 특수조건(서울특별시예규)(제00713호)(20121108).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "6. 청렴계약이행서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ],
+    [
+     "7. 근로자권리보호이행서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301221&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-02-05",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R26BK01262895",
@@ -382,7 +728,21 @@
    "win_amt": 142380.0,
    "win_rate": 86.909,
    "winner": "주식회사 주원",
-   "bidders": 21
+   "bidders": 21,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2026년 안성시 제1차 선별잔재 재활용품 위탁처리용역(단가계약)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01262895&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 안성시 1차 선별잔재 재활용품 위탁처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01262895&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 1455.0,
+   "qty_note": "과업지시서(2026년 안성시 1차 선별잔재 재활용품 위탁처리 용역).hwp: 업비 : 240,000,000원나. 예정물량 : 1,455톤 (예상물량으로변동"
   },
   {
    "id": "g2b:R26BK01262369",
@@ -400,8 +760,11 @@
    "method": "제한경쟁",
    "est": 150000.0,
    "budget": 240000000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01262369&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01262369&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2026-01-14"
   },
   {
    "id": "g2b:R26BK01261374",
@@ -419,8 +782,11 @@
    "method": "제한경쟁",
    "est": 150000.0,
    "budget": 165000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01261374&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01261374&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2026-01-14"
   },
   {
    "id": "g2b:R25BK01252239",
@@ -443,7 +809,9 @@
    "win_amt": 36580465500.0,
    "win_rate": 98.019,
    "winner": "(주)용인실업",
-   "bidders": 1
+   "bidders": 1,
+   "ntce_kind": "등록공고",
+   "docs": []
   },
   {
    "id": "g2b:R25BK01240672",
@@ -462,7 +830,20 @@
    "est": 2491272727.0,
    "budget": 2740400000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01240672&bidPbancOrd=002"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01240672&bidPbancOrd=002",
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "입찰공고문 (2026년 자원순환센터 폐합성수지류 위탁처리 용역)-수정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01240672&bidPbancOrd=002&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 자원순환센터 폐합성수지류 위탁처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01240672&bidPbancOrd=002&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2026-01-05",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01250586",
@@ -485,7 +866,9 @@
    "win_amt": 105300.0,
    "win_rate": 81.0,
    "winner": "(주)알엠",
-   "bidders": 1
+   "bidders": 1,
+   "ntce_kind": "등록공고",
+   "docs": []
   },
   {
    "id": "g2b:R25BK01246860",
@@ -504,7 +887,20 @@
    "est": 376454920.0,
    "budget": 376454920.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01246860&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01246860&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "★재공고문[2026년도 재활용가능자원 수집운반 대행용역(1구역)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01246860&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용가능자원 수집운반 대행 과업지시서(1구역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01246860&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-29",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01246538",
@@ -527,7 +923,15 @@
    "win_amt": 109880.0,
    "win_rate": 89.0,
    "winner": "(주)진미환경",
-   "bidders": 1
+   "bidders": 1,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "전자수의시담 일정 안내[2026년~2027년 남양주시 재활용품 선별처리 대행 용역(단가계약)](일자 변경).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01246538&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01245836",
@@ -546,7 +950,20 @@
    "est": 899730000.0,
    "budget": 899730000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01245836&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01245836&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "[공고문] 2026~2027년 재활용품 민간 선별처리 대행 용역(단가계약 장기계속계약)(재공고).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01245836&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임) 2026~2027년 재활용품 민간 선별처리 대행 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01245836&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-29",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01244673",
@@ -564,8 +981,11 @@
    "method": "수의계약",
    "est": 123460.0,
    "budget": 6321152000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01244673&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01244673&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-23"
   },
   {
    "id": "g2b:R25BK01244573",
@@ -588,7 +1008,21 @@
    "win_amt": 106031.0,
    "win_rate": 87.133,
    "winner": "제이원환경 주식회사",
-   "bidders": 13
+   "bidders": 13,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01244573&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01244573&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4000.0,
+   "qty_note": "과업지시서.hwp: 타운재활용잔재물민간위탁처리용역 2. 예정물량 : 4,000톤(예정) 3. 과업"
   },
   {
    "id": "g2b:R25BK01241501",
@@ -611,7 +1045,21 @@
    "win_amt": 143963.0,
    "win_rate": 78.004,
    "winner": "성림유화 주식회사",
-   "bidders": 19
+   "bidders": 19,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★용역 입찰공고[제2025 5693호]2026년 자원화시설 폐합성수지류 처리 용역.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01241501&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(폐합성수지류)_최종.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01241501&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 16500.0,
+   "qty_note": "과업지시서(폐합성수지류)_최종.hwp: 87,000원/톤(부가세포함) 4. 처리량 : 16,500톤 5. 과업기간 :"
   },
   {
    "id": "g2b:R25BK01240564",
@@ -630,7 +1078,20 @@
    "est": 769723490.0,
    "budget": 769723490.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01240564&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01240564&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "★재공고문[2026년도 재활용가능자원 수집운반 대행용역(2구역)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01240564&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용가능자원 수집운반 대행 과업지시서(2구역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01240564&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-26",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01230952",
@@ -648,8 +1109,11 @@
    "method": "일반경쟁",
    "est": 2805000000.0,
    "budget": 3085500000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01230952&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01230952&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-22"
   },
   {
    "id": "g2b:R25BK01239163",
@@ -668,7 +1132,16 @@
    "est": null,
    "budget": null,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01239163&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01239163&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026년_재활용품_처리_용역폐메트리스 외 2품목.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01239163&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-24",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01238855",
@@ -691,7 +1164,21 @@
    "win_amt": 1641689000.0,
    "win_rate": 78.039,
    "winner": "코어엔텍 주식회사",
-   "bidders": 63
+   "bidders": 63,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★[긴급]용역 전자입찰 공고문[(2권역)2026년 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238855&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "★과업지시서((2권역)2026년 구리시 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역_2권역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238855&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 8223.0,
+   "qty_note": "★과업지시서((2권역)2026년 구리시 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역_2권역).hwp: ,534,000원(부가세포함) 나. 처리량 : 8,223톤(예상물량) 다."
   },
   {
    "id": "g2b:R25BK01238156",
@@ -714,7 +1201,21 @@
    "win_amt": 179326.0,
    "win_rate": 87.633,
    "winner": "주식회사 더엘",
-   "bidders": 39
+   "bidders": 39,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[화성시 동부출장소 공고 제2025_495호]소각장 반입불가 폐기물(폐합성수지류) 처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238156&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(소각장 반입불가 폐기물(폐합성수지류)처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238156&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2300.0,
+   "qty_note": "과업지시서(소각장 반입불가 폐기물(폐합성수지류)처리용역).hwp: 폐기물(폐합성수지류) 처리용역 2. 처리량: 2,300톤 3. 과업기간:"
   },
   {
    "id": "g2b:R25BK01238130",
@@ -737,7 +1238,21 @@
    "win_amt": 1512170750.0,
    "win_rate": 78.034,
    "winner": "제로이엔텍주식회사",
-   "bidders": 62
+   "bidders": 62,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★[긴급]용역 전자입찰 공고문[(1권역)2026년 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238130&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "★과업지시서((1권역)2026년 구리시 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역_1권역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01238130&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 7500.0,
+   "qty_note": "★과업지시서((1권역)2026년 구리시 자원회수시설 반입초과 폐기물(폐합성수지) 처리 용역_1권역).hwp: ,000,000원(부가세포함) 나. 처리량 : 7,500톤(예상물량) 다."
   },
   {
    "id": "g2b:R25BK01237294",
@@ -760,7 +1275,21 @@
    "win_amt": 140487.0,
    "win_rate": 78.034,
    "winner": "코어엔텍 주식회사",
-   "bidders": 40
+   "bidders": 40,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "붙임1 공고문 (2026년도 생활폐기물(혼합폐합성수지류) 위탁처리(단가계약)) (251217 용역 입찰 3539).HWP",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01237294&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "붙임2 과업지시서 (2026년도 생활폐기물(혼합폐합성수지류) 위탁처리(단가계약)) (251217 용역 입찰 3539).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01237294&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6000.0,
+   "qty_note": "붙임2 과업지시서 (2026년도 생활폐기물(혼합폐합성수지류) 위탁처리(단가계약)) (251217 용역 입찰 3539).hwp: 무류등혼합폐합성수지류의운반및처리 - 사업량 : 6,000톤 (예상량) ※ 2"
   },
   {
    "id": "g2b:R25BK01237007",
@@ -779,7 +1308,22 @@
    "est": 1625000000.0,
    "budget": 1625000000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01237007&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01237007&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★용역 입찰공고[제2025 5622호]2026년 재활용품 처리용역(2권역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01237007&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 화성시 재활용품 처리용역(2권역) 과업지시서(안)_수정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01237007&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-23",
+   "qty_checked": "2026-10-28",
+   "qty_t": 12500.0,
+   "qty_note": "2026년 화성시 재활용품 처리용역(2권역) 과업지시서(안)_수정.hwp: 가치세법시행령」제35조제12호 4. 처리량 : 12,500톤 5. 과업기간 :"
   },
   {
    "id": "g2b:R25BK01236997",
@@ -802,7 +1346,25 @@
    "win_amt": 431846800.0,
    "win_rate": 86.82,
    "winner": "(주)거단산업",
-   "bidders": 30
+   "bidders": 30,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2026년 상반기 이천시 생활폐기물(폐합성수지류 등) 민간위탁 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(26년 상반기).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급입찰사유서(2026년 상반기 이천시 생활폐기물(폐합성수지류 등) 민간위탁 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236997&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3080.0,
+   "qty_note": "과업지시서(26년 상반기).hwp: 탁자는하등의이의를제기할수없음) 제4조위탁처리량가. 위탁처리량은 3,080톤으로한다. 1. 1"
   },
   {
    "id": "g2b:R25BK01236924",
@@ -825,7 +1387,21 @@
    "win_amt": 101900.0,
    "win_rate": 78.232,
    "winner": "엠엔테크(주) 화성선별장",
-   "bidders": 2
+   "bidders": 2,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★용역 입찰공고[제2025 5621호]2026년 재활용품 처리용역(1권역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236924&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 화성시 재활용품 처리용역(1권역) 과업지시서(안)_수정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236924&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 10500.0,
+   "qty_note": "2026년 화성시 재활용품 처리용역(1권역) 과업지시서(안)_수정.hwp: 가치세법시행령」제35조제12호 4. 처리량 : 10,500톤 5. 과업기간 :"
   },
   {
    "id": "g2b:R25BK01236106",
@@ -844,7 +1420,26 @@
    "est": 112320000.0,
    "budget": 112320000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01236106&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01236106&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "★공고문_광진구 2026년 폐스티로폼 처리 위탁 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236106&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "붙임3 과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236106&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "붙임6 긴급공고사유서.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236106&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-23",
+   "qty_checked": "2026-10-28",
+   "qty_t": 624.0,
+   "qty_note": "붙임3 과업지시서.hwpx: 된폐스티로폼및부수잔재폐기물처리 4. 예상물량: 총 624,000kg *연추정량으로상황"
   },
   {
    "id": "g2b:R25BK01234483",
@@ -862,8 +1457,11 @@
    "method": "일반경쟁",
    "est": 1080000000.0,
    "budget": 1080000000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01234483&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01234483&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-22"
   },
   {
    "id": "g2b:R25BK01233835",
@@ -882,7 +1480,28 @@
    "est": 37330821000.0,
    "budget": 37330821000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01233835&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01233835&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[공고문] 2026년~2028년 재활용가능자원 수집 운반 민간대행 용역.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233835&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년~2028년 재활용가능자원 수집운반 대행 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233835&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공설계내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233835&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "상생결제제도 안내자료(공고문첨부).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233835&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-24",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01233045",
@@ -905,7 +1524,25 @@
    "win_amt": 59286220.0,
    "win_rate": 88.374,
    "winner": "주식회사 플라스틱히어로",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026년 상반기 용인시 재활용센터 미선별 재활용품 처리용역_입찰공고.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233045&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233045&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "수량산출서.xls",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233045&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2250.0,
+   "qty_note": "과업지시서(2026년).hwp: 기물의운반·처리(해체및상차포함) ▪ 예정물량 : 2,250,000kg 5. 과업기간 :"
   },
   {
    "id": "g2b:R25BK01232544",
@@ -928,7 +1565,25 @@
    "win_amt": 1190422926.0,
    "win_rate": 78.559,
    "winner": "(주)거단산업",
-   "bidders": 66
+   "bidders": 66,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(긴급).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01232544&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업내용서_정정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01232544&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "설계내역서.xls",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01232544&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6930.0,
+   "qty_note": "과업내용서_정정.hwp: ~ 2026. 12. 31. 3. 예정물량 : 6,930톤 4. 예산액 :"
   },
   {
    "id": "g2b:R25BK01230971",
@@ -951,7 +1606,25 @@
    "win_amt": 256388.0,
    "win_rate": 86.753,
    "winner": "코어엔텍 주식회사",
-   "bidders": 22
+   "bidders": 22,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "1. 입찰공고문(재활용수집소폐기물처리).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230971&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업지시서(폐합성수지류위탁처리).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230971&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "3. 공내역서(폐합성수지류위탁처리).xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230971&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 1300.0,
+   "qty_note": "2. 과업지시서(폐합성수지류위탁처리).hwp: 물처리용역추정물량 氠瑢 구분폐기물종류예상발생량(톤) 처리방법비고김포시폐합성수지류 1,300톤소각처리압축+비압축"
   },
   {
    "id": "g2b:R25BK01227442",
@@ -974,7 +1647,19 @@
    "win_amt": 113230.0,
    "win_rate": 87.193,
    "winner": "주식회사 현대에코텍",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★공고문[2026년도 재활용가능자원 선별처리 대행용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01227442&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용가능자원 선별처리 대행 과업지시서(최종).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01227442&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01216691",
@@ -992,8 +1677,11 @@
    "method": "일반경쟁",
    "est": 1399803300.0,
    "budget": 1539783630.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216691&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216691&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-17"
   },
   {
    "id": "g2b:R25BK01230999",
@@ -1012,7 +1700,22 @@
    "est": 80000.0,
    "budget": 80000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01230999&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01230999&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "4-1. 공고문_01-용역-28호_2026년 재활용선별센터 필름류포장재(EPR) 처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230999&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "4. 과업지시서_2026년 필름류포장재(E.P.R) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230999&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-22",
+   "qty_checked": "2026-10-28",
+   "qty_t": 12000.0,
+   "qty_note": "4-1. 공고문_01-용역-28호_2026년 재활용선별센터 필름류포장재(EPR) 처리용역.hwp: : 금80,000원 (톤당단가이며, 예정물량은 12,000톤, 운반비·처리비포"
   },
   {
    "id": "g2b:R25BK01230261",
@@ -1035,7 +1738,25 @@
    "win_amt": 103009.0,
    "win_rate": 74.185,
    "winner": "주식회사 현대에코텍",
-   "bidders": 2
+   "bidders": 2,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문 [2026~2028년도 재활용품 선별처리 대행용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230261&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(수정안).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230261&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★필독★ '종이 없는 전자계약’ 계약서류 제출방법 안내.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230261&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 20778.63,
+   "qty_note": "과업지시서(수정안).hwp: ① 처리비 : 연간 2,916,468천원(추정물량 : 20,778.63톤/년) ② 톤"
   },
   {
    "id": "g2b:R25BK01229841",
@@ -1054,7 +1775,20 @@
    "est": 376454920.0,
    "budget": 376454920.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01229841&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01229841&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★공고문[2026년도 재활용가능자원 수집운반 대행용역(1구역)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01229841&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용가능자원 수집운반 대행 과업지시서(1구역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01229841&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-22",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01224207",
@@ -1072,8 +1806,11 @@
    "method": "제한경쟁",
    "est": 376454920.0,
    "budget": 376454920.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01224207&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01224207&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-18"
   },
   {
    "id": "g2b:R25BK01216553",
@@ -1091,8 +1828,11 @@
    "method": "제한경쟁",
    "est": 67500000.0,
    "budget": 67500000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216553&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216553&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-17"
   },
   {
    "id": "g2b:R25BK01225849",
@@ -1115,7 +1855,21 @@
    "win_amt": 131800.0,
    "win_rate": 87.769,
    "winner": "한국에코산업(주)",
-   "bidders": 11
+   "bidders": 11,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026이천시생활자원회수센터 폐비닐처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01225849&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026폐비닐처리용역 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01225849&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 300.0,
+   "qty_note": "2026폐비닐처리용역 과업지시서.hwp: 그목적이있다. 4. 과업내용 : 처리예상량약 300톤 5. 과업의기간"
   },
   {
    "id": "g2b:R25BK01225769",
@@ -1138,7 +1892,21 @@
    "win_amt": 787000.0,
    "win_rate": 88.576,
    "winner": "(주)청송산업개발",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026 폐스티로폼(난연성스티로폼 포함) 과업지시서_이천.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01225769&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026이천시생활자원회수센터 난연성폐스티로폼처리위탁공고.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01225769&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 224.0,
+   "qty_note": "2026 폐스티로폼(난연성스티로폼 포함) 과업지시서_이천.hwp: : 199,360,000원나. 예상과업량 : 224톤 (과업량은우리시사"
   },
   {
    "id": "g2b:R25BK01224695",
@@ -1161,7 +1929,21 @@
    "win_amt": 194310.0,
    "win_rate": 78.031,
    "winner": "부경산업(주)",
-   "bidders": 64
+   "bidders": 64,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2025년 고양시 적환장 일산서구 생활폐기물(폐합성수지) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224695&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 고양시 적환장 일산서구 생활폐기물(폐합성수지류) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224695&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4000.0,
+   "qty_note": "(과업지시서) 2026년 고양시 적환장 일산서구 생활폐기물(폐합성수지류) 처리 용역.hwp: 년 1월 1일 ∼ 12월 31일마. 과업량 : 4,000톤 ※ 추정량바. 계"
   },
   {
    "id": "g2b:R25BK01224689",
@@ -1184,7 +1966,21 @@
    "win_amt": 195364.0,
    "win_rate": 77.996,
    "winner": "비노텍(주)",
-   "bidders": 63
+   "bidders": 63,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2026년 고양시 적환장 일산동구 생활폐기물(폐합성수지류) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224689&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 고양시 적환장 일산동구 생활폐기물(폐합성수지류) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224689&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4000.0,
+   "qty_note": "(과업지시서) 2026년 고양시 적환장 일산동구 생활폐기물(폐합성수지류) 처리 용역.hwp: 년 1월 1일 ∼ 12월 31일마. 과업량 : 4,000톤 ※ 추정량바. 계"
   },
   {
    "id": "g2b:R25BK01224676",
@@ -1207,7 +2003,21 @@
    "win_amt": 193954.0,
    "win_rate": 78.023,
    "winner": "(주)바로텍",
-   "bidders": 64
+   "bidders": 64,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2025년 고양시 적환장 덕양구 생활폐기물(폐합성수지) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224676&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 고양시 적환장 덕양구 생활폐기물(폐합성수지류) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224676&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4000.0,
+   "qty_note": "(과업지시서) 2026년 고양시 적환장 덕양구 생활폐기물(폐합성수지류) 처리 용역.hwp: 년 1월 1일 ∼ 12월 31일마. 과업량 : 4,000톤 ※ 추정량바. 계"
   },
   {
    "id": "g2b:R25BK01224257",
@@ -1226,7 +2036,20 @@
    "est": 769723490.0,
    "budget": 769723490.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01224257&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01224257&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★공고문[2026년도 재활용가능자원 수집운반 대행용역(2구역)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224257&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용가능자원 수집운반 대행 과업지시서(2구역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01224257&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-18",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01223791",
@@ -1245,7 +2068,22 @@
    "est": 2340000000.0,
    "budget": 2340000000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01223791&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01223791&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223791&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 재활용품 선별업무 대행계약 과업지시서(안)(최종).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223791&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-17",
+   "qty_checked": "2026-10-28",
+   "qty_t": 18000.0,
+   "qty_note": "공고문.hwp: : 금2,340,000,000원 (처리예정량 : 18,000톤) 마. 기초금액:"
   },
   {
    "id": "g2b:R25BK01223275",
@@ -1264,7 +2102,26 @@
    "est": 112320000.0,
    "budget": 112320000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01223275&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01223275&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_광진구 2026년 폐스티로폼 처리 위탁 용역(수정2).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223275&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "붙임3 과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223275&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "붙임6 긴급공고사유서.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223275&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-17",
+   "qty_checked": "2026-10-28",
+   "qty_t": 624.0,
+   "qty_note": "붙임3 과업지시서.hwpx: 된폐스티로폼및부수잔재폐기물처리 4. 예상물량: 총 624,000kg *연추정량으로상황"
   },
   {
    "id": "g2b:R25BK01218128",
@@ -1287,7 +2144,27 @@
    "win_amt": 2141270183.0,
    "win_rate": 78.559,
    "winner": "세종산업자원(주)",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2026년 마포구 혼합재활용품 선별 및 잔재폐기물 처리 대행 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01218128&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급공고사유서(혼합재활용 선별 및 잔재폐기물 처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01218128&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서-2026 혼합재활용품 선별 및 잔재폐기물 처리대행 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01218128&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01218128&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01217152",
@@ -1310,7 +2187,25 @@
    "win_amt": 139397.0,
    "win_rate": 87.127,
    "winner": "제이원환경 주식회사",
-   "bidders": 24
+   "bidders": 24,
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "2026년 재활용 잔재물 위탁처리용역 (단가계약) 공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217152&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217152&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 재활용잔재물 위탁처리).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217152&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2497.5,
+   "qty_note": "과업지시서(2026년 재활용잔재물 위탁처리).hwp: 사업비: 399,600,000원나. 예정물량: 2,497.5톤(예상물량으로변동가"
   },
   {
    "id": "g2b:R25BK01216610",
@@ -1328,8 +2223,11 @@
    "method": "제한경쟁",
    "est": 2726310000.0,
    "budget": 2726310000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216610&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216610&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-15"
   },
   {
    "id": "g2b:R25BK01213665",
@@ -1352,7 +2250,21 @@
    "win_amt": 110347.0,
    "win_rate": 78.208,
    "winner": "주식회사 크린자원산업",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2026년 덕양구 재활용품 선별처리 용역(단가계약)최종.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213665&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 덕양구 재활용품 선별처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213665&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 10432.0,
+   "qty_note": "(공고문)2026년 덕양구 재활용품 선별처리 용역(단가계약)최종.hwp: 마. 계약금액은투찰금액×혼합재활용품예정물량(10,432톤)으로산정되며, 예"
   },
   {
    "id": "g2b:R25BK01213661",
@@ -1375,7 +2287,21 @@
    "win_amt": 130496.0,
    "win_rate": 89.124,
    "winner": "(주)푸를청",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2026년 일산동서구 재활용품 선별처리 용역(단가계약)최종.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213661&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 일산동서구 재활용품 선별처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213661&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 9005.0,
+   "qty_note": "(공고문)2026년 일산동서구 재활용품 선별처리 용역(단가계약)최종.hwp: 마. 계약금액은투찰금액×혼합재활용품예정물량(9,005톤)으로산정되며, 예"
   },
   {
    "id": "g2b:R25BK01213654",
@@ -1398,7 +2324,21 @@
    "win_amt": 263093000.0,
    "win_rate": 88.984,
    "winner": "(주)제리코",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(공고문)2026년 고양시 폐합성수지 필름류 포장재(폐비닐) 처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213654&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 고양시 폐합성수지 필름류 포장재(폐비닐) 처리용역_수정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213654&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 5061.0,
+   "qty_note": "(공고문)2026년 고양시 폐합성수지 필름류 포장재(폐비닐) 처리용역.hwp: 합성수지필름류포장재(폐비닐) 처리, 예정량 5,061톤 ※자세한사항은붙임"
   },
   {
    "id": "g2b:R25BK01217125",
@@ -1417,7 +2357,26 @@
    "est": 79200000.0,
    "budget": 79200000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01217125&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01217125&bidPbancOrd=000",
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "공고문[2026년 마포구 폐스티로폼 운반 및 재활용처리 대행 용역] - 재공고.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217125&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026 마포구 폐스티로폼 운반 및 재활용처리 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217125&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217125&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-15",
+   "qty_checked": "2026-10-28",
+   "qty_t": 276.0,
+   "qty_note": "2026 마포구 폐스티로폼 운반 및 재활용처리 과업지시서.hwp: 로폼운반및재활용처리(잉고트) 대행처리예상량 : 276,000kg 라. 대행수수료의"
   },
   {
    "id": "g2b:R25BK01216831",
@@ -1440,7 +2399,29 @@
    "win_amt": 827842343.0,
    "win_rate": 85.585,
    "winner": "주식회사 아시아에코",
-   "bidders": 11
+   "bidders": 11,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_2026년 종로구 폐합성수지류 등 폐기물 처리 용역(2025-200).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216831&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026 폐합성수지류 등).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216831&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급공고사유서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216831&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "계약심사(용역) 결과 - (2026년 종로구 폐합성수지류 등 폐기물 처리용역(연간단가)) (1).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216831&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 7000.0,
+   "qty_note": "공고문_2026년 종로구 폐합성수지류 등 폐기물 처리 용역(2025-200).hwpx: 용역내용 : 별첨과업지시서등참조다. 예상물량 : 7,000톤 ※ 발주기관의사정"
   },
   {
    "id": "g2b:R25BK01216130",
@@ -1459,7 +2440,22 @@
    "est": 39910000.0,
    "budget": 39910000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216130&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01216130&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "173-2026년 노원구 재활용가능스티로폼 처리용역(연간단가).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216130&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 용역설명서 및 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216130&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-17",
+   "qty_checked": "2026-10-28",
+   "qty_t": 130.0,
+   "qty_note": "2. 용역설명서 및 과업지시서.hwp: 업비 : 39,910,000원 3) 예정물량 : 130톤 /년 (실발생량에"
   },
   {
    "id": "g2b:R25BK01215997",
@@ -1482,7 +2478,25 @@
    "win_amt": 155000.0,
    "win_rate": null,
    "winner": "주식회사 성창환경",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026~2028년 강동구 생활폐기물 재활용 처리용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01215997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서(2026~2028년 강동구 생활폐기물 재활용 처리용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01215997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026~2028년 강동구 생활폐기물 재활용 처리용역) (최종본).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01215997&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 13500.0,
+   "qty_note": "과업지시서(2026~2028년 강동구 생활폐기물 재활용 처리용역) (최종본).hwpx: ~ 2028. 12. 31. 3. 처리물량: 13,500톤 ※ 처리물량은발주"
   },
   {
    "id": "g2b:R25BK01213495",
@@ -1501,7 +2515,22 @@
    "est": 142000000.0,
    "budget": 142000000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01213495&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01213495&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213495&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213495&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-16",
+   "qty_checked": "2026-10-28",
+   "qty_t": 1000.0,
+   "qty_note": "공고문.hwp: 독이행, 적격심사, 총액입찰 ※ 처리예상물량: 총1,000톤 (세부사항은과업지"
   },
   {
    "id": "g2b:R25BK01213208",
@@ -1524,7 +2553,25 @@
    "win_amt": 1656687924.0,
    "win_rate": 78.806,
    "winner": "명민산업(주)",
-   "bidders": 7
+   "bidders": 7,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026년 재활용폐기물 위탁처리 용역 과업지시서(최종).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213208&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★지방자치단체 입찰 및 계약집행기준.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213208&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "1.2026년동대문구재활용폐기물민간위탁처리용역-제2025-224호-일반입찰.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213208&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 16000.0,
+   "qty_note": "2026년 재활용폐기물 위탁처리 용역 과업지시서(최종).hwpx: 티로폼을포함한재활용폐기물일체) 3) 예상물량 : 16,000톤 4) 과업기간 :"
   },
   {
    "id": "g2b:R25BK01211673",
@@ -1547,7 +2594,19 @@
    "win_amt": 510520120.0,
    "win_rate": 85.513,
    "winner": "주식회사 이알지서비스",
-   "bidders": 25
+   "bidders": 25,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년도 반입불가 폐기물(폐합성수지) 처리용역 연간단가(3권역)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211673&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(3권역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211673&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01211651",
@@ -1570,7 +2629,25 @@
    "win_amt": 1033549182.0,
    "win_rate": 78.008,
    "winner": "(주)바로텍",
-   "bidders": 51
+   "bidders": 51,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(수정).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211651&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서(잔재쓰레기).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211651&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(잔재쓰레기).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211651&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6000.0,
+   "qty_note": "입찰공고문(수정).hwp: (낙찰하한율 77.995%) ※ 처리예상물량: 총 6,000톤(압축잔재물: 3,"
   },
   {
    "id": "g2b:R25BK01211100",
@@ -1593,7 +2670,19 @@
    "win_amt": 504240000.0,
    "win_rate": 85.565,
    "winner": "리뉴에너지대원 주식회사",
-   "bidders": 26
+   "bidders": 26,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년도 반입불가 폐기물(폐합성수지) 처리용역 연간단가(2권역)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211100&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2권역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01211100&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01210966",
@@ -1616,7 +2705,21 @@
    "win_amt": 292530.0,
    "win_rate": 87.689,
    "winner": "부경산업(주)",
-   "bidders": 16
+   "bidders": 16,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_폐합성수지류.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01210966&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서_폐합성수지류.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01210966&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 700.0,
+   "qty_note": "과업지시서_폐합성수지류.hwp: 폐기물처리용역추정수량 氠瑢 폐기물종류예상발생량(톤) 처리방법폐합성수지류 700톤소각처리 Ⅱ. 일반"
   },
   {
    "id": "g2b:R25BK01210635",
@@ -1639,7 +2742,21 @@
    "win_amt": 123842.0,
    "win_rate": 87.058,
    "winner": "대광에코텍 주식회사",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년 재활용협잡물 위탁처리용역(단가)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01210635&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(재활용협잡물)과업지시서(2026년).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01210635&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3000.0,
+   "qty_note": "(재활용협잡물)과업지시서(2026년).hwpx: 160 (양주시재활용선별장) 4. 과업물량 : 3,000톤 5. 기초단가 :"
   },
   {
    "id": "g2b:R25BK01209547",
@@ -1662,7 +2779,25 @@
    "win_amt": 170338.0,
    "win_rate": 78.297,
    "winner": "(주)유성엔텍",
-   "bidders": 50
+   "bidders": 50,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년 공공처리시설 반입 외 폐합성수지류 재활용 대행 운반 및 처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01209547&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 과업지시서(폐합성수지류 폐기물 재활용).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01209547&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "상생결제 안내문.zip",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01209547&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 13000.0,
+   "qty_note": "2026년 과업지시서(폐합성수지류 폐기물 재활용).hwp: 합성수지류재활용대행운반및처리용역나. 처리예정량: 13,000톤 (발주자의사정에따"
   },
   {
    "id": "g2b:R25BK01207924",
@@ -1680,8 +2815,11 @@
    "method": "일반경쟁",
    "est": 1320000000.0,
    "budget": 1320000000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01207924&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01207924&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-11"
   },
   {
    "id": "g2b:R25BK01208430",
@@ -1704,7 +2842,19 @@
    "win_amt": 511745000.0,
    "win_rate": 85.594,
    "winner": "(주) 애니테크",
-   "bidders": 27
+   "bidders": 27,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(2026년도 반입불가 폐기물(폐합성수지) 처리용역 연간단가(1권역)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208430&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(1권역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208430&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01208149",
@@ -1727,7 +2877,25 @@
    "win_amt": 1185555000.0,
    "win_rate": 78.051,
    "winner": "원탑기업(주)",
-   "bidders": 55
+   "bidders": 55,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208149&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208149&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208149&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6000.0,
+   "qty_note": "공고문.hwp: (낙찰하한율 77.995%) ※ 처리예상물량: 총6,000톤 ※ 면세대상인생활"
   },
   {
    "id": "g2b:R25BK01208114",
@@ -1750,7 +2918,25 @@
    "win_amt": 561882908.0,
    "win_rate": 85.563,
    "winner": "주식회사 비에이치에너지",
-   "bidders": 39
+   "bidders": 39,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208114&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서(혼합재활용품).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208114&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(혼합재활용품).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01208114&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3250.0,
+   "qty_note": "공고문.hwp: (낙찰하한율 85.495%) ※ 처리예상물량: 총 3,250톤 (운송비포함 -"
   },
   {
    "id": "g2b:R25BK01207088",
@@ -1773,7 +2959,25 @@
    "win_amt": 522825000.0,
    "win_rate": 88.092,
    "winner": "남일상사",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "재공고",
+   "docs": [
+    [
+     "재공고문 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01207088&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01207088&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01207088&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 5550.0,
+   "qty_note": "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp: 재활용품은대행업체소유로함바. 추정물량: 2026년도약 5,550톤/년 - 추정"
   },
   {
    "id": "g2b:R25BK01202205",
@@ -1792,7 +2996,20 @@
    "est": 2491272727.0,
    "budget": 2740400000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01202205&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01202205&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문 (2026년 자원순환센터 폐합성수지류 위탁처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202205&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 자원순환센터 폐합성수지류 위탁처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202205&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-15",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01204825",
@@ -1815,7 +3032,23 @@
    "win_amt": 852348540.0,
    "win_rate": 85.579,
    "winner": "주식회사 장원리싸이클",
-   "bidders": 8
+   "bidders": 8,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_2026년 종로구 재활용품 선별 및 잔재 처리 용역(2025-196).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204825&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급공고사유서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204825&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026 종로구 재활용품 선별 및 잔재처리 용역)v2.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204825&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01204391",
@@ -1834,7 +3067,26 @@
    "est": 1500000000.0,
    "budget": 1650000000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01204391&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01204391&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "서울특별시 송파구 생활폐기물 재활용 위탁 처리 용역 .hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204391&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204391&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204391&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-17",
+   "qty_checked": "2026-10-28",
+   "qty_t": 15000.0,
+   "qty_note": "과업지시서.hwp: ~ 2026. 12. 31. 3. 처리물량: 15,000톤 ※ 처리물량은발주"
   },
   {
    "id": "g2b:R25BK01202382",
@@ -1857,7 +3109,19 @@
    "win_amt": 109001.0,
    "win_rate": 83.093,
    "winner": "(주)영주자원",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(재활용가능자원 선별처리 대행 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202382&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(재활용가능자원 선별처리 대행용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202382&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01199048",
@@ -1880,7 +3144,21 @@
    "win_amt": 187420.0,
    "win_rate": 85.791,
    "winner": "리뉴에너지경인 주식회사",
-   "bidders": 11
+   "bidders": 11,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "4. 과업지시서_2026년 가연성 잔재폐기물 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199048&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2-1. 공고문_00_용역-29호_2026년 재활용선별센터 가연성잔재폐기물 처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199048&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4100.0,
+   "qty_note": "2-1. 공고문_00_용역-29호_2026년 재활용선별센터 가연성잔재폐기물 처리용역.hwp: 금220,000원 (톤당단가이며, 예정물량은 4,100톤, 운반비·처리비포"
   },
   {
    "id": "g2b:R25BK01198914",
@@ -1899,7 +3177,22 @@
    "est": 80000.0,
    "budget": 80000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01198914&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01198914&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "4. 과업지시서_2026년 필름류포장재(E.P.R) 처리 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198914&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "4-1. 공고문_00-용역-28호_2026년 재활용선별센터 필름류포장재(EPR) 처리용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198914&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-10",
+   "qty_checked": "2026-10-28",
+   "qty_t": 12000.0,
+   "qty_note": "4-1. 공고문_00-용역-28호_2026년 재활용선별센터 필름류포장재(EPR) 처리용역.hwp: : 금80,000원 (톤당단가이며, 예정물량은 12,000톤, 운반비·처리비포"
   },
   {
    "id": "g2b:R25BK01181133",
@@ -1917,8 +3210,11 @@
    "method": "일반경쟁",
    "est": 2612208182.0,
    "budget": 2873429000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01181133&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01181133&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-04"
   },
   {
    "id": "g2b:R25BK01199871",
@@ -1941,7 +3237,19 @@
    "win_amt": 84040000.0,
    "win_rate": 88.738,
    "winner": "일사천리환경",
-   "bidders": 2
+   "bidders": 2,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "견적제출안내공고_재활용품 거점수거시설 관리.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199871&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 재활용품 거점수거시설 관리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199871&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01199261",
@@ -1964,7 +3272,21 @@
    "win_amt": 41553.68,
    "win_rate": 88.488,
    "winner": "(주)대양이엔지",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "4. 과업지시서_2026년 불연성 잔재폐기물 운반 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199261&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "1-1. 공고문_00-용역-31호_2026년 재활용선별센터 불연성잔재폐기물 운반용역_견적공고.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01199261&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2100.0,
+   "qty_note": "4. 과업지시서_2026년 불연성 잔재폐기물 운반 용역.hwp: 다. 제4조(계약단가) 氠瑢 구분운반예정량단위계약단가총계약금액비고불연성잔재폐기물 2,100 ton 1. 본계약에따른"
   },
   {
    "id": "g2b:R25BK01198253",
@@ -1987,7 +3309,33 @@
    "win_amt": 1452528220.0,
    "win_rate": 78.003,
    "winner": "(주)동양환경",
-   "bidders": 36
+   "bidders": 36,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(폐합성수지).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198253&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2-1. 과업지시서(폐합성).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198253&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2-2. 계약특수조건(폐합성).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198253&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198253&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "용역계약특수조건(20250708).zip",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198253&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 8935.0,
+   "qty_note": "공고문(폐합성수지).hwp: 심사(낙찰하한율 77.995%) ※ 처리예정물량 : 연 8,935톤(744.6톤 ×"
   },
   {
    "id": "g2b:R25BK01197866",
@@ -2010,7 +3358,29 @@
    "win_amt": 259490.0,
    "win_rate": 87.767,
    "winner": "주식회사 그린스코",
-   "bidders": 12
+   "bidders": 12,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197866&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197866&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서[2026년 무단투기폐기물(폐합성수지 등) 연간 위탁처리]수정.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197866&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "단가계약서[2026년 무단투기폐기물(폐합성수지 등) 연간 위탁처리].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197866&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 740.0,
+   "qty_note": "공고문.hwp: 드시톤당단가로투찰하여야함. 氠瑢 구분예상물량톤당단가합계폐합성수지외그밖의폐기물 740톤 297,000원"
   },
   {
    "id": "g2b:R25BK01197119",
@@ -2029,7 +3399,26 @@
    "est": 79200000.0,
    "budget": 79200000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01197119&bidPbancOrd=001"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01197119&bidPbancOrd=001",
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "공고문[2026년 마포구 폐스티로폼 운반 및 재활용처리 대행 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197119&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026 마포구 폐스티로폼 운반 및 재활용처리 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197119&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서.xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01197119&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-09",
+   "qty_checked": "2026-10-28",
+   "qty_t": 276.0,
+   "qty_note": "2026 마포구 폐스티로폼 운반 및 재활용처리 과업지시서.hwp: 로폼운반및재활용처리(잉고트) 대행처리예상량 : 276,000kg 라. 대행수수료의"
   },
   {
    "id": "g2b:R25BK01196848",
@@ -2052,7 +3441,21 @@
    "win_amt": 171400.0,
    "win_rate": 75.405,
    "winner": "주식회사 에너지세종",
-   "bidders": 11
+   "bidders": 11,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2026~2028년 폐합성수지(반입불가폐기물) 처리 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196848&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서[2026~2028년 폐합성수지(반입불가폐기물) 처리 용역].hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196848&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 31500.0,
+   "qty_note": "공고문[2026~2028년 폐합성수지(반입불가폐기물) 처리 용역].hwp: . 용역내용: 과업지시서참조라. 발주예정물량: 31,500톤(10,500톤×3"
   },
   {
    "id": "g2b:R25BK01191984",
@@ -2070,8 +3473,11 @@
    "method": "수의계약",
    "est": 79200000.0,
    "budget": 79200000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01191984&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01191984&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-05"
   },
   {
    "id": "g2b:R25BK01191391",
@@ -2090,7 +3496,20 @@
    "est": 899730000.0,
    "budget": 899730000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01191391&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01191391&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[공고문] 2026~2027년 재활용품 민간 선별처리 대행 용역(단가계약 장기계속계약)(최종)(수정).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191391&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임) 2026~2027년 재활용품 민간 선별처리 대행 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191391&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-08",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01185465",
@@ -2108,8 +3527,11 @@
    "method": "제한경쟁",
    "est": 125454545.0,
    "budget": 138000000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01185465&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01185465&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-12-04"
   },
   {
    "id": "g2b:R25BK01194402",
@@ -2128,7 +3550,22 @@
    "est": 1064712000.0,
    "budget": 1064712000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01194402&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01194402&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(폐합성수지류2).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01194402&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서_중랑구 폐합성수지류 등 폐기물 위탁처리 용역 2(수정).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01194402&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-09",
+   "qty_checked": "2026-10-28",
+   "qty_t": 4360.0,
+   "qty_note": "과업지시서_중랑구 폐합성수지류 등 폐기물 위탁처리 용역 2(수정).hwp: 성수지류등폐기물위탁처리용역 2 나. 처리량: 4,360톤(발주자의사정에따라"
   },
   {
    "id": "g2b:R25BK01192997",
@@ -2147,7 +3584,22 @@
    "est": 683760000.0,
    "budget": 683760000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01192997&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01192997&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(폐합성수지류1).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01192997&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서_중랑구 폐합성수지류 등 폐기물 위탁처리 용역 1.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01192997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-09",
+   "qty_checked": "2026-10-28",
+   "qty_t": 2800.0,
+   "qty_note": "과업지시서_중랑구 폐합성수지류 등 폐기물 위탁처리 용역 1.hwpx: 성수지류등폐기물위탁처리용역 1 나. 처리량: 2,800톤(발주자의사정에따라"
   },
   {
    "id": "g2b:R25BK01191496",
@@ -2170,7 +3622,21 @@
    "win_amt": 256357.0,
    "win_rate": 86.758,
    "winner": "주식회사 더엘",
-   "bidders": 37
+   "bidders": 37,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(안).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191496&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서[2026년 동두천시 재활용품폐기물 잔재물 민간위탁처리 용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191496&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 1200.0,
+   "qty_note": "과업지시서[2026년 동두천시 재활용품폐기물 잔재물 민간위탁처리 용역].hwp: ※ 상차비제외(발주자가상차) 라. 처리량 : 1,200톤(처리량은변동될수있"
   },
   {
    "id": "g2b:R25BK01191398",
@@ -2193,7 +3659,21 @@
    "win_amt": 227590.0,
    "win_rate": 87.903,
    "winner": "(주)청송산업개발",
-   "bidders": 15
+   "bidders": 15,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "과업지시서(2026년 폐합성수지 등 가연성폐기물 처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191398&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문(안).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01191398&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 750.0,
+   "qty_note": "과업지시서(2026년 폐합성수지 등 가연성폐기물 처리용역).hwp: 목적으로한다. 4. 용역개요가. 처리예상량 : 750ton 나. 용역기간 :"
   },
   {
    "id": "g2b:R25BK01183865",
@@ -2216,7 +3696,21 @@
    "win_amt": 110950.0,
    "win_rate": 88.224,
    "winner": "정우리사이클링(주)",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "수의견적 제출 변경공고문(2026년 하남시 환경기초시설 폐합성수지(비닐잔재물) 처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183865&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서[2026년 하남시 환경기초시설 폐합성수지(비닐잔재물) 처리용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183865&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 250.0,
+   "qty_note": "과업지시서[2026년 하남시 환경기초시설 폐합성수지(비닐잔재물) 처리용역].hwp: 1. ~ 2026.12.31. 라. 예정물량 : 250톤마. 용역내용 1)"
   },
   {
    "id": "g2b:R25BK01187472",
@@ -2235,7 +3729,34 @@
    "est": 6321152000.0,
    "budget": 6321152000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01187472&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01187472&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01187472&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(과업지시서) 2026년 ~ 2027년 재활용품 선별처리 대행 용역.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01187472&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서(2026년~2027년 재활용품 선별처리 대행용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01187472&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서 제출서류(서식).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01187472&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급입찰사유서[2026년~2027년 재활용품 선별처리 대행용역].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01187472&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-18",
+   "qty_checked": "2026-10-28",
+   "qty_t": 51200.0,
+   "qty_note": "제안요청서(2026년~2027년 재활용품 선별처리 대행용역).hwp: 7. 12. 31.(12개월) 다. 사업량 : 총51,200톤 (25,600톤/"
   },
   {
    "id": "g2b:R25BK01184222",
@@ -2254,7 +3775,24 @@
    "est": 112700000.0,
    "budget": 112700000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01184222&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01184222&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년도 자원순환센터 대형(혼합)플라스틱 위탁처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184222&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년도 자원순환센터 대형(혼합)플라스틱 위탁처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184222&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서(2026년도 자원순환센터 대형(혼합)플라스틱 위탁처리용역).xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184222&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-08",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01185316",
@@ -2277,7 +3815,25 @@
    "win_amt": 725762872.0,
    "win_rate": 86.154,
    "winner": "주식회사 비에이치에너지",
-   "bidders": 14
+   "bidders": 14,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "159-2026 노원구 재활용가능폐기물 처리용역(연간단가).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01185316&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서 및 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01185316&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "Summary_Notice.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01185316&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6300.0,
+   "qty_note": "용역설명서 및 과업지시서.hwp: 품(kg) × 40% × 20원라. 예정물량 : 6,300톤/년 (실발생량에따"
   },
   {
    "id": "g2b:R25BK01184231",
@@ -2300,7 +3856,29 @@
    "win_amt": 424575.0,
    "win_rate": 86.938,
    "winner": "(주)알엠",
-   "bidders": 5
+   "bidders": 5,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년 재활용품 선별 대행 처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184231&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "특수조건(2026년 재활용품 선별 대행처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184231&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서(2026년 재활용품 선별 대행 처리용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184231&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "상생결제 안내문.zip",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01184231&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 9511.88,
+   "qty_note": "과업지시서(2026년 재활용품 선별 대행 처리용역).hwp: 에의거적정처리함을목적으로한다. 다. 위탁량(연간): 9,511.88톤 1) 공동주택외:"
   },
   {
    "id": "g2b:R25BK01183709",
@@ -2323,7 +3901,25 @@
    "win_amt": 113880.0,
    "win_rate": 86.926,
    "winner": "주식회사 현대에코텍",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★공고문(2026년 재활용가능자원 선별 대행용역(영종)_최종.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183709&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "★과업지시서[2026년 재활용가능자원 선별 대행용역-영종].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183709&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★안전보건수준평가표 및 안전관리계획서 등.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183709&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3145.97,
+   "qty_note": "★공고문(2026년 재활용가능자원 선별 대행용역(영종)_최종.hwpx: . 1. 1. ~ 12. 31. ○ 예정물량 : 재활용가능폐기물 3,145.97톤 (실제배출량에따라"
   },
   {
    "id": "g2b:R25BK01183586",
@@ -2346,7 +3942,25 @@
    "win_amt": 112679.0,
    "win_rate": 87.184,
    "winner": "명민산업(주)",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★공고문(2026년 재활용가능자원 선별 대행용역(원도심)_최종.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183586&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "★과업지시서(2026년 재활용가능자원 선별처리 대행 용역_원도심).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183586&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★안전보건수준평가표 및 안전관리계획서 등.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01183586&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 1642.42,
+   "qty_note": "★공고문(2026년 재활용가능자원 선별 대행용역(원도심)_최종.hwpx: . 1. 1. ~ 12. 31. ○ 예정물량 : 재활용가능폐기물 1,642.42톤 (실제배출량에따라"
   },
   {
    "id": "g2b:R25BK01182976",
@@ -2369,7 +3983,25 @@
    "win_amt": 1633226700.0,
    "win_rate": 78.084,
    "winner": "(주)거단산업",
-   "bidders": 39
+   "bidders": 39,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "서초구공고 제2025-78호.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01182976&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01182976&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "Summary_Notice.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01182976&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 10500.0,
+   "qty_note": "과업지시서.hwpx: 폐비닐및폐필름류포장재위탁처리용역나. 처리량 : 10,500톤 (발주자의사정에따"
   },
   {
    "id": "g2b:R25BK01180281",
@@ -2387,8 +4019,17 @@
    "method": "일반경쟁",
    "est": 408975000.0,
    "budget": 408975000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01180281&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01180281&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [
+    [
+     "취소공고문[2026년 재활용가능자원 선별 대행용역(영종)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01180281&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-03",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01180262",
@@ -2406,8 +4047,17 @@
    "method": "일반경쟁",
    "est": 213515000.0,
    "budget": 213515000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01180262&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01180262&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [
+    [
+     "취소공고문[2026년 재활용가능자원 선별 대행용역(원도심)] (1).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01180262&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-03",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01175226",
@@ -2430,7 +4080,21 @@
    "win_amt": 1356265213.0,
    "win_rate": 77.999,
    "winner": "주식회사 태창",
-   "bidders": 68
+   "bidders": 68,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "과업지시서(재활용 잔재폐기물).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01175226&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "입찰공고(2026년도 재활용 잔재폐기물 외주운반 처리용역)(1).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01175226&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 7200.0,
+   "qty_note": "과업지시서(재활용 잔재폐기물).hwp: 폐기물의처리방법및일반사항) 氠瑢 구분예상처리량처리방법처리장소비고재활용잔재폐기물 7,200톤 (압축 6,480"
   },
   {
    "id": "g2b:R25BK01168977",
@@ -2449,7 +4113,24 @@
    "est": 63180000.0,
    "budget": 69498000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01168977&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01168977&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "4.입찰공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168977&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "3-1.2026년 역사 재활용품 위탁처리 용역 과업내용서(중구,종로구,영등포구).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168977&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "[개정전문] 서울특별시 폐기물처리용역 적격심사 세부기준.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168977&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-02",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01153552",
@@ -2467,8 +4148,11 @@
    "method": "일반경쟁",
    "est": 1500000000.0,
    "budget": 1650000000.0,
-   "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01153552&bidPbancOrd=001"
+   "status": "공고취소",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01153552&bidPbancOrd=001",
+   "ntce_kind": "취소공고",
+   "docs": [],
+   "kind_checked": "2025-11-25"
   },
   {
    "id": "g2b:R25BK01169699",
@@ -2491,7 +4175,33 @@
    "win_amt": 9610400000.0,
    "win_rate": null,
    "winner": "주식회사 동하기업",
-   "bidders": 6
+   "bidders": 6,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(재활용폐기물).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169699&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서(수정본)(1).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169699&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169699&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "장비 세부항목(1).xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169699&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "용역계약특수조건(20250708).zip",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169699&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 29300.0,
+   "qty_note": "과업지시서.hwpx: 연도의지급기준에의하여지급한다. 나. 예정물량: 혼합재활용폐기물 29,300톤/연 ※ 발생량에따"
   },
   {
    "id": "g2b:R25BK01168347",
@@ -2514,7 +4224,29 @@
    "win_amt": 534921015.0,
    "win_rate": 86.559,
    "winner": "번영환경개발(주)",
-   "bidders": 9
+   "bidders": 9,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년 자원회수센터 잔재폐기물·미선별 재활용품 처리 용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168347&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업내용서(2026년 자원회수센터 잔재폐기물·미선별 재활용품 처리 용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168347&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급공고사유서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168347&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "서울특별시_폐기물처리용역_적격심사_세부기준(2021.1.).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01168347&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 3900.0,
+   "qty_note": "과업내용서(2026년 자원회수센터 잔재폐기물·미선별 재활용품 처리 용역).hwpx: 용도나방법등으로임의처리할수없다. ⑦ 위탁예정물량은 3,900톤이다. 제6조(미선"
   },
   {
    "id": "g2b:R25BK01167044",
@@ -2537,7 +4269,23 @@
    "win_amt": 108403720.0,
    "win_rate": 87.754,
    "winner": "평일환경(주)",
-   "bidders": 43
+   "bidders": 43,
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "2026년 폐합성수지(폐기물) 처리 용역입찰.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01167044&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2026년 폐합성수지 처리 입찰(과업지시서).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01167044&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2021.01_[개정전문] 서울특별시 폐기물처리용역 적격심사 세부기준.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01167044&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01165344",
@@ -2556,7 +4304,26 @@
    "est": 604950000.0,
    "budget": 604950000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01165344&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01165344&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165344&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165344&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165344&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-11-26",
+   "qty_checked": "2026-10-28",
+   "qty_t": 5550.0,
+   "qty_note": "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(검단)].hwp: 재활용품은대행업체소유로함바. 추정물량: 2026년도약 5,550톤/년 - 추정"
   },
   {
    "id": "g2b:R25BK01165300",
@@ -2579,7 +4346,25 @@
    "win_amt": 843300000.0,
    "win_rate": 78.513,
    "winner": "남일상사",
-   "bidders": 4
+   "bidders": 4,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문 [2026년도 재활용가능자원 선별처리 대행용역(서구)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165300&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(서구)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165300&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "공내역서 [2026년도 재활용가능자원 선별처리 대행용역(서구)].xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165300&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 9890.0,
+   "qty_note": "과업지시서 [2026년도 재활용가능자원 선별처리 대행용역(서구)].hwp: 재활용품은대행업체소유로함바. 추정물량: 2026년도약 9,890톤/년 - 추정"
   },
   {
    "id": "g2b:R25BK01160786",
@@ -2602,7 +4387,29 @@
    "win_amt": 736016000.0,
    "win_rate": 85.507,
    "winner": "부경산업(주)",
-   "bidders": 22
+   "bidders": 22,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01160786&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 및 특수조건(2026년 반입불가폐기물_폐합성수지류 처리용역).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01160786&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "서울특별시 용역계약 특수조건.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01160786&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서[2026년 반입불가폐기물(폐합성수지류) 처리용역].hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01160786&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 4000.0,
+   "qty_note": "공고문.hwp: 역내용 : 용역설명서및과업지시서참조(예상처리물량 : 4,000톤) 다. 용역관련사"
   },
   {
    "id": "g2b:R25BK01159899",
@@ -2625,7 +4432,25 @@
    "win_amt": 277210.0,
    "win_rate": 86.768,
    "winner": "주식회사 가나에너지",
-   "bidders": 46
+   "bidders": 46,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[공고문] 2026년 생활폐기물(재활용 잔재물) 운반 처리 용역(단가계약).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01159899&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "[과업지시서] 2026년 생활폐기물(재활용 잔재물) 운반 처리 용역(단가계약).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01159899&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "[붙임자료] 무왕위생매립장 대형차량 운행시 협조요청.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01159899&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 1100.0,
+   "qty_note": "[과업지시서] 2026년 생활폐기물(재활용 잔재물) 운반 처리 용역(단가계약).hwp: (금삼억오천오십오만칠천구백원) 사. 예정물량 : 1,100톤(평시는 3톤/일이"
   },
   {
    "id": "g2b:R25BK01108645",
@@ -2644,7 +4469,24 @@
    "est": 13748198182.0,
    "budget": 15123018000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01108645&bidPbancOrd=001"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01108645&bidPbancOrd=001",
+   "ntce_kind": "변경공고",
+   "docs": [
+    [
+     "1. 공고문(성남시 재활용선별장 관리운영 민간위탁).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01108645&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 제안요청서(성남시 재활용선별장 관리운영 민간위탁).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01108645&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "3. 과업지시서(성남시 재활용선별장 관리운영 민간위탁).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01108645&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-12-08",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01150975",
@@ -2667,7 +4509,37 @@
    "win_amt": 468242440.0,
    "win_rate": 86.254,
    "winner": "주식회사 성창환경",
-   "bidders": 75
+   "bidders": 75,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문(2026년 상반기 폐합성수지류 폐기물 처리 용역).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "계약특수조건.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "용역설명서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "안전보건관리_준수_서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "청렴계약이행서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ],
+    [
+     "근로자 권리보호 이행 서약서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01150975&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 2000.0,
+   "qty_note": "용역설명서.hwp: 방법 : 일반경쟁입찰(총액입찰) ◯ 위탁량 : 2,000톤 ◯ 용역내용 :"
   },
   {
    "id": "g2b:R25BK01145119",
@@ -2690,7 +4562,25 @@
    "win_amt": 4210358969.0,
    "win_rate": 73.201,
    "winner": "주식회사 신승에너지",
-   "bidders": 7
+   "bidders": 7,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[공고문]2026년 폐합성수지류 등 폐기물 및 생활폐기물 처리 용역.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01145119&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "[붙임3]2026 특수계약조건(폐합성수지류 등 처리).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01145119&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "[붙임4]2026 과업지시서(폐합성수지류 등 처리).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01145119&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 23000.0,
+   "qty_note": "[붙임4]2026 과업지시서(폐합성수지류 등 처리).hwpx: 수지류등폐기물및생활폐기물처리용역나. 처리량 : 23,000톤(발주자의사정에따라"
   },
   {
    "id": "g2b:R25BK01144265",
@@ -2713,7 +4603,21 @@
    "win_amt": 131630.0,
    "win_rate": 85.531,
    "winner": "(주)원보",
-   "bidders": 29
+   "bidders": 29,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "2026년의정부시재활용품선별잔재물위탁처리용역(단가계약)-입찰공고.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01144265&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "의정부시재활용품선별잔재물위탁처리 과업내용서(2026년).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01144265&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 6144.0,
+   "qty_note": "의정부시재활용품선별잔재물위탁처리 과업내용서(2026년).hwp: 176,000원 (부가세포함) 나. 예정물량 : 6,144톤다. 위치 : 의정"
   },
   {
    "id": "g2b:R25BK01136019",
@@ -2736,7 +4640,21 @@
    "win_amt": 97073.0,
    "win_rate": 88.836,
    "winner": "주식회사 에스제이안성",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[2025년 안성시 가연성 생활폐기물 재활용 위탁처리 용역(단가계약)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01136019&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01136019&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 855.0,
+   "qty_note": "과업지시서.hwp: 활용위탁처리용역(단가계약) 2) 예상과업량 : 855톤(예상물량으로변동가"
   },
   {
    "id": "g2b:R25BK01129840",
@@ -2755,7 +4673,24 @@
    "est": 6758888182.0,
    "budget": 7434777000.0,
    "status": "공고",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01129840&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R25BK01129840&bidPbancOrd=000",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "★(붙임1)광명시 재활용품선별장 위탁운영 용역 입찰공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01129840&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "★(붙임2)광명시 재활용품선별장 위탁운영 용역 제안요청서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01129840&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★(붙임3)광명시 재활용품선별장 위탁운영 용역 과업지시서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01129840&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "kind_checked": "2025-11-14",
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01099784",
@@ -2778,7 +4713,21 @@
    "win_amt": 1750569129.0,
    "win_rate": 78.168,
    "winner": "유한회사 대신신재생산업",
-   "bidders": 35
+   "bidders": 35,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "1. 과업지시서(최종).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01099784&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문(2025-140호).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01099784&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 9300.0,
+   "qty_note": "1. 과업지시서(최종).hwp: 년 12월 31일까지(3년간) 5. 처리예정량 : 9,300톤 ※ 발주기관의사정"
   },
   {
    "id": "g2b:R25BK01098295",
@@ -2801,7 +4750,21 @@
    "win_amt": 153049.0,
    "win_rate": 78.382,
    "winner": "주식회사 신진산업",
-   "bidders": 38
+   "bidders": 38,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(재활용).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01098295&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "[과업지시서] 2026년~2027년 폐합성수지 재활용.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01098295&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 21000.0,
+   "qty_note": "공고문(재활용).hwp: : 폐합성수지처리(재활용) 및운반(예상물량 : 연 21,000톤) 氠瑢 마. 기초"
   },
   {
    "id": "g2b:R25BK01097561",
@@ -2824,7 +4787,21 @@
    "win_amt": 151395.0,
    "win_rate": 78.069,
    "winner": "대일개발(주)",
-   "bidders": 13
+   "bidders": 13,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(소각).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01097561&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "[과업지시서] 2026년~2027년 폐합성수지 소각.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01097561&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 14000.0,
+   "qty_note": "공고문(소각).hwp: 용 : 폐합성수지처리(소각) 및운반(예상물량 : 연 14,000톤) 氠瑢 마. 기초"
   },
   {
    "id": "g2b:R25BK01093749",
@@ -2847,7 +4824,19 @@
    "win_amt": 117106.0,
    "win_rate": 87.172,
    "winner": "주식회사 미주자원",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문(가평군 혼합 재활용폐기물 위탁처리 용역(3차분)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01093749&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+    ],
+    [
+     "과업지시서(가평군 혼합 재활용폐기물 위탁처리 용역(3차분)).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01093749&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   },
   {
    "id": "g2b:R25BK01070956",
@@ -2870,7 +4859,29 @@
    "win_amt": 81550000.0,
    "win_rate": 88.579,
    "winner": "선풍산업 주식회사",
-   "bidders": 9
+   "bidders": 9,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문_2025년 종로구 폐합성수지류 폐기물처리 연간단가 계약.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01070956&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임 2). 과업지시서_수정.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01070956&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "★계약 일반조건.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01070956&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "★용역계약특수조건(서울특별시).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01070956&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28",
+   "qty_t": 700.0,
+   "qty_note": "공고문_2025년 종로구 폐합성수지류 폐기물처리 연간단가 계약.hwpx: 용역내용 : 별첨과업지시서등참조다. 예상물량 : 700톤 ※발주기관의사정에"
   },
   {
    "id": "g2b:R25BK01042455",
@@ -2893,7 +4904,19 @@
    "win_amt": 27988000.0,
    "win_rate": 88.178,
    "winner": "주식회사 태민환경",
-   "bidders": 3
+   "bidders": 3,
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "1. 공고문_2025년 생활폐기물(재활용 잔재물) 위탁처리 용역_2차.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01042455&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 과업지시서_2025년 생활폐기물(재활용 잔재물) 위탁처리 용역_2차.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01042455&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ]
+   ],
+   "qty_checked": "2026-10-28"
   }
  ]
 }
