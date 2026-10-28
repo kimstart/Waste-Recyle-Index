@@ -80,12 +80,13 @@
   </div>
   <div class="kpis" id="svcKpi"></div>
   <table class="cmp bids">
-    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">발주기관</th><th>공고명</th><th class="h-m">유형</th><th>추정가격</th><th>결과</th><th class="h-m">출처</th></tr></thead>
+    <thead><tr><th>공고일</th><th>지역</th><th class="h-m">발주기관</th><th>공고명</th><th class="h-m">유형</th><th>추정가격·물량</th><th>결과</th><th class="h-m">출처</th></tr></thead>
     <tbody id="svcBody"><tr><td colspan="8" class="fl">불러오는 중...</td></tr></tbody>
   </table>
-  <div class="note">지자체·공공기관이 재활용품을 팔지 않고 민간에 선별·처리·시설 운영을 맡기는 용역 공고입니다(예: 오산시 '재활용품 선별 대행 처리용역').
-    선별장 입장에서는 수주 기회입니다. 추정가격은 부가세를 뺀 계약 예상 총액, 낙찰금액은 낙찰자의 투찰 금액입니다. 단가계약은 낙찰금액이 톤당 단가로 표시되며(추정가격의 1/500 미만인 경우 '단가계약'으로 표시), 단위는 공고문에서 확인이 필요합니다.
-    유찰·재공고된 같은 용역은 여러 줄로 나올 수 있습니다. 연구·설계·장비 임차·건설·하수·음식물·사업장 폐기물 등 다른 용역은 제외했습니다. 출처: 조달청 나라장터(입찰공고·낙찰정보), 순환자원정보센터 전자입찰.</div>
+  <div class="note"><span id="svcNote"></span>지자체·공공기관이 재활용품을 팔지 않고 민간에 선별·처리·시설 운영을 맡기는 용역입니다(예: 오산시 '재활용품 선별 대행 처리용역'). 선별장 입장에서는 수주 기회입니다.
+    결과는 <b>톤당 단가(만원/톤)</b>로 통일했습니다. 단가계약은 낙찰 단가 그대로이고, 총액계약은 공고 첨부(과업지시서·공고문)에 적힌 예상 물량으로 낙찰금액을 나눈 값입니다(물량을 찾지 못하면 '물량 미확인'). 추정가격 아래에는 예상 물량과 추정 톤당 단가를 붙였습니다.
+    선별 대행·폐합성수지 처리·잔재물 처리는 성격이 달라 요약 지표를 따로 냈고, 시설 운영 위탁은 운영비라 총액을 기본으로 보여주고 톤당 환산은 참고로만 적습니다. 톤당 5천원~150만원을 벗어나는 값은 단위를 잘못 읽은 것으로 보고 표시하지 않습니다.
+    유찰·재공고된 같은 용역은 결과가 나온 건만 남기고 취소공고는 숨깁니다. 연구·설계·장비 임차·건설·하수·음식물·사업장 폐기물 등 다른 용역은 제외했습니다. 출처: 조달청 나라장터(입찰공고·낙찰정보), 순환자원정보센터 전자입찰.</div>
 
   <h2 id="pol" data-nav="제도·규제" data-dot="제도|정책 동향">제도·규제 <small>EPR · 재생원료 사용 의무 · <span id="polUpd"></span></small></h2>
   <div id="polAlert"></div>
@@ -225,6 +226,6 @@ window.BOARD = {
 <script src="assets/apt.js?v=20261027d"></script>
 <script src="assets/rpet.js?v=20261019a"></script>
 <script src="assets/policy.js?v=20261020c" data-page="plastic" data-bkl="data/bkl_policy.json" data-facts="data/policy_facts.json" data-state="data/policy.json" data-order="재생원료 의무,EPR,부담금·기타"></script>
-<script src="assets/plastic_extra.js?v=20261019c"></script>
+<script src="assets/plastic_extra.js?v=20261028c"></script>
 </body>
 </html>
