@@ -69,7 +69,7 @@ def find_qty(text):
     out = []
     for m in P1.finditer(t):
         ctx = t[max(0, m.start() - 20):m.end() + 10]
-        if re.search(r"허가|용량|차량|암롤|실적|기준\s*\d|규모", t[max(0, m.start() - 15):m.end()]):
+        if re.search(r"허가|용량|차량|암롤|실적|기준\s*\d|규모|매회|회별|1회|최대", t[max(0, m.start() - 15):m.end()]):
             continue
         v = float(m.group(1).replace(",", ""))
         out.append((v / 1000 if m.group(2).lower() in ("kg", "㎏") else v, ctx))
@@ -78,6 +78,8 @@ def find_qty(text):
         out.append((v / 1000 if m.group(1) in ("kg", "㎏") else v, t[max(0, m.start() - 10):m.end() + 10]))
     for m in P4.finditer(t):
         win = t[m.end():m.end() + 160]
+        if re.match(r"\s*[×xX*]", win):          # '처리량(톤) × 톤당 단가' 같은 산식은 물량이 아님
+            continue
         n = NUM_OK.search(win)
         if n:
             v = float(n.group(1).replace(",", ""))

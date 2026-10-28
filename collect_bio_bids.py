@@ -92,6 +92,9 @@ def docs_of(x):
     return [[x.get(f"ntceSpecFileNm{i}") or "", x[f"ntceSpecDocUrl{i}"]] for i in range(1, 11) if x.get(f"ntceSpecDocUrl{i}")]
 
 
+QTY_V = 2    # 물량 읽기 규칙이 바뀌면 올린다 → 예전에 확인한 공고도 한 번 다시 읽는다
+
+
 def enrich(items, stop_at, want_qty=lambda b: b.get("type") == "처리 대행"):
     """① 개찰일이 지났는데 결과가 없는 공고 → 공고번호로 다시 조회해 취소공고인지 확인
        ② 처리 대행 → 첨부 공고문·과업지시서에서 예상 처리물량(톤)을 읽어 톤당 단가 계산에 쓴다"""
@@ -99,7 +102,7 @@ def enrich(items, stop_at, want_qty=lambda b: b.get("type") == "처리 대행"):
     today = now_kst().strftime("%Y-%m-%d")
     lim = (now_kst() - timedelta(days=2)).strftime("%Y-%m-%d")
     todo = [b for b in items.values() if b.get("src") == "나라장터" and (
-        (want_qty(b) and not b.get("qty_checked")) or
+        (want_qty(b) and b.get("qty_v", 1) < QTY_V) or
         (b.get("status") == "공고" and (b.get("open") or "9999") < lim and b.get("kind_checked") != b.get("open")))]
     todo.sort(key=lambda b: b.get("start") or "", reverse=True)
     n_q = n_c = 0
@@ -124,12 +127,11 @@ def enrich(items, stop_at, want_qty=lambda b: b.get("type") == "처리 대행"):
             except Exception as ex:
                 print(f">> [첨부 확인] {b['no']} 조회 실패: {type(ex).__name__}: {str(ex)[:80]}")
                 continue
-        if want_qty(b) and not b.get("qty_checked") and b.get("docs"):
+        if want_qty(b) and b.get("qty_v", 1) < QTY_V and b.get("docs"):
             est = b.get("est") if (b.get("est") or 0) >= 3e6 else None      # 추정가격이 톤당 단가로 올라온 단가계약은 검증에 쓰지 않음
             q, note = qty_from_docs(b["docs"], est)
-            b["qty_checked"] = today
-            if q:
-                b["qty_t"], b["qty_note"] = q, note
+            b["qty_checked"], b["qty_v"] = today, QTY_V
+            b["qty_t"], b["qty_note"] = (q, note) if q else (None, "")
                 n_q += 1
         time.sleep(0.2)
     print(f">> [첨부 확인] 대상 {len(todo)}건 → 예상물량 확인 {n_q}건, 취소공고 {n_c}건")
