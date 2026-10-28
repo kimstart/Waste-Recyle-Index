@@ -9,6 +9,7 @@ import os, re, time, json, urllib.parse
 from datetime import timedelta
 from common import get, retry, load, save, now_kst
 from collect_bids import region_of, re_list, RE_BASE, num
+from collect_bio_bids import docs_of, enrich
 
 OUT = "data/services.json"
 DATA_KEY = urllib.parse.unquote(os.environ.get("DATA_GO_KR_KEY", ""))
@@ -82,7 +83,8 @@ def collect_g2b(first):
                                 "start": (x.get("bidNtceDt") or "")[:10], "end": (x.get("bidClseDt") or "")[:10],
                                 "open": (x.get("opengDt") or "")[:10], "method": x.get("cntrctCnclsMthdNm") or "",
                                 "est": num(x.get("presmptPrce") or "") or None, "budget": num(x.get("asignBdgtAmt") or "") or None,
-                                "status": "공고", "url": x.get("bidNtceDtlUrl") or ""}
+                                "status": "공고취소" if "취소" in (x.get("ntceKindNm") or "") else "공고",
+                                "ntce_kind": x.get("ntceKindNm") or "", "docs": docs_of(x), "url": x.get("bidNtceDtlUrl") or ""}
                 for x in g2b("/as/ScsbidInfoService/getScsbidListSttusServcPPSSrch", {**rng, "bidNtceNm": kw}):
                     wins[f"g2b:{x.get('bidNtceNo')}"] = x
                 fails = 0
@@ -140,6 +142,12 @@ def main():
     for k, v in g.items():
         old = items.get(k, {})
         items[k] = {**old, **v, **{f: old[f] for f in ("status", "win_amt", "win_rate", "winner", "bidders", "open") if f in old and old.get("status") == "낙찰"}}
+    # 첨부 공고문·과업지시서에서 예상 물량(톤)을 읽어 톤당 단가 환산에 쓴다 + 결과 없는 공고는 취소공고인지 확인
+    if DATA_KEY:
+        try:
+            enrich(items, T0 + 18 * 60, want_qty=lambda b: b.get("src") == "나라장터")
+        except Exception as e:
+            print(f">> [첨부 확인] 실패: {type(e).__name__}: {str(e)[:150]}")
     for k, x in wins.items():
         if k not in items:
             continue
@@ -155,6 +163,10 @@ def main():
     save(OUT, {"updated": now_kst().strftime("%Y-%m-%d %H:%M"), "backfilled": st.get("backfilled") or (bool(g) and not cut), "items": lst})
     print(f">> 저장: 선별·처리 대행 용역 {len(lst)}건 (중점 {sum(b['region'] == '중점' for b in lst)} · "
           f"수도권 {sum(b['region'] == '수도권' for b in lst)} · 낙찰 {sum(b.get('status') == '낙찰' for b in lst)})")
+    q = [b for b in lst if b.get("qty_t")]
+    print(f">> 예상 물량 확인 {len(q)}건 / 확인 시도 {sum(1 for b in lst if b.get('qty_checked'))}건")
+    for b in q[:20]:
+        print(f"   {b['type'][:8]} | {b['title'][:40]} | 추정 {b.get('est')} | {b['qty_t']:,.0f}톤 | 낙찰 {b.get('win_amt')} | {b.get('qty_note', '')[:60]}")
     for b in lst[:15]:
         print(f"   {b['start']} {b['city']} | {b['org'][:16]} | {b['title'][:46]} | 추정 {b.get('est')} | {b.get('status')} {b.get('win_amt') or ''}")
 

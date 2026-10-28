@@ -29,7 +29,7 @@ jobs:
         continue-on-error: true
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
-        run: timeout -k 15 1200 python -u collect_services.py 2>&1 | tee logs/services.log
+        run: pip install -q olefile >/dev/null 2>&1; sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1; timeout -k 15 1260 python -u collect_services.py 2>&1 | tee logs/services.log
       - name: 유기성폐자원 입찰·용역·공사 수집 (순환자원정보센터·나라장터)
         continue-on-error: true
         env:
