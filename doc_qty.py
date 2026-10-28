@@ -57,6 +57,11 @@ P2 = re.compile(r"(?:처리량|물량|배출량)\s*\(\s*예정\s*\)[^0-9]{0,40}?
 P3 = re.compile(NUM + r"\s*톤\s*/\s*년")
 
 
+# 표 머리글에 단위가 있는 경우: '계약량(톤) … 200', '추정물량(톤) 톤당 단가(원) 1구역 616.27'
+P4 = re.compile(r"(?:계약|예정|예상|추정|처리|과업|위탁|발생|반입|대행)\s*(?:물)?량\s*\(\s*(톤|ton|t|㎏|kg)\s*(?:/\s*(년|연))?\s*\)", re.I)
+NUM_OK = re.compile(r"(?<![\d.,])(\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?)(?![\d,]*\s*(?:일|월|년|원|%|구역|권역|호|차|개|명|조|항|시|분|층|동|세대|단지|대\b|\.\s))")
+
+
 def find_qty(text):
     """후보 (톤, 문맥) 목록. 일 단위·차량 톤급·허가용량은 뺀다"""
     t = re.sub(r"\s+", " ", text or "")
@@ -71,6 +76,12 @@ def find_qty(text):
     for m in P2.finditer(t):
         v = float(m.group(2).replace(",", ""))
         out.append((v / 1000 if m.group(1) in ("kg", "㎏") else v, t[max(0, m.start() - 10):m.end() + 10]))
+    for m in P4.finditer(t):
+        win = t[m.end():m.end() + 160]
+        n = NUM_OK.search(win)
+        if n:
+            v = float(n.group(1).replace(",", ""))
+            out.append((v / 1000 if m.group(1).lower() in ("kg", "㎏") else v, t[max(0, m.start() - 10):m.end() + n.end() + 5]))
     for m in P3.finditer(t):
         out.append((float(m.group(1).replace(",", "")), t[max(0, m.start() - 30):m.end() + 5]))
     return [(v, c) for v, c in out if v >= 1]
@@ -101,7 +112,7 @@ def qty_from_docs(docs, est=None, max_docs=4):
         except Exception:
             continue
         for v, ctx in cands:
-            if est and not (1e4 <= est / v <= 6e5):
+            if est and not (5e3 <= est / v <= 1.5e6):
                 continue
             return v, f"{name}: {ctx.strip()[:80]}"
     return None, ""
