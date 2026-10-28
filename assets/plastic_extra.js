@@ -149,14 +149,14 @@
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
     drawBidChart(won);
     if ($('bidOut')) $('bidOut').textContent = OUT.size ? `다른 낙찰과 단가 차이가 큰 ${OUT.size}건은 차트와 평균에서 뺐습니다(표에는 '이상치'로 표시).` : '';
-    const list = rows.slice(0, 20);
+    const list = window.Board ? Board.pin(rows.slice(0, 20), BIDS) : rows.slice(0, 20);
     $('bidBody').innerHTML = list.map(b => {
       const reg = b.region === '중점' ? `<span class="reg f">${esc(b.city)}</span>` : b.region === '수도권' ? `<span class="reg">${esc(b.city)}</span>` : `<span class="reg">${esc(b.city || '기타')}</span>`;
-      const res = b.win_unit_price ? `<b>${n0(b.win_unit_price)}</b>원/kg${OUT.has(b.id) ? '<span class="tag-auto">이상치</span>' : ''}` : b.win_amt ? `${n0(b.win_amt / 1e4)}만원` : esc(b.status || '-');
-      return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
+      const res = b.win_unit_price ? `<b>${b.win_unit_price.toLocaleString('ko-KR', { maximumFractionDigits: 1 })}</b>원/kg${OUT.has(b.id) ? '<span class="tag-auto">이상치</span>' : ''}` : b.win_amt ? `${n0(b.win_amt / 1e4)}만원` : esc(b.status || '-');
+      return `<tr data-id="${esc(b.id)}"><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.cat)}</td>
         <td>${b.qty_kg ? n0(b.qty_kg / 1000) + '톤' : '-'}</td><td class="h-m">${b.pre_unit_price ? n0(b.pre_unit_price) + '원/kg' : b.pre_amt ? '공개' : '비공개'}</td>
-        <td>${res}${b.win_ratio && b.win_ratio < 1000 ? `<small class="fl"> (${n1(b.win_ratio)}%)</small>` : ''}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : b.src === '순환자원정보센터(수의)' ? '수의견적' : '순환자원')}</td></tr>`;
+        <td class="res">${res}${b.win_ratio && b.win_ratio < 1000 ? `<small class="fl"> (${n1(b.win_ratio)}%)</small>` : ''}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : b.src === '순환자원정보센터(수의)' ? '수의견적' : '순환자원')}</td></tr>`;
     }).join('') || '<tr><td colspan="9" class="fl">해당 기간·지역의 플라스틱 매각 공고가 없습니다.</td></tr>';
   }
 
@@ -240,7 +240,7 @@
       kpiT('잔재물 처리', '잔재물 처리 낙찰 (톤당)'),
       ['평균 낙찰률', rates.length ? `${n1(mean(rates))}%` : '-', '낙찰금액 ÷ 예정가격']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
-    $('svcBody').innerHTML = rows.slice(0, 25).map(b => {
+    $('svcBody').innerHTML = (window.Board ? Board.pin(rows.slice(0, 25), SVC) : rows.slice(0, 25)).map(b => {
       const reg = `<span class="reg${b.region === '중점' ? ' f' : ''}">${esc(b.city || '수도권')}</span>`;
       const wt = winT(b), et = estT(b), ops = b.type === '시설 운영 위탁';
       const small = t => `<small class="fl" style="display:block">${t}</small>`;
@@ -254,9 +254,9 @@
         res = `<b class="up">진행 중</b>${small('마감 ' + esc((b.end || '').slice(5).replace('-', '.')))}`;
       } else res = esc(b.status === '공고' ? '결과 대기' : b.status || '-');
       const est = (estUnit(b) ? `${n0(b.est)}원` : eok(b.est)) + small([b.qty_t ? `예상 ${qtyS(b.qty_t)}` : '', et && !ops ? manT(et) : ''].filter(Boolean).join(' · ') || (b.src === '나라장터' ? '물량 미확인' : ''));
-      return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
+      return `<tr data-id="${esc(b.id)}"><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a></td><td class="h-m">${esc(b.type)}</td>
-        <td>${est}</td><td>${res}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : '순환자원')}</td></tr>`;
+        <td>${est}</td><td class="res">${res}</td><td class="h-m">${esc(b.src === '나라장터' ? '나라장터' : '순환자원')}</td></tr>`;
     }).join('') || '<tr><td colspan="8" class="fl">해당 기간·지역의 선별·처리 대행 용역 공고가 없습니다.</td></tr>';
     if ($('svcNote')) $('svcNote').textContent = `${rows.length > 25 ? `최근 25건만 표시(전체 ${rows.length}건). ` : ''}취소·재공고 중복 ${SVC_DROP}건 제외. `;
   }
@@ -271,6 +271,34 @@
   segSvc('svcScope', v => SVC_SCOPE = v);
   segSvc('svcPeriod', v => SVC_PERIOD = +v);
   segSvc('svcType', v => SVC_TYPE = v);
+
+  /* ---------------------------------------------------------------- 결과 공유 문구 (assets/mark.js) */
+  // 매각입찰: 같은 기관·같은 개찰일 결과를 묶는다 → '수원도시공사 입찰 결과(20261027)\n투명 PET : 436 원/kg'
+  const BID_LBL = [[/투명\s*(페트|PET)/i, '투명 PET'], [/유색\s*(페트|PET)/i, '유색 PET'], [/페트|PET/i, 'PET'], [/미선별\s*플라스틱/, '미선별플라스틱'],
+    [/혼합\s*플라스틱/, '혼합플라스틱'], [/비닐/, '폐비닐'], [/스티로폼|발포/, '스티로폼'], [/\bPP\b/i, 'PP'], [/\bPE\b/i, 'PE'], [/\bPS\b/i, 'PS'], [/플라스틱/, '플라스틱']];
+  const bidLbl = b => (BID_LBL.find(([rx]) => rx.test(b.title || '')) || [, b.cat || '기타'])[1];
+  const svcLbl = b => String(b.title || '').replace(/^\(?(긴급|재공고)\)?\s*/, '').replace(/^\d{4}(\s*[~∼-]\s*\d{4})?\s*년?(도)?\s*/, '').replace(/\s*(입찰\s*)?공고$/, '').trim().slice(0, 34);
+  if (window.Board) {
+    Board.share('bids', id => {
+      const b = BIDS.find(x => String(x.id) === id);
+      if (!b || !(b.win_unit_price || b.win_amt)) return null;
+      const day = b.open || b.start;
+      const g = BIDS.filter(x => x.org === b.org && (x.open || x.start) === day && (x.win_unit_price || x.win_amt));
+      return { head: `${Board.org(b.org)} 입찰 결과(${Board.ymd(day)})`, ids: g.map(x => x.id),
+               lines: g.map(x => `${bidLbl(x)} : ${x.win_unit_price ? `${Board.num(x.win_unit_price)} 원/kg` : `낙찰 ${n0(x.win_amt)}원`}`) };
+    });
+    Board.share('svc', id => {
+      const b = SVC.find(x => String(x.id) === id);
+      if (!b || b.status !== '낙찰' || !b.win_amt) return null;
+      const day = b.open || b.end || b.start;
+      const g = SVC.filter(x => x.org === b.org && (x.open || x.end || x.start) === day && x.status === '낙찰' && x.win_amt);
+      const val = x => { const wt = winT(x), ops = x.type === '시설 운영 위탁';
+        const main = wt && !ops ? `${Board.num(wt / 1e4)} 만원/톤` : isUnit(x) ? `${n0(x.win_amt)} 원(단가)` : eok(x.win_amt);
+        const sub = [wt && !ops && !isUnit(x) ? `총액 ${eok(x.win_amt)}${x.qty_t ? ` ÷ ${qtyS(x.qty_t)}` : ''}` : '', x.win_rate ? `낙찰률 ${n1(x.win_rate)}%` : ''].filter(Boolean).join(', ');
+        return main + (sub ? ` (${sub})` : ''); };
+      return { head: `${Board.org(b.org)} 용역 입찰 결과(${Board.ymd(day)})`, ids: g.map(x => x.id), lines: g.map(x => `${svcLbl(x)} : ${val(x)}`) };
+    });
+  }
 
   getJson('data/recycle_history.json').then(h => { HIST = h; renderAnalysis(); }).catch(() => { $('anaBody').innerHTML = '<tr><td colspan="8" class="fl">자료 없음</td></tr>'; });
   getJson('data/bids.json').then(j => {

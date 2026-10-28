@@ -63,7 +63,7 @@
       ['EPC·공사 추정가격', epc.length ? eok(epc.reduce((a, b) => a + b, 0)) : '-', `공사·설계 ${epc.length}건`],
       ['평균 낙찰률', rates.length ? `${n1(mean(rates))}%` : '-', '낙찰금액 ÷ 예정가격']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
-    $('bioBody').innerHTML = rows.slice(0, 30).map(b => {
+    $('bioBody').innerHTML = (window.Board ? Board.pin(rows.slice(0, 30), DD) : rows.slice(0, 30)).map(b => {
       const reg = `<span class="reg${b.region === '중점' ? ' f' : ''}">${esc(b.city || '수도권')}</span>`;
       const g2b = b.src === '나라장터';
       const proc = b.type === '처리 대행' && g2b;
@@ -79,9 +79,9 @@
       } else if (live.includes(b)) {
         res = `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((b.end || '').slice(5).replace('-', '.'))}</small>`;
       } else res = esc(b.status === '공고' ? '결과 대기' : b.status || '-');
-      return `<tr><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
+      return `<tr data-id="${esc(b.id)}"><td>${esc((b.start || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(b.org)}</td>
         <td class="t"><a href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.title)}</a><small class="why-s">${esc(b.waste || '')}${b.kind ? ' · ' + esc(b.kind) : ''}</small></td>
-        <td class="h-m">${esc(b.type)}</td><td>${est}</td><td>${res}</td><td class="h-m">${esc(g2b ? '나라장터' : '순환자원')}</td></tr>`;
+        <td class="h-m">${esc(b.type)}</td><td>${est}</td><td class="res">${res}</td><td class="h-m">${esc(g2b ? '나라장터' : '순환자원')}</td></tr>`;
     }).join('') || '<tr><td colspan="8" class="fl">해당 기간·지역의 유기성폐자원 공고가 없습니다.</td></tr>';
     $('bioMore').textContent = (rows.length > 30 ? `최근 30건만 표시 (전체 ${rows.length}건). ` : '') + `중복·취소 공고 ${ALL.length - DD.length}건 제외. `;
   }
@@ -94,6 +94,21 @@
   const seg = (id, fn) => document.querySelectorAll(`#${id} button`).forEach(b => b.addEventListener('click', () => {
     document.querySelectorAll(`#${id} button`).forEach(x => x.classList.toggle('on', x === b)); fn(b.dataset.v); render();
   }));
+  // 결과 공유: 같은 기관·같은 개찰일 낙찰을 묶는다. 처리 대행은 톤당 단가(만원/톤)
+  const lbl = b => String(b.title || '').replace(/^\(?(긴급|재공고)\)?\s*/, '').replace(/^\d{4}(\s*[~∼-]\s*\d{4})?\s*년?(도)?\s*/, '').replace(/\s*(입찰\s*)?공고$/, '').trim().slice(0, 34);
+  const val = b => {
+    const wt = b.type === '처리 대행' && b.src === '나라장터' ? winT(b) : null;
+    if (wt) return `${Board.num(wt / 1e4)} 만원/톤` + (isUnit(b) ? ' (단가계약)' : ` (총액 ${eok(b.win_amt)} ÷ ${n0(b.qty_t)}톤)`);
+    if (b.src !== '나라장터') return b.win_raw || '-';
+    return (isUnit(b) ? `${n1(b.win_amt)} 원(단가)` : eok(b.win_amt)) + (b.win_rate ? ` (낙찰률 ${n1(b.win_rate)}%)` : '');
+  };
+  if (window.Board) Board.share('bio', id => {
+    const b = DD.find(x => String(x.id) === id);
+    if (!b || b.status !== '낙찰' || !(b.win_amt || b.win_raw)) return null;
+    const day = b.open || b.end || b.start;
+    const g = DD.filter(x => x.org === b.org && (x.open || x.end || x.start) === day && x.status === '낙찰' && (x.win_amt || x.win_raw));
+    return { head: `${Board.org(b.org)} 입찰 결과(${Board.ymd(day)})`, ids: g.map(x => x.id), lines: g.map(x => `${lbl(x)} : ${val(x)}`) };
+  });
   seg('bioScope', v => SCOPE = v);
   seg('bioPeriod', v => PERIOD = +v);
   seg('bioType', v => TYPE = v);

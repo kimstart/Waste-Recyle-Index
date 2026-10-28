@@ -30,8 +30,11 @@ def main():
     today = now_kst().strftime("%Y-%m-%d")
     events = []
 
-    def ev(page, text):
-        events.append({"date": today, "page": page, "kind": "자료", "text": text})
+    def ev(page, text, ids=None, mark=None):
+        e = {"date": today, "page": page, "kind": "자료", "text": text}
+        if ids:                          # 표에서 해당 행을 강조하도록 공고 id와 종류(new: 신규, res: 결과)를 함께 남긴다
+            e["ids"], e["mark"] = [str(i) for i in ids][:300], mark
+        events.append(e)
 
     def changed(key, val):
         old = state.get(key)
@@ -72,11 +75,11 @@ def main():
         new = [b for b in bids if b["id"] not in old_ids]
         won = [b for b in bids if b.get("status") == "낙찰" and old_ids.get(b["id"]) not in (None, "낙찰")]
         if new:
-            ev("plastic", f"수도권 매각입찰 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('cat', '')}" + (" 외" if len(new) > 1 else ""))
+            ev("plastic", f"수도권 매각입찰 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('cat', '')}" + (" 외" if len(new) > 1 else ""), [b["id"] for b in new], "new")
         if won:
             ups = [b["win_unit_price"] for b in won if b.get("win_unit_price")]
             avg = f", 평균 낙찰단가 {n(sum(ups) / len(ups))}원/kg" if ups else ""
-            ev("plastic", f"수도권 매각입찰 낙찰 결과 {len(won)}건{avg}")
+            ev("plastic", f"수도권 매각입찰 낙찰 결과 {len(won)}건{avg}", [b["id"] for b in won], "res")
     if ids:
         state["bid_ids"] = ids
 
@@ -88,7 +91,7 @@ def main():
         wk = (now_kst() - timedelta(days=7)).strftime("%Y-%m-%d")      # 지난 1년 채우기로 들어온 옛 공고는 '신규'로 세지 않음
         new = [x for x in apt.get("items", []) if x["id"] not in set(old_a) and (x.get("reg") or "") >= wk and x.get("state") != "취소"]
         if new:
-            ev("plastic", f"아파트 재활용품 매각·수거 공고 신규 {len(new)}건 — {new[0].get('apt', '')}" + (" 외" if len(new) > 1 else ""))
+            ev("plastic", f"아파트 재활용품 매각·수거 공고 신규 {len(new)}건 — {new[0].get('apt', '')}" + (" 외" if len(new) > 1 else ""), [x["id"] for x in new], "new")
     state["apt_ids"] = aids
     if changed("apt_results", apt.get("results_updated")):
         ev("plastic", f"아파트 재활용품 입찰결과 엑셀 반영 — 누적 {len(apt.get('results', []))}건")
@@ -101,9 +104,9 @@ def main():
         new = [b for b in svc if b["id"] not in old_s]
         won = [b for b in svc if b.get("status") == "낙찰" and old_s.get(b["id"]) not in (None, "낙찰")]
         if new:
-            ev("plastic", f"선별·처리 대행 용역 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""))
+            ev("plastic", f"선별·처리 대행 용역 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""), [b["id"] for b in new], "new")
         if won:
-            ev("plastic", f"선별·처리 대행 용역 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}")
+            ev("plastic", f"선별·처리 대행 용역 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}", [b["id"] for b in won], "res")
     if sids:
         state["svc_ids"] = sids
 
@@ -115,9 +118,9 @@ def main():
         new = [b for b in bio if b["id"] not in old_b]
         won = [b for b in bio if b.get("status") == "낙찰" and old_b.get(b["id"]) not in (None, "낙찰")]
         if new:
-            ev("biogas", f"유기성폐자원 {new[0].get('type', '')} 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""))
+            ev("biogas", f"유기성폐자원 {new[0].get('type', '')} 신규 {len(new)}건 — {new[0].get('org', '')} {new[0].get('title', '')[:30]}" + (" 외" if len(new) > 1 else ""), [b["id"] for b in new], "new")
         if won:
-            ev("biogas", f"유기성폐자원 입찰 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}".rstrip())
+            ev("biogas", f"유기성폐자원 입찰 낙찰 {len(won)}건 — {won[0].get('org', '')} {won[0].get('winner', '')}".rstrip(), [b["id"] for b in won], "res")
     if bids_:
         state["bio_ids"] = bids_
 

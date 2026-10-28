@@ -53,7 +53,7 @@
       ['낙찰금액 (중앙값)', amts.length ? won(median(amts)) : '-', amts.length ? `${amts.length}건 · ${won(Math.min(...amts))}~${won(Math.max(...amts))}` : ''],
       ['세대당 월 단가 (중앙값)', per.length ? `${n0(median(per))}원` : '-', per.length ? `${per.length}건 · ${n0(Math.min(...per))}~${n0(Math.max(...per))}원${perOut ? ` · 이상치 ${perOut}건 제외` : ''}` : '세대수 자료 준비 중']
     ].map(([a, b, c]) => `<div class="kpi"><span>${a}</span><b>${b}</b><small>${c}</small></div>`).join('');
-    $('aptBody').innerHTML = rows.slice(0, 40).map(r => {
+    $('aptBody').innerHTML = (window.Board ? Board.pin(rows.slice(0, 40), ROWS) : rows.slice(0, 40)).map(r => {
       const reg = `<span class="reg${r.region === '중점' ? ' f' : ''}">${esc(r.city || '수도권')}</span>`;
       const hh = r.households ? `<small class="fl" style="display:block">${n0(r.households)}세대</small>` : '';
       let res;
@@ -65,9 +65,9 @@
         res = `<b class="up">진행 중</b><small class="fl" style="display:block">마감 ${esc((r.end || '').slice(5, 10).replace('-', '.'))}</small>`;
       } else res = `<span class="fl">${esc(r.state || '-')}</span>`;
       const sub = [r.cls, r.sys && r.sys !== 'K-APT' ? r.sys : ''].filter(Boolean).join(' · ');
-      return `<tr><td>${esc((r.date || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(r.apt)}${hh}</td>
+      return `<tr data-id="${esc(r.id)}"><td>${esc((r.date || '').slice(2).replace(/-/g, '.'))}</td><td>${reg}</td><td class="t h-m">${esc(r.apt)}${hh}</td>
         <td class="t"><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${sub ? `<small class="why-s">${esc(sub)}</small>` : ''}</td>
-        <td class="h-m">${esc(r.way || '-')}</td><td>${res}</td></tr>`;
+        <td class="h-m">${esc(r.way || '-')}</td><td class="res">${res}</td></tr>`;
     }).join('') || '<tr><td colspan="6" class="fl">해당 기간·지역의 아파트 재활용품 공고가 없습니다.</td></tr>';
     if ($('aptNote')) $('aptNote').textContent = `${rows.length > 40 ? `최근 40건만 표시(전체 ${rows.length}건). ` : ''}취소·재공고 중복 ${DROPPED}건 제외.`;
   }
@@ -79,6 +79,14 @@
   const seg = (id, fn) => document.querySelectorAll(`#${id} button`).forEach(b => b.addEventListener('click', () => {
     document.querySelectorAll(`#${id} button`).forEach(x => x.classList.toggle('on', x === b)); fn(b.dataset.v); render();
   }));
+  // 결과 공유: 'OO아파트(1,234세대) 재활용품 매각 결과(20261027)\n월 1,050 원/세대 (연 1,555만원)'
+  if (window.Board) Board.share('apt', id => {
+    const r = ROWS.find(x => String(x.id) === id);
+    if (!r || r.state !== '낙찰' || !r.win_amt) return null;
+    const hh = r.households;
+    return { head: `${r.apt}${hh ? `(${n0(hh)}세대)` : ''} 재활용품 매각 결과(${Board.ymd(r.end || r.date)})`, ids: [r.id],
+             lines: [hh ? `월 ${n0(r.win_amt / hh / 12)} 원/세대 (연 ${won(r.win_amt)})` : `낙찰 ${won(r.win_amt)} (세대수 미확인)`, r.title] };
+  });
   seg('aptScope', v => SCOPE = v);
   seg('aptPeriod', v => PERIOD = +v);
 })();
