@@ -1,8 +1,52 @@
 {
- "updated": "2026-10-22 23:32",
+ "updated": "2026-10-28 16:25",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01788903",
+   "src": "나라장터",
+   "kind": "용역",
+   "no": "R26BK01788903",
+   "ord": "000",
+   "title": "남양주시 남은음식물자원화시설 운영·관리 민간위탁 용역",
+   "org": "경기도 남양주시",
+   "region": "수도권",
+   "city": "남양주",
+   "type": "시설 운영",
+   "waste": "음식물",
+   "start": "2026-10-23",
+   "end": "2026-12-03",
+   "open": "2026-12-08",
+   "method": "일반경쟁",
+   "est": 5986152727.0,
+   "budget": 6584768000.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "☆공고문[남양주시 남은음식물자원화시설 운영관리 민간위탁 용역].hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788903&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "☆공고문[남양주시 남은음식물자원화시설 운영관리 민간위탁 용역].pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788903&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788903&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서 및 평가기준.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788903&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "☆공내역서(남양주시남은음식물자원화시설 운영관리 민간위탁용역).xlsx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01788903&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01788903&bidPbancOrd=000"
+  },
   {
    "id": "g2b:R26BK01784418",
    "src": "나라장터",
@@ -105,7 +149,7 @@
    "method": "일반경쟁",
    "est": 453000000.0,
    "budget": 498300000.0,
-   "status": "공고",
+   "status": "낙찰",
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01762598&bidPbancOrd=001",
    "ntce_kind": "변경공고",
    "docs": [
@@ -122,9 +166,15 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01762598&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3000.0,
-   "qty_note": "[강동구자원순환센터]과업지시서(중간가공음식물류폐기물)_26.09.22.hwp: 1-38-02) 운반및처리용역 2. 처리량 : 3,000톤 3. 기초단가 :"
+   "qty_note": "[강동구자원순환센터]과업지시서(중간가공음식물류폐기물)_26.09.22.hwp: 1-38-02) 운반및처리용역 2. 처리량 : 3,000톤 3. 기초단가 :",
+   "kind_checked": "2026-10-22",
+   "qty_v": 2,
+   "win_amt": 144095.0,
+   "win_rate": 87.073,
+   "winner": "주식회사 이앤피",
+   "bidders": 5
   },
   {
    "id": "g2b:R26BK01763941",
@@ -161,9 +211,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01763941&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 51170.0,
-   "qty_note": "과업지시서.hwpx: 83,394,000 원(면세) 마. 예상물량 : 51,170 톤(70톤/일) ※"
+   "qty_note": "과업지시서.hwpx: 83,394,000 원(면세) 마. 예상물량 : 51,170 톤(70톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01751959",
@@ -245,9 +296,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01731187&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 982.0,
-   "qty_note": "과업지시서(2026년 가평군 하반기 음식물류폐기물 위탁처리 용역).hwpx: 로부터 2026.12.25.까지 ▪ 사업량 : 가정배출음식물류폐기물 982 톤 &lt;사업량변동"
+   "qty_note": "과업지시서(2026년 가평군 하반기 음식물류폐기물 위탁처리 용역).hwpx: 로부터 2026.12.25.까지 ▪ 사업량 : 가정배출음식물류폐기물 982 톤 &lt;사업량변동",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01693171",
@@ -312,9 +364,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01728944&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 260.0,
-   "qty_note": "2. 과업지시서.hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 260톤음식물류폐기물탈수케"
+   "qty_note": "2. 과업지시서.hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 260톤음식물류폐기물탈수케",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01727037",
@@ -396,9 +449,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01719848&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 65%이내) 처리다. 처리예정물량 : 3,000톤/년 ※ 위물량은처"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 65%이내) 처리다. 처리예정물량 : 3,000톤/년 ※ 위물량은처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01718135",
@@ -443,7 +497,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01718135&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01715454",
@@ -578,7 +635,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01697214&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01692415",
@@ -684,9 +744,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01682098&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3000.0,
-   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약3,000톤/년 ※ 위물량은예"
+   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약3,000톤/년 ※ 위물량은예",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01681400",
@@ -763,7 +824,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01662467&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01651310",
@@ -804,9 +868,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01651310&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 360.0,
-   "qty_note": "2. 시방서.hwp: 크제 4조[계약예정및기간] 1) 계약예상물량 : 360톤(1회운반량 16톤"
+   "qty_note": "1. 공고문.hwp: 방서참조 氠瑢 종류추정물량(톤) 추정단가(원/톤) 추정금액(원) 소화슬러지탈수케이크(공정오니) 360 170,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01648546",
@@ -890,9 +955,10 @@
     ]
    ],
    "kind_checked": "2026-06-29",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1700.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 위탁처리 용역).hwpx: 에 1회이상수거) - 음식물류폐기물의처리예정물량 : 1,700 톤추정금액 : 금33"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 위탁처리 용역).hwpx: 에 1회이상수거) - 음식물류폐기물의처리예정물량 : 1,700 톤추정금액 : 금33",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01595730",
@@ -1000,9 +1066,10 @@
     ]
    ],
    "kind_checked": "2026-06-23",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1000.0,
-   "qty_note": "2. 과업지시서.hwpx: , 안전관리비등일체비용포함 ※ 슬러지예상처리량은 1,000톤이나자체여건에따라변"
+   "qty_note": "2. 과업지시서.hwpx: , 안전관리비등일체비용포함 ※ 슬러지예상처리량은 1,000톤이나자체여건에따라변",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01579348",
@@ -1091,9 +1158,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01578277&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01554632",
@@ -1142,9 +1210,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01554632&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 20000.0,
-   "qty_note": "과업지시서(2026년 하반기 환경사업소 하수슬러지 운반).hwpx: 생되는하수슬러지(사업장폐기물) 3. 처리예정량 : 20,000톤 ※ 위물량은예정물"
+   "qty_note": "과업지시서(2026년 하반기 환경사업소 하수슬러지 운반).hwpx: 생되는하수슬러지(사업장폐기물) 3. 처리예정량 : 20,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01551678",
@@ -1297,7 +1366,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01517212&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01518536",
@@ -1338,7 +1410,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01518536&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 900.0,
+   "qty_note": "(입찰공고문)2026년 포천시 공공하수처리시설 하수슬러지 외부위탁 처리용역(단가계약)(완료).hwp: 세포함) 氠瑢 구분예정물량(톤) 단가(부가세포함) 금액(원) 비고하수슬러지운반 900 50,0"
   },
   {
    "id": "g2b:R26BK01515601",
@@ -1403,9 +1478,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01507410&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 460.0,
-   "qty_note": "2. 시방서.hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 460톤음식물류폐기물탈수케"
+   "qty_note": "1. 공고문.hwp: 방서참조 氠瑢 종류추정물량(톤) 추정단가(원/톤) 추정금액(원) 중간가공음식물류폐기물(탈수케이크) 460 181,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01499895",
@@ -1462,9 +1538,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01499895&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 492.8,
-   "qty_note": "2. 규격서(음식물류 폐기물).hwp: 위탁처리용역 2. 처리량(예정) 氠瑢 음식물류폐기물(kg) 492,800 ※ 상기배출량은"
+   "qty_note": "2. 규격서(음식물류 폐기물).hwp: 위탁처리용역 2. 처리량(예정) 氠瑢 음식물류폐기물(kg) 492,800 ※ 상기배출량은",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01484322",
@@ -1561,9 +1638,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01470174&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6000.0,
-   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(6차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및"
+   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(6차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01470138",
@@ -1608,9 +1686,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01470138&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6000.0,
-   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(5차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및"
+   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(5차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01470078",
@@ -1679,9 +1758,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01468314&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6000.0,
-   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(4차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및"
+   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(4차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 6,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01448821",
@@ -1726,7 +1806,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01448821&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 3000.0,
+   "qty_note": "과업지시서(하수슬러지 재활용처리 - 승기).hwp: 氠瑢 구분합계승기예정량(톤/년) 3,000 3,00"
   },
   {
    "id": "g2b:R26BK01443042",
@@ -1779,9 +1862,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01443042&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 436.0,
-   "qty_note": "음식물류폐기물 위탁처리 소액수의 견적제출 공고(2026).hwp: 출공고나. 내역 : 氠瑢 종류단위연간위탁량기초가격추정예산비고음식물류폐기물 kg 약 436,000kg 225(원/kg)"
+   "qty_note": "음식물류폐기물 위탁처리 소액수의 견적제출 공고(2026).hwp: 출공고나. 내역 : 氠瑢 종류단위연간위탁량기초가격추정예산비고음식물류폐기물 kg 약 436,000kg 225(원/kg)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01437459",
@@ -1867,9 +1951,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01437162&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01436523",
@@ -1934,9 +2019,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01436523&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22800.0,
-   "qty_note": "2-2. 2026년 과업지시서(처리).hwp: 정금액 : 3,429,120천원마. 예정물량 : 22,800톤 ※ 바이오가스생산"
+   "qty_note": "2-2. 2026년 과업지시서(처리).hwp: 정금액 : 3,429,120천원마. 예정물량 : 22,800톤 ※ 바이오가스생산",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01434451",
@@ -2056,7 +2142,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01433279&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01433205",
@@ -2144,9 +2233,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01419380&bidPbancOrd=000&fileType=&fileSeq=10&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01419372",
@@ -2207,9 +2297,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01419372&bidPbancOrd=000&fileType=&fileSeq=9&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 1,000톤/년 ※ 위물량은처"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 1,000톤/년 ※ 위물량은처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01345962",
@@ -2295,9 +2386,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01342014&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 8304.0,
-   "qty_note": "공동주택 과업지시서(2026).hwp: 처리비용은 211,070원/톤임마. 예상물량: 8,304톤(22.7톤/1일)"
+   "qty_note": "공동주택 과업지시서(2026).hwp: 처리비용은 211,070원/톤임마. 예상물량: 8,304톤(22.7톤/1일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01330955",
@@ -2342,7 +2434,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01330955&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01338772",
@@ -2412,9 +2507,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01333826&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 470.0,
-   "qty_note": "음식물류 폐기물 처리 용역 공고.pdf: 비및처리비등포함, 부가세포함) 라. 예상처리량 : 연간 470,000kg(월약 35,000"
+   "qty_note": "음식물류 폐기물 처리 용역 공고.pdf: 비및처리비등포함, 부가세포함) 라. 예상처리량 : 연간 470,000kg(월약 35,000",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01330284",
@@ -2452,9 +2548,10 @@
     ]
    ],
    "kind_checked": "2026-02-19",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 12372.0,
-   "qty_note": "붙임2 단독주택 과업지시서.hwpx: 64,955,280원 (면세) 마. 예상물량: 12,372톤/연 ※ 발주기관의"
+   "qty_note": "붙임2 단독주택 과업지시서.hwpx: 64,955,280원 (면세) 마. 예상물량: 12,372톤/연 ※ 발주기관의",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01329703",
@@ -2492,9 +2589,10 @@
     ]
    ],
    "kind_checked": "2026-02-19",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1100.0,
-   "qty_note": "2026년 가평군 음식물류폐기물 위탁처리 용역 과업지시서.hwp: 로부터 2026.12.17.까지 ▪ 사업량 : 가정배출음식물류폐기물 1,100톤 <사업량변동가능>"
+   "qty_note": "2026년 가평군 음식물류폐기물 위탁처리 용역 과업지시서.hwp: 로부터 2026.12.17.까지 ▪ 사업량 : 가정배출음식물류폐기물 1,100톤 <사업량변동가능>",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01311713",
@@ -2532,9 +2630,10 @@
     ]
    ],
    "kind_checked": "2026-02-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 12372.0,
-   "qty_note": "붙임2 단독주택 과업지시서.hwpx: 64,955,280원 (면세) 마. 예상물량: 12,372톤/연 ※ 발주기관의"
+   "qty_note": "붙임2 단독주택 과업지시서.hwpx: 64,955,280원 (면세) 마. 예상물량: 12,372톤/연 ※ 발주기관의",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01301562",
@@ -2587,9 +2686,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01301562&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 10000.0,
-   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(3차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 10,000톤 ※ 위물량은운반및"
+   "qty_note": "2. 과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(3차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 10,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01299722",
@@ -2655,9 +2755,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01293315&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 68096.0,
-   "qty_note": "3 제안요청서.hwpx: 을폐기물처리시설로운반하여적정처리나. 예정물량 : 68,096톤(64톤/일) ※"
+   "qty_note": "3 제안요청서.hwpx: 을폐기물처리시설로운반하여적정처리나. 예정물량 : 68,096톤(64톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01295648",
@@ -2698,9 +2799,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01295648&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 7000.0,
-   "qty_note": "2. 과업지시서('26년 중랑물재생센터 건조슬러지 운반 및 처리).hwpx: 율 10%이하) 운반및처리 ① 운반·처리예정량 : 7,000톤 ※ 위물량은운반및"
+   "qty_note": "2. 과업지시서('26년 중랑물재생센터 건조슬러지 운반 및 처리).hwpx: 율 10%이하) 운반및처리 ① 운반·처리예정량 : 7,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01295058",
@@ -2734,9 +2836,10 @@
     ]
    ],
    "kind_checked": "2026-02-02",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1100.0,
-   "qty_note": "2026년 가평군 음식물류폐기물 위탁처리 용역 과업지시서.hwp: 로부터 2026.12.17.까지 ▪ 사업량 : 가정배출음식물류폐기물 1,100톤 <사업량변동가능>"
+   "qty_note": "2026년 가평군 음식물류폐기물 위탁처리 용역 과업지시서.hwp: 로부터 2026.12.17.까지 ▪ 사업량 : 가정배출음식물류폐기물 1,100톤 <사업량변동가능>",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01293708",
@@ -2797,7 +2900,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01275992&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01292152",
@@ -2834,7 +2940,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01292152&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01256837",
@@ -2887,9 +2996,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01256837&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 7000.0,
-   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약7,000톤/년 ※ 위물량은예"
+   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약7,000톤/년 ※ 위물량은예",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01289059",
@@ -2926,9 +3036,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01289059&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22.0,
-   "qty_note": "2. 과업내용서.hwp: ”에게납부(제출)하여야한다. 제6조(계약물량및용역비지급등) ① 본대행계약물량은음식물폐기물년간 22,000㎏로한다. ② 음식물"
+   "qty_note": "2. 과업내용서.hwp: ”에게납부(제출)하여야한다. 제6조(계약물량및용역비지급등) ① 본대행계약물량은음식물폐기물년간 22,000㎏로한다. ② 음식물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01275640",
@@ -2965,7 +3076,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01275640&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R26BK01263758",
@@ -3003,9 +3117,10 @@
     ]
    ],
    "kind_checked": "2026-01-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1694.0,
-   "qty_note": "1.의정부 음식물류폐기물 자원화시설 그 밖의 폐수처리오니(폐수처리오니) 운반 및 처리 연간단가계약  공고문.hwp: 원 (부가세포함) [기초금액 x 소요예정물량 =소요예정금액] ※ 총소요예정물량 : 1,694톤 ※ 소요예정물량은"
+   "qty_note": "1.의정부 음식물류폐기물 자원화시설 그 밖의 폐수처리오니(폐수처리오니) 운반 및 처리 연간단가계약  공고문.hwp: 원 (부가세포함) [기초금액 x 소요예정물량 =소요예정금액] ※ 총소요예정물량 : 1,694톤 ※ 소요예정물량은",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01261337",
@@ -3046,9 +3161,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01261337&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 471.0,
-   "qty_note": "(붙임) 과업설명서(2026년 강화군 공공하수처리시설 슬러지 폐기물처리 용역) (6) (1).hwpx: 주문도리 67-5번지 4. 운반 ․ 처리물량(설계량) : 총 471톤 - 온수 : 45"
+   "qty_note": "(붙임) 과업설명서(2026년 강화군 공공하수처리시설 슬러지 폐기물처리 용역) (6) (1).hwpx: 주문도리 67-5번지 4. 운반 ․ 처리물량(설계량) : 총 471톤 - 온수 : 45",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01257909",
@@ -3086,9 +3202,10 @@
     ]
    ],
    "kind_checked": "2026-01-13",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2260.0,
-   "qty_note": "1.의정부시 음식물류폐기물 자원화시설 퇴비 운반 및 처리 연간단가계약  공고문.hwp: 원 (부가세포함) [기초금액 x 소요예정물량 =소요예정금액] ※ 총소요예정물량 : 2,260톤 ※ 소요예정물량은"
+   "qty_note": "1.의정부시 음식물류폐기물 자원화시설 퇴비 운반 및 처리 연간단가계약  공고문.hwp: 원 (부가세포함) [기초금액 x 소요예정물량 =소요예정금액] ※ 총소요예정물량 : 2,260톤 ※ 소요예정물량은",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01256790",
@@ -3141,9 +3258,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01256790&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 7000.0,
-   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약7,000톤/년 ※ 위물량은예"
+   "qty_note": "2. 과업지시서.hwp: 지(함수율 10% 이하) 처리 1) 처리예정물량 : 약7,000톤/년 ※ 위물량은예",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01257244",
@@ -3184,9 +3302,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01257244&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01256974",
@@ -3227,9 +3346,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01256974&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01256404",
@@ -3266,9 +3386,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01256404&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6713.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 비상처리 대행 용역)재공고.hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 6,713톤(원도심 5,481"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 비상처리 대행 용역)재공고.hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 6,713톤(원도심 5,481",
+   "qty_v": 2
   },
   {
    "id": "g2b:R26BK01256158",
@@ -3305,9 +3426,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01256158&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1946.0,
-   "qty_note": "공고문(제2수원지 탈수슬러지).hwp: 0원, 육상운반 8,000원) 다. 처리예정량: 1,946톤/년라. 용역기간:"
+   "qty_note": "공고문(제2수원지 탈수슬러지).hwp: 0원, 육상운반 8,000원) 다. 처리예정량: 1,946톤/년라. 용역기간:",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01255001",
@@ -3364,9 +3486,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01255001&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 8000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 8,000톤 ※ 위물량은예정물"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 8,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01254990",
@@ -3423,9 +3546,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01254990&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 8000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 8,000톤 ※ 위물량은예정물"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 8,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01254976",
@@ -3482,9 +3606,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01254976&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3000.0,
-   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 3,000톤 ※ 위물량은예정물"
+   "qty_note": "2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리 ­ 처리예정량 : 3,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01254468",
@@ -3597,9 +3722,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01252852&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 700.0,
-   "qty_note": "과업지시서(2026년 환경사업소 사업장 폐기물(분뇨처리오니) 처리용역).hwpx: 폐기물(분뇨처리오니) 처리용역 2. 처리량 : 700톤(추정물량) 3."
+   "qty_note": "과업지시서(2026년 환경사업소 사업장 폐기물(분뇨처리오니) 처리용역).hwpx: 폐기물(분뇨처리오니) 처리용역 2. 처리량 : 700톤(추정물량) 3.",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01252059",
@@ -3717,9 +3843,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01249462&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 14000.0,
-   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 2권역)](최종).hwp: 40천원 3. 음식물류폐기물 (예상)처리량: 14,000톤/년(약 38톤/일"
+   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 2권역)](최종).hwp: 40천원 3. 음식물류폐기물 (예상)처리량: 14,000톤/년(약 38톤/일",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01247623",
@@ -3756,9 +3883,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01247623&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 56000.0,
-   "qty_note": "용역설명서 및 과업내용서.hwp: : 안양시안양·석수하수처리시설다. 발생예정량 : 하수찌꺼기(탈수) 56,000톤 ※ 단, 발생예정"
+   "qty_note": "용역설명서 및 과업내용서.hwp: : 안양시안양·석수하수처리시설다. 발생예정량 : 하수찌꺼기(탈수) 56,000톤 ※ 단, 발생예정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01245521",
@@ -3845,9 +3973,10 @@
     ]
    ],
    "kind_checked": "2025-12-29",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01246841",
@@ -3951,9 +4080,10 @@
     ]
    ],
    "kind_checked": "2025-12-29",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 700.0,
-   "qty_note": "과업지시서(2026년 환경사업소 사업장 폐기물(분뇨처리오니) 처리용역).hwpx: 폐기물(분뇨처리오니) 처리용역 2. 처리량 : 700톤(추정물량) 3."
+   "qty_note": "과업지시서(2026년 환경사업소 사업장 폐기물(분뇨처리오니) 처리용역).hwpx: 폐기물(분뇨처리오니) 처리용역 2. 처리량 : 700톤(추정물량) 3.",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01242170",
@@ -3986,9 +4116,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01242170&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 9000.0,
-   "qty_note": "4. 과업지시서[송도사업소 음폐수(탈리액) 재활용 처리용역].hwp: 류폐기물처리잔재물(51-38-03) 예상물량(9,000톤/년) 이상폐기물처"
+   "qty_note": "4. 과업지시서[송도사업소 음폐수(탈리액) 재활용 처리용역].hwp: 류폐기물처리잔재물(51-38-03) 예상물량(9,000톤/년) 이상폐기물처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01241423",
@@ -4025,9 +4156,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01241423&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 12500.0,
-   "qty_note": "3. 과업지시서(2026년 음폐수(탈리액) 재활용 처리운반 용역).hwp: 38 032)899-0431 5. 예정량 : 사업소별운영상황에따라증감가능 (단위/톤) 氠瑢 구분청라사업소비고합계 12,500톤/년처리및운반 6."
+   "qty_note": "3. 과업지시서(2026년 음폐수(탈리액) 재활용 처리운반 용역).hwp: 38 032)899-0431 5. 예정량 : 사업소별운영상황에따라증감가능 (단위/톤) 氠瑢 구분청라사업소비고합계 12,500톤/년처리및운반 6.",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01241608",
@@ -4061,9 +4193,10 @@
     ]
    ],
    "kind_checked": "2025-12-26",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2600.0,
-   "qty_note": "2. 시방서(중간가공폐기물 운반처리)_(26년 재공고).hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 2,600톤(예정) 음식물류폐"
+   "qty_note": "1. 공고문(중간가공_음식물류폐기물)_(26년 재공고).hwp: 시서참조 氠瑢 종류추정물량(톤) 추정단가(원/톤) 추정금액(원) 중간가공음식물류폐기물 2,600 167,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01240251",
@@ -4146,9 +4279,10 @@
     ]
    ],
    "kind_checked": "2025-12-24",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 17650.0,
-   "qty_note": "붙임2 과업지시서 (2026년도 음식물류폐기물 위탁처리(단가계약) 용역) (251218 용역 입찰 3489).hwp: 815,175,000원(면세) 마. 사업량 : 파주시에서수거된음식물류폐기물 17,650톤(일평균 59톤내외"
+   "qty_note": "붙임2 과업지시서 (2026년도 음식물류폐기물 위탁처리(단가계약) 용역) (251218 용역 입찰 3489).hwp: 815,175,000원(면세) 마. 사업량 : 파주시에서수거된음식물류폐기물 17,650톤(일평균 59톤내외",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01239760",
@@ -4193,9 +4327,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01239760&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 62910.0,
-   "qty_note": "4. 과업지시서(서울특별시 강서구 음식물류 폐기물 운반 및 처리 대행 용역).hwp: 40,717원/톤(운반비포함) 4. 예정물량 : 62,910톤(90톤/일) 5."
+   "qty_note": "4. 과업지시서(서울특별시 강서구 음식물류 폐기물 운반 및 처리 대행 용역).hwp: 40,717원/톤(운반비포함) 4. 예정물량 : 62,910톤(90톤/일) 5.",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01238891",
@@ -4253,9 +4388,10 @@
     ]
    ],
    "kind_checked": "2025-12-23",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 14000.0,
-   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 2권역)](최종).hwp: 40천원 3. 음식물류폐기물 (예상)처리량: 14,000톤/년(약 38톤/일"
+   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 2권역)](최종).hwp: 40천원 3. 음식물류폐기물 (예상)처리량: 14,000톤/년(약 38톤/일",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01237055",
@@ -4292,9 +4428,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01237055&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 13000.0,
-   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 1권역)](최종).hwp: 30천원 3. 음식물류폐기물 (예상)처리량: 13,000톤/년(약 35톤/일"
+   "qty_note": "과업지시서[2026년 화성시 음식물류 폐기물 처리사업(서남부권 1권역)](최종).hwp: 30천원 3. 음식물류폐기물 (예상)처리량: 13,000톤/년(약 35톤/일",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01237140",
@@ -4332,7 +4469,10 @@
     ]
    ],
    "kind_checked": "2025-12-23",
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01236531",
@@ -4373,9 +4513,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236531&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01236517",
@@ -4416,9 +4557,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236517&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01236509",
@@ -4459,9 +4601,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01236509&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01236502",
@@ -4499,9 +4642,10 @@
     ]
    ],
    "kind_checked": "2025-12-23",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01236477",
@@ -4539,9 +4683,10 @@
     ]
    ],
    "kind_checked": "2025-12-23",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 22574.05,
-   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)"
+   "qty_note": "2026년 음식물류폐기물 처리 대행용역 과업지시서.hwp: 26. 12. 31. (1년) 3. 예정물량 : 총처리량 22,574.05톤(61.84톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01233962",
@@ -4590,9 +4735,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01233962&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 730.0,
-   "qty_note": "과업지시서.hwpx: 량비안전관리비등일체비용포함 ※ 폐기물예상처리량은 730톤이나자체여건에따라변"
+   "qty_note": "과업지시서.hwpx: 량비안전관리비등일체비용포함 ※ 폐기물예상처리량은 730톤이나자체여건에따라변",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01232284",
@@ -4669,7 +4815,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01231893&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01231441",
@@ -4738,9 +4887,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01230809&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1100.0,
-   "qty_note": "2. 과업내용서(김포공항 2026년 슬러지 수집·운반 및 처리 용역).hwp: 호예정수량주기회당수거량비고하수처리오니 51-01-02 1,100톤/년 1회/주"
+   "qty_note": "2. 과업내용서(김포공항 2026년 슬러지 수집·운반 및 처리 용역).hwp: 호예정수량주기회당수거량비고하수처리오니 51-01-02 1,100톤/년 1회/주",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01227930",
@@ -4777,7 +4927,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01227930&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 1000.0,
+   "qty_note": "공고문[2026년도 상수슬러지 위탁처리용역].hwp: 은물관리사업소내) 다. 용역개요: 상수슬러지운반및처리 1,000톤/년라. 용역"
   },
   {
    "id": "g2b:R25BK01228944",
@@ -4867,9 +5020,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01227509&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18250.0,
-   "qty_note": "과업지시서(2026년도 하수탈수슬러지 위탁처리 용역).hwp: 710 환경기초시설내 4. 운반 ․ 처리물량(설계량) : 18,250톤(함수율 80±3%"
+   "qty_note": "과업지시서(2026년도 하수탈수슬러지 위탁처리 용역).hwp: 710 환경기초시설내 4. 운반 ․ 처리물량(설계량) : 18,250톤(함수율 80±3%",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01227429",
@@ -4973,9 +5127,10 @@
     ]
    ],
    "kind_checked": "2025-12-22",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3420.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 민간처리 대행용역).hwp: 에는상호협의하여결정할수있다. 다. 총예정물량 : 3,420톤 (설계금액 : 4"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 민간처리 대행용역).hwp: 에는상호협의하여결정할수있다. 다. 총예정물량 : 3,420톤 (설계금액 : 4",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01225590",
@@ -5008,9 +5163,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01225590&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 997.0,
-   "qty_note": "과업내용서(2026년 동물분뇨 처리 용역).hwpx: 설물과사료, 깔짚류, 낙엽등총칭나. 발생량(예정) : 연 997톤 (2.73톤/일)"
+   "qty_note": "과업내용서(2026년 동물분뇨 처리 용역).hwpx: 설물과사료, 깔짚류, 낙엽등총칭나. 발생량(예정) : 연 997톤 (2.73톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01226449",
@@ -5047,9 +5203,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01226449&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 53000.0,
-   "qty_note": "과업지시서 [2026년 화성시 하수슬러지 운반 및 처리_용역(단가계약)].hwp: 양수질복원센터및관할오수중계펌프장다. 발생예정량: 하수슬러지(약 53,000톤) ※ 단, 하수처"
+   "qty_note": "과업지시서 [2026년 화성시 하수슬러지 운반 및 처리_용역(단가계약)].hwp: 양수질복원센터및관할오수중계펌프장다. 발생예정량: 하수슬러지(약 53,000톤) ※ 단, 하수처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01226320",
@@ -5164,9 +5321,10 @@
     ]
    ],
    "kind_checked": "2025-12-18",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4553.56,
-   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(검단)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 4,553.56톤/년 ※ 실제처리량"
+   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(검단)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 4,553.56톤/년 ※ 실제처리량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01225734",
@@ -5208,9 +5366,10 @@
     ]
    ],
    "kind_checked": "2025-12-18",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4138.1,
-   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(서구)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 서구 : 4,138.1톤/년 ※ 실제처리량"
+   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(서구)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 서구 : 4,138.1톤/년 ※ 실제처리량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01225708",
@@ -5244,9 +5403,10 @@
     ]
    ],
    "kind_checked": "2025-12-18",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2930.0,
-   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(2권역)).hwp: 850,000원 (부가세면세) 바. 예상물량 : 총 2,930톤 ※ 발주기관의사정"
+   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(2권역)).hwp: 850,000원 (부가세면세) 바. 예상물량 : 총 2,930톤 ※ 발주기관의사정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01225668",
@@ -5280,9 +5440,10 @@
     ]
    ],
    "kind_checked": "2025-12-18",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6270.0,
-   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(1권역)).hwp: 150,000원 (부가세면세) 바. 예상물량 : 총 6,270톤 ※ 발주기관의사정"
+   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(1권역)).hwp: 150,000원 (부가세면세) 바. 예상물량 : 총 6,270톤 ※ 발주기관의사정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01223977",
@@ -5327,9 +5488,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223977&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 12400.0,
-   "qty_note": "2026년 음식물류폐기물 민간위탁처리 대행계약 과업지시서.hwp: 금 1,711,200천원범위내바. 예정물량: 12,400톤(예상) ※ 예정물"
+   "qty_note": "2026년 음식물류폐기물 민간위탁처리 대행계약 과업지시서.hwp: 금 1,711,200천원범위내바. 예정물량: 12,400톤(예상) ※ 예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01223123",
@@ -5370,9 +5532,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01223123&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5400.0,
-   "qty_note": "과업지시서(25.11).hwpx: 00원 (152,370원/톤) 마. 예상물량 : 5,400톤 ※ 부가가치세면세"
+   "qty_note": "과업지시서(25.11).hwpx: 00원 (152,370원/톤) 마. 예상물량 : 5,400톤 ※ 부가가치세면세",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01221629",
@@ -5402,9 +5565,10 @@
     ]
    ],
    "kind_checked": "2025-12-17",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 25000.0,
-   "qty_note": "3-1. 공고문_입찰1.pdf: .〜 2026. 12. 31. 라. 위탁처리예정물량 : ① 25,000톤 ② 80,700톤"
+   "qty_note": "3-1. 공고문_입찰1.pdf: .〜 2026. 12. 31. 라. 위탁처리예정물량 : ① 25,000톤 ② 80,700톤",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01219744",
@@ -5441,7 +5605,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01219744&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01214353",
@@ -5557,9 +5724,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4235.6,
-   "qty_note": "공고문(2026년 음식물류폐기물 처리 대행 용역(원도심)).hwp: . ~ 2026. 12. 31. ○ 예정물량 : 음식물류폐기물 4,235.6톤 (실제배출량에따라"
+   "qty_note": "공고문(2026년 음식물류폐기물 처리 대행 용역(원도심)).hwp: . ~ 2026. 12. 31. ○ 예정물량 : 음식물류폐기물 4,235.6톤 (실제배출량에따라",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01220188",
@@ -5601,9 +5769,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5946.2,
-   "qty_note": "공고문(2026년 음식물류폐기물 처리 대행 용역(영종)(단가계약)).hwp: . ~ 2026. 12. 31. ○ 예정물량 : 음식물류폐기물 5,946.2톤 (실제배출량에따라"
+   "qty_note": "공고문(2026년 음식물류폐기물 처리 대행 용역(영종)(단가계약)).hwp: . ~ 2026. 12. 31. ○ 예정물량 : 음식물류폐기물 5,946.2톤 (실제배출량에따라",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01218947",
@@ -5862,7 +6031,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217968&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01217427",
@@ -5896,9 +6068,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6713.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 비상처리 대행 용역)(수정)12.10..hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 6,713톤(원도심 5,481"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 비상처리 대행 용역)(수정)12.10..hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 6,713톤(원도심 5,481",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01216466",
@@ -5965,9 +6138,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 7000.0,
-   "qty_note": "3. 과업지지서.pdf: 폐기물자원화시설내) - 1 - 라. 예정물량 : 약 7,000톤/년 ※ 단, 안산"
+   "qty_note": "3. 과업지지서.pdf: 폐기물자원화시설내) - 1 - 라. 예정물량 : 약 7,000톤/년 ※ 단, 안산",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01213648",
@@ -6001,9 +6175,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 34000.0,
-   "qty_note": "(과업지시서)2026년 음식물류폐기물 위탁처리 용역.hwp: 류폐기물위탁처리용역 ■ 음식물류폐기물예정처리량 : 34,000톤(아래당구장표시필독"
+   "qty_note": "(과업지시서)2026년 음식물류폐기물 위탁처리 용역.hwp: 류폐기물위탁처리용역 ■ 음식물류폐기물예정처리량 : 34,000톤(아래당구장표시필독",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01217236",
@@ -6037,9 +6212,10 @@
     ]
    ],
    "kind_checked": "2025-12-18",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 3200.0,
-   "qty_note": "2026년 포천시 음식물류폐기물 처리 대행용역 과업지시서(제2권역).hwp: 기초금액: 164,100원/톤 5. 예상발생량: 약3,200톤(10톤/일) ※"
+   "qty_note": "2026년 포천시 음식물류폐기물 처리 대행용역 과업지시서(제2권역).hwp: 기초금액: 164,100원/톤 5. 예상발생량: 약3,200톤(10톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01217218",
@@ -6076,9 +6252,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01217218&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5800.0,
-   "qty_note": "2026년 포천시 음식물류폐기물 처리 대행용역 과업지시서(제1권역).hwp: 기초금액: 164,100원/톤 5. 예상발생량: 약5,800톤(20톤/일) ※"
+   "qty_note": "2026년 포천시 음식물류폐기물 처리 대행용역 과업지시서(제1권역).hwp: 기초금액: 164,100원/톤 5. 예상발생량: 약5,800톤(20톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01217031",
@@ -6116,9 +6293,10 @@
     ]
    ],
    "kind_checked": "2025-12-17",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1700.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 위탁처리 용역).hwp: 에 1회이상수거) - 음식물류폐기물의처리예정물량 : 1,700톤추정금액 : 금32"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 위탁처리 용역).hwp: 에 1회이상수거) - 음식물류폐기물의처리예정물량 : 1,700톤추정금액 : 금32",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01216573",
@@ -6182,9 +6360,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01216036&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 13140.0,
-   "qty_note": "4. 과업지시서[2026년 음식물류 폐기물 처리 용역].pdf: 동중단등) 및계절적·요일적특성에 ※ 처리예정물량 : 13,140톤/년(36톤/일 ×"
+   "qty_note": "4. 과업지시서[2026년 음식물류 폐기물 처리 용역].pdf: 동중단등) 및계절적·요일적특성에 ※ 처리예정물량 : 13,140톤/년(36톤/일 ×",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01213276",
@@ -6218,9 +6397,10 @@
     ]
    ],
    "kind_checked": "2025-12-17",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 9000.0,
-   "qty_note": "4. 과업지시서[송도사업소 음폐수(탈리액) 재활용 처리용역].hwp: 류폐기물처리잔재물(51-38-03) 예상물량(9,000톤/년) 이상폐기물처"
+   "qty_note": "4. 과업지시서[송도사업소 음폐수(탈리액) 재활용 처리용역].hwp: 류폐기물처리잔재물(51-38-03) 예상물량(9,000톤/년) 이상폐기물처",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01198536",
@@ -6286,9 +6466,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01213155&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 720.0,
-   "qty_note": "2. 폐수슬러지 위탁처리(재활용 및 운반) 용역 과업지시서.hwp: 러지(이하슬러지) 처리․운반용역가. 처리예정량 : 720톤(고상) 1) 최종"
+   "qty_note": "2. 폐수슬러지 위탁처리(재활용 및 운반) 용역 과업지시서.hwp: 러지(이하슬러지) 처리․운반용역가. 처리예정량 : 720톤(고상) 1) 최종",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01212997",
@@ -6325,7 +6506,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01212997&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01210850",
@@ -6366,9 +6550,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01210850&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 21900.0,
-   "qty_note": "구로구_음식물류폐기물_위탁처리용역_과업지시서(최종).hwp: 177,990,000원(면세) 마. 예상물량 : 21,900톤/년 ※ 발주기관의"
+   "qty_note": "구로구_음식물류폐기물_위탁처리용역_과업지시서(최종).hwp: 177,990,000원(면세) 마. 예상물량 : 21,900톤/년 ※ 발주기관의",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01209261",
@@ -6402,9 +6587,10 @@
     ]
    ],
    "kind_checked": "2025-12-16",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 15000.0,
-   "qty_note": "과업지시서_음식물민간처리.hwp: 전체에서배출되는음식물류폐기물처리다. 과업물량: 15,000톤/년(예정) ※ 실"
+   "qty_note": "과업지시서_음식물민간처리.hwp: 전체에서배출되는음식물류폐기물처리다. 과업물량: 15,000톤/년(예정) ※ 실",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01207260",
@@ -6441,7 +6627,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01207260&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 80.0,
+   "qty_note": "5. 과업지시서 (2026년 생활폐기물 중계처리시설 폐기물(폐수처리장 슬러지) 처리용역).hwp: 로한다. 제4조(계약단가) 氠瑢 구분처리예정량단위계약단가총계약금액비고폐수처리장슬러지등 80 ton 1. 본계약에따른"
   },
   {
    "id": "g2b:R25BK01204701",
@@ -6503,9 +6692,10 @@
     ]
    ],
    "kind_checked": "2025-12-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18540.0,
-   "qty_note": "★과업지시서_2026.hwpx: 예정단가 : 145,000원/톤라. 예정물량 : 18,540톤마. 용역금액 :"
+   "qty_note": "★과업지시서_2026.hwpx: 예정단가 : 145,000원/톤라. 예정물량 : 18,540톤마. 용역금액 :",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01204189",
@@ -6546,7 +6736,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01204189&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 1320.0,
+   "qty_note": "2. 과업지시서(음식물류탈리액위탁처리).hwp: 물량 氠瑢 품목예상발생량 (톤/년) 보관방법처리방법비고음식물류탈리액 1,320 탱크재활"
   },
   {
    "id": "g2b:R25BK01203298",
@@ -6620,9 +6813,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202758&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 11700.0,
-   "qty_note": "과업지시서(2026년 부평구 음식물류폐기물 민간처리 대행용역).hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 11,700톤(예상량으로변동가능"
+   "qty_note": "과업지시서(2026년 부평구 음식물류폐기물 민간처리 대행용역).hwp: 때까지본계약이유효한것으로본다. 마. 예정물량: 11,700톤(예상량으로변동가능",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01202324",
@@ -6663,9 +6857,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01202324&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1978.0,
-   "qty_note": "과업이행요청서(2026년 양평군 환경기초시설 하수찌꺼기 외부위탁 운반처리 용역).hwp: 하수처리시설양평군옥천면옥천리7 라. 발생예정량: 하수찌꺼기(슬러지) 약 1,978톤 ※ 단, 위물량은"
+   "qty_note": "과업이행요청서(2026년 양평군 환경기초시설 하수찌꺼기 외부위탁 운반처리 용역).hwp: 하수처리시설양평군옥천면옥천리7 라. 발생예정량: 하수찌꺼기(슬러지) 약 1,978톤 ※ 단, 위물량은",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01195916",
@@ -6707,9 +6902,10 @@
     ]
    ],
    "kind_checked": "2025-12-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4553.56,
-   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(검단)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 4,553.56톤/년 ※ 실제처리량"
+   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(검단)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 4,553.56톤/년 ※ 실제처리량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01195843",
@@ -6751,9 +6947,10 @@
     ]
    ],
    "kind_checked": "2025-12-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 4138.1,
-   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(서구)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 서구 : 4,138.1톤/년 ※ 실제처리량"
+   "qty_note": "과업지시서 [2026년 음식물류폐기물 처리 민간위탁 대행용역(서구)].hwp: 처리단가 : 톤당계약체결금액 - 연간예정물량 : 서구 : 4,138.1톤/년 ※ 실제처리량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01201503",
@@ -6787,9 +6984,10 @@
     ]
    ],
    "kind_checked": "2025-12-09",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 56000.0,
-   "qty_note": "용역설명서 및 과업내용서.hwp: : 안양시안양·석수하수처리시설다. 발생예정량 : 하수찌꺼기(탈수) 56,000톤 ※ 단, 발생예정"
+   "qty_note": "용역설명서 및 과업내용서.hwp: : 안양시안양·석수하수처리시설다. 발생예정량 : 하수찌꺼기(탈수) 56,000톤 ※ 단, 발생예정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01198924",
@@ -6848,9 +7046,10 @@
     ]
    ],
    "kind_checked": "2025-12-09",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2930.0,
-   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(2권역)).hwp: 850,000원 (부가세면세) 바. 예상물량 : 총 2,930톤 ※ 발주기관의사정"
+   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(2권역)).hwp: 850,000원 (부가세면세) 바. 예상물량 : 총 2,930톤 ※ 발주기관의사정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01198457",
@@ -6884,9 +7083,10 @@
     ]
    ],
    "kind_checked": "2025-12-09",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6270.0,
-   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(1권역)).hwp: 150,000원 (부가세면세) 바. 예상물량 : 총 6,270톤 ※ 발주기관의사정"
+   "qty_note": "과업지시서(2026년 동두천시 음식물류폐기물 민간위탁처리 용역(1권역)).hwp: 150,000원 (부가세면세) 바. 예상물량 : 총 6,270톤 ※ 발주기관의사정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01196879",
@@ -6960,9 +7160,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196852&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 500.0,
-   "qty_note": "과업이행요청서(2026년 양평군 하수찌꺼기 소각시설 소각재 운반처리 용역).hwp: 종처리업체까지운반하여재활용처리 4. 계약예정물량및기간가. 예정물량 : 하수찌꺼기소각재폐기물 500톤나. 계약기간 :"
+   "qty_note": "과업이행요청서(2026년 양평군 하수찌꺼기 소각시설 소각재 운반처리 용역).hwp: 종처리업체까지운반하여재활용처리 4. 계약예정물량및기간가. 예정물량 : 하수찌꺼기소각재폐기물 500톤나. 계약기간 :",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01184721",
@@ -6996,9 +7197,10 @@
     ]
    ],
    "kind_checked": "2025-12-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2600.0,
-   "qty_note": "2. 시방서(중간가공폐기물 운반처리)_(26년).hwp: 리제 4조[계약예정및기간] 1) 계약예상물량 : 2,600톤(예정) 음식물류폐"
+   "qty_note": "1. 공고문(중간가공_음식물류폐기물)_(26년).hwp: 시서참조 氠瑢 종류추정물량(톤) 추정단가(원/톤) 추정금액(원) 중간가공음식물류폐기물 2,600 167,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01198201",
@@ -7047,9 +7249,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01198201&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 42000.0,
-   "qty_note": "★2026 과업지시서(음식물류폐기물 처리 대행 용역)(최종).hwpx: 796,000,000원(면세) 마. 예상물량 : 42,000톤(57톤/일) ※"
+   "qty_note": "★2026 과업지시서(음식물류폐기물 처리 대행 용역)(최종).hwpx: 796,000,000원(면세) 마. 예상물량 : 42,000톤(57톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01196733",
@@ -7083,9 +7286,10 @@
     ]
    ],
    "kind_checked": "2025-12-10",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 8500.0,
-   "qty_note": "(붙임) 과업내용서.hwp: 함수율혼합10%+85%∼85%이하) 예상발생량 8,500톤 2회(6톤) 2,"
+   "qty_note": "(붙임) 과업내용서.hwp: 함수율혼합10%+85%∼85%이하) 예상발생량 8,500톤 2회(6톤) 2,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01196480",
@@ -7134,9 +7338,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196480&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 29500.0,
-   "qty_note": "2.과업지시서(2026년 음식물류 폐기물 처리 대행 용역).hwpx: 15,850,000원 (면세) 마. 예상물량 : 29,500톤/연 ※ 발주기관의"
+   "qty_note": "2.과업지시서(2026년 음식물류 폐기물 처리 대행 용역).hwpx: 15,850,000원 (면세) 마. 예상물량 : 29,500톤/연 ※ 발주기관의",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01196137",
@@ -7177,7 +7382,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196137&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01196043",
@@ -7218,9 +7426,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01196043&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 9600.0,
-   "qty_note": "1공고문[2026년 하수슬러지 운반 및 처리 용역(단가계약)].hwp: 반입물량외발생하는하수슬러지를처리다. 예정물량: 9,600톤 ※발주처사정에따라"
+   "qty_note": "1공고문[2026년 하수슬러지 운반 및 처리 용역(단가계약)].hwp: 반입물량외발생하는하수슬러지를처리다. 예정물량: 9,600톤 ※발주처사정에따라",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01195967",
@@ -7283,9 +7492,10 @@
     ]
    ],
    "kind_checked": "2025-12-09",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 114.63,
-   "qty_note": "2026년 이천병원 사업장폐기물(음식물) 수집 처리 용역 견적제출 변경공고.hwp: 25. 12. 09. 10:00 연간예상처리량 114,630kg 기초금액 ₩160"
+   "qty_note": "2026년 이천병원 사업장폐기물(음식물) 수집 처리 용역 견적제출 변경공고.hwp: 25. 12. 09. 10:00 연간예상처리량 114,630kg 기초금액 ₩160",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01195254",
@@ -7322,9 +7532,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01195254&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 2137.0,
-   "qty_note": "과업내용서(2026년 분뇨 슬러지 위탁처리 용역).hwp: 체도가능 4. 산출내역 氠瑢 구분성상예정물량기초단가 (원/톤) 총예정금액 (부가세포함) 비고그밖의유기성오니고상 2,137톤 145,000 금"
+   "qty_note": "과업내용서(2026년 분뇨 슬러지 위탁처리 용역).hwp: 체도가능 4. 산출내역 氠瑢 구분성상예정물량기초단가 (원/톤) 총예정금액 (부가세포함) 비고그밖의유기성오니고상 2,137톤 145,000 금",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01195123",
@@ -7361,9 +7572,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01195123&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6055.0,
-   "qty_note": "과업지시서_2026년 화성시 가축분뇨공공처리시설 폐기물 운반 및 처리용역.hwpx: 리물량처리단가비고가축분뇨처리오니 51-01-04 고상 6,055톤/년 180,"
+   "qty_note": "과업지시서_2026년 화성시 가축분뇨공공처리시설 폐기물 운반 및 처리용역.hwpx: 리물량처리단가비고가축분뇨처리오니 51-01-04 고상 6,055톤/년 180,",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01194821",
@@ -7400,9 +7612,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01194821&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6000.0,
-   "qty_note": "과업내용서(2026년 가축분뇨 슬러지 위탁처리 용역).hwp: 체도가능 4. 산출내역 氠瑢 구분성상예정물량기초단가 (원/톤) 총예정금액 (부가세포함) 비고가축분뇨슬러지고상 6,000톤 145,000 8"
+   "qty_note": "과업내용서(2026년 가축분뇨 슬러지 위탁처리 용역).hwp: 체도가능 4. 산출내역 氠瑢 구분성상예정물량기초단가 (원/톤) 총예정금액 (부가세포함) 비고가축분뇨슬러지고상 6,000톤 145,000 8",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01194508",
@@ -7493,9 +7706,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01192782&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 21000.0,
-   "qty_note": "과업지시서(2026년 상반기 환경사업소 하수슬러지 운반).hwp: 생되는하수슬러지(사업장폐기물) 3. 처리예정량 : 21,000톤 ※ 위물량은예정물"
+   "qty_note": "과업지시서(2026년 상반기 환경사업소 하수슬러지 운반).hwp: 생되는하수슬러지(사업장폐기물) 3. 처리예정량 : 21,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01192250",
@@ -7729,7 +7943,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01193739&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01189778",
@@ -7767,9 +7984,10 @@
     ]
    ],
    "kind_checked": "2025-12-04",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18540.0,
-   "qty_note": "#과업지시서_2026.hwpx: 예정단가 : 145,000원/톤라. 예정물량 : 18,540톤마. 용역금액 :"
+   "qty_note": "#과업지시서_2026.hwpx: 예정단가 : 145,000원/톤라. 예정물량 : 18,540톤마. 용역금액 :",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01189554",
@@ -7811,9 +8029,10 @@
     ]
    ],
    "kind_checked": "2025-12-08",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 32560.0,
-   "qty_note": "4. 2026년 과업지시서(처리).hwp: 정금액 : 4,897,024천원마. 예정물량 : 32,560톤/년 ※ 바이오가스"
+   "qty_note": "4. 2026년 과업지시서(처리).hwp: 정금액 : 4,897,024천원마. 예정물량 : 32,560톤/년 ※ 바이오가스",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01188632",
@@ -7850,9 +8069,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188632&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 10145.0,
-   "qty_note": "입찰공고문(2026.하수슬러지 재활용 처리 용역(6권역)-10억 원 이상.hwp: 31. 다. 용역개요 氠瑢 용역위치예정물량설계금액 (단가) 예정금액비고합계 10,145톤금473,041원금"
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리6권역).hwp: 구분합계운북영종송산예정량 (톤/년) 10,145 1,66",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01188561",
@@ -7889,9 +8109,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188561&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 11240.0,
-   "qty_note": "입찰공고문(2026.하수슬러지 재활용 처리 용역(5권역)-10억 원 이상.hwp: 31. 다. 용역개요 氠瑢 용역위치예정물량설계금액 (단가) 예정금액비고합계 11,240톤금460,506원금"
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리5권역).hwp: 합계송도지소진두선재예정량 (톤/년) 11,240 10,7",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01188560",
@@ -7932,9 +8153,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188560&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 20440.0,
-   "qty_note": "과업지시서.hwpx: 842,795,200원(1년) 5. 예상물량 : 20,440톤/년(56톤/1일)"
+   "qty_note": "과업지시서.hwpx: 842,795,200원(1년) 5. 예상물량 : 20,440톤/년(56톤/1일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01188495",
@@ -7971,9 +8193,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188495&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 11908.0,
-   "qty_note": "입찰공고문(2026.하수슬러지 재활용 처리 용역(4권역)-10억 원 이상.hwp: 31. 다. 용역개요 氠瑢 용역위치예정물량설계금액 (단가) 예정금액비고합계 11,908톤금314,215원금"
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리4권역).hwp: 瑢 구분합계공촌강화예정량 (톤/년) 11,908 10,1",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01188436",
@@ -8010,7 +8233,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188436&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 15968.0,
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리3권역).hwp: 氠瑢 구분합계남항예정량 (톤/년) 15,968 15,9"
   },
   {
    "id": "g2b:R25BK01188370",
@@ -8047,7 +8273,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188370&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 25000.0,
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리2권역).hwp: 氠瑢 구분합계승기예정량 (톤/년) 25,000 25,0"
   },
   {
    "id": "g2b:R25BK01188348",
@@ -8084,7 +8313,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188348&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01188329",
@@ -8121,7 +8353,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01188329&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": 31000.0,
+   "qty_note": "과업지시서(2026년 하수슬러지재활용처리1권역).hwp: 氠瑢 구분합계가좌예정량 (톤/년) 31,000 31,0"
   },
   {
    "id": "g2b:R25BK01188286",
@@ -8449,7 +8684,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01174499&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19"
+   "qty_checked": "2026-10-28",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
   },
   {
    "id": "g2b:R25BK01183327",
@@ -8520,9 +8758,10 @@
     ]
    ],
    "kind_checked": "2025-12-04",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 997.0,
-   "qty_note": "과업내용서.hwpx: 설물과사료, 깔짚류, 낙엽등총칭나. 발생량(예정) : 연 997톤 (2.73톤/일)"
+   "qty_note": "과업내용서.hwpx: 설물과사료, 깔짚류, 낙엽등총칭나. 발생량(예정) : 연 997톤 (2.73톤/일)",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01181881",
@@ -8588,9 +8827,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01181267&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18089.0,
-   "qty_note": "과업지시서(2026년 음식물류폐기물 처리대행 용역)_최종.hwp: 기초금액 : 178,017원/톤마. 예정물량 : 18,089톤 ※ 음식물류폐기물"
+   "qty_note": "과업지시서(2026년 음식물류폐기물 처리대행 용역)_최종.hwp: 기초금액 : 178,017원/톤마. 예정물량 : 18,089톤 ※ 음식물류폐기물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01178257",
@@ -8628,9 +8868,10 @@
     ]
    ],
    "kind_checked": "2025-12-02",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 306.19,
-   "qty_note": "재공고문.hwp: ~ 2026년 12월 31일까지 ⑤ 발생예정량 汤捯 306,190kg【연간발생량은추정량"
+   "qty_note": "재공고문.hwp: ~ 2026년 12월 31일까지 ⑤ 발생예정량 汤捯 306,190kg【연간발생량은추정량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01174122",
@@ -8664,9 +8905,10 @@
     ]
    ],
    "kind_checked": "2025-12-02",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 13140.0,
-   "qty_note": "과업지시서[2026년 음식물류 폐기물 처리 용역].pdf: 동중단등) 및계절적·요일적특성에 ※ 처리예정물량 : 13,140톤/년(36톤/일 ×"
+   "qty_note": "과업지시서[2026년 음식물류 폐기물 처리 용역].pdf: 동중단등) 및계절적·요일적특성에 ※ 처리예정물량 : 13,140톤/년(36톤/일 ×",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01179351",
@@ -8707,9 +8949,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01179351&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5500.0,
-   "qty_note": "과업지시서(2026년 음식물류 폐기물 민간위탁 처리 용역).hwpx: 23,179,500원 (면세) 마. 예상물량: 5,500톤/연 ※ 음식물류폐"
+   "qty_note": "과업지시서(2026년 음식물류 폐기물 민간위탁 처리 용역).hwpx: 23,179,500원 (면세) 마. 예상물량: 5,500톤/연 ※ 음식물류폐",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01176876",
@@ -8747,9 +8990,10 @@
     ]
    ],
    "kind_checked": "2025-12-02",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 12500.0,
-   "qty_note": "3. 과업지시서(2026년 음폐수(탈리액) 재활용 처리운반 용역).hwp: 38 032)899-0431 5. 예정량 : 사업소별운영상황에따라증감가능 (단위/톤) 氠瑢 구분청라사업소비고합계 12,500톤/년처리및운반 6."
+   "qty_note": "3. 과업지시서(2026년 음폐수(탈리액) 재활용 처리운반 용역).hwp: 38 032)899-0431 5. 예정량 : 사업소별운영상황에따라증감가능 (단위/톤) 氠瑢 구분청라사업소비고합계 12,500톤/년처리및운반 6.",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01176831",
@@ -8794,9 +9038,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01176831&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 36500.0,
-   "qty_note": "과업지시서(협상).hwpx: 금4,796,757천원(면세) 마. 예상물량 : 36,500톤(50톤/일) ※"
+   "qty_note": "과업지시서(협상).hwpx: 금4,796,757천원(면세) 마. 예상물량 : 36,500톤(50톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01175730",
@@ -8834,9 +9079,10 @@
     ]
    ],
    "kind_checked": "2025-12-05",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 1300.0,
-   "qty_note": "[제안요청서 및 과업지시서] 2026년 공동주택 음식물류폐기물 수집 운반 처리 대행 용역(단가계약).hwp: 일근무로인한토~일요일배출물량을감안하여처리량산정예시) ( 1,300톤 / 365일 )"
+   "qty_note": "[제안요청서 및 과업지시서] 2026년 공동주택 음식물류폐기물 수집 운반 처리 대행 용역(단가계약).hwp: 일근무로인한토~일요일배출물량을감안하여처리량산정예시) ( 1,300톤 / 365일 )",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01169775",
@@ -8881,9 +9127,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01169775&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 21900.0,
-   "qty_note": "(최종)과업지시서(2026~2027 음식물류 폐기물 처리 대행용역)(수정).hwp: 액 : 3,167,397,000원 (예정물량 21,900톤, 톤당처리비 14"
+   "qty_note": "(최종)과업지시서(2026~2027 음식물류 폐기물 처리 대행용역)(수정).hwp: 액 : 3,167,397,000원 (예정물량 21,900톤, 톤당처리비 14",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01167254",
@@ -8949,9 +9196,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01165853&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5500.0,
-   "qty_note": "[과업지시서] 2026년 음식물류폐기물 운반 처리 용역(단가계약).hwp: 구억이천오백칠십사만삼천오백원) 사. 예정물량 : 5,500톤운반및처리아. 추정"
+   "qty_note": "[과업지시서] 2026년 음식물류폐기물 운반 처리 용역(단가계약).hwp: 구억이천오백칠십사만삼천오백원) 사. 예정물량 : 5,500톤운반및처리아. 추정",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01163515",
@@ -8992,9 +9240,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01163515&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 6300.0,
-   "qty_note": "2026년 용역설명서 및 과업지시서.hwp: 나. 배출처 : 과천시환경사업소다. 발생예정량 : 약 6,300톤/년 (수도권매립지"
+   "qty_note": "2026년 용역설명서 및 과업지시서.hwp: 나. 배출처 : 과천시환경사업소다. 발생예정량 : 약 6,300톤/년 (수도권매립지",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01159021",
@@ -9064,9 +9313,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01158860&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18250.0,
-   "qty_note": "5. 과업지시서(2026-27 음식물류폐기물 처리용역).hwp: 0,000원 (부가가치세면세) 마. 예상물량 : 18,250톤/연 (50톤/1일"
+   "qty_note": "5. 과업지시서(2026-27 음식물류폐기물 처리용역).hwp: 0,000원 (부가가치세면세) 마. 예상물량 : 18,250톤/연 (50톤/1일",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01157773",
@@ -9104,9 +9354,10 @@
     ]
    ],
    "kind_checked": "2025-11-21",
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 306.19,
-   "qty_note": "공고문.hwp: ~ 2026년 12월 31일까지 ⑤ 발생예정량 汤捯 306,190kg【연간발생량은추정량"
+   "qty_note": "공고문.hwp: ~ 2026년 12월 31일까지 ⑤ 발생예정량 汤捯 306,190kg【연간발생량은추정량",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01146037",
@@ -9258,9 +9509,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01143406&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 15000.0,
-   "qty_note": "과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(2차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 15,000톤 ※ 위물량은운반및"
+   "qty_note": "과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리(2차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 15,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01142981",
@@ -9326,9 +9578,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01141849&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 43800.0,
-   "qty_note": "3.과업지시서(음식물류 폐기물 처리용역).hwpx: 금 6,420,247,800원마. 예상물량 : 43,800톤(60톤/일) ※"
+   "qty_note": "3.과업지시서(음식물류 폐기물 처리용역).hwpx: 금 6,420,247,800원마. 예상물량 : 43,800톤(60톤/일) ※",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01141594",
@@ -9410,9 +9663,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01134325&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 9000.0,
-   "qty_note": "3. 과업지시서(2026년 하수슬러지 운반 및 처리 (2차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 9,000톤 ※ 위물량은운반및"
+   "qty_note": "3. 과업지시서(2026년 하수슬러지 운반 및 처리 (2차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 9,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01134289",
@@ -9461,9 +9715,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01134289&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 9000.0,
-   "qty_note": "3. 과업지시서(2026년 하수슬러지 운반 및 처리 (1차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 9,000톤 ※ 위물량은운반및"
+   "qty_note": "3. 과업지시서(2026년 하수슬러지 운반 및 처리 (1차)).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 9,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01128383",
@@ -9512,9 +9767,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01128383&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 5000.0,
-   "qty_note": "3.과업지시서(2026년 하수슬러지 처리 용역).hwpx: 슬러지(함수율 80%이하) 처리 ① 처리예정량 : 5,000톤 ※ 위물량은처리예"
+   "qty_note": "3.과업지시서(2026년 하수슬러지 처리 용역).hwpx: 슬러지(함수율 80%이하) 처리 ① 처리예정량 : 5,000톤 ※ 위물량은처리예",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01121817",
@@ -9567,9 +9823,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01121817&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 18000.0,
-   "qty_note": "2. 과업지시서.hwpx: 슬러지(함수율 80%이하) 처리 ① 처리예정량 : 18,000톤 ※ 위물량은예정물"
+   "qty_note": "2. 과업지시서.hwpx: 슬러지(함수율 80%이하) 처리 ① 처리예정량 : 18,000톤 ※ 위물량은예정물",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01121313",
@@ -9622,9 +9879,10 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R25BK01121313&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
     ]
    ],
-   "qty_checked": "2026-10-19",
+   "qty_checked": "2026-10-28",
    "qty_t": 15000.0,
-   "qty_note": "과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 15,000톤 ※ 위물량은운반및"
+   "qty_note": "과업지시서(2026년 중랑물재생센터 하수슬러지 운반 및 처리).hwpx: 율 80%이하) 운반및처리 ① 운반·처리예정량 : 15,000톤 ※ 위물량은운반및",
+   "qty_v": 2
   },
   {
    "id": "g2b:R25BK01112747",
