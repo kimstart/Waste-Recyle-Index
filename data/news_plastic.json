@@ -1,29 +1,67 @@
 {
- "updated": "2026-10-28 22:15",
+ "updated": "2026-10-29 10:52",
  "domestic": [
   {
-   "title": "한국농어촌공사 충북본부 등 13개 기관, 농촌 폐플라스틱 수거 동참",
-   "source": "국제뉴스",
-   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3735632",
-   "pub": "2026-10-28 17:32",
-   "more": 0,
-   "summary": "청주문화제조창 내 '모두의제로쓰 마켓랩'에서 '순환가치(같이)' 농촌나눔 프로젝트' 성과보고회가 28일 열렸다. 참여기관들은 폐플라스틱 수거와 기부금 마련에 동참했고, 이를 활용해 충북 농촌지역에 낙상방지 안전바 200개와 순환 명패 80개를 제작해 설치·배부했다. \"하루 연차로 12일 쉰다\"… 2027년 황금연휴 달력 총정리"
+   "title": "숨 쉬며 들이마신 나노플라스틱, 폐에 염증 일으키는 원리 밝혀졌다",
+   "source": "BRIC",
+   "link": "https://www.ibric.org/bric/trend/bio-news.do?mode=view&articleNo=10062038",
+   "pub": "2026-10-29 10:30",
+   "more": 0
   },
   {
-   "title": "제주삼다수, 무라벨·경량화·재생원료로 용기 혁신 가속",
-   "source": "뉴스락",
-   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138828",
-   "pub": "2026-10-28 17:26",
+   "title": "의정부시 다함께돌봄센터 10호점, 벌말마을축제서 재활용 체험 운영",
+   "source": "이런뉴스",
+   "link": "https://e-runnews.com/news/article.html?no=440313",
+   "pub": "2026-10-29 10:10",
    "more": 0,
-   "summary": "생수를 마신 뒤 분리배출을 위해 라벨을 떼어내던 일상이 달라지고 있다. 국내 생수시장 점유율 1위 브랜드인 제주삼다수도 무라벨 용기 디자인 개선과 경량화, 재생원료 활용을 통해 패키징 혁신을 이어가고 있다. “1g을 줄이기 위해”…디자인부터 성형 조건까지 정밀 검토"
+   "summary": "이런뉴스(e-runnews) 김삼성 기자 | 의정부시는 의정부시다함께돌봄센터 10호점이 10월 24일 ‘같이하면 가치 있는 마을’을 주제로 열린 ‘제9회 벌말마을축제’에 참여해 재활용품을 활용한 체험 활동을 진행하며 지역 주민들과 소통했다고 밝혔다. 이번 축제 참여는 지역 주민들에게 다함께돌봄센터의 역할을 알리고, 놀이와 체험을 통해 일상에서 실천할 수 있는 환경 보호의 중요성을 전달하기 위해 마련됐다."
   },
   {
-   "title": "인류를 병들게 하는 미세플라스틱, 방지 운동도 확산",
-   "source": "이코리아",
-   "link": "https://www.ekoreanews.co.kr/news/articleView.html?idxno=88891",
-   "pub": "2026-10-28 17:16",
+   "title": "“디젤차 매연보다 독하다?”…생수병 ‘나노플라스틱’, 폐 염증 위험 ‘어쩌나’",
+   "source": "헤럴드경제",
+   "link": "https://biz.heraldcorp.com/article/10918619",
+   "pub": "2026-10-29 10:07",
    "more": 0,
-   "summary": "미세플라스틱이 물과 접촉할 때 조직 손상을 일으킬 수 있는 활성산소종을 생성한다는 연구 결과가 나오면서 플라스틱의 건강·환경 영향을 둘러싼 우려가 커지고 있다. 미국 컬럼비아대가 지난 14일(현지시간) 공개한 연구 소개에 따르면 컬럼비아대와 미국 UC버클리 공동 연구진은 미세플라스틱이 물과 접촉하는 과정에서 활성산소종(ROS)을 자발적으로 생성하는 현상을 확인했다."
+   "summary": "생수병과 일회용 컵, 플라스틱 포장재에서 발생하는 초미세 나노플라스틱이 호흡기를 통해 폐 깊숙이 침투해 염증을 일으키는 원리가 국내 연구진에 의해 밝혀졌다. 한국생명공학연구원은 환경질환연구센터 정진영 박사 연구팀이 동아대학교 조완섭 교수팀과 공동으로 일상생활에서 널리 사용되는 플라스틱 소재 2종의 폐 독성과 염증 유발 원리를 규명했다고 29일 밝혔다."
+  },
+  {
+   "title": "생명연, 나노플라스틱의 폐 염증 유발 기전 규명",
+   "source": "약업신문",
+   "link": "http://m.yakup.com/news/?mode=view&cat=12&cat2=121&cat3=0&nid=334462",
+   "pub": "2026-10-29 09:42",
+   "more": 2,
+   "summary": "폴리에틸렌·폴리프로필렌 나노입자 비교…활성산소·표면적 고려한 위해성 평가 근거 제시 한국생명공학연구원(원장 권석윤, 이하 생명연)은 환경질환연구센터 정진영 박사 연구팀과 동아대학교 조완섭 교수 공동연구팀이 폴리에틸렌(PE)과 폴리프로필렌(PP) 나노입자의 폐 독성과 분자 수준의 염증 반응 기전을 비교·규명했다고 29일 밝혔다. 이번 연구에는 마우스 기관 내 주입 모델이 사용됐다."
+  },
+  {
+   "title": "삼표그룹, 소셜벤처 육성 3년째 동행…폐플라스틱 재활용 기업 지원",
+   "source": "워크투데이",
+   "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=91121",
+   "pub": "2026-10-29 08:50",
+   "more": 0,
+   "summary": "제10회 소셜벤처 혁신경연대회서 에코에스씨티 선정…사업개발비 500만원 전달 삼표그룹은 지난 23일 서울 성수동 언더스탠드에비뉴에서 열린 ‘제10회 소셜벤처 혁신경연대회’ 시상식에서 폐자원 자원화 기업 에코에스씨티에 ‘삼표 동반혁신상’을 수여하고 사업개발비 500만원을 지원했다고 29일 밝혔다. 2017년 시작된 소셜벤처 EXPO는 성수동을 중심으로 사회적 기업과 혁신 창업 생태계의 성과를 공유하는 행사다."
+  },
+  {
+   "title": "시흥시, 폐비닐 분리배출 시범사업 정왕시장까지 확대",
+   "source": "경인신문",
+   "link": "https://www.asn24.com/news/articleView.html?idxno=580279",
+   "pub": "2026-10-29 07:46",
+   "more": 0,
+   "summary": "시흥시는 시장과 상점가에서 발생하는 폐비닐의 재활용을 활성화하기 위해 '비닐만 분리담기 시범사업'을 정왕시장까지 확대 시행한다고 밝혔다. 시는 기존 신천동 삼미시장과 문화의거리에서 추진해 온 폐비닐 전용봉투 시범사업을 정왕시장으로 확대해 상인들의 분리배출 참여를 늘리고, 올바른 자원순환 문화를 확산할 계획이다. 오세훈 서울시장, 26일 박정희 대통령 서거 제47주기 추모식 참석"
+  },
+  {
+   "title": "이네오스는 50% 이상의 재활용 플라스틱 폐기물로 만든 재활용 가능한 유연한 포장 필름을 세계 최초로 선보입니다",
+   "source": "Ineos",
+   "link": "https://www.ineos.com/ko/press-releases/News/50%EA%B0%9C-%EC%9D%B4%EC%83%81%EC%9D%98-%EC%9E%AC%ED%99%9C%EC%9A%A9-%ED%94%8C%EB%9D%BC%EC%8A%A4%ED%8B%B1-%ED%8F%90%EA%B8%B0%EB%AC%BC%EB%A1%9C-%EB%A7%8C%EB%93%A0-%EC%9E%AC%ED%99%9C%EC%9A%A9-%EC%9C%A0%EC%97%B0%ED%95%9C-%ED%8F%AC%EC%9E%A5-%ED%95%84%EB%A6%84%EC%9D%84-%EC%84%B8%EA%B3%84-%EC%B5%9C%EC%B4%88%EB%A1%9C-%EA%B0%9C%EB%B0%9C%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A42",
+   "pub": "2026-10-28 17:50",
+   "more": 0,
+   "summary": "INEOS는 세계 최초로 50% 이상의 재활용 플라스틱으로 만든 재활용 가능한 유연한 포장 제품에 사용되는 초박형, 단단한 필름을 생산한다고 발표했습니다 일상생활에서 중요한 역할을 하는 제품의 순환 경제 발전에 독보적인 기여를 할 수 있게 합니다 INEOS는 오늘 세계 최초로 50% 이상의 재활용 플라스틱으로 만들어진 재활용 가능한 유연한 포장 제품에 사용되는 초박층 단성 필름을 생산했다고 발표했습니다."
+  },
+  {
+   "title": "‘투명페트병 분리배출’ 의무화...10명 중 7명 \"라벨제거 불편\"",
+   "source": "JTBC",
+   "link": "https://news.jtbc.co.kr/article/NB12040054",
+   "pub": "2026-10-28 17:38",
+   "more": 0
   },
   {
    "title": "[기획] 버려지는 플라스틱에서 전력까지…'열분해유 사업' 키우는 기업들 주목",
@@ -34,28 +72,12 @@
    "summary": "중동발 에너지 공급망 불안이 이어지면서 폐플라스틱을 자원으로 전환하는 열분해유 산업이 다시 주목받고 있다. 28일 업계에 따르면 시장조사업체 마켓앤마켓은 전 세계 플라스틱 재활용 시장 규모가 2023년 694억달러에서 2030년 1200억달러로 확대될 것으로 전망했다. 크레던스 리서치는 전 세계 열분해유 시장이 2024년 18억달러에서 2032년 36억7000만달러로 성장할 것으로 내다봤다."
   },
   {
-   "title": "재활용 접착제, 물에 풀리는 것만으론 부족하다",
-   "source": "비건뉴스",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=397731",
-   "pub": "2026-10-28 11:55",
-   "more": 0,
-   "summary": "접착제가 물에 풀린다는 사실만으로 포장재 재활용에 적합하다고 판단할 수는 없다. 미국화학회(ACS) 학술지 ACS Applied Polymer Materials에 지난 20일 발표된 연구는 재활용 과정에서 접착제가 뭉쳐 생기는 끈적한 잔류물 문제를 다뤘다. 실험에서 이 접착제는 실온의 0.5M 수산화나트륨 용액에 담근 뒤 4분 만에 유리 표면에서 떨어졌다."
-  },
-  {
    "title": "흥업면 새마을회, 농업용 폐비닐 추가 수거 작업 실시",
    "source": "영서신문",
    "link": "https://www.ysshinmun.com/news/articleView.html?idxno=12546",
    "pub": "2026-10-28 09:16",
    "more": 1,
    "summary": "원주시 흥업면 새마을회(지도자협의회장 여성낙, 부녀회장 방금녀)는 지난 26일 회원 21명이 참여한 가운데 마을에 남아 있던 농업용 폐비닐 추가 수거 작업을 실시했다. 이번 작업은 올해 봄 총 6차례에 걸쳐 진행한 폐비닐 수거에 이어 마을에 남은 폐비닐을 정리하고 쾌적한 생활환경을 조성하기 위해 추진됐다. 원주시기독교연합회, 시민서로돕기 천사운동에 200만 원 후원"
-  },
-  {
-   "title": "SK케미칼의 ‘투트랙’ 승부수…고부가 소재·화학적 재활용 시너지",
-   "source": "주간한국",
-   "link": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7191023",
-   "pub": "2026-10-28 08:49",
-   "more": 0,
-   "summary": "SK케미칼이 고부가가치 화학 소재와 화학적 재활용을 양대 축으로 사업 체질 개선에 나선다. 소재 생산을 넘어 폐플라스틱 원료 확보와 고객사의 환경 규제 대응까지 사업 영역을 확장해 새로운 수익 기반을 마련하겠다는 구상이다. SK케미칼은 2030년 매출 2조 8000억원, 영업이익 3200억원을 달성한다는 중장기 목표를 제시했다."
   },
   {
    "title": "파라다이스 호텔 부산, 창립 45주년 맞아 폐페트병 재활용 굿즈·객실 패키지 선보여",
@@ -66,39 +88,29 @@
    "summary": "파라다이스 호텔 부산이 창립 45주년을 맞아 객실 숙박과 친환경 굿즈를 결합한 기념 패키지 등 관련 프로그램을 운영한다고 28일 밝혔다. 기념 패키지인 ‘Happy Memories Stay’는 객실 1박 또는 2박과 조식 2인으로 구성됐다. 가방 한 개에는 호텔에서 사용된 폐페트병 7개가 재활용 소재로 활용됐다."
   },
   {
-   "title": "수퍼빈, 5개월간 재활용 자원 42톤 회수 - 머니투데이",
-   "source": "머니투데이",
-   "link": "https://www.mt.co.kr/amp/industry/2026/10/27/2026102713401945784",
-   "pub": "2026-10-27 17:45",
-   "more": 0,
-   "summary": "AI 기반 자원순환 기업 수퍼빈(대표 김정빈)이 한국노인인력개발원 경기지역본부와 함께 추진한 '경기지역 자원순환 캠페인'을 2년 연속 성공적으로 마무리했다. 올해 캠페인은 5월부터 9월까지 5개월간 진행됐으며, 총 17개 수행기관이 참여해 투명 페트병 39.6톤, 알루미늄 캔 2.2톤 등 총 41.8톤의 재활용 자원을 회수했다. 이에 따른 자원 판매 보상금은 총 1,895만 원에 달했다."
-  },
-  {
-   "title": "[사설] 플라스틱 감축의 역설",
-   "source": "환경일보",
-   "link": "https://www.hkbs.co.kr/news/articleView.html?idxno=836574",
-   "pub": "2026-10-27 15:43",
-   "more": 0,
-   "summary": "정부가 2030년까지 신재 플라스틱 사용량을 배출전망치 대비 30% 감축하겠다는 목표를 제시했지만, 실제 폐플라스틱 발생량은 오히려 증가할 수 있다는 분석이 나왔다. 그러나 그린피스·녹색연합·환경운동연합에 따르면 목표를 달성하더라도 2030년 폐플라스틱 발생량은 약 900만톤으로, 2024년 실측치 780만톤보다 15% 늘어난다. 폐플라스틱 처리 현황에서도 소각과 열적 재활용의 비중이 높게 나타났다."
-  },
-  {
-   "title": "페트병 접착제, 세척 때 PET 조각에 남지 않아야",
-   "source": "비건뉴스",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=397502",
-   "pub": "2026-10-27 12:31",
-   "more": 0,
-   "summary": "페트병 라벨 접착제는 병에 라벨을 붙이는 기능뿐 아니라 재활용 세척 과정에서 분리되는 방식도 중요하다. 접착제가 PET 조각에 남지 않고 라벨과 함께 떨어져야 재생원료의 오염과 품질 저하를 줄일 수 있다. RecyClass의 페트병 라벨·접착제 평가 절차는 세척 후 라벨이 병에서 분리되고 접착제층은 라벨에 남는 상태를 기준으로 제시한다."
-  },
-  {
-   "title": "공주시의회, “유구읍 폐플라스틱 열분해유 공장 건립 전면 백지화하라”",
-   "source": "특급뉴스",
-   "link": "https://www.expressnews.co.kr/news/articleView.html?idxno=331690",
-   "pub": "2026-10-27 10:47",
-   "more": 13,
-   "summary": "공주시의회가 유구읍 녹천리 일원에 추진 중인 폐플라스틱 열분해유 공장 건립 계획에 대해 강력히 반대하며 사업의 전면 백지화를 촉구하고 나섰다. 공주시의회는 27일 '유구읍 폐플라스틱 열분해유 공장 설립 반대 결의문'을 통해 해당 사업이 지역 주민의 건강과 안전, 청정 유구의 자연환경을 위협할 우려가 있다며 사업자에게 공장 건립 계획의 즉각적인 철회를 요구했다."
+   "title": "SK케미칼의 ‘투트랙’ 승부수…고부가 소재·화학적 재활용 시너지",
+   "source": "주간한국",
+   "link": "https://weekly.hankooki.com/news/articleViewAmp.html?idxno=7191023",
+   "pub": "2026-10-28 08:09",
+   "more": 1,
+   "summary": "SK케미칼이 고부가가치 화학 소재와 화학적 재활용을 양대 축으로 사업 체질 개선에 나선다. 소재 생산을 넘어 폐플라스틱 원료 확보와 고객사의 환경 규제 대응까지 사업 영역을 확장해 새로운 수익 기반을 마련하겠다는 구상이다. SK케미칼은 2030년 매출 2조 8000억원, 영업이익 3200억원을 달성한다는 중장기 목표를 제시했다."
   }
  ],
  "overseas": [
+  {
+   "title": "The yet-to-come PPWR rules and deadlines you need to start preparing for",
+   "source": "ENDS Europe",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGd5bG5oZEZBRm5OTTFGX3NtMnVibUFNNzdOLVR5QWRTSGFVakI1X2tVajB4WEpvU3YxcU1TYldlOTg4NnliQmNLSWdIa2ZoeXVidEZQcjRKOEpjTUloUFJldzdhcm81X1NPY3FhRmZKcU5vWFl1Q0NvN1pqa2xvY2pLOU10LXpKOTRQTlROWWp5dmdEYldLd0VYRXY?oc=5",
+   "pub": "2026-10-29 01:43",
+   "more": 0
+  },
+  {
+   "title": "New Loan Fuels Recyclable Textile Alternative to PVC",
+   "source": "PlasticsToday",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPX1U2RTJRRVRUYWZSY28zVGF0WmgzYlJNcVdPYzZTZkdFa0dENndCb0RwNENnMEJVSWdoNWs5ZUxmSGlieVJPenJ4NzFWTGM4Ri1LcnZpT1JlRW9CRmFKQmxxeG5DeTZmTG9iTE14UFZ6ZG5BNnlWZ1J6Z01faWpGZmFOQnNKb1Z3UTRPN2llc0xHcndlX0E?oc=5",
+   "pub": "2026-10-29 00:24",
+   "more": 1
+  },
   {
    "title": "PE prices rebound, but resin buyers question whether gains will last",
    "source": "Plastics News",
@@ -121,13 +133,6 @@
    "more": 0
   },
   {
-   "title": "The yet-to-come PPWR rules and deadlines you need to start preparing for",
-   "source": "ENDS Europe",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSGd5bG5oZEZBRm5OTTFGX3NtMnVibUFNNzdOLVR5QWRTSGFVakI1X2tVajB4WEpvU3YxcU1TYldlOTg4NnliQmNLSWdIa2ZoeXVidEZQcjRKOEpjTUloUFJldzdhcm81X1NPY3FhRmZKcU5vWFl1Q0NvN1pqa2xvY2pLOU10LXpKOTRQTlROWWp5dmdEYldLd0VYRXY?oc=5",
-   "pub": "2026-10-28 17:52",
-   "more": 0
-  },
-  {
    "title": "PPWR CH02 - The history of the PPWR",
    "source": "ENDS Europe",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQnNwS08zcm9LS0hPR0YtX25vSlJhS2tLUi1DLXc1TDROdWw1SU1PVUdyMkxMai1WSXNoTjg4Q29ISDRrakt6T1doWDNZTGZneV9fMWhreUNEdHJHaHU4NnQxZVhBRkRJYzhuWTZiYnpxekxOd294eGZIQ3VfNExPNDJ6eERfQk05aWRTWjZEdTZFdm9QVUpDSg?oc=5",
@@ -147,13 +152,6 @@
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbGNnRUpLbGkyY0JBV2tsbFNhT3FXd3BaQTdOMkIxbVBqbDNfTlhMZzhfYWU0YTdYRVp6Qll5a2szRWlseGd0R21CVFI1TTloRlVVWllzeE9CS0VxdTRZWFFBc3R5bTd5N3BVTnNKSmVxWXZwTnZ0c1pkMWtkTXpWWXRBek5pclk?oc=5",
    "pub": "2026-10-26 21:52",
    "more": 1
-  },
-  {
-   "title": "Washington studies ag plastics recovery potential",
-   "source": "Resource Recycling",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmxBOGEzRnRDb2xwamo2dm9BdEU2Z0tlS0lmak9vclZYbTZhbjkzTVlDdUhyWGlrSlcwWWFKTk1aZlh6aXBXLURGb21BZk1TMS0tX3JfMHIzRVI4OHpMdGNfdy1kS0xvT29DQXpjSFpfNkMwd0djVGlXYjZreEY3Q1FhWmxBUzNVNDlLc3RmeFlpRUZXeGtacEtRajBFLWRwcE9rQg?oc=5",
-   "pub": "2026-10-26 20:00",
-   "more": 0
   },
   {
    "title": "Aldi and Pact boost recycled content to 50% in household packaging",
