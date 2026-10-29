@@ -1,31 +1,25 @@
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-09-14~2026-10-29: 121건 확인
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-09-14~2026-10-29: 122건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-01-15~2026-02-14: 130건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-02-14~2026-03-16: 115건 확인
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 입찰공고] 진행 공고 확인 28건
+>> [K-APT 입찰공고] 진행 공고 확인 27건
 >> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
->> [세대수] 새로 조회 52건, 누적 483개 단지
->> 저장: 999건 · 상태 {'신규공고': 21, '취소': 238, '유찰': 288, '재공고': 1, '낙찰': 435, '입찰마감': 3, '낙찰무효': 13} · 시스템 {'K-APT': 664, '아파트장터 A2P': 31, 'KG2B전자입찰': 304} · 상세 0건 읽음 · 1년 채우기 2026-02-14
+>> [세대수] 새로 조회 64건, 누적 547개 단지
+>> 저장: 1126건 · 상태 {'신규공고': 21, '취소': 263, '유찰': 331, '재공고': 1, '낙찰': 493, '입찰마감': 2, '낙찰무효': 15} · 시스템 {'K-APT': 758, '아파트장터 A2P': 31, 'KG2B전자입찰': 337} · 상세 0건 읽음 · 1년 채우기 2026-01-15
    2026-10-19 인천    | KG2B전자입찰 | 신검단중앙역센트레빌 | 재활용품 수거업체 선정 입찰공고(긴급) | 낙찰 32,754,240
    2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 22,389,120
    2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
    2026-10-15 경기    | KG2B전자입찰 | 평택화양휴먼빌퍼스트시티 | (재공고)재활용품 처리업체 선정 입찰공고 | 낙찰 15,854,400
    2026-10-14 인천    | K-APT | 연수2차우성아파트 | 재활용수거업체 선정공고 | 낙찰 26,980,800
    2026-10-14 경기    | KG2B전자입찰 | 이천중리금성백조예미지 | 이천중리금성백조예미지 재활용업체 선정 공고 | 낙찰 12,713,400
+   2026-10-14 안양시   | K-APT | 한가람삼성 | 재활용품 처리업체 선정 입찰공고 | 낙찰 18,691,200
    2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
    2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000
    2026-10-13 김포시   | K-APT | 캐슬&파밀리에시티 2단지 | 재활용품 수거업체 선정공고 | 낙찰 53,913,600
-   2026-10-13 서울    | KG2B전자입찰 | 힐스테이트메디알레 | 재활용수거업체 | 낙찰 54,412,200
