@@ -1,25 +1,35 @@
 {
- "updated": "2026-10-29 10:52",
- "domestic": [],
+ "updated": "2026-10-29 22:22",
+ "domestic": [
+  {
+   "title": "엔비텍 바이오가스 스웨덴 바라 대규모 바이오메탄 플랜트 시운전 준비 착수… 연간 70GWh 생산 목표",
+   "source": "https://www.2news.co.kr/",
+   "link": "https://www.2news.co.kr/news/articleView.html?idxno=30951",
+   "pub": "2026-10-29 10:55",
+   "more": 0,
+   "summary": "독일 바이오가스 전문 엔지니어링 기업 엔비텍 바이오가스(EnviTec Biogas)가 스웨덴 바라(Vara) 지역에서 추진 중인 복합 바이오가스 및 가스 고질화 플랜트 건설 공사를 순조롭게 진행하고 있다. 이번 프로젝트는 현지 농민 약 100명이 결성한 농업 협력 법인 BVS(Biogas Västra Skaraborg AB)가 발주한 사업이다."
+  },
+  {
+   "title": "3.9GW 전력 생산 가능성을 지닌 팜유 폐기물, BRIN 연구 바이오가스 튜브",
+   "source": "VOI.ID",
+   "link": "https://voi.id/kr/amp/600310",
+   "pub": "2026-10-28 19:21",
+   "more": 0,
+   "summary": "자카르타 - 인도네시아의 팜유 산업 폐기물은 최대 3.9 기가와트 (GW)의 전력 잠재력을 가지고 있습니다. 아리프에 따르면 인도네시아의 야자열매 농장(TBS) 생산은 연간 약 3억 2,843만 톤에 달한다. 한편, 야자유 또는 야자유 밀 폐수(POME) 처리로부터의 액체 폐기물은 연간 2억 2,990만 입방 미터에 달하는 것으로 추정된다."
+  }
+ ],
  "overseas": [
   {
-   "title": "EverGen Infrastructure announces record RNG production for Q3",
-   "source": "Biomass Magazine",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3R6Zm9scmZfaFpfd1N0SDNSdmdkNXV0SEE0T1oyblR2SG9hTlFmV1ZnQUpzWENsVzZDdEVUMHdGNWhvSlkxekxVdDFLdEthQXNtMV8xa0VsT1hXNlc4b3pjcXpaZXF6Tkx3Qi1WWW80MEFRYmhBa0tCRk9FaDI2NXdKQzRMWGhQdkUtZ3NXcktzR2RkZkh0NGRVODd1NmM?oc=5",
-   "pub": "2026-10-29 02:18",
-   "more": 0
+   "title": "Biomethane ‘left behind’ in UK Budget, says trade association",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZFY0MnVfcHpxZldUN2FrZkhtbTB1SVRQR3BsQktHdmtnSDVJRzU3MkNCempRNzZxRFVnMGhuQUlvT3U2aDNyQTlDQzJGYUFmdWdqVng2bXY5c3Fnd3lvVzBta1FxYmxrTjJhMU1TYnpPdzlhRXZEVERaSXZxV2dzejZUc2l2d2dhS2toaDJoZ25ZWUxUVlJtZE1oNUViTDE5OEhzaWgxcXpnQQ?oc=5",
+   "pub": "2026-10-29 01:52",
+   "more": 2
   },
   {
-   "title": "BioteCH4 acquires five biogas upgrading units from Air Liquide UK",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ19EbUpWbk9BUnZJUlcyNDduNWU2TXJhZ3FYZlJSWFBYNC0wT29ITTVrX0E1UmVoSlRBdWdBU0NKTm16eHFMYXdiUC0yM0I1SDUxbm04blZHd1BtSFlUaEwxSGlTSmNGck14Yjg4N2luRFJmTVU4bkJLX3ZtRldKdlBBZ2tWUklSN0l6OENRaS1aZWh5ZTRGeDVoMWk3SFJKajJMNA?oc=5",
-   "pub": "2026-10-28 17:58",
-   "more": 1
-  },
-  {
-   "title": "Cycle0 commissions biomethane plant",
+   "title": "Future Biogas takes full ownership of six UK AD plants in £104m deal",
    "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMVRRM3dpcUdzY3phWG40QjhNQjllLWw3WHFHOVRyNGprMjE0ak0xakdwLVVQVUVQWXdBQ3I0WWg3MThHdWR5VFFiSzhmX3hmY3l4SGRCYUZjdEh2SDVHamxScWtNY0dQLWIyVkJRM3RzMmY2TDBhRExZUkkxZC02ekFJTV9fNG95Mmx3NVNJMmhpc0E?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVNEQ29PY0ZqaS1QUE03WW1YbnZUbGxTWFV6dGMtcDBhMDdmWmRYN1E3R2FkZUdGTnQybEhlcWhPaVFuOEl3Y0d5RmdKMGdRdjVyMWpfOHVRVV8zeDI1ZUV0MlRMN3o2NFlrOUY5VHhvVXVNdXFfbTU4RGlKMmhkY0k4eWhOU01aU010U0hhb2tQODRXUjEtWHhNOFdxLXRLZDB2T2xCTVF5MnltQUNCSWljVWwyUQ?oc=5",
    "pub": "2026-10-28 03:07",
    "more": 0
   },
@@ -31,6 +41,20 @@
    "more": 0
   },
   {
+   "title": "Cycle0 begins biomethane injection at converted Italian biogas plant",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQREFGUXJ4SHpFVFkwT3UzTVZ5Rk8wYXlaZUZrbGJsRVJzOW1MV3dxR185WjNOWGRqbWtyMk5WNVRqcVJVSnBxMlJuenoxbXpvRnp5QlRqMmw1aFFNSW5jTjdLWWpBTkdSaHloUU5PcEhpNHU0RVJUOEZ2SklmWTBRMlVwelUweGczeE5nRW5yZFY0WUpfbVV4SHMycEdBT2FibVVBSHg0OHI?oc=5",
+   "pub": "2026-10-27 17:22",
+   "more": 6
+  },
+  {
+   "title": "Wasaline signs a liquefied biogas supply contract with St1 Biokraft from 2028",
+   "source": "energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeHNSdFVxWU5wQWZpWFZ5MUpQNFljbVJQcC1ic2lhVDNheGU4U09yNEhoQjlOcEo4TW84UzdfOVYyd3dVYlV0VVVLdFhwTThPS2JoU1FrVWwzaV9ZNzZGR1ZFX2xhOXRDaVFOcWozS3hkdXRlbXhxYzFaLXRwRXlFR1lHaG54dkpYeTNnLWExVk91TTQ3MmtISXBCOXJpU0c3Tm4xZmJB?oc=5",
+   "pub": "2026-10-27 14:04",
+   "more": 1
+  },
+  {
    "title": "Decatur Hills and Waga Energy celebrate ribbon cutting for RNG facility in Indiana",
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZFdSTFVFMTVpWTRIbHJJdEVZM3JkYXh2aVJCR05HcHpWTHJxaG4zUHFrSUpULVdiUGNqUll4Tk5xUW52ZWpCaWxYWVFqcHFZT2Q0Tm5IZS1GdW9fbzVpWFI3YzAya3JFWlFnWklJbWZNczhGa21ZMmhhd3phVWVGUERZZVlWQTZtRS1uanQ4ZlBWSVN5TFIyUlB1OE9WX1d6VUtmWmlhQU9yTk5vdFQ5Z2Vid2dUMnh5MVkw?oc=5",
@@ -38,39 +62,32 @@
    "more": 1
   },
   {
+   "title": "Keppel Named Biomethane Aggregator in Singapore's Regulatory Sandbox",
+   "source": "energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLU04WWlVR0p0Q2VwWi1tMklXVGdNLUhlRVc2Sng0Yk5vLW5NUGVCSVJrYnVoVFlpWGpuWXU5cTUySkRmZ2x6eXFLampRUUR6YlRsNGlyNkp3T2wwUG5ZTXlxY0xNZjc3a05mcW5tRWRmdGMtSUVZOExhdElmZnhXcFFXOHVtb2tYZ1NwT3J2bTY0RWo0dFhMaQ?oc=5",
+   "pub": "2026-10-27 09:54",
+   "more": 5
+  },
+  {
    "title": "Aemetis starts two new dairy digesters as California RNG network expands",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQjIwNWJvN2tRcG52cFNqWUdDRE1pNDg1MjM0Qmg2VmFPdFVIcUFYYnVIMVZBRGpsRWQ4NjNFMWdGQnpJUk1KUWtSdEVaN0YwWnZQQUlpTWNSNnhJOVE2RldiR1hwZmphZjdJLWZDTG1qTlZ0WG1aS3RId2wwVURiMFlPRzNaYTFOMXYtb3F0cVdzZE5YMWU5eDljQ25MRjJpb0t2V0Q2QVc3aUt1VXc?oc=5",
    "pub": "2026-10-27 03:53",
-   "more": 1
+   "more": 0
+  },
+  {
+   "title": "Future Biogas acquires remaining stake in six anaerobic digestion facilities",
+   "source": "Energy Global",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdTgzOXZnVmhtVVBfcE1rOHNZVlYyZmFIQ1laRThya3NFSEpfemdEOGtEUWxvX293QmpiN3dYRzhBdVpXWTdkR3JOS1NEX3NYNmtzUExpV3JxRHRpWlcwMXdlV1BPdWdWQU1LYlhCLVlkNmQ1RHdVS0tXN0diSm1uQWhSdkduLV9CZXJpRnpfRXBCXzd3OTUzbUVSLXFYdktVSFU1RlotMkI4ZDdmNFU0aURfQVZ2V0V2ZE9hekhn?oc=5",
+   "pub": "2026-10-27 01:34",
+   "more": 5
   },
   {
    "title": "UK biomethane sector 'locked out' of low-cost carbon removal opportunity, Cadent report warns",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNlRxMXlSbHZRRm1jLUtQd0FfZEJuWXJKWkdQei1mOXo3SmlpUmx3WEFJLW9ZcFlEUVBHNzNmZlhPZzM4aFdBOV9KWktoaklYajlLVU43akdSdzNod25IcHI1NGxjTDEtcWdBNG5VaC03RU9YS2JIbHJaN3hCem50dWlCcjVfcFFwWEg5TnZBRUpoZjFSSTUySDh2NjJBTHhSdC1UUWx0SVZ2SVRESkdLQnd5RzRpVEdQejFHSlpSYjFnYVUyc1E?oc=5",
    "pub": "2026-10-26 23:30",
-   "more": 1
-  },
-  {
-   "title": "Biogas and biomethane treatment in a changing landscape",
-   "source": "Innovation News Network",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTnNWREJyYTlnMVJUXzFwaGk1VnV5SzNPNjdpRVY3OWFENklPcjdUY293c0taZkNWSWRIRmNaTUZ4S3JSQ1lBTVZ1bWtNX1NzU1Z6REJ1OWh5eDhLYUZxM2h5YUdRQ3hDMmVGZEJxTy1kcDdIN1hKOU1iUnJVRVZyR2J1QVBQWFhXelpPcmtwNDZPOGtjem04d0cxbmViN2JnalE?oc=5",
-   "pub": "2026-10-26 19:54",
-   "more": 4
-  },
-  {
-   "title": "3i Infrastructure-backed Future Biogas takes full ownership of six anaerobic digestion facilities in the U.K.",
-   "source": "Institutional Real Estate, Inc.",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOb3N0RDk2dU81MzU1MnhpQVI1LTFXMGZ1czE4eUltX3pOSko3TFprTzg0SUJadnRFREtBc3I2WWJXaTBGS1AydzJDWmM1QTVqVjZLNlFONDlub0tqSVY5a3VvT0tYdzRobDJVRkt5RlVOd0x4cFRBWl8tWjRzMkU5WmdtRnZZYUtyMVUzeDFJMTZDMERfX3BUaWplakJNeTNBV2hndWtkUHlsRlBEN2RvbXVKeVVaT1JNQWwybEhQQkhNTmFrNkxCTVRSSQ?oc=5",
-   "pub": "2026-10-26 16:00",
-   "more": 15
-  },
-  {
-   "title": "Petronet’s bets ₹1,200 cr on biogas as LNG import risks rise",
-   "source": "BusinessLine",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTlF1NERXOWg5NllMajJzT3dCVlc3VlJpQnNKOGhFR1pHTVY2YkJEd3M4ZDBxNHVZYlN0NnFCcmdrTGFsZ1JuZE5HUHBucUdjVm11ZHgzaU9GTmZBeUJEZnA1QXNRQ3lUbUV0TS1fWkxpMVhHVGphSUVqVzRFemFJazRTM0E1LWIyV25EcTVWM1plX0dqMHFmemt4VTZmVUVTZ2dlNjFOTmpUTUFaMGtXR0l2ajFXczlpODBmdUU2aXBpNzdON29PWm9DcmdZQm56MWNhMEpUWF_SAd8BQVVfeXFMTnVoWjgxc21hd3VtVXRveFptVWkycVYyT001TTNuVWtIenpyZFoxQnZaVElPRWNmVTRIYno0dE1faVlZSm5mcXNQLXgxaTFvUm81b3RmejFWbm9XWG94TEcxRzJIb1hEYnA0Vk5acHMwUE9TLTNlaUhtdXNSSkxVTElvQ2h4OFZUUWtHUnpObW94MlUtemVUVDVqMkFjREUzODlocXotMkFPR01Ea2VQbEN0VThYVWFGaVdZc2lLYlowUXdRTTdacERMVjdnTU1OR1ZNSVZieE8wYVpzZHZ3NA?oc=5",
-   "pub": "2026-10-26 14:58",
-   "more": 2
+   "more": 3
   }
  ]
 }
