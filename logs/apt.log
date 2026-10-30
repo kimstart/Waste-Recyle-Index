@@ -1,17 +1,20 @@
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2026-09-15~2026-10-30: 120건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-09-15~2026-10-30: 121건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 결과공개] 2025-11-16~2025-12-16: 132건 확인
+>> [K-APT 결과공개] 2025-10-17~2025-11-16: 124건 확인
 >> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
->> [K-APT 입찰공고] 진행 공고 확인 28건
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 27건
 >> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
->> [세대수] 새로 조회 53건, 누적 655개 단지
->> 저장: 1345건 · 상태 {'신규공고': 22, '취소': 320, '유찰': 385, '입찰마감': 3, '낙찰': 599, '낙찰무효': 16} · 시스템 {'K-APT': 909, '아파트장터 A2P': 33, 'KG2B전자입찰': 394, '한국환경공단': 5, '아파트비드포유': 4} · 상세 0건 읽음 · 1년 채우기 2025-11-16
+>> [세대수] 새로 조회 50건, 누적 705개 단지
+>> 저장: 1461건 · 상태 {'신규공고': 22, '취소': 361, '유찰': 405, '입찰마감': 2, '낙찰': 654, '낙찰무효': 17} · 시스템 {'K-APT': 982, '아파트장터 A2P': 33, 'KG2B전자입찰': 435, '한국환경공단': 7, '아파트비드포유': 4} · 상세 1건 읽음 · 1년 채우기 완료
    2026-10-19 인천    | KG2B전자입찰 | 신검단중앙역센트레빌 | 재활용품 수거업체 선정 입찰공고(긴급) | 낙찰 32,754,240
+   2026-10-16 이천시   | K-APT | 이천중리 우미린 어반퍼스트 | 재활용품 수거업체 선정 | 낙찰 10,362,000
    2026-10-16 경기    | KG2B전자입찰 | 한빛마을7단지 | (긴급) 재활용품 수거업체 입찰 공고 | 낙찰 22,389,120
    2026-10-15 경기    | KG2B전자입찰 | 회천중앙역 대광로제비앙 그 | 재활용업자 선정 (긴급)입찰공고 | 낙찰 6,163,200
    2026-10-15 경기    | KG2B전자입찰 | 평택화양휴먼빌퍼스트시티 | (재공고)재활용품 처리업체 선정 입찰공고 | 낙찰 15,854,400
@@ -20,4 +23,3 @@
    2026-10-14 안양시   | K-APT | 한가람삼성 | 재활용품 처리업체 선정 입찰공고 | 낙찰 18,691,200
    2026-10-13 경기    | KG2B전자입찰 | 고덕국제신도시미래도파밀리에 | 재활용품 수거용역 업체 선정 입찰 재공고 | 낙찰 5,392,800
    2026-10-13 경기    | KG2B전자입찰 | 성남신촌1단지 | 재활용품 수거업체선정 입찰 재공고 | 낙찰 1,362,000
-   2026-10-13 김포시   | K-APT | 캐슬&파밀리에시티 2단지 | 재활용품 수거업체 선정공고 | 낙찰 53,913,600
