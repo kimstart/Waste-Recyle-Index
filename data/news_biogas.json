@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29 22:22",
+ "updated": "2026-10-30 11:01",
  "domestic": [
   {
    "title": "엔비텍 바이오가스 스웨덴 바라 대규모 바이오메탄 플랜트 시운전 준비 착수… 연간 70GWh 생산 목표",
@@ -8,51 +8,64 @@
    "pub": "2026-10-29 10:55",
    "more": 0,
    "summary": "독일 바이오가스 전문 엔지니어링 기업 엔비텍 바이오가스(EnviTec Biogas)가 스웨덴 바라(Vara) 지역에서 추진 중인 복합 바이오가스 및 가스 고질화 플랜트 건설 공사를 순조롭게 진행하고 있다. 이번 프로젝트는 현지 농민 약 100명이 결성한 농업 협력 법인 BVS(Biogas Västra Skaraborg AB)가 발주한 사업이다."
-  },
-  {
-   "title": "3.9GW 전력 생산 가능성을 지닌 팜유 폐기물, BRIN 연구 바이오가스 튜브",
-   "source": "VOI.ID",
-   "link": "https://voi.id/kr/amp/600310",
-   "pub": "2026-10-28 19:21",
-   "more": 0,
-   "summary": "자카르타 - 인도네시아의 팜유 산업 폐기물은 최대 3.9 기가와트 (GW)의 전력 잠재력을 가지고 있습니다. 아리프에 따르면 인도네시아의 야자열매 농장(TBS) 생산은 연간 약 3억 2,843만 톤에 달한다. 한편, 야자유 또는 야자유 밀 폐수(POME) 처리로부터의 액체 폐기물은 연간 2억 2,990만 입방 미터에 달하는 것으로 추정된다."
   }
  ],
  "overseas": [
   {
-   "title": "Biomethane ‘left behind’ in UK Budget, says trade association",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZFY0MnVfcHpxZldUN2FrZkhtbTB1SVRQR3BsQktHdmtnSDVJRzU3MkNCempRNzZxRFVnMGhuQUlvT3U2aDNyQTlDQzJGYUFmdWdqVng2bXY5c3Fnd3lvVzBta1FxYmxrTjJhMU1TYnpPdzlhRXZEVERaSXZxV2dzejZUc2l2d2dhS2toaDJoZ25ZWUxUVlJtZE1oNUViTDE5OEhzaWgxcXpnQQ?oc=5",
-   "pub": "2026-10-29 01:52",
+   "title": "BioteCH4 seals Air Liquide biogas deal",
+   "source": "ENDS Waste & Bioenergy",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUlhzLXp5WjFUU0ZUdk9VeTVFcDVLbjNCRFJTdVlyMmg3ZEU5SjJoUkxDc0s2Vk5SX25vcXpIMnJjY3FuQ3E4dHhXTXdrVmtWLWNBVnliZTE1ZGhhRmtrdDBuMkkxa1p6NDJoaDROWW9CejIteWNKZWFDel9zWHJjTF9KNG1ZMDRveXB1X0k0VlVzc3B0ci1r?oc=5",
+   "pub": "2026-10-30 02:50",
+   "more": 0
+  },
+  {
+   "title": "ADBA criticises UK Budget for not raising the biomethane support cap",
+   "source": "energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQa2ZjWWR6TDRRUXlSOWJnWE4zcUNsZGcydEttNTZDOUJ6WFRVLTRsSGJYUHg0V25WeEE3Tm4tWXllVEV4WmQ2SW1SV1I5Q0JYYkRZNlVUMGxWRHMzNmc5TFE5LTN0eXdUZWctQUlBZ1BVdTBiQThyTWNvSDE4VWNXdGJUZ3VLMFZsUzVtWDk4a2xobHVqeW5sSnN3?oc=5",
+   "pub": "2026-10-28 16:00",
+   "more": 0
+  },
+  {
+   "title": "Draft Clean Fuel Regulations amendments provide starting point for Canadian RNG, more work needed to compete against subsidized imports",
+   "source": "Canadian Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPa3ZFTm5kd1FGR1pZQU5zYnhnVC1PMTZySU1kVFFZTmtvbWFSVzBIdUd3YUMwcld4d1VjRlBsUzE2MUVKZFU0TlFoNzhxX2xNZHhfY09tUldneTF5bVNqVE9ZeHByOERSWUlJY19ybmFGVUtISHR4dzZXOFFzb3Vjc19jcEFTSF9MVnQ5WEt6bUVZRXdISnBOUjJQSVFPeFBMaG5YVUl1bm9JSU1KcUcxSDl5cnRSRUl6M1lINmZJaDFxZ2poek5ndGdvYk5jZk9RWFZhYnFBQWw3NG5sNEppX0M2Tm9wMk9yVzhWMWVvdmlUVUt4Rk9DNE9BeWhmUEk5bDZNcw?oc=5",
+   "pub": "2026-10-28 08:17",
+   "more": 0
+  },
+  {
+   "title": "FuelEU pooling mechanism drives rapid growth in liquefied biomethane demand",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOUk5mN0dYWWZ6bTIzRDVOVHMwdXJuZG1GV2htZVhMMzFlc3NhM2NCZmZ3T2JvaWFobTl5UVJQTzhXM2M2SzRqcEpsbmN0bWhxYjM0a28zQzEwVUJnVTNIdWhVLVIyVllkckFUWE9SU2xpRFZJc19GVUxqaC1XX2c3ZWlvUzFrQXFkdzFlZkMtakszbV9LbjJYNlNsS0stdTZtenFXNFJJLVNUZW5FTV93bm5B?oc=5",
+   "pub": "2026-10-28 05:28",
    "more": 2
   },
   {
-   "title": "Future Biogas takes full ownership of six UK AD plants in £104m deal",
+   "title": "Cycle0 commissions biomethane plant",
    "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVNEQ29PY0ZqaS1QUE03WW1YbnZUbGxTWFV6dGMtcDBhMDdmWmRYN1E3R2FkZUdGTnQybEhlcWhPaVFuOEl3Y0d5RmdKMGdRdjVyMWpfOHVRVV8zeDI1ZUV0MlRMN3o2NFlrOUY5VHhvVXVNdXFfbTU4RGlKMmhkY0k4eWhOU01aU010U0hhb2tQODRXUjEtWHhNOFdxLXRLZDB2T2xCTVF5MnltQUNCSWljVWwyUQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMVRRM3dpcUdzY3phWG40QjhNQjllLWw3WHFHOVRyNGprMjE0ak0xakdwLVVQVUVQWXdBQ3I0WWg3MThHdWR5VFFiSzhmX3hmY3l4SGRCYUZjdEh2SDVHamxScWtNY0dQLWIyVkJRM3RzMmY2TDBhRExZUkkxZC02ekFJTV9fNG95Mmx3NVNJMmhpc0E?oc=5",
    "pub": "2026-10-28 03:07",
-   "more": 0
-  },
-  {
-   "title": "Biogas-to-methanol refiner Emvolon raises $22M",
-   "source": "Waste Dive",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUUdCVzQ2OXFxeVlIZFp2aS1ZM0t3d0VwOFBFbm1icUliLUpkdHg5M2FFSXdaOGxzTWdpWk9tZUlHdzB4WXl3OGtGV014UkVyc1hnNU1KQlBWRk5zMVB0cWk3VXNfT1VHWWlhODhvdTZxZk5HOXZuSi1mMEN4WGNDZy1td1V3a3EySEtGODUyQjY2Y2ROazUxbUZpN3dOdkoyemk4?oc=5",
-   "pub": "2026-10-28 00:21",
-   "more": 0
-  },
-  {
-   "title": "Cycle0 begins biomethane injection at converted Italian biogas plant",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQREFGUXJ4SHpFVFkwT3UzTVZ5Rk8wYXlaZUZrbGJsRVJzOW1MV3dxR185WjNOWGRqbWtyMk5WNVRqcVJVSnBxMlJuenoxbXpvRnp5QlRqMmw1aFFNSW5jTjdLWWpBTkdSaHloUU5PcEhpNHU0RVJUOEZ2SklmWTBRMlVwelUweGczeE5nRW5yZFY0WUpfbVV4SHMycEdBT2FibVVBSHg0OHI?oc=5",
-   "pub": "2026-10-27 17:22",
-   "more": 6
-  },
-  {
-   "title": "Wasaline signs a liquefied biogas supply contract with St1 Biokraft from 2028",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeHNSdFVxWU5wQWZpWFZ5MUpQNFljbVJQcC1ic2lhVDNheGU4U09yNEhoQjlOcEo4TW84UzdfOVYyd3dVYlV0VVVLdFhwTThPS2JoU1FrVWwzaV9ZNzZGR1ZFX2xhOXRDaVFOcWozS3hkdXRlbXhxYzFaLXRwRXlFR1lHaG54dkpYeTNnLWExVk91TTQ3MmtISXBCOXJpU0c3Tm4xZmJB?oc=5",
-   "pub": "2026-10-27 14:04",
    "more": 1
+  },
+  {
+   "title": "Future Biogas buys Foresight's remaining stake in its biomethane plants",
+   "source": "energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMjBrWmZzWVNOM0xhd1FEUW5zWm1HajVfYll2S01VLUNCN0lzcmVvMEs3VUdHMUZIZVRyNW1kVFdHZFA5R0xuZC04M0FUVnh1WnRJSmNUZlNwQU1GSU16czg2RjdERXFScDFIRzF1aEVKQXFtSDduS1ByUGJYdzFlR29CQkM0VW5EbHJmNlp1WGk2dlZ4YU1LWE04WFo?oc=5",
+   "pub": "2026-10-27 18:49",
+   "more": 3
+  },
+  {
+   "title": "From agricultural waste to compressed biogas: What it takes to build a commercially viable CBG plant",
+   "source": "BioEnergy Times",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdF82dm5PX29uaC13c2VQdkVwMVFNOEZhV19hZUVQR1R5OHFCVEgzb2d0V2huZlJFb0kyQzRhWkNWc3pLSlBIalU1ek04TktnN00tQ3FLMVU4ZW90QkR5QzZMajhOcHE0RS0wSjVfcEhObmpTSU5LOUZZQ3hYQlhkdWx1b2xVdG0weXlPVGROS1JndjI4d1IzOTNiU2tFVUZoazcxS0hMUXZETWxTT09vSVB3MzEwX1AyRHRtRWRBT3RoWExIZFE?oc=5",
+   "pub": "2026-10-27 17:56",
+   "more": 3
+  },
+  {
+   "title": "Petronet LNG Enters Compressed Biogas Production",
+   "source": "Chemical Industry Digest",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNd1FSODVRU3NaY0dhZW1fOVRXTjFtX2dhYnozVHdBWjVpWGUxX0xwTTNENjFDZmVyWUZPeU1DcGRZNXFxNUN1Z1pLTnVCeEhzcVRHOWJ6V2UxUTlzMmRxdWptZzFMTHBRb2UyaGd2QjZsSnhqNjRFd3ZyNDZiSDdmMjN0Vzc2eV9aOWdVUFFUdjNQdw?oc=5",
+   "pub": "2026-10-27 15:26",
+   "more": 6
   },
   {
    "title": "Decatur Hills and Waga Energy celebrate ribbon cutting for RNG facility in Indiana",
@@ -62,32 +75,11 @@
    "more": 1
   },
   {
-   "title": "Keppel Named Biomethane Aggregator in Singapore's Regulatory Sandbox",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNLU04WWlVR0p0Q2VwWi1tMklXVGdNLUhlRVc2Sng0Yk5vLW5NUGVCSVJrYnVoVFlpWGpuWXU5cTUySkRmZ2x6eXFLampRUUR6YlRsNGlyNkp3T2wwUG5ZTXlxY0xNZjc3a05mcW5tRWRmdGMtSUVZOExhdElmZnhXcFFXOHVtb2tYZ1NwT3J2bTY0RWo0dFhMaQ?oc=5",
-   "pub": "2026-10-27 09:54",
-   "more": 5
-  },
-  {
-   "title": "Aemetis starts two new dairy digesters as California RNG network expands",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQjIwNWJvN2tRcG52cFNqWUdDRE1pNDg1MjM0Qmg2VmFPdFVIcUFYYnVIMVZBRGpsRWQ4NjNFMWdGQnpJUk1KUWtSdEVaN0YwWnZQQUlpTWNSNnhJOVE2RldiR1hwZmphZjdJLWZDTG1qTlZ0WG1aS3RId2wwVURiMFlPRzNaYTFOMXYtb3F0cVdzZE5YMWU5eDljQ25MRjJpb0t2V0Q2QVc3aUt1VXc?oc=5",
-   "pub": "2026-10-27 03:53",
+   "title": "Distillery in India for Landia GasMix Biogas Digester Mixing System",
+   "source": "Process and Control Today",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSjdxdm5raHBJdDlxYkpyMUQtTk42VjFJVzE4cmpWMmNfb2FhTnlOTHllQTNLRzZhM0hucmFtRnBLYjd4TWJkcDFTaEtBTzFjZlNkNjJZZjlPZ01FcXkxLXJMTFJoZFZSSjBjOEF1UnlTaWVuUFlacFlaRWwzMnhIMWNiYW0wX3Z2YlowZEdPSTNPSHkyaFpkeTFudkc?oc=5",
+   "pub": "2026-10-27 14:00",
    "more": 0
-  },
-  {
-   "title": "Future Biogas acquires remaining stake in six anaerobic digestion facilities",
-   "source": "Energy Global",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdTgzOXZnVmhtVVBfcE1rOHNZVlYyZmFIQ1laRThya3NFSEpfemdEOGtEUWxvX293QmpiN3dYRzhBdVpXWTdkR3JOS1NEX3NYNmtzUExpV3JxRHRpWlcwMXdlV1BPdWdWQU1LYlhCLVlkNmQ1RHdVS0tXN0diSm1uQWhSdkduLV9CZXJpRnpfRXBCXzd3OTUzbUVSLXFYdktVSFU1RlotMkI4ZDdmNFU0aURfQVZ2V0V2ZE9hekhn?oc=5",
-   "pub": "2026-10-27 01:34",
-   "more": 5
-  },
-  {
-   "title": "UK biomethane sector 'locked out' of low-cost carbon removal opportunity, Cadent report warns",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNlRxMXlSbHZRRm1jLUtQd0FfZEJuWXJKWkdQei1mOXo3SmlpUmx3WEFJLW9ZcFlEUVBHNzNmZlhPZzM4aFdBOV9KWktoaklYajlLVU43akdSdzNod25IcHI1NGxjTDEtcWdBNG5VaC03RU9YS2JIbHJaN3hCem50dWlCcjVfcFFwWEg5TnZBRUpoZjFSSTUySDh2NjJBTHhSdC1UUWx0SVZ2SVRESkdLQnd5RzRpVEdQejFHSlpSYjFnYVUyc1E?oc=5",
-   "pub": "2026-10-26 23:30",
-   "more": 3
   }
  ]
 }
