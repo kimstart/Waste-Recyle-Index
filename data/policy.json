@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31 00:53",
+ "updated": "2026-10-31 10:35",
  "laws": {
   "자원의 절약과 재활용촉진에 관한 법률": {
    "name": "자원의 절약과 재활용촉진에 관한 법률",
@@ -169,6 +169,13 @@
  },
  "posts": [
   {
+   "key": "71:1947",
+   "board": "고시·훈령·예규",
+   "title": "생활폐기물 선별시설의 설치ㆍ운영에 관한 지침",
+   "date": "2026-10-30",
+   "url": "https://www.mcee.go.kr/home/web/law/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=71&orgCd=&condition.typeCode=admrul&typeCode=admrul&lawSeq=1947"
+  },
+  {
    "key": "68:89024",
    "board": "입법예고",
    "title": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙 일부개정령안 입법예고",
@@ -178,6 +185,12 @@
  ],
  "events": [
   {
+   "date": "2026-10-31",
+   "type": "고시·훈령·예규",
+   "title": "생활폐기물 선별시설의 설치ㆍ운영에 관한 지침",
+   "url": "https://www.mcee.go.kr/home/web/law/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=71&orgCd=&condition.typeCode=admrul&typeCode=admrul&lawSeq=1947"
+  },
+  {
    "date": "2026-10-20",
    "type": "입법예고",
    "title": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙 일부개정령안 입법예고",
@@ -185,6 +198,7 @@
   }
  ],
  "board_seen": [
-  "68:89024"
+  "68:89024",
+  "71:1947"
  ]
 }
