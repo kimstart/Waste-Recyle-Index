@@ -41,6 +41,7 @@
 >> [첨부 확인] R25BK01214353 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 >> [첨부 확인] R25BK01216573 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 >> [첨부 확인] R25BK01204701 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+   [재시도 1/2] URLError: <urlopen error _ssl.c:999: The handshake operation timed out>
 >> [첨부 확인] R25BK01186944 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 >> [첨부 확인] R25BK01186915 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 >> [첨부 확인] R25BK01186894 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
