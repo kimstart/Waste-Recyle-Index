@@ -1,58 +1,9 @@
->> [나라장터] 용역 '음식물' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '음식물' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '음폐수' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '음폐수' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '바이오가스' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '바이오가스' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '슬러지' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '슬러지' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '하수찌꺼기' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '하수찌꺼기' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '분뇨' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '분뇨' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '유기성' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '유기성' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '동식물성' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '동식물성' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 용역 '소화조' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 공사 '소화조' 2026-10-11 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [나라장터] 수도권 유기성 용역·공사 0건, 낙찰 후보 0건 (처음 모으기 420/21일)
+>> [나라장터] 수도권 유기성 용역·공사 6건, 낙찰 후보 46건 (처음 모으기 420/21일)
 >> [순환자원 API] 전자입찰 3000건·수의견적 1000건 중 수도권 유기성 0건 + 1건
->> [첨부 확인] R26BK01693171 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01689557 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01579348 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01515601 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01484322 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01470078 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01433205 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R26BK01293708 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01254468 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01254447 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01254379 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01252059 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01250657 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01250652 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01193209 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01230521 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01238891 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01232284 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01231441 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01225821 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01214353 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01216573 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01204701 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01186944 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01186915 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01186894 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01186870 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01186849 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01181153 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01179936 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01112747 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] R25BK01110297 조회 실패: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
->> [첨부 확인] 대상 32건 → 예상물량 확인 0건, 취소공고 0건
->> 저장: 유기성폐자원 입찰·용역·공사 268건 · 유형 {'시설 운영': 3, 'EPC·공사': 27, '처리 대행': 189, '수집·운반': 48, '매각·매입': 1} · 폐기물 {'음식물': 141, '하수찌꺼기·슬러지': 99, '가축분뇨·분뇨': 16, '음폐수': 12} · 낙찰 154
->> 처리 대행 예상물량 확인 139건 / 확인 시도 157건
+>> [첨부 확인] 대상 33건 → 예상물량 확인 1건, 취소공고 26건
+>> 저장: 유기성폐자원 입찰·용역·공사 269건 · 유형 {'처리 대행': 190, '시설 운영': 3, 'EPC·공사': 27, '수집·운반': 48, '매각·매입': 1} · 폐기물 {'하수찌꺼기·슬러지': 100, '음식물': 141, '가축분뇨·분뇨': 16, '음폐수': 12} · 낙찰 154
+>> 처리 대행 예상물량 확인 140건 / 확인 시도 158건
+   인천 | 2027년 인천공항 중수도시설 탈수슬러지 내부 수집·운반 및 외부 위탁  | 추정 674965000.0 | 8,700.0톤 → 추정 7.8만원/톤 | 과업내용서.hwp: 율혼합10%+85%, ∼85%이하) 예상발생량 8,700톤 2회(6톤) 3,
    서울 | [강동구 자원순환센터] 중간가공음식물류폐기물 운반 및 처리 용역 | 추정 453000000.0 | 3,000.0톤 → 추정 15.1만원/톤 | [강동구자원순환센터]과업지시서(중간가공음식물류폐기물)_26.09.22.hwp: 1-38-02) 운반및처리용역
    서울 | 서울특별시 양천구 음식물류폐기물 처리대행 용역 | 추정 7583394000.0 | 51,170.0톤 → 추정 14.8만원/톤 | 과업지시서.hwpx: 83,394,000 원(면세) 마. 예상물량 : 51,170 톤(70톤/일) ※
    가평 | 2026년 가평군 하반기 음식물류폐기물 위탁처리 용역 | 추정 162030000.0 | 982.0톤 → 추정 16.5만원/톤 · 낙찰 14.6만원/톤 | 과업지시서(2026년 가평군 하반기 음식물류폐기물 위탁처리 용역).hwpx: 로부터 2026.12.25.까지
@@ -77,7 +28,7 @@
    서울 | 2026년 서울물재생시설공단 하수슬러지 민간위탁 처리 용역(4차) | 추정 374544000.0 | 4,000.0톤 → 추정 9.4만원/톤 · 낙찰 8.9만원/톤 | 2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 4,000톤/년 ※ 위물량은처
    서울 | 2026년 서울물재생시설공단 하수슬러지 민간위탁 처리 용역(7차) | 추정 92000000.0 | 1,000.0톤 → 추정 9.2만원/톤 · 낙찰 8.9만원/톤 | 2. 과업지시서.hwp: 슬러지(함수율 80%이내) 처리다. 처리예정물량 : 1,000톤/년 ※ 위물량은처
    서울 | 2026년 마포구 공동주택 음식물류폐기물 수집운반처리 대행용역 | 추정 673205280.0 | 8,304.0톤 → 추정 8.1만원/톤 · 낙찰 6.6만원/톤 | 공동주택 과업지시서(2026).hwp: 처리비용은 211,070원/톤임마. 예상물량: 8,304톤(22.7톤
-   인천 | 인천구치소 음식물류 폐기물 처리용역 입찰 | 추정 99170000.0 | 470.0톤 → 추정 21.1만원/톤 | 음식물류 폐기물 처리 용역 공고.pdf: 비및처리비등포함, 부가세포함) 라. 예상처리량 : 연간 470,00
+   2026-10-30 인천   | 처리 대행  | 나라장터 | 인천공항시설관리 주식회사 | 2027년 인천공항 중수도시설 탈수슬러지 내부 수집·운반 및 외부 위탁 처리 용역 | 추정 674965000.0 | 공고 
    2026-10-23 남양주  | 시설 운영  | 나라장터 | 경기도 남양주시 | 남양주시 남은음식물자원화시설 운영·관리 민간위탁 용역 | 추정 5986152727.0 | 공고 
    2026-10-21 인천   | EPC·공사 | 나라장터 | 인천환경공단 | 공촌하수처리장 슬러지케익 저장시설 설치 전기공사 | 추정 89023727.0 | 공고 
    2026-10-20 서울   | EPC·공사 | 나라장터 | 서울특별시 물재생센터 난지 | 2026년 슬러지처리장 조명 및 에어커튼 공사 | 추정 48487273.0 | 낙찰 48002000.0
@@ -117,4 +68,3 @@
    2026-05-12 포천   | 처리 대행  | 나라장터 | 경기도 포천시 건설교통국 | 2026년 포천시 공공하수처리시설 하수슬러지 외부위탁 처리용역(단가계약) | 추정 147272727.0 | 낙찰 156645.0
    2026-05-12 포천   | 처리 대행  | 나라장터 | 경기도 포천시 건설교통국 | 2026년 포천시 공공하수처리시설 하수슬러지 외부위탁 처리용역(단가계약) | 추정 147272727.0 | 공고취소 
    2026-05-11 고양   | 처리 대행  | 나라장터 | 고양도시관리공사 | 고양바이오매스에너지시설 음식물류폐기물 탈수케이크 운반처리 용역(단가계약) | 추정 75950600.0 | 낙찰 159460.0
-   2026-04-30 서울   | 처리 대행  | 나라장터 | 법무부 서울지방교정청 서울 | 서울구치소 음식물류 폐기물 처리 위탁 용역 | 추정 96320000.0 | 낙찰 183.451

@@ -1,8 +1,52 @@
 {
- "updated": "2026-11-01 09:49",
+ "updated": "2026-11-01 20:15",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01801085",
+   "src": "나라장터",
+   "kind": "용역",
+   "no": "R26BK01801085",
+   "ord": "000",
+   "title": "2027년 인천공항 중수도시설 탈수슬러지 내부 수집·운반 및 외부 위탁 처리 용역",
+   "org": "인천공항시설관리 주식회사",
+   "region": "수도권",
+   "city": "인천",
+   "type": "처리 대행",
+   "waste": "하수찌꺼기·슬러지",
+   "start": "2026-10-30",
+   "end": "2026-11-09",
+   "open": "2026-11-09",
+   "method": "일반경쟁",
+   "est": 674965000.0,
+   "budget": 742461500.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "(붙임) 입찰공고문.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01801085&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임) 입찰공고문.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01801085&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업내용서.hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01801085&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임) 공동수급표준협정서(분담이행방식).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01801085&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01801085&bidPbancOrd=000",
+   "qty_checked": "2026-11-01",
+   "qty_v": 2,
+   "qty_t": 8700.0,
+   "qty_note": "과업내용서.hwp: 율혼합10%+85%, ∼85%이하) 예상발생량 8,700톤 2회(6톤) 3,"
+  },
   {
    "id": "g2b:R26BK01788903",
    "src": "나라장터",
