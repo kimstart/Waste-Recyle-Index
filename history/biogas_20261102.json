@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02 18:55",
+ "updated": "2026-11-02 22:47",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-02",
-   "value": 100.08,
+   "value": 97.02,
    "prev_date": "2026-10-29",
    "prev_value": 103.94,
    "src": "Yahoo Finance (ICE Endex)",
@@ -42,9 +42,9 @@
     100.7,
     98.6,
     103.9,
-    100.1
+    97.0
    ],
-   "krw_m3": 1770.3,
+   "krw_m3": 1716.1,
    "fx_used": 1491.76,
    "heat_used": 42.687
   },
@@ -182,7 +182,7 @@
    "item": "실물 EUA ETC",
    "unit": "€/톤",
    "date": "2026-11-02",
-   "value": 85.04,
+   "value": 86.2,
    "prev_date": "2026-10-30",
    "prev_value": 84.88,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
@@ -208,9 +208,9 @@
     84.78,
     84.97,
     84.88,
-    85.04
+    86.2
    ],
-   "krw_t": 126859
+   "krw_t": 128590
   }
  },
  "extra": {
