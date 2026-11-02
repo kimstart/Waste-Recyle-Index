@@ -1,12 +1,20 @@
 {
- "updated": "2026-11-01 22:38",
+ "updated": "2026-11-02 10:35",
  "domestic": [
+  {
+   "title": "바이오가스·저GWP 냉매 등 친환경 연료·기술개발 성행",
+   "source": "기계설비신문",
+   "link": "https://www.kmecnews.co.kr/news/articleView.html?idxno=52490",
+   "pub": "2026-11-02 05:55",
+   "more": 0,
+   "summary": "강화된 환경 규제에 대응하기 위해 온실가스 배출의 주범으로 지목된 불화온실가스를 대체할 ‘냉매’와 ‘바이오가스’ 기술 개발이 성행하고 있다. 한국미래기술연구원은 12월 10일 서울 여의도 소재 FKI 컨퍼런스센터에서 ‘2027 친환경 연료·소재 기술 개발과 인증 전략’ 세미나를 개최한다고 밝혔다. 최근 ‘바이오가스 촉진법’ 시행과 맞물려 바이오메탄의 배관망 혼입 기술이 주목받고 있다."
+  },
   {
    "title": "서산시시설관리공단, 바이오가스화시설 부지경계 복합악취 측정 실시",
    "source": "대전일보",
    "link": "https://www.daejonilbo.com/news/articleViewAmp.html?idxno=2310625",
    "pub": "2026-11-01 13:45",
-   "more": 2,
+   "more": 3,
    "summary": "서산시시설관리공단이 환경기초시설 주변의 악취 발생을 선제적으로 예방하고 시민들에게 쾌적한 생활환경을 제공하기 위해 현장 밀착형 환경 관리에 나섰다. 서산시시설관리공단(이사장 김성호)은 바이오가스화시설 주변의 악취 발생 현황을 정확히 파악하고 주민 불편을 미연에 방지하고자 부지경계 복합악취 측정을 지속 실시하고 있다고 밝혔다."
   },
   {
@@ -14,7 +22,7 @@
    "source": "머니투데이",
    "link": "https://www.mt.co.kr/future/2026/10/31/2026103109155780006",
    "pub": "2026-10-31 10:00",
-   "more": 1,
+   "more": 0,
    "summary": "\"ESS 없이 24시간 돌아간다\" 볏짚·왕겨로 여는 폐수 제로 재생에너지 그리네플은 건식 혐기성소화(ADOS) 기술을 통해 ESS 없이도 24시간 연속 발전이 가능한 차세대 재생에너지 기저 전원을 구축하고자 합니다.\" 그리네플은 기술 완성도를 바탕으로 오는 12월 한국전력과 0.1MW(메가와트)급 실증 플랜트를 가동하고, 내년 강원도 현장에서 상용 양산 설비를 본격 가동할 방침이다."
   }
  ],
@@ -24,7 +32,7 @@
    "source": "Rising Kashmir",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQenh3TGFqdVo5OWJZT0dibGU4bE5CY1BnS3Z2ZzZ0YjlHZ0NpVzBSeFRBTlZKY2dmLXY4cEpkckIwWjBJOEdabVdqaFBCUUgwZ2FWbEYtMkN6Wmt0RmtlV1VfZlNjTUh2MElTSHZaaGMxYTJzaUpsd1VidTFZN3RvT2FSR0g4YTE1RnpjMmRnVG9WZEgxbE15SXBoWHJoQlcyV0tzbmY3TQ?oc=5",
    "pub": "2026-10-31 04:50",
-   "more": 2
+   "more": 3
   },
   {
    "title": "Petrobras launches open call for RNG suppliers",
@@ -34,59 +42,59 @@
    "more": 0
   },
   {
+   "title": "EnviTec Biogas reports significant construction progress in Vara, Sweden",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWQ4aEx1eDhSeDdPZTlxeGdRRHVFR0hJeWFnVFlUMlR4TGs2QUVxd2t6cThsZktscmtsdGo3RE1jcUsxQVRDaWlGZVNrM3U4b25SWEVLaVpUdm5nRHlreEc2b2VWTjRwazczOTRZbEd0TURwOUlIMkFKRjBzUTgtQkNOcVpHTmNYbkVFSjZIM084UC0ySWZ5SXVVTlppdnA5Zml5SmxwN1V5QWFh?oc=5",
+   "pub": "2026-10-31 01:18",
+   "more": 0
+  },
+  {
+   "title": "Calls for biogas curbs",
+   "source": "Nenagh Guardian",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9yY1c2NnRhcXdOZFMyVE5hSmtkMFJjX2QyZmlRTjBobWRuLTA2R2NYSEhiZmhsQ1U2cnY3WXo0ZUhUX01CMC00M0RGZDBzYW9NZGw4anFWWVB0VFpFWlkwbkpsbktmOW9ZT1FEdjRKRmNXQQ?oc=5",
+   "pub": "2026-10-31 00:19",
+   "more": 1
+  },
+  {
+   "title": "Enea and KGS plan six biomethane plants at Polish sugar factories",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUWRmWExaNUZFanl4MDRGREdpX05PTGMyRS1BTG9hR25pRGJJNk51dkZEeDNDVkhVVXZ6THJhWXZvRVhIaEJRZ2VzOWlKTUVqOWRfQlQwRUdBRXRBTXM4c0JfUlE3d3M3MG40RnVRV1JmWFZRbll0anNzUnFXdklicTNkd3dPczJFdTM2SEQyM2JKdDI4RkV4cU9nUFhZNFVHdlBnUg?oc=5",
+   "pub": "2026-10-30 18:07",
+   "more": 1
+  },
+  {
    "title": "Mestron secures new feed-in approval to expand biogas capacity",
    "source": "The Edge Malaysia",
    "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uUFhWY25OM2NUWTg1bThCZThGMi1DZXI0bWhsRjc5WldBTkZ5SzdHMnBJOWJqUWUtbm9LZk5qN2lFWklpRnJGVFAyWXJQOWFu?oc=5",
    "pub": "2026-10-30 16:19",
-   "more": 1
+   "more": 3
+  },
+  {
+   "title": "Virginia Beach wastewater facility to turn biogas into power for thousands of homes",
+   "source": "News From The States",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVVhDNGZGSmtfR1hhaHdMV3hVdEJjWU1DNVlybFNXQmNRRlpZUmo4SUFyTk1WZXBGeXVmS3FadVFkbjZOZzdFR0Roa1dDcmhwZU84dFhqalZTaW9abHpOU1FiQkNCVlZoaDBZcTU4RXl5Qkd6aTFrdFlZellESXBjTGY3ZnFDQXRzdVYyYjhtZnE1TjB3U1NuemZvZFdsLVNYbnpBbWFuQ3JSVEVhNk53?oc=5",
+   "pub": "2026-10-30 16:00",
+   "more": 2
   },
   {
    "title": "Mestron biogas plant targets RM7.5mil annual revenue",
    "source": "NST Online",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPa3NHSFB0N1FvWGtRaWJhQ2ZNdlNBSlFpeDlPZHRfQ3F6V3dLbk45THpab0lxQUZ3bDM2WXViWnlEb0hoMkF4T3V4bEtpenJkSlR1ZTY0WUtBZmNCZjJaM3hDbGZuZENHR2hjYWpRck9NdnVtMWVJLUo4ZDlXc3pRTzZNQ1loMDM3UlJyeXhUeE9zeXpsMmtMemw3TVhwZnlyVE5VQjJWQkRSMk5wWlHSAbMBQVVfeXFMTzJyS0ZpeWg5QWl2SmpiZnZYMWtRSVRZbG5UaHVwUkVlYXdPLVJHWWxwWDlvdzZOSnVQZy1BNGxHU1BsNmdOdHYzaXlCVl9raUNXRUJyT2I3TUdaNHpWcEs4NE1fY1RmRUdwSmp1amIyaGpXU0h0SzdveXBkQTJDTmdPQ1V2cVBaRkhMOWI1cUQ1dU5rV0FpVzIwUGtwRGRjOWdXTWdCX19GR2dqajB5d2d6bHM?oc=5",
    "pub": "2026-10-30 15:36",
-   "more": 3
+   "more": 1
   },
   {
-   "title": "Canadian Biogas Association",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObWdJTDUxTzdISjZ2VlBYNEpvWWd6cVJEdl9MM21wLUFlYUlyZzhfaW1xQkRTODJqLWtiUTgxOWJOVW1WTjFFc2k2a3N4b0lYSXpOdkJIY2lIMFB5aHlTdkk0WTJwYTV4Y210cVVoWkcyOWFYbVVDcjIzc1huaGxIRA?oc=5",
-   "pub": "2026-10-30 10:05",
+   "title": "BioteCH4 buys biogas upgrading units and contracts from Air Liquide UK",
+   "source": "energynews.pro",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRjNSWXJ2ckxhM05EajE5Q2l0Y284NWJOVnJaY1hhQTMwRnNWc29oYW44bkJwckYtdGFZMXd3WExJal9UTk9KVXlZSm80SXlYLXd0TExoZ3BlNEdWb1JmUm9aODRabVlHUVdKME9lYkw1NnJISHVXZE8tbmxiUXZpQV9iTHZZVzIxRG1GM1p0QnhGWkRkU0wyVW9xcV8?oc=5",
+   "pub": "2026-10-30 15:02",
    "more": 0
   },
   {
-   "title": "Columbus Consolidated Government, Landfill Group preparing for grand opening of Renewable Natural Gas Facility",
-   "source": "Yahoo",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUWlGeVdzMEN4SkdmSHA5VzM1S3dRTExIenNsZml0djl3RFdVZWx4UmFvbV9yYXNhZ1dZQjRhVHRfbXg1T0ZJMGFHcEZSbWdDQk8zV3NYS0txMG10UXBjV1pod0FFQ2ZOc0lvejdHQks0c3FQckhENFFaTUFyLXZKOUZGQlVEeGZuVm53bkJmMEliaDEwN041alU3Y2NyZW8?oc=5",
-   "pub": "2026-10-30 09:20",
-   "more": 4
-  },
-  {
-   "title": "EnviTec Biogas AG (ETG.HA) Seasonal Returns Chart - Yahoo Finance",
-   "source": "Yahoo! Finance Canada",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE11Y212NWN0cHBsWG1oYkhyZDdRZmVCazB4Z280cm9PcWdpMkZNQi0zSzZmMlNCRUdITkZvYlVhcFllaHgxa18wZUpfcmJ4eGF6MWp2SnBmRWF4RV9JMzJZVVAwN2c?oc=5",
-   "pub": "2026-10-30 08:25",
-   "more": 1
-  },
-  {
-   "title": "Nalón Minerals 2026 - Biogas Conference",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBpanRCM0xIYzdTMkFWT3YyZVlCdGFMZlNVY3FnUEtSV2RDMmJTVDN3a2VhUmNxeXVMLVVUT0Qwdk52Ty1lVlR2bDltbjdud0dGMFN6azRuNFVmMURSOHNzenpvU2RHLXh0S21GNHhnQ1BZckRFVGc?oc=5",
-   "pub": "2026-10-30 08:24",
-   "more": 2
-  },
-  {
-   "title": "BioteCH4 seals Air Liquide biogas deal",
-   "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUlhzLXp5WjFUU0ZUdk9VeTVFcDVLbjNCRFJTdVlyMmg3ZEU5SjJoUkxDc0s2Vk5SX25vcXpIMnJjY3FuQ3E4dHhXTXdrVmtWLWNBVnliZTE1ZGhhRmtrdDBuMkkxa1p6NDJoaDROWW9CejIteWNKZWFDel9zWHJjTF9KNG1ZMDRveXB1X0k0VlVzc3B0ci1r?oc=5",
-   "pub": "2026-10-30 02:50",
-   "more": 1
-  },
-  {
-   "title": "Biogas purification review points to hybrid systems and smart controls",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQZnhQd1IwT0xxalFRTk5WbWp5a3QxNWJXWnFFZXBmTF9qTm5DNFg5Y0tIZVdDTTdmWUtWeVJKZUZFM04wYW9xcG5Qc2RIcDk0QjhXanlYNzJjNGl1QkN5RnN1SW12eVdmakNDRWNUM0otYmVGU2h5ZjBlYTBMT3h3amxWYnhtTENaQ2tXc0lsUXl3RXJrSERnNXNCMA?oc=5",
-   "pub": "2026-10-29 23:13",
+   "title": "Pig farms in Kampung Selamat sending waste to biogas plant to tackle odour, river pollution, says Penang exco",
+   "source": "Malay Mail",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNWlfVTQtSWdQaWhxTnZyczlMaTdmT1RVUzd4STB6U3dfcGNnSHU1U0E5YXNhUHM4c0c0ZWRkbWJtYXU3NnRIR0tLMzJKSFh2My0td2RJODV2RjhKQlZBbGVBcENYbEw5LVo5dndTeVR0OEpNeGRRSmZlQTlVaXFfV21PSVRxV2E0emNxQ25CdDFMQlgyX3ZUWl8zaEk2ZTdGQ1JNSnc4c3lDdzNGaU12N3gyUFQzWHROUXBoMkhOUGZtbFdWQnV5bTJ2WTNjT3ZjVWNySTl0SnlxRG5jU2dZU25LN2I5YTkwaGFfZkRxRzB2WDRRQnZEN9IB_gFBVV95cUxOS1YtVm5zZE9kQThIMDhEZmsxc2lJRnd2U25FQ2tuTk9GX0d4a0d1alZYY3MxVXFGd3kzOVBfR3ZMOHloSF9MOVhKVFQzV051akh0WjRaOHBvOFFjMmVIWlJjNmMxamp3LW5DSEQ4X1lvekhreWNuYnNRLVh4S2R4cHd4LXdwQmlTVlZKd2cxTG9yb29lWTVHTUVfTTgwLUdFdC1DdmVaTEs3OVBkZFFycXpTd0U4dmYxWFNzaWxuLXVrZFJIWk5seXRfZ3VNNXRvWkRFenc4YXhUbC11TmFFaTZDWnNwQXdKX2xSY253VzgwbkpZMkVFZHk0NEV6Zw?oc=5",
+   "pub": "2026-10-30 13:57",
    "more": 3
   }
  ]
