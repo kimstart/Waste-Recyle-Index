@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-02 10:35",
+ "updated": "2026-11-03 01:20",
  "domestic": [
+  {
+   "title": "바이오가스 황화수소 제거가 설비 보호에 필요한 이유",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=399401",
+   "pub": "2026-11-02 11:46",
+   "more": 0,
+   "summary": "바이오가스 설비에서 황화수소를 제거하는 주된 이유는 가스를 사용하는 장치의 부식과 연소 과정의 황산화물 배출을 줄이기 위해서다. 황화수소 농도와 필요한 처리 수준은 원료와 가스 이용 방식에 따라 달라지며, 모든 설비에 같은 기준을 적용할 수는 없다. EPA의 폐수처리장 열병합발전 분석 보고서는 황화수소가 금속 설비를 부식시키고 연소 장치에서 황산화물 배출을 늘릴 수 있다고 짚었다."
+  },
   {
    "title": "바이오가스·저GWP 냉매 등 친환경 연료·기술개발 성행",
    "source": "기계설비신문",
@@ -16,23 +24,64 @@
    "pub": "2026-11-01 13:45",
    "more": 3,
    "summary": "서산시시설관리공단이 환경기초시설 주변의 악취 발생을 선제적으로 예방하고 시민들에게 쾌적한 생활환경을 제공하기 위해 현장 밀착형 환경 관리에 나섰다. 서산시시설관리공단(이사장 김성호)은 바이오가스화시설 주변의 악취 발생 현황을 정확히 파악하고 주민 불편을 미연에 방지하고자 부지경계 복합악취 측정을 지속 실시하고 있다고 밝혔다."
-  },
-  {
-   "title": "바이오가스·무세포 단백질·AI 더빙…왕중왕전 오른 과기대 교원창업 - 머니투데이",
-   "source": "머니투데이",
-   "link": "https://www.mt.co.kr/future/2026/10/31/2026103109155780006",
-   "pub": "2026-10-31 10:00",
-   "more": 0,
-   "summary": "\"ESS 없이 24시간 돌아간다\" 볏짚·왕겨로 여는 폐수 제로 재생에너지 그리네플은 건식 혐기성소화(ADOS) 기술을 통해 ESS 없이도 24시간 연속 발전이 가능한 차세대 재생에너지 기저 전원을 구축하고자 합니다.\" 그리네플은 기술 완성도를 바탕으로 오는 12월 한국전력과 0.1MW(메가와트)급 실증 플랜트를 가동하고, 내년 강원도 현장에서 상용 양산 설비를 본격 가동할 방침이다."
   }
  ],
  "overseas": [
+  {
+   "title": "Can biomethane help power the data centre boom?",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNY2YweUNZZmltTEVoaXJnTEt0NnROTUtjdFJUN2JYZHpsdDJjV1JHa3ZJRzV1emYzNWFCWXZGRkFweVFUUnZfUzc5TVBOTHJPdTJLdmxqZzBxeU85eWVaTXVtNzlvQlFael81bTVfYVJEaEk5R1ZnN3g3LThrNVBFdTZCT3l6MFAxWGlfMnN6S0I5UlVDQUhLYTVabV8?oc=5",
+   "pub": "2026-11-02 18:00",
+   "more": 0
+  },
+  {
+   "title": "Virginia Beach project to turn wastewater byproduct into renewable natural gas is underway",
+   "source": "The Virginian-Pilot",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMXVKZERkZ2hKVXRTeWJOaXB6MEtmbW5zaUZVakFTNXhLclZISHRocF9HSWkyODV4czBMRjVOTXl6SDRybHlwLXRMU2NBRjhXQWFyNmRBYU1STjVUbmswMzY5WTNGNE5tcXJ1a3VDOFhub041OGY3clRYZU9xejRzVFJLZDI3dWpqSmM3WnFQaW1UWEt1bFRnWkRoWQ?oc=5",
+   "pub": "2026-11-01 00:07",
+   "more": 2
+  },
+  {
+   "title": "Portugal biomethane unit under public consultation",
+   "source": "The Portugal News",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMGs2Wk1VeDFFOEdmUDZ1c0FqR2lENWxIX2VoVWpGSmV6WlItZFZUZk0xUFl1Ykg0VmVoUWhrY0tyb0hKUzROSlJDVmg5SUcwUkRPSlo3Z2dNTnRaOWFQVDNBN1J3RDZMblhGOERLblgwSVdKZFduOXhfY0lSZ2k2cGtBRkRBa0tLTGVDZkVncUFYU3p4RjczeFdKS1B2SW54THJTYjZaU3ltdw?oc=5",
+   "pub": "2026-10-31 22:06",
+   "more": 2
+  },
+  {
+   "title": "Mestron biogas plant targets RM7.5mil annual revenue",
+   "source": "NST Online",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQd1VDNW9ubjVzcU1CZ0RMNzZPRUFsVzk3clVtSFZ0NGRDUDdzTEdMNW5XUHpLYTFJZGVfMWdQNU0yVW9UNkJLYVRfQW43elRpM1luNk0zdlVpVzRnelJVVnFYRXE3bjNreVdaZWRoV3BzNzZmeEo2cVc2aDBtbG9ic2tPS2VRbUhzNkEzOEctNDJSLVpLb0w2M0YxWGN0SnNsNjZubHpydGlPdlpHOGJxTzJ2eHFpYzZ6NXZENzFXZVXSAbMBQVVfeXFMTzJyS0ZpeWg5QWl2SmpiZnZYMWtRSVRZbG5UaHVwUkVlYXdPLVJHWWxwWDlvdzZOSnVQZy1BNGxHU1BsNmdOdHYzaXlCVl9raUNXRUJyT2I3TUdaNHpWcEs4NE1fY1RmRUdwSmp1amIyaGpXU0h0SzdveXBkQTJDTmdPQ1V2cVBaRkhMOWI1cUQ1dU5rV0FpVzIwUGtwRGRjOWdXTWdCX19GR2dqajB5d2d6bHM?oc=5",
+   "pub": "2026-10-31 17:00",
+   "more": 1
+  },
+  {
+   "title": "American Biogas Council",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1HMXlUekR1RlJlX1Jnek5hU3k2OVQxV1NyUzJreFRaYnZKdkM4cjdDbk11SUZiNUc0encxMTZsRXQ0MjBBV0ZrcTVINUkxWlRaZlQxM1lpb0FweWNYcERoR0dET3FNelFqN3VLNlRWLUdBT0JKMzFVWTB3cw?oc=5",
+   "pub": "2026-10-31 08:37",
+   "more": 0
+  },
+  {
+   "title": "Schroders Greencoat eyes European biomethane scale through Dutch platform acquisition",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQV1kxRkVlLXlwRTJSbHFZYTZ4Ml8yRFVOVVBWU0ZTMWpQeDZHLWtZSjFSUW9JVHFQYm11TnNzSV95ZG5nZGJDOUlCTU9SbGtfWk53SUF1YlhZSF8wdVZyLWJlUS1xUDI5RlBPY3RwdjRnTHcwdDR0OGJMUHBPUElJbEV3TVVVU3UtSF90N3VqYXJPWTFWWHY4Z2VPdnd0UmY5NFIwUERwVHRaZWNxT0tZX1pmTEZvU0ZaM0tUbkhlbw?oc=5",
+   "pub": "2026-10-31 06:26",
+   "more": 1
+  },
   {
    "title": "Govt moves to accelerate compressed biogas projects",
    "source": "Rising Kashmir",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQenh3TGFqdVo5OWJZT0dibGU4bE5CY1BnS3Z2ZzZ0YjlHZ0NpVzBSeFRBTlZKY2dmLXY4cEpkckIwWjBJOEdabVdqaFBCUUgwZ2FWbEYtMkN6Wmt0RmtlV1VfZlNjTUh2MElTSHZaaGMxYTJzaUpsd1VidTFZN3RvT2FSR0g4YTE1RnpjMmRnVG9WZEgxbE15SXBoWHJoQlcyV0tzbmY3TQ?oc=5",
    "pub": "2026-10-31 04:50",
-   "more": 3
+   "more": 6
+  },
+  {
+   "title": "Dutch company to build biomethane plant in Latvia / Article",
+   "source": "LSM",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPM0p6Ni1WcVVLc1c0M3RBclJLMzQ4c2hiOXpZUkEtVktSYzNOVjB1RXI4NHZFeEYxeWZ6Ql9SbjdwOXREdDE5UFh2d0pmelFGRjFJZUU2d2Fka1IzVHlQX18yUTQ5MUc4ZDI5OWlBRkxpWmJkMjYtdlcxNVcwZVNJOHdoYWZaLW9MTVE2YkVIbUpSLURkNDVhWGtZVGVyR2ViUzBmX05MdWVmUkpkYjJ1dHBR?oc=5",
+   "pub": "2026-10-31 04:14",
+   "more": 1
   },
   {
    "title": "Petrobras launches open call for RNG suppliers",
@@ -42,60 +91,11 @@
    "more": 0
   },
   {
-   "title": "EnviTec Biogas reports significant construction progress in Vara, Sweden",
-   "source": "Biomass Magazine",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWQ4aEx1eDhSeDdPZTlxeGdRRHVFR0hJeWFnVFlUMlR4TGs2QUVxd2t6cThsZktscmtsdGo3RE1jcUsxQVRDaWlGZVNrM3U4b25SWEVLaVpUdm5nRHlreEc2b2VWTjRwazczOTRZbEd0TURwOUlIMkFKRjBzUTgtQkNOcVpHTmNYbkVFSjZIM084UC0ySWZ5SXVVTlppdnA5Zml5SmxwN1V5QWFh?oc=5",
-   "pub": "2026-10-31 01:18",
-   "more": 0
-  },
-  {
-   "title": "Calls for biogas curbs",
-   "source": "Nenagh Guardian",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9yY1c2NnRhcXdOZFMyVE5hSmtkMFJjX2QyZmlRTjBobWRuLTA2R2NYSEhiZmhsQ1U2cnY3WXo0ZUhUX01CMC00M0RGZDBzYW9NZGw4anFWWVB0VFpFWlkwbkpsbktmOW9ZT1FEdjRKRmNXQQ?oc=5",
-   "pub": "2026-10-31 00:19",
-   "more": 1
-  },
-  {
-   "title": "Enea and KGS plan six biomethane plants at Polish sugar factories",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUWRmWExaNUZFanl4MDRGREdpX05PTGMyRS1BTG9hR25pRGJJNk51dkZEeDNDVkhVVXZ6THJhWXZvRVhIaEJRZ2VzOWlKTUVqOWRfQlQwRUdBRXRBTXM4c0JfUlE3d3M3MG40RnVRV1JmWFZRbll0anNzUnFXdklicTNkd3dPczJFdTM2SEQyM2JKdDI4RkV4cU9nUFhZNFVHdlBnUg?oc=5",
-   "pub": "2026-10-30 18:07",
-   "more": 1
-  },
-  {
-   "title": "Mestron secures new feed-in approval to expand biogas capacity",
-   "source": "The Edge Malaysia",
-   "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1uUFhWY25OM2NUWTg1bThCZThGMi1DZXI0bWhsRjc5WldBTkZ5SzdHMnBJOWJqUWUtbm9LZk5qN2lFWklpRnJGVFAyWXJQOWFu?oc=5",
-   "pub": "2026-10-30 16:19",
-   "more": 3
-  },
-  {
-   "title": "Virginia Beach wastewater facility to turn biogas into power for thousands of homes",
-   "source": "News From The States",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVVhDNGZGSmtfR1hhaHdMV3hVdEJjWU1DNVlybFNXQmNRRlpZUmo4SUFyTk1WZXBGeXVmS3FadVFkbjZOZzdFR0Roa1dDcmhwZU84dFhqalZTaW9abHpOU1FiQkNCVlZoaDBZcTU4RXl5Qkd6aTFrdFlZellESXBjTGY3ZnFDQXRzdVYyYjhtZnE1TjB3U1NuemZvZFdsLVNYbnpBbWFuQ3JSVEVhNk53?oc=5",
-   "pub": "2026-10-30 16:00",
-   "more": 2
-  },
-  {
-   "title": "Mestron biogas plant targets RM7.5mil annual revenue",
-   "source": "NST Online",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPa3NHSFB0N1FvWGtRaWJhQ2ZNdlNBSlFpeDlPZHRfQ3F6V3dLbk45THpab0lxQUZ3bDM2WXViWnlEb0hoMkF4T3V4bEtpenJkSlR1ZTY0WUtBZmNCZjJaM3hDbGZuZENHR2hjYWpRck9NdnVtMWVJLUo4ZDlXc3pRTzZNQ1loMDM3UlJyeXhUeE9zeXpsMmtMemw3TVhwZnlyVE5VQjJWQkRSMk5wWlHSAbMBQVVfeXFMTzJyS0ZpeWg5QWl2SmpiZnZYMWtRSVRZbG5UaHVwUkVlYXdPLVJHWWxwWDlvdzZOSnVQZy1BNGxHU1BsNmdOdHYzaXlCVl9raUNXRUJyT2I3TUdaNHpWcEs4NE1fY1RmRUdwSmp1amIyaGpXU0h0SzdveXBkQTJDTmdPQ1V2cVBaRkhMOWI1cUQ1dU5rV0FpVzIwUGtwRGRjOWdXTWdCX19GR2dqajB5d2d6bHM?oc=5",
-   "pub": "2026-10-30 15:36",
-   "more": 1
-  },
-  {
-   "title": "BioteCH4 buys biogas upgrading units and contracts from Air Liquide UK",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRjNSWXJ2ckxhM05EajE5Q2l0Y284NWJOVnJaY1hhQTMwRnNWc29oYW44bkJwckYtdGFZMXd3WExJal9UTk9KVXlZSm80SXlYLXd0TExoZ3BlNEdWb1JmUm9aODRabVlHUVdKME9lYkw1NnJISHVXZE8tbmxiUXZpQV9iTHZZVzIxRG1GM1p0QnhGWkRkU0wyVW9xcV8?oc=5",
-   "pub": "2026-10-30 15:02",
-   "more": 0
-  },
-  {
-   "title": "Pig farms in Kampung Selamat sending waste to biogas plant to tackle odour, river pollution, says Penang exco",
-   "source": "Malay Mail",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNWlfVTQtSWdQaWhxTnZyczlMaTdmT1RVUzd4STB6U3dfcGNnSHU1U0E5YXNhUHM4c0c0ZWRkbWJtYXU3NnRIR0tLMzJKSFh2My0td2RJODV2RjhKQlZBbGVBcENYbEw5LVo5dndTeVR0OEpNeGRRSmZlQTlVaXFfV21PSVRxV2E0emNxQ25CdDFMQlgyX3ZUWl8zaEk2ZTdGQ1JNSnc4c3lDdzNGaU12N3gyUFQzWHROUXBoMkhOUGZtbFdWQnV5bTJ2WTNjT3ZjVWNySTl0SnlxRG5jU2dZU25LN2I5YTkwaGFfZkRxRzB2WDRRQnZEN9IB_gFBVV95cUxOS1YtVm5zZE9kQThIMDhEZmsxc2lJRnd2U25FQ2tuTk9GX0d4a0d1alZYY3MxVXFGd3kzOVBfR3ZMOHloSF9MOVhKVFQzV051akh0WjRaOHBvOFFjMmVIWlJjNmMxamp3LW5DSEQ4X1lvekhreWNuYnNRLVh4S2R4cHd4LXdwQmlTVlZKd2cxTG9yb29lWTVHTUVfTTgwLUdFdC1DdmVaTEs3OVBkZFFycXpTd0U4dmYxWFNzaWxuLXVrZFJIWk5seXRfZ3VNNXRvWkRFenc4YXhUbC11TmFFaTZDWnNwQXdKX2xSY253VzgwbkpZMkVFZHk0NEV6Zw?oc=5",
-   "pub": "2026-10-30 13:57",
-   "more": 3
+   "title": "Approval granted for controversial biogas plant in Drum",
+   "source": "NorthernSound",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVlpCMHExQzZrSVRfU216UXBUV0dKTHZEYXI5b2g5bThJZERhclltZnhOUFhzRUhjSGM3eVBqLVB3enMwUDdmTzF6ejRKMUd3UjN5WDFNelZDTFpseS01Q0NXbjktRWZwa3NzVF9hY0tYUmdwRDJmVHYzRnJwdVdIZUpiaU1LYzZxM1V1aU5QbURaQkk2c0RWaTdEYkw?oc=5",
+   "pub": "2026-10-31 02:18",
+   "more": 5
   }
  ]
 }
