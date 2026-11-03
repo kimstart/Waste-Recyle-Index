@@ -2,7 +2,7 @@
    [재시도 1/2] HTTPError: HTTP Error 403: Forbidden
    [재시도 2/2] HTTPError: HTTP Error 403: Forbidden
 >> [수집 실패] REC: HTTPError: HTTP Error 403: Forbidden → 이전 값 유지
->> [수집 성공] ttf: 2026-11-02 93.45 (이전 2026-10-29 103.94)
+>> [수집 성공] ttf: 2026-11-02 94.86 (이전 2026-10-29 103.94)
 >> [배출권] 최근 1년 거래 KAU 252건, KCU 2건: KCU [('20260820', 'KCU25', 10200.0, 670.0), ('20260821', 'KCU25', 10200.0, 1.0)]
 >> [KAU] ('20261103', 'KAU26', 30000.0, 83500.0)
 >> [KCU] ('20260821', 'KCU25', 10200.0, 1.0) ↔ 비교 KAU ('20260821', 'KAU25', 28900.0, 893529.0) → 35%  (그날 주력 ('20260821', 'KAU25', 28900.0, 893529.0))
@@ -16,6 +16,6 @@
 >> [GO 경매] 결과 파일: https://www.eex.com/fileadmin/EEX/Downloads/Registry_Services/French_Auctions_for_Biogas_Guarantees_of_Origin/Auction_results_all__1_.xlsx
 >> [GO 경매] 회차 8개, 최근 ('2026-08-05', 20.232294039692025, 245994.0), 직전 ('2026-05-06', 17.9, 71252.0)
 >> [수집 성공] go_fr: 2026-08-05 20.23 (이전 2026-05-06 17.9)
->> [환산] ttf: 93.45 €/MWh → 1669.0 원/㎥
+>> [환산] ttf: 94.86 €/MWh → 1694.2 원/㎥
 >> [환산] go_fr: 20.23 €/MWh → 361.3 원/㎥
 >> data/biogas.json, history/biogas_20261103.json 저장
