@@ -1,63 +1,66 @@
 >> [plastic] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '폐플라스틱' 2건
-   [국내] '재생원료 플라스틱' 4건
+   [국내] '폐플라스틱' 1건
+   [국내] '재생원료 플라스틱' 3건
    [국내] '재생플라스틱' 5건
-   [국내] '플라스틱 재활용' 8건
-   [국내] '페트 재활용' 8건
+   [국내] '플라스틱 재활용' 10건
+   [국내] '페트 재활용' 9건
    [국내] '열분해유' 0건
-   [국내] '화학적 재활용' 3건
-   [국내] '폐비닐' 11건
+   [국내] '화학적 재활용' 4건
+   [국내] '폐비닐' 19건
    [국내] '재생원료 사용 의무' 1건
    [국내] '플라스틱 협약' 0건
-   [국내] '순환경제 플라스틱' 4건
-   [국내] '재활용 선별장' 0건
-   [국내] 반복 소재어: []
-   [해외] 'rPET' 7건
-   [해외] '"recycled PET"' 9건
-   [해외] '"chemical recycling"' 24건
-   [해외] '"plastic pyrolysis"' 2건
+   [국내] '순환경제 플라스틱' 3건
+   [국내] '재활용 선별장' 1건
+   [국내] 반복 소재어: ['수거']
+   [해외] 'rPET' 9건
+   [해외] '"recycled PET"' 10건
+   [해외] '"chemical recycling"' 10건
+   [해외] '"plastic pyrolysis"' 4건
    [해외] '"recycled content" plastic' 8건
-   [해외] '"plastics treaty"' 9건
+   [해외] '"plastics treaty"' 8건
    [해외] '"recycled polypropylene"' 10건
-   [해외] '"plastic recycling"' 20건
-   [해외] 'PPWR recycled' 5건
-   [해외] '"recycled plastic" prices' 11건
-   [해외 전문지] plasticsnews.com 22건
-   [해외 전문지] plasticstoday.com 30건
-   [해외 전문지] packaginginsights.com 10건
+   [해외] '"plastic recycling"' 16건
+   [해외] 'PPWR recycled' 6건
+   [해외] '"recycled plastic" prices' 10건
+   [해외 전문지] plasticsnews.com 17건
+   [해외 전문지] plasticstoday.com 24건
+   [해외 전문지] packaginginsights.com 13건
    [해외 전문지] resource-recycling.com 13건
-   [해외 전문지] recyclingtoday.com 21건
+   [해외 전문지] recyclingtoday.com 18건
    [해외 전문지] recyclinginternational.com 5건
    [해외 전문지] sustainableplastics.com 0건
    [해외 전문지] euwid-recycling.com 6건
-   [해외 전문지] packagingeurope.com 21건
-   [해외 전문지] packaging-gateway.com 13건
-   [해외 전문지] letsrecycle.com 11건
-   [해외 전문지] icis.com 11건
-   [해외 RSS] Recycling Today 4건
-   [해외] 전문지 외 제외: Galaxy Television, Grocery Trade News, Metropolis Magazine, Mexico Business News, Region Canberra, The Business Standard, The Cool Down, The Des Moines Register, The Hitavada, The New Indian Express, Türkiye Today, constructconnect.com
->> [plastic] 국내 46건 → 12건, 해외 272건 → 4건
+   [해외 전문지] packagingeurope.com 19건
+   [해외 전문지] packaging-gateway.com 15건
+   [해외 전문지] letsrecycle.com 13건
+   [해외 전문지] icis.com 12건
+   [해외 RSS] Recycling Today 3건
+   [해외] 전문지 외 제외: Galaxy Television, Grocery Trade News, Manufacturing Management, Metropolis Magazine, Region Canberra, The Cool Down, The Des Moines Register, The New Indian Express, Türkiye Today, constructconnect.com, 헤럴드경제
+>> [plastic] 국내 56건 → 12건, 해외 249건 → 7건
+   - [시정일보] 동작삼일수영장, 폐페트병 활용 생존수영 교육
+   - [경북일보] 김천 시민들, 재활용 처리 현장서 자원순환 배웠다
    - [헤럴드경제] 중동전쟁에 왜 재생 페트칩이 떴을까 [비즈360]
    - [웹이코노미] 수원시 영통구 망포1동, 폐플라스틱 병뚜껑 활용 자원순환 체험교육 실시
-   - [시민행정신문] 경주시, 폐현수막 재활용 순환체계 구축… 친환경 현수막으로 재탄생
-   - [연합뉴스] 경기도, 영농폐기물 수거…폐비닐 ㎏당 최대 160원 보상
-   - [농수축산신문] 농협김해시지부·한림농협, 영농폐비닐 공동 수거
+   - [경북매일] 경주시, 폐현수막 재활용 순환체계 구축…버려진 현수막의 재탄생
    - [지이코노미] 영광군, 장애인활동지원 부정수급 예방부터 재활용·아동 체험까지
+   - [월드장애인사랑뉴스] 경기도, 12월 31일까지 영농폐기물 집중 수거…폐비닐 1kg당 최대 160원 보상
+   - [동아일보] 농촌 폐비닐-농약병 연말까지 집중 수거
    - [동행미디어 시대] 미세플라스틱부터 패스트패션까지…코이카 환경교육 눈길
    - [임팩트온] 글로벌 바닥재 1위 인터페이스의 역발상...순환경제 파일럿, 의외에서 대박
    - [임팩트온] 미국, 포장재 재활용 표시 규제 4개 법안…화학적 재활용 인정 놓고 충돌
    - [전국매일신문] 성북구, 주택가 재활용 거점 조성
-   - [SK브로드밴드 회사소개] [충남 정책브리핑] 연말까지 폐비닐 등 영농폐기물 집중수거
-   - [더퍼스트미디어] 롯데케미칼, ‘Project LOOP Social’ 5기 출범…순환경제 사업화 지원
+   - [Packaging Europe] Beyond compliance: PPWR strategies to beat the ticking clock
+   - [Packaging Europe] EU Commissioner Jessika Roswall clarifies PPWR’s reuse requirements
    - [ENDS Europe] How the PPWR was watered down in one of the EU’s biggest political fights
+   - [ICIS] Thailand needs clearer EPR rules to lift recycled plastics use – Union J Plus
    - [Plastics News] PET bottle resin prices rise in unusual autumn jump
    - [Packaging Insights] Banding for PPWR-Ready Packaging | ATS-Tanner
    - [Plastics News] Polysmart opens Africa’s largest food-grade PET recycling plant in Nigeria
-   [요약] 12/12건
+   [요약] 11/12건
 >> data/news_plastic.json, history/news_plastic_20261103.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '바이오가스' 2건
-   [국내] '바이오메탄' 1건
+   [국내] '바이오가스' 1건
+   [국내] '바이오메탄' 0건
    [국내] '바이오가스 생산목표제' 0건
    [국내] '유기성폐자원' 0건
    [국내] '음식물류폐기물 바이오가스' 0건
@@ -67,36 +70,35 @@
    [국내] '바이오가스화시설' 0건
    [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 33건
-   [해외] 'biogas' 56건
-   [해외] '"renewable natural gas"' 18건
+   [해외] 'biomethane' 30건
+   [해외] 'biogas' 63건
+   [해외] '"renewable natural gas"' 11건
    [해외] '"anaerobic digestion"' 7건
-   [해외] 'biomethane price' 11건
-   [해외] '"guarantees of origin" biomethane' 0건
-   [해외] 'biomethane grid injection' 7건
-   [해외] 'RNG landfill gas' 7건
-   [해외 전문지] bioenergy-news.com 10건
-   [해외 전문지] gasworld.com 28건
+   [해외] 'biomethane price' 10건
+   [해외] '"guarantees of origin" biomethane' 1건
+   [해외] 'biomethane grid injection' 8건
+   [해외] 'RNG landfill gas' 6건
+   [해외 전문지] bioenergy-news.com 9건
+   [해외 전문지] gasworld.com 30건
    [해외 전문지] endswasteandbioenergy.com 2건
-   [해외 전문지] argusmedia.com 11건
-   [해외 전문지] qcintel.com 33건
-   [해외 전문지] biomassmagazine.com 18건
+   [해외 전문지] argusmedia.com 12건
+   [해외 전문지] qcintel.com 1건
+   [해외 전문지] biomassmagazine.com 15건
    [해외 전문지] europeanbiogas.eu 0건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
-   [해외 전문지] wastedive.com 6건
->> [biogas] 국내 4건 → 2건, 해외 247건 → 10건
+   [해외 전문지] wastedive.com 5건
+>> [biogas] 국내 2건 → 1건, 해외 210건 → 10건
    - [비건뉴스] 바이오가스 황화수소 제거가 설비 보호에 필요한 이유
-   - [기계설비신문] 바이오가스·저GWP 냉매 등 친환경 연료·기술개발 성행
-   - [gasworld] Analysis: Biomethane expansion faces growing challenge of local acceptance
+   - [BW Businessworld] Bondada Group Plans Rs 3,000 Cr Investment In Goa Solar, Biogas Projects
+   - [The Clare Champion] Public meeting tonight as biogas threat back in Gort
+   - [gasworld] UAC targets biomethane growth with composite gas transport technology
+   - [Bioenergy Insight Magazine] Public consultation opens on €20m biomethane plant in southern Portugal
    - [UkrAgroConsult] India’s biogas plants cut production amid difficulties selling organic fertilizers
+   - [Bioenergy Insight Magazine] Investors pledge more than ₹32bn for Indian biogas sector at REI Expo
    - [Indian Cooperative] NDDB, JICA Review Cow-Dung Biogas Project
-   - [BW Businessworld] REI Expo Draws Over Rs 3,200 Cr Investment Pledges For Biogas, CBG Sector
    - [climate.economictimes.indiatimes.com] Punjab clears Mohali’s wet waste-to-biogas project after years of delays
    - [NE India Broadcast] Research on AI Applications in Anaerobic Digestion Featured at India International WASH Conference 2026, He...
    - [The Virginian-Pilot] Virginia Beach project to turn wastewater byproduct into renewable natural gas is underway
-   - [Indian Masterminds] HPCL to Invest ₹159 Crore in 135 TPD Compressed Biogas Plant in Bhagalpur, Bihar
-   - [NST Online] Mestron biogas plant targets RM7.5mil annual revenue
-   - [emtv online] FIRST HOME-BIOGAS PROJECT LAUNCHING AT KARAKADAHU, SOGERI
-   [요약] 2/2건
+   [요약] 1/1건
 >> data/news_biogas.json, history/news_biogas_20261103.json 저장

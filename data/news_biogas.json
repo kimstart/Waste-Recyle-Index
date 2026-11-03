@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03 12:31",
+ "updated": "2026-11-03 23:28",
  "domestic": [
   {
    "title": "바이오가스 황화수소 제거가 설비 보호에 필요한 이유",
@@ -8,23 +8,36 @@
    "pub": "2026-11-02 11:46",
    "more": 0,
    "summary": "바이오가스 설비에서 황화수소를 제거하는 주된 이유는 가스를 사용하는 장치의 부식과 연소 과정의 황산화물 배출을 줄이기 위해서다. 황화수소 농도와 필요한 처리 수준은 원료와 가스 이용 방식에 따라 달라지며, 모든 설비에 같은 기준을 적용할 수는 없다. EPA의 폐수처리장 열병합발전 분석 보고서는 황화수소가 금속 설비를 부식시키고 연소 장치에서 황산화물 배출을 늘릴 수 있다고 짚었다."
-  },
-  {
-   "title": "바이오가스·저GWP 냉매 등 친환경 연료·기술개발 성행",
-   "source": "기계설비신문",
-   "link": "https://www.kmecnews.co.kr/news/articleView.html?idxno=52490",
-   "pub": "2026-11-02 05:55",
-   "more": 0,
-   "summary": "강화된 환경 규제에 대응하기 위해 온실가스 배출의 주범으로 지목된 불화온실가스를 대체할 ‘냉매’와 ‘바이오가스’ 기술 개발이 성행하고 있다. 한국미래기술연구원은 12월 10일 서울 여의도 소재 FKI 컨퍼런스센터에서 ‘2027 친환경 연료·소재 기술 개발과 인증 전략’ 세미나를 개최한다고 밝혔다. 최근 ‘바이오가스 촉진법’ 시행과 맞물려 바이오메탄의 배관망 혼입 기술이 주목받고 있다."
   }
  ],
  "overseas": [
   {
-   "title": "Analysis: Biomethane expansion faces growing challenge of local acceptance",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX2xiXzVGSU1UVTVEOXhCTHpQYkZPdHdJbURyODZMWTlXSTV0WmI1OUU5Y19rRWhrYi1MY05HdlNoN0hJbnV5bWY5ZElGZVFDb3lSdzN6OTNmWHVRUmVnN0NYRWQxWTVTV0I5MVNCM1gzcHI4ek91UHNrSTNOUVJERzNULWNLaUpwSzFpbi1nc3NmVmVKVVFRcF9uTUlNZUNDczJwQmJsNWJGY3pKblhXX3hQaFJsdGxIX0lwUl82ckY?oc=5",
-   "pub": "2026-11-03 02:00",
+   "title": "Bondada Group Plans Rs 3,000 Cr Investment In Goa Solar, Biogas Projects",
+   "source": "BW Businessworld",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMS02V2xwNXFqRkt2YzE4V0lNZllMdzA5bWhITFRDWi05R21Sb0JWWTBEdjJCTlpLdHpETEV3ZXROOE9GeEVQMkR1MmplOTNkdWJHdHc4OUJodnZJUTB3MmxKWXNOMVZwSk9QUzN6Rm4xWmg1X25qb1VuaTdqSzJRTy1qNzhPTnFNTl9STVNRYzYxMmwzbG54Z2dmVEdTYWMxb2ZlcWFUbzhqUnlUUjVDdjkxQlJPZw?oc=5",
+   "pub": "2026-11-03 06:30",
+   "more": 3
+  },
+  {
+   "title": "Public meeting tonight as biogas threat back in Gort",
+   "source": "The Clare Champion",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObEVvNElmYXYtX2hic3FxanRIU0xvNFBpcVVOemUwZnc5RzZFbDhMT0VGekFvVjVrd1BFRjlENDBUTmpwOFBSVmstdTlNN0JmSWVzMXFNRnBPRFdBRmoxSEJGV2pDYVFJaWtxbTZOZWY2a0Vyb3VhWGtqTjJYaGVlVVhVV0s?oc=5",
+   "pub": "2026-11-03 05:00",
    "more": 0
+  },
+  {
+   "title": "UAC targets biomethane growth with composite gas transport technology",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNM2x3MGtsZTJrcU8yM0pSbUJESXd2TzNVdDlITmJJa1hSdTFha2RHU1V2enliZWN3WVdJdjA2NWhCNi0xaEM5NW5VUGxITjRpVjI5bHM3NlVmczBnT0Y3RlhDR0VxQV9SZHpzZEVISnhnTVhubG1HS3BxVmxwOXZNNEN0OUpBQXFIdHBWVWxhZUNBeXJIYmxDZlBGZXhaNlpVWDJuLVN1T09tY29QWWp6WnZZbnN2YVg3dHRR?oc=5",
+   "pub": "2026-11-02 23:00",
+   "more": 1
+  },
+  {
+   "title": "Public consultation opens on €20m biomethane plant in southern Portugal",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaGFac2hYWkRvU2Rxc0xaTXZrR1d6aWFUWWkteWNBbDV5aHZwRy1IQXNaaFJVTk1rRFZGb0d1clJRNDUyOEU1c0ZlOGFxTEYtLWg1RWllUUVNd2twUmU3MXdKdkllTlNTbDhEalRwVXdsVDhGWi04TWtoblZ4TmRocnV0X2ZIdDhocFBaUmdZeFFFNEVyNXV5UHc4dnZvREZ3dG5FaTJjMmZ5NTlw?oc=5",
+   "pub": "2026-11-02 20:32",
+   "more": 5
   },
   {
    "title": "India’s biogas plants cut production amid difficulties selling organic fertilizers",
@@ -34,18 +47,18 @@
    "more": 0
   },
   {
+   "title": "Investors pledge more than ₹32bn for Indian biogas sector at REI Expo",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcnMwTGxLMVNjaElaZ2FHZXIzUV9PR2ZrNDFSUGRDZlpYNV9ObjhDRk1jM0RWUG1pd0V4ZGxyWVdPS3RoVEp2Z0ZHejhMeW9FMmZGd2VzN0JuN2dkLXVwdS1fRmpmWXg5dExoTGo3cVlGWVV6X0hIaUxCbjZLbmFSSFFmU1doNXBna2lPM0R6OVlMQzNKeTlXVWNod29iTUx6QlZWOWtwWkV5MS1oUmtma2RBcVI?oc=5",
+   "pub": "2026-11-02 16:52",
+   "more": 4
+  },
+  {
    "title": "NDDB, JICA Review Cow-Dung Biogas Project",
    "source": "Indian Cooperative",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb2hsakQtTnFYd2hHX1BjTU9Ob3pZalVhb1VHUDBQNldBN2ttMnd2WExSWVlpc2V6cFRWejZrNzRTQWFLdkFteUZTbVMtWTJXa0o4MW02SVI3bDNRUXd3Q3A5c05ndmdSMHVVRWgtaF9DQ3RrQk8zU2lpN1FxZ1hvd3dKb253Y0F4cnNpWUZsVW8ydmJENmZmemxzVQ?oc=5",
    "pub": "2026-11-02 14:41",
    "more": 0
-  },
-  {
-   "title": "REI Expo Draws Over Rs 3,200 Cr Investment Pledges For Biogas, CBG Sector",
-   "source": "BW Businessworld",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWkVBVi1oMlF1SHBnYTNBR1QtTS1pWGUwdzFoMFBrWVdfa2VYYVpydjRFeFJHMmw3S3NqNWtYVFEwZkRuS0ItVkZwR0RwUE9iZFBvNzlqZEJjRUVaT3JrNldsemxaLVRQYXdCelFndkFsRFNidTA4WlRjX1RiVXlqR3U1MExzNmtiWndRTFNlTGRLUFM1dDJHUXd4QkczS1VUN3dXNVRFcFh6akFUVWx4M203SDNuVW8?oc=5",
-   "pub": "2026-11-02 09:30",
-   "more": 1
   },
   {
    "title": "Punjab clears Mohali’s wet waste-to-biogas project after years of delays",
@@ -59,35 +72,14 @@
    "source": "NE India Broadcast",
    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPeXZvQlJvcWpZT1Y4WThCMGdkdXVXNFVKRmpLajNzTDh6Q18wMGJDVmdwSkhWNS0tNzREMEpkWGZReXpReE1pRXpvN2t1Z2V3VGo3VTZRejZLUVpOQzlkVk14SzBlWWNxdl9peHZoaDB3UzQ2dkJEUHllTjR6WkFyTUF1alMtWmJHY3Y1NHdJZFRjcGlCVzF3c0NoTklabHE5cGJZaHNBSU1NM0xXdDlSMU9xcDhpY3RUaUx6RGdpN2FhZno5LTlGMEJRLXlDNXdaUjdfTGhkMy1sMUtlMXkzRDV0QjE0RW04eG9qUG5NWjA5VTZEREhoYVF4NFdRaENtaTZfWnpNajRnd9IBjwJBVV95cUxPVTlsdTFnT0dzUEw4VnBPZlpmQVJuTUlSX3ZqS0RJaGxCWEZnM0M1SFhJU2cxNU5oWDRud01oMldteVJGNktKSVNGV2pNc3JSeFhIenVGSmNLaXhNLVhhMGRyOFNLdnJxYUNFbHAyZnBlNXdYemJmYWwxY1puZE1pNEtwSVo0M2ZyZmUzQUNzTUdleVJicU1SeEY5aUduWEtiQjZJYzlrME1tX1hTcnVmVElZcUplSm5RWDFMa2w0LUs0ZWhtQjlkYVRlRjE4UHVBMWdrTzBjM0pIMlkzZlZoc1cwNUVLNU1QT0FBZi1fQk5Dcl96RElCT3QxZHRNSTREdlZXX1BEQ0c0ejVsRzZN?oc=5",
    "pub": "2026-11-01 19:07",
-   "more": 1
+   "more": 2
   },
   {
    "title": "Virginia Beach project to turn wastewater byproduct into renewable natural gas is underway",
    "source": "The Virginian-Pilot",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMXVKZERkZ2hKVXRTeWJOaXB6MEtmbW5zaUZVakFTNXhLclZISHRocF9HSWkyODV4czBMRjVOTXl6SDRybHlwLXRMU2NBRjhXQWFyNmRBYU1STjVUbmswMzY5WTNGNE5tcXJ1a3VDOFhub041OGY3clRYZU9xejRzVFJLZDI3dWpqSmM3WnFQaW1UWEt1bFRnWkRoWQ?oc=5",
    "pub": "2026-11-01 00:07",
-   "more": 4
-  },
-  {
-   "title": "HPCL to Invest ₹159 Crore in 135 TPD Compressed Biogas Plant in Bhagalpur, Bihar",
-   "source": "Indian Masterminds",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN3l4TnZVcTVVZkc1VFFrSFF6NkZibjFGcWdOQkttc093aThXeUNHUG43Sl9SNzBqT1Vwdldka2hmcVVjZG9HNXJBTTJHaERuSUo0b09OU3hyMjM4b0c5QXZ2SmxEZVl0NDBpNzh5MnVVaG12d2VKeW43UUxLam1jSUx1MGpFeFJNSlB1VkRxUkR3Mnp5ODhyNG9pWQ?oc=5",
-   "pub": "2026-10-31 21:39",
-   "more": 1
-  },
-  {
-   "title": "Mestron biogas plant targets RM7.5mil annual revenue",
-   "source": "NST Online",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPa3NHSFB0N1FvWGtRaWJhQ2ZNdlNBSlFpeDlPZHRfQ3F6V3dLbk45THpab0lxQUZ3bDM2WXViWnlEb0hoMkF4T3V4bEtpenJkSlR1ZTY0WUtBZmNCZjJaM3hDbGZuZENHR2hjYWpRck9NdnVtMWVJLUo4ZDlXc3pRTzZNQ1loMDM3UlJyeXhUeE9zeXpsMmtMemw3TVhwZnlyVE5VQjJWQkRSMk5wWlHSAbMBQVVfeXFMTzJyS0ZpeWg5QWl2SmpiZnZYMWtRSVRZbG5UaHVwUkVlYXdPLVJHWWxwWDlvdzZOSnVQZy1BNGxHU1BsNmdOdHYzaXlCVl9raUNXRUJyT2I3TUdaNHpWcEs4NE1fY1RmRUdwSmp1amIyaGpXU0h0SzdveXBkQTJDTmdPQ1V2cVBaRkhMOWI1cUQ1dU5rV0FpVzIwUGtwRGRjOWdXTWdCX19GR2dqajB5d2d6bHM?oc=5",
-   "pub": "2026-10-31 17:00",
-   "more": 1
-  },
-  {
-   "title": "FIRST HOME-BIOGAS PROJECT LAUNCHING AT KARAKADAHU, SOGERI",
-   "source": "emtv online",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQeVAwam5oNEQ5NDlXRmh4eEZxRVV3cThEVzBtd3h3MHJBZkgwUWNhS25Fa0Zid3dpWjBGdEgzSzZzTHVZdjFSdF9JZzFMQm1JMW1EdDZZelpJbzhnb1A5ZFRQc3RidEZ0OUdJelJSR1lxUFdXU2JhVWhMNXBxZE53Z2p5RQ?oc=5",
-   "pub": "2026-10-31 16:00",
-   "more": 1
+   "more": 5
   }
  ]
 }
