@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04 11:10",
+ "updated": "2026-11-04 21:03",
  "checked": [
   6731,
   6732,
@@ -116,9 +116,144 @@
   6843,
   6844,
   6845,
-  6846
+  6846,
+  6847
  ],
  "issues": [
+  {
+   "no": 6847,
+   "title": "2026년 10월 환경 주요 정책 동향",
+   "month": "2026-10",
+   "url": "https://www.bkl.co.kr/law/insight/newsletter/6847",
+   "pdf": "https://www.bkl.co.kr/newsLetter/itemUrl.do?itemNo=6847",
+   "ver": 4,
+   "added": "2026-11-04",
+   "n_total": 67,
+   "items": [
+    {
+     "sec": "입법·행정예고",
+     "name": "폐기물관리법 시행규칙",
+     "field": "폐기물",
+     "date": "2026-10-01",
+     "until": "",
+     "pages": [
+      "plastic"
+     ],
+     "kw": [
+      "폐기물"
+     ],
+     "gist_tries": 1
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "「2027년 바이오가스 민간의무생산자 고시」",
+     "field": "폐기물",
+     "date": "2026-09-30",
+     "until": "",
+     "pages": [
+      "biogas"
+     ],
+     "kw": [
+      "바이오",
+      "바이오가스",
+      "유기성",
+      "유기성 폐자원"
+     ],
+     "gist_tries": 1,
+     "gist": "「유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법」 제5조제1항 및 같은 법 시행령 제3조제1항에 따라 「2027년 바이오가스 민간의무생산자 고시」를 다음과 같이 제정하고자 함",
+     "gist_src": "국민참여입법센터",
+     "gist_url": "https://opinion.lawmaking.go.kr/gcom/admpp/47276?announceType=TYPE6&mappingAdmRulSeq=2000000330132&pageIndex=2&asndOfiNm=기후에너지환경부",
+     "gist_v": 5
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 시행규칙",
+     "field": "폐기물",
+     "date": "2026-10-19",
+     "until": "2026-11-30",
+     "pages": [
+      "biogas"
+     ],
+     "kw": [
+      "바이오",
+      "바이오가스",
+      "유기성",
+      "유기성 폐자원"
+     ],
+     "gist_tries": 1,
+     "gist": "규정된 기존 시설 외 유기성 폐자원을 활용하여 바이오가스를 생산하는 「물환경보전법」 제2조제12호에 따른 수질오염방지시설을 추가하려는 것",
+     "gist_src": "국민참여입법센터",
+     "gist_url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89078?cptOfiOrgCd=1482000&lsNm=%EC%9C%A0%EA%B8%B0%EC%84%B1+%ED%8F%90%EC%9E%90%EC%9B%90%EC%9D%84+%ED%99%9C%EC%9A%A9%ED%95%9C+%EB%B0%94%EC%9D%B4%EC%98%A4%EA%B0%80%EC%8A%A4%EC%9D%98+%EC%83%9D%EC%82%B0+%EB%B0%8F+%EC%9D%B4%EC%9A%A9+%EC%B4%89%EC%A7%84%EB%B2%95+%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99",
+     "gist_v": 5
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙",
+     "field": "폐기물",
+     "date": "2026-10-16",
+     "until": "2026-11-25",
+     "pages": [
+      "plastic"
+     ],
+     "kw": [
+      "포장",
+      "포장재"
+     ],
+     "gist_tries": 1,
+     "gist": "‘26.7월 개정된 「자원의 절약과 재활용 촉진에 관한 법률」제9조의5(’27.1월 시행)에 따라 한국환경공단에 제품포장관리지원센터(이하 “센터”라고 한다)를 설치·운영할 수 있으며, 같은법 제9조의5 제4항에 따라 위임된 센터의 설치 및 운영에 관한 세부사항을 규정하고자 함",
+     "gist_src": "국민참여입법센터",
+     "gist_url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/89024?cptOfiOrgCd=1482000&lsNm=%EC%A0%9C%ED%92%88%EC%9D%98+%ED%8F%AC%EC%9E%A5%EC%9E%AC%EC%A7%88%C2%B7%ED%8F%AC%EC%9E%A5%EB%B0%A9%EB%B2%95%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B8%B0%EC%A4%80+%EB%93%B1%EC%97%90+%EA%B4%80%ED%95%9C+%EA%B7%9C%EC%B9%99",
+     "gist_v": 5
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "기후위기 대응을 위한 탄소중립·녹색성장 기본법",
+     "field": "기후",
+     "date": "2026-10-20",
+     "until": "",
+     "pages": [
+      "biogas"
+     ],
+     "kw": [
+      "탄소중립·녹색성장"
+     ],
+     "gist_tries": 1
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "자원의 절약과 재활용촉진에 관한 법률",
+     "field": "폐기물",
+     "date": "2026-10-16",
+     "until": "",
+     "pages": [
+      "plastic"
+     ],
+     "kw": [
+      "1회용",
+      "자원의 절약",
+      "재활용",
+      "재활용 의무",
+      "포장",
+      "포장재"
+     ],
+     "gist_tries": 1
+    },
+    {
+     "sec": "입법·행정예고",
+     "name": "폐기물관리법",
+     "field": "폐기물",
+     "date": "2026-10-02",
+     "until": "",
+     "pages": [
+      "plastic"
+     ],
+     "kw": [
+      "폐기물"
+     ],
+     "gist_tries": 1
+    }
+   ]
+  },
   {
    "no": 6820,
    "title": "2026년 9월 환경 주요 정책 동향",
