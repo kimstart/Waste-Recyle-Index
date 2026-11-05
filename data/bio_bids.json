@@ -1,8 +1,52 @@
 {
- "updated": "2026-11-05 11:11",
+ "updated": "2026-11-05 21:11",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01813597",
+   "src": "나라장터",
+   "kind": "용역",
+   "no": "R26BK01813597",
+   "ord": "000",
+   "title": "2027년~2028년 노원구 음식물류폐기물 처리 대행 용역 시행(긴급)",
+   "org": "서울특별시 노원구",
+   "region": "수도권",
+   "city": "서울",
+   "type": "처리 대행",
+   "waste": "음식물",
+   "start": "2026-11-05",
+   "end": "",
+   "open": "2026-12-01",
+   "method": "일반경쟁",
+   "est": 8236444000.0,
+   "budget": 8236444000.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "긴급공고문.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01813597&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서 수정(20261016).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01813597&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서 수정(20261016).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01813597&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "긴급공고문.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01813597&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01813597&bidPbancOrd=000",
+   "qty_checked": "2026-11-05",
+   "qty_v": 2,
+   "qty_t": 28207.0,
+   "qty_note": "과업지시서 수정(20261016).hwpx: : 금4,118,222천원 ) 라. 예정물량 : 28,207톤/년 - 노원구배출"
+  },
   {
    "id": "g2b:R26BK01801085",
    "src": "나라장터",
