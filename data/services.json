@@ -1,7 +1,53 @@
 {
- "updated": "2026-11-06 11:06",
+ "updated": "2026-11-06 21:00",
  "backfilled": true,
  "items": [
+  {
+   "id": "g2b:R26BK01814039",
+   "src": "나라장터",
+   "no": "R26BK01814039",
+   "ord": "000",
+   "title": "강서구 재활용선별장 관리·운영 대행 용역(긴급)",
+   "org": "서울특별시 강서구",
+   "region": "수도권",
+   "city": "서울",
+   "type": "시설 운영 위탁",
+   "start": "2026-11-06",
+   "end": "",
+   "open": "2026-11-19",
+   "method": "일반경쟁",
+   "est": 6322074620.0,
+   "budget": 6322074620.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공고문[강서구 재활용선별장 관리‧운영 대행 용역(긴급)].hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01814039&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "공고문[강서구 재활용선별장 관리‧운영 대행 용역(긴급)].pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01814039&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "2. 제안요청서-최종-2.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01814039&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "3. 과업지시서-최종.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01814039&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "5. 긴급입찰공고 사유서-최종.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01814039&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01814039&bidPbancOrd=000",
+   "qty_checked": "2026-11-06",
+   "qty_v": 2,
+   "qty_t": 28147.9,
+   "qty_note": "2. 제안요청서-최종-2.hwpx: 활용품판매수입등에따라산출된운영지원금을예정물량(28,147.9톤/년)으로나누어예정"
+  },
   {
    "id": "g2b:R26BK01791500",
    "src": "나라장터",
