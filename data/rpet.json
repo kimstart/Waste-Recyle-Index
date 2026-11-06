@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05 23:49",
+ "updated": "2026-11-06 11:37",
  "points": [
   {
    "id": "26464ee4bd",
@@ -1536,6 +1536,75 @@
    "krw_high": 917.7,
    "krw_kg": 917.7,
    "premium_krw_kg": 816.2
+  },
+  {
+   "date": "2026-11-06",
+   "basis": "",
+   "grade": "베일",
+   "region": "북미",
+   "cur": "USD",
+   "per": "lb",
+   "low": 0.12,
+   "high": 0.13,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": null,
+   "quote": "Bhat noted that in January 2023, a PET bale cost 12-13 cents per pound, dipped to 6 cents per pound, rose again, and currently sits around 5 cents per pound.",
+   "title": "PPRC 2026: Diving into PET",
+   "source": "Recycling Today",
+   "url": "https://www.recyclingtoday.com/paper-and-plastics-recycling-conference-2026-diving-into-pet-plastic-markets",
+   "auto": true,
+   "id": "03e7cf2a32",
+   "fx": 1344.69,
+   "krw_low": 355.7,
+   "krw_high": 385.4,
+   "krw_kg": 370.5
+  },
+  {
+   "date": "2026-11-06",
+   "basis": "",
+   "grade": "베일",
+   "region": "북미",
+   "cur": "USD",
+   "per": "lb",
+   "low": 0.06,
+   "high": 0.06,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": null,
+   "quote": "Bhat noted that in January 2023, a PET bale cost 12-13 cents per pound, dipped to 6 cents per pound, rose again, and currently sits around 5 cents per pound.",
+   "title": "PPRC 2026: Diving into PET",
+   "source": "Recycling Today",
+   "url": "https://www.recyclingtoday.com/paper-and-plastics-recycling-conference-2026-diving-into-pet-plastic-markets",
+   "auto": true,
+   "id": "719f7068c7",
+   "fx": 1344.69,
+   "krw_low": 177.9,
+   "krw_high": 177.9,
+   "krw_kg": 177.9
+  },
+  {
+   "date": "2026-11-06",
+   "basis": "",
+   "grade": "베일",
+   "region": "북미",
+   "cur": "USD",
+   "per": "lb",
+   "low": 0.05,
+   "high": 0.05,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": null,
+   "quote": "Bhat noted that in January 2023, a PET bale cost 12-13 cents per pound, dipped to 6 cents per pound, rose again, and currently sits around 5 cents per pound.",
+   "title": "PPRC 2026: Diving into PET",
+   "source": "Recycling Today",
+   "url": "https://www.recyclingtoday.com/paper-and-plastics-recycling-conference-2026-diving-into-pet-plastic-markets",
+   "auto": true,
+   "id": "073c6bbfd7",
+   "fx": 1344.69,
+   "krw_low": 148.2,
+   "krw_high": 148.2,
+   "krw_kg": 148.2
   }
  ],
  "fx": {
@@ -1578,7 +1647,8 @@
   "USD:2026-09-09": 1336.2,
   "USD:2026-09-21": 1372.18,
   "USD:2026-10-14": 1341.45,
-  "USD:2026-10-22": 1325.57
+  "USD:2026-10-22": 1325.57,
+  "USD:2026-11-06": 1344.69
  },
  "seen": {
   "yamahamakesrecycledaluminumcommitment": "2026-10-07",
@@ -1693,6 +1763,7 @@
   "aruwacapitalbackspolysmarttoscalenigerias60mrpetrecyclingpush": "2026-11-05",
   "최신예측pet병재활용세척시스템시장규모2026년5억5700만달러달성전망연평균성장률52예상": "2026-11-05",
   "기고플라스틱재활용정책의획기적전환이시급하다": "2026-11-05",
-  "heatrisesintherecycledsteelmarket": "2026-11-05"
+  "heatrisesintherecycledsteelmarket": "2026-11-05",
+  "pprc2026divingintopet": "2026-11-06"
  }
 }
