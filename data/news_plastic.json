@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-07 11:01",
+ "updated": "2026-11-07 22:19",
  "domestic": [
+  {
+   "title": "플라스틱 선별장 근적외선 센서, 빛 반사로 재질 가른다",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=401863",
+   "pub": "2026-11-07 21:45",
+   "more": 0,
+   "summary": "플라스틱 선별장의 근적외선 센서는 물체에 빛을 비춘 뒤 되돌아오는 빛의 파장별 세기를 읽어 재질을 구분한다. 플라스틱 재활용 업계 단체인 미국 플라스틱 재활용업자협회(APR)의 ‘플라스틱 재활용 과정의 근적외선 선별’ 자료에 따르면, 선별 대상은 컨베이어 위에서 한 층으로 펼쳐지고, 센서가 목표 플라스틱을 감지하면 압축공기 분사 장치가 해당 조각을 별도 회수 경로로 보낸다."
+  },
+  {
+   "title": "16화 영화〈월-E〉인류세, 플라스틱 수프, 우주 쓰레기",
+   "source": "브런치",
+   "link": "https://brunch.co.kr/@@fy1j/227",
+   "pub": "2026-11-07 14:43",
+   "more": 0
+  },
   {
    "title": "폐타이어 탈가황, 황 가교결합 풀어 재활용 원료로",
    "source": "비건뉴스",
@@ -10,11 +25,35 @@
    "summary": "폐타이어 고무의 탈가황은 고무 사슬 사이의 가교결합을 끊어 재가공할 수 있는 원료로 되돌리는 공정이다. 헝가리 부다페스트공대 연구진은 2020년 ‘분쇄 타이어 고무의 탈가황: 마이크로파와 열기계 방식’ 논문에서 두 공정을 비교했다. 에드워즈 연구진은 2016년 ‘기계적·기계화학적 탈가황 공정의 가교결합 절단 선택성 비교’에서 압출 기반 공정을 분석했다."
   },
   {
+   "title": "유럽연합, 페트 수입 긴급제한 조사 착수…한국산에 반덤핑 관세 매긴 원료도 대상",
+   "source": "글로벌이코노믹",
+   "link": "https://www.g-enews.com/article/Global-Biz/2026/11/202611070647231942bd56fbc3c_1",
+   "pub": "2026-11-07 06:51",
+   "more": 0,
+   "summary": "재활용 페트부터 테레프탈산까지 조사…역외 수입 증가와 역내 생산업체 피해 여부 조사 개시 당일 세계무역기구 통보…개시일부터 서면 의견 제출·청문 신청 21일 유럽연합 집행위원회는 11월 6일(현지시각) 역외 수입 증가가 역내 생산업체에 심각한 피해를 줬는지 조사한다고 발표했다."
+  },
+  {
+   "title": "[지구칼럼] 바다가 예뻐진 게 아니었다? 태평양 거대 쓰레기가 바꾼 바다 색…청록빛에 숨겨진 ‘미세플라스틱 경고등'",
+   "source": "뉴스스페이스",
+   "link": "https://www.newsspace.kr/news/article.html?no=16563",
+   "pub": "2026-11-07 05:00",
+   "more": 0,
+   "summary": "하와이와 캘리포니아 사이 북태평양의 바다가 20년 동안 더 밝은 청록빛으로 변한 것으로 나타났다. 노르웨이 베르겐대의 셰이 치텀·다니엘 쾨스트너·뵈르게 함레 연구팀은 이 같은 연구 결과를 11월 5일 국제학술지 ‘커뮤니케이션즈 어스 앤드 인바이런먼트’에 발표했다. 연구팀은 2002년 8월부터 2022년 9월까지 수집된 해색 자료 3종을 분석했다."
+  },
+  {
    "title": "재활용·다층 필름 수요에 힘입어 2035년까지 성장 전망인 비닐봉지 제조 기계 시장",
    "source": "IndexBox",
    "link": "https://www.indexbox.io/ko/blog/plastic-bag-making-machines-market-forecast-to-expand-toward-2035-driven-by-demand-for-recyclable-and-multi-layer-film/",
    "pub": "2026-11-07 03:36",
    "more": 0
+  },
+  {
+   "title": "EU, 재생 PET 포함 수지 세이프가드 조사 착수",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=401488",
+   "pub": "2026-11-07 00:45",
+   "more": 0,
+   "summary": "유럽연합(EU)이 재생 폴리에틸렌테레프탈레이트(PET)를 포함한 PET 계열 화학제품 수입에 대해 세이프가드 조사를 시작했다. 유럽연합 집행위원회는 6일 PET 수지 관련 화학제품의 수입 증가로부터 역내 산업을 보호할 조치가 필요한지 평가하기 위해 조사를 개시했다고 밝혔다. 집행위는 세계적인 생산능력 과잉에 따른 수입 압력을 조사 배경으로 설명했다."
   },
   {
    "title": "[ESG 신간]중국의 녹색 패권부터 순환경제·식량안보까지",
@@ -25,72 +64,36 @@
    "summary": "석탄 소비국 중국은 어떻게 녹색산업 강국이 됐나 『석탄의 나라에서 녹색 패권으로』｜최승철 지음｜에코퓨처스｜2026년 10월 30일｜340쪽｜2만원｜ISBN 9791122043808 지난 15년여 동안 중국의 환경·에너지 전환을 추적해 왔으며, 이 책은 ‘전환의 시대, 동아시아 탄소 삼국지’ 시리즈의 중국편이다."
   },
   {
-   "title": "폐플라스틱 재생유 기술 개발 나선 플러스에스제이…\"연구개발로 친환경 미래 연다\"",
-   "source": "국제뉴스",
-   "link": "https://www.gukjenews.com/news/articleView.html?idxno=3744846",
-   "pub": "2026-11-06 22:42",
-   "more": 0,
-   "summary": "㈜플러스에스제이(대표이사 이석진)는 서울과학기술대학교, ㈜카본코리아와 협력해 폐플라스틱 열분해 재생유 생산기술 개발에 착수했다. 연구기간은 2025년 12월부터 2028년 11월까지 36개월간 진행된다. 안세영, 50연승에도 월드투어 파이널 랭킹 2위…야마구치에 3650점 뒤져"
-  },
-  {
    "title": "경상국립대 폐페트병이 화학원료와 수소로…경상국립대 최명룡 교수 연구팀, 고효율 전기화학 촉매 개발",
    "source": "누리일보",
    "link": "https://www.gnopennews.co.kr/news/articleViewAmp.html?idxno=212290",
    "pub": "2026-11-06 17:50",
-   "more": 0,
+   "more": 1,
    "summary": "경상국립대 자연과학대학 화학과 최명룡 교수 연구팀이 폐플라스틱(PET) 분해 산물인 에틸렌글리콜을 포름산염으로 효율적으로 바꾸고 수소까지 함께 생산할 수 있는 전기화학 촉매를 개발했다. RHE)에서 에틸렌글리콜을 포름산염으로 전환하는 패러데이 효율(Faradaic efficiency, 투입된 전류 가운데 목표 반응에 쓰인 비율) 83.09%, 포름산염 생성속도 1248 µmol cm⁻² h⁻¹를 기록했다."
   },
   {
    "title": "폐PET 투자 접는 석화업계···높은 원가에 원료 확보도 난항",
    "source": "시사저널e",
    "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=424842",
-   "pub": "2026-11-06 16:08",
-   "more": 1,
+   "pub": "2026-11-06 16:23",
+   "more": 0,
    "summary": "국내 석유화학기업들이 폐PET의 화학적 재활용 투자를 잇달아 멈추고 있다. 총 770억원을 투입하려던 사업으로, 약 166억원을 집행한 뒤 나머지 투자 계획을 접었다. 지난해 1월 캐나다 루프인더스트리와 울산 해중합 공장 건설·운영을 위한 합작계약을 해지한 데 이어, 올해 8월에는 ARC 부지를 계열사 SK하이퍼에 1034억원에 매각했다."
   },
   {
-   "title": "배달용기, 정말 재활용되고 있을까요? 우리의 환경을 지키는 첫 걸음 '재활용'을 인증해주세요!",
-   "source": "campaigns.do",
-   "link": "https://campaigns.do/campaigns/2035",
-   "pub": "2026-11-06 14:49",
-   "more": 0
-  },
-  {
-   "title": "[ESGC] 미세플라스틱, 바다색까지 바꿨나⋯태평양의 '청록빛 경고'",
-   "source": "포커스온경제",
-   "link": "https://www.foeconomy.co.kr/id/T7P94gYJDWW46O74dQQ1",
-   "pub": "2026-11-06 13:25",
-   "more": 0
-  },
-  {
-   "title": "“땅에 묻을 수도, 태울 수도 없다”… 수도권 직매립 금지 속 ‘활성 연속식 열분해 청소차’가 여는 자원순환의 새 지평",
-   "source": "한국공공정책신문",
-   "link": "http://knpp.co.kr/news/580994",
-   "pub": "2026-11-06 11:36",
+   "title": "재생 PET 고유점도, 고상중합 온도·시간 높을수록 상승",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=401345",
+   "pub": "2026-11-06 16:16",
    "more": 0,
-   "summary": "기사 제공처 : 활성경제TV / 등록기자: 국회저널 [ 기자에게 문의하기 ] 0 / 0 대한민국 폐기물 관리 체계가 ‘수도권 생활폐기물 직매립 전면 금지’라는 거대한 폭풍우를 맞이한 지 얼마 지나지 않아, 일선 지자체들의 한숨이 깊어지고 있다. 쓰레기를 땅에 묻지 못해 반드시 태우거나 처리해야 하지만, 턱없이 부족한 소각 시설과 거센 주민 반발로 인해 처리 공백 위기에 직면했기 때문이다."
+   "summary": "기계적으로 재활용한 PET의 고유점도는 고상중합 온도와 처리 시간이 높아질수록 상승했다. 재생 PET의 고유점도는 12시간 처리 기준 220℃에서 1.18dL/g, 230℃에서 1.30dL/g, 240℃에서 1.41dL/g이었다. 온도를 230℃로 고정했을 때는 6시간 처리 후 1.11dL/g, 12시간 후 1.30dL/g, 18시간 후 1.37dL/g으로 나타났다."
   },
   {
-   "title": "SK케미칼, 폐현수막 재활용해 새 현수막 제작…경주시에 200장 첫 공급",
-   "source": "핀포인트뉴스",
-   "link": "https://www.pinpointnews.co.kr/news/articleViewAmp.html?idxno=501798",
-   "pub": "2026-11-06 09:14",
-   "more": 21,
-   "summary": "SK케미칼이 버려진 현수막을 화학적으로 재활용해 새로운 현수막으로 만드는 자원순환 사업을 본격화한다. 지방자치단체 및 관련 기업들과 폐현수막 수거부터 원료 생산, 제품 제작과 실제 사용까지 이어지는 협력체계를 구축하고 재활용 현수막의 첫 공급에 나선다. SK케미칼은 폐현수막을 화학적으로 재활용해 제작한 현수막 200장을 경주시에 초도 공급한다고 6일 밝혔다."
-  },
-  {
-   "title": "가주 플라스틱 감축량 3분의 1로 축소…기준치 대폭 낮췄다",
-   "source": "미주중앙일보",
-   "link": "https://www.koreadaily.com/article/20261105150630260",
-   "pub": "2026-11-06 07:06",
-   "more": 0
-  },
-  {
-   "title": "중액 선별 시스템 시장 2035년 전망: 석탄 세척 공장 현대화와 재활용 순도 요구가 성장 견인 - 뉴스 및 통계",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/heavy-media-separation-systems-market-forecast-to-2035-driven-by-coal-washery-modernization-and-recycling-purity-demands/",
-   "pub": "2026-11-05 23:21",
-   "more": 1
+   "title": "SK케미칼, 폐현수막 200장 새 현수막으로 재탄생 … 화학적 재활용 상용화",
+   "source": "워크투데이",
+   "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=91591",
+   "pub": "2026-11-06 12:50",
+   "more": 12,
+   "summary": "경주시·한국섬유개발연구원·현수막 제작사와 협업 체계 구축 화학적 재활용 현수막 200장 초도 공급…환경표지 인증·제도 정비로 정착 추진 SK케미칼은 폐현수막을 화학적으로 재활용해 제작한 현수막 200장을 경주시에 처음 공급한다고 6일 밝혔다."
   }
  ],
  "overseas": [
@@ -98,7 +101,7 @@
    "title": "PPWR CH02 - The history of the PPWR",
    "source": "ENDS Europe",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQnNwS08zcm9LS0hPR0YtX25vSlJhS2tLUi1DLXc1TDROdWw1SU1PVUdyMkxMai1WSXNoTjg4Q29ISDRrakt6T1doWDNZTGZneV9fMWhreUNEdHJHaHU4NnQxZVhBRkRJYzhuWTZiYnpxekxOd294eGZIQ3VfNExPNDJ6eERfQk05aWRTWjZEdTZFdm9QVUpDSg?oc=5",
-   "pub": "2026-11-07 04:39",
+   "pub": "2026-11-07 16:37",
    "more": 0
   },
   {
@@ -141,20 +144,6 @@
    "source": "Plastics News",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeXlfU1BuczNERmttN1JSdXBqdHBSODRod0dfc2JRZUZ4eWdDOTctWE5vNUQwbEFQakVNdmtkUEVuLTZwOWhEdWFyS0tiQm9ra09PcHloQTJGVlhyYnFDSVVNV0hBZXl4aXpRNTBtUExGb0pPV0xrRGF0WWxqbnBYbUF4eTN0aXlVMjliMHg4RmpDOVB2N1lzVVRDeUNmWnJyQXlyeF8wUktUdDJFQzRHaGZSMUs2S04xc0l0ZUlyQkc?oc=5",
    "pub": "2026-11-05 11:27",
-   "more": 0
-  },
-  {
-   "title": "The Talking Point: PPWR implementation",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8zTGpmd2c3SG5PYmlFYUo0Ti1ETWh2ckRpRHFaRGlQZU9PRS04NlNqcnRJekx2eTU5REZsa2Fnd2g5Q2FuRUpOOVpuX29qc0JvWXdva0JSdUlSYnhvNERQMWJzcWQ5TFVRbTFWUkdJWEZyRnlCeFZoR01B?oc=5",
-   "pub": "2026-11-04 19:25",
-   "more": 0
-  },
-  {
-   "title": "Canada scales up hard-to-recycle plastics collection",
-   "source": "Recycling International",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeVRZN3pUWFBGdkVMdTJtTWhTWGJFSWVnay1yaWFvMHhmdVlndVdZbjBUaUV4SjFWQjA5VXdUbnljdDkxMmcteVdIcEt5T3BYVUFoV2tWMWtVTTNVeWwxMVBIQjF5a1o0X3BBeld2WnZsdEhveF9WWTJEQzAwVXdZejl1T3V6NFZVVm8wWi13b3ZzUDZsLTdRTGVwX1dtT0t0YkpObG1rcTZLRVh1RF9kdHFZcGQwR1gxWVZUZ2NWUDdHVE0?oc=5",
-   "pub": "2026-11-04 18:23",
    "more": 1
   }
  ]
