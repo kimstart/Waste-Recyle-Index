@@ -1,42 +1,42 @@
->> [plastic] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '폐플라스틱' 5건
-   [국내] '재생원료 플라스틱' 1건
-   [국내] '재생플라스틱' 5건
-   [국내] '플라스틱 재활용' 12건
+>> [plastic] 수집 범위 국내 47시간 / 해외 72시간
+   [국내] '폐플라스틱' 6건
+   [국내] '재생원료 플라스틱' 2건
+   [국내] '재생플라스틱' 6건
+   [국내] '플라스틱 재활용' 13건
    [국내] '페트 재활용' 5건
-   [국내] '열분해유' 1건
-   [국내] '화학적 재활용' 16건
+   [국내] '열분해유' 2건
+   [국내] '화학적 재활용' 14건
    [국내] '폐비닐' 0건
-   [국내] '재생원료 사용 의무' 1건
+   [국내] '재생원료 사용 의무' 2건
    [국내] '플라스틱 협약' 2건
-   [국내] '순환경제 플라스틱' 2건
+   [국내] '순환경제 플라스틱' 3건
    [국내] '재활용 선별장' 1건
    [국내] 반복 소재어: []
-   [해외] 'rPET' 10건
+   [해외] 'rPET' 9건
    [해외] '"recycled PET"' 9건
-   [해외] '"chemical recycling"' 10건
+   [해외] '"chemical recycling"' 9건
    [해외] '"plastic pyrolysis"' 3건
-   [해외] '"recycled content" plastic' 6건
+   [해외] '"recycled content" plastic' 5건
    [해외] '"plastics treaty"' 10건
    [해외] '"recycled polypropylene"' 9건
-   [해외] '"plastic recycling"' 15건
+   [해외] '"plastic recycling"' 16건
    [해외] 'PPWR recycled' 7건
-   [해외] '"recycled plastic" prices' 4건
-   [해외 전문지] plasticsnews.com 34건
-   [해외 전문지] plasticstoday.com 20건
+   [해외] '"recycled plastic" prices' 5건
+   [해외 전문지] plasticsnews.com 28건
+   [해외 전문지] plasticstoday.com 11건
    [해외 전문지] packaginginsights.com 14건
-   [해외 전문지] resource-recycling.com 19건
-   [해외 전문지] recyclingtoday.com 34건
-   [해외 전문지] recyclinginternational.com 8건
+   [해외 전문지] resource-recycling.com 17건
+   [해외 전문지] recyclingtoday.com 27건
+   [해외 전문지] recyclinginternational.com 6건
    [해외 전문지] sustainableplastics.com 0건
-   [해외 전문지] euwid-recycling.com 7건
-   [해외 전문지] packagingeurope.com 24건
-   [해외 전문지] packaging-gateway.com 15건
-   [해외 전문지] letsrecycle.com 16건
-   [해외 전문지] icis.com 20건
+   [해외 전문지] euwid-recycling.com 5건
+   [해외 전문지] packagingeurope.com 22건
+   [해외 전문지] packaging-gateway.com 12건
+   [해외 전문지] letsrecycle.com 17건
+   [해외 전문지] icis.com 17건
    [해외 RSS] Recycling Today 5건
-   [해외] 전문지 외 제외: Akron Beacon Journal, BigMint, Bioengineer.org, Canadian Plastics, Corsicana Daily Sun, Dealroom, Interesting Engineering, Kingsport Times News, Kitsap Sun, Lovin Malta, Multibagg AI, Nation Thailand, Newsbook, Proshare, The Des Moines Register, The Malta Independent Online, USA Today, Vanguard News
->> [plastic] 국내 51건 → 12건, 해외 299건 → 7건
+   [해외] 전문지 외 제외: Bioengineer.org, Bluefield Daily Telegraph, Britannica, Canadian Plastics, Corsicana Daily Sun, Dealroom, Interesting Engineering, Kingsport Times News, Kitsap Sun, Knoxville News Sentinel, Lovin Malta, Multibagg AI, Nation Thailand, Newsbook, Proshare, The Des Moines Register, The Malta Independent Online, USA Today
+>> [plastic] 국내 56건 → 12건, 해외 263건 → 7건
    - [비건뉴스] 플라스틱 선별장 근적외선 센서, 빛 반사로 재질 가른다
    - [브런치] 16화 영화〈월-E〉인류세, 플라스틱 수프, 우주 쓰레기
    - [비건뉴스] 폐타이어 탈가황, 황 가교결합 풀어 재활용 원료로
@@ -58,49 +58,49 @@
    - [Plastics News] EU member states approve end-of-waste criteria for recycled plastics
    [요약] 실패 HTTPError: 16화 영화〈월-E〉인류세, 플라스틱 수프, 우주 쓰레기
    [요약] 10/12건
->> data/news_plastic.json, history/news_plastic_20261107.json 저장
->> [biogas] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '바이오가스' 6건
+>> data/news_plastic.json, history/news_plastic_20261108.json 저장
+>> [biogas] 수집 범위 국내 47시간 / 해외 72시간
+   [국내] '바이오가스' 5건
    [국내] '바이오메탄' 0건
-   [국내] '바이오가스 생산목표제' 6건
-   [국내] '유기성폐자원' 2건
+   [국내] '바이오가스 생산목표제' 5건
+   [국내] '유기성폐자원' 3건
    [국내] '음식물류폐기물 바이오가스' 0건
    [국내] '가축분뇨 바이오가스' 1건
    [국내] '혐기성소화' 0건
    [국내] '하수슬러지 바이오가스' 0건
-   [국내] '바이오가스화시설' 6건
+   [국내] '바이오가스화시설' 5건
    [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 32건
-   [해외] 'biogas' 42건
-   [해외] '"renewable natural gas"' 13건
-   [해외] '"anaerobic digestion"' 9건
-   [해외] 'biomethane price' 8건
-   [해외] '"guarantees of origin" biomethane' 0건
+   [해외] 'biomethane' 34건
+   [해외] 'biogas' 44건
+   [해외] '"renewable natural gas"' 10건
+   [해외] '"anaerobic digestion"' 8건
+   [해외] 'biomethane price' 10건
+   [해외] '"guarantees of origin" biomethane' 2건
    [해외] 'biomethane grid injection' 4건
    [해외] 'RNG landfill gas' 9건
    [해외 전문지] bioenergy-news.com 13건
-   [해외 전문지] gasworld.com 42건
-   [해외 전문지] endswasteandbioenergy.com 3건
-   [해외 전문지] argusmedia.com 5건
-   [해외 전문지] qcintel.com 11건
-   [해외 전문지] biomassmagazine.com 20건
+   [해외 전문지] gasworld.com 37건
+   [해외 전문지] endswasteandbioenergy.com 2건
+   [해외 전문지] argusmedia.com 6건
+   [해외 전문지] qcintel.com 37건
+   [해외 전문지] biomassmagazine.com 18건
    [해외 전문지] europeanbiogas.eu 1건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
-   [해외 전문지] wastedive.com 9건
->> [biogas] 국내 21건 → 2건, 해외 221건 → 10건
-   - [전국매일신문] 서산시, 바이오가스 생산으로 자원순환·세입 확대
-   - [충청일보] 서산시, 바이오가스 실적 거래 3억4000만원 수익 창출
+   [해외 전문지] wastedive.com 7건
+>> [biogas] 국내 19건 → 2건, 해외 242건 → 10건
+   - [충청신문] 서산시 초과 바이오가스 팔아 3억 수입 창출
+   - [엔디엔뉴스] 서산시, 바이오가스 생산 실적 판매 '3억 4,000여만 원 확보'
    - [Bioenergy Insight Magazine] De Smet 2026 - Biogas Conference
    - [Bioenergy Insight Magazine] Less than 3 weeks remaining until Future of Biogas Europe 2026
+   - [BioEnergy Times] Haryana stubble fires fall to 42 as biogas plants, fodder demand create alternative uses for paddy straw
    - [Water Online] Anaerobic Digestion Provides Energy And Revenue Opportunities At US Water Resource Recovery Facilities
-   - [HydroNews] Il ruolo del biometano per la sicurezza energetica del Vecchio Continente: il confronto con CIB ed European Biogas Association
+   - [The Globe and Mail] Renewable Natural Gas Producer Surges 55% as Q3 Flips to $5.2M Profit on Revenue Jump
+   - [Aviation Week] Circularity Fuels Raises $7M To Scale Biogas-To-Jet-Fuel Process
+   - [DD News] Cabinet approves Rs 23,731-crore GOBARdhan Scheme to scale up compressed biogas production
    - [Multibagg AI] Eiko Lifesciences approves 50:50 compressed biogas venture
-   - [The Star] Over 10,000 cubic metres of pig waste collected for biogas, Penang assembly told
-   - [World Bio Market Insights] Circularity Fuels raises $7 M to turn dairy biogas into jet fuel
-   - [Anglo Celt] Biogas plant plans lodged
-   - [www.tampabaybeacons.com] Renewable Natural Gas facility breaks ground at landfill
-   - [ANDAMAN SHEEKHA] Sustainable Energy for Nicobar: Farmers Trained at Perka Model Biogas Plant
+   - [Bioenergy Insight Magazine] European Commission opens first biomethane matching round
+   - [gasworld] Europe energy partners repurpose natural gas pipeline for biomethane
    [요약] 2/2건
->> data/news_biogas.json, history/news_biogas_20261107.json 저장
+>> data/news_biogas.json, history/news_biogas_20261108.json 저장
