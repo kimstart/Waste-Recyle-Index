@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-08 10:31",
+ "updated": "2026-11-08 22:40",
  "domestic": [
+  {
+   "title": "기후변화 대응 김해시 농업 우선순위 ‘스마트팜·로컬푸드·바이오가스’",
+   "source": "경남도민일보",
+   "link": "https://www.idomin.com/news/articleView.html?idxno=2019007",
+   "pub": "2026-11-07 16:14",
+   "more": 0,
+   "summary": "김해시 탄소중립지원센터, 탄소중립 포커스 발간 (재)김해연구원은 기후위기가 농업과 먹거리 시스템에 미치는 영향을 살펴보고, 김해시 여건에 맞는 기후테크 활성화 방안을 제시한 <탄소중립 포커스 Vol.2>를 발간했다. 기후변화로 말미암은 농작물 생산 불안과 식량 가격 변동 등 농업·먹거리 분야 위험을 짚었다."
+  },
   {
    "title": "서산시 초과 바이오가스 팔아 3억 수입 창출",
    "source": "충청신문",
@@ -14,30 +22,51 @@
    "source": "엔디엔뉴스",
    "link": "https://www.ndnnews.co.kr/news/articleViewAmp.html?idxno=1125772",
    "pub": "2026-11-06 14:09",
-   "more": 7,
+   "more": 8,
    "summary": "충남 서산시 자원순환형 바이오가스화시설이 유기성 폐자원의 순환은 물론, 세외수입 확보에도 기여하고 있다. 시는 2025년 바이오가스 생산 실적 판매를 통해 3억 4,000여만 원의 세외수입을 확보했다고 밝혔다. 시가 자원순환형 바이오가스화시설을 통해 2025년 생산한 바이오가스는 266만 7,194N㎥로, 생산 목표량인 117만 2,736N㎥를 초과 달성했다."
   }
  ],
  "overseas": [
   {
+   "title": "Protests force civic body to drop school biogas plan",
+   "source": "The Times of India",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSDVkX3FBQWUzQ1FLM1NxdVBLLWhCc0ZkRVcwTGcxTFZXZlljVEJ3eGdvQWNFWDBjWjZ1X2VmVzdPZm9yeW9YYXI1VWppemdmSVVQRFk0NF9pZmw3RXYxM1JMci1oQW1TTTFuN3FXQnBRN1I5WWx1U0NFZXd6RzRKVHhocjZFU2JYdHJFTzQyRmt3Q0tCamZvNGpmSHJjQXVDNTRmbTNDaW9LWG1PdWR2TW53ZUN5RThMQkNDUHhHQnBvVEtSN0RuRWRHX0FvX2twdVNTUNIB2gFBVV95cUxOWnMyLWJNa0xmMXQ0bS10NGR4QlhtMGh6emZhdXFrYk5CUXQtRjZMNXp2ZlFWaVJ4a3dkWkFoRkRGWWZsSzQ4cWdsSWRSMWR2MEE2WFp1SkdQbFBWY0FtOG9taWN2dlhJUm9vbFlCYlpjZGVDUTJmaGhXRXdQbkNJRjAzZ2d3THNBYk5FMUd0SFpCTDBiam1XNm5YT0l4dGU0NHVxcjdQeXByN0dja3JoTjRUTHNsWnpfRFppNERoY3JsNHczWm8tOWpOeFNiTEprUmJMUGowbDZBZw?oc=5",
+   "pub": "2026-11-08 00:52",
+   "more": 1
+  },
+  {
+   "title": "Gujarat Energy Backs Compressed Biogas With ₹100 Crore JV Plan",
+   "source": "Urban Acres",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb3F6QVdJaVdraWZ4Ulh2Zjk1SXZlMlFkcF8zME9JOFpURXRYQnNzQWRCUWFWaUR1WUk1Q2JhUEpDWmxsamJxZGRjMGRERlRFZ0JPVnVzbUJpb05ZQndWaDRUejJMMkR6aV9YUVBNcEprdFhMbU02OFJIazlNcEt4N19vNEtkUnY4dDZEM2IzN1Y3SkhveVFKbw?oc=5",
+   "pub": "2026-11-07 21:34",
+   "more": 1
+  },
+  {
+   "title": "Gort locals gear up for next chapter in ‘David and Goliath’ Biogas battle",
+   "source": "Clare Echo",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV0ItYzNqSVg1YlVXdGZHTXpZOW9FSlJ5NS00NEtmRXl5WFNlbmR1WS0wR0tvN0lReGxkWTF5aGhfU0prSFRQR0QzMDRJLVZoNHA2NmZaNmdKaW56VElGR2lhODdfcmJ2VHVpeFFucDNabENBRS1IMlVFSktQd0FwN01rdDZ0QVAwSFZSOHhKd1dqWWRuLTBrUUZtRHN1UQ?oc=5",
+   "pub": "2026-11-07 06:41",
+   "more": 0
+  },
+  {
    "title": "De Smet 2026 - Biogas Conference",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Ya1dhTG1idVRCY3Y5TnFKamU0cDV1Rk9PbVdUMjc3dUZwV3FidnlKanFPaXg0SEdXRXNRYzU0R085NzBLS292UDlSeS1hT3hKay1GWlJ3bDhBa0l2X09QOEZrWXdpVlFMYW5zOQ?oc=5",
    "pub": "2026-11-07 00:42",
-   "more": 0
-  },
-  {
-   "title": "Less than 3 weeks remaining until Future of Biogas Europe 2026",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdjNETTNhT1kxcjBUZExfRGpGYi1ZQmJ0RzJnZkZfTXZNUzFyYmV4dC1sUFBoNVVyajNkZEEyd1RWdjhBLThLT3lCMS1OVDdMQlhOeTFXSHFKMExDTFU4b2x5T0tXbU5Gb1hFY081NndhOXR1OXM1NVdEa1pETVFqeWJkbmUtVldzcXdvUF9nWkxRcE5obDY5WWRGTUVEVHJJ?oc=5",
-   "pub": "2026-11-06 21:35",
-   "more": 0
+   "more": 1
   },
   {
    "title": "Haryana stubble fires fall to 42 as biogas plants, fodder demand create alternative uses for paddy straw",
    "source": "BioEnergy Times",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWnpxb3JCR1hVaVVUbG5sRkJDb0NrUThEX0FOZ1Nyckpwd0hxdHJjbU5XQWFVeHBQaXlzcmtPel82bTJWNzFQTE9PVUF3azg4RzNSRWhzenU5TElpTDdXUTI5T2JYcURveVJrdm9TWGx6Rm9UWDJWVjNEYlNmX0ZvUmE0a0VJRDlCS1RkQUJaQlF1UnlRQW11UVdnMnl5NHZwaV9hbF9HaTJob2ltWFpGNGVhV2hmQlR1NWNJYXRvbUpTNk53dG5aZ0hXcw?oc=5",
    "pub": "2026-11-06 20:01",
+   "more": 1
+  },
+  {
+   "title": "Huge turnout for Gort biogas plant meeting now nearing the planning endgame",
+   "source": "Connacht Tribune",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcTBwZlR3T0VSeTY4aXk1VnVqbW5JbGFNN2loTmdBbEpOMDN6eTZkeUlsRExzZzhXaGpFT1ZTQ2ZEVVR6amVGWFA4UEZ0OGxpRTRHOFIxNTItM2dKelpNT2F2RUdSRzltNldKZWFlcm15cVM2eVpuS0kwYzZSMnpmaENFRlVwQ09RYzBwZk5rSW8yNm10VWJJbmRGZkRIOUFlRndwQUVWbXhydElFdUNoSmpNSmRZVlBkLUFR?oc=5",
+   "pub": "2026-11-06 19:59",
    "more": 2
   },
   {
@@ -52,42 +81,21 @@
    "source": "The Globe and Mail",
    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNclFVR01HMGRpOTRyS1hhOXBKNTJ2VzRzUWJwVHp3RFVjLXA5SjdPQTVhZS1YUFNrLTNQSUhtaVpNUWZCMXExUEpHb1F5blYydU5uZGVCcFgxR24tZGNDVFZDQ1NwcEVmUEFobElIVXVtZ29RTkpDM2JMV0ZySlBBeVhheHZrNzFlU0RMN0hmMm9EVW9UZXVBMGxUSUJEQXlfbXY1OVY5Z2lCN3dpOE0xVzlfbXlTVUJJN25UMWxCWXUwUEtLU3FBTDB5TzlVVGx6YWp2QzdIYzBiamlYX2t0MEdFeWh1UUJWNXZ3NWM2VE5iQnNQcjdFc1E2eTQ?oc=5",
    "pub": "2026-11-06 14:35",
-   "more": 1
-  },
-  {
-   "title": "Circularity Fuels Raises $7M To Scale Biogas-To-Jet-Fuel Process",
-   "source": "Aviation Week",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY2N4WXdVeFZiR3h0eFhwekNESkFaMEpjSTAxMUxmTGRCZGJhZHVaTW82SnkzbzlrSXlENkJqU3ZnZ3c1bjhsMlFmZXdPd0RhOVlqaS13Y0l4eVpsejR3SU5VRndONkZ2am0yeVRJUl9tbzFVX081cVhuTnlEdEpRRmNiQllkTFZEUzN6a0VvbmU2UUQzdGxnZ3pBTDdpSktZcTRCNEFlbk8wYVBPTmpkY2JMNmU?oc=5",
-   "pub": "2026-11-06 07:19",
    "more": 2
   },
   {
-   "title": "Cabinet approves Rs 23,731-crore GOBARdhan Scheme to scale up compressed biogas production",
-   "source": "DD News",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRkVmUm9ybXVIRlBJWkcxdG1LZDNkSDBYZWh2UHhidlVxQUM4LW0wM2xIQXFYTnRYQmV0YmZUQ184d3VsQURYNU5ZOExOZ2pqOHF4ZjQxVWd1Z0V0ZGRDSlN6OU9CUnE0Ulo3cmtkeHpfM3ZVVDFwNDM2Tm1FTWhKZC1tVnc2d2xIcEE2djRpMXZNWHdRQ3lWZzhTQW9WNV9JNE5EMHBkN2VJTm4wSFR2dDVfR0R0dw?oc=5",
-   "pub": "2026-11-06 03:24",
-   "more": 4
-  },
-  {
-   "title": "Eiko Lifesciences approves 50:50 compressed biogas venture",
-   "source": "Multibagg AI",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZERaY2hZU0hURGpaQTB5WkR0WVhTZ2tGZElzX09mejVSQ2FTOUk1YXhUOEMzanFoSGhjRUpQOGljR0FyNVpIYTZNTEZPcDJTWWZ5d0E2V0ROajFfVF9FeWwwYnN4R3ZUTlNwR1YwVkdKeDJTT2Z3RnBQWHRIZ0ZRY2FBT2NTTi1sd2o2YVpvYVBMRVVLX1dGRFkyQlpYVjZfcUNZaC1xQ1pER3NsOTdBSHc4Z2M0bTN1R2NRVzNhV0RLQQ?oc=5",
-   "pub": "2026-11-05 22:39",
+   "title": "Il ruolo del biometano per la sicurezza energetica del Vecchio Continente: il confronto con CIB ed European Biogas Association",
+   "source": "HydroNews",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNbG5MQmlieEhxT2RzOERaUy1MRzdGZWh5R3dCSEZLcTM1VXZVUFVUbkxlbDZVMWpPMmtIYlBrMEsxTms2Wm1QS1Y2cGphUXZYd0RyS2x0YnB1UFlmY3ZjMlZacHNtRlUtMnBvLWFEc3ZPMk9qUUJTWHVsVkJyTVNOQk1vaVV0WWVHamJIb2pxc3NWRkpfaVplUUx0MkNVNW9nRE01cnZOWUNISEdPVldYMFBVQ3E2NHI2U0QzV2pubEIxaUh3UUpUb0ZxcnNXWUJFZ0ZTQnloMkNmZDVxa2dQV1RKenBIU3BHM2V3aNIB8gFBVV95cUxOdU1fRnBIck5RSnEwdHdSck5NUENoUVc3dmZxOUNvY2xGUWF0Y0dpSVlEam5nX1NtQ1lsbmVrcnN4OVpEdGp0NmNGX2E5dkx3WlNZQVhxejFYT2lnYm5xX0VCQmVRU2RKYnlwM25laXlla2wzcGQyWDdZc3JNZjVuOUh4WFBUQjNDaEltcFFHNm9fb3phdHVERGNoQVBjaS1NeWZVazhwTUhhQTdRMXR1clRlMjd2eVZHRHRwZnRwQmxuZm9PQk9KZmpDaGNEWWRLOEpKOHBwU1dQMFFINEJFVDJBbHBxSDRPV3M5dGxLZW84QQ?oc=5",
+   "pub": "2026-11-06 09:13",
    "more": 2
   },
   {
-   "title": "European Commission opens first biomethane matching round",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOHlkelhwdTl2dzc4VWFRc2NDNnFPb01rQUVpMlZtODdMTGFVV0NvczBicFI2QlNiTHFBQkxIS3h1dGR2ZmtvNXhzRWtGczhjVk5uRjNJWDFIaHI5VjRNTFRqX1JxRll0WUhlLVZoSk5Id2ROZWhzYkY3RWZuWHFmMlpaZUdJcUtUdDh0b1JaUk1ib1l3dUMtMlVB?oc=5",
-   "pub": "2026-11-05 20:13",
-   "more": 3
-  },
-  {
-   "title": "Europe energy partners repurpose natural gas pipeline for biomethane",
-   "source": "gasworld",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWWpEeVJEeU9WeWx6Vk9zcEJrejM0NXo5WHZiOHFxdUd0Nk1FZzlUVEJZLVNUSGtYeXlSMzBVWUE5SVg2ZHZjWkZVM1FibkRfd2RZMXVkYVlxWTB0NGx0eDltWEdiaEVzSjliVEdlTXV0cDRkYW5DR09HbFFJQW1KaDBla29pb0Rab0d3VmlaT0JpLW01N2dsQ3RIU0t5YzJTU2tKZkhGX0JESmo2TGhPX183T1h2dFk?oc=5",
-   "pub": "2026-11-05 19:35",
-   "more": 4
+   "title": "Circularity Fuels Raises $7 Million Seed Round To Scale Sustainable Aviation Fuel Production From Dairy Biogas",
+   "source": "Pulse 2.0",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUXBWZzRyd3Zza2MtQWh0U3VEOC1QWHptSkZ6QjlzakhYSkJuaUhCTjZlVWhqVkkybnU1ZVZwYUxZY1BjYXE5bWxKOTAydUlHNWhvSUhXUHFYX1Zqd1d1VkFUWEVUMVkzZDZRVmRuUFBpTEdtSUFvb1dsVGl1VkZtbl83Y19nWER2a0FHYktsaGdCdnh0akxadDExd0wyWUNqeGRaSFgzWmt5UV9kTEFmb0hPaHU0Z0pBdHo4VlF4d1VwNkc3cVVYUA?oc=5",
+   "pub": "2026-11-06 04:55",
+   "more": 11
   }
  ]
 }

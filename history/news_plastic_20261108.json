@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-08 10:31",
+ "updated": "2026-11-08 22:40",
  "domestic": [
+  {
+   "title": "폐어망 재활용, 재질 나누고 염분·모래 씻어낸다",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=402024",
+   "pub": "2026-11-08 14:07",
+   "more": 0,
+   "summary": "폐어망을 재생 플라스틱 원료로 만들려면 재질별 선별과 염분·모래 등 이물질 제거가 필요하다. 한국해양수산개발원(KMI)이 2023년 발간한 ‘해양플라스틱 재활용산업 공급사슬 기반 조성 연구’는 폐어망·폐로프가 다른 해양 플라스틱과 섞여 배출될 경우 분리·선별 비용이 발생한다고 분석했다. 공개된 폐어망 재활용 설비 특허에도 절단한 어망 조각을 1차·2차로 세척한 뒤 건조하는 공정이 담겼다."
+  },
+  {
+   "title": "폴리에틸렌테레프탈레이트 촉매 시장 2035년 전망: 재활용 PET과 병용 수요가 성장 견인 - 뉴스 및 통계",
+   "source": "IndexBox",
+   "link": "https://www.indexbox.io/ko/blog/polyethylene-terephthalate-catalyst-market-forecast-to-2035-driven-by-recycled-pet-rpet-expansion-and-bottle-grade-demand/",
+   "pub": "2026-11-08 08:41",
+   "more": 1
+  },
   {
    "title": "플라스틱 선별장 근적외선 센서, 빛 반사로 재질 가른다",
    "source": "비건뉴스",
@@ -15,14 +30,6 @@
    "link": "https://brunch.co.kr/@@fy1j/227",
    "pub": "2026-11-07 14:43",
    "more": 0
-  },
-  {
-   "title": "폐타이어 탈가황, 황 가교결합 풀어 재활용 원료로",
-   "source": "비건뉴스",
-   "link": "https://www.vegannews.co.kr/news/article.html?no=401587",
-   "pub": "2026-11-07 09:07",
-   "more": 0,
-   "summary": "폐타이어 고무의 탈가황은 고무 사슬 사이의 가교결합을 끊어 재가공할 수 있는 원료로 되돌리는 공정이다. 헝가리 부다페스트공대 연구진은 2020년 ‘분쇄 타이어 고무의 탈가황: 마이크로파와 열기계 방식’ 논문에서 두 공정을 비교했다. 에드워즈 연구진은 2016년 ‘기계적·기계화학적 탈가황 공정의 가교결합 절단 선택성 비교’에서 압출 기반 공정을 분석했다."
   },
   {
    "title": "유럽연합, 페트 수입 긴급제한 조사 착수…한국산에 반덤핑 관세 매긴 원료도 대상",
@@ -56,20 +63,12 @@
    "summary": "유럽연합(EU)이 재생 폴리에틸렌테레프탈레이트(PET)를 포함한 PET 계열 화학제품 수입에 대해 세이프가드 조사를 시작했다. 유럽연합 집행위원회는 6일 PET 수지 관련 화학제품의 수입 증가로부터 역내 산업을 보호할 조치가 필요한지 평가하기 위해 조사를 개시했다고 밝혔다. 집행위는 세계적인 생산능력 과잉에 따른 수입 압력을 조사 배경으로 설명했다."
   },
   {
-   "title": "[ESG 신간]중국의 녹색 패권부터 순환경제·식량안보까지",
-   "source": "임팩트온",
-   "link": "https://www.impacton.net/news/articleView.html?idxno=30573",
-   "pub": "2026-11-06 23:18",
-   "more": 0,
-   "summary": "석탄 소비국 중국은 어떻게 녹색산업 강국이 됐나 『석탄의 나라에서 녹색 패권으로』｜최승철 지음｜에코퓨처스｜2026년 10월 30일｜340쪽｜2만원｜ISBN 9791122043808 지난 15년여 동안 중국의 환경·에너지 전환을 추적해 왔으며, 이 책은 ‘전환의 시대, 동아시아 탄소 삼국지’ 시리즈의 중국편이다."
-  },
-  {
-   "title": "경상국립대 폐페트병이 화학원료와 수소로…경상국립대 최명룡 교수 연구팀, 고효율 전기화학 촉매 개발",
-   "source": "누리일보",
-   "link": "https://www.gnopennews.co.kr/news/articleViewAmp.html?idxno=212290",
-   "pub": "2026-11-06 17:50",
+   "title": "폐페트병이 화학원료와 수소로…경상국립대 최명룡 교수 연구팀, 고효율 전기화학 촉매 개발",
+   "source": "웹이코노미",
+   "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2365215",
+   "pub": "2026-11-06 19:23",
    "more": 3,
-   "summary": "경상국립대 자연과학대학 화학과 최명룡 교수 연구팀이 폐플라스틱(PET) 분해 산물인 에틸렌글리콜을 포름산염으로 효율적으로 바꾸고 수소까지 함께 생산할 수 있는 전기화학 촉매를 개발했다. RHE)에서 에틸렌글리콜을 포름산염으로 전환하는 패러데이 효율(Faradaic efficiency, 투입된 전류 가운데 목표 반응에 쓰인 비율) 83.09%, 포름산염 생성속도 1248 µmol cm⁻² h⁻¹를 기록했다."
+   "summary": "경상국립대 자연과학대학 화학과 최명룡 교수 연구팀이 폐플라스틱 분해 산물인 에틸렌글리콜을 포름산염으로 전환하고 수소를 함께 생산하는 전기화학 촉매를 개발했다. 연구팀은 액상 펄스 레이저 조사법으로 니켈 셀레나이드에 이리듐을 도입한 촉매를 합성했다. 이 촉매는 기존보다 높은 효율로 에틸렌글리콜을 포름산염으로 바꾸고, 수소도 동시에 생산하는 전기화학 시스템을 구현했다."
   },
   {
    "title": "폐PET 투자 접는 석화업계···높은 원가에 원료 확보도 난항",
@@ -92,7 +91,7 @@
    "source": "워크투데이",
    "link": "http://www.worktoday.co.kr/news/articleView.html?idxno=91591",
    "pub": "2026-11-06 12:50",
-   "more": 10,
+   "more": 11,
    "summary": "경주시·한국섬유개발연구원·현수막 제작사와 협업 체계 구축 화학적 재활용 현수막 200장 초도 공급…환경표지 인증·제도 정비로 정착 추진 SK케미칼은 폐현수막을 화학적으로 재활용해 제작한 현수막 200장을 경주시에 처음 공급한다고 6일 밝혔다."
   }
  ],
@@ -102,6 +101,13 @@
    "source": "ENDS Europe",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQnNwS08zcm9LS0hPR0YtX25vSlJhS2tLUi1DLXc1TDROdWw1SU1PVUdyMkxMai1WSXNoTjg4Q29ISDRrakt6T1doWDNZTGZneV9fMWhreUNEdHJHaHU4NnQxZVhBRkRJYzhuWTZiYnpxekxOd294eGZIQ3VfNExPNDJ6eERfQk05aWRTWjZEdTZFdm9QVUpDSg?oc=5",
    "pub": "2026-11-08 05:41",
+   "more": 0
+  },
+  {
+   "title": "PVC pipe price-fixing settlements top $400M with latest deal",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQlowcGhMdVFTWHlWVTQ4TUJYMGhlejBvNk1UNXZCRGRPLVNBc05aUVE5TnNyOUt2NElBQkw2UTVjOU5vREZYTzA1S3NyaHNwdllHZ2FGNUJxNENQWmZzZ1BGQmt2UXN5c0RUX1ZtckRSZjVSMTNacjhmRWdpcVduZlhPYzg0SjU0d1pteHBJVjFGT2dua1N5SkxJOWdhSUtxR1Q5bUln?oc=5",
+   "pub": "2026-11-07 00:16",
    "more": 0
   },
   {
@@ -119,6 +125,13 @@
    "more": 0
   },
   {
+   "title": "EU countries back harmonized end-of-waste criteria for recycled plastics",
+   "source": "Packaging Insights",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMjBHZ3htNnJxQ3hGcXY3bnRqM1dvbm9fLXAxSXM1N2tfVzFQdzVPQi1tUG04SmRNWV80aGx6d25MUmg2RnlId1hYOXlJUzNzTnMzbDc0dUx2bnBFM0pzNUxYSU0zWENER0k2dDdkTnB5TEwyOThleUlVbERhRFZXdUNYZ2Zycm9kMm5OcmNiWjFhSkhrWjlCdGZ3?oc=5",
+   "pub": "2026-11-06 20:59",
+   "more": 0
+  },
+  {
    "title": "Prices up again as October brings increases for major commodity resins",
    "source": "Plastics News",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ2QwSXVkY0hCOHYyV0lNbTNhS0dZV3B4QU5tZHQ3ZG1QVHBQWGQtUGhaeURST2s1TGJHUlBrUWgwZTdDWDU1dlhIV2x0TDFNYlhSVUt3STBWR3RON3FiaDc0SktTVlphWDdyMUw5ZGxhcUdINWNBVl80S3djd1l1aFVaQ3JPOUNXZWx1bTdZNE1fSzBLOG1KVW9zTy1aUUt5MFdZck1n?oc=5",
@@ -131,20 +144,6 @@
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxONE1KeEtfZWFlWE54M3puNUlsZmd4Q0k3bEcwbTRmTmxfa0V6LW03S1V5RlJJMXNpN2RqV3lOeExXb0NSVC1rQUVHeDFnd2MyaUY2RkFiVGZDSzJSbm05cXIzeFZ4VXg2UzRtYmx4NGUxRXc2ZUoyRWg3YjZodThTV2lpRQ?oc=5",
    "pub": "2026-11-05 23:32",
    "more": 0
-  },
-  {
-   "title": "EU tightens import controls on food-contact recycled PET",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRlJzOERZS2Q2X0ZDVkszRHhScjZvSU9RNWtQbTlqVFNWVmhfb1pxOWJVU0pVeS02UThfbTdRNHhXRmxGSjJVUmVQbV9jSHBPU1J5WGhIRlprUWJYMjVuSlRYSkxGM0ljNlNCek80ZUI0UlpDN1l1LWRWdFF1ZFFpYWxxRTVYMkxaRzBpWmJYdlRNR25zRmRLcWQ0WVBQcVV1Umc?oc=5",
-   "pub": "2026-11-05 12:24",
-   "more": 0
-  },
-  {
-   "title": "EU member states approve end-of-waste criteria for recycled plastics",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeXlfU1BuczNERmttN1JSdXBqdHBSODRod0dfc2JRZUZ4eWdDOTctWE5vNUQwbEFQakVNdmtkUEVuLTZwOWhEdWFyS0tiQm9ra09PcHloQTJGVlhyYnFDSVVNV0hBZXl4aXpRNTBtUExGb0pPV0xrRGF0WWxqbnBYbUF4eTN0aXlVMjliMHg4RmpDOVB2N1lzVVRDeUNmWnJyQXlyeF8wUktUdDJFQzRHaGZSMUs2S04xc0l0ZUlyQkc?oc=5",
-   "pub": "2026-11-05 11:27",
-   "more": 1
   }
  ]
 }
