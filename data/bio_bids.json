@@ -1,8 +1,44 @@
 {
- "updated": "2026-11-09 10:34",
+ "updated": "2026-11-09 21:47",
  "backfilled": true,
  "bf_k": 420,
  "items": [
+  {
+   "id": "g2b:R26BK01816305",
+   "src": "나라장터",
+   "kind": "공사",
+   "no": "R26BK01816305",
+   "ord": "000",
+   "title": "양평 분뇨처리장 이전사업(토목,건축,기계)",
+   "org": "경기도 양평군 환경사업소",
+   "region": "수도권",
+   "city": "양평",
+   "type": "EPC·공사",
+   "waste": "가축분뇨·분뇨",
+   "start": "2026-11-09",
+   "end": "2026-11-20",
+   "open": "2026-11-20",
+   "method": "제한경쟁",
+   "est": 7075860000.0,
+   "budget": null,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "공사입찰설명서(지방_지역제한_100억 미만-50억 이상).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816305&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=07"
+    ],
+    [
+     "공사입찰설명서(지방_지역제한_100억 미만-50억 이상).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816305&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=07"
+    ],
+    [
+     "긴급발주 사유서(양평 분뇨처리장 이전사업).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816305&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=07"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01816305&bidPbancOrd=000"
+  },
   {
    "id": "g2b:R26BK01815958",
    "src": "나라장터",

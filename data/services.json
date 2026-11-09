@@ -1,7 +1,91 @@
 {
- "updated": "2026-11-09 10:32",
+ "updated": "2026-11-09 21:45",
  "backfilled": true,
  "items": [
+  {
+   "id": "g2b:R26BK01816201",
+   "src": "나라장터",
+   "no": "R26BK01816201",
+   "ord": "000",
+   "title": "2027~2028년도 재활용가능폐기물 운반 처리 민간위탁 용역 계약",
+   "org": "서울특별시 동작구",
+   "region": "수도권",
+   "city": "서울",
+   "type": "폐합성수지·재활용 처리",
+   "start": "2026-11-09",
+   "end": "2026-11-20",
+   "open": "2026-11-20",
+   "method": "일반경쟁",
+   "est": 7864560000.0,
+   "budget": 7864560000.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "[동작구공고 제2026-158호]2027~2028년도 동작구 재활용가능폐기물 운반·처리 용역(최종).hwp",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816201&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "[동작구공고 제2026-158호]2027~2028년도 동작구 재활용가능폐기물 운반·처리 용역(최종).pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816201&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임3) 27-28 과업지시서_재활용가능폐기물 위탁처리용역(최종).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816201&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임4) 2026_제안요청서_재활용가능폐기물 위탁처리용역(최종) (수정).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816201&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+    ],
+    [
+     "(붙임5-1)긴급입찰공고 사유서(2026).hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01816201&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01816201&bidPbancOrd=000",
+   "qty_checked": "2026-11-09",
+   "qty_v": 2,
+   "qty_t": 47664.0,
+   "qty_note": "(붙임3) 27-28 과업지시서_재활용가능폐기물 위탁처리용역(최종).hwpx: 상대자는이에적극협조하여야한다. 라. 예정물량 : 47,664톤 ( 23,832톤"
+  },
+  {
+   "id": "g2b:R26BK01815812",
+   "src": "나라장터",
+   "no": "R26BK01815812",
+   "ord": "000",
+   "title": "서울특별시 양천구 재활용폐기물 선별·처리 용역",
+   "org": "서울특별시 양천구",
+   "region": "수도권",
+   "city": "서울",
+   "type": "선별 대행",
+   "start": "2026-11-09",
+   "end": "2026-11-23",
+   "open": "2026-11-27",
+   "method": "제한경쟁",
+   "est": 3859200000.0,
+   "budget": 3859200000.0,
+   "status": "공고",
+   "ntce_kind": "등록공고",
+   "docs": [
+    [
+     "입찰공고문.pdf",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01815812&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+    ],
+    [
+     "제안요청서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01815812&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+    ],
+    [
+     "과업지시서.hwpx",
+     "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01815812&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+    ]
+   ],
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01815812&bidPbancOrd=000",
+   "qty_checked": "2026-11-09",
+   "qty_v": 2,
+   "qty_t": null,
+   "qty_note": ""
+  },
   {
    "id": "g2b:R26BK01814039",
    "src": "나라장터",
