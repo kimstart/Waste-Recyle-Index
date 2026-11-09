@@ -1,107 +1,91 @@
 {
- "updated": "2026-11-09 10:46",
+ "updated": "2026-11-10 01:39",
  "domestic": [
   {
    "title": "아산시-비이에프㈜, 바이오가스 생산 목표 달성 위해 맞손",
-   "source": "굿뉴스365",
-   "link": "http://www.goodnews365.net/bbs/board.php?bo_table=news&wr_id=339571",
-   "pub": "2026-11-09 04:41",
-   "more": 2
+   "source": "충남문화신문",
+   "link": "http://www.ccn365.co.kr/news/articleViewAmp.html?idxno=65308",
+   "pub": "2026-11-09 10:18",
+   "more": 3,
+   "summary": "아산시가 민간기업과 손잡고 바이오가스 생산 기반을 강화해 탄소 중립 실현과 자원순환 체계 구축에 속도를 낸다. 「유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법」(이하 바이오가스법)에 따라 지방자치단체는 매년 일정 비율 이상의 바이오가스를 의무적으로 생산해야 하는 ‘바이오가스 생산 목표제’를 적용받고 있다. 시는 이번 협약을 통해 바이오가스 생산 목표제에 선제적으로 대응할 수 있는 협력 기반을 마련했다."
   },
   {
-   "title": "기후변화 대응 김해시 농업 우선순위 ‘스마트팜·로컬푸드·바이오가스’",
-   "source": "경남도민일보",
-   "link": "https://www.idomin.com/news/articleView.html?idxno=2019007",
-   "pub": "2026-11-07 16:14",
-   "more": 0,
-   "summary": "김해시 탄소중립지원센터, 탄소중립 포커스 발간 (재)김해연구원은 기후위기가 농업과 먹거리 시스템에 미치는 영향을 살펴보고, 김해시 여건에 맞는 기후테크 활성화 방안을 제시한 <탄소중립 포커스 Vol.2>를 발간했다. 기후변화로 말미암은 농작물 생산 불안과 식량 가격 변동 등 농업·먹거리 분야 위험을 짚었다."
-  },
-  {
-   "title": "서산시 초과 바이오가스 팔아 3억 수입 창출",
-   "source": "충청신문",
-   "link": "https://www.dailycc.net/news/articleViewAmp.html?idxno=878846",
-   "pub": "2026-11-07 15:57",
-   "more": 0,
-   "summary": "서산시가 자원 순환형 바이오 가스화 시설을 통해 생산한 가스 초과분을 판매해 약 3억4000만 원의 신규 세외수입을 창출하는 성과를 거뒀다. 7일 시에 따르면 2025년 1월 1일부터 전면 시행한 환경부의 바이오가스 생산 목표제에 따라 전국 모든 지자체는 할당된 바이오가스 생산 목표량 초과분과 부족분을 상호 자율적으로 거래할 수 있다."
-  },
-  {
-   "title": "서산시, 바이오가스 생산으로 자원순환·세입 확대",
-   "source": "전국매일신문",
-   "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1309285",
-   "pub": "2026-11-06 14:41",
-   "more": 9,
-   "summary": "충남 서산시가 유기성 폐자원을 활용한 바이오가스 생산을 확대하면서 자원순환과 함께 새로운 세외수입 창출 효과까지 거두고 있다. 바이오가스 생산 목표제는 2025년 1월부터 시행된 제도로, 전국 지방자치단체는 생산 목표량을 초과하거나 부족한 실적을 지자체 간 자율적으로 거래할 수 있다. 이는 생산 목표량 117만2천736N㎥를 크게 웃도는 규모로, 목표량보다 149만4천458N㎥를 더 생산했다."
+   "title": "아산시, 바이오가스 생산 확대 업무협약…탄소중립·자원순환 기반 강화",
+   "source": "뉴스충청인",
+   "link": "http://www.cndnews.co.kr/463365",
+   "pub": "2026-11-09 08:32",
+   "more": 1
   }
  ],
  "overseas": [
+  {
+   "title": "Review Assesses Advanced Oxidation and Anaerobic Digestion for Distillery Wastewater",
+   "source": "Bioengineer.org",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUmdfUXNFRmIzSFhOUWRUdVc3OEdDY2NqdWxTX0FZQnI1T201X1BnTEptVXdzNTlUeWltaEhYR1BGX0xvR3pNVFNvWHlnTmFpMjBWcEdFbGFYU1VoM3FTTjFTd0xVZjNaQTFNdklHUVZHRl9vRkNFWWcwaTA4WGNBWEo3cWM3dHBjdTREMmdTQXVWZF9NcnVHVklhVzZpQmRRYnVuaFpsbVRyRWU5ckE?oc=5",
+   "pub": "2026-11-09 23:26",
+   "more": 0
+  },
+  {
+   "title": "Northern Ireland opens consultation on first biomethane strategy",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeXQ3bnBNNzZYSVJXek9pRlR5SDdPZG5HNVFvY1Awb0c2SmlxZXFvMnNoZm9vRHZaVDBkczQ1Mno3VVFGYXlsd3NKTzVwTVdlemVjZUd0Tm05SUwzZ3ZjOGp4Sm5lRXJkMlhRVTc1WEFQWnJIUHZNWDF6T3h5NDI4aFNGQTBSLVpZU3VuNVpZaTgxMmQ2MHRTNEtmQzZHT21DVDFv?oc=5",
+   "pub": "2026-11-09 18:44",
+   "more": 0
+  },
+  {
+   "title": "WMW | Organic waste: Fully automated biowaste processing boosts biogas yields",
+   "source": "Waste Management World",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPa082aXdwUFVXdHMtLXFvQjhJVmFvT2tTRy10b1U2R1RGVXZBdEJRekVIWVRUdjR0bk9MYzFkbXR3Z0VrMFZtc1NmZ01LVVR0aFRUUWFkUUh6Z2RINi1BYUtQZDBoLTRjc2l6bUZrRTJBME14UnZlTlNoT1k3LXd1aVQ4eWd5c2NwVTVhc0VEM1RfSzk3alVpdmFYb0R1VnIxTTliZENIMXI?oc=5",
+   "pub": "2026-11-09 08:00",
+   "more": 0
+  },
   {
    "title": "Protests force civic body to drop school biogas plan",
    "source": "The Times of India",
    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSDVkX3FBQWUzQ1FLM1NxdVBLLWhCc0ZkRVcwTGcxTFZXZlljVEJ3eGdvQWNFWDBjWjZ1X2VmVzdPZm9yeW9YYXI1VWppemdmSVVQRFk0NF9pZmw3RXYxM1JMci1oQW1TTTFuN3FXQnBRN1I5WWx1U0NFZXd6RzRKVHhocjZFU2JYdHJFTzQyRmt3Q0tCamZvNGpmSHJjQXVDNTRmbTNDaW9LWG1PdWR2TW53ZUN5RThMQkNDUHhHQnBvVEtSN0RuRWRHX0FvX2twdVNTUNIB2gFBVV95cUxOWnMyLWJNa0xmMXQ0bS10NGR4QlhtMGh6emZhdXFrYk5CUXQtRjZMNXp2ZlFWaVJ4a3dkWkFoRkRGWWZsSzQ4cWdsSWRSMWR2MEE2WFp1SkdQbFBWY0FtOG9taWN2dlhJUm9vbFlCYlpjZGVDUTJmaGhXRXdQbkNJRjAzZ2d3THNBYk5FMUd0SFpCTDBiam1XNm5YT0l4dGU0NHVxcjdQeXByN0dja3JoTjRUTHNsWnpfRFppNERoY3JsNHczWm8tOWpOeFNiTEprUmJMUGowbDZBZw?oc=5",
    "pub": "2026-11-08 00:52",
-   "more": 1
-  },
-  {
-   "title": "De Smet 2026 - Biogas Conference",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Ya1dhTG1idVRCY3Y5TnFKamU0cDV1Rk9PbVdUMjc3dUZwV3FidnlKanFPaXg0SEdXRXNRYzU0R085NzBLS292UDlSeS1hT3hKay1GWlJ3bDhBa0l2X09QOEZrWXdpVlFMYW5zOQ?oc=5",
-   "pub": "2026-11-07 00:42",
-   "more": 0
-  },
-  {
-   "title": "Residents urged to review revised Winwick biogas plant plans before consultation deadline",
-   "source": "Warrington Worldwide",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLTdodHJJN2lON0p6MnREb3BEdGZiWFFGelJVMHZwWGxFWC1YdWhsYjE1eTd5amktenZ5ZjEtbml5eUxud2lqbXRCczBJNFkxS0k0T085cUx1S1diUWhDamd0RFJBWnBqYVlienVDdUlwclZOQzZxODJtRk5QTU43T1Voa212RmVVdzRZUkNkaklXMWdodXRqMEZJMnJncWNwSnpReUdCRTQ1VTBpS1RmMl83WXZEVjdhODFBNF9tYTlXM3JGZUVzSC1GOWxOVHVlTDJCVFlYbw?oc=5",
-   "pub": "2026-11-06 23:02",
-   "more": 1
-  },
-  {
-   "title": "Less than 3 weeks remaining until Future of Biogas Europe 2026",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdjNETTNhT1kxcjBUZExfRGpGYi1ZQmJ0RzJnZkZfTXZNUzFyYmV4dC1sUFBoNVVyajNkZEEyd1RWdjhBLThLT3lCMS1OVDdMQlhOeTFXSHFKMExDTFU4b2x5T0tXbU5Gb1hFY081NndhOXR1OXM1NVdEa1pETVFqeWJkbmUtVldzcXdvUF9nWkxRcE5obDY5WWRGTUVEVHJJ?oc=5",
-   "pub": "2026-11-06 21:35",
-   "more": 1
-  },
-  {
-   "title": "Huge turnout for Gort biogas plant meeting now nearing the planning endgame",
-   "source": "Connacht Tribune",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcTBwZlR3T0VSeTY4aXk1VnVqbW5JbGFNN2loTmdBbEpOMDN6eTZkeUlsRExzZzhXaGpFT1ZTQ2ZEVVR6amVGWFA4UEZ0OGxpRTRHOFIxNTItM2dKelpNT2F2RUdSRzltNldKZWFlcm15cVM2eVpuS0kwYzZSMnpmaENFRlVwQ09RYzBwZk5rSW8yNm10VWJJbmRGZkRIOUFlRndwQUVWbXhydElFdUNoSmpNSmRZVlBkLUFR?oc=5",
-   "pub": "2026-11-06 19:59",
-   "more": 3
-  },
-  {
-   "title": "CNG Fuels adds South Wales biomethane station to UK HGV network",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRU52YUdodWVpTXdRZVg0U3BRaFdhUllIdnpZdDNjdGt3eEljamdkOENuMk1DSzZKVXAzRVZsRXdHOGxaUzN6T0tnWXIwZ0Q2N21OVDE0ZmtveDFYdl9KM2lSdmkwTVVzMkdsWDlVbnVNSHpMcElGNjJ6RzVhV0ZGMGxnMWd0bzVuZ1lVdkxBT2NGSXBLeG54OU5tTURIY2RtNnc?oc=5",
-   "pub": "2026-11-06 18:28",
-   "more": 0
-  },
-  {
-   "title": "Circularity Fuels closes $7 million seed round to scale jet fuel made from dairy biogas",
-   "source": "Biomass Magazine",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNmpiZVRzM0NYZ3ZaQ1RXM0hsQlYtUjJ4Y0pCX0ZIUWlIVGhJRzVON2xISWVJQWUxZV9oUFJLV3BIRkxlX1JqWGE4WVlkOFJMMzQ4QlJ4alYwSUltOGlpOHQzMUs2b2NqY1g2U3FOM0RFNmhpcWxPVEdIX25STEM3ZFV1dkhKWVo3SEF6U0ZldmF3bjVUM0pNdU5iaF9Za194Zy1SMzJqcUV4dlQwM01Ibkd6aWFzTjl2aDNiaDEzSnI?oc=5",
-   "pub": "2026-11-06 16:50",
-   "more": 4
-  },
-  {
-   "title": "Anaerobic Digestion Provides Energy And Revenue Opportunities At US Water Resource Recovery Facilities",
-   "source": "Water Online",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSzJMMGE1bS10bmN1bG9aMzdOOTJIYWYwVkNRbkRlZ0NUdzRrWkZPSE1IVGRtQ09waE1sczdja3k2WUdzWHo4Q0dTdkZTZ2ZLTTFJMUdSUzB0M0tESW9UV1dtRV9XSmxqZlR4enNrcmlUR28wNmo2QlZhOU9Rc19vN2k3bGN4cjJXR09ZT2NNV3dqeVl2QjI2WWU1M1BMNTdraTlLUUQyYzJEN0wySVVCRjEtenFYdnhTUVZkMzYwVUdkbHZ2VkFvRk5vRWJ2aW8tN2hLeG5oUQ?oc=5",
-   "pub": "2026-11-06 16:20",
    "more": 2
   },
   {
-   "title": "Biogas plants changing rural life in Moulvibazar",
-   "source": "The Financial Express",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcmZuZXJLVjlNbGlKRXZjUXJvZlp2Q0MtQklsdG5saUVGb0cxeDhoZkpZU3RQbHJYM3VTY3kzc3kyTHNrUDl6OUc0RkZubmJkeDMxV3pHalk0ckQxQ1ZzWnlWLW1WQWZyQzdWWFpoaHpxRW0yUlE0bHBWa0hEQzQxM3dULTJnWERnY1NFNm5HNmdDaUlfZWc?oc=5",
-   "pub": "2026-11-06 15:35",
-   "more": 1
+   "title": "Gujarat Energy Backs Compressed Biogas With ₹100 Crore JV Plan",
+   "source": "Urban Acres",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb3F6QVdJaVdraWZ4Ulh2Zjk1SXZlMlFkcF8zME9JOFpURXRYQnNzQWRCUWFWaUR1WUk1Q2JhUEpDWmxsamJxZGRjMGRERlRFZ0JPVnVzbUJpb05ZQndWaDRUejJMMkR6aV9YUVBNcEprdFhMbU02OFJIazlNcEt4N19vNEtkUnY4dDZEM2IzN1Y3SkhveVFKbw?oc=5",
+   "pub": "2026-11-07 21:34",
+   "more": 2
   },
   {
-   "title": "Renewable Natural Gas Producer Surges 55% as Q3 Flips to $5.2M Profit on Revenue Jump",
-   "source": "The Globe and Mail",
-   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNclFVR01HMGRpOTRyS1hhOXBKNTJ2VzRzUWJwVHp3RFVjLXA5SjdPQTVhZS1YUFNrLTNQSUhtaVpNUWZCMXExUEpHb1F5blYydU5uZGVCcFgxR24tZGNDVFZDQ1NwcEVmUEFobElIVXVtZ29RTkpDM2JMV0ZySlBBeVhheHZrNzFlU0RMN0hmMm9EVW9UZXVBMGxUSUJEQXlfbXY1OVY5Z2lCN3dpOE0xVzlfbXlTVUJJN25UMWxCWXUwUEtLU3FBTDB5TzlVVGx6YWp2QzdIYzBiamlYX2t0MEdFeWh1UUJWNXZ3NWM2VE5iQnNQcjdFc1E2eTQ?oc=5",
-   "pub": "2026-11-06 14:35",
+   "title": "US food waste biogas sector has 404 operating facilities across 48 states: Report",
+   "source": "BioEnergy Times",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeGpXeXRPcWFnNnl2emJvdHRxN0xsODhSM1dWNnlDZ05kTElseVJTNTZPdWc4YllYSExrei1DbXY1ekhwWFp4TFRteHowdllyeU91SC1JZlc3cWRQTlpkS0ZVeGU3eGd6ME0zTFFualBFN1ZCbllaZWw1MEV5VmhYeU9GTHk4cmxnVlJsQXFNMlJXem1CSUZzX0hDTkJORG5DQ1RwblVjcDE5T3Nn?oc=5",
+   "pub": "2026-11-07 16:51",
+   "more": 0
+  },
+  {
+   "title": "Circularity Fuels Raises $7 Million In Seed Funding Led By DCVC And Trucks To Produce Jet Fuel From Dairy Biogas",
+   "source": "Pulse 2.0",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWVJROUlWV0t6UkpYZS1fN3YwVnF3WFpFbUd2Z2NYajdsOXNrTVJoQWlEUmhfU2V3MkdWRi13VV90b182TjJ4eXIxMU95Wjg0RG9iNDJybm9FV3lQT1RoMHNWaWRsanAyYTQ0Ym5zUzFYNmRLYXFyZGVrb282amtxS0VwV1pjY1ZkUlZDX1dSZmY1WUhXUnBrTEtZcWt1QllZR3NnaTNXQzlxTGM2T0lMaVRpSHhKblJEVm5xeXNRMTh1N1JLdUthN3UzMA?oc=5",
+   "pub": "2026-11-07 08:22",
+   "more": 3
+  },
+  {
+   "title": "Biogas can ease pressure on conventional fuel: expert",
+   "source": "New Age BD",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaDFHcm03dVozSkM5MGstV0dwejVtY2VOREJuWVhRN0pSRlhVZHBEbDQxcjR3Z3l2dVVXVHU1UXNtOXY5VkdiWm1HdDkwWVNIMWxVVUlzZ1BrZXgtYXpnWjdaOHBMWkpsM05HeDU1cVctYnEwWUJsRy1tSWNFWEFKN3dfTDBSdHo4TGx2RHZkeW9kYTcxM3BHZHB6UE00UQ?oc=5",
+   "pub": "2026-11-07 08:08",
+   "more": 2
+  },
+  {
+   "title": "Ameresco breaks ground on Nebraska renewable natural gas facility",
+   "source": "scanx.trade",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMENyaXU1ZXBSZUxlckRjbk9VQmdpdzFIaUJSWFdSQWI0aW1zYzhnQVc4MWlfVFNGS1FKWWxpVkRkVDhDNkJ5VkxHM2toa3FOZEtYN2JJX2luWktnblJVUEo1WEx5WGxqM1JfTExOV3pzNjJFZWVVNkJkOTVpbkVJcmdsWEdqY3VqT3lJVGFvd0ZKN2h2UUwyM0w5VEJrWFEzaFNzeGNJcjBpZjlXb01iQ1VJYnloem1VN2Vv?oc=5",
+   "pub": "2026-11-07 03:35",
+   "more": 2
+  },
+  {
+   "title": "Cavan councillor urges government to set up biogas plant framework",
+   "source": "Northern Sound",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObEUtS2dNSlZFaVo0aG85dTdBVGRfWkx6dDRDRm03RDB6bXZhRW5YaGZjcWd5T2ZydURWTl9pR0ptMWVDaEFZWEhjTVFWeDNtc3FXaWs5ZXM2dGNvZUpCdk9VWUtZUWQ5d3ByWE50SVBPaWYwWm5fSnJENTZ4dXFwV0owYWwxRURrTmNkVGd2ZWZZS2JPVlI4YTFWUkE3Tkk1OUJsWlFZbnR0QkE?oc=5",
+   "pub": "2026-11-07 02:17",
    "more": 2
   }
  ]
