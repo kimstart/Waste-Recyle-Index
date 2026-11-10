@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-10 13:11",
+ "updated": "2026-11-11 00:03",
  "domestic": [
   {
-   "title": "동서식품 저비중 라벨·페트병 경량화로 플라스틱 감축 : Packnet",
+   "title": "동서식품 저비중 라벨·페트병 경량화로 플라스틱 감축",
    "source": "월간포장",
    "link": "https://packnet.co.kr/30/?idx=175543775&bmode=view",
    "pub": "2026-11-10 12:19",
@@ -28,7 +28,7 @@
    "source": "현대경제",
    "link": "https://www.hdnews.co.kr/news/articleView.html?idxno=362104",
    "pub": "2026-11-09 19:00",
-   "more": 1,
+   "more": 2,
    "summary": "충남 금산군의회(의장 전연석)는 9일 금산군 군북면 호티리 일원에서 군의원 7명 전원과 의회사무과 직원 모두가 함께하는 가을철 농촌 일손돕기 활동을 펼쳤다. 821조 내년 예산안 심사 돌입…여야, 162조 미래대응기금 놓고 충돌 천지하나, ‘2030년 매출 500억’ 비전 선포…경영혁신 본격화"
   },
   {
@@ -56,6 +56,14 @@
    "summary": "정부가 2030년까지 석유계 플라스틱 원료 사용을 30% 감축하기로 한 '탈플라스틱 순환경제 종합대책'의 실행력을 끌어올리기 위해 지자체별 분리배출 체계 점검에 나섰다. 지자체 분리배출 체계 점검과 선별장 현대화 추진 정부는 국무회의에 보고된 탈플라스틱 순환경제 전환 추진계획에 따라 2030년 폐플라스틱 발생 전망치 대비 신규 플라스틱 원료 사용을 30% 이상 원천 감축한다는 목표를 설정한 바 있다."
   },
   {
+   "title": "폐페트병이 고부가가치 화학원료와 수소로…경상국립대 최명룡 교수팀, 고효율 전기화학 촉매 개발",
+   "source": "세계일보",
+   "link": "https://m.segye.com/view/20261109513476",
+   "pub": "2026-11-09 15:46",
+   "more": 3,
+   "summary": "지구촌 전체의 심각한 환경 문제로 부상한 폐플라스틱을 고부가가치 산업용 화학원료와 청정 수소 에너지로 동시에 전환할 수 있는 혁신적인 기술을 국내 연구진이 개발했다. 1.60V 전압 조건에서 에틸렌글리콜을 포름산염으로 바꾸는 패러데이 효율(투입된 전류 대비 목표 반응 비율)은 83.09%에 달했으며, 포름산염 생성 속도 역시 시간당 1,248µmol cm⁻²를 기록했다."
+  },
+  {
    "title": "EU, 재생 PET·화학원료 세이프가드 조사…한국산 테레프탈산도 대상",
    "source": "임팩트온",
    "link": "https://www.impacton.net/news/articleView.html?idxno=30593",
@@ -72,42 +80,56 @@
    "summary": "한국화학연구원은 김도경 박사 연구팀이 한국기술교육대학교 김태용 교수 연구팀과 공동으로 열분해유 속 불순물이 촉매에 미치는 영향과 작동 원리를 규명했다고 9일 밝혔다. 연구팀은 실제 열분해유에 질소·황·염소·산소계 불순물 13종을 각각 첨가해 경질 올레핀 생산량의 변화를 살폈다. 실험에는 연구팀이 2024년 확보한 제올라이트 촉매를 사용했다."
   },
   {
+   "title": "“폐플라스틱 재활용 막는 방해꾼 찾았다”…AI로 불순물 정체 규명",
+   "source": "헤럴드경제",
+   "link": "https://biz.heraldcorp.com/article/10930651",
+   "pub": "2026-11-09 13:02",
+   "more": 1,
+   "summary": "- 화학연, 촉매 성능 떨어뜨리는 질소 화합물 확인, 2030년 실증 추진 한국화학연구원은 김도경 박사 연구팀이 한국기술교육대학교 김태용 교수 연구팀과 공동으로 폐플라스틱 열분해유에 포함된 불순물이 촉매 성능에 미치는 영향과 작동 원리를 규명했다고 9일 밝혔다. 이를 촉매로 분해하면 플라스틱과 각종 화학제품의 기초 원료인 에틸렌, 프로필렌 등 경질 올레핀을 생산할 수 있다."
+  },
+  {
    "title": "실험실 플라스틱 재활용, 오염 확인 뒤 재질별 분리",
    "source": "비건뉴스",
    "link": "https://www.vegannews.co.kr/news/article.html?no=402409",
    "pub": "2026-11-09 12:56",
    "more": 0,
    "summary": "실험실 일회용 플라스틱을 재활용하려면 폴리프로필렌(PP)·폴리스티렌(PS) 등 재질을 나누기 전에 방사성·화학·생물학적 오염 여부부터 확인해야 한다. 연구진은 생물학적 오염 처리를 위한 121℃ 오토클레이브 과정에서 PS는 변형돼 서로 뭉칠 수 있지만 PP는 형태를 유지한다고 보고, 두 재질을 따로 모아 멸균했다. 이 체계는 콘스탄츠대 연구실 3곳에서 시행됐다."
-  },
-  {
-   "title": "폐플라스틱 재활용 걸림돌, AI로 밝혀냈다",
-   "source": "DongA Science",
-   "link": "https://www.dongascience.com/ko/news/80771",
-   "pub": "2026-11-09 12:00",
-   "more": 4,
-   "summary": "폐플라스틱 열분해유 종류별 불순물 함유 샘플. 열분해유에 포함된 탄화수소를 촉매로 분해하면 플라스틱과 각종 화학제품의 기초원료로 쓰이는 경질 올레핀을 생산할 수 있다. 연구팀은 앞서 2024년 폐플라스틱 열분해유를 추가 수소화 처리 없이 경질 올레핀으로 전환하는 '순환 유동층 촉매분해 기술'을 발표했다."
-  },
-  {
-   "title": "빛·열로 폐페트병 재활용 공정 혁신…UNIST, ‘저온 광열촉매 기술’ 개발",
-   "source": "에너지프로슈머",
-   "link": "https://www.energyprosumer.info/6734",
-   "pub": "2026-11-09 07:41",
-   "more": 0
   }
  ],
  "overseas": [
+  {
+   "title": "Aduro tests post-consumer plastics in pilot",
+   "source": "Resource Recycling",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYmJEbWNNQ3RBT1dxWjN0c3VjTzZfRXIweE1SaDlQNTlOLWtmTHpaOVZXTjFpY01wam5oRjNHanVKRmwwVmF2M2R2MVNQU1RiN05nZUZKM0lPaFFZUzMzY25yZmFPSFFkUWNTRFlvUnA4N1dZQ3JLbzRTN0JXOElvUjdOdVNPbnlVOHRwdExaVXh1LXVHSTJyaDhOcw?oc=5",
+   "pub": "2026-11-10 20:21",
+   "more": 0
+  },
+  {
+   "title": "EU’s CEN greenlights new biodegradable packaging standards to support PPWR",
+   "source": "Packaging Insights",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNanBOZmZ4akpQVW1pMnd1d0dzd2JFYkU5XzlQYW5CY1RqRnlkNnNPYmtwNmowVjVNS3EtUlotalpGZHRLSVJfMnZWbmdMck9WQjNyOWtoZ0h1ZDA4SFl0M3ZPeGdpbzNac2t2aG1adVNxUUdBRXVGRGZrdmQzd1RXdFk0d2ZXXy1SWnBxYVRkc3czT0dq?oc=5",
+   "pub": "2026-11-10 19:34",
+   "more": 0
+  },
+  {
+   "title": "China’s food-grade rPET approval could reshape global recycling markets",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdmQyb1IzTzlodUJtRWZ3S0c4WXdjRk9XeDJTa2k3ai1vMFZhTjM0VzVnMGFwQk9vQlFPSmY1TlYwdXIzNmVaYTRUVXVrMUcwYmZWQWpwZmxiVm5aWkdlcFJyazRZdjVBdl95Nkx4X1FybjNlSi1iTFN5UWx4ZmxPSE1WWWNoUUQxaHFJdDU4VjBzMEQtT1BIWTBfVlV5ME5VRU9xQlRfaDZaNXQyVmdrNS05TWtJWk5zVHVPX0VYQlNkWTVDdGFkTUNRZkNsZHBDc2VSYWUxTlgycmdUbWFORzJn?oc=5",
+   "pub": "2026-11-10 18:37",
+   "more": 0
+  },
+  {
+   "title": "Here’s our 2026 trackers, lists, resin prices, data and rankings",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWjVUaEI3clZoY1N0Tzk2SExHeWEzbXpSQkwtQjdsN2tNbzFFUG5fT0lETVVYSkFMbnZUQkZMRU1zZUVHN3k1M04yWktYVEktYkJRc1lXTnBRRUMtdGdVTWtjSkdQMXBvQnlhd1hCRzRQOE1KMXM5a2I1blNmM1dsclRiQmdHZ2l2elI0?oc=5",
+   "pub": "2026-11-10 14:05",
+   "more": 0
+  },
   {
    "title": "Plastics industry must show progress on EPR, leading executive says",
    "source": "Plastics News",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa3o2SXpSU20tZUtXRVZHenk5VmtXN2NGWFlJbFRJSm5XaXd5cFVTRm1YdVd5RUlCS2FPWE1QSjZMMHhVcWNxUE5aa0FvMmFkZE1yS2g4TVNkcEMzbXhHYWVrRjlfcVdYa1l3RlEwT1lZcUFDQ1lPeTI0RlFoSGtxMU9tX2wwOGRMQ0VkQ2N3?oc=5",
    "pub": "2026-11-10 03:49",
-   "more": 0
-  },
-  {
-   "title": "Prices rise for five commodity resins as market pressures grow",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVnpydERqVW1TVFF4V0hBcmJjWldOcDlPSlMyQlN0Y2Nud1NUMnhDdjdic0lxRnJNYWpzczJSU2p0Y2dFU2tSaVBidG4wMHlFU1VNWjZRTHNDMFZUUVFRTXBMQ3IzNkIyUUo5S1ZISXJOOHUzSm9HUE8wSURYdnNYaTZ1VEJZSTdXY0g0YjZyMmktRVc4TlNmRVFzYXhnOHM0dGtMZA?oc=5",
-   "pub": "2026-11-10 00:15",
    "more": 0
   },
   {
