@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10 21:33",
+ "updated": "2026-11-11 02:03",
  "laws": {
   "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법": {
    "name": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법",
@@ -125,6 +125,13 @@
  },
  "posts": [
   {
+   "key": "10557:1905420",
+   "board": "행정예고",
+   "title": "「2027년 바이오가스 민간의무생산자 고시 」 제정안 행정예고",
+   "date": "2026-11-11",
+   "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10557&orgCd=&boardId=1905420&boardMasterId=827&boardCategoryId=&decorator="
+  },
+  {
    "key": "68:89078",
    "board": "입법예고",
    "title": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 시행규칙 일부개정령안 입법예고",
@@ -134,6 +141,12 @@
  ],
  "events": [
   {
+   "date": "2026-11-11",
+   "type": "행정예고",
+   "title": "「2027년 바이오가스 민간의무생산자 고시 」 제정안 행정예고",
+   "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10557&orgCd=&boardId=1905420&boardMasterId=827&boardCategoryId=&decorator="
+  },
+  {
    "date": "2026-10-20",
    "type": "입법예고",
    "title": "유기성 폐자원을 활용한 바이오가스의 생산 및 이용 촉진법 시행규칙 일부개정령안 입법예고",
@@ -141,6 +154,7 @@
   }
  ],
  "board_seen": [
+  "10557:1905420",
   "68:89078"
  ]
 }
