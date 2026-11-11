@@ -1,29 +1,38 @@
 {
- "updated": "2026-11-11 10:59",
+ "updated": "2026-11-11 23:35",
  "domestic": [
   {
    "title": "기후부, ‘2027년 바이오가스 생산목표율 고시’ 행정예고",
    "source": "가스신문",
    "link": "https://www.gasnews.com/news/articleViewAmp.html?idxno=127630",
    "pub": "2026-11-11 10:07",
-   "more": 0,
+   "more": 1,
    "summary": "기후에너지환경부(장관 김성환)가 ‘2027년 바이오가스 생산목표율 고시’ 제정안을 행정예고했다. 주요 내용은 △2027년 공공의무생산자의 바이오가스 생산목표율을 50%로 설정(안 제1조) △2027년 민간의무생산자의 바이오가스 생산목표율을 10%로 설정(안 제2조)이다. 공공부문은 2025년 50%로 시작해 2045년까지 80%로 단계적으로 확대된다."
   },
   {
-   "title": "에어레인, '에코몬도 2026' 참가…유럽 바이오가스 시장 공략 확대",
-   "source": "파이낸스스코프",
-   "link": "https://www.finance-scope.com/article/view/scp202611100004",
-   "pub": "2026-11-10 08:24",
-   "more": 4
+   "title": "유럽 무대 선 에어레인…'에코몬도'서 바이오가스 고질화 멤브레인 기술 과시",
+   "source": "와이드경제",
+   "link": "https://www.widedaily.com/news/articleView.html?idxno=303268",
+   "pub": "2026-11-10 15:03",
+   "more": 0,
+   "summary": "기체분리막 솔루션 전문기업 에어레인이 유럽 최대 규모의 환경산업 박람회에서 자체 개발한 바이오가스 정제 및 고질화 분리막 기술력을 선보이며 글로벌 시장 공략에 속도를 낸다. 회사는 지난 3일부터 6일까지(현지시간) 이탈리아 리미니 엑스포 센터에서 열린 '에코몬도(Ecomondo) 2026'에 참가해 바이오가스 고질화용 멤브레인 기술을 집중적으로 소개했다고 10일 밝혔다."
+  },
+  {
+   "title": "에어레인, 이탈리아 환경박람회 ‘에코몬도 2026’서 바이오가스 정제용 기체분리막 전시",
+   "source": "더스탁(The Stock)",
+   "link": "https://www.the-stock.kr/news/articleView.html?idxno=33761",
+   "pub": "2026-11-10 14:15",
+   "more": 0,
+   "summary": "에어레인은 지난 3일부터 6일까지(현지시간) 나흘간 이탈리아 리미니 엑스포 센터에서 열린 환경산업 박람회 ‘에코몬도 2026(Ecomondo 2026)’에 참가해 바이오가스 고질화용 멤브레인 모듈과 국내외 설비 구축 사례를 소개했다고 밝혔다. 유럽 내에서는 천연가스 대체 및 탄소배출 감축을 위해 바이오가스와 바이오메탄 생산 및 정제 설비 구축이 진행되고 있다."
   }
  ],
  "overseas": [
   {
    "title": "Aemetis Biogas Receives CARB Approval for Six Dairy RNG Pathways",
    "source": "The Manila Times",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOU0t4b2xMWW9wYXM4ZXZtVjRwdlJLYjNBZmNLeTIwRFpQN2tuLThNbWVBLXZINDQ0YmFDdHlzTGtzUENyb0ZaM3hTUWkwMm1OOUo3dVk2S29UdzZoU0RCenRYQkxKZ0ZZUmk4ZjFFdTBSOHJJTVA5RmIxWkRVZDFQUU1hQWlsaWZJZmhpQ0JwSkZFOTRPM3Q2Y2NNTEpmRVZiYm5yWlIwNHJITkowMDJNZFdnMWNlQWZsTDl1Wm5qMVhiZW1VOGtZU2JFeWtKcFRnQzdHZkN6SXU4QdIB2gFBVV95cUxOU0t4b2xMWW9wYXM4ZXZtVjRwdlJLYjNBZmNLeTIwRFpQN2tuLThNbWVBLXZINDQ0YmFDdHlzTGtzUENyb0ZaM3hTUWkwMm1OOUo3dVk2S29UdzZoU0RCenRYQkxKZ0ZZUmk4ZjFFdTBSOHJJTVA5RmIxWkRVZDFQUU1hQWlsaWZJZmhpQ0JwSkZFOTRPM3Q2Y2NNTEpmRVZiYm5yWlIwNHJITkowMDJNZFdnMWNlQWZsTDl1Wm5qMVhiZW1VOGtZU2JFeWtKcFRnQzdHZkN6SXU4QQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMnN1N0tmU25NdHdFOWl3dWViQVhYWnB0bnM0VkVVYUlPRGFYYTItMElLMHJiNHc2LVRhcjVqazIxci1jdG9zQ0w2RHNmZU4tVHhqSzQ5LTVLRkMwUTl3ZUpfTl9NRV93NWxCTEsyekJQNlFzOHI2Z0JXOHdMS2tKR0Mxd202eEZ0ejR4MGlUT3ZEbXh6cVBTWkRjb3A1OXNfbl8xbmpRUW9MRHpMOXFqeUZEd08yRzE1cHRTdVk5RGk5d1FaZWhLa3VKdU9WRE5HVmN0VtIB2gFBVV95cUxOU0t4b2xMWW9wYXM4ZXZtVjRwdlJLYjNBZmNLeTIwRFpQN2tuLThNbWVBLXZINDQ0YmFDdHlzTGtzUENyb0ZaM3hTUWkwMm1OOUo3dVk2S29UdzZoU0RCenRYQkxKZ0ZZUmk4ZjFFdTBSOHJJTVA5RmIxWkRVZDFQUU1hQWlsaWZJZmhpQ0JwSkZFOTRPM3Q2Y2NNTEpmRVZiYm5yWlIwNHJITkowMDJNZFdnMWNlQWZsTDl1Wm5qMVhiZW1VOGtZU2JFeWtKcFRnQzdHZkN6SXU4QQ?oc=5",
    "pub": "2026-11-10 22:18",
-   "more": 1
+   "more": 0
   },
   {
    "title": "Aemetis reports higher RNG and ethanol sales for Q3",
@@ -33,59 +42,59 @@
    "more": 1
   },
   {
-   "title": "Biogas-to-methanol startup raises $22 M",
-   "source": "World Bio Market Insights",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qcnRrcEFfX1hkV09sTi1JUW94Ui1JTHFPVE5vaGtFd3BYN204ak81NGhPZkFjbmd0SXdrbnpvcGRQcGN0dG9aMFdXdFJsX2RPMVlxZ2x5a3NPVG1YUm1PbVlwU1ljUFRNRXNBampJRG5PNkg0RWlDbThubmY0MEk?oc=5",
-   "pub": "2026-11-10 04:49",
-   "more": 1
-  },
-  {
    "title": "Eggshell Waste Upcycled into Nanostructured Polymer Membranes for Superior Biogas Upgrading",
    "source": "Bioengineer.org",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPLWtESXpmWTExZHVib1EzME04LXg4THV2RlNIbThkT2RLel90RGhlSTQwRXRZRnAxeGxkWmI2eEhzVmdrbkZMRklVQ3hfLXNsTjBSUEVfQzE2TndoYkd2MU40WkRUTkd2R0kwTWpZeEJlX1FtUWhJSHpKSXZmQjJjNkJELXgtak8yTlNuSlNuTHNrVmZUY01JaWlfYTVJVEw4Wmg1YWFNOUR1VGljMWhrX3RoTzczVDA?oc=5",
    "pub": "2026-11-10 03:33",
-   "more": 0
+   "more": 1
   },
   {
-   "title": "Prague had to cancel biogas plant upgrade tender and will issue a new one",
-   "source": "oEnergetice.cz",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVnBESDMwVmU3MURwd0ZEbmxSZEZVYXA4TlNHWlQ1WkVYc01sZVBSYTkxS1RFRFlwNGFnZEZkU094SExlSjdjQ1RSclJ1ZTBGRllMQ0hMZlQ2RHpPNDMxTVNfOTlwQkNBTHItYmg5T2ZGU01rLV9jZXJzaTQyMWg4RkdBQnVPRE5lZlRfaXpYTzN6ajhGZlJvdXJXWjQ2QlhrbDk3MUdKUE16VVQtUmhuVXVtLUJUejgxZDVB?oc=5",
-   "pub": "2026-11-10 00:39",
-   "more": 0
+   "title": "Circularity Fuels Raises $7 Million to Turn Dairy Biogas into Clean Jet Fuel",
+   "source": "ESG Today",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUVJiamhJOWkwSGwycWM2enNYY3d4UzJxM1RPYkNRLVU3WE02S1BZeGVsckNMNG9PdEo0QTdtODAycmI1dmJiMFVKOEt6bFJNd1gwbDEtbGY1ZEtacjVqRjRxalNQU3hNYUl5WE9xd3FZdC1xdS14Zkw5cWpqZ2x6cmIwNmJuc2lvYzgxcGNweFd3NEh5NGNlUFlEeTU3TkJJV3NN?oc=5",
+   "pub": "2026-11-09 20:46",
+   "more": 1
+  },
+  {
+   "title": "Anaergia wins C$34M biomethane contract in Hungary",
+   "source": "StreetInsider",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPN3BUTmJBak1kdl9uSXo5TFZJTUQ5WmNhY1Bodjc1clBGS2ZIRHZVdWt2NFdzYXZoWXBUUVVUY2tMM0tfNDZiWUlBeTQzLXh4NjUzcFRDWURnYk5wSFJJdGdpeXFZMVBWS0phYUJ5czVfN0tsR2FmUEdaam1MR1hhMGxxLTVWMkpQczFKb2kzVENmQjlVcFM4Z3NaYm9OVVp5YWhGWHdnaVk5NFVGRXc2bQ?oc=5",
+   "pub": "2026-11-09 19:38",
+   "more": 3
   },
   {
    "title": "Northern Ireland opens consultation on first biomethane strategy",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeXQ3bnBNNzZYSVJXek9pRlR5SDdPZG5HNVFvY1Awb0c2SmlxZXFvMnNoZm9vRHZaVDBkczQ1Mno3VVFGYXlsd3NKTzVwTVdlemVjZUd0Tm05SUwzZ3ZjOGp4Sm5lRXJkMlhRVTc1WEFQWnJIUHZNWDF6T3h5NDI4aFNGQTBSLVpZU3VuNVpZaTgxMmQ2MHRTNEtmQzZHT21DVDFv?oc=5",
    "pub": "2026-11-09 18:44",
-   "more": 2
+   "more": 6
   },
   {
    "title": "Anaerobic digestion plants for producing biogas from waste to be built in Azerbaijan",
    "source": "Report.az",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOd292N1BuU1pyRVAtLUlwVUU2NEdwLUhTaWhEd29hYkdGeHAwcGpoSUlHWXlxbjdVb2dra2RRTk9DVGkwRGJBSTdpMEVIbjU0VGJKWTExM3BMcFEzbkYwTm13c0MxYUFWZ1JtUUt2dHI0UlNtWGhIblBQMHlSS0JiRHM0NVVrM3pyU3AxSWJNOG9yQVllMmJUV0NUNGZiOUhEOWFZQmxIYWl6T1piUVdaSXRSb0U?oc=5",
    "pub": "2026-11-09 16:39",
-   "more": 3
+   "more": 2
+  },
+  {
+   "title": "Thiruvananthapuram: Move to set up compressed biogas plant at Sainik School draws flak",
+   "source": "The New Indian Express",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPLTR3N25YM3NUMS1STUJRTTZYSXRta0xxR1JsR1A3cVdSR0NfcnpjOTJ2Qm56alRxbXQ3NVlQeC1BcjRQeGwxa3JQOFBvMFU2TU1iNU9qRG4xTWNDdWRtRzZIbnV3QWpXcVlsYndQSWdzNEcxLWFuZkY4ZFExaUZ0bE92NFZWM3pSN290cUhMUWROTm14MXJ5bkU1UUFhZ0xzTFZDRWwxNnR5c2ZQWktRQzVGTEEtWFFHZlBGSC1oUjgtYlBSTE93TGUyRUVtbVh0VHc0Qm1KYTViOE1lekh3d2JzM1lnQ0xqTFN0dNIB-gFBVV95cUxPLW9yREluWjUydXJMQ0NPNVNyRkd0ZEV1NmkzSXhBZFN6VUJxX2VTUFlwa3BmT2hCLUtWdE9aUHdYTTBLanRVeU1iS25ja0U4c0l1c2k4a202TlpOYkF4dVNCWjRfSHRtdXZwb3NRZzBKM1Z6MktJbE9YQlNyNGxUR0hqYUMzNXlZaV94NURpdUlKSURZc3JiT2xBZ2ZYa25JM09pUmdFVzZNMFh2U29xenRyZ2djd2wwdFp5Ym83ZnlxLWp4SDZzNWJSd2dyb1Jpc2Niblo4ZXRuTWVBUHF4ZFR6SkllbmU1UHBjbUtpeUhONzBLX0Fxbkh3?oc=5",
+   "pub": "2026-11-09 10:53",
+   "more": 2
   },
   {
    "title": "Biogas Slurry Topdressing Restructures Soil Microbial Ecology and Enhances Carbon Sequestration",
    "source": "Bioengineer.org",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOU29YeWpmSXBqY3ZkWGNhMXpuelZsVS1zblE2V2FPbjRDS0U5b2tFTURWdDRUOUlKaDJCT3VxY3Yyb25VdXozYkhNcm9sR1RFVWJSekJlSlJ5OUF5S3FXZXp0RFQyaUNQOTlpdmxubWhuV2FsMG8zbHpqUlFOYUthSnJ0c0tEeXB2a05OQk54S1RDVUFzZWVWdnJyRGNJb0FxQy03UTdRYmxldlNaNzZkcVoyWHB4Qi0tWGVIag?oc=5",
    "pub": "2026-11-09 05:14",
-   "more": 5
+   "more": 8
   },
   {
-   "title": "Assam: Biogas Plant Planned on GMC Children’s Park Land Stirs Storm in Guwahati",
-   "source": "Howl.Link",
-   "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5RVFdqeDlhWGpncWxRcmp0cTRTYWhXdmVNUGVCZmwtZm9qZDViRkhUaEVjUmlqT1dDbHNr?oc=5",
-   "pub": "2026-11-08 20:55",
-   "more": 4
-  },
-  {
-   "title": "Biogas gaining popularity as fuel in Rajshahi: Daily production of 32,000 cubic feet of gas",
-   "source": "Bangladesh Sangbad Sangstha (BSS)",
-   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE82VFdKbU5USEpSRndlYXlia1VGS2o2MHZfWmlWNHdINlBIVlY3S251RnJOU09HUjhqSGhBcmlFM3B6ZnhjaE1aaHFoQW9IZw?oc=5",
-   "pub": "2026-11-08 18:57",
+   "title": "Calls for Biogas planning regulations as Gort campaign highlights rural concerns",
+   "source": "Clare Echo",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQnprMlItZnM1X2FlSGI4SmR2enlBOEhhcVRuSXNnVHF0ZVd3ZFo3TDg0eGRDVk9MbWM0TU1nem9IUktIM2N2Z2RHcVJPSExJTlZDQTRoWXZIZm9WN25LNjUzVjFEMzVScThIWVVDXzJMenpnNGZQbGdUN2lPbE5FQXE2emcxb1NsMnNXMFBWaHI5Q01KOWRBbkczdC1uUlZMdU42YlduRGR3Zw?oc=5",
+   "pub": "2026-11-09 02:05",
    "more": 2
   }
  ]
