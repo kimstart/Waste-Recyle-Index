@@ -1,1 +1,24 @@
->> 오늘 이미 확인함(2026-11-10 13:07) → 하루 한 번만 조회
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-09-27~2026-11-11: 122건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 29건
+>> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
+>> [세대수] 새로 조회 1건, 누적 721개 단지
+>> 저장: 1496건 · 상태 {'신규공고': 22, '취소': 372, '재공고': 1, '유찰': 409, '낙찰': 670, '입찰마감': 4, '낙찰무효': 18} · 시스템 {'K-APT': 1007, 'KG2B전자입찰': 443, '아파트장터 A2P': 35, '한국환경공단': 7, '아파트비드포유': 4} · 상세 0건 읽음 · 1년 채우기 완료
+   2026-10-28 화성시   | K-APT | 동탄2 LH2단지 A4-2 | 재활용품수거 용역사업자 선정 공고 | 낙찰 22,518,000
+   2026-10-27 용인시   | 아파트장터 A2 | 한보라마을휴먼시아4단지 | 재활용품 수거사업자선정 공개입찰 | 낙찰 4,322,640
+   2026-10-27 성남시   | K-APT | 힐스테이트위례 | 재활용품 수거 용역업체 선정 입찰 공고 | 낙찰 7,452,000
+   2026-10-27 인천    | K-APT | 가정LH3단지 | 재활용품 수거 용역업체 선정 | 낙찰 34,770,000
+   2026-10-27 용인시   | K-APT | 백현마을동일하이빌 | 재활용품 처리업체 선정 | 낙찰 24,964,800
+   2026-10-27 고양시   | K-APT | 강선마을19단지우성아파트 | 재활용품 수거업체 선정 | 낙찰 14,930,880
+   2026-10-27 용인시   | 아파트장터 A2 | 한보라마을휴먼시아7단지 | 재활용품수거사업자선정공개경쟁입찰 | 낙찰 14,184,468
+   2026-10-26 과천시   | K-APT | 과천리오포레데시앙 | 재활용품 수거 용역업체 선정 입찰 공고 | 낙찰 5,710,680
+   2026-10-23 광주시   | KG2B전자입찰 | 오포문형 양우내안애 아파트 | 재활용 수거업체 선정 공고 | 낙찰 22,356,000
+   2026-10-23 안양시   | K-APT | 평촌어바인퍼스트 | 재활용품 처리업체 선정 입찰공고 | 낙찰 70,224,000
