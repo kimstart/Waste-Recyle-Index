@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-11 01:35",
+ "updated": "2026-11-11 10:27",
  "items": {
   "rec": {
    "name": "REC 현물",
    "item": "육지 평균가",
    "unit": "원/REC",
-   "date": "2026-11-05",
-   "value": 71143.0,
-   "prev_date": "2026-11-03",
-   "prev_value": 70980.0,
+   "date": "2026-11-10",
+   "value": 71281.0,
+   "prev_date": "2026-11-05",
+   "prev_value": 71143.0,
    "src": "전력거래소"
   },
   "ttf": {
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-10",
-   "value": 84.9,
+   "value": 84.95,
    "prev_date": "2026-11-09",
    "prev_value": 82.5,
    "src": "Yahoo Finance (ICE Endex)",
@@ -44,7 +44,7 @@
     82.5,
     84.9
    ],
-   "krw_m3": 1511.6,
+   "krw_m3": 1512.5,
    "fx_used": 1501.56,
    "heat_used": 42.687
   },
@@ -141,15 +141,14 @@
    "name": "KAU 할당배출권",
    "item": "KAU26",
    "unit": "원/톤",
-   "date": "2026-11-10",
-   "value": 29200.0,
-   "prev_date": "2026-11-09",
-   "prev_value": 29500.0,
-   "volume": 254300.0,
+   "date": "2026-11-11",
+   "value": 29000.0,
+   "prev_date": "2026-11-10",
+   "prev_value": 29200.0,
+   "volume": 82100.0,
    "src": "한국거래소",
    "basis": "최근 거래일 종가, 거래량 최대 연도물",
    "spark": [
-    29900.0,
     30050.0,
     30000.0,
     29600.0,
@@ -178,17 +177,18 @@
     29500.0,
     29600.0,
     29500.0,
-    29200.0
+    29200.0,
+    29000.0
    ]
   },
   "eua": {
    "name": "EU 배출권(EUA)",
    "item": "실물 EUA ETC",
    "unit": "€/톤",
-   "date": "2026-11-10",
-   "value": 83.74,
-   "prev_date": "2026-11-09",
-   "prev_value": 83.42,
+   "date": "2026-11-09",
+   "value": 83.42,
+   "prev_date": "2026-11-06",
+   "prev_value": 82.62,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
     83.68,
@@ -211,10 +211,9 @@
     85.95,
     84.99,
     82.62,
-    83.42,
-    83.74
+    83.42
    ],
-   "krw_t": 125741
+   "krw_t": 125260
   }
  },
  "extra": {
