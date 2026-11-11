@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 15:59",
+ "updated": "2026-11-11 18:46",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -15,15 +15,37 @@
    "name": "TTF 천연가스",
    "item": "근월물",
    "unit": "€/MWh",
-   "date": "2026-11-10",
-   "value": 84.95,
-   "prev_date": null,
-   "prev_value": null,
+   "date": "2026-11-11",
+   "value": 86.21,
+   "prev_date": "2026-11-10",
+   "prev_value": 84.73,
    "src": "Yahoo Finance (ICE Endex)",
    "spark": [
-    84.9
+    84.4,
+    87.2,
+    87.1,
+    86.4,
+    87.5,
+    88.0,
+    85.1,
+    87.4,
+    90.0,
+    93.9,
+    96.7,
+    96.1,
+    100.7,
+    98.6,
+    103.9,
+    94.9,
+    91.6,
+    88.1,
+    90.7,
+    85.6,
+    82.5,
+    84.7,
+    86.2
    ],
-   "krw_m3": 1512.5,
+   "krw_m3": 1534.9,
    "fx_used": 1501.56,
    "heat_used": 42.687
   },
@@ -164,10 +186,10 @@
    "name": "EU 배출권(EUA)",
    "item": "실물 EUA ETC",
    "unit": "€/톤",
-   "date": "2026-11-09",
-   "value": 83.42,
-   "prev_date": "2026-11-06",
-   "prev_value": 82.62,
+   "date": "2026-11-10",
+   "value": 83.88,
+   "prev_date": "2026-11-09",
+   "prev_value": 83.42,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
     83.68,
@@ -190,9 +212,10 @@
     85.95,
     84.99,
     82.62,
-    83.42
+    83.42,
+    83.88
    ],
-   "krw_t": 125260
+   "krw_t": 125951
   }
  },
  "extra": {
