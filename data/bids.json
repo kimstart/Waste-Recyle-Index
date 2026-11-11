@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11 20:46",
+ "updated": "2026-11-12 02:04",
  "backfilled": true,
  "focus": [
   "화성",
@@ -371,18 +371,19 @@
    "start": "2026-11-05",
    "end": "2026-11-10",
    "open": "2026-11-11",
-   "status": "입찰중",
+   "status": "유찰",
    "cat": "폐비닐",
    "region": "기타",
    "city": "",
    "qty_kg": 1700000.0,
    "item_cls": "생활폐기물 / 영농폐기물(농촌폐비닐)",
-   "price_type": "단가입찰",
+   "price_type": "단가",
    "area": "",
    "pre_raw": "※ 비공개",
    "pre_amt": null,
    "pre_unit": "",
-   "url": "https://www.re.or.kr/bid/viewBidAdPage.do?bidAdNum=20261105001&bidTimeNum=0",
+   "bidders": 0,
+   "url": "https://www.re.or.kr/bid/viewBidResultPage.do?bidAdNum=20261105001&bidTimeNum=0",
    "detail_ok": 2
   },
   {
