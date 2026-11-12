@@ -2,7 +2,7 @@
    [재시도 1/2] HTTPError: HTTP Error 403: Forbidden
    [재시도 2/2] HTTPError: HTTP Error 403: Forbidden
 >> [수집 실패] REC: HTTPError: HTTP Error 403: Forbidden → 이전 값 유지
->> [수집 성공] ttf: 2026-11-12 90.0 (이전 2026-11-11 86.65)
+>> [수집 성공] ttf: 2026-11-12 90.67 (이전 None None)
 >> [배출권] 최근 1년 거래 KAU 252건, KCU 2건: KCU [('20260820', 'KCU25', 10200.0, 670.0), ('20260821', 'KCU25', 10200.0, 1.0)]
 >> [KAU] ('20261112', 'KAU26', 30000.0, 149506.0)
 >> [KCU] ('20260821', 'KCU25', 10200.0, 1.0) ↔ 비교 KAU ('20260821', 'KAU25', 28900.0, 893529.0) → 35%  (그날 주력 ('20260821', 'KAU25', 28900.0, 893529.0))
@@ -10,12 +10,12 @@
 >> [수집 성공] kcu: 2026-08-21 10200.0 (이전 2026-08-20 10200.0)
 >> [수집 성공] eua: 2026-11-12 86.02 (이전 2026-11-11 85.42)
 >> [수집 성공] fx_eur: 2026-11-11 1487.57 (이전 2026-11-10 1501.56)
->> [도매요금] 2026-11-01 평균 23.3246 (원료비 21.3109 + 공급비 2.0137)
->> [열량] 2026-11 육지권역 예상열량 42.687 MJ/N㎥
->> [수집 성공] gas_whole: 2026-11 23.3246 (이전 2026-10 23.039)
+   [재시도 1/2] RemoteDisconnected: Remote end closed connection without response
+   [재시도 2/2] RemoteDisconnected: Remote end closed connection without response
+>> [수집 실패] 천연가스 도매요금: RemoteDisconnected: Remote end closed connection without response → 이전 값 유지
 >> [GO 경매] 결과 파일: https://www.eex.com/fileadmin/EEX/Downloads/Registry_Services/French_Auctions_for_Biogas_Guarantees_of_Origin/Auction_results_all.xlsx
 >> [GO 경매] 회차 9개, 최근 ('2026-11-04', 20.87, 289701.0), 직전 ('2026-08-05', 20.232294039692025, 245994.0)
 >> [수집 성공] go_fr: 2026-11-04 20.87 (이전 2026-08-05 20.23)
->> [환산] ttf: 90.0 €/MWh → 1587.5 원/㎥
+>> [환산] ttf: 90.67 €/MWh → 1599.3 원/㎥
 >> [환산] go_fr: 20.87 €/MWh → 368.1 원/㎥
 >> data/biogas.json, history/biogas_20261112.json 저장
