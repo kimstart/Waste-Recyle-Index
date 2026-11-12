@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 02:04",
+ "updated": "2026-11-12 11:45",
  "backfilled": true,
  "focus": [
   "화성",
@@ -8,6 +8,31 @@
   "오산"
  ],
  "bids": [
+  {
+   "id": "re:20261111002:0",
+   "src": "순환자원정보센터",
+   "no": "20261111002",
+   "ord": "0",
+   "kind": "생활폐기물 (매각 (최고가))",
+   "title": "홍천수거사업소 영농폐비닐(하이덴) 매각(4차)",
+   "org": "한국환경공단 강원환경본부",
+   "start": "2026-11-12",
+   "end": "2026-11-17",
+   "open": "2026-11-18",
+   "status": "입찰중",
+   "cat": "폐비닐",
+   "region": "기타",
+   "city": "",
+   "qty_kg": 1700000.0,
+   "item_cls": "생활폐기물 / 영농폐기물(농촌폐비닐)",
+   "price_type": "단가입찰",
+   "area": "",
+   "pre_raw": "※ 비공개",
+   "pre_amt": null,
+   "pre_unit": "",
+   "url": "https://www.re.or.kr/bid/viewBidAdPage.do?bidAdNum=20261111002&bidTimeNum=0",
+   "detail_ok": 2
+  },
   {
    "id": "re:20261110001:0",
    "src": "순환자원정보센터",
@@ -347,7 +372,7 @@
    "start": "2026-11-09",
    "end": "2026-11-10",
    "open": "2026-11-10",
-   "status": "개찰완료",
+   "status": "낙찰",
    "kind": "수의견적 (매각/최고가)",
    "cat": "폐비닐",
    "region": "기타",
@@ -355,10 +380,12 @@
    "qty_kg": 3800000.0,
    "price_type": "단가입찰",
    "pre_raw": "3.0원/kg",
-   "win_raw": "",
+   "win_raw": "3원/kg",
    "url": "https://www.re.or.kr/esti/viewEstiResultPage.do?estiAdNum=20261109001",
    "detail_ok": 2,
-   "pre_unit_price": 3.0
+   "pre_unit_price": 3.0,
+   "win_unit_price": 3.0,
+   "win_ratio": 100.0
   },
   {
    "id": "re:20261105001:0",

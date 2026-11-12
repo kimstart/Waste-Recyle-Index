@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12 02:08",
+ "updated": "2026-11-12 11:56",
  "laws": {
   "자원의 절약과 재활용촉진에 관한 법률": {
    "name": "자원의 절약과 재활용촉진에 관한 법률",
@@ -60,9 +60,9 @@
    "name": "폐기물관리법 시행규칙",
    "target": "law",
    "kind": "일부개정",
-   "promulgated": "2026-10-01",
-   "effective": "2026-10-02",
-   "no": "00060",
+   "promulgated": "2026-11-12",
+   "effective": "2026-11-12",
+   "no": "00070",
    "ministry": "기후에너지환경부",
    "why": "수도권 생활폐기물 직매립 금지, 분리배출 기준",
    "url": "https://www.law.go.kr/법령/%ED%8F%90%EA%B8%B0%EB%AC%BC%EA%B4%80%EB%A6%AC%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99"
@@ -190,6 +190,13 @@
    "url": "https://www.mcee.go.kr/home/web/law/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=71&orgCd=&condition.typeCode=admrul&typeCode=admrul&lawSeq=1946"
   },
   {
+   "key": "71:1941",
+   "board": "고시·훈령·예규",
+   "title": "생활폐기물 선별시설의 설치ㆍ운영에 관한 지침",
+   "date": "2026-10-30",
+   "url": "https://www.mcee.go.kr/home/web/law/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=71&orgCd=&condition.typeCode=admrul&typeCode=admrul&lawSeq=1941"
+  },
+  {
    "key": "68:89024",
    "board": "입법예고",
    "title": "제품의 포장재질·포장방법에 관한 기준 등에 관한 규칙 일부개정령안 입법예고",
@@ -198,6 +205,18 @@
   }
  ],
  "events": [
+  {
+   "date": "2026-11-12",
+   "type": "법령·고시",
+   "title": "폐기물관리법 시행규칙 일부개정 (공포 2026-11-12, 시행 2026-11-12)",
+   "url": "https://www.law.go.kr/법령/%ED%8F%90%EA%B8%B0%EB%AC%BC%EA%B4%80%EB%A6%AC%EB%B2%95%20%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99"
+  },
+  {
+   "date": "2026-11-12",
+   "type": "고시·훈령·예규",
+   "title": "생활폐기물 선별시설의 설치ㆍ운영에 관한 지침",
+   "url": "https://www.mcee.go.kr/home/web/law/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=71&orgCd=&condition.typeCode=admrul&typeCode=admrul&lawSeq=1941"
+  },
   {
    "date": "2026-11-11",
    "type": "행정예고",
@@ -226,6 +245,7 @@
  "board_seen": [
   "10557:1906270",
   "68:89024",
+  "71:1941",
   "71:1946",
   "71:1947"
  ]
