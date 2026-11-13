@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-13 00:26",
+ "updated": "2026-11-13 11:42",
  "domestic": [
+  {
+   "title": "그리네플·한국청정발전기술, 바이오가스 플랜트 AI 운전제어 공동 실증 추진",
+   "source": "Chosunbiz",
+   "link": "https://biz.chosun.com/industry/business_info/2026/11/13/GLBX7PH5KJF6PBMDN2HYP57XXA/",
+   "pub": "2026-11-13 10:15",
+   "more": 1,
+   "summary": "그리네플(대표 이형술)과 한국청정발전기술(대표 이혜선)은 지난 5일 광주 김대중컨벤션센터에서 열린 '2026 BIXPO 청정 바이오에너지 포럼' 이후 바이오에너지 분야 기술 융합과 공동 사업화를 위한 전략적 업무협약(MOU)을 체결했다고 밝혔다. 가스 생산량 변화에 따른 설비 가동 상태와 에너지 사용량을 함께 분석해 바이오가스 플랜트의 운전 효율과 안정성을 높이는 것이 목표다."
+  },
   {
    "title": "김동철 한전 사장, BIXPO 그리네플 부스 찾아 건식 바이오가스 시스템 'ADOS' 살펴",
    "source": "전자신문",
@@ -16,23 +24,43 @@
    "pub": "2026-11-12 01:43",
    "more": 0,
    "summary": "제올라이트 분리막으로 바이오가스의 이산화탄소를 분리하는 파일럿 시험에서 막 성능이 220일 넘게 유지됐다. 실험실에서 만든 막의 선택층 두께는 0.56μm였으며, 이산화탄소와 메탄이 같은 비율로 섞인 기체를 이용한 시험에서 두 기체의 분리 선택도는 158이었다. 발효조에서 나온 바이오가스는 이산화탄소 43%, 메탄 55%였고, 2.0MPa로 가압해 막에 공급했다."
-  },
-  {
-   "title": "내년 바이오가스 생산목표율 공공 50%·민간 10% 설정 추진",
-   "source": "에너지데일리",
-   "link": "https://www.energydaily.co.kr/news/articleView.html?idxno=204972",
-   "pub": "2026-11-11 15:57",
-   "more": 0,
-   "summary": "정부가 2027년도 바이오가스 생산목표율을 공공부문 50%, 민간부문 10%로 설정하는 방안을 추진한다. 핵심은 공공과 민간의 바이오가스 생산 의무를 구분해 목표율을 설정하는 것이다. 고시안 제1조는 2027년도 공공의무생산자의 바이오가스 생산목표율을 50%로 규정하고, 제2조는 민간의무생산자의 목표율을 10%로 정하도록 했다."
   }
  ],
  "overseas": [
+  {
+   "title": "Cop: Turkey calls on nations to step up on biogas",
+   "source": "Argus Media",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSmtCYVQ0d0pLdm95aHVCd0E5RzdjcXpRZkdYM3ZGWVJQcDB2ZmdqY0hnTGRHLVkwaEE4LUw5RzZCek1PT3hwRjRtUThPbjEyaWtYeXBFVUc1ZU16TEJyZm91cjJLbVNtSkI1NU14UGkzYU92QXc5YVVLUHBueFEtMDBOSy1LV0dDNEs5RzVwbFdJQUxzUHBjVi1od1NXTGtKQm0yMVpsTWpJdkpqWDd3UEFON01VNzFUMGs5enNObDc?oc=5",
+   "pub": "2026-11-13 06:05",
+   "more": 0
+  },
+  {
+   "title": "Port of Gothenburg Liquefied Biogas Facility Set for Completion Next Year",
+   "source": "Ship & Bunker",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOHZDWEVucFNZMXduMU1nN2k1N2cyMnpKdzlTazJQNlRoVmVkU2tyaTNUdXNzcGw1cDZWTzJqQlFCUktzYURrWEdkaVlLNFcwb21zN1FtZ0l0YmpDUzZHNXhQYUlMR3V5T1R5d2VvN0FyYThZRXhlT0ZrVmdLbWZFdjRNeXhTbW1SOWdfelI0WnY2M3lrMFZWVU9WOGpXOVR2NlJUdjZuNFBiVUIyeGpQMHViTmt3TVk?oc=5",
+   "pub": "2026-11-12 20:38",
+   "more": 3
+  },
+  {
+   "title": "Biogas Could Help Close India’s Clean-Cooking Gap, but Installations Alone Are Not Enough",
+   "source": "The Policy Edge",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNME45NnZYckpHcFJMTHBlaFVpbmM3WFRxZENZVnpJY2JlZXJBc0JnMlFRX1R6ZU5PaWRmRVRjNHdIdXcydE5SZ3RDNktHaFlBQ21XSjZMbzh0V1UwRExXOGl2R2RvV1ozb1JQOUhFVTM4bWJnYVBkZEJfQUpadU1VSmhkR0E0LTByYk14WWxtdjZFSGR2LTkwa2QxNThZUFVUa3ZPYm9pNlFkMFV5QXpuc0IwbXMwdw?oc=5",
+   "pub": "2026-11-12 15:49",
+   "more": 1
+  },
+  {
+   "title": "O’Hara raises Gort Biogas with Taoiseach and calls for oversight of developments",
+   "source": "Galway Advertiser",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNV1h1SmNVQ3M5SWhfMmI1eDhLVHFpR3B1clJMX2JmaUNrUUhTV1puQnhMMFB5RjU0NUJQTllzeVFSeXhDSEk4NEU3WkFlSVpYbW5mVng2TFZBdHFBNDVaX2haMUtfbVRhWU5peWRaLXVJN2NSWEQwVmdhRGlBSmhTUDFRRUFDVFlTNEhaaHdiX3FSamE0cVlBYWhiMzVRVlN1aVN1TmpFR0thTFM2Q2J1Z3dQSmlkYVdZbmNielA1MnRBVU5HaUE?oc=5",
+   "pub": "2026-11-12 15:15",
+   "more": 3
+  },
   {
    "title": "Get a price before you sow with anaerobic digesters",
    "source": "Irish Farmers Journal",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaW1MelROOFM4em5DbUJQaFowM0NoNHFHeUZuRmwxRm42ZWctMWRQZVVsTDREeWMxZU5KbG41aWVvczBtTGU3Wk1NTHlDaFBubTRVaVV2VzJvOVJldTVDekl0Y0tlMXhrZER6Nld1cmE5Y05hM295cVNYdjJJWkZMcl9xV3pQOWdUUkpKcU0wREw2dTVvcFl1bVJUUDlCeWh5cGVhMw?oc=5",
    "pub": "2026-11-12 07:50",
-   "more": 0
+   "more": 1
   },
   {
    "title": "Aemetis Biogas receives CARB approval for 6 dairy RNG pathways",
@@ -53,49 +81,21 @@
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOb01vcUNFZnNpRVRaMzVPcGd3TEludURWRmxsbUFNQjZwdXc1aHk0eTFzS09ydzBvb0hlWVRKZ0xlYkpzNHpRRjJOYVg2UVNtYlJYRUtodW9HSWkwRjJWQ0Z6QmhfSVVFcWxSUHVXeEpiNk9Vd0VSOTMyejNIdHJXenhrWDJ0WTd6VUFROTI4S2hmZXRvclpiaEdHLUNzZw?oc=5",
    "pub": "2026-11-11 17:03",
-   "more": 0
+   "more": 1
   },
   {
    "title": "Ship & Shore Environmental addresses growing emissions challenges as ﻿biogas industry expands",
    "source": "American Journal of Transportation",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOd212RERLVm5RLUxLSl9PVmo0MUkzSGRCRzU1enpKMFpEUzhYWGJ4VFRRcDg5Q1k0UWhUd19IT2M5dFNMblo3VHpEdklpd3hYT1lOWUdFTWhhTXNnUTFZYndGZnlnQ3BjR3k4dFRVdTVxMFhjQzFOUzZVZ0hIWHdKNXgxcF9kNFlxMlhsN25Xdnc2b0lVNUdINmNOVlFNcXZiLXJSOWNxSnB4MzhfeHYyckpoU2VaTlE?oc=5",
    "pub": "2026-11-11 02:36",
-   "more": 2
+   "more": 7
   },
   {
    "title": "Improving Pressure Monitoring and Compressor Protection in Biogas Plants",
    "source": "EnergyNow",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPODJ4U2w4cEFpNF9tNE50NWVTay1tSkV5OEp2aXNsdEVDZ3NGZG5kN08xYXlBY3RhSHI0MzBsRHhReF9URlJTc1dSaDdsUllHcFptODRYV2s3M3J1QWlBVkx2ZXF3amJ0cWVwVnVBQVdpMTVIaEExVGU1MVZHZi1kSGVHSWVRT29JUWJ1RVZ0VkhyM095WlQ3NDN4QmV5OEQ0dnBqcQ?oc=5",
    "pub": "2026-11-10 18:55",
-   "more": 13
-  },
-  {
-   "title": "Circularity Fuels Produces Jet Fuel From Dairy Manure Biogas in California Trial, Raises $7 Million",
-   "source": "Avi-Go",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5jZ0JiSE9xRm01cmw3NTZ3bEpna191MmxCczBUTVI1SXRGbkQxaFU5SEEyVHNfQ3lBbEpIU250T1FISER0SzBGNmZZRndqZzBqZWZ3ZTc5TjJONDFoa0RNTlVDV0xuOGlHSldWQllsQW5leGs?oc=5",
-   "pub": "2026-11-10 10:10",
-   "more": 1
-  },
-  {
-   "title": "French Renewable Gas Association FGR Presents Six Proposals for the Biomethane Sector Ahead of the 2027 Presidential Election",
-   "source": "energynews.pro",
-   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPemVNdjdrYTFmQWpZLTNaa2IxcnhPalI2UkNuTTNyNUNDV1dTbHVfc2pLOGw3VWY3NHplc3l1cG56bGpsVDZONFlUejNMcVctSFpjV3FLRm5ZUVF2X2xPN1BSckF2V0Z3bUdOeUw2RVhOMXVxSDRQLW4wS0gtSVJkeF81NzZyTUp3NXVsV3VSb3dqN0xCQ2QzdWstbldqTDRSU3hpQlJ6TVRoUm1kVzFBMmJGcWttTXpJc2JWN0hpb1M2dFB5dkZadm1GQndKTXFmNUt1ZHp4NWVfRTh4WTdHWGYySndXQQ?oc=5",
-   "pub": "2026-11-10 09:32",
-   "more": 3
-  },
-  {
-   "title": "Biogas-to-methanol startup raises $22 M",
-   "source": "World Bio Market Insights",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9qcnRrcEFfX1hkV09sTi1JUW94Ui1JTHFPVE5vaGtFd3BYN204ak81NGhPZkFjbmd0SXdrbnpvcGRQcGN0dG9aMFdXdFJsX2RPMVlxZ2x5a3NPVG1YUm1PbVlwU1ljUFRNRXNBampJRG5PNkg0RWlDbThubmY0MEk?oc=5",
-   "pub": "2026-11-10 04:49",
-   "more": 3
-  },
-  {
-   "title": "Prague had to cancel biogas plant upgrade tender and will issue a new one",
-   "source": "oEnergetice.cz",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVnBESDMwVmU3MURwd0ZEbmxSZEZVYXA4TlNHWlQ1WkVYc01sZVBSYTkxS1RFRFlwNGFnZEZkU094SExlSjdjQ1RSclJ1ZTBGRllMQ0hMZlQ2RHpPNDMxTVNfOTlwQkNBTHItYmg5T2ZGU01rLV9jZXJzaTQyMWg4RkdBQnVPRE5lZlRfaXpYTzN6ajhGZlJvdXJXWjQ2QlhrbDk3MUdKUE16VVQtUmhuVXVtLUJUejgxZDVB?oc=5",
-   "pub": "2026-11-10 00:39",
-   "more": 3
+   "more": 14
   }
  ]
 }
