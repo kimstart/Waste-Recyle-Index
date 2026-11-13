@@ -1,6 +1,30 @@
 {
- "updated": "2026-11-13 11:42",
+ "updated": "2026-11-13 23:44",
  "domestic": [
+  {
+   "title": "[2026 하반기 혁신특허 기술대상] 성지, ‘PVC 폐벽지 분리·재활용’ 기술",
+   "source": "중앙일보",
+   "link": "https://www.joongang.co.kr/article/25478461",
+   "pub": "2026-11-13 18:55",
+   "more": 0,
+   "summary": "성지(대표 문종경)가 폐벽지의 종이층과 폴리염화비닐(PVC) 코팅층을 분리해 재활용하는 기술을 개발하고 폐담배 필터 등으로 자원화 사업을 확대하고 있다. 2001년 6월 설립된 성지는 종이·PVC·폴리에틸렌(PE)·폴리프로필렌(PP)·알루미늄 캔·폐담배 필터 등 생활 폐자원의 재활용과 재생 소재 생산, 수출 사업을 운영하는 기업이다."
+  },
+  {
+   "title": "4년째 표류하는 ‘플라스틱 없는 세상’…그 뒤에 도사린 ‘석유의 정치학’",
+   "source": "주간경향",
+   "link": "https://weekly.khan.co.kr/article/202611131502001",
+   "pub": "2026-11-13 15:02",
+   "more": 0,
+   "summary": "튀르키예서 국제플라스틱협약 대화…생산량 규제 등 싸고 정치적 접점 모색 환경전문 저널리스트 베스 가디너가 지난 2월 19일(현지시간) 영국 가디언과의 인터뷰에서 한 말이다. 유럽연합(EU) 집행위원회에 따르면 11월 16일 튀르키예 안탈리아에서 제31차 유엔기후변화협약 당사국총회(COP31)의 부대행사로 국제플라스틱협약 고위급 대화가 열린다."
+  },
+  {
+   "title": "환경공단, 태국 정부·UNESCAP과 탈플라스틱 협력",
+   "source": "데일리안",
+   "link": "https://m.dailian.co.kr/news/view/1714670",
+   "pub": "2026-11-13 13:03",
+   "more": 0,
+   "summary": "한국환경공단은 지난 11일부터 이틀간 태국 현지에서 태국 천연자원환경부, 유엔 아시아·태평양 경제사회위원회(UNESCAP), 태국 랑싯시와 만나 탈플라스틱 국제협력 및 국내 재활용 기업 해외 진출 지원 방안을 논의하고 기념 사진을 찍고 있다. 2024년 태국에서 발생한 일회용 플라스틱 폐기물은 약 288만t에 달하지만 재이용률은 약 25%에 그쳤다."
+  },
   {
    "title": "[무주소식] 마을별로 폐농약·폐전지·폐비닐 집중 수거",
    "source": "연합뉴스",
@@ -25,19 +49,26 @@
    "summary": "폐페트병을 활용한 단일 소재 복합재를 앞세운 부산 스타트업이 자동차·항공 공급망 진입에 나섰다. 회사는 공정 단순화와 자체 설계로 유사 해외 경쟁 제품 대비 단가를 약 40% 낮췄고, 향후 최대 70%까지 격차를 벌리는 공정 개선 연구를 진행 중이다. 이 난연재는 화재 시 유해가스를 내뿜는 기존 할로겐계 제품과 달리 특정 유해물질 발생을 60% 이상 줄이면서도 난연성 최고 등급인 V-0를 획득했다."
   },
   {
-   "title": "환경공단, 태국 페트병 무인회수기 확대 검토…재활용기업 해외 진출 지원",
-   "source": "에너지데일리",
-   "link": "https://www.energydaily.co.kr/news/articleView.html?idxno=205048",
-   "pub": "2026-11-12 19:33",
-   "more": 1,
-   "summary": "한국환경공단이 태국 랑싯시와 페트병 무인회수기 설치 확대를 검토하며 국내 재활용기업의 현지 진출을 지원한다. 공단이 제시한 자료에 따르면 태국에서 2024년 발생한 일회용 플라스틱 폐기물은 약 288만 톤으로, 이 가운데 약 25%가 재이용된 것으로 추정된다. 태국 정부는 ‘플라스틱 폐기물 관리 로드맵(2018~2030)’에 따라 폐플라스틱 발생을 줄이고 재활용을 확대하고 있다."
+   "title": "색상 선별기 시장 2035년 전망: 식품 안전과 재활용이 성장 견인 - 뉴스 및 통계",
+   "source": "IndexBox",
+   "link": "https://www.indexbox.io/ko/blog/color-sorters-market-forecast-to-2035-growth-driven-by-food-safety-and-recycling-demand/",
+   "pub": "2026-11-12 20:41",
+   "more": 0
+  },
+  {
+   "title": "화학연, 폐플라스틱 열분해유 속 방해꾼, AI와 실험으로 밝혀냈다",
+   "source": "플라스틱코리아",
+   "link": "http://www.plastickorea.co.kr/news/articleView.html?idxno=26419",
+   "pub": "2026-11-12 19:26",
+   "more": 0,
+   "summary": "폐플라스틱 열분해유를 석유화학 원료로 활용할 때 걸림돌이 되는 불순물의 영향을 국내 연구진이 촉매 실험과 인공지능(AI) 기반 계산화학으로 밝혀냈다. 원료에 따라 불순물의 종류와 함량이 달라지므로, 안정적인 생산을 위해서는 이들이 촉매 성능에 미치는 영향을 파악해야 한다. 연구팀은 앞서 2024년 폐플라스틱 열분해유를 추가 수소화 처리 없이 경질 올레핀으로 전환하는 순환 유동층 촉매분해 기술을 발표했다."
   },
   {
    "title": "한국환경공단, 태국서 탈플라스틱 국제협력 강화…'K-자원순환 기술' 수출 본격 지원",
    "source": "Queen 이코노미퀸",
    "link": "https://www.queen.co.kr/news/articleView.html?idxno=466264",
    "pub": "2026-11-12 18:52",
-   "more": 1
+   "more": 2
   },
   {
    "title": "폐플라스틱 재활용 시멘트, 유해성·악취 논란 종지부",
@@ -52,46 +83,16 @@
    "source": "데일리안",
    "link": "https://m.dailian.co.kr/news/view/1714210",
    "pub": "2026-11-12 14:19",
-   "more": 2,
+   "more": 1,
    "summary": "국내 연구진이 폐플라스틱의 업사이클링을 보다 효율적으로 가능하게 하는 고성능 촉매를 개발하는데 성공했다."
   },
   {
-   "title": "BNEF, 한국 플라스틱 재활용률 8개 시장 중 1위…2040년 재생원료 전환율 21% 그쳐",
-   "source": "임팩트온",
-   "link": "https://www.impacton.net/news/articleView.html?idxno=30647",
-   "pub": "2026-11-12 11:06",
-   "more": 0,
-   "summary": "지난 5일 글로벌 에너지 조사기관 블룸버그NEF(BNEF)가 ' 재생플라스틱 공급 전망(Recycled Plastics Supply Outlook) ' 보고서를 공개했다. EU는 플라스틱 포장재의 재생원료 사용비율을 2030년 10~35%, 2040년 25~65%로 높일 예정이다. 인도는 경질 포장재 기준을 2025~2026년 30%에서 2030년 60%로 강화한다."
-  },
-  {
-   "title": "조마면 새마을협의회, 폐농약용기류 선별장 이송 ‘구슬땀’",
-   "source": "김천신문",
-   "link": "http://m.kimcheon.co.kr/view.php?idx=94289",
-   "pub": "2026-11-12 10:48",
-   "more": 2
-  },
-  {
-   "title": "글로벌 포장재 데이터 허브 출범…50개국 플라스틱 실제 재활용률 18%",
-   "source": "임팩트온",
-   "link": "https://www.impacton.net/news/articleView.html?idxno=30645",
-   "pub": "2026-11-12 10:02",
+   "title": "김천 조마면 새마을남녀협의회, 폐농약용기 수거·재활용으로 농촌 환경 지킨다",
+   "source": "미디어디펜스",
+   "link": "https://www.mediadf.co.kr/news/articleView.html?idxno=21113",
+   "pub": "2026-11-12 11:50",
    "more": 1,
-   "summary": "제품 포장재의 국가별·유형별 재활용 실적을 비교·분석할 수 있는 국제 데이터 플랫폼이 새로 출범했다. 수거·선별 손실 빼니 EU 재활용률 35%…2030 목표보다 20%낮아 EU 포장재 및 포장폐기물 규정(PPWR)이 정한 2030년 플라스틱 포장재 재활용 목표 55%보다 20% 낮다."
-  },
-  {
-   "title": "가스공사, 대구파티마병원과 ‘장례식장 다회용기 활성화’ 협약 체결",
-   "source": "이투데이",
-   "link": "https://www.etoday.co.kr/news/view/2647210",
-   "pub": "2026-11-12 09:34",
-   "more": 8,
-   "summary": "▲가스공사, 대구 파티마병원과 장례식장 다회용기 도입 및 활성화 업무협약 체결 (한국가스공사) 특히 대구지역 민간 종합병원 장례식장에 다회용기를 도입하는 첫 사례로, 국내 장례식장에서 연간 약 4천200만개에 달하는 일회용 접시 사용을 줄이고 친환경 장례문화 확산에 크게 기여할 것으로 기대된다. 시범사업은 11월 셋째 주부터 2개월간 대구 파티마병원 장례식장 빈소에서 ‘희망 상주 선택제’ 방식으로 진행된다."
-  },
-  {
-   "title": "2035년 종이 트레이 포장 시장 전망: 식품 안전과 플라스틱 규제가 성장 견인 - 뉴스 및 통계",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/paper-tray-packaging-market-forecast-to-2035-driven-by-food-safety-and-plastic-substitution/",
-   "pub": "2026-11-12 00:46",
-   "more": 2
+   "summary": "폐농약용기류 1톤 트럭 4대 분량 선별장 이송…올해 수거 활동 마무리 조마면 새마을남녀협의회(회장 이현백, 부녀회장 임해옥)는 지난 9월 집중 수거한 폐농약용기류를 자원재활용 선별장으로 운반하고 정리하는 작업을 실시했다고 밝혔다. 회원들은 사전에 수거·분류한 폐농약용기류를 1톤 트럭 4대에 나눠 싣고 선별장으로 운반한 뒤 정리 작업까지 마쳤다."
   }
  ],
  "overseas": [
@@ -131,39 +132,18 @@
    "more": 0
   },
   {
-   "title": "Domestic PET bottle recycling rate falls in 2025",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZwa2k0SGV1WGtJektCRk9LWVpvM01DZlgwdGxWeUxJNnA0c3dnc0M4ZDFYMlEwSDVfa3QwV3pFWUlOcktNYl9iQnNDVmlKY0o2VFJPR0RUTG5LUlRGOFBtWThsbEtPLXhaTnpHbWlGUHhfU3pPQkgtZVpySTZkQVFjQVFuUQ?oc=5",
-   "pub": "2026-11-11 20:01",
-   "more": 1
-  },
-  {
    "title": "Aliplast opens rigid plastics recycling plant in Italy",
    "source": "Recycling Today",
    "link": "https://www.recyclingtoday.com/aliplast-opens-rigid-plastics-recycling-plant-in-italy",
    "pub": "2026-11-11 19:23",
-   "more": 1
+   "more": 2
   },
   {
-   "title": "PET recycling market in Germany showing early signs of stabilisation",
-   "source": "EUWID Recycling and Waste Management",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZ3l0cWthYjh3WXYtSU9WRGZmeGNvTUZvR0lwWkxxT04tZmNfMS1oZk03WEt5ZUtoVmtTNzY1bWlpU2NORHRPMG5DdXJHajhhaEE2YVBQcExNQ0V1R0wtMWY3czJENGRwaGtXUWJ4Y0pFYktqUEFBb2p2cnpOeHRSUDR0MkVOZmsyVm9tdjhHR3o1QUJnXzRYRGR2XzJRQUhpNE9QR0dvRGhFQ29lcnluaENPM2pFMlZ3T2xUVEFR?oc=5",
-   "pub": "2026-11-10 23:25",
-   "more": 1
-  },
-  {
-   "title": "EU’s CEN greenlights new biodegradable packaging standards to support PPWR",
-   "source": "Packaging Insights",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNanBOZmZ4akpQVW1pMnd1d0dzd2JFYkU5XzlQYW5CY1RqRnlkNnNPYmtwNmowVjVNS3EtUlotalpGZHRLSVJfMnZWbmdMck9WQjNyOWtoZ0h1ZDA4SFl0M3ZPeGdpbzNac2t2aG1adVNxUUdBRXVGRGZrdmQzd1RXdFk0d2ZXXy1SWnBxYVRkc3czT0dq?oc=5",
-   "pub": "2026-11-10 20:46",
-   "more": 0
-  },
-  {
-   "title": "China’s food-grade rPET approval could reshape global recycling markets",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNdmQyb1IzTzlodUJtRWZ3S0c4WXdjRk9XeDJTa2k3ai1vMFZhTjM0VzVnMGFwQk9vQlFPSmY1TlYwdXIzNmVaYTRUVXVrMUcwYmZWQWpwZmxiVm5aWkdlcFJyazRZdjVBdl95Nkx4X1FybjNlSi1iTFN5UWx4ZmxPSE1WWWNoUUQxaHFJdDU4VjBzMEQtT1BIWTBfVlV5ME5VRU9xQlRfaDZaNXQyVmdrNS05TWtJWk5zVHVPX0VYQlNkWTVDdGFkTUNRZkNsZHBDc2VSYWUxTlgycmdUbWFORzJn?oc=5",
-   "pub": "2026-11-10 18:37",
-   "more": 4
+   "title": "NAPCOR report shows increase in rPET usage in bottles, decrease in recycling rates",
+   "source": "Recycling Today",
+   "link": "https://www.recyclingtoday.com/napcor-report-shows-increase-in-pet-bottle-usage-decrease-in-recycling-rates",
+   "pub": "2026-11-11 15:00",
+   "more": 6
   }
  ]
 }
