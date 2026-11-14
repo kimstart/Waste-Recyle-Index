@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-14 11:30",
+ "updated": "2026-11-14 22:40",
  "domestic": [
+  {
+   "title": "재활용 섬유는 언제 제품이 되나…EU JRC, 폐기물 종료 기준 제안",
+   "source": "비건뉴스",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=405058",
+   "pub": "2026-11-14 20:18",
+   "more": 0,
+   "summary": "유럽연합(EU) 공동연구센터(JRC)가 재활용한 섬유를 더 이상 폐기물이 아닌 제품으로 인정하기 위한 기술 기준안을 제시했다. EU 섬유 생태계 플랫폼은 11월 12일 관련 보고서를 소개했다. JRC 저장소에 기재된 보고서 발행일은 10월 27일이다."
+  },
+  {
+   "title": "[신재생에너지 테크] 재활용 어려운 풍력발전기 터빈 날개, 화학적 재활용 공법 나와",
+   "source": "녹색경제신문",
+   "link": "https://www.greened.kr/news/articleView.html?idxno=354429",
+   "pub": "2026-11-14 15:42",
+   "more": 0,
+   "summary": "- 열 가해 탄화규소・그래픽으로 되살려 신규 발전기 제조에 활용 가능 문제는 바로 견고함 때문에 풍력발전 터빈기는 약 20~25년의 설계 수명을 다해 철거되고 나면 다른 용도로 재사용하거나 재활용하기가 어렵다는 점이다. 과거에는 비용이 가장 저렴하다는 이유로 풍력발전기 터빈 날개는 폐기된 후 매립지에 버리거나 소각됐다."
+  },
   {
    "title": "소각하던 폐차 잔류물이 핵심 기초 화학원료로? 코베스트로·프라운호퍼, 저탄소 재활용 공정 개발",
    "source": "https://www.2news.co.kr/",
@@ -61,39 +77,8 @@
    "source": "투데이에너지",
    "link": "https://www.todayenergy.kr/news/articleView.html?idxno=305512",
    "pub": "2026-11-13 11:15",
-   "more": 2,
+   "more": 3,
    "summary": "기후에너지환경부 산하 한국환경공단은 11일부터 이틀간 태국에서 태국 천연자원환경부, 유엔 아시아·태평양 경제사회위원회(UNESCAP), 랑싯시와 탈플라스틱을 위한 국제협력을 강화하고 국내 재활용기업의 해외시장 진출을 지원하기 위한 협력방안을 논의했다. 태국에서는 2024년 일회용 플라스틱 폐기물이 약 288만 톤 발생했으며, 이 가운데 약 25%가 재이용된 것으로 추정된다."
-  },
-  {
-   "title": "[무주소식] 마을별로 폐농약·폐전지·폐비닐 집중 수거",
-   "source": "연합뉴스",
-   "link": "https://www.yna.co.kr/view/AKR20261113062000055",
-   "pub": "2026-11-13 10:26",
-   "more": 0,
-   "summary": "전북 무주군은 토양과 하천, 생태계 오염을 차단하기 위해 마을별로 폐농약 집중 수거 운동을 펼친다고 13일 밝혔다. 파리 시내 보석상에 대낮 무장강도…15억원어치 털어 도주 아파트 천장서 프로포폴 등 12상자 발견…의사가 방치"
-  },
-  {
-   "title": "현수막 재활용 순환체계 경주시, 5개 기관과 구축",
-   "source": "서라벌신문",
-   "link": "http://www.srbsm.co.kr/default/index_view_page.php?idx=57071",
-   "pub": "2026-11-13 10:17",
-   "more": 0
-  },
-  {
-   "title": "폐페트병이 자동차·항공 소재로…컴퍼지트솔루션즈, 난연재로 공급망 진입",
-   "source": "동행일보",
-   "link": "https://www.dhilbo.co.kr/news/articleView.html?idxno=2350",
-   "pub": "2026-11-13 09:06",
-   "more": 0,
-   "summary": "폐페트병을 활용한 단일 소재 복합재를 앞세운 부산 스타트업이 자동차·항공 공급망 진입에 나섰다. 회사는 공정 단순화와 자체 설계로 유사 해외 경쟁 제품 대비 단가를 약 40% 낮췄고, 향후 최대 70%까지 격차를 벌리는 공정 개선 연구를 진행 중이다. 이 난연재는 화재 시 유해가스를 내뿜는 기존 할로겐계 제품과 달리 특정 유해물질 발생을 60% 이상 줄이면서도 난연성 최고 등급인 V-0를 획득했다."
-  },
-  {
-   "title": "환경공단, 태국서 국내 재활용 기업 해외 활로 모색 박차",
-   "source": "데일리한국",
-   "link": "https://daily.hankooki.com/news/articleViewAmp.html?idxno=1424712",
-   "pub": "2026-11-13 02:56",
-   "more": 0,
-   "summary": "한국환경공단이 동남아시아의 탈플라스틱 정책 수요를 발판 삼아 국내 재활용 관련 우수 기업의 해외 영토 확장을 지원하는 국제 공조 행보에 나섰다. 태국에서는 지난 2024년 기준 연간 약 288만톤의 일회용 플라스틱 폐기물이 쏟아졌으나 정작 재활용되는 확률은 25% 수준에 머물렀다. 이에 태국은 지난 2017년부터 국가 차원의 ‘플라스틱 폐기물 관리 로드맵’을 가동하며 재활용 인프라 확충에 총력을 기울이고 있다."
   }
  ],
  "overseas": [
@@ -133,25 +118,25 @@
    "more": 0
   },
   {
-   "title": "Mars, Veolia and Imperial College London launch global packaging waste study",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejFiamNXV1ppMGFpRGJlRmtfLXFVTjR3WGRVNTJWb0JuWklpd1U1M2pJTTNhVUZnNkNUR29Nc0lHb3BCMXdDdHV5Y1VGX193QmY5VS1sckROMldfX2dXZjNUNnJOTGRXZXVqMHozZnZETXRSOWJqTHFpbGRJMlNaWWR1Uk9KVkhXbGQ4SllnaGJ1WDdHTG1JeXNObFYxRWNTMWRmNTI0ZEhoSGFx?oc=5",
-   "pub": "2026-11-11 22:43",
+   "title": "PET recycling rate fell in 2025, but rPET content in bottles increased",
+   "source": "Packaging Dive",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVWJkaTVhNk9nQThLVjlyWmVIY3BrZmFsc0hNZUFwVVhoR3lOcEpyVUxLQkk5Mkp5cHJmSUVIZ084em4wejdFLW5SRzd0M1NVR2JhR1lMOUdOTlFxeHRMREh5b1huY3JtU255bU5sQVNGUHV2TUE1Qkh2a1BmWGkyRDljVnVQODRRa2Vua1FnY0MxR3hyQXFPMkZPem50S3ozbFVLRWtPTHNDZHpmMTlEZDRMaHM?oc=5",
+   "pub": "2026-11-12 02:33",
    "more": 0
-  },
-  {
-   "title": "NAPCOR report shows increase in rPET usage in bottles, decrease in recycling rates",
-   "source": "Recycling Today",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxObzFWNEo1amRLY0t0STEzX2FTOXQ5RTdXNUgweVY1WTI4dG1BUTJ1TmtKcHVxVlRwLXVuQTVmTVd4TURkY3lYSlpUekJnMDlDVjU5NnYwWlIzejZuNWlUbExkamt2U3g3YVB0MXFjaEFvbmgtT21IeTByeHppcjVEMkNSM3RIRjNydjRkTkQ3YzBvVWN5ejcxblRINXdRWFpYa3ltemU1Zy1fLWtybnlpNHVWdw?oc=5",
-   "pub": "2026-11-11 20:00",
-   "more": 2
   },
   {
    "title": "Aliplast opens rigid plastics recycling plant in Italy",
    "source": "Recycling Today",
-   "link": "https://www.recyclingtoday.com/aliplast-opens-rigid-plastics-recycling-plant-in-italy",
-   "pub": "2026-11-11 19:23",
-   "more": 3
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUHk1QTRYZ1k0NU4yLWZWaDBJTDNFUjR1WkxXVUVxM1FOTGV4SUhEWWo2VjdGeERISnhuUlRaSThhc3JqcVF0cjNmNXJfZUlfWlBGN0lxOWdtWEs5YWpFdmRJLVJMM2pyY2xnd1R5WHlOV3YzeDQzSGlaTXRBUTRXWUh6UG1hRkxHeF8ybjFlQ3FWYlpERHc?oc=5",
+   "pub": "2026-11-12 00:23",
+   "more": 2
+  },
+  {
+   "title": "Mars, Veolia and Imperial College London launch global packaging waste study",
+   "source": "Packaging Europe",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejFiamNXV1ppMGFpRGJlRmtfLXFVTjR3WGRVNTJWb0JuWklpd1U1M2pJTTNhVUZnNkNUR29Nc0lHb3BCMXdDdHV5Y1VGX193QmY5VS1sckROMldfX2dXZjNUNnJOTGRXZXVqMHozZnZETXRSOWJqTHFpbGRJMlNaWWR1Uk9KVkhXbGQ4SllnaGJ1WDdHTG1JeXNObFYxRWNTMWRmNTI0ZEhoSGFx?oc=5",
+   "pub": "2026-11-11 22:43",
+   "more": 1
   }
  ]
 }
