@@ -1,1 +1,24 @@
->> 오늘 이미 확인함(2026-11-13 11:32) → 하루 한 번만 조회
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-09-30~2026-11-14: 121건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 34건
+>> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
+>> [세대수] 새로 조회 3건, 누적 730개 단지
+>> 저장: 1516건 · 상태 {'취소': 378, '신규공고': 23, '유찰': 411, '낙찰': 677, '입찰마감': 8, '재공고': 1, '낙찰무효': 18} · 시스템 {'KG2B전자입찰': 449, 'K-APT': 1020, '아파트장터 A2P': 36, '한국환경공단': 7, '아파트비드포유': 4} · 상세 0건 읽음 · 1년 채우기 완료
+   2026-11-06 평택시   | K-APT | e편한세상평택라씨엘로 | 재활용품 수거용역 업체선정 입찰공고 | 낙찰 42,426,456
+   2026-11-02 오산시   | 아파트장터 A2 | 동부2차 | 자원 재활용 매각 업체 선정공고 | 낙찰 23,493,600
+   2026-11-02 이천시   | KG2B전자입찰 | 이천자이더파크 | 재활용품 수거용역 사업자 선정 입찰공고 | 낙찰 9,742,800
+   2026-10-29 남양주시  | KG2B전자입찰 | 다산 메트로 3단지 | 폐기물관리법에 다른 재활용품 매각업체 선정 입찰 | 낙찰 6,787,800
+   2026-10-28 화성시   | K-APT | 동탄2 LH2단지 A4-2 | 재활용품수거 용역사업자 선정 공고 | 낙찰 22,518,000
+   2026-10-28 인천    | K-APT | e편한세상 계양 더프리미어 | 재활용품 수거업체 선정 입찰공고 | 낙찰 37,528,800
+   2026-10-28 파주시   | K-APT | 운정신도시파크푸르지오 | 재활용품 수거업체 선정 입찰 공고 | 낙찰 16,273,200
+   2026-10-28 수원시   | K-APT | 매탄이편한세상 | 재활용품 수거업체 선정 입찰공고 | 낙찰 12,945,600
+   2026-10-27 용인시   | 아파트장터 A2 | 한보라마을휴먼시아4단지 | 재활용품 수거사업자선정 공개입찰 | 낙찰 4,322,640
+   2026-10-27 성남시   | K-APT | 힐스테이트위례 | 재활용품 수거 용역업체 선정 입찰 공고 | 낙찰 7,452,000
