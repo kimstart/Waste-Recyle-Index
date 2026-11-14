@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14 20:23",
+ "updated": "2026-11-15 00:46",
  "backfilled": true,
  "bf_k": 420,
  "items": [
@@ -81,7 +81,8 @@
      "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01815958&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=07"
     ]
    ],
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01815958&bidPbancOrd=000"
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01815958&bidPbancOrd=000",
+   "kind_checked": "2026-11-12"
   },
   {
    "id": "g2b:R26BK01815263",
