@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16 01:16",
+ "updated": "2026-11-16 10:37",
  "backfilled": true,
  "focus": [
   "화성",
@@ -56,6 +56,32 @@
    "pre_amt": null,
    "pre_unit": "",
    "url": "https://www.re.or.kr/bid/viewBidAdPage.do?bidAdNum=20261112002&bidTimeNum=0",
+   "detail_ok": 2
+  },
+  {
+   "id": "re:20261106001:0",
+   "src": "순환자원정보센터",
+   "no": "20261106001",
+   "ord": "0",
+   "kind": "생활폐기물 (매각 (최고가))",
+   "title": "2027년 해남군 생활자원처리시설 재활용품 매각 공고",
+   "org": "해남군 생활자원처리시설",
+   "start": "2026-11-16",
+   "end": "2026-11-23",
+   "open": "2026-11-24",
+   "status": "입찰중",
+   "cat": "재활용품 일괄",
+   "region": "기타",
+   "city": "",
+   "qty_kg": 952.0,
+   "item_cls": "생활폐기물 / 고철 및 금속캔류",
+   "price_type": "총액입찰",
+   "area": "전남광주통합특별시",
+   "pre_raw": "203,373,000 원",
+   "pre_amt": 203373000.0,
+   "pre_unit": "원",
+   "pre_unit_price": 213627.1,
+   "url": "https://www.re.or.kr/bid/viewBidAdPage.do?bidAdNum=20261106001&bidTimeNum=0",
    "detail_ok": 2
   },
   {
