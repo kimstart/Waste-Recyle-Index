@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17 13:39",
+ "updated": "2026-11-18 01:19",
  "points": [
   {
    "id": "26464ee4bd",
@@ -1605,6 +1605,75 @@
    "krw_low": 148.2,
    "krw_high": 148.2,
    "krw_kg": 148.2
+  },
+  {
+   "date": "2026-11-18",
+   "basis": "",
+   "grade": "플레이크",
+   "region": "북미",
+   "cur": "USD",
+   "per": "t",
+   "low": 459.0,
+   "high": 459.0,
+   "virgin_low": 373.0,
+   "virgin_high": 373.0,
+   "premium": null,
+   "quote": "Clear rPET flakes were selling US$459/t below virgin PET in Northwest Europe, US$373/t below in Southeast Asia and US$362/t below on the US West Coast. “Virgin prices are super high due to the increases in oil and the conflict in the Middle East,” a Mexican rPET buyer told the agency at the time.",
+   "title": "Recycled PET Nears Price Parity in Mexico",
+   "source": "Mexico Business News",
+   "url": "https://mexicobusiness.news/sustainability/news/recycled-pet-nears-price-parity-mexico",
+   "auto": true,
+   "id": "5da9454669",
+   "fx": 1336.21,
+   "krw_low": 613.3,
+   "krw_high": 613.3,
+   "krw_kg": 613.3
+  },
+  {
+   "date": "2026-11-18",
+   "basis": "",
+   "grade": "플레이크",
+   "region": "북미",
+   "cur": "USD",
+   "per": "t",
+   "low": 362.0,
+   "high": 362.0,
+   "virgin_low": 373.0,
+   "virgin_high": 373.0,
+   "premium": null,
+   "quote": "Clear rPET flakes were selling US$459/t below virgin PET in Northwest Europe, US$373/t below in Southeast Asia and US$362/t below on the US West Coast. “Virgin prices are super high due to the increases in oil and the conflict in the Middle East,” a Mexican rPET buyer told the agency at the time.",
+   "title": "Recycled PET Nears Price Parity in Mexico",
+   "source": "Mexico Business News",
+   "url": "https://mexicobusiness.news/sustainability/news/recycled-pet-nears-price-parity-mexico",
+   "auto": true,
+   "id": "10cd6d3baa",
+   "fx": 1336.21,
+   "krw_low": 483.7,
+   "krw_high": 483.7,
+   "krw_kg": 483.7
+  },
+  {
+   "date": "2026-11-18",
+   "basis": "",
+   "grade": "플레이크",
+   "region": "북미",
+   "cur": "USD",
+   "per": "lb",
+   "low": 0.45,
+   "high": 0.45,
+   "virgin_low": null,
+   "virgin_high": null,
+   "premium": null,
+   "quote": "At the World Petrochemical Conference in March 2026, Alasdair Carmichael, Director, National Association for PET Container Resources, warned that the cost of turning bottles into flake in the United States ranges from US$30 to US$45 cents per pound, compared with US$9 to US$20 cents in Asia.",
+   "title": "Recycled PET Nears Price Parity in Mexico",
+   "source": "Mexico Business News",
+   "url": "https://mexicobusiness.news/sustainability/news/recycled-pet-nears-price-parity-mexico",
+   "auto": true,
+   "id": "e96018aae1",
+   "fx": 1336.21,
+   "krw_low": 1325.6,
+   "krw_high": 1325.6,
+   "krw_kg": 1325.6
   }
  ],
  "fx": {
@@ -1648,7 +1717,8 @@
   "USD:2026-09-21": 1372.18,
   "USD:2026-10-14": 1341.45,
   "USD:2026-10-22": 1325.57,
-  "USD:2026-11-06": 1344.69
+  "USD:2026-11-06": 1344.69,
+  "USD:2026-11-18": 1336.21
  },
  "seen": {
   "yamahamakesrecycledaluminumcommitment": "2026-10-07",
@@ -1806,6 +1876,12 @@
   "fallrecyclingmarketspaperandcansstrongplasticsbouncingaround": "2026-11-17",
   "lululemonsenzymaticpolyestercanrecyclingscalebeyond03": "2026-11-17",
   "solarcyclemergeswithpedalpointrecycling": "2026-11-17",
-  "commentaryshiprecyclingtimetoreplacepoliticalperceptionswithtechnicalevidence": "2026-11-17"
+  "commentaryshiprecyclingtimetoreplacepoliticalperceptionswithtechnicalevidence": "2026-11-17",
+  "recycledpetnearspriceparityinmexico": "2026-11-18",
+  "petbottlecollectiondeclinesintheusawhilerecycledpetimportsrise": "2026-11-18",
+  "petproducersridelocalforlocalwave": "2026-11-18",
+  "napcors2025reportrevealsshiftingrecyclingtrends": "2026-11-18",
+  "morssinkhofrymoplastopenstworecyclingplantsinbelgium": "2026-11-18",
+  "indiashaldiapetrochemicalsplansnewcrackerproject": "2026-11-18"
  }
 }

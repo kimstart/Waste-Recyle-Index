@@ -1,35 +1,57 @@
 {
- "updated": "2026-11-17 13:37",
+ "updated": "2026-11-18 01:16",
  "domestic": [
+  {
+   "title": "SL공사, 폐자원에너지화 연구성과 발표회…차세대 실무 인재 발굴",
+   "source": "미디어이슈",
+   "link": "http://www.mediaissue.net/3623322",
+   "pub": "2026-11-17 23:38",
+   "more": 0
+  },
+  {
+   "title": "음식물 처리장서 가스·전력·열 생산… 6개 기관 바이오가스 협의회 출범",
+   "source": "동아일보",
+   "link": "https://www.donga.com/news/Economy/article/all/20261117/135040839/1",
+   "pub": "2026-11-17 17:01",
+   "more": 1
+  },
+  {
+   "title": "에코바이오솔루션 등 6개 기관 '탄소중립 바이오가스 에너지 협의회' 협약 체결",
+   "source": "한경매거진",
+   "link": "https://magazine.hankyung.com/business/article/202611172419b",
+   "pub": "2026-11-17 16:11",
+   "more": 1,
+   "summary": "에코바이오솔루션, KCGI대체투자운용, 민창, EPC업체, 김대중재단, SDX재단 등 6개 기관이 '탄소중립 바이오가스 에너지 협의회'(이하 협의회)를 꾸리고 유기성 폐기물 처리장을 기반으로 한 바이오가스 사업을 함께 추진한다. 협의회는 지난 11월 13일 오후 1시 여의도 ONE IFC 15층 KCGI대체투자운용 사옥에서 협약식을 진행했다."
+  },
   {
    "title": "폴라리스바이오, 말레이시아 첫 국제감축사업 LoA 확보…바이오메탄 사업 본격화",
    "source": "서울경제TV",
    "link": "https://www.sentv.co.kr/article/view/sentv202611170099",
    "pub": "2026-11-17 10:41",
-   "more": 0
+   "more": 1
   }
  ],
  "overseas": [
   {
-   "title": "Simple Persistence Baseline Outperforms Microcontroller Neural Network in Daily Biogas Nowcasting",
+   "title": "Canadian Biogas Association Launches Canadian Biogas Outlook Dashboard",
+   "source": "Canadian Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY0pOVHJ5Rkd3Tk8yZEx4Qm94RVlqNldzQVkzLTJPNW5PNmt3ZHRhX2cwWGZDUXFURUNvOGlsd25JMWl0YjlPc0hQUHJkVWRHTl9fY2JHaFE2WF9vZHFvS2VZUnlXb2hWcDZjSTFyZC1ZN3Jkd2ZmSzdiWVVzdUVaUE44SE5YR0k4bTJzWUQ0S1NTWGRKSHBZN1R6eG11V1pqQjRpUGpCbUxtNjJYQ2JV?oc=5",
+   "pub": "2026-11-18 00:28",
+   "more": 0
+  },
+  {
+   "title": "India's Reliance plans to invest about $1.6 billion to build new biogas plants",
+   "source": "marketscreener.com",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaENINnBrS1MtRG1BcjNGSTNUTENMWWYxN1NVMm9IelNrTGZVbXhsNlZzNkdGelZRVFJwLVhsVUpDNWEtaUVLNEdjLS03ckx0al95cld6X0huLVRfNGNYbW8yTGY3NDBDODg5aVJhSEM2bWRJVkxNUktWcVR6YVVUUkFCRl9XUm5BTkN2OGdIRnlCUnhPbjNkbjhvRV9xRWtoV2J3U3NjT0d6RGZYaGctc19uUjlrTHhMOEZYd1JtQXJ1Nk4tVW1PZ053?oc=5",
+   "pub": "2026-11-17 18:23",
+   "more": 5
+  },
+  {
+   "title": "CFD Model Finds Nozzle Mixing Most Efficient for Industrial Anaerobic Digestion",
    "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOVloTl9DZ3R6SkpvUjlqdzNOdzFkWkJqaGVKWk5TMGt2NUQtVE5KZkh6cF8xQ3Z2RU1QUTd3SE9rUGo5a2xSeVM4NmhmWVJEQzlRWUdEbG9UTFpwWG9tNzU1WGx4TzN0ajctMjRlUU1xYWJxRDVCUUk0c0ljTnF0RW1NUWd5d1NqT2JJTkg1c0lTMURYZEZiclFwQjhETnp2VDc5emFrclNENkgza0F1clpvUl85NjUwdDhOeDVqNA?oc=5",
-   "pub": "2026-11-17 09:07",
-   "more": 0
-  },
-  {
-   "title": "Montauk Renewables (MNTK) Reports Q3 2026 Progress on RNG and Po",
-   "source": "GuruFocus",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWUZRb3dZX0xEZElFSlNtSUphZ1BIZXpwdGkxSHNaSjRMYjBQa1VNZU5tUXNxSmNqTUJiejRDNkdEa2Y2N0g4VFdWMmhTdEdpaEZYLXcwQlVzb0pRSnV5SHBjLXNGWVN2NWFCQXdFZ0hOWGlqelNEalBpWUkwTl9qdTAyUF8yUmphTzBkUFA1V2hWYWVFM2RIazJldXVhVDlXOVRKVjRRTXNNSGNZRXF4WmlvSkZxSFNVY3BwRzJWOXIyWnpO?oc=5",
-   "pub": "2026-11-17 02:43",
-   "more": 0
-  },
-  {
-   "title": "COP31 declaration calls for biogas and biomethane ramp up",
-   "source": "ENDS Waste & Bioenergy",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcnV4dEtLSnl6M2NqeXVkSzA3Y0F2dFh5ZWlTaTZjT29SRFg1VmdCeVN5Nzg2YUZPa0Y1a0FYRWZSTC1ZZmYtb2RKMk9mZmNTTnpjcHpMVUJVdDNqZTZzQkdhVlJVLWJwMzFhLXNPQUh3aFBpeFo5Z0RLWURfbTN6ejlZdGZ4SEFpdHFjZVFJRHVlNXVoTjdZSjhsVmRvYmlwb1E?oc=5",
-   "pub": "2026-11-17 02:28",
-   "more": 0
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQUlmUFppOHVNZjdkMXNqXzdHTTNtNGI5dHB3cTNUdmg5Q3pwS1hnYmlKcXJETVRzQ3VmN1Q4TkZLOUI3MXRGRTUwMzh0TFdfeFN5WVFuLU94RXNNYjBnQ2pWVzFXQkZ5TW4tX0JQSHZtd21DaU1KTnZmcnp3aVotcGJHWEFlMzNYS2k3UmNrYTk3ZF9vWFdIbWFtUy1IM2hrYUZmbGdNNA?oc=5",
+   "pub": "2026-11-17 14:50",
+   "more": 3
   },
   {
    "title": "Biogases Business Days 2027",
@@ -46,6 +68,13 @@
    "more": 0
   },
   {
+   "title": "Ammongas opens registration for biogas upgrading and CO₂ recovery training",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ2lvOU9WWm5jVEtxR05DZ1ZQc2VGbktPel92MUNXTDFhRGJzd3FGVXBYaUJwaW02NGpRUVZMWnEzNnRLcGtzcHlxSUYtcXJJZEVJVEhoT2xqb0Y3YWIxZTRyY25UVkJENXRhVVMxaVhhdVFyZDJnSUlxV1JoZlNnYTl6c09BZ0k2UjRqV0NVck1NVE5JTWtESkd4TmlPaDMxQnFDYmpHY2FFU0VmMUdhRk1EWlV1YXJra3h3?oc=5",
+   "pub": "2026-11-16 17:59",
+   "more": 3
+  },
+  {
    "title": "VORN Bioenergy starts building Apis PV1 biomethane plant in Pinarolo Po, Italy",
    "source": "Bioenergy Insight Magazine",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTXhPZVRsX2NzclhObjNkS3RpampVVGgyOU9jZFY5Yk1SbG0yY256ZEFLelZ5OV93Z3lHb0VFbmZGYmJqVWFzVGkxVzh0RmRlc0RPUk1DUXpHVTU0NGRReDQ5UDRlSDYyOEZhR2V1Nmh4OXJIZ2Jwc2hXampRWndrMWtpMWNMTFRsV083cVZDZXl2OXlNOGwtNGR6Y2xJRXFmTThTd3BsZFJFTk9DM0dZbkhMWVU?oc=5",
@@ -53,10 +82,24 @@
    "more": 0
   },
   {
-   "title": "Waste Derived Sorbents Upgrade Raw Biogas Methane Purity to Ninety-Eight Percent",
-   "source": "Bioengineer.org",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYUFqQlhpWTNKdjMxb1dfeEgtdzRQRDVJU0lFS1drdkZ0RUpJVENpUzVoTmFpckdnUUEtM1IyZXFVeGZVZzdudkMtd3NSY1A1V015QWhNbW9kSnU3MUxEdS1nODhtbE16bU4xVW1FTF93RWtBUGg1Tzl1T3VVVVJGMVNXLVdBR1VjX0ZSZ3ZMY3lGcXJ0SEliZndTbGFaWWgwRWt4UXBxZTY?oc=5",
-   "pub": "2026-11-14 23:13",
+   "title": "Trusted by German Company, Waskita Beton Precast Produces Wall Panels for Biogas Infrastructure in Dumai",
+   "source": "ANTARA News",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOOFI5blQ2SHE4THRPVTRZRkJETW1qU09VRzU1QURpTUNZWENiOUZjeklVZnRrMDN1NngxNmhhRTZad3ozTFhqb3lpMjNTeHpkOVc0QnBMZzJvNmh6NEkwQkJubm55ckN5NF9iV0NJRmtMZS1xUERnVXltbFNZUy1PWHZQbU5tc1UxUGdXaEdBLUFfNC1hUEZzcmRzT2FsOFRyWGFRbGlNdkd6SGctcHRONEFkUDdUWXhDNVZOWE03dUhZY0hlSzR6TWNLM2hmWHhtbjFaWHU3NVHSAd4BQVVfeXFMTTRCaXlLeUxKajRNSjJ0RjBxbWtKRWRaaFRENjhGRTJ4eG5rTmtsX3l4WUR0cVNJdjBzUzZVQmp3SGVwaUpqYjJiUVV4LTU2Uzg1SFZCVXRCVHB5WDBDaWQxQ2xHTFBGYjdhUkstSHBYSW4yTkNHNWwxNXVBUGtvQTlDajZ1SUVCQU9GVjFQSkFlM3BXQlQtWWZmajd1TWZyZEhJQUJZb0sxNFVxR1pYRVF5ZUlUcnhuMEhWZ0NETzZWRUpXV0VRUVRKM25obGRmT3BidUlRQnZXUG5iUzhR?oc=5",
+   "pub": "2026-11-16 16:02",
+   "more": 4
+  },
+  {
+   "title": "Liquefied biogas storage tank installed at the port of Gothenburg",
+   "source": "Container News",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUnptaVA3anAtOTI1VkdueHFySnp1eEFUN3dDbW5WNjV1UGRab0gyMUhMTkM5aUNRbmRLeDFZZUlVS2FWMmFoVFVBQnl0ZGx2U3Z0ZFlBNFIzUVBNWXRKN2ZqcEYySFJhemNqUmg1bktybWoxaXVMajdXSjE0UEhKX2hJUjBldFk1RlhNWG5tNXRXbm1yNU9adg?oc=5",
+   "pub": "2026-11-15 17:00",
+   "more": 1
+  },
+  {
+   "title": "Goats, gardens, hens and biogas: How four families found their way back home",
+   "source": "Counterview",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxObDVabmt0aHYzNGx5NXZ2ckhFd1hEd19BZWlqdVEtZDJqcGp6bjBEZ3RLWXVzY1g4RnVlWG10YTE3TXdEclg5Und5YVlFX01BaThPTHl4TV9hZFZVZ2xmVlM5NEZTQ1V6TE41X1hiXzB3X3oyWnJ2SUdMbHRkUWFoM2dVUHB3dw?oc=5",
+   "pub": "2026-11-15 08:15",
    "more": 1
   }
  ]

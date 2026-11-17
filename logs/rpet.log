@@ -1,4 +1,7 @@
->> [검색] rPET site:argusmedia.com 실패: HTTPError
->> [검색] "PET bales" prices 실패: HTTPError
->> 기사 3건 확인, 자동 추출 0건 추가 (확인 60 · 자동 9)
->> data/rpet.json, history/rpet_20261117.json 저장
+>> [추가] 2026-11-18 북미 플레이크 USD 459.0-459.0/t | Mexico Business News | Clear rPET flakes were selling US$459/t below virgin PET in Northwest Europe, US$373/t bel
+>> [추가] 2026-11-18 북미 플레이크 USD 362.0-362.0/t | Mexico Business News | Clear rPET flakes were selling US$459/t below virgin PET in Northwest Europe, US$373/t bel
+>> [추가] 2026-11-18 북미 플레이크 USD 0.45-0.45/lb | Mexico Business News | At the World Petrochemical Conference in March 2026, Alasdair Carmichael, Director, Nation
+>> [원문] HTTPError: NAPCOR's 2025 Report Reveals Shifting Recycling Trends
+>> [원문] HTTPError: Morssinkhof-Rymoplast opens two recycling plants in Belgium
+>> 기사 6건 확인, 자동 추출 3건 추가 (확인 60 · 자동 12)
+>> data/rpet.json, history/rpet_20261118.json 저장
