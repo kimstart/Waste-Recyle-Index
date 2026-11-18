@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 12:06",
+ "updated": "2026-11-18 16:53",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -15,10 +15,10 @@
    "name": "TTF 천연가스",
    "item": "근월물",
    "unit": "€/MWh",
-   "date": "2026-11-17",
-   "value": 85.48,
-   "prev_date": "2026-11-16",
-   "prev_value": 84.75,
+   "date": "2026-11-18",
+   "value": 83.68,
+   "prev_date": "2026-11-17",
+   "prev_value": 85.4,
    "src": "Yahoo Finance (ICE Endex)",
    "spark": [
     88.0,
@@ -42,9 +42,10 @@
     92.3,
     91.0,
     84.7,
-    85.5
+    85.4,
+    83.7
    ],
-   "krw_m3": 1488.3,
+   "krw_m3": 1457.0,
    "fx_used": 1468.36,
    "heat_used": 42.687
   },
