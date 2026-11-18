@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18 23:29",
+ "updated": "2026-11-19 02:32",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-18",
-   "value": 82.53,
+   "value": 81.11,
    "prev_date": "2026-11-17",
    "prev_value": 85.4,
    "src": "Yahoo Finance (ICE Endex)",
@@ -43,10 +43,10 @@
     91.0,
     84.7,
     85.4,
-    82.5
+    81.1
    ],
-   "krw_m3": 1436.9,
-   "fx_used": 1468.36,
+   "krw_m3": 1405.6,
+   "fx_used": 1461.5,
    "heat_used": 42.687
   },
   "gas_whole": {
@@ -112,8 +112,8 @@
      20.87
     ]
    ],
-   "krw_m3": 363.4,
-   "fx_used": 1468.36,
+   "krw_m3": 361.7,
+   "fx_used": 1461.5,
    "heat_used": 42.687
   },
   "kcu": {
@@ -132,11 +132,11 @@
   "fx_eur": {
    "name": "원/유로",
    "unit": "원",
-   "date": "2026-11-17",
-   "value": 1468.36,
-   "prev_date": "2026-11-16",
-   "prev_value": 1470.23,
-   "src": "ECB 기준환율"
+   "date": "2026-11-18",
+   "value": 1461.5,
+   "prev_date": "2026-11-17",
+   "prev_value": 1467.45,
+   "src": "Yahoo Finance"
   },
   "kau": {
    "name": "KAU 할당배출권",
@@ -187,7 +187,7 @@
    "item": "실물 EUA ETC",
    "unit": "€/톤",
    "date": "2026-11-18",
-   "value": 79.0,
+   "value": 76.25,
    "prev_date": "2026-11-17",
    "prev_value": 83.13,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
@@ -214,9 +214,9 @@
     84.0,
     83.26,
     83.13,
-    79.0
+    76.25
    ],
-   "krw_t": 116000
+   "krw_t": 111439
   }
  },
  "extra": {
