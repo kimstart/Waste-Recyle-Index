@@ -1,6 +1,30 @@
 {
- "updated": "2026-11-19 12:40",
+ "updated": "2026-11-20 00:54",
  "domestic": [
+  {
+   "title": "폐합성의류 미세플라스틱 유출 4배 늘었다…처리 방식도 문제",
+   "source": "한국섬유신문",
+   "link": "https://www.ktnews.com/news/articleView.html?idxno=150332",
+   "pub": "2026-11-19 21:53",
+   "more": 0,
+   "summary": "글로벌 섬유패션산업의 미세플라스틱 오염 문제가 의류 생산과 세탁 단계를 넘어 폐기 이후의 환경관리 문제로 확대되고 있다. 보고서에 따르면 1963년부터 누적 생성된 미세플라스틱은 약 4400만톤이며, 이 가운데 약 1600만톤이 자연환경으로 유출된 것으로 추정된다. 연구진은 매립된 합성의류의 분해가 약 200년에 걸쳐 이어질 수 있다고 설명했다."
+  },
+  {
+   "title": "골칫거리 폐비닐의 반전…열분해유 '3대 과제'는?",
+   "source": "파인드비",
+   "link": "http://www.findb.co.kr/news/articleView.html?idxno=2557",
+   "pub": "2026-11-19 17:43",
+   "more": 0,
+   "summary": "재활용이 어려운 폐비닐 등을 녹여 새 플라스틱 원료로 되돌리는 열분해유 산업이 빠르게 외연을 넓히고 있지만 높은 처리비용과 품질 편차, 수요처 부족에 지역 주민 반발까지 겹쳐 시장 안착에 진통을 겪고 있다. 실제로 국내 폐플라스틱 화학적 재활용량은 2023년 6만 7,000톤에서 2025년 12만 7,000톤으로 2년 만에 두 배 가까이 증가했다."
+  },
+  {
+   "title": "아주대학교 조인선 교수팀, 폐플라스틱을 고부가가치 화학 원료로 전환하는 고성능 촉매 개발",
+   "source": "한국강사신문",
+   "link": "https://www.lecturernews.com/news/articleView.html?idxno=214121",
+   "pub": "2026-11-19 16:52",
+   "more": 0,
+   "summary": "아주대학교 조인선 교수 연구팀이 폐플라스틱에서 추출한 물질을 고부가가치 화학 원료로 전환할 수 있는 고성능 촉매를 개발했다. 스페인 지로나대학교의 사마드한 캅세(Samadhan Kapse) 박사와 아주대학교 아루무감 시바난탐(Arumugam Sivanantham) 교수가 공동 제1저자로 연구에 참여했으며, 조인선 교수가 교신저자로 연구를 총괄했다."
+  },
   {
    "title": "현수막의 두 번째 인생…재활용 기술로 여는 순환경제 시대 > 뉴스",
    "source": "지데일리",
@@ -8,6 +32,28 @@
    "pub": "2026-11-19 11:57",
    "more": 0,
    "summary": "‘위장 미혼’ 의혹…로또청약 아파트 계약 취소되나 ‘위장 미혼’ 의혹…로또청약 아파트 계약 취소되나 쿠팡 지배구조 민낯 드러나나…김범석 형사책임 문제 확대"
+  },
+  {
+   "title": "[미래 직업 칼럼] 재활용연구사",
+   "source": "강건문화뉴스",
+   "link": "http://www.gcn.news/43032",
+   "pub": "2026-11-19 10:40",
+   "more": 0
+  },
+  {
+   "title": "[정책진단] 제품 포장재 재활용 촉진, '분담금 할증·지원금' 개편",
+   "source": "우먼타임스",
+   "link": "https://www.womentimes.co.kr/news/articleView.html?idxno=108057",
+   "pub": "2026-11-19 09:52",
+   "more": 0,
+   "summary": "기후에너지환경부 유관기관인 한국포장재재활용사업공제조합(KPRC)과 한국순환자원유통지원센터(KORA)는 최근 공동운영위원회를 열고, 2027년도 포장재의 회수·재활용 지원 비용과 분담금 단가 결정(안)을 심의·의결했다고 밝혔다. 단가 현황은 일반팩은 회수·선별 209원/kg에 재활용 58원을 더해 총 267원/kg, 멸균팩은 회수·선별 512원/kg에 재활용 69원을 더해 총 581원/kg으로 지원금이 산정됐다."
+  },
+  {
+   "title": "클로즈드 루프 파트너스, 순환경제 플랫폼 확장 - 뉴스 및 통계",
+   "source": "IndexBox",
+   "link": "https://www.indexbox.io/ko/blog/closed-loop-partners-14-years-building-circular-economy-infrastructure/",
+   "pub": "2026-11-19 08:15",
+   "more": 0
   },
   {
    "title": "아우디, 중고부품 판매·재생원료 확보 자회사 설립...EU 재생 플라스틱 25% 규제 대비",
@@ -26,77 +72,43 @@
    "summary": "임팩트온은 ‘ 글로벌 ESG 규제 트래커 ’를 통해 주요 규제 변화와 기업·정부·산업계의 대응을 추적한다. 임팩트온 리서치센터가 지난 11일부터 17일까지 주요 ESG 규제 변화와 기업 대응을 분석한 결과, 제품 데이터와 공급망 추적에 대비하는 기업들의 움직임이 확인됐다. EU 집행위원회가 지난 5일 채택한 CBAM 해외 탄소가격 공제 시행규정이 16일 관보에 실렸다."
   },
   {
+   "title": "울주 청소년, 자원순환 현장에서 진로 찾는다 ... ㈜원더플라스틱·울주군진로직업체험센터 업무협약",
+   "source": "경상일보",
+   "link": "https://www.ksilbo.co.kr/news/articleView.html?idxno=1072916",
+   "pub": "2026-11-18 16:48",
+   "more": 1,
+   "summary": "㈜원더플라스틱(대표 김민석)과 울주군진로직업체험센터(센터장 명현주)가 18일 울산 울주군 웅촌면 원더플라스틱 사업장에서 청소년 진로직업체험 활성화를 위한 업무협약을 체결했다. 앞으로 두 기관은 지역 청소년들이 폐플라스틱으로 새 제품을 만드는 과정을 경험하며 자원순환 분야의 직업을 탐색할 수 있도록 협력하기로 했다. 원더플라스틱이 만드는 고래 키링의 색은 수거한 병뚜껑에서 시작된다."
+  },
+  {
    "title": "\"폐플라스틱 열분해유 자원순환 활성화\"…국회서 정책토론회 개최",
    "source": "에너지프로슈머",
    "link": "https://www.energyprosumer.info/6797",
    "pub": "2026-11-18 15:48",
-   "more": 0
+   "more": 3
   },
   {
-   "title": "경상국립대학교 최명룡 교수팀, 폐페트병에서 화학원료 최대 91% 회수하는 레이저 촉매 개발",
-   "source": "한국강사신문",
-   "link": "https://www.lecturernews.com/news/articleView.html?idxno=214010",
-   "pub": "2026-11-18 13:54",
-   "more": 0,
-   "summary": "경상국립대학교 최명룡 교수 연구팀이 버려진 페트병에서 새로운 페트 생산에 필요한 원료와 고부가가치 화학물질을 최대 91%까지 회수할 수 있는 레이저 기반 촉매 기술을 개발했다. 복잡한 화학 합성 과정 없이 레이저를 활용해 3분 만에 촉매를 제작할 수 있다는 점에서 폐플라스틱 재활용 기술의 효율성을 높일 수 있을 것으로 기대된다. 이를 통해 복잡한 합성 공정 없이 3분 이내에 고성능 촉매를 제작하는 데 성공했다."
-  },
-  {
-   "title": "페트병 1만 2천 개의 변신… 종량제봉투 800장 기증",
-   "source": "연천뉴스",
-   "link": "https://www.yeoncheonnews.com/news/articleView.html?idxno=4848",
-   "pub": "2026-11-18 11:00",
-   "more": 1,
-   "summary": "1년간 12회 수거한 폐페트병 1만 2,000개 활용 연천군새마을회(회장 이인행)는 지난 12일 관내 더헤아림재가복지센터에 20리터 종량제봉투 800장을 전달했다. 새마을회는 '3R 자원재활용수집운동'의 하나로 1년 동안 12차례에 걸쳐 폐페트병 1만 2,000개를 모았고, 이를 전곡읍행정복지센터에서 20리터 종량제봉투 400장으로 교환했다."
-  },
-  {
-   "title": "\"85억 투자하더니 경영권까지?\"…재활용업계 발칵 뒤집힌 이유",
-   "source": "한국경제",
-   "link": "https://www.hankyung.com/article/202611184028i",
-   "pub": "2026-11-18 10:14",
-   "more": 0,
-   "summary": "국내 자원순환업계가 폐플라스틱 열분해유 생산기업 지평선에너지의 경영권 분쟁을 둘러싸고 집단행동에 나섰다. 탄원서에 따르면 해당 조합은 지평선에너지에 85억원 규모의 전환사채(CB)를 인수하면서 제2공장에 채권최고액 110억5000만원 규모의 근저당권을 설정했다. 이후 2025년 4월 2일에는 창업자인 대표이사가 보유한 주식 100%에 대해서도 근질권을 추가로 설정했다."
-  },
-  {
-   "title": "SK케미칼, 서귀포시와 폐현수막 화학적 재활용 맞손",
-   "source": "더팩트",
-   "link": "https://news.tf.co.kr/read/economy/2390208.htm",
-   "pub": "2026-11-18 10:10",
-   "more": 13,
-   "summary": "지난 17일 서귀포시청 별넷마당에서 열린 '폐현수막 자원순환 활성화 업무협약식'에서 김희찬 서귀포시장(왼쪽)과 고정석 SK케미칼 리사이클사업본부장이 기념 촬영하고 있다. 18일 SK케미칼은 전날 서귀포시청 별넷마당에서 서귀포시와 '폐현수막 자원순환 활성화 업무협약'을 맺었다고 밝혔다. 서귀포시에서 나오는 폐현수막은 연간 약 17톤이며 이 가운데 60%가량이 소각된다."
-  },
-  {
-   "title": "수백억 ‘플라스틱 열분해’…줄줄이 ‘포기’",
-   "source": "KBS 뉴스",
-   "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8715850",
-   "pub": "2026-11-18 09:54",
-   "more": 0
-  },
-  {
-   "title": "대한민국 친환경패키징포럼 개최…“플라스틱 포장산업, 규제 넘어 재성장 기회로”",
-   "source": "지이코노미",
-   "link": "https://www.geconomy.co.kr/news/article.html?no=325772",
-   "pub": "2026-11-18 08:34",
-   "more": 1,
-   "summary": "2026 대한민국 친환경패키징포럼이 지난 11월 11일부터 12일까지 이틀간 서울 양재 엘타워에서 개최됐다. ‘순환경제를 설계하는 패키징: 규제를 넘어 재성장의 기회로’를 주제로 열린 이번 포럼에는 정부와 산업계, 학계 및 연구기관 관계자 등 200여 명이 참석해 글로벌 환경규제 대응과 친환경 포장기술 개발, 원료 공급망 안정화 및 산업 경쟁력 강화 방안을 논의했다."
-  },
-  {
-   "title": "인천부평구새마을회, 폐플라스틱 활용 자원순환 교육 진행",
-   "source": "오늘경제",
-   "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=819266",
-   "pub": "2026-11-18 08:10",
-   "more": 2,
-   "summary": "인천부평구새마을회가 폐플라스틱을 활용한 화분 만들기와 환경교육을 통해 생활 속 자원순환 실천 방법을 알렸다. 이번 활동은 '2026 녹색·건강·문화 새마을 가꾸기 공모사업'의 하나로, 오후 2시부터 5시까지 환경교육 2시간과 재활용 화분 만들기 체험 1시간으로 운영됐다. 부평구 노인일자리 수행기관 2곳, 복지부 평가 최우수상"
-  },
-  {
-   "title": "산불 막는 ‘손길’…농협, 포천 농가 찾아 영농부산물 파쇄·폐비닐 수거",
-   "source": "뉴스로드",
-   "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=67926",
-   "pub": "2026-11-18 07:30",
-   "more": 0,
-   "summary": "농협중앙회 농촌지원부가 봄철 건조한 날씨 속 산불 예방과 농촌 일손부족 해소를 위해 경기 포천 지역 농가를 찾아 영농부산물 파쇄와 폐비닐 수거에 나섰다. 농협중앙회(회장 강호동) 농촌지원부는 17일 경기 포천시 일동면 소재 농가에서 영농부산물 파쇄 및 폐비닐 수거 등 농촌일손돕기를 실시했다고 밝혔다. 韓 경제고통지수 4.8… 20대는 고물가 때와 같은 8.0"
+   "title": "폐현수막으로 새 현수막…SK케미칼, 서귀포시와도 재활용 협약",
+   "source": "뉴스;트리",
+   "link": "https://www.newstree.kr/newsView/ntr202611180015",
+   "pub": "2026-11-18 13:13",
+   "more": 4
   }
  ],
  "overseas": [
+  {
+   "title": "A mixed bag for mixed-color recycled HDPE in October",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdHVjTXJPY0d4WjZ1YkYyVG5pZldDZGpJVm1CcF9VOUNUdFo1R1BFdUdIRjVBeno2dEpEejFaOV9vd1BPWGNEaGRka0dPUVdqVkJvQUhZY3VCbUcyeTFaNUN2c2VTdGFZWWVkRWF5eE13cndUVWF2MGFPV005U3B5ajRoYTc?oc=5",
+   "pub": "2026-11-20 00:27",
+   "more": 0
+  },
+  {
+   "title": "Dutch government considers new levy on virgin fossil-based plastics",
+   "source": "EUWID Recycling and Waste Management",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYkJudzRrd040SGg3bDZuUzBudEpWa1V3R3JhUnJoYzY2RjkwRmlHYVhFdHBqc3huWERIYmo0bHp2R1NLNDRJYk0wYzVjYlZobWoxQm1nRGVvUlJoRmFIR3pnT1kweVA4eWRJMGFnbzJrQm8wakZ2NnNJWE90VDQwNVNJVlBEa25CaFpIc2N5RWlHLWdrZmxvNkVBZDJ4VS1qYkg2c3Iwdm83UnhRSHhUM0NNczVubXN4V3Zz?oc=5",
+   "pub": "2026-11-19 19:33",
+   "more": 0
+  },
   {
    "title": "People on the move in plastics circularity - winter 2026",
    "source": "Plastics News",
@@ -112,20 +124,6 @@
    "more": 0
   },
   {
-   "title": "Clean Planet Energy secures planning permit for UK pyrolysis plant",
-   "source": "EUWID Recycling and Waste Management",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVTdmdDFadDNuZGwwNUhHRUpjeWtEb3J1V2pscmxELURmRnRNTk9aOXlGZTUxeUMtcU13WEdab2c1MXMxNklmYjBaUE5FZVZxTWRrOU4tS2dTYWItRDNPdjZaaHhsaGx4RzZNMnlxNlNvcENFMjBHQ0YyckhvMkE2OTBvTUhudG5URW16THlmcWE2SFZmTk9HZm9qbGJkcFJsS2FuOXhEdTZyOS1jdENkZEhFenlHS1Y1OEZHZA?oc=5",
-   "pub": "2026-11-17 21:05",
-   "more": 0
-  },
-  {
-   "title": "Audi establishes subsidiary focused on automotive recycled plastics",
-   "source": "Plastics News",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUlZoSUdNempKRlA5MXZrWk1DWFNBZXdfSmNWMFYyeHA3RThpdFU3ZDNYQ0hpQjRIOWNickFDOTllSTd3WHVPMjUxQk5QUmlfX1JHckxxOUM5U0J1V3FJNHhWRkxYRF90U3l5SzRnbUVjMnZOdV9xLVZhdWZWMDdFNW8xbkVzMU9mYmxaMzJQdWRDdUk4V01IS2w3LXNlTXpuTWZRRkYwSy1yeUZIYnNMR3l3VDZYWlB0anhFeWFn?oc=5",
-   "pub": "2026-11-17 19:49",
-   "more": 0
-  },
-  {
    "title": "PET bottle collection declines in the USA while recycled PET imports rise",
    "source": "EUWID Recycling and Waste Management",
    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOYmxkenRKOU9tOXZWd25EMU1ZN01XVzB6eWJ5eWNoazFnQ203cHA5TFd5MFpBRzdSUmpUeWpwT0VMTFpOd0lGQk4xZ0ZHaExZOGxSNkRoQTVYd3dhNkJRdk00cFViNWYzMVh5Y1NQZk4tODJLTlh2ZWN5cjVvT01qRy1Vb3ZBX0FwNkpJcHI0cEw1NTB4VE13Nk84akR6MS1xdDZJUUc3U1dwdEMzXzZwOXk3YW9VcXhVWUVOdWJsMkJzUQ?oc=5",
@@ -133,39 +131,25 @@
    "more": 2
   },
   {
-   "title": "Sphera launches AI-powered tools to simplify EU PPWR compliance",
+   "title": "How to achieve PPWR compliance: A practical guide",
    "source": "Packaging Insights",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNa3J4UUxlM0x5dFBiVzJxTlhzYUtraWRrQmZlZ3V3a19vSWh0cm1kWjlRZEVfU1FmLTJRVVQ2Sm1SaUNlU0wzdldLeWd2b0JLWVNtOWRGQkI1a3BXYzNtV1BLWllnck5oUnhRendDbVluUWlBMXZBSjJpZkRXMHZHN2pSdw?oc=5",
-   "pub": "2026-11-17 17:33",
-   "more": 0
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQb1YtUG1nTmxjd1Bldl81RkZhNndKNFVySEtaVDZCWmJpcXlqVlFlbl9VSm9rMjQ5UlFCSW5zNmFFUFhRNldRYTFocUxfZjVPNmo0a1NvUGNKMUVDSENULTcwMXVPX0xyMUVZWmZBWmxtMTQ5d0xpdjFmVmtPd2lyWHBVRFc2bktfb1QyU3BJbWdOQnd5OTdEOF9SWHI?oc=5",
+   "pub": "2026-11-17 17:00",
+   "more": 3
+  },
+  {
+   "title": "Washington state fines firms $250K for not using recycled plastic",
+   "source": "Plastics News",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUlpHelpVeV9wR1pONHEwNUpXVEJLSGlCaS04TnpxbzdVaW9ZVERXNkFPNW9HQThmMlA3Z21oZS0tOGZtOElhN29SSUh5WmlxRjljaVZacEZqWEx6akZIVXdQRVlyblpBV3g0c1BHZG51M3ZTUzZScjc2cXFuZTNuV3FxeTFHeVpQWTlpWWVLODlrb05P?oc=5",
+   "pub": "2026-11-17 01:49",
+   "more": 3
   },
   {
    "title": "Stoelzle restarts pharma glass production with 80% recycled content capacity",
    "source": "Packaging Insights",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWmlGZGFiekhxcV9Uc2FHRzBuYW04VTI3T2V6QjRVWERWeHNYcUNVakFpNGdSbVpOY05haUM4VklkM0dFSzdXVUpITHctcXpEdE5XNDVBQVRGVExIYjFnc0N3SHVnTjVKSnFTTW9CX3ZPeEFxYWZnSzY5MWM3TnBwbmY3UExyNVpCcjNtMi1NcUFvc1ZzU1ZJWFczZG1OY3VJTWt4bmdjck5RSDNKU2hWWXlScHNoSXZRbldN?oc=5",
    "pub": "2026-11-17 00:55",
-   "more": 1
-  },
-  {
-   "title": "When a Recycled Resin Claim Reaches the Pet-Toy Shelf",
-   "source": "PlasticsToday",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRWZwU1BaOFZHeXdkWlhIc1VrZW5zcmJiRmJSdmhCdnVJQUJFcDdaUUZteGZNSWhHdVh4NTZqd1FqMGgyNXotYTBkN3pkRGs2WnM3Yjhfek1jQ1B5TXM3cHpkNG5BN3VaeU94Sl9SSkJxWUc3ejd2dGRTOGRsNlJGdUs0elZaRS1SVE5USkVOd0hyUQ?oc=5",
-   "pub": "2026-11-16 23:39",
-   "more": 0
-  },
-  {
-   "title": "Keep your packaging PPWR-compliant with Smurfit Westrock",
-   "source": "Packaging Europe",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORlZpUGZYQlhnczJWSmRiN2pLZnZqb2VDZm9WeW1ESGl3UEJ5NU1MdXR2czN4aFZZOUd0eTJpQmJVNjlESV9mWjl6bFh0Sks3SmMyamVwblpOOG1aT3hqQkhoazQxWjFYd0s0Q0E1RU0tYlpKakJpb096YU5qZExRc2RWR09oSHI4Q1NPakYzbUNELVU?oc=5",
-   "pub": "2026-11-16 17:00",
-   "more": 0
-  },
-  {
-   "title": "Reconomy opens plastics recycling plant in UK",
-   "source": "Recycling Today",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeEVZV1Z5eHBYcXgya2p2SDlXYnJ6blJmRnV3RWxDQ25rSzZHa192TEFLcG1KVDFRcWI3Uk9maFV1eUlKWGswSmZGZUpMT29aSUY4ZmdWeXZFQXZnN2gwVU1NbHUzcW5JcVI4YUQzT0VEdi0zWWNxMGJLRjhwb3gzdE1PMU4zUXJWQ0cwYWc2ekppbUNGN3h3QVVzMWp2blY0Q2hwcmtkWU1oa0ZKRXU4?oc=5",
-   "pub": "2026-11-16 15:59",
-   "more": 2
+   "more": 3
   }
  ]
 }
