@@ -1,112 +1,111 @@
 >> [plastic] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '폐플라스틱' 10건
-   [국내] '재생원료 플라스틱' 6건
+   [국내] '폐플라스틱' 5건
+   [국내] '재생원료 플라스틱' 7건
    [국내] '재생플라스틱' 5건
-   [국내] '플라스틱 재활용' 13건
-   [국내] '페트 재활용' 9건
-   [국내] '열분해유' 3건
-   [국내] '화학적 재활용' 17건
-   [국내] '폐비닐' 2건
+   [국내] '플라스틱 재활용' 12건
+   [국내] '페트 재활용' 5건
+   [국내] '열분해유' 2건
+   [국내] '화학적 재활용' 16건
+   [국내] '폐비닐' 1건
    [국내] '재생원료 사용 의무' 2건
    [국내] '플라스틱 협약' 3건
    [국내] '순환경제 플라스틱' 7건
-   [국내] '재활용 선별장' 0건
-   [국내] 반복 소재어: []
+   [국내] '재활용 선별장' 1건
+   [국내] 반복 소재어: ['자원']
    [해외] 'rPET' 6건
-   [해외] '"recycled PET"' 9건
+   [해외] '"recycled PET"' 10건
    [해외] '"chemical recycling"' 10건
-   [해외] '"plastic pyrolysis"' 실패: HTTPError
-   [해외] '"recycled content" plastic' 10건
-   [해외] '"plastics treaty"' 9건
+   [해외] '"plastic pyrolysis"' 2건
+   [해외] '"recycled content" plastic' 11건
+   [해외] '"plastics treaty"' 8건
    [해외] '"recycled polypropylene"' 6건
-   [해외] '"plastic recycling"' 17건
-   [해외] 'PPWR recycled' 실패: HTTPError
-   [해외] '"recycled plastic" prices' 실패: HTTPError
-   [해외 전문지] plasticsnews.com 25건
-   [해외 전문지] plasticstoday.com 실패: HTTPError
-   [해외 전문지] packaginginsights.com 15건
+   [해외] '"plastic recycling"' 16건
+   [해외] 'PPWR recycled' 6건
+   [해외] '"recycled plastic" prices' 11건
+   [해외 전문지] plasticsnews.com 29건
+   [해외 전문지] plasticstoday.com 22건
+   [해외 전문지] packaginginsights.com 17건
    [해외 전문지] resource-recycling.com 10건
-   [해외 전문지] recyclingtoday.com 19건
-   [해외 전문지] recyclinginternational.com 실패: HTTPError
+   [해외 전문지] recyclingtoday.com 26건
+   [해외 전문지] recyclinginternational.com 2건
    [해외 전문지] sustainableplastics.com 0건
-   [해외 전문지] euwid-recycling.com 8건
-   [해외 전문지] packagingeurope.com 18건
-   [해외 전문지] packaging-gateway.com 21건
+   [해외 전문지] euwid-recycling.com 7건
+   [해외 전문지] packagingeurope.com 19건
+   [해외 전문지] packaging-gateway.com 19건
    [해외 전문지] letsrecycle.com 14건
    [해외 전문지] icis.com 18건
-   [해외 RSS] Recycling Today 4건
-   [해외] 전문지 외 제외: Bioengineer.org, Business News Nigeria, Dealroom, Devdiscourse, ET Entrepreneur, Free Press Journal, Future Market Insights, KATU, KOMO, Mexico Business News, Multibagg AI, Packaging News, Phys.org, Post Courier, Punch Newspapers, Quiver Quantitative, The Economic Times, The Nation Newspaper, The Sun Nigeria, The Times of India, Tribune Online, Vanguard News
->> [plastic] 국내 77건 → 12건, 해외 219건 → 10건
+   [해외 RSS] Recycling Today 3건
+   [해외] 전문지 외 제외: Bioengineer.org, Business News Nigeria, Business Review, Circular Economy Hub, Dealroom, Devdiscourse, Free Press Journal, Future Market Insights, Ghana News Agency, Mexico Business News, Multibagg AI, Newswise, Packaging News, Packaging World, Perishable News, Phys.org, Plasticker, Post Courier, Quiver Quantitative, Recycling Product News, The Economic Times, The Nation Newspaper, The Times of India, Tribune Online, Vanguard News, WWMT
+>> [plastic] 국내 66건 → 12건, 해외 272건 → 10건
+   - [지데일리] 현수막의 두 번째 인생…재활용 기술로 여는 순환경제 시대 > 뉴스
    - [임팩트온] 아우디, 중고부품 판매·재생원료 확보 자회사 설립...EU 재생 플라스틱 25% 규제 대비
-   - [뉴스스페이스] [지구칼럼] 싸게 산 플라스틱, 비싼 건강 청구서…환경호르몬의 年 1.1조달러 '역습'
    - [임팩트온] 【규제트래커】 아사히카세이, 귀금속 재활용에 DPP 실증…던롭 타이어 유럽, EUDR 입고 점검 도입
-   - [경상일보] 울주 청소년, 자원순환 현장에서 진로 찾는다 ... ㈜원더플라스틱·울주군진로직업체험센터 업무협약
-   - [동아경제] 폐플라스틱의 재발견…석유화학산업 판이 바뀐다:동아경제신문 & daenews.co.kr
+   - [에너지프로슈머] "폐플라스틱 열분해유 자원순환 활성화"…국회서 정책토론회 개최
+   - [한국강사신문] 경상국립대학교 최명룡 교수팀, 폐페트병에서 화학원료 최대 91% 회수하는 레이저 촉매 개발
    - [연천뉴스] 페트병 1만 2천 개의 변신… 종량제봉투 800장 기증
+   - [한국경제] "85억 투자하더니 경영권까지?"…재활용업계 발칵 뒤집힌 이유
+   - [더팩트] SK케미칼, 서귀포시와 폐현수막 화학적 재활용 맞손
+   - [KBS 뉴스] 수백억 ‘플라스틱 열분해’…줄줄이 ‘포기’
    - [지이코노미] 대한민국 친환경패키징포럼 개최…“플라스틱 포장산업, 규제 넘어 재성장 기회로”
    - [오늘경제] 인천부평구새마을회, 폐플라스틱 활용 자원순환 교육 진행
-   - [IndexBox] EU, PET 수지·원료 수입 겨냥한 세이프가드 조사 개시 - 뉴스 및 통계
-   - [KBS 뉴스] 수백억 ‘플라스틱 열분해’…줄줄이 ‘포기’
-   - [창업일보] 영농부산물 파쇄·폐비닐 수거로 산불 막는다…농협 농촌지원부, 포천 농가서 일손돕기
-   - [진주신문] 경상국립대, 폐페트병 화학원료로 바꾸는 촉매 개발
+   - [뉴스로드] 산불 막는 ‘손길’…농협, 포천 농가 찾아 영농부산물 파쇄·폐비닐 수거
    - [Plastics News] People on the move in plastics circularity - winter 2026
    - [EUWID Recycling and Waste Management] End-of-waste rules for waste plastics endorsed by EU committee
    - [EUWID Recycling and Waste Management] Clean Planet Energy secures planning permit for UK pyrolysis plant
    - [Plastics News] Audi establishes subsidiary focused on automotive recycled plastics
    - [EUWID Recycling and Waste Management] PET bottle collection declines in the USA while recycled PET imports rise
    - [Packaging Insights] Sphera launches AI-powered tools to simplify EU PPWR compliance
-   - [Packaging Gateway] Polysmart gets FCMB backing for food-grade rPET facility in Nigeria
-   - [Resource Recycling] PureCycle, WM sign rare 3-year bales contract
+   - [Packaging Insights] Stoelzle restarts pharma glass production with 80% recycled content capacity
+   - [PlasticsToday] When a Recycled Resin Claim Reaches the Pet-Toy Shelf
    - [Packaging Europe] Keep your packaging PPWR-compliant with Smurfit Westrock
    - [Recycling Today] Reconomy opens plastics recycling plant in UK
-   [요약] 실패 HTTPError: 수백억 ‘플라스틱 열분해’…줄줄이 ‘포기’
-   [요약] 9/12건
+   [요약] 실패 URLError: "폐플라스틱 열분해유 자원순환 활성화"…국회서 정책토론회 개최
+   [요약] 10/12건
 >> data/news_plastic.json, history/news_plastic_20261119.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '바이오가스' 10건
-   [국내] '바이오메탄' 1건
-   [국내] '바이오가스 생산목표제' 7건
-   [국내] '유기성폐자원' 2건
-   [국내] '음식물류폐기물 바이오가스' 6건
+   [국내] '바이오가스' 8건
+   [국내] '바이오메탄' 0건
+   [국내] '바이오가스 생산목표제' 6건
+   [국내] '유기성폐자원' 3건
+   [국내] '음식물류폐기물 바이오가스' 2건
    [국내] '가축분뇨 바이오가스' 4건
    [국내] '혐기성소화' 2건
-   [국내] '하수슬러지 바이오가스' 0건
-   [국내] '바이오가스화시설' 0건
+   [국내] '하수슬러지 바이오가스' 1건
+   [국내] '바이오가스화시설' 5건
    [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 22건
-   [해외] 'biogas' 56건
-   [해외] '"renewable natural gas"' 9건
-   [해외] '"anaerobic digestion"' 9건
-   [해외] 'biomethane price' 6건
-   [해외] '"guarantees of origin" biomethane' 실패: HTTPError
+   [해외] 'biomethane' 24건
+   [해외] 'biogas' 53건
+   [해외] '"renewable natural gas"' 12건
+   [해외] '"anaerobic digestion"' 8건
+   [해외] 'biomethane price' 9건
+   [해외] '"guarantees of origin" biomethane' 0건
    [해외] 'biomethane grid injection' 0건
    [해외] 'RNG landfill gas' 9건
    [해외 전문지] bioenergy-news.com 14건
-   [해외 전문지] gasworld.com 22건
-   [해외 전문지] endswasteandbioenergy.com 1건
-   [해외 전문지] argusmedia.com 5건
-   [해외 전문지] qcintel.com 6건
-   [해외 전문지] biomassmagazine.com 7건
+   [해외 전문지] gasworld.com 18건
+   [해외 전문지] endswasteandbioenergy.com 2건
+   [해외 전문지] argusmedia.com 6건
+   [해외 전문지] qcintel.com 5건
+   [해외 전문지] biomassmagazine.com 10건
    [해외 전문지] europeanbiogas.eu 2건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
-   [해외 전문지] wastedive.com 6건
->> [biogas] 국내 32건 → 5건, 해외 174건 → 10건
+   [해외 전문지] wastedive.com 9건
+>> [biogas] 국내 31건 → 4건, 해외 181건 → 10건
+   - [가스신문] 청주시, 바이오가스 기반 통합바이오가스화 시설 구축 늘려
+   - [복지TV부울경방송] 박상준 부산 강서구청장, 김해시 방문해 지역현안 건의…바이오가스화시설 전면 백지화 촉구
    - [이투데이] 웰크론한텍, 바이오가스 민간 의무화 수혜 정조준…고농도 폐수처리 공략
    - [토큰포스트] 16억달러 투입…릴라이언스, 2030년까지 바이오가스 공장 100곳
-   - [동아일보] 음식물 처리장서 가스·전력·열 생산… 6개 기관 바이오가스 협의회 출범
-   - [한경매거진] 에코바이오솔루션 등 6개 기관 '탄소중립 바이오가스 에너지 협의회' 협약 체결
-   - [한국경제] 폴라리스바이오, 말레이시아 팜유 폐수 활용 바이오메탄 사업 추진
-   - [Traders Union] AEMETIS adds two new dairy digesters in biogas project expansion
+   - [The Times of India] Udupi Mutt set to turn 750 kg daily food waste into biogas
+   - [Lokmat Times] Biogas Profitability Hinges on Efficiency, Not Price Support: EY-CII Report
+   - [Biomass Magazine] Mixing plant material with manure may be key to profitable biogas production
    - [Biomass Magazine] Declaration puts biogas and biomethane on global climate agenda at COP31
    - [Canadian Biomass Magazine] Canadian Biogas Association Launches Canadian Biogas Outlook Dashboard
-   - [NewsBytes] Reliance to invest ₹15,000cr in 100 biogas plants by 2030
-   - [Bioengineer.org] CFD Model Finds Nozzle Mixing Most Efficient for Industrial Anaerobic Digestion
+   - [marketscreener.com] India's Reliance plans to invest about $1.6 billion to build new biogas plants
    - [European Biogas Association] Biogases Business Days 2027
-   - [Bioenergy Insight Magazine] European Parliament delegation visits Future Biogas’s Moor Bioenergy site
    - [Bioenergy Insight Magazine] Ammongas opens registration for biogas upgrading and CO₂ recovery training
-   - [BioEnergy Times] Gothenburg Port biogas liquefaction plant reaches milestone with storage tank installation
+   - [Bioenergy Insight Magazine] European Parliament delegation visits Future Biogas’s Moor Bioenergy site
    - [ANTARA News] Trusted by German Company, Waskita Beton Precast Produces Wall Panels for Biogas Infrastructure in Dumai
-   [요약] 4/5건
+   [요약] 3/4건
 >> data/news_biogas.json, history/news_biogas_20261119.json 저장
