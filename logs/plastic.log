@@ -6,7 +6,6 @@
 >> [재생원료 API] 202609 수도권: code=200 NORMAL SERVICE. 21건
 >> [재생원료 API] 202609 전국: code=200 NORMAL SERVICE. 0건
 >> [재생원료 API] 202608 수도권: code=200 NORMAL SERVICE. 21건
-   [재시도 1/2] URLError: <urlopen error _ssl.c:1001: The handshake operation timed out>
 >> [재생원료 API] 202608 전국: code=200 NORMAL SERVICE. 0건
 >> [재생원료 API] 월: ['2026-08', '2026-09', '2026-10'], 품목 예: ['폐지신문지', '폐지골판지', '압축PE', '압축PP', '압축PET', '플레이크PE', '플레이크PP', '플레이크PVC']
 >> [재생원료] 공공데이터포털 API에서 수집: 월 ['2026-08', '2026-09', '2026-10'] (총 3개월)
