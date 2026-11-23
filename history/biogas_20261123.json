@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 17:04",
+ "updated": "2026-11-23 20:06",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -184,10 +184,10 @@
    "name": "EU 배출권(EUA)",
    "item": "실물 EUA ETC",
    "unit": "€/톤",
-   "date": "2026-11-20",
-   "value": 77.44,
-   "prev_date": "2026-11-19",
-   "prev_value": 78.39,
+   "date": "2026-11-23",
+   "value": 78.41,
+   "prev_date": "2026-11-20",
+   "prev_value": 77.44,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
     82.27,
@@ -210,9 +210,10 @@
     83.13,
     76.25,
     78.39,
-    77.44
+    77.44,
+    78.41
    ],
-   "krw_t": 113995
+   "krw_t": 115423
   }
  },
  "extra": {
