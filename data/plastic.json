@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23 20:05",
+ "updated": "2026-11-24 01:23",
  "items": {
   "r_comp_pet": {
    "name": "압축 PET",
@@ -486,16 +486,16 @@
     575.0
    ],
    "src": "letsrecycle.com",
-   "krw_kg": 1010.8,
-   "fx_used": 1757.97
+   "krw_kg": 1014.0,
+   "fx_used": 1763.42
   },
   "fx_gbp": {
    "name": "원/파운드",
    "unit": "원",
-   "date": "2026-11-20",
-   "value": 1757.97,
-   "prev_date": "2026-11-19",
-   "prev_value": 1747.08,
+   "date": "2026-11-23",
+   "value": 1763.42,
+   "prev_date": "2026-11-20",
+   "prev_value": 1757.97,
    "src": "ECB 기준환율"
   },
   "ref_bvse": {
