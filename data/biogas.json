@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 01:15",
+ "updated": "2026-11-25 04:41",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -186,7 +186,7 @@
    "item": "실물 EUA ETC",
    "unit": "€/톤",
    "date": "2026-11-24",
-   "value": 79.42,
+   "value": 79.03,
    "prev_date": "2026-11-23",
    "prev_value": 79.86,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
@@ -212,9 +212,9 @@
     78.39,
     77.44,
     79.86,
-    79.42
+    79.03
    ],
-   "krw_t": 117064
+   "krw_t": 116489
   }
  },
  "extra": {
