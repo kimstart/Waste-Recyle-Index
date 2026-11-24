@@ -1,1 +1,19 @@
->> 오늘 이미 확인함(2026-11-23 11:25) → 하루 한 번만 조회
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-10-10~2026-11-24: 143건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 34건
+>> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
+>> [세대수] 새로 조회 2건, 누적 741개 단지
+>> 저장: 1559건 · 상태 {'신규공고': 24, '취소': 389, '재공고': 2, '유찰': 422, '낙찰': 696, '입찰마감': 6, '낙찰무효': 20} · 시스템 {'K-APT': 1047, '아파트장터 A2P': 38, 'KG2B전자입찰': 463, '한국환경공단': 7, '아파트비드포유': 4} · 상세 0건 읽음 · 1년 채우기 완료
+   2026-11-16 가평군   | K-APT | 힐스테이트 가평더뉴클래스 | 재활용품 수거 용역업체 선정 입찰공고 | 낙찰 2,280,000
+   2026-11-13 화성시   | K-APT | 진안동 월드메르디앙 1,2 | 재활용 수거업체 선정 공고 | 낙찰 10,725,600
+   2026-11-11 화성시   | K-APT | 송산그린시티 금강펜테리움센 | [긴급] 재활용품 매각 사업자선정 입찰공고 | 낙찰 14,598,432
+   2026-11-10 경기    | KG2B전자입찰 | 역북서희스타힐스프라임시티 | 폐기물관리법에 따른 재활용 가능자원 처리업체 선정공고 | 낙찰 8,755,200
+   2026-11-10 경기    | KG2B전자입찰 | 지제역반도체밸리쌍용더플래티 | 재활용(폐기물) 처리업체 선정 입찰 공고 | 낙찰 9,648,000
+   2026-11-06 서울    | KG2B전자입찰 | 가산두산위브 | 재활용품 수거업체 선정 입찰공고 | 낙찰 31,395,000
+   2026-11-06 평택시   | K-APT | e편한세상평택라씨엘로 | 재활용품 수거용역 업체선정 입찰공고 | 낙찰 42,426,456
+   2026-11-05 양주시   | K-APT | 디에트르 프레스티지 아파트 | 재활용수거 용역업체 선정 입찰 공고 | 낙찰 50,750,700
+   2026-11-04 고양시   | K-APT | 고양지축LH4단지 | 재활용품 수거업체선정 입찰_공고 | 낙찰 15,665,760
+   2026-11-03 양주시   | K-APT | 양주옥정더원파크빌리지 | 재활용품 수거업체 선정 | 낙찰 49,438,800
