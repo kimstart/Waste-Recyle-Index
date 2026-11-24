@@ -1,13 +1,52 @@
 {
- "updated": "2026-11-24 03:30",
+ "updated": "2026-11-24 15:10",
  "domestic": [
   {
-   "title": "새만금에 335억 원 투자…폐플라스틱 재활용 산업 거점 조성 본격화!",
-   "source": "전북소비자저널",
-   "link": "https://www.jbcj.kr/news/articleView.html?idxno=78729",
-   "pub": "2026-11-23 19:50",
+   "title": "[2027 예산] 열분해유 산업, 정부 직접투자 축소 속 민간 투자 확대",
+   "source": "데일리한국",
+   "link": "https://daily.hankooki.com/news/articleView.html?idxno=1428414",
+   "pub": "2026-11-24 14:41",
    "more": 0,
-   "summary": "㈜투그린피오텍, 새만금 국가산단에 열분해유 제조시설 건립…2027년 상반기 착공 이번 협약에 따라 ㈜투그린피오텍은 새만금 국가산업단지 내 약 5,000평(16,573㎡) 규모의 부지에 총 335억 원을 투자해 폐플라스틱 열분해유 제조시설을 건립하고, 약 60명의 신규 인력을 채용할 계획이다. 시설은 새만금 국가산업단지 6공구에 들어서며, 2027년 상반기 착공을 목표로 하고 있다."
+   "summary": "기후에너지환경부가 추진해 온 국내 폐플라스틱 열분해유 산업 생태계 조성 사업이 가시적인 성과를 거두고 있는 것으로 나타났다. 투그린피오텍은 내년 상반기 전북 새만금 국가산업단지 6공구에 총 335억원 규모의 열분해유 제조시설을 건립하기로 투자협약을 체결했다. 이후 2023년에는 18억원으로 증액됐으나 실제 집행률이 기대에 못 미쳐 2024년에는 9억9300만원으로 줄었다."
+  },
+  {
+   "title": "EU, 非OECD국 폐플라스틱 수출 전면금지…2029년 5월까지",
+   "source": "뉴스;트리",
+   "link": "https://www.newstree.kr/newsView/ntr202611240012",
+   "pub": "2026-11-24 12:53",
+   "more": 0
+  },
+  {
+   "title": "[단독] \"폐플라스틱을 고부가 방향족 화합물로 전환\"…톈진대, 中서 특허 출원",
+   "source": "비즈월드",
+   "link": "https://www.bizwnews.com/news/articleView.html?idxno=152837",
+   "pub": "2026-11-24 10:56",
+   "more": 0,
+   "summary": "폐플라스틱을 고부가가치 화학산업 원료인 방향족 화합물로 전환하는 기술이 개발됐다. 이번 연구와 관련해 톈진대학교는 중국에서 특허를 출원(출원 번호 CN202611377588.1)했다. 발명자는 진룽 궁, 쉬안취안 쉬, 둥룽 푸, 관칭 펑, 차오제 궈 등 5명이며 특허 출원서에 기재된 공동 연구진은 14명으로 나타났다."
+  },
+  {
+   "title": "태안 폐비닐 ㎏당 최대 170원…농약병은 무상수거",
+   "source": "투데이충남",
+   "link": "https://www.todaychungnam.net/news/articleView.html?idxno=481200",
+   "pub": "2026-11-24 09:51",
+   "more": 1,
+   "summary": "태안군이 오는 12월 2일까지 8개 읍·면에서 올해 마지막 ‘숨은자원 찾기’를 진행한다. 남은 일정은 11월 24일 고남·남면, 30일 근흥면, 12월 1일 원북·이원면, 2일 안면읍·소원면이다. 재활용품 장려금은 1㎏ 기준 플라스틱 450원, 철류 160원, 철캔 140원, 의류 130원, 비료포대 120원, 폐지 80원, 병류 50원이다."
+  },
+  {
+   "title": "농약병부터 폐비닐까지 10톤 수거… 소천면이 만든 환경 반전",
+   "source": "www.reporternside.com",
+   "link": "https://www.reporternside.com/news/articleView.html?idxno=438061",
+   "pub": "2026-11-24 09:22",
+   "more": 0,
+   "summary": "- 숨은자원모으기 행사 성료, 재활용 수익금은 이웃돕기에 사용 소천면 새마을협의회는 지난 23일 지역 전역에서 ‘숨은자원모으기’ 행사를 개최하고 약 10톤 규모의 재활용 가능 자원을 수거했다. 행사에는 새마을지도자협의회와 부녀회원 등 40여 명이 참여해 농약 빈병과 영농폐비닐, 고철, 폐지, 빈 병 등 방치된 자원을 집중 수거했다."
+  },
+  {
+   "title": "전남대-㈜광양환경 폐플라스틱 열분해 기술 국산화/상용화 맞손",
+   "source": "베리타스알파",
+   "link": "https://www.veritas-a.com/news/articleView.html?idxno=638849",
+   "pub": "2026-11-24 09:13",
+   "more": 3,
+   "summary": "전남대 스마트플랜트신뢰성핵심연구지원센터와 ㈜광양환경이 폐플라스틱 처리 문제를 근본적으로 해결하기 위한 ‘한국형 폐플라스틱 열분해설비 개발 산학공동연구 업무협약’을 체결했다. 양 기관은 10일 열린 협약식을 통해 △폐플라스틱 열분해설비의 한국형 표준 모델 공동 개발 △파일럿 플랜트 구축/실증 연구 △연구인력/기술 교류 △산학연계 인력 양성 등에 힘을 모으기로 했다. 서울시교육청 2027정시 설명회 내달 12일.."
   },
   {
    "title": "2035년 골판지 베일러 시장 전망: 전자상거래 폐기물과 재활용 규제가 수요 견인 - 뉴스 및 통계",
@@ -15,6 +54,22 @@
    "link": "https://www.indexbox.io/ko/blog/cardboard-balers-market-forecast-to-2035-driven-by-e-commerce-packaging-waste-and-recycling-mandates/",
    "pub": "2026-11-23 19:41",
    "more": 0
+  },
+  {
+   "title": "동대문구 '배리어프리' 투명페트병 무인회수기 첫 도입",
+   "source": "서울동북신문",
+   "link": "https://www.dongbuknews.com/news/articleView.html?idxno=7493",
+   "pub": "2026-11-23 17:44",
+   "more": 3,
+   "summary": "동대문구는 자원 재활용을 활성화하고 올바른 분리배출 문화를 확산하기 위해 배리어프리 투명페트병 무인회수기 4대를 설치하고 23일부터 운영한다고 밝혔다. 사업에는 서울시 자치구 감량·재활용 실적 평가에서 우수구로 선정돼 받은 인센티브 1억원이 투입됐다. 병 1개당 10포인트가 쌓이며 2000포인트 이상 모으면 전용 앱 수퍼빈 을 통해 현금으로 환전할 수 있다."
+  },
+  {
+   "title": "새만금에 폐플라스틱 재활용 공장 들어선다...335억원 투자",
+   "source": "전라일보",
+   "link": "https://www.jeollailbo.com/news/articleView.html?idxno=817605",
+   "pub": "2026-11-23 16:39",
+   "more": 3,
+   "summary": "새만금 국가산업단지에 폐플라스틱을 재활용해 석유화학 원료를 생산하는 제조시설이 들어선다. 이번 협약에 따라 ㈜투그린피오텍은 새만금 국가산단 내 약 5000평(16,573㎡) 부지에 총 335억원을 투입해 열분해유 제조시설을 건립하고, 약 60명의 신규 인력을 고용할 계획이다. 열분해유를 포함한 플라스틱 화학적 재활용 시장은 2030년까지 연평균 16~17%대의 고성장이 전망되고 있다."
   },
   {
    "title": "폐비닐을 다시 플라스틱 원료로… 어기구 의원, 열분해유 해법 모색",
@@ -25,66 +80,23 @@
    "summary": "버려지는 폐비닐 등을 열분해해 새 플라스틱 원료로 되살리는 '폐플라스틱 열분해유' 산업의 도약 방안을 모색하는 자리가 국회에서 열렸다. 국내 폐플라스틱 화학적 재활용량은 2023년 6만 7천 톤에서 2025년 12만 7천 톤으로 빠르게 늘었으나, 높은 처리비용과 품질 문제, 재생원료 수요 부족 등이 맞물리며 시장 확산에 제동이 걸린 상황이다."
   },
   {
-   "title": "새만금 산단에 폐플라스틱 재생원료 공장 들어선다",
-   "source": "전북타임즈",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9VLXNDTXJJcE1WaGFpbTcwOXVDaGp5Z0t0aEZwd04xTThQV2pRRWJ0WDJFTVV6UnNNZjZ0M1NRR0JMdmxNU0NzTzExTW90TEI5RmtoWGFPUVdaaXFtM1VmekE2Z1NrQQ?oc=5",
-   "pub": "2026-11-23 14:36",
-   "more": 0
+   "title": "투그린피오텍, 새만금에 폐플라스틱 활용 재생 석유화학 원료 공장 건립",
+   "source": "투데이 군산",
+   "link": "https://www.todaygunsan.co.kr/news/articleView.html?idxno=24436",
+   "pub": "2026-11-23 13:39",
+   "more": 9,
+   "summary": "새만금 국가산단에 폐플라스틱을 재활용해 석유화학 원료를 생산하는 시설이 들어선다. 투그린피오텍은 새만금 국가산업단지 6공구 내 1만6,573㎡(약 5,000평) 부지에 335억원을 투자해 열분해유 제조시설을 건립할 예정이다. 환경부는 2021년 발표한 폐플라스틱 열분해 활성화 방안을 통해 2030년까지 폐플라스틱 열분해 처리 비중을 10%로 높이는 목표를 제시했다."
   },
   {
-   "title": "2035년 플라스틱 산화방지제 시장 전망: 폴리올레핀 포장재·자동차 경량화가 성장 견인 - 뉴스 및 통계",
-   "source": "IndexBox",
-   "link": "https://www.indexbox.io/ko/blog/plastic-antioxidants-market-forecast-to-2035-demand-to-accelerate-on-polyolefin-packaging-and-automotive-lightweighting/",
-   "pub": "2026-11-23 14:31",
-   "more": 0
-  },
-  {
-   "title": "투그린피오텍, 새만금에 335억 원 투자…열분해유 공장 건립",
-   "source": "MTN 머니투데이방송",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zNzZTdXEzcHpnWl8zTnlyRTZ3TWxZbkx5cFUxektoMmFhV1l3MS1rLU84WFV1WEJRa0xtU08tUGNhWGJOZk5IRFN1MHZieFNlb0Z6bHpyd1lLbWJocUtB?oc=5",
-   "pub": "2026-11-23 13:53",
-   "more": 13
-  },
-  {
-   "title": "폐플라스틱서 수소 뽑아낸 이대…동국대엔 ‘상위 1%’ 연구팀 [2026 대학평가·학문분야평가]",
-   "source": "중앙일보",
-   "link": "https://www.joongang.co.kr/article/25480925",
-   "pub": "2026-11-23 05:00",
-   "more": 0,
-   "summary": "노준석 POSTECH 기계공학과 교수 연구팀이 메타렌즈 효율을 측정하는 실험을 하고 있다. 노준석 POSTECH 기계공학과 교수와 삼성전자 삼성리서치는 안경 렌즈에 화면을 띄우는 장치의 두께를 기존의 약 3분의 1인 1.5㎜로 줄였다. POSTECH은 기계·항공·교통 분야에서 산학협력 논문 지표 1위에 올랐다."
-  },
-  {
-   "title": "단국대 이용걸 교수 연구팀, 난분해성 폐플라스틱 분해 속도 3배 높이는 기술 개발",
-   "source": "단국대학교",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5pcXZVTllkeGNSN3VTREw0Y3ROWHNyN0pLWFViTkpIYUh4R2QzUGh3dG83MThNV0doeGV0bUxXbVJwWmNYakwyNTU5ZnBKQlhhZVl1QnFqN3ZPR2Vfak16S011QzJXczZyOVllWEg1cw?oc=5",
-   "pub": "2026-11-23 00:00",
-   "more": 20
-  },
-  {
-   "title": "[매일시론] 산업도시 울산, 폐플라스틱 순환과 기업 경쟁력",
-   "source": "울산매일 - 울산최초, 최고의 조간신문",
-   "link": "https://www.iusm.co.kr/news/articleView.html?idxno=1070880",
-   "pub": "2026-11-22 18:35",
-   "more": 0,
-   "summary": "문제는 플라스틱 원료 대부분이 석유에서 유래한 나프타에 의존하고, 사용 후에는 상당량이 폐기물로 배출된다는 데 있다. 일회용 음료병은 30%이며, 그 밖의 플라스틱 포장재도 용도와 재질에 따라 10%, 30%, 35%로 기준이 나뉜다. 기후에너지환경부는 2030년 폐플라스틱 발생 전망치를 기준으로 나프타 기반 신재 사용을 30% 이상 줄이겠다는 목표를 제시했다."
-  },
-  {
-   "title": "광양시, 투명페트병 무인회수기 3곳 추가 설치",
-   "source": "광양경제신문",
-   "link": "https://www.genews.co.kr/news/articleView.html?idxno=501517",
-   "pub": "2026-11-22 17:30",
-   "more": 3,
-   "summary": "마동체육공원·광영 상광공원·태인동사무소에 설치…11월 말부터 운영 페트병 1개당 10포인트 적립…시민 참여형 자원순환 활성화 기대 광양시가 투명페트병의 재활용률을 높이고 시민들의 분리배출 참여를 확대하기 위해 무인회수기 3대를 추가 설치하고 11월 말부터 운영에 들어간다."
+   "title": "단국대 이용걸 교수팀, 난분해성 폐플라스틱 분해 속도 3배 높였다",
+   "source": "충청뉴스",
+   "link": "https://www.ccnnews.co.kr/news/articleView.html?idxno=418194",
+   "pub": "2026-11-23 10:40",
+   "more": 15,
+   "summary": "기계적 압출·이중 크기 촉매 결합…300℃ 저온서 분해·액상 탄화수소 수율 향상 이는 마이크로 촉매 단독 사용 시보다 약 3배, 나노 촉매 단독 사용 시보다 약 66% 향상된 수치다. 또한 약 300℃의 비교적 낮은 온도에서도 분해가 활발히 일어났으며, 나프타·휘발유·경유 등으로 쓸 수 있는 액상 탄화수소 생산량도 늘어 연료 및 화학 원료로의 재활용 가능성을 입증했다."
   }
  ],
  "overseas": [
-  {
-   "title": "RES expands plastics recovery with Pellenc ST sorting technology",
-   "source": "letsrecycle.com",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYW1xZm9tZ1ZKT24wMXE0Ry1JalgzZ0NvSEFSdlNveFIzS2dRbVBOTnhVYVlNZG5XT2VBVjhXSTloOGwzY0k1Q25VZVc1cG02Q3hOSE1qajY0clVsVGdnbDJjUFZFY3JkRWxVZ2tTYXFEQW1aRnlHVlUwZ1VDWEtVV3ZmdUtLR2ZYLWdlMVN1aW5aME9sUGdyTVJBR0VuWkU?oc=5",
-   "pub": "2026-11-24 00:07",
-   "more": 0
-  },
   {
    "title": "Westlake agrees to pay another $199M in PVC pipe price-fixing case",
    "source": "Plastics News",
@@ -97,13 +109,6 @@
    "source": "Plastics News",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkdrZFYtR2hqOUZKbGVkbVBWUk04dDFURGFWU2NvTnhUZFJTa1k5QjFZc1NzZGRLamlPMkxOT3YzLTViQ3ZRWGhCdEVqTEZHVHRuaGI0NVgxN3RDZDVtRVNKYW1zLUNPVkpXeG52Vm05S3ZvZWxNQ2tDYzMtaGdnVHJLRzlEdmhic1hVaHdZeFVWS3dVWEFHcjhoaw?oc=5",
    "pub": "2026-11-23 22:56",
-   "more": 0
-  },
-  {
-   "title": "GPCA’ 26: Recycling turns profitable on Asia mandates, PET tightness – Indorama CEO",
-   "source": "ICIS",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMWNXV1hOdWszeVA1TkRsZXhCc0VUNFZ0LTdFeWVZRUpyN1BORDFtYVZTN2ZOSGZ2UFhQZ1lnbDRKU2VWeTRxaHpNTlFOajl4TUMyeDJJb0w0VXR3UmJ2bUd4QnowSUxjNFl6SlRDUzZValZHcEVjMjdWYUFhRWh4VkFiOU1lZG1BeFNGcWljRUM3NDEya0VxVnVIZFFkVHI1ZzQtRjFRNWQ1dG40a3g0dG53SS1hcU9pVWhEOVBjbGtOTG85QlVsN2RUcTE2dDNqVHlqakh3dUhnZw?oc=5",
-   "pub": "2026-11-23 22:49",
    "more": 0
   },
   {
@@ -121,17 +126,10 @@
    "more": 1
   },
   {
-   "title": "Recyclers work to boost PP PCR supply for food packaging",
-   "source": "Packaging Dive",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeVNNaG9kTmdZYzZmTmFlNFk5Nm9HSWhnZ0hiSU5iY2dESXk1VjJ1UngxS1ZwVllKcU5jR1JzLXdpVjM4ODNyVWlIbG5SdUJIWjBWLVhmajFkTzJ5MUVaTFBZb255bk9PX0NFUFEyNWhfOUgtN2p0NGc2VXBncURVTC1fNmNBQ3ZDTVNVSlhfR0ZrR0xU?oc=5",
-   "pub": "2026-11-21 07:17",
-   "more": 1
-  },
-  {
-   "title": "Washington fines producers $246K for recycled content shortfalls",
-   "source": "Resource Recycling",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdzhNdmhLOU9qWXQ4SmhRRHE2VGJiTGVYbDlzbHNSa3NpZW5pdGdSbERYSzl1eHhvYlQ5cE55WUp2OG9MWHdvXzJLTS1wSFA5d1VQcEtXQXZud3BRMnRNSUNYN2pPXzhFTHJRV3FiSUpoV3ZING1yZFZZbW1XeTFCMWtMWlE4RXZIRmNSX1haMDR0bTlINWVFdHBGdDduc2diV2d1THdGVlVkQ2FJX1ExdjB5WV83eExK?oc=5",
-   "pub": "2026-11-21 05:25",
+   "title": "Europe’s plastic recycling facility closures threaten progress on recyclable packaging",
+   "source": "Packaging Gateway",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNX2RqeWowWVVOMDlHMXZMbF9uMXFaV240STFpQ2lpSFBEVG0yckJEOVJNd3Y1ckduN0lIRVM1bEhBelZYV3FIY0VlNDd1cVhfMlp0bHo3MXpoQjVNbmw4cHJwMmE0cVZzbE9KSWJNN2ZhUVBSSC1INU4tQUZ5b3RsRUUyXzdzUkRrNU1kTTRVVEJMWU5rUTNoTWJTRk40UjQyMnNFRUhoZWhQLWtXWXNvRlIyaHExcG1GbnZ4aTllSGtoaldOSmcwMw?oc=5",
+   "pub": "2026-11-23 11:08",
    "more": 1
   }
  ]
