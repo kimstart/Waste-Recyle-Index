@@ -1,107 +1,110 @@
 >> [plastic] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '폐플라스틱' 11건
-   [국내] '재생원료 플라스틱' 13건
-   [국내] '재생플라스틱' 9건
-   [국내] '플라스틱 재활용' 12건
-   [국내] '페트 재활용' 2건
+   [국내] '폐플라스틱' 10건
+   [국내] '재생원료 플라스틱' 15건
+   [국내] '재생플라스틱' 21건
+   [국내] '플라스틱 재활용' 19건
+   [국내] '페트 재활용' 4건
    [국내] '열분해유' 1건
    [국내] '화학적 재활용' 0건
-   [국내] '폐비닐' 9건
-   [국내] '재생원료 사용 의무' 14건
-   [국내] '플라스틱 협약' 3건
-   [국내] '순환경제 플라스틱' 7건
+   [국내] '폐비닐' 7건
+   [국내] '재생원료 사용 의무' 실패: HTTPError
+   [국내] '플라스틱 협약' 4건
+   [국내] '순환경제 플라스틱' 12건
    [국내] '재활용 선별장' 0건
-   [국내] 반복 소재어: ['EU', '확대']
-   [해외] 'rPET' 3건
+   [국내] 반복 소재어: ['EU', '페루', '확대']
+   [해외] 'rPET' 2건
    [해외] '"recycled PET"' 8건
-   [해외] '"chemical recycling"' 9건
+   [해외] '"chemical recycling"' 8건
    [해외] '"plastic pyrolysis"' 0건
    [해외] '"recycled content" plastic' 5건
    [해외] '"plastics treaty"' 10건
-   [해외] '"recycled polypropylene"' 9건
-   [해외] '"plastic recycling"' 18건
-   [해외] 'PPWR recycled' 13건
-   [해외] '"recycled plastic" prices' 20건
-   [해외 전문지] plasticsnews.com 23건
-   [해외 전문지] plasticstoday.com 16건
-   [해외 전문지] packaginginsights.com 10건
+   [해외] '"recycled polypropylene"' 10건
+   [해외] '"plastic recycling"' 16건
+   [해외] 'PPWR recycled' 12건
+   [해외] '"recycled plastic" prices' 18건
+   [해외 전문지] plasticsnews.com 32건
+   [해외 전문지] plasticstoday.com 21건
+   [해외 전문지] packaginginsights.com 14건
    [해외 전문지] resource-recycling.com 15건
-   [해외 전문지] recyclingtoday.com 7건
+   [해외 전문지] recyclingtoday.com 9건
    [해외 전문지] recyclinginternational.com 8건
    [해외 전문지] sustainableplastics.com 0건
    [해외 전문지] euwid-recycling.com 6건
-   [해외 전문지] packagingeurope.com 18건
-   [해외 전문지] packaging-gateway.com 20건
-   [해외 전문지] letsrecycle.com 11건
-   [해외 전문지] icis.com 22건
+   [해외 전문지] packagingeurope.com 24건
+   [해외 전문지] packaging-gateway.com 21건
+   [해외 전문지] letsrecycle.com 18건
+   [해외 전문지] icis.com 21건
    [해외 RSS] Recycling Today 3건
-   [해외] 전문지 외 제외: 90.5 WESA, All-About-Industries, Bioengineer.org, Britannica, DD News, Herald.Wales, Packaging World, People Daily, Plastech, Quantisnow, The Business Journals, The Eastleigh Voice, The Financial Express, USA Today, 헤럴드경제
->> [plastic] 국내 81건 → 12건, 해외 254건 → 5건
-   - [아시아뉴스통신] 경기도, 도시숲·농촌폐비닐 지원 줄인다…안계명 의원 “환경 격차 커질 우려”
-   - [www.newszoom.kr] 안성시 원곡면 새마을회, 농촌 폐비닐 수거로 깨끗한 마을 만들기 앞장
+   [해외] 전문지 외 제외: 90.5 WESA, All-About-Industries, BigMint, Bioengineer.org, Herald.Wales, Packaging World, People Daily, Quantisnow, Sarasota Herald-Tribune, TU Delft, The Business Journals, The Eastleigh Voice, The Oklahoman, The Washington Post, USA Today
+>> [plastic] 국내 93건 → 12건, 해외 281건 → 9건
+   - [경향신문] 대형마트 포장재 ‘플라스틱 OUT’ 공염불
+   - [동아일보] 폐PET를 자동차·항공기 소재로…PET로 해결한 복합소재 한계
+   - [에너지데일리] 한국환경공단, 페루 순환경제 전환 지원…국내 재활용기업 중남미 진출 교두보
+   - [헤럴드경제] 페루와 생산자책임재활용제도(EPR) 확대·순환경제 전환을 위한 협력방안 논의
+   - [뉴스줌] 안성시 원곡면 새마을회, 농촌 폐비닐 수거로 깨끗한 마을 만들기 앞장
+   - [데일리비즈온] [D-BIZ 지역뉴스] 구로구 가리봉동 ‘재활용정거장’ 설치…시범운영 시작
    - [플래텀(Platum)] 부울경 초기 스타트업 15곳, 1박 2일 투자 캠프서 투자확약 3건… 대상은 재활용 PET 복합재 기업
    - [투데이에너지] 韓 폐플라스틱·폐섬유 재활용 기술, 중국 시장 공략 나선다
-   - [스포츠조선] 이마트, 폐플라스틱 업사이클링 벤치 제작...자원순환 문화 확산
    - [뉴스1] EU 수출기업 10곳 중 4곳 "재생원료 사용 의무화 규제 확대 내용 몰라"
    - [헤럴드경제] 유럽 ‘재생원료 규제’ 코 앞인데…韓 기업들 과반 ‘무방비’
    - [이투데이] EU 재생원료 규제 확대에도…수출기업 절반 이상 “대응계획 없어”
-   - [헤럴드경제 미주판] 구로구, 가리봉동에 재활용정거장 설치…분리배출 편의 높인다
-   - [투데이충남] 태안 폐비닐 ㎏당 최대 170원…농약병은 무상수거
-   - [베리타스알파] 전남대-㈜광양환경 폐플라스틱 열분해 기술 국산화/상용화 맞손
-   - [IndexBox] 퇴비화 플라스틱 시장 2035년 전망: 규제 금지와 브랜드 공약이 성장 견인 - 뉴스 및 통계
+   - [제주일보] 다회용기 627만개 썼더니…플라스틱 96톤 줄고 온실가스 185톤 감축
+   - [PlasticsToday] US Recycled Plastics Markets Show Mixed Signals
+   - [PlasticsToday] All Reflex Cushioning Plants Now Run on Recycled Resin
+   - [Packaging Europe] ICIS warns high-quality recycled polyolefin supply could fall short of PPWR targets
+   - [Bloomberg Tax] Plastic Recycling Fees Pose Legal Test for Private Taxing Powers
+   - [letsrecycle.com] RES expands plastics recovery with Pellenc ST sorting technology
    - [Plastics News] Westlake agrees to pay another $199M in PVC pipe price-fixing case
    - [Plastics News] Recycled HDPE prices face more pressure as demand stays weak
    - [letsrecycle.com] EU plastic waste export restrictions come into effect
    - [Packaging Europe] Packaging Materials and PPWR
-   - [Packaging Gateway] Europe’s plastic recycling facility closures threaten progress on recyclable packaging
    [요약] 실패 URLError: 안성시 원곡면 새마을회, 농촌 폐비닐 수거로 깨끗한 마을 만들기 앞장
    [요약] 실패 HTTPError: EU 수출기업 10곳 중 4곳 "재생원료 사용 의무화 규제 확대 내용 몰
    [요약] 9/12건
->> data/news_plastic.json, history/news_plastic_20261125.json 저장
+>> data/news_plastic.json, history/news_plastic_20261126.json 저장
 >> [biogas] 수집 범위 국내 36시간 / 해외 72시간
-   [국내] '바이오가스' 25건
+   [국내] '바이오가스' 10건
    [국내] '바이오메탄' 0건
-   [국내] '바이오가스 생산목표제' 23건
-   [국내] '유기성폐자원' 7건
-   [국내] '음식물류폐기물 바이오가스' 3건
-   [국내] '가축분뇨 바이오가스' 6건
+   [국내] '바이오가스 생산목표제' 7건
+   [국내] '유기성폐자원' 3건
+   [국내] '음식물류폐기물 바이오가스' 2건
+   [국내] '가축분뇨 바이오가스' 2건
    [국내] '혐기성소화' 0건
-   [국내] '하수슬러지 바이오가스' 1건
-   [국내] '바이오가스화시설' 6건
-   [국내] '음식물쓰레기 처리' 1건
+   [국내] '하수슬러지 바이오가스' 0건
+   [국내] '바이오가스화시설' 7건
+   [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 22건
-   [해외] 'biogas' 46건
-   [해외] '"renewable natural gas"' 10건
-   [해외] '"anaerobic digestion"' 10건
-   [해외] 'biomethane price' 8건
+   [해외] 'biomethane' 37건
+   [해외] 'biogas' 59건
+   [해외] '"renewable natural gas"' 9건
+   [해외] '"anaerobic digestion"' 13건
+   [해외] 'biomethane price' 9건
    [해외] '"guarantees of origin" biomethane' 0건
    [해외] 'biomethane grid injection' 4건
    [해외] 'RNG landfill gas' 9건
-   [해외 전문지] bioenergy-news.com 9건
-   [해외 전문지] gasworld.com 18건
+   [해외 전문지] bioenergy-news.com 12건
+   [해외 전문지] gasworld.com 29건
    [해외 전문지] endswasteandbioenergy.com 1건
-   [해외 전문지] argusmedia.com 1건
-   [해외 전문지] qcintel.com 8건
-   [해외 전문지] biomassmagazine.com 13건
+   [해외 전문지] argusmedia.com 4건
+   [해외 전문지] qcintel.com 7건
+   [해외 전문지] biomassmagazine.com 12건
    [해외 전문지] europeanbiogas.eu 0건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
    [해외 전문지] wastedive.com 5건
->> [biogas] 국내 72건 → 3건, 해외 164건 → 10건
+>> [biogas] 국내 31건 → 2건, 해외 210건 → 10건
    - [쿠키뉴스] 경북도, ‘유기성 폐자원 통합바이오가스화 사업’ 7개 시군으로 확대
-   - [인천in 시민의 손으로 만드는 인터넷신문] 시흥시, 바이오가스 생산목표 239% 달성.. 세외수입 1억700만 원 확보
-   - [데일리안] 폐기물이 수익으로…시흥시, 바이오가스로 1억 원 재정 수입
-   - [Bangladesh Sangbad Sangstha (BSS)] Govt. to take initiative for expanding biogas plants: Aminul
+   - [핸드메이커] 시흥시, 바이오가스 생산목표 239% 달성…실적 거래로 세외수입 1억700만 원 확보
+   - [Energies Media] A French biogas farm installs automatic electrical shutdowns for 1 MW of rooftop solar to meet fire safety requirements
+   - [Billionaires.Africa] Mukesh Ambani plans $1.6bn biogas investment
    - [Bioenergy Insight Magazine] Chris Negus - Biogas Conference
    - [Bioenergy Insight Magazine] CIP scales European biomethane push with €1.5bn fund
    - [헤럴드경제] Siheung achieves 239% of biogas production target in 2025
    - [WMDT] Wicomico County finalizes plans for renewable natural gas production at Newland Park Landfill
-   - [www.sharewise.com] Waga Energy, Randolph Farms Landfill, and Best Way Disposal Launch Second RNG Project in Indiana
-   - [Urban Acres] Reliance’s ₹15,000 Crore Compressed Biogas Push
-   - [Investify] At-Tahur commences first 500 kW biogas generator and plans 4 MW project
+   - [www.marketscreener.com] Waga Energy, Randolph Farms Landfill, and Best Way Disposal Launch Second RNG Project in Indiana
    - [Delta Dunklin Democrat] Food-waste biogas facilities expand across the United States
+   - [energynews.pro] Oriana Power proposes investing in compressed biogas plants for India
    - [South China Morning Post] China’s biogas tech turns Argentina’s farm waste into clean energy
    [요약] 실패 HTTPError: 경북도, ‘유기성 폐자원 통합바이오가스화 사업’ 7개 시군으로 확대
-   [요약] 2/3건
->> data/news_biogas.json, history/news_biogas_20261125.json 저장
+   [요약] 1/2건
+>> data/news_biogas.json, history/news_biogas_20261126.json 저장
