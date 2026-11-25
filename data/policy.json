@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 05:10",
+ "updated": "2026-11-25 14:02",
  "laws": {
   "자원의 절약과 재활용촉진에 관한 법률": {
    "name": "자원의 절약과 재활용촉진에 관한 법률",
@@ -169,6 +169,13 @@
  },
  "posts": [
   {
+   "key": "10557:1910140",
+   "board": "행정예고",
+   "title": "2026년 제품·포장재별 재활용의무율 고시 개정안 행정예고",
+   "date": "2026-11-25",
+   "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10557&orgCd=&boardId=1910140&boardMasterId=827&boardCategoryId=&decorator="
+  },
+  {
    "key": "10557:1906270",
    "board": "행정예고",
    "title": "「식품용기 사용 재생원료 기준」 일부개정고시(안) 행정예고",
@@ -205,6 +212,12 @@
   }
  ],
  "events": [
+  {
+   "date": "2026-11-25",
+   "type": "행정예고",
+   "title": "2026년 제품·포장재별 재활용의무율 고시 개정안 행정예고",
+   "url": "https://www.mcee.go.kr/home/web/board/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=&searchValue=&menuId=10557&orgCd=&boardId=1910140&boardMasterId=827&boardCategoryId=&decorator="
+  },
   {
    "date": "2026-11-12",
    "type": "법령·고시",
@@ -244,6 +257,7 @@
  ],
  "board_seen": [
   "10557:1906270",
+  "10557:1910140",
   "68:89024",
   "71:1941",
   "71:1946",
