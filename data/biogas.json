@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25 13:32",
+ "updated": "2026-11-25 18:02",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-24",
-   "value": 90.4,
+   "value": 91.67,
    "prev_date": "2026-11-23",
    "prev_value": 89.74,
    "src": "Yahoo Finance (ICE Endex)",
@@ -42,9 +42,9 @@
     84.5,
     88.5,
     89.7,
-    90.4
+    91.7
    ],
-   "krw_m3": 1580.0,
+   "krw_m3": 1602.2,
    "fx_used": 1473.99,
    "heat_used": 42.687
   },
@@ -52,16 +52,16 @@
    "name": "천연가스 도매요금",
    "item": "도시가스용 평균",
    "unit": "원/MJ",
-   "date": "2026-11",
-   "value": 23.3246,
-   "prev_date": "2026-10",
-   "prev_value": 23.039,
-   "fuel": 21.3109,
+   "date": "2026-12",
+   "value": 23.5338,
+   "prev_date": "2026-11",
+   "prev_value": 23.3246,
+   "fuel": 21.5201,
    "supply": 2.0137,
    "src": "한국가스공사",
    "heat_mj": 42.687,
-   "krw_m3": 995.7,
-   "prev_krw_m3": 982.7
+   "krw_m3": 1004.6,
+   "prev_krw_m3": 995.7
   },
   "go_fr": {
    "name": "프랑스 바이오가스 GO 경매",
@@ -185,10 +185,10 @@
    "name": "EU 배출권(EUA)",
    "item": "실물 EUA ETC",
    "unit": "€/톤",
-   "date": "2026-11-23",
-   "value": 79.86,
-   "prev_date": "2026-11-20",
-   "prev_value": 77.44,
+   "date": "2026-11-25",
+   "value": 79.23,
+   "prev_date": "2026-11-23",
+   "prev_value": 79.86,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
     84.14,
@@ -211,9 +211,10 @@
     76.25,
     78.39,
     77.44,
-    79.86
+    79.86,
+    79.23
    ],
-   "krw_t": 117713
+   "krw_t": 116784
   }
  },
  "extra": {
@@ -229,6 +230,11 @@
     "fuel": 21.3109,
     "supply": 2.0137,
     "heat": 42.687
+   },
+   "2026-12-01": {
+    "total": 23.5338,
+    "fuel": 21.5201,
+    "supply": 2.0137
    }
   }
  }
