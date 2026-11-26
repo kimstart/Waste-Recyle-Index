@@ -1,1 +1,26 @@
->> 오늘 이미 확인함(2026-11-25 13:54) → 하루 한 번만 조회
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 결과공개] 2026-10-12~2026-11-26: 158건 확인
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT] /bid/bidList.do 응답 없음(RemoteDisconnected) → 잠시 후 한 번 더
+>> [K-APT 입찰공고] 진행 공고 확인 32건
+>> [세대수] 응답 항목: ['bjdCode', 'codeAptNm', 'codeHallNm', 'codeHeatNm', 'codeMgrNm', 'codeSaleNm', 'doroJuso', 'hoCnt', 'kaptAcompany', 'kaptAddr', 'kaptBaseFloor', 'kaptBcompany', 'kaptCode', 'kaptDongCnt', 'kaptFax', 'kaptMarea', 'kaptMparea135', 'kaptMparea136', 'kaptMparea60', 'kaptMparea85', 'kaptName', 'kaptTarea', 'kaptTel', 'kaptTopFloor', 'kaptUrl', 'kaptUsedate', 'kaptdEcntp', 'kaptdaCnt', 'ktownFlrNo', 'privArea', 'zipcode']
+>> [세대수] 새로 조회 2건, 누적 745개 단지
+>> 저장: 1571건 · 상태 {'재공고': 2, '취소': 392, '신규공고': 24, '낙찰': 703, '유찰': 425, '입찰마감': 5, '낙찰무효': 20} · 시스템 {'K-APT': 1055, 'KG2B전자입찰': 466, '아파트장터 A2P': 39, '한국환경공단': 7, '아파트비드포유': 4} · 상세 1건 읽음 · 1년 채우기 완료
+   2026-11-19 서울    | K-APT | 등촌주공5단지 | 재활용품수거업체 선정 입찰 | 낙찰 15,800,400
+   2026-11-18 서울    | K-APT | 흑석롯데캐슬에듀포레 | 재활용품 수거업체 선정 입찰공고 | 낙찰 5,362,800
+   2026-11-18 경기    | KG2B전자입찰 | 이천역신안인스빌퍼스티지 | 재활용품 수거 및 처리업체 선정 공고(긴급) | 낙찰 3,138,000
+   2026-11-16 가평군   | K-APT | 힐스테이트 가평더뉴클래스 | 재활용품 수거 용역업체 선정 입찰공고 | 낙찰 2,280,000
+   2026-11-13 평택시   | 아파트장터 A2 | 안중우림아파트 | 재활용품 수거업체 선정 입찰 공고 | 낙찰 12,474,960
+   2026-11-13 화성시   | K-APT | 진안동 월드메르디앙 1,2 | 재활용 수거업체 선정 공고 | 낙찰 10,725,600
+   2026-11-12 광명시   | K-APT | 하안주공13단지 | 2027년 광명하안13단지(독산주공13단지) 재활용품  | 낙찰 29,718,000
+   2026-11-11 화성시   | K-APT | 송산그린시티 금강펜테리움센 | [긴급] 재활용품 매각 사업자선정 입찰공고 | 낙찰 14,598,432
+   2026-11-10 광명시   | K-APT | 광명소하휴먼시아6단지 | 재활용품 수거업체 선정 입찰공고 | 낙찰 28,598,640
+   2026-11-10 경기    | KG2B전자입찰 | 역북서희스타힐스프라임시티 | 폐기물관리법에 따른 재활용 가능자원 처리업체 선정공고 | 낙찰 8,755,200
