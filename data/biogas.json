@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26 12:44",
+ "updated": "2026-11-26 17:50",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-25",
-   "value": 88.1,
+   "value": 87.3,
    "prev_date": "2026-11-24",
    "prev_value": 91.67,
    "src": "Yahoo Finance (ICE Endex)",
@@ -43,11 +43,11 @@
     88.5,
     89.7,
     91.7,
-    88.1
+    87.3
    ],
-   "krw_m3": 1536.9,
+   "krw_m3": 1518.1,
    "fx_used": 1471.19,
-   "heat_used": 42.687
+   "heat_used": 42.551
   },
   "gas_whole": {
    "name": "천연가스 도매요금",
@@ -60,8 +60,8 @@
    "fuel": 21.5201,
    "supply": 2.0137,
    "src": "한국가스공사",
-   "heat_mj": 42.687,
-   "krw_m3": 1004.6,
+   "heat_mj": 42.551,
+   "krw_m3": 1001.4,
    "prev_krw_m3": 995.7
   },
   "go_fr": {
@@ -112,9 +112,9 @@
      20.87
     ]
    ],
-   "krw_m3": 364.1,
+   "krw_m3": 362.9,
    "fx_used": 1471.19,
-   "heat_used": 42.687
+   "heat_used": 42.551
   },
   "kcu": {
    "name": "KCU 상쇄배출권",
@@ -186,10 +186,10 @@
    "name": "EU 배출권(EUA)",
    "item": "실물 EUA ETC",
    "unit": "€/톤",
-   "date": "2026-11-24",
-   "value": 79.03,
-   "prev_date": "2026-11-23",
-   "prev_value": 79.86,
+   "date": "2026-11-26",
+   "value": 79.18,
+   "prev_date": "2026-11-24",
+   "prev_value": 79.03,
    "src": "Yahoo Finance (SparkChange Physical Carbon EUA ETC, LSE)",
    "spark": [
     84.14,
@@ -213,9 +213,10 @@
     78.39,
     77.44,
     79.86,
-    79.03
+    79.03,
+    79.18
    ],
-   "krw_t": 116268
+   "krw_t": 116489
   }
  },
  "extra": {
@@ -235,7 +236,8 @@
    "2026-12-01": {
     "total": 23.5338,
     "fuel": 21.5201,
-    "supply": 2.0137
+    "supply": 2.0137,
+    "heat": 42.551
    }
   }
  }
