@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-27 02:07",
+ "updated": "2026-11-27 13:20",
  "domestic": [
+  {
+   "title": "테레가·UPPA, 2029년까지 연구협력 연장… 수소·바이오메탄 지하저장 연구 가속",
+   "source": "https://www.2news.co.kr/",
+   "link": "https://www.2news.co.kr/news/articleView.html?idxno=34087",
+   "pub": "2026-11-27 06:57",
+   "more": 0,
+   "summary": "프랑스 가스망 운영사 테레가와 포·아두르대학, 2027~2029 기본협력협정 갱신하고 공동연구소 SEnGA 2029년까지 연장 첫 기본협정은 2016년 체결돼 2023년 갱신됐다. 공동연구소 SEnGA는 2020년 9월 테레가, UPPA, 프랑스 국립과학연구센터(CNRS)가 함께 설립했다."
+  },
   {
    "title": "천연가스 흡착제 시장 2035년 전망: 바이오가스 정제와 이산화탄소 포집이 성장 견인 - 뉴스 및 통계",
    "source": "IndexBox",
    "link": "https://www.indexbox.io/ko/blog/natural-gas-adsorbents-market-forecast-to-2035-driven-by-biogas-upgrading-and-co2-capture-demand/",
    "pub": "2026-11-26 07:56",
    "more": 0
-  },
-  {
-   "title": "시흥시, 바이오가스 생산 2배…이웃도시에 팔아 1억700만원 수익",
-   "source": "문화일보",
-   "link": "https://www.munhwa.com/article/11634065",
-   "pub": "2026-11-25 14:16",
-   "more": 0,
-   "summary": "경기 시흥시가 바이오가스 생산시설의 운영 효율을 높여 생산목표를 2배 올리는가 하면, 이를 다른 도시에 판매해 1억700만 원의 세외수입을 거뒀다. 당초 생산목표인 370만㎥보다 516만㎥ 많은 양으로, 목표 대비 달성률은 239%에 이른다. 시는 초과 생산량 가운데 158만㎥를 다른 공공 의무생산자에게 판매해 약 1억700만 원의 수입을 확보했다."
   }
  ],
  "overseas": [
@@ -26,25 +26,25 @@
    "more": 0
   },
   {
-   "title": "Gas Malaysia supplies certified biomethane for Japan BioLNG sale",
-   "source": "The Malaysian Reserve",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPR1lpTVNGRzdraGtsOU9JMEZpSjE5Y3BhYWZ4TGhmS295c0RUZDZsQmlLenQwTDdEZkdKSnZET3BtSVAzbGc3Zks4Z3J1S2lkUzJWYUxzVmdUQk9iSzJEQWxpbnhoU2RVWGJIUDlBUTJFU1NoN0wtbkFUTWxCTzNTel9PVjN6ZDUyZ2VmM1Z4ZTlkR1BpR3pMZjVOMVRUalNZR0JJNUc0TXpvanMx?oc=5",
-   "pub": "2026-11-26 14:48",
-   "more": 3
+   "title": "Belgium clears construction of country’s largest biogas plant in Wallonia",
+   "source": "BioEnergy Times",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQzhPQUdrVGpjTklfQ3h5bEI1MWVxNjZsZlB5akEzazRIOVZ2NVMzbklpTkl5TDMzbFdWQ0lxdUx3OWZTYV91aGVsSUFicnFqMlAyQk85enJ2T2VrMWdmVWp0amRqTkxxOWtJNFNwMWJQdUtpNVpQbG42SXd3RVBRMC1xTTBpNlJTZEhNcVMwT1FQdXZlOWZJQ1VpYXNVc1gwaHc?oc=5",
+   "pub": "2026-11-26 16:43",
+   "more": 2
   },
   {
-   "title": "NZ burying valuable energy source in landfills, biogas company says",
-   "source": "RNZ",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNejlCWFY5Q2Ztc2pSYmVlX25ncFpkSGdFbEpKcXI1T09wTWxZWDRkZWRYaFhXM25TSUsydlI0R3gxSF9NVURGb0MzWmliWG5WM2pNWEd6TzZYcjdSdXhDWGFjOWppUC1EcU81YklFZzVLNUlOUlFtaExNSWNSTEpnOExXZkhRekR5Q3J6aHZHdmY5ZlhIWDBHQWVTUnYtOUtydnFVeGlfcV9qbW9MaWdieXBEQQ?oc=5",
-   "pub": "2026-11-26 12:58",
-   "more": 0
+   "title": "Sosteneo takes 80% stake in Retina’s Italian biomethane portfolio",
+   "source": "Bioenergy Insight Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZ2E1cXlMN2hYUWVFWHJncm1YREU5MTl6N3pvQUpGWHBRTlczWmEwWHUxb09Kd0VaUjVBSHpZNU82cnpPVldrbG1FRHg0UlJGTkswX00tMGpBSFRESXRNNUNrT2tGVkU4VlJMM1NhdzM0T3pldTZoc0k5d2VBclR5ZExNUV8yalFwc181T3p1V1hTbDhWbnhKVW44NUxMTjR2MHc?oc=5",
+   "pub": "2026-11-24 21:42",
+   "more": 10
   },
   {
-   "title": "Chinese biogas tech turns Argentina's farm waste into clean energy: SCMP",
-   "source": "Big News Network.com",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWUVVMnRFZG8xcWlOTmhyaDIydW1NcFpaMjEzcWlNWTRmRGZBMHk3bC1zTU9pY2dNeERuX0dVWl9aSjh5dE1YU2RTUHJKTGJTQnNoRmRqbHFwUU5nWkx3SWhmaHZXMVlZWjBjRzIxalZMdU9EcDlmRDBXbE1EZktHQ3RUVWJtaXlZUktGVW9sYkpkc0dGX3pxV19qenlDR0Y3Tl81bVNWRlQxeF83UWtpQTNDTWxCUQ?oc=5",
-   "pub": "2026-11-25 10:52",
-   "more": 3
+   "title": "Govt. to take initiative for expanding biogas plants: Aminul",
+   "source": "Bangladesh Sangbad Sangstha (BSS)",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1VN3J5TUphSEJkZXJDVUk5VGpmYjl1cTNBWnMwdUZFdEhzR1ZKZVM0RWVkSWNORkRlakJZQjNYWUQtcVRGQkZrU3FPVVlYQQ?oc=5",
+   "pub": "2026-11-24 20:56",
+   "more": 6
   },
   {
    "title": "Chris Negus - Biogas Conference",
@@ -52,6 +52,20 @@
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1pUFQ4b09TRThFYXFZcGlxdVNNVE56cTB3ZDFtSmF1aTc5b21hbUxDXzdaREV6dkw1ZzFHdm81VGE5aUNLQm8xRC05cTQ4OFU5RkxocjhKLUw4UDRfOVBKZ29qMGpRemJkSXpxT2lmYw?oc=5",
    "pub": "2026-11-24 19:25",
    "more": 0
+  },
+  {
+   "title": "Waga Energy, Randolph Farms Landfill, and Best Way Disposal launch second RNG project in Indiana",
+   "source": "Renewable Energy Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYS1wV0VYZDdxbVNlQXlfTWZOTTlGNWIwRkhaSFo2UFZNMUx2REczZkFJeEgtYTRORVNWMkVPbUs0X2M4MXc1Smo3THZwZ09jQVRibmozaWk2eDJSVl9zLTQxem52OE0xNERhdFRoVmhNNUt5ZElOWmlPSkxjLUJIYUFQOUxXSkVwdXZ1SGRleFFSY1VQOGxDbk1ZVFBQUlZTSVE?oc=5",
+   "pub": "2026-11-24 18:12",
+   "more": 4
+  },
+  {
+   "title": "Community Anaerobic Digesters Can Transform Western Newfoundland Agricultural Waste Into Energy",
+   "source": "Bioengineer.org",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQklCOWwwRzBoWGVJM3lCQ1V5OGZnMnBOMFgxanplY2tQM0x1ejkwSTI1SHc3WEJnZ0V5aGQ1REU1MzVtcnBCc0tFTGFXX0Q2ZFdaaWI1M1pWVzI1cjVKTUJIal9qTFJTYnZNdDliZlpXQzBMX3hYbTZVUEdqd3gxZWZGYTF4ZE8yRHE2cTF3UjZIbktsQlJQdENNR05OTmN6ZGFvZHh6OFNPbnJ3THVKY0pNR3dRZGN1b2dRYQ?oc=5",
+   "pub": "2026-11-24 17:57",
+   "more": 7
   },
   {
    "title": "European biomethane mechanism explained",
@@ -65,28 +79,14 @@
    "source": "Biomass Magazine",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNN0Q4dWRBeXhTSmpkUV9jMjg2UDlJaGEtZUY1SUhyNGdPZnZsUXJSM2wwc0xla1JpdW1Cdk1LcjNodE1wMjJIVjliUnhWMDd3RERYQjd1bTZGQlg0eGhYUTlZY1JLaUpEV1IwTmEzY2ZkQXZxd1VxTUVhM1lHNVI3NkUwNnNGTTBmTmNmUUh4ZTA1cjktUVN6aVVYWE9hOG9jSE5qQml3?oc=5",
    "pub": "2026-11-24 17:00",
-   "more": 1
+   "more": 2
   },
   {
-   "title": "Siheung achieves 239% of biogas production target in 2025",
-   "source": "헤럴드경제",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9yY0hLTlZ0R3BuYnVjNFZBV2dqUE1tdUVSS2RLb0VHcm5wODR6bkVKcW10eVFuc0FpSU1tal9odEY3MjdYZk1kZ1JfZnBjVHY5VkpMb28ydw?oc=5",
-   "pub": "2026-11-24 08:17",
+   "title": "Reliance to invest Rs 15,000 crore in nearly 100 compressed biogas plants by 2030",
+   "source": "BioEnergy Times",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZ1NoM2pxbDd4bWMwLVI2TmgxTUI1MmtqMXVINUhQaVFQOXJ2TW0xQXhBdE1FaEV3bEVFWDFITFVhT1hWbjRzNW4tQXg1YUp2UkVEV2QtSHV6M3VHaU5aMmFiN2NQT0paU0xNOERDSmgwc3BreWhBdzdNWG1NaEd4REtNRDdUSWRsWjNNQTk5amVrQXB3aVN1ZXRYZUZLR1hrVUZKTU9zS2llbmp1?oc=5",
+   "pub": "2026-11-24 16:50",
    "more": 3
-  },
-  {
-   "title": "Reliance to Invest Rs. 150 bn in New Biogas Plants",
-   "source": "megaproject.com",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQOTdaLUZleVFKU0NkTGJSZWl0MTlxU0JaeHM5QUY5bk9CSzJRSTJlZE5NeXQ4S0hjOGladW9FTkIyNDNIRWZJRUNwTDBUZjdJVWxZdHRTN0l1c2x6emkzMnE1endUQ0NhZTRXMDQ1THJJdDJpbWI0cVkxaTdnN3lSRng0RUI1VzdCTUxjM2x6LWNSdWFmc2I0?oc=5",
-   "pub": "2026-11-24 07:25",
-   "more": 6
-  },
-  {
-   "title": "Wicomico County finalizes plans for renewable natural gas production at Newland Park Landfill",
-   "source": "WMDT",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUHNDZzAxZFp6N0NwdXVaRVpnRE1laTZwZEoteFRMZXpDcmNJaHdaMjRBU1l2c1NyaGw2RHpnVUtfaDJDNklXNHREMk82X2I0MFZTRFk2Qk5nVHVkQTZ1NTBTakQ1MmlqUkYyZ0RwREFUWVVFVGNGUHFIQ25aOEYxMHg5RUtiYkk1S1VZbE5paEFnN3E1WFo1V1dpaXFyTmdudHBHWE92Sk1mWm9PMVVTV21pS0plSEhEMi1JenB0dng?oc=5",
-   "pub": "2026-11-24 07:21",
-   "more": 13
   }
  ]
 }
