@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-28 01:51",
+ "updated": "2026-11-28 13:00",
  "domestic": [
+  {
+   "title": "도쿄가스, 일본 최초 말레이시아산 바이오메탄 수입 성공…아시아로 조달망 확대",
+   "source": "https://www.2news.co.kr/",
+   "link": "https://www.2news.co.kr/news/articleView.html?idxno=34177",
+   "pub": "2026-11-28 07:04",
+   "more": 0,
+   "summary": "페트로나스와 탈탄소 전략적 협력…기체 환산 약 4만m³ 규모 오기시마 LNG 기지 도입 도쿄가스는 2026년 11월 26일 말레이시아 국영 에너지기업 페트로나스(PETRONAS)와 협력해 일본 최초로 말레이시아산 바이오메탄 수입을 공동으로 실현했다고 발표했다. 이번 도입을 통해 11월 22일 도쿄가스 오기시마 LNG 기지에서 기체 환산 기준 약 4만m³ 규모의 바이오메탄을 하역해 공식 인수했다."
+  },
   {
    "title": "테레가·UPPA, 2029년까지 연구협력 연장… 수소·바이오메탄 지하저장 연구 가속",
    "source": "https://www.2news.co.kr/",
@@ -33,11 +41,32 @@
    "more": 1
   },
   {
-   "title": "NZ burying valuable energy source in landfills, biogas company says",
-   "source": "RNZ",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNejlCWFY5Q2Ztc2pSYmVlX25ncFpkSGdFbEpKcXI1T09wTWxZWDRkZWRYaFhXM25TSUsydlI0R3gxSF9NVURGb0MzWmliWG5WM2pNWEd6TzZYcjdSdXhDWGFjOWppUC1EcU81YklFZzVLNUlOUlFtaExNSWNSTEpnOExXZkhRekR5Q3J6aHZHdmY5ZlhIWDBHQWVTUnYtOUtydnFVeGlfcV9qbW9MaWdieXBEQQ?oc=5",
-   "pub": "2026-11-26 12:58",
-   "more": 0
+   "title": "Renewable Gases and Hydrogen: Challenges and Opportunities",
+   "source": "European Biogas Association",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQczZCWk8xemNIdHpBclJieDY4aVFieWtwZllUME1xWG5qMUk5MWNjendhZTc4ZHNFNkllcE14ZFlDSlgzWEF5SHpqZzVmV0JNQ3dlaUZ4SndrTjJ4UVg3cnFFV1JXZmJRMTRpT3ZabGRiTjJ4QWlYcG8zWWF2M1FsR2haeGt1dkFpVnlybjdia3dTRnRja2NnRGZ3?oc=5",
+   "pub": "2026-11-26 06:32",
+   "more": 1
+  },
+  {
+   "title": "Mixing plant material with manure may be key to profitable biogas production",
+   "source": "Biomass Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGxVamwxWjMtZDcwbXVSZUxlbE0tTnNYcU1Gd2U5MlRDc09sSmhsV3N2SDl1ci1hZmdtZ0NsY29OUVFmY3Z0U3Nsa29NMWJsQlBqLVFjbHc1Q3FFWmdzRnB6MEdiRHhDYzNqNVZxQ2IxZVJ1VVFFUFBzV0s4TFQ4V2NkbmxPTElkbUUyeGhhNEpkb1ZxTlpJZDFieHhXbDdTYVhTX2Zxbjh1Y0diWVdUUVJrMA?oc=5",
+   "pub": "2026-11-26 01:22",
+   "more": 2
+  },
+  {
+   "title": "GHG Protocol move opens door to biomethane certificates",
+   "source": "gasworld",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRmVXWjFvajB4dE02T0hWSWYybkZIQWRwZDVTQWxzQTRKM1BrYWFXU1g3NjlGVmY3T183Y25DSUtRU3QzVEhiRnBaeGxfYmFiYWE1alAxZnQ1YkFPcWlXLUlzU195SW5VeWFtMmVXNHMwN1c1MjB3bUt6Y2F6NV9OeTdBWUJlbnNLMV92U0FDSFczUGhFYmxPN1FDaXF2emxxaWpoVnd3?oc=5",
+   "pub": "2026-11-25 23:28",
+   "more": 4
+  },
+  {
+   "title": "Turning Biogas Waste Into Valuable Soil Resources",
+   "source": "Renewable Energy Magazine",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORktTWEZZY2RlNWdSX3d2Wll3M05xMl83eXZkaGVndWdraW9pellIMzI2VHNvS1pZQ1AxZVNpS0VXV2daLTVBMEp2amZiVXcwY1NKMFRKd01xZ3ltRFRYSlJWaVFucy1oQzM2RVhsQkM1VjNhbGhaLXZja01NMWpWNUhKa3pQQUlQRkpocTh0VnExb25ySXB0cjBPaVJmVW5mWEVCQ29URmk?oc=5",
+   "pub": "2026-11-25 23:20",
+   "more": 2
   },
   {
    "title": "Cavan senator says biogas plant should not be built in Cootehill",
@@ -47,39 +76,18 @@
    "more": 3
   },
   {
-   "title": "GHG Protocol clarifies position on biomethane certificates",
-   "source": "Bioenergy Insight Magazine",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONlYyT2VJcFA2WVlNMmcweG1xN3lxZ0xvLWNIVDdGVXFsYWotZnNzUWI5Njkwb1N4WWNHLUJ3ZHhwQ1NKMUlDSG9fZ0ptQmFNNzRrR0RCUWNLXzFoUlJHQ3R2UHA0RmxOVndLLXo2MGFxdEtBQllRUktOeWpLb0wweWp2RHJpR3dWUTdpM0V1TFBWVlBieDBUZkR3bw?oc=5",
-   "pub": "2026-11-25 17:47",
-   "more": 5
+   "title": "PNGRB approves guidelines for injection of compressed biogas into natural gas pipeline and city gas distribution networks | DD News",
+   "source": "DD News",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTjhnZF9qY1F4RkhXTENxcVhNM0p3bDZDNXQtQ01HRjFBWmZkVG5yQ1FXWkdHY1FlNlc2TW1tb0Z3RW05Q1RzZk8yY0hQSWo0YlhLMXFSYUhvODZmWGdyQlNEdV9SOUE4ZWJlc05Xdk5hbmRBQWVVRGMzTUUzbVZxVDJ4TmxXYUV2X0NIVU9rb2J4XzhZMWhzNUFBQW9CR1Z5SEtYOW5LWXo3bzNjRkJhalJxQ1VZSW1RXzdSYmZYQ3dlNEJSR0xodXJDZ3g2bDV3MElvTDR5cER3MDl0YUxzOA?oc=5",
+   "pub": "2026-11-25 15:04",
+   "more": 4
   },
   {
-   "title": "Chinese biogas tech turns Argentina's farm waste into clean energy: SCMP",
-   "source": "Xinhua",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE16T2Y3TEZ4dDkxcV92VU1Hc3hvMTAwQmpId1lXNlUxVVJKWWxaOGVBRHhBY3VkZEhiam1nNlp4M3dzY25HNFh4UVU1NTBFdnBoM1gtVUhNd2RNUEtKQVV5cllpTzVOalVtbnpfU3dCNjJDN2lsNDN3VlJ2UG0?oc=5",
-   "pub": "2026-11-25 10:48",
-   "more": 7
-  },
-  {
-   "title": "Italgas has connected a biomethane plant in Latisana (Udine) to its network: this is the 21st",
-   "source": "HydroNews",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZ2Z1LVJhc3FkajU2eTNMaXhjcUE2bDR6OE1XZnR1RlRRN1VBTThBdWk3U2d3a3R4ZXJ5amFJbTJpaFhBMFVzdkhHUDJYZ3VZdThnQ1d0VlJvcWlyVUJkX2d6RmIwcWR3ZGV1bVVUaWptc2NwZTctLWdFakx5SURUSzlXYzMwb2Eyb3RaWFQxeVZFSGl0ejJNY3g1b0hVSTBfZ2s0WjJJUk1NcG5ZeGc?oc=5",
-   "pub": "2026-11-25 08:49",
-   "more": 6
-  },
-  {
-   "title": "Via libera alla costruzione di Biogas Hautrage, il più grande impianto di produzione di biometano del Belgio",
-   "source": "HydroNews",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTlU4bjhPTXJTS25vd0NBY2JxN3pCby1vWEFEcFBqQTUzYnRIR0NDYVMyVDBzeGczRUhfQzFqYTFVbFVhZHdDLWxWTzd1bm0zWmR2RWVwWjhpZ0ZRcFdnWFMxS2RMYWNtbFhZWEszNFlMV09qWFNidk4zYnkzM19oa2JBcnNUbmY5VUotNGFuMmZwMkxwemJIMHpYNkFJck5pdzVTaV9uZHhyeS1QRUVGZzYtUERUMzN0T19yWVBJUjFVSElDTVl5SFR1a9IB2gFBVV95cUxOLWxneVYxR0xqLUEzUWZ5eFBxUkVucHBnS2l1d2ZNa0NJeWppUlZ2eTlaTzZMSGRxd3BBY3Fhb0lnVXVxRUdIUHNMdlJfcWdXQ2xWQjExaXAyUk8xOEJrQ0w5eGNCOUtyMXRDbzBOVDFkel9fSFFTV1ViS0hVWFJocm1oQmZiQUp2ZnV0MUwtZ0hvbE1nbzB2N0UwSW9GRi1TZ1R2NHFZLUVxY2xfYWhIdFJlT0JHZ3B2TEwzRHdvRWVWNUZfTTJSSmZzYXFGNnhrU0dDRnhrU3N1Zw?oc=5",
-   "pub": "2026-11-25 08:49",
-   "more": 3
-  },
-  {
-   "title": "Renewable natural gas production facility planned for Randolph County",
-   "source": "Inside INdiana Business",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOV3JSajBELVFKTmJncmtlN05vWTZoMzRoREtjdGFRWmNLVld6dWsyN0lOaWZfSUVfYm9hRVREZ0JwTUhHRVdPNmYxR2pGcHh5angydWFCdVg4Ul84c0NZdWQtQTRYSTNBRmdfQTVuZDhpalhZdExYME1PNWJLNzJKcWVpai1aUlNja0xiSS1DZmxia3RadDVSOFNXUzRKWHVRWFpPYjNjTzVsYS1CaFc1NW9vazFvUzA?oc=5",
-   "pub": "2026-11-25 06:11",
-   "more": 6
+   "title": "Anaerobic Co-Digestion of Lignocellulosic Biomass Yields 276 Milliliters of Methane per Gram",
+   "source": "Bioengineer.org",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdDhnWUgxMVFzN2J2WVhHSWEtLVdRRFBvS0tzZ2lPbmxxVzF1dHh5RXZBYUs3RV9raThIbDVPTmkyaTNkQXktU0RGUFZLeENfUlp0c1pZQzhLLUxQM3pzR2ZJeUtEaWJpMWlrbjY3RF9mWTduU0s4YjNnRnNHTUJpZEFjUUpqWHhGT1JnZ0NETEpRYjM0TFdrTG1xMjgzcl95OHpuTEhnZk11Qnk1YzF5NFgwSWpGYWFM?oc=5",
+   "pub": "2026-11-25 14:49",
+   "more": 4
   }
  ]
 }
