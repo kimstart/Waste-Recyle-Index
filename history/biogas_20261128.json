@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28 12:29",
+ "updated": "2026-11-28 17:20",
  "items": {
   "rec": {
    "name": "REC 현물",
@@ -16,7 +16,7 @@
    "item": "근월물",
    "unit": "€/MWh",
    "date": "2026-11-27",
-   "value": 84.85,
+   "value": 83.2,
    "prev_date": "2026-11-25",
    "prev_value": 87.3,
    "src": "Yahoo Finance (ICE Endex)",
@@ -42,9 +42,9 @@
     89.7,
     91.7,
     87.3,
-    84.8
+    83.2
    ],
-   "krw_m3": 1466.9,
+   "krw_m3": 1438.4,
    "fx_used": 1462.65,
    "heat_used": 42.551
   },
