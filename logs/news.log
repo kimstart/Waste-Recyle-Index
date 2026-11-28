@@ -1,108 +1,104 @@
->> [plastic] 수집 범위 국내 36시간 / 해외 72시간
+>> [plastic] 수집 범위 국내 37시간 / 해외 72시간
    [국내] '폐플라스틱' 4건
    [국내] '재생원료 플라스틱' 1건
    [국내] '재생플라스틱' 2건
    [국내] '플라스틱 재활용' 9건
-   [국내] '페트 재활용' 1건
+   [국내] '페트 재활용' 0건
    [국내] '열분해유' 0건
-   [국내] '화학적 재활용' 3건
-   [국내] '폐비닐' 1건
+   [국내] '화학적 재활용' 실패: HTTPError
+   [국내] '폐비닐' 0건
    [국내] '재생원료 사용 의무' 0건
    [국내] '플라스틱 협약' 1건
    [국내] '순환경제 플라스틱' 4건
-   [국내] '재활용 선별장' 1건
+   [국내] '재활용 선별장' 2건
    [국내] 반복 소재어: []
-   [해외] 'rPET' 8건
+   [해외] 'rPET' 7건
    [해외] '"recycled PET"' 10건
-   [해외] '"chemical recycling"' 10건
+   [해외] '"chemical recycling"' 11건
    [해외] '"plastic pyrolysis"' 1건
    [해외] '"recycled content" plastic' 11건
-   [해외] '"plastics treaty"' 10건
+   [해외] '"plastics treaty"' 9건
    [해외] '"recycled polypropylene"' 9건
-   [해외] '"plastic recycling"' 28건
-   [해외] 'PPWR recycled' 10건
-   [해외] '"recycled plastic" prices' 13건
-   [해외 전문지] plasticsnews.com 22건
-   [해외 전문지] plasticstoday.com 31건
-   [해외 전문지] packaginginsights.com 17건
-   [해외 전문지] resource-recycling.com 12건
+   [해외] '"plastic recycling"' 26건
+   [해외] 'PPWR recycled' 8건
+   [해외] '"recycled plastic" prices' 11건
+   [해외 전문지] plasticsnews.com 15건
+   [해외 전문지] plasticstoday.com 27건
+   [해외 전문지] packaginginsights.com 15건
+   [해외 전문지] resource-recycling.com 10건
    [해외 전문지] recyclingtoday.com 12건
-   [해외 전문지] recyclinginternational.com 7건
+   [해외 전문지] recyclinginternational.com 5건
    [해외 전문지] sustainableplastics.com 0건
-   [해외 전문지] euwid-recycling.com 5건
-   [해외 전문지] packagingeurope.com 22건
-   [해외 전문지] packaging-gateway.com 23건
-   [해외 전문지] letsrecycle.com 35건
-   [해외 전문지] icis.com 13건
+   [해외 전문지] euwid-recycling.com 4건
+   [해외 전문지] packagingeurope.com 16건
+   [해외 전문지] packaging-gateway.com 13건
+   [해외 전문지] letsrecycle.com 30건
+   [해외 전문지] icis.com 10건
    [해외 RSS] Recycling Today 3건
-   [해외] 전문지 외 제외: Bioengineer.org, Herald.Wales, Kenya News Agency, Mjengo Hub, PR Newswire, THISDAYLIVE, TU Delft, The Conversation, The Malaysian Reserve, The Washington Post, UNSW Sydney, UQ News, USA Today, WBOC TV, cnhinews.com, www.plasticsiq.com
->> [plastic] 국내 27건 → 12건, 해외 312건 → 10건
+   [해외] 전문지 외 제외: Bioengineer.org, Business Matters, Kenya News Agency, Mjengo Hub, PR Newswire, Packaging South Asia, Recycling Product News, THISDAYLIVE, The Conversation, The Malaysian Reserve, The Washington Post, UNSW Sydney, USA Today, WBOC TV, cnhinews.com, www.plasticsiq.com
+>> [plastic] 국내 23건 → 10건, 해외 263건 → 9건
+   - [미디어와이] 김시은 광주시의원, 재활용품 저가 매각 손실금 회수·재발 방지 촉구
    - [YTN] 얼렸다 녹이니 '둥둥'...나노 플라스틱 건져낸 방법 [자막뉴스]
+   - [YTN] 오렌지 껍질 속 천연물질 활용...나노 플라스틱 제거
    - [IndexBox] ICC, 폐기물 체계 벗어나는 플라스틱에 더 스마트한 설계의 역할 조명
    - [IndexBox] 벨기에, 2024년 가정용 포장재 폐기물 83% 재활용 - 뉴스 및 통계
-   - [서울신문] 폐플라스틱 재활용부터 어르신 AI 체험까지…고양서 사회연대경제박람회
+   - [서울Pn] 폐플라스틱 재활용부터 어르신 AI 체험까지…고양서 사회연대경제박람회
    - [기후에너지데이터뱅크] 환경공단, 페루 순환경제 전환 지원…물관리 제도 개선 모색
    - [위키리크스한국] 한준호 의원, 유색·혼합 플라스틱 '친환경 소재 전환' 법안 발의
    - [IndexBox] 재활용 플라스틱 친환경 건축 자재 시장 2035년 전망: 순환 건설 의무화가 도입 견인 - 뉴스 및 통계
    - [충청타임즈] 한국동서발전 당진발전본부, 폐플라스틱 업사이클링 ‘새활용 크리스마스 트리’ 설치
-   - [미디어이슈] 골목 정비와 재활용 체험으로 이어진 동구 주민 실험
-   - [안성뉴스] 원곡면 새마을회, 농경지·마을 주변 폐비닐 15t 수거
-   - [에너지안전신문] 美 HALEU 22.8톤 재활용, 韓 SMR·원자력협정 새 물꼬
-   - [비건뉴스] 구로 가리봉동에 재활용정거장…평일 밤 9시까지 배출
    - [ICIS] UK PET, rPET safeguard proposal draws strong opposition in current form following industry consultation
    - [Packaging Europe] Suntory transitions La Casera range to 100% rPET bottles
+   - [letsrecycle.com] BPF sets out roadmap to increase EPS recycling to 80% by 2035
    - [Packaging Europe] Partners aim to develop PPWR-ready packaging in new EU-backed project
-   - [Plastics News] Carbios, Wankai abandon plans for PET chemical recycling plant in China
    - [Packaging Insights] UK pEPR fees spark mixed industry reactions as plastic and wood costs rise
    - [ICIS] Brazil, Mexico rPET demand boosted by tighter virgin PET supply, weaker currencies
+   - [Waste Management World] WMW | Artificial Intelligence: AI sorting raises the bar for plastics recycling in Molise
    - [S&P Global] New Platts Recycled-PET Light Blue Flakes EXW Turkey symbol
    - [PlasticsToday] US Recycled Plastics Markets Show Mixed Signals
-   - [PlasticsToday] All Reflex Cushioning Plants Now Run on Recycled Resin
-   - [Bloomberg Tax] Plastic Recycling Fees Pose Legal Test for Private Taxing Powers
-   [요약] 7/12건
->> data/news_plastic.json, history/news_plastic_20261128.json 저장
->> [biogas] 수집 범위 국내 36시간 / 해외 72시간
+   [요약] 5/10건
+>> data/news_plastic.json, history/news_plastic_20261129.json 저장
+>> [biogas] 수집 범위 국내 37시간 / 해외 72시간
    [국내] '바이오가스' 1건
-   [국내] '바이오메탄' 2건
+   [국내] '바이오메탄' 1건
    [국내] '바이오가스 생산목표제' 0건
    [국내] '유기성폐자원' 0건
    [국내] '음식물류폐기물 바이오가스' 0건
    [국내] '가축분뇨 바이오가스' 0건
    [국내] '혐기성소화' 0건
    [국내] '하수슬러지 바이오가스' 0건
-   [국내] '바이오가스화시설' 실패: HTTPError
-   [국내] '음식물쓰레기 처리' 실패: HTTPError
+   [국내] '바이오가스화시설' 0건
+   [국내] '음식물쓰레기 처리' 0건
    [국내] 반복 소재어: []
-   [해외] 'biomethane' 49건
+   [해외] 'biomethane' 45건
    [해외] 'biogas' 47건
-   [해외] '"renewable natural gas"' 8건
-   [해외] '"anaerobic digestion"' 17건
-   [해외] 'biomethane price' 11건
-   [해외] '"guarantees of origin" biomethane' 0건
-   [해외] 'biomethane grid injection' 5건
-   [해외] 'RNG landfill gas' 8건
-   [해외 전문지] bioenergy-news.com 15건
-   [해외 전문지] gasworld.com 36건
+   [해외] '"renewable natural gas"' 10건
+   [해외] '"anaerobic digestion"' 10건
+   [해외] 'biomethane price' 8건
+   [해외] '"guarantees of origin" biomethane' 8건
+   [해외] 'biomethane grid injection' 3건
+   [해외] 'RNG landfill gas' 6건
+   [해외 전문지] bioenergy-news.com 11건
+   [해외 전문지] gasworld.com 26건
    [해외 전문지] endswasteandbioenergy.com 2건
-   [해외 전문지] argusmedia.com 3건
-   [해외 전문지] qcintel.com 20건
-   [해외 전문지] biomassmagazine.com 13건
-   [해외 전문지] europeanbiogas.eu 3건
+   [해외 전문지] argusmedia.com 4건
+   [해외 전문지] qcintel.com 9건
+   [해외 전문지] biomassmagazine.com 10건
+   [해외 전문지] europeanbiogas.eu 4건
    [해외 전문지] biogasworld.com 0건
    [해외 전문지] montelnews.com 0건
    [해외 전문지] wastedive.com 5건
->> [biogas] 국내 3건 → 2건, 해외 242건 → 10건
+>> [biogas] 국내 2건 → 1건, 해외 208건 → 10건
    - [https://www.2news.co.kr/] 도쿄가스, 일본 최초 말레이시아산 바이오메탄 수입 성공…아시아로 조달망 확대
-   - [https://www.2news.co.kr/] 테레가·UPPA, 2029년까지 연구협력 연장… 수소·바이오메탄 지하저장 연구 가속
+   - [HydroNews] Corradi & Ghisolfi acquista un impianto di biogas che verrà convertito a biometano, col supporto di UniCredit
+   - [NewsBreak: Local News & Alerts] EDCO Celebrates Grand Opening of Anaerobic Digestion Facility Phase II in Escondido, CA
    - [Bioenergy Insight Magazine] St1 opens Vantaa station offering biogas and HVO
-   - [Yle] From fries to fuel: Finland turns burnt potato crop into transport biogas
-   - [Bioenergy Insight Magazine] Europe has resources to hit 2030 biomethane goal but policy lags, says new report
+   - [The Malaysian Reserve] Gas Malaysia supplies certified biomethane for Japan BioLNG sale
+   - [RNZ] NZ burying valuable energy source in landfills, biogas company says
    - [European Biogas Association] Renewable Gases and Hydrogen: Challenges and Opportunities
+   - [Dentons] Key changes under UD332: biomethane auctions, stricter penalties and direct gas pipelines
+   - [Anglo Celt] Campaign mounts against biogas plant
    - [Biomass Magazine] Mixing plant material with manure may be key to profitable biogas production
-   - [gasworld] GHG Protocol move opens door to biomethane certificates
-   - [Renewable Energy Magazine] Turning Biogas Waste Into Valuable Soil Resources
-   - [Northern Sound] Cavan senator says biogas plant should not be built in Cootehill
-   - [DD News] PNGRB approves guidelines for injection of compressed biogas into natural gas pipeline and city gas distribution networks | DD News
-   - [Bioengineer.org] Anaerobic Co-Digestion of Lignocellulosic Biomass Yields 276 Milliliters of Methane per Gram
-   [요약] 2/2건
->> data/news_biogas.json, history/news_biogas_20261128.json 저장
+   - [European Biogas Association] New joint report sets out policy recommendations to scale up biomethane in Europe
+   [요약] 1/1건
+>> data/news_biogas.json, history/news_biogas_20261129.json 저장
